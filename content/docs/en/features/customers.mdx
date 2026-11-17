@@ -18,7 +18,19 @@ When a platform admin edits an existing customer, the Tenant picker is disabled.
 
 <SystemScreenshot src="/docs/screenshots/admin-customer-signup-origin-en.jpg" alt="Platform-admin customer edit: the registration store is locked and explained below the field." />
 
-This safeguard is implemented. The broader [central customer account model](/en/roadmap/global-platform) remains a planned cutover: this screenshot does not mean cross-store login is enabled yet.
+## One account across stores
+
+Use the same CartJoin customer account and password at another store. You do not register again. Each store keeps its own basket, purchases, addresses, default delivery address, loyalty and balances. Signing in creates the private store relationship automatically; it never changes the first-registration store.
+
+<SystemScreenshot src="/docs/screenshots/customer-central-signin-en.jpg" alt="Customer sign-in explains the shared account and private store purchases." />
+
+## Manage access to your store
+
+Tenant operators open **Users → customer → Edit**. Identity fields are read-only. Change **Active** or **Blocked** to control this store only. **Revoke store access** preserves the central account, other stores and purchase history. Only the customer manages their global profile/password through the authorized account and recovery screens. A platform-wide security block still applies everywhere.
+
+<SystemScreenshot src="/docs/screenshots/tenant-central-customer-access-en.jpg" alt="Tenant form locks central identity fields and allows local access controls." />
+
+New merchant-created customers must verify ownership through password recovery before choosing a password. The merchant cannot choose their password. Tenant customer identity imports are unavailable; authorized platform imports remain separate. Tenant lists, groups and exports use store relationships. Signup-origin statistics remain separate from customers acquired by later stores.
 
 ## Restrictions and decisions
 

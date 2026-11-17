@@ -47,7 +47,7 @@ flowchart TD
 | Marketing preferences | Separate global and per-tenant purposes | Global sign-in is not consent to every merchant's campaigns |
 | Global purchase overview, later | Authorized customer-only projection | Fetch only that person's linked relationships; no merchant cross-store access |
 
-Target one canonical centralized customer account with one credential/recovery lifecycle, plus optional tenant relationship records for store-specific attributes. Preserve legacy tenant-scoped `User` records during a staged migration and link their historical commerce safely. Do not create a new credential-bearing customer record for every store. Logical concepts are a central account, tenant relationship and verified legacy mapping; exact tables and JWT changes require a separate design review.
+The implemented central `User` holds credentials and immutable nullable signup attribution. Private `tenant_customers` relationships hold store access and default addresses. Existing commerce IDs remain unchanged; the migration rejects colliding identities before altering schema.
 
 ## Customer tenant_id means signup origin only
 
@@ -70,7 +70,7 @@ A tenant may see its own signup-attribution aggregates and its own customer rela
 
 - Derive tenant context from trusted routing/session infrastructure. Never trust a tenant ID supplied in a product, cart or checkout form.
 - Domain/subdomain routing must use an approved host-to-tenant mapping. Reject unknown or conflicting context; never silently fall back to a default store.
-- A centralized login must exchange or establish a tenant-bound customer session before private store operations. A global discovery session is not a tenant admin/vendor/customer authorization shortcut.
+- The customer JWT identifies the global account. Each private operation independently resolves and validates its storefront and local relationship. Signup origin is never authorization.
 - Wrong-tenant resource access remains 404. A legitimate in-scope record with insufficient action permission is a separate authorization decision.
 - Cache keys, search indexes, uploads, signed media links, exports, jobs, events and webhook delivery must preserve scope. A global customer ID alone is not a tenant cache key.
 - Keep SKU, slug and coupon uniqueness tenant-scoped. Global discovery uses its own stable references to the original tenant offer.
@@ -81,7 +81,7 @@ A tenant may see its own signup-attribution aggregates and its own customer rela
 ```mermaid
 flowchart LR
     I[Central customer account] --> L[Automatic internal tenant relationship]
-    L --> S[Tenant-bound customer session]
+    L --> S[Global identity token]
     S --> C[Cart in one tenant]
     C --> Q[Fresh prices and eligibility]
     Q --> F[Tenant invoice]

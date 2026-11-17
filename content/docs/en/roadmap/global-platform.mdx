@@ -5,6 +5,10 @@ description: "One customer account across shops, signup attribution, private ten
 
 > **Planning only.** Central identity is early foundation work. The global marketing and discovery website is a separate, later frontend.
 
+## Implemented identity boundary
+
+The global customer JWT identifies the person. Every private request validates its own trusted storefront and local relationship. Signup `tenant_id` is never a session scope. The same credentials work across stores; automatic browser SSO and the global discovery website remain later work. Address books and defaults currently remain store-private. Origin-store deletion sets signup attribution to null and preserves the account.
+
 ## One account, every tenant
 
 A customer who registers at tenant 1 can sign in at tenant 2 with the same verified identity and credentials. **There is no second registration.** An internal customer–tenant relationship is created automatically when needed, once per pair. The relationship records local status and preferences; it is not another password account.
@@ -41,7 +45,7 @@ Marketing permission is tenant- and purpose-specific. Visiting another shop does
 
 ## Sign-in across different storefront domains
 
-The design must support custom domains without assuming that one cookie works everywhere. Use an audited identity handoff with short-lived, audience-bound authorization codes, validated state/nonce and an explicit redirect allowlist. Exchange codes through the authorized flow; keep tokens and credentials out of URLs and documentation captures. Review session expiry, logout scope, revocation and recovery explicitly.
+Future automatic SSO across custom domains must avoid assuming that one cookie works everywhere. Use an audited identity handoff with short-lived, audience-bound authorization codes, validated state/nonce and an explicit redirect allowlist. Exchange codes through the authorized flow; keep tokens and credentials out of URLs and documentation captures. Review session expiry, logout scope, revocation and recovery explicitly.
 
 Central identity does not require silent authentication in every browser. A customer may see a login or consent screen because of session or browser policy, but uses the existing account rather than registering again. Customer identity does not merge platform-admin, tenant-admin or vendor-admin permissions.
 
