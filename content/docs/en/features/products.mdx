@@ -1,0 +1,57 @@
+---
+title: "Products, variants and publication"
+description: "The product describes an offer; its variants carry the purchasable SKU, price and stock identity. Publication controls whether the offer can be sold."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Create or open a product. Maintain translations, category, brand and images. Configure simple or variable options and active variants, check prices and stock, then use the available publish or submit-for-review action. Confirm visibility in the storefront.
+
+<SystemTour tour="feature-products" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="products" compact startAt={0} />
+
+</details>
+
+## Restrictions and decisions
+
+A visible product needs active publication and an active positively priced variant under the publication rules. Cart lines reference variants. Variant and image IDs must belong to the selected product. Vendors manage only their own tenant-workspace products.
+
+## Data flow and outcome
+
+Product + variants + images → publication → search/catalog → cart variant → immutable order item snapshot. Later catalog edits do not alter old purchase prices.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Product/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/products` |
+| [tenant](/en/roles/tenant) | `/products` |
+| [vendor](/en/roles/vendor) | `/products` |
+| [customer](/en/roles/customer) | `/product/:slug` |
+
+[Exact route, field and enum source trail](/en/evidence/products)
+{/* /SCREEN_MAP */}
+
+</details>

@@ -1,0 +1,145 @@
+---
+title: "Tenant operator handbook"
+description: "Prepare your store, manage catalog and orders, and review customer and financial operations."
+roles: ["TENANT"]
+---
+
+Your tenant login operates one store. Confirm the store name before working. There is no cross-tenant workspace selector here. Staff roles determine which menus and actions you see; a missing action can be a permission or record-state restriction.
+
+## Choose the task you need
+
+| Task | Open | Check first |
+|---|---|---|
+| Prepare the store | My store, Settings, payment methods and shipping | Check identity, allowed methods and delivery configuration. |
+| Prepare an offer | Catalog → Products, pricing and inventory | Product, variant, price, stock and publication are separate. |
+| Handle a purchase | Orders, Payments and Shipments | Choose only permitted transitions after reading the record. |
+| Resolve a return | Returns and Refunds | Physical receipt and financial refund are different. |
+| Promote or support the store | Marketing, CMS, feedback and Support | A banner does not activate a discount. |
+
+## Make the store ready to trade
+
+1. Review **My store**, branches and store settings for the correct identity and operational details.
+2. Check the offered currencies, tax inputs and enabled payment methods. Gateway credentials and the customer-facing method label serve different purposes.
+3. Configure delivery through the available zones, methods and rates; provider setup alone does not create a usable quote.
+4. Review vendor participation and staff roles before delegating work.
+
+Open the customer website to inspect the result. Storefront branding, maintenance and CMS content affect presentation, while stock, pricing and payment/delivery eligibility govern whether a purchase can proceed.
+
+<SystemTour tour="tenant-ready" compact />
+
+## Prepare the catalog and availability
+
+Use **Catalog → Products** with Categories, Brands and Attributes to describe the offer and its selectable variants. Confirm name, SKU, seller and publication state before making changes. The parent product describes the offer; the variant carries the purchasable identity.
+
+Review **Pricing** or price-list eligibility together with currency, quantity and buyer/group. Review inventory balances and their location or history separately. Available stock differs from physical and reserved stock. A saved draft or an active-looking price record does not by itself prove the item is published and buyable. Check the final product on the customer website.
+
+<SystemTour tour="tenant-catalog" compact />
+
+## Work through the order desk
+
+1. Open **Orders** and match the customer, seller, invoice and current order state. Customers place purchases; this screen manages the existing order rather than rewriting its original items.
+2. Inspect **Payments** for the actual money state. For a manual transfer, read the offered proof before approving or rejecting. Record COD collection only after collection happens.
+3. Open the order and choose an allowed status transition, cancellation or note according to your permissions and its current state.
+4. Follow **Shipments** for parcel progress and **Returns** for eligible post-delivery work.
+
+Payment success does not mean delivery. Return approval does not mean a refund is settled. For refunds, check the eligible amount, destination and recorded settlement state. If an action times out, read the record/history before repeating it.
+
+<SystemTour tour="tenant-orders" compact />
+
+## Grow the store and close the loop
+
+Use Coupons, Promotions and Flash sales for their actual eligibility, dates, quantity limits and reward rules. Banners and CMS direct attention; they do not create a discount. Loyalty programs require their applicable rule versions; gift cards and wallet credit have their own balances and restrictions.
+
+Review **Commissions**, **Settlements** and **Payouts** by vendor, period and currency. An approval is different from a real transfer. Follow disputed lines through the offered workflow instead of altering historical economics. Use **Support tickets**, Reviews and Questions for customer follow-up, and Reports/Audit logs/Webhooks for operational evidence. An active webhook registration does not prove delivery to the receiving system.
+
+<SystemTour tour="tenant-growth" compact />
+
+## When a record or action is missing
+
+Use Tenant admins and Tenant roles for staff. Users and User groups describe customers and commercial grouping, not staff access. If a screen is unavailable, confirm your permission and store context. Escalate with the affected record and time; never include gateway credentials, passwords or unnecessary payment documents.
+
+[Read capability steps and rules](/en/features)
+
+## Dashboard map
+
+[Open the dashboard](https://tenant-cart-join.mahmoud-khairy.com/auth/login)
+
+Demo screenshots captured 17 November 2026. Figures are illustrative, not production results.
+
+<details className="guide-technical-details">
+<summary>Screen paths for technical reference</summary>
+
+{/* ROUTE_MAP */}
+| Frontend path | Feature guide |
+|---|---|
+| `/auth` | [access](/en/features/access) |
+| `/dashboard` | [dashboards](/en/features/dashboards) |
+| `/my-store` | [tenants](/en/features/tenants) |
+| `/tenant-branches` | [tenants](/en/features/tenants) |
+| `/tenant-roles` | [team](/en/features/team) |
+| `/tenant-admins` | [team](/en/features/team) |
+| `/products` | [products](/en/features/products) |
+| `/attributes` | [attributes](/en/features/attributes) |
+| `/users` | [customers](/en/features/customers) |
+| `/orders` | [orders](/en/features/orders) |
+| `/returns` | [returns](/en/features/returns) |
+| `/payments` | [payments](/en/features/payments) |
+| `/payment-gateways` | [payments](/en/features/payments) |
+| `/refunds` | [refunds](/en/features/refunds) |
+| `/shipping-zones` | [shipping](/en/features/shipping) |
+| `/shipping-methods` | [shipping](/en/features/shipping) |
+| `/shipping-rates` | [shipping](/en/features/shipping) |
+| `/shipments` | [shipping](/en/features/shipping) |
+| `/shipping-providers` | [shipping-providers](/en/features/shipping-providers) |
+| `/coupons` | [coupons](/en/features/coupons) |
+| `/promotions` | [promotions](/en/features/promotions) |
+| `/flash-sales` | [flash-sales](/en/features/flash-sales) |
+| `/recommendations` | [search](/en/features/search) |
+| `/gift-cards` | [gift-cards](/en/features/gift-cards) |
+| `/loyalty` | [loyalty](/en/features/loyalty) |
+| `/commissions` | [commission](/en/features/commission) |
+| `/commission-rules` | [commission](/en/features/commission) |
+| `/reviews` | [reviews](/en/features/reviews) |
+| `/questions` | [reviews](/en/features/reviews) |
+| `/review-settings` | [reviews](/en/features/reviews) |
+| `/storefront` | [storefront](/en/features/storefront) |
+| `/seo` | [seo](/en/features/seo) |
+| `/cms/pages` | [cms](/en/features/cms) |
+| `/cms/content-blocks` | [cms](/en/features/cms) |
+| `/cms/navigation-menus` | [cms](/en/features/cms) |
+| `/faqs` | [support](/en/features/support) |
+| `/faq-categories` | [support](/en/features/support) |
+| `/settlements` | [settlements](/en/features/settlements) |
+| `/payouts` | [settlements](/en/features/settlements) |
+| `/settlement-settings` | [settlements](/en/features/settlements) |
+| `/commission-adjustments` | [commission](/en/features/commission) |
+| `/wallet` | [wallet](/en/features/wallet) |
+| `/gift-card-policies` | [gift-cards](/en/features/gift-cards) |
+| `/shipping-rate-quotes` | [shipping](/en/features/shipping) |
+| `/invoices` | [invoices](/en/features/invoices) |
+| `/tenant-vendors` | [vendors](/en/features/vendors) |
+| `/product-prices` | [pricing](/en/features/pricing) |
+| `/price-lists` | [pricing](/en/features/pricing) |
+| `/user-groups` | [customers](/en/features/customers) |
+| `/inventory` | [inventory](/en/features/inventory) |
+| `/categories` | [categories](/en/features/categories) |
+| `/brands` | [brands](/en/features/brands) |
+| `/taxes` | [tax-currency](/en/features/tax-currency) |
+| `/banners` | [banners](/en/features/banners) |
+| `/support-tickets` | [support](/en/features/support) |
+| `/webhooks` | [webhooks](/en/features/webhooks) |
+| `/audit-logs` | [audit](/en/features/audit) |
+| `/search-query-log` | [search](/en/features/search) |
+| `/notifications` | [notifications](/en/features/notifications) |
+| `/settings` | [settings](/en/features/settings) |
+| `/reports` | [reports](/en/features/reports) |
+| `/reference-data` | [settings](/en/features/settings) |
+| `/profile` | [access](/en/features/access) |
+| `/dev/style-guide` | Development-only visual reference |
+| `/forbidden` | Access error screen |
+| `/**` | Not-found fallback |
+{/* /ROUTE_MAP */}
+
+</details>
+
+See [shared restrictions](/en/business) and [troubleshooting](/en/troubleshooting).

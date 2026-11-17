@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Read the commission context
+Check the workspace. Match each commission to its order, rate, currency
+and status. A captured or settled commission is separate from the vendor
+receiving a payout.
+
+2
+00:00:12.000 --> 00:00:24.000
+Check the period statement
+Check the workspace. Check statement period, currency, net amount and
+status. Gross sales, commission deductions and paid net are not
+interchangeable figures.
+
+3
+00:00:24.000 --> 00:00:36.000
+Read the purchase document
+Check the workspace. Your total is the vendor share shown in this
+workspace. It can differ from the full purchase invoice paid by the
+customer.
+
+4
+00:00:36.000 --> 00:00:48.000
+Choose a generated report
+Check the workspace. Select the report, period and dates together. Not
+ready or not generated can mean no matching snapshot; do not interpret
+it as zero business activity.
+

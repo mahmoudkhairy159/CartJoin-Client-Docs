@@ -1,0 +1,57 @@
+---
+title: "Wishlist and saved products"
+description: "A wishlist helps a signed-in customer keep products for later without reserving stock or fixing a price."
+roles: ["CUSTOMER"]
+---
+
+
+## How to use it
+
+Sign in, use the Wishlist control on a product, and open Account → Wishlist. Reopen the product, choose an available variant, then add it to the cart when ready.
+
+<SystemTour tour="feature-wishlist" compact />
+
+## Restrictions and decisions
+
+Wishlist entries belong to the customer and tenant. Saved products can later become unavailable or change price. Saving is not checkout and creates no invoice.
+
+## Recognize the saved variant
+
+Saved cards can include the product name, link, vendor and an image that falls back from the variant to the product. The saved item is still a variant: recheck its availability and current price before adding it to the basket.
+
+## Keep the saved list up to date
+
+Opening Wishlist refreshes your saved variants from the server. Saving or removing a heart also re-fetches the list. Use the product link to inspect the exact item; Move to cart is offered for purchase preparation and Remove deletes the saved entry. Check the current price and availability before buying. A saved variant does not reserve stock, and a badge alone is not the full list.
+
+## Data flow and outcome
+
+Customer + product reference → saved list → fresh product check → optional cart line.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Wishlist/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [customer](/en/roles/customer) | `/account/wishlist` |
+
+Also reached from product wishlist controls and the customer account navigation.
+
+[Exact route, field and enum source trail](/en/evidence/wishlist)
+{/* /SCREEN_MAP */}
+
+</details>

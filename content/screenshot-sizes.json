@@ -1,0 +1,666 @@
+{
+  "admin-audit.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-dashboard.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-orders.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-roles.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-access.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-audit.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-banners.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-brands.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-categories.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-cms.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-commission.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-coupons.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-customers.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-dashboards.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-flash-sales.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-gift-cards.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-inventory.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-invoices.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-loyalty.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-notifications.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-orders.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-payments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-pricing.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-products.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-refunds.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-reports.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-returns.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-reviews.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-search.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-seo.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-settings.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-settlements.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-shipping-providers.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-shipping.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-storefront.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-support.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-tax-currency.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-team.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-tenants.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-vendors.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-screen-wallet.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-screen-webhooks.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-tenants.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "admin-webhooks.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "customer-account-overview.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-account.jpg": {
+    "width": 304,
+    "height": 383
+  },
+  "customer-gift-cards.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-home.jpg": {
+    "width": 304,
+    "height": 383
+  },
+  "customer-invoice-detail.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-invoices.jpg": {
+    "width": 304,
+    "height": 383
+  },
+  "customer-loyalty.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-access.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-brand-filter.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-brands.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-cart.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-checkout.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-cms.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-dashboards.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-faq-answer.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-flash-sales.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-gift-cards.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-help-centre.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-invoices.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-loyalty.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-notifications.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-orders.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-payments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-products.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-returns.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-reviews.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-search.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-shipping.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-storefront.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-support.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-tenants.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-vendor-detail.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-vendors.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-wallet.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-wishlist.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-wallet.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-wishlist.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-attributes.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-coupons.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-dashboard-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-dashboard.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-pricing.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-product-detail.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-products.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-promotions.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-return-detail.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-return-handling.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-returns.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-access.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-attributes.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-audit.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-banners.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-brands.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-categories.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-cms.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-commission.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-coupons.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-customers.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-dashboards.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-flash-sales.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-gift-cards.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-inventory.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-invoices.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-loyalty.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-notifications.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-orders.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-payment-method-form.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-payments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-pricing.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-products.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-promotion-form.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-promotions.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-reference-tags.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-refunds.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-reports.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-returns.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-reviews.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-search.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-seo.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-settings.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-settlements.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-shipping-providers.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-shipping.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-storefront.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-support.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-tax-currency.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-team.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-tenants.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-screen-vendors.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-wallet.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-screen-webhooks.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-stock-filters.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-stock-levels.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-stock-locations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-stock-movements.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-dashboard.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-profile.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-access.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-brands.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-categories.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-commission.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-dashboards.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-inventory.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-invoices.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-notifications.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-screen-orders.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-products.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-refunds.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-screen-reports.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-returns.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-screen-reviews.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-settings.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-settlements.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-screen-shipping.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-screen-support.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-tax-currency.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "vendor-screen-team.jpg": {
+    "width": 1265,
+    "height": 500
+  },
+  "vendor-screen-vendor-profile.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-screen-vendors.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-settings.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-staff.jpg": {
+    "width": 1265,
+    "height": 500
+  },
+  "vendor-workspace-terms.jpg": {
+    "width": 1265,
+    "height": 712
+  }
+}

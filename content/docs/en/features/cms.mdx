@@ -1,0 +1,49 @@
+---
+title: "CMS pages, content blocks and menus"
+description: "CMS content lets tenant operators maintain customer-facing information and navigation without changing the application code."
+roles: ["ADMIN", "CUSTOMER", "TENANT"]
+---
+
+
+## How to use it
+
+Use CMS → Pages, Content blocks and Navigation menus. Maintain translated content, review the destination and publication options, then verify the public page or menu in the storefront. Platform users use the available moderation surface.
+
+<SystemTour tour="feature-cms" compact />
+
+## Restrictions and decisions
+
+A saved draft is not necessarily published. Navigation visibility is not authorization. Avoid broken destinations and do not publish private operational information into a public content block.
+
+## Data flow and outcome
+
+Translated content + publication/menu configuration → storefront page and navigation rendering.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Cms/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/cms` |
+| [tenant](/en/roles/tenant) | `/cms/pages`, `/cms/content-blocks`, `/cms/navigation-menus` |
+| [customer](/en/roles/customer) | `/journal`, `/pages/:slug`, `/page/:slug` |
+
+[Exact route, field and enum source trail](/en/evidence/cms)
+{/* /SCREEN_MAP */}
+
+</details>

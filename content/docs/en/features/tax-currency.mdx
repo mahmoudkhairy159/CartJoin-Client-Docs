@@ -1,0 +1,49 @@
+---
+title: "Taxes, currencies and monetary interpretation"
+description: "Tax and currency configuration give monetary values their commercial meaning. Always read amounts together with their currency and applied tax context."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Operators review Taxes and permitted currency/reference settings before publishing prices. Inspect subtotal, discounts, tax, shipping, credit and remaining due separately. Customers review the selected currency and final invoice amounts before payment.
+
+<SystemTour tour="feature-tax-currency" compact />
+
+## Restrictions and decisions
+
+Do not add amounts in different currencies. A currency display choice does not establish that a gateway supports that currency. Money is calculated server-side with decimal arithmetic; do not recompute settlement or refund values from rounded screen labels.
+
+## Data flow and outcome
+
+Tenant currency/tax policy → price calculation → cart totals → immutable invoice/order tax and currency snapshots → finance reporting.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Tax/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/currencies`, `/taxes` |
+| [tenant](/en/roles/tenant) | `/taxes` |
+| [vendor](/en/roles/vendor) | `/taxes` |
+
+[Exact route, field and enum source trail](/en/evidence/tax-currency)
+{/* /SCREEN_MAP */}
+
+</details>

@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Read editable fields and platform-controlled values separately. A
+displayed setting does not by itself prove a related workflow is
+enabled.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Read editable fields and platform-controlled values separately. A
+displayed setting does not by itself prove a related workflow is
+enabled.
+
+3
+00:00:24.000 --> 00:00:36.000
+Read-only reference tags
+These platform-maintained tags are reference data. Only active tags are
+returned; the store cannot edit or retire them from this view.
+
+4
+00:00:36.000 --> 00:00:48.000
+Vendor workspace
+Read editable fields and platform-controlled values separately. A
+displayed setting does not by itself prove a related workflow is
+enabled.
+

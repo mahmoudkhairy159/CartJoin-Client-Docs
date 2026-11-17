@@ -1,0 +1,20 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Read title, slug, publication state and date. Saving a draft does not
+make a page visible to customers.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Read title, slug, publication state and date. Saving a draft does not
+make a page visible to customers.
+
+3
+00:00:24.000 --> 00:00:36.000
+Customer
+The Journal presents storefront stories. Published editorial content is
+separate from purchase terms, invoice state and order tracking.
+

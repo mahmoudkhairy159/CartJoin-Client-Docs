@@ -1,0 +1,29 @@
+---
+title: "Source evidence: flash-sales"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/FlashSale/routes/admin-api.php`
+- `Modules/FlashSale/routes/tenant-api.php`
+- `Modules/FlashSale/routes/user-api.php`
+- `Modules/FlashSale/routes/vendor-api.php`
+- `Modules/FlashSale/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/FlashSale/App/Http/Requests/Tenant/FlashSaleProduct/StoreFlashSaleProductRequest.php`: `variant_id`, `sale_price`, `stock_limit`, `is_active`
+
+## Enum values in source
+
+- `Modules/FlashSale/App/Enums/FlashSaleStatus.php`: `DRAFT = 1`, `ACTIVE = 2`, `ENDED = 3`, `CANCELLED = 4`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/flash-sales)

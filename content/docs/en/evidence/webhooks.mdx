@@ -1,0 +1,34 @@
+---
+title: "Source evidence: webhooks"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Webhook/routes/admin-api.php`
+- `Modules/Webhook/routes/tenant-api.php`
+- `Modules/Webhook/routes/user-api.php`
+- `Modules/Webhook/routes/vendor-api.php`
+- `Modules/Webhook/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Webhook/App/Http/Requests/Admin/Webhook/BlockWebhookRequest.php`: `reason`, `tenant_id`, `errors`, `message`, `statusCode`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/RotateWebhookSecretRequest.php`: `tenant_id`, `secret`, `errors`, `message`, `statusCode`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/StoreWebhookRequest.php`: `tenant_id`, `url`, `events`, `events.*`, `is_active`, `secret`, `blocked_at`, `failure_started_at`, `errors`, `message`, `statusCode`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/TestWebhookRequest.php`: `tenant_id`, `errors`, `message`, `statusCode`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/UpdateWebhookRequest.php`: `tenant_id`, `url`, `events`, `events.*`, `is_active`, `secret`, `blocked_at`, `failure_started_at`, `errors`, `message`, `statusCode`
+
+## Enum values in source
+
+- `Modules/Webhook/App/Enums/TenantWebhookDeliveryStatus.php`: `PENDING = 1`, `DELIVERED = 2`, `FAILED = 3`, `EXHAUSTED = 4`, `CANCELLED = 5`
+- `Modules/Webhook/App/Enums/WebhookAttemptTrigger.php`: `AUTOMATIC = 1`, `MANUAL = 2`, `TEST = 3`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/webhooks)

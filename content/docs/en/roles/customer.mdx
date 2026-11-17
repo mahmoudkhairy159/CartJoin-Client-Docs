@@ -1,0 +1,134 @@
+---
+title: "Customer and account handbook"
+description: "Shop, save, check out, track purchases and manage your account using the customer website."
+roles: ["CUSTOMER"]
+---
+
+## Start with what you want to do
+
+| I want to… | Open on the website | What to check |
+|---|---|---|
+| Find something to buy | Shop, Brands or Vendors | Exact variant, seller and current availability |
+| Keep an item for later | Wishlist | Saving does not reserve stock or a price |
+| Check the amount to pay | Cart → Checkout | Adjustments, delivery and final currency |
+| Follow a purchase | Account → Invoices & orders | Invoice, seller order, payment and parcel separately |
+| Use credit or points | Wallet, Loyalty points or Gift cards | Available value and eligibility in this store/currency |
+| Ask for help | Help centre or Support tickets | Relevant invoice/order number and a clear description |
+
+## Find the right item
+
+1. Open **Shop** to browse the catalog or use **Search** in the header.
+2. Use **Brands** when you know the product label. Available A–Z letters narrow the loaded list; select the letter again or clear it to reset. A brand tile opens matching Shop results.
+3. Use **Vendors** when you want a particular seller. Search by name, then open its page for the description, public addresses and products.
+4. Open the product and choose its exact size, color or other variant. Read its price and availability before adding it. Flash-sale prices can apply to one specific variant and a limited allocation.
+
+You can browse Shop, Brands, Vendors and Help centre as a guest. Sign in when you want to save an item, use the basket, buy or open your account. A brand is the label; the vendor is the seller. Items from different vendors may arrive separately.
+
+<SystemTour tour="customer-discover" compact />
+
+## Save for later or prepare your basket
+
+Use the heart to save a variant, then open **Account → Wishlist**. The page now refreshes the saved list from the server when you arrive, and saving/removing an item refreshes it again. Open the product to inspect it, use **Move to cart** when ready, or **Remove** to stop saving it. Wishlist and basket are separate lists.
+
+**Cart** also refreshes when opened. Check each seller group, exact variant and quantity. Read the adjustments actually applied in the summary: a typed coupon or gift-card code is not applied until the system accepts it. Wallet and points controls appear only when eligible value is available. Prices, stock and eligible discounts can change before checkout.
+
+## Complete the four checkout sections
+
+| Section | What you do | Before continuing |
+|---|---|---|
+| Address | Select an address or enter the delivery details | Confirm recipient, contact and country/state/city |
+| Delivery | Choose an available delivery option | Check the quoted charge and estimate |
+| Payment | Choose one of the offered methods | Know whether it requires a redirect, proof or collection on delivery |
+| Review | Recheck the full purchase and the displayed terms | Confirm items, addresses, seller split, currency and final total |
+
+Read the displayed terms before agreeing and placing your order. Submit once. If a validation message appears, correct the indicated fields. If the connection times out after submission, check your invoices and payments before trying again.
+
+<SystemTour tour="customer-buy" compact />
+
+## Understand what happened after checkout
+
+One checkout can create **one invoice and several seller orders**. Open **Account → Invoices & orders**, then the invoice detail. Match the invoice number before checking the individual order and parcel timelines. Use the tracking link offered by the website; the same purchase can have several delivery states.
+
+- **Online payment:** returning from a provider does not prove successful payment. Check the recorded state.
+- **Bank transfer:** follow the proof-upload instructions when offered and wait for review. Uploading proof is not approval.
+- **Cash on delivery:** ordering does not mean the money has already been collected.
+
+Cancellation and return actions depend on the purchase state and store rules. Use only an action offered for the relevant order or eligible line. A return request, approval, physical receipt, inspection and financial refund are separate events. Contact support if the expected option is missing.
+
+<SystemTour tour="customer-aftercare" compact />
+
+## Use your money and rewards areas
+
+| Area | What it means | What it does not mean |
+|---|---|---|
+| Wallet | Store credit, ledger entries, held and available value | The total is not necessarily all spendable |
+| Loyalty points | Points and their earning/redemption history | A point count is not a cash balance |
+| Gift cards | Claimable or redeemable value under the store’s policy | Typing a code does not guarantee acceptance |
+| Payments | Recorded attempts, amounts and states | A pending attempt is not a settled refund or payment |
+
+Read the currency and available amount before using value at checkout. A balance in one store or currency is not automatically usable in another. Check the cart summary after applying credit or points. A pending refund has not necessarily reached its destination.
+
+<SystemTour tour="customer-money" compact />
+
+## Keep your account useful
+
+Open **Profile & addresses** for your name, contact details, preferences and address book. When editing an address, choose the country, state and city in order and check the street and recipient. Save and review the result before using it for a new purchase. Previously issued purchase records retain their own recorded details.
+
+Use **My reviews** to follow your submitted feedback, **Notifications** for messages addressed to your account and **Support tickets** for an ongoing conversation. An empty inbox is not proof that a purchase does not exist.
+
+## Get help without starting the wrong action
+
+Open **Help centre** in the footer. Choose a category and expand a question; you can read answers without signing in. If the answer is insufficient, choose **Open a ticket**, sign in and describe the issue with its invoice/order number. A support message alone does not cancel a purchase or issue a refund.
+
+<SystemScreenshot src="/docs/screenshots/customer-screen-help-centre.jpg" alt="Customer Help centre: choose a category, read an answer, then open a support ticket if needed." />
+
+Do not send passwords, card secrets or unrelated personal documents. If you cannot tell whether an action succeeded, read the relevant history first. See [checkout rules](/en/features/checkout), [returns](/en/features/returns), [payments](/en/features/payments) and [support](/en/features/support) for more detail.
+
+## Storefront map
+
+
+[Open the dashboard](https://cart-join.mahmoud-khairy.com/)
+
+Demo account captured 17 November 2026. Values are illustrative, not production business results.
+
+<details className="guide-technical-details">
+<summary>Screen paths for technical reference</summary>
+
+{/* ROUTE_MAP */}
+| Frontend path | Feature guide |
+|---|---|
+| `/auth` | [access](/en/features/access) |
+| `/shop` | [search](/en/features/search) |
+| `/product/:slug` | [products](/en/features/products) |
+| `/vendor` | [vendors](/en/features/vendors) |
+| `/brands` | [brands](/en/features/brands) |
+| `/flash` | [flash-sales](/en/features/flash-sales) |
+| `/branches` | [tenants](/en/features/tenants) |
+| `/faqs` | [support](/en/features/support) |
+| `/journal` | [cms](/en/features/cms) |
+| `/pages/:slug` | [cms](/en/features/cms) |
+| `/page/:slug` | [cms](/en/features/cms) |
+| `/cart` | [cart](/en/features/cart) |
+| `/checkout` | [checkout](/en/features/checkout) |
+| `/account` | [dashboards](/en/features/dashboards) |
+| `/track/:orderNo` | [shipping](/en/features/shipping) |
+| `/maintenance` | [storefront](/en/features/storefront) |
+| `/**` | Not-found fallback |
+| `/account/orders` | [orders](/en/features/orders) |
+| `/account/invoices/:id` | [invoices](/en/features/invoices) |
+| `/account/returns` | [returns](/en/features/returns) |
+| `/account/returns/:id` | [returns](/en/features/returns) |
+| `/account/wishlist` | [wishlist](/en/features/wishlist) |
+| `/account/reviews` | [reviews](/en/features/reviews) |
+| `/account/wallet` | [wallet](/en/features/wallet) |
+| `/account/loyalty` | [loyalty](/en/features/loyalty) |
+| `/account/gift-cards` | [gift-cards](/en/features/gift-cards) |
+| `/account/payments` | [payments](/en/features/payments) |
+| `/account/profile` | [access](/en/features/access) |
+| `/account/notifications` | [notifications](/en/features/notifications) |
+| `/account/support` | [support](/en/features/support) |
+{/* /ROUTE_MAP */}
+
+</details>
+
+See [shared restrictions](/en/business) and [troubleshooting](/en/troubleshooting).

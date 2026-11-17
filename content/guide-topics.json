@@ -1,0 +1,102 @@
+[
+  {
+    "title": {
+      "en": "Account and business",
+      "ar": "الحساب والنشاط"
+    },
+    "features": [
+      "access",
+      "team",
+      "tenants",
+      "vendors",
+      "vendor-profile",
+      "customers"
+    ]
+  },
+  {
+    "title": {
+      "en": "Catalog and stock",
+      "ar": "الكتالوج والمخزون"
+    },
+    "features": [
+      "categories",
+      "brands",
+      "products",
+      "attributes",
+      "pricing",
+      "inventory",
+      "search",
+      "wishlist"
+    ]
+  },
+  {
+    "title": {
+      "en": "Orders and delivery",
+      "ar": "الطلبات والتوصيل"
+    },
+    "features": [
+      "cart",
+      "checkout",
+      "orders",
+      "invoices",
+      "payments",
+      "refunds",
+      "returns",
+      "shipping",
+      "shipping-providers"
+    ]
+  },
+  {
+    "title": {
+      "en": "Offers and rewards",
+      "ar": "العروض والمكافآت"
+    },
+    "features": [
+      "coupons",
+      "promotions",
+      "flash-sales",
+      "gift-cards",
+      "loyalty",
+      "wallet"
+    ]
+  },
+  {
+    "title": {
+      "en": "Finance",
+      "ar": "المالية"
+    },
+    "features": [
+      "commission",
+      "settlements",
+      "tax-currency"
+    ]
+  },
+  {
+    "title": {
+      "en": "Storefront and content",
+      "ar": "واجهة التسوق والمحتوى"
+    },
+    "features": [
+      "cms",
+      "banners",
+      "storefront",
+      "seo",
+      "reviews"
+    ]
+  },
+  {
+    "title": {
+      "en": "Operations and support",
+      "ar": "التشغيل والدعم"
+    },
+    "features": [
+      "support",
+      "notifications",
+      "dashboards",
+      "reports",
+      "audit",
+      "webhooks",
+      "settings"
+    ]
+  }
+]

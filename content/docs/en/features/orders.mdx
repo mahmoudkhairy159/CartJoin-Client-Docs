@@ -1,0 +1,61 @@
+---
+title: "Orders and fulfillment decisions"
+description: "An order is a vendor-specific operational unit with frozen items, addresses and financial values, plus a recorded status timeline."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open Orders, filter by the available status or ownership fields, and open the detail. Inspect items, payment state and history. Tenant operators use allowed status changes and notes. Vendors advance their own fulfillment only through offered transitions.
+
+<SystemTour tour="feature-orders" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="orders" compact startAt={0} />
+
+</details>
+
+## Restrictions and decisions
+
+Platform order screens are oversight only. Normal progress is pending → confirmed → processing → shipped → delivered. Vendors cannot cancel from processing; tenant operators have a wider cancellation rule. A status is not a free-form field and a refund is not a total edit.
+
+## Item snapshots and order notes
+
+New checkout snapshots use the variant picture, then the product picture when needed. Historical orders retain their saved item identity and amounts. Platform order detail separates the notes history from the older single note field, so use the recorded note entries when following a discussion.
+
+## Data flow and outcome
+
+Invoice → vendor order → status history and notes → shipment/delivery → downstream commission, loyalty or return effects. Order and payment status are separate facts.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Order/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/orders` |
+| [tenant](/en/roles/tenant) | `/orders` |
+| [vendor](/en/roles/vendor) | `/orders` |
+| [customer](/en/roles/customer) | `/account/orders` |
+
+[Exact route, field and enum source trail](/en/evidence/orders)
+{/* /SCREEN_MAP */}
+
+</details>

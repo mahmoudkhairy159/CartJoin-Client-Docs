@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Match the event, time, affected record and actor. Use the tenant scope
+before investigating a record; a log entry is evidence of that event
+only.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Match the event, time, affected record and actor. Use the tenant scope
+before investigating a record; a log entry is evidence of that event
+only.
+

@@ -1,0 +1,53 @@
+---
+title: "Source evidence: commission"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Commission/routes/admin-api.php`
+- `Modules/Commission/routes/tenant-api.php`
+- `Modules/Commission/routes/vendor-api.php`
+- `Modules/Commission/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Commission | `admin-api.php` | GET | `commissions` | `index` |
+| Commission | `admin-api.php` | GET | `commissions/reports` | `reports` |
+| Commission | `admin-api.php` | GET | `commissions/list-dropdown` | `listDropdown` |
+| Commission | `admin-api.php` | GET | `commissions/{commission}` | `show` |
+| Commission | `admin-api.php` | GET | `commission-adjustments` | `index` |
+| Commission | `admin-api.php` | POST | `commission-adjustments` | `store` |
+| Commission | `tenant-api.php` | POST | `commission-rules/{rule}/activate` | `activate` |
+| Commission | `tenant-api.php` | POST | `commission-rules/{rule}/deactivate` | `deactivate` |
+| Commission | `tenant-api.php` | GET | `commissions` | `index` |
+| Commission | `tenant-api.php` | GET | `commissions/preview` | `preview` |
+| Commission | `tenant-api.php` | POST | `commissions/capture` | `capture` |
+| Commission | `tenant-api.php` | POST | `commissions/export` | `export` |
+| Commission | `tenant-api.php` | GET | `commissions/{commission}` | `show` |
+| Commission | `tenant-api.php` | GET | `commission-adjustments` | `index` |
+| Commission | `tenant-api.php` | POST | `commission-adjustments` | `store` |
+| Commission | `vendor-api.php` | GET | `commissions` | `index` |
+| Commission | `vendor-api.php` | GET | `commissions/{commission}` | `show` |
+| Commission | `vendor-api.php` | GET | `commission-adjustments` | `index` |
+
+## Form-request field names
+
+- `Modules/Commission/App/Http/Requests/Admin/CommissionAdjustment/StoreCommissionAdjustmentRequest.php`: `tenant_id`, `vendor_id`, `currency_id`, `amount`, `type`, `reason`, `order_id`, `order_item_id`, `order_item_commission_id`, `metadata`, `metadata.idempotency_key`
+- `Modules/Commission/App/Http/Requests/Tenant/CommissionAdjustment/StoreCommissionAdjustmentRequest.php`: `vendor_id`, `currency_id`, `amount`, `type`, `reason`, `order_id`, `order_item_id`, `order_item_commission_id`, `metadata`
+- `Modules/Commission/App/Http/Requests/Tenant/CommissionRule/StoreCommissionRuleRequest.php`: `vendor_id`, `product_id`, `category_id`, `type`, `value`, `priority`, `status`, `model`
+- `Modules/Commission/App/Http/Requests/Tenant/CommissionRule/UpdateCommissionRuleRequest.php`: `vendor_id`, `product_id`, `category_id`, `type`, `value`, `priority`, `status`, `model`
+
+## Enum values in source
+
+- `Modules/Commission/App/Enums/CommissionAdjustmentType.php`: `REFUND = 1`, `RETURN = 2`, `CORRECTION = 3`, `GOODWILL = 4`, `MANUAL = 5`
+- `Modules/Commission/App/Enums/CommissionResolutionSource.php`: `PRODUCT_RULE = 'product_rule'`, `CATEGORY_RULE = 'category_rule'`, `VENDOR_RULE = 'vendor_rule'`, `TENANT_RULE = 'tenant_rule'`, `VENDOR_CONTRACT = 'vendor_contract'`, `PLATFORM_DEFAULT = 'platform_default'`, `CONFIG_DEFAULT = 'config_default'`
+- `Modules/Commission/App/Enums/CommissionRuleScope.php`: `TENANT = 'tenant'`, `VENDOR = 'vendor'`, `CATEGORY = 'category'`, `PRODUCT = 'product'`
+- `Modules/Commission/App/Enums/CommissionRuleStatus.php`: `ACTIVE = 'active'`, `INACTIVE = 'inactive'`
+- `Modules/Commission/App/Enums/CommissionRuleType.php`: `PERCENTAGE = 'percentage'`, `FIXED = 'fixed'`
+- `Modules/Commission/App/Enums/CommissionStatus.php`: `PENDING = 1`, `AVAILABLE = 2`, `SETTLED = 3`, `REVERSED = 4`
+- `Modules/Commission/App/Enums/TaxTreatment.php`: `EXCLUSIVE = 'exclusive'`, `INCLUSIVE = 'inclusive'`, `INHERIT = 'inherit'`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/commission)

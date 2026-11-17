@@ -1,0 +1,44 @@
+---
+title: "أدلة المصدر: cart"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Cart/routes/admin-api.php`
+- `Modules/Cart/routes/tenant-api.php`
+- `Modules/Cart/routes/user-api.php`
+- `Modules/Cart/routes/vendor-api.php`
+- `Modules/Cart/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Cart | `user-api.php` | GET | `cart` | `index` |
+| Cart | `user-api.php` | POST | `cart/coupon` | `applyCoupon` |
+| Cart | `user-api.php` | DELETE | `cart/coupon` | `removeCoupon` |
+| Cart | `user-api.php` | POST | `cart/shipping-estimate` | `shippingEstimate` |
+| Cart | `user-api.php` | POST | `cart/gift-cards` | `applyGiftCard` |
+| Cart | `user-api.php` | DELETE | `cart/gift-cards/{applicationId}` | `removeGiftCard` |
+| Cart | `user-api.php` | POST | `cart/loyalty-redemption/preview` | `previewLoyalty` |
+| Cart | `user-api.php` | PUT | `cart/loyalty-redemption` | `applyLoyalty` |
+| Cart | `user-api.php` | DELETE | `cart/loyalty-redemption` | `removeLoyalty` |
+| Cart | `user-api.php` | POST | `cart/items` | `store` |
+| Cart | `user-api.php` | PUT | `cart/items/{itemId}` | `update` |
+| Cart | `user-api.php` | DELETE | `cart/items/{itemId}` | `destroy` |
+
+## حقول النماذج
+
+- `Modules/Cart/App/Http/Requests/User/Cart/ApplyCouponRequest.php`: `code`
+- `Modules/Cart/App/Http/Requests/User/Cart/ApplyGiftCardRequest.php`: `code`, `requested_amount`, `errors`, `message`, `statusCode`
+- `Modules/Cart/App/Http/Requests/User/Cart/ApplyLoyaltyRedemptionRequest.php`: `points_requested`, `idempotency_key`, `policy_checksum`, `errors`, `message`, `statusCode`
+- `Modules/Cart/App/Http/Requests/User/Cart/PreviewLoyaltyRedemptionRequest.php`: `points_requested`, `errors`, `message`, `statusCode`
+- `Modules/Cart/App/Http/Requests/User/Cart/ShippingEstimateRequest.php`: `address`, `address.country`, `address.region`, `address.city`, `address.postal_code`
+- `Modules/Cart/App/Http/Requests/User/Cart/StoreCartItemRequest.php`: `variant_id`, `quantity`
+- `Modules/Cart/App/Http/Requests/User/Cart/UpdateCartItemRequest.php`: `quantity`
+
+## قيم الحالات من المصدر
+
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/cart)

@@ -1,0 +1,73 @@
+---
+title: "Source evidence: settlements"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/SettlementPayout/routes/admin-api.php`
+- `Modules/SettlementPayout/routes/tenant-api.php`
+- `Modules/SettlementPayout/routes/vendor-api.php`
+- `Modules/SettlementPayout/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| SettlementPayout | `admin-api.php` | GET | `settlements/{settlement}` | `show` |
+| SettlementPayout | `admin-api.php` | GET | `settlements/{settlement}/lines` | `lines` |
+| SettlementPayout | `admin-api.php` | GET | `settlements` | `index` |
+| SettlementPayout | `admin-api.php` | GET | `payouts` | `index` |
+| SettlementPayout | `admin-api.php` | POST | `payouts/{payout}/hold` | `hold` |
+| SettlementPayout | `admin-api.php` | POST | `payouts/{payout}/release` | `release` |
+| SettlementPayout | `tenant-api.php` | GET | `settlement-settings` | `index` |
+| SettlementPayout | `tenant-api.php` | GET | `settlement-settings/{vendorId}` | `show` |
+| SettlementPayout | `tenant-api.php` | PUT | `settlement-settings` | `upsert` |
+| SettlementPayout | `tenant-api.php` | GET | `settlements` | `index` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/generate` | `generate` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/export` | `export` |
+| SettlementPayout | `tenant-api.php` | GET | `settlements/{settlement}` | `show` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/approve` | `approve` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/dispute` | `dispute` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/resolve-dispute` | `resolveDispute` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/adjust` | `adjust` |
+| SettlementPayout | `tenant-api.php` | GET | `payouts` | `index` |
+| SettlementPayout | `tenant-api.php` | GET | `payouts/{payout}` | `show` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/process` | `markProcessing` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/paid` | `recordPaid` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/fail` | `fail` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/retry` | `retry` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/hold` | `hold` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/release` | `release` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/cancel` | `cancel` |
+| SettlementPayout | `vendor-api.php` | GET | `settlements` | `index` |
+| SettlementPayout | `vendor-api.php` | POST | `settlements/export` | `export` |
+| SettlementPayout | `vendor-api.php` | GET | `settlements/{settlement}` | `show` |
+| SettlementPayout | `vendor-api.php` | GET | `payouts` | `index` |
+| SettlementPayout | `vendor-api.php` | GET | `payouts/{payout}` | `show` |
+
+## Form-request field names
+
+- `Modules/SettlementPayout/App/Http/Requests/Admin/Payout/HoldPayoutRequest.php`: `reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/CancelPayoutRequest.php`: `reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/FailPayoutRequest.php`: `failure_code`, `failure_reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/HoldPayoutRequest.php`: `reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/RecordPaidPayoutRequest.php`: `provider`, `transfer_reference`, `transferred_at`, `proof_reference`, `note`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/AdjustSettlementRequest.php`: `vendor_id`, `currency_id`, `amount`, `reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/ApproveSettlementRequest.php`: `vendor_payout_account_id`, `note`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/DisputeSettlementRequest.php`: `reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/ExportSettlementRequest.php`: `vendor_id`, `currency_id`, `from`, `to`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/GenerateSettlementRequest.php`: `vendor_id`, `currency_id`, `from`, `to`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/SettlementSetting/UpsertSettlementSettingRequest.php`: `vendor_id`, `currency_id`, `cadence`, `timezone`, `closing_day`, `payout_delay_days`, `minimum_payout_amount`, `is_enabled`
+- `Modules/SettlementPayout/App/Http/Requests/Vendor/Settlement/ExportSettlementRequest.php`: `currency_id`, `from`, `to`
+
+## Enum values in source
+
+- `Modules/SettlementPayout/App/Enums/PayoutEventProcessingStatus.php`: `PROCESSED = 1`, `IGNORED = 2`, `FAILED = 3`
+- `Modules/SettlementPayout/App/Enums/PayoutEventType.php`: `CREATED = 1`, `PROCESSING = 2`, `HELD = 3`, `RELEASED = 4`, `PAID = 5`, `FAILED = 6`, `RETRIED = 7`, `CANCELLED = 8`
+- `Modules/SettlementPayout/App/Enums/PayoutStatus.php`: `PENDING = 1`, `PROCESSING = 2`, `HELD = 3`, `PAID = 4`, `FAILED = 5`, `CANCELLED = 6`
+- `Modules/SettlementPayout/App/Enums/SettlementCadence.php`: `WEEKLY = 1`, `BIWEEKLY = 2`, `MONTHLY = 3`, `MANUAL = 4`
+- `Modules/SettlementPayout/App/Enums/SettlementLineType.php`: `SALE = 1`, `COMMISSION = 2`, `REFUND = 3`, `RETURN = 4`, `CHARGEBACK = 5`, `FEE = 6`, `MANUAL_ADJUSTMENT = 7`, `CARRY_FORWARD = 8`
+- `Modules/SettlementPayout/App/Enums/SettlementStatus.php`: `GENERATING = 1`, `CLOSED = 2`, `APPROVED = 3`, `PAYOUT_PENDING = 4`, `PAID = 5`, `DISPUTED = 6`, `FAILED = 7`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/settlements)

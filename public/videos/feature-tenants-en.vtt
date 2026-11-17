@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Confirm the tenant identity or store code before reviewing records.
+Branches belong to their store; they are not separate vendor workspaces.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Confirm the tenant identity or store code before reviewing records.
+Branches belong to their store; they are not separate vendor workspaces.
+
+3
+00:00:24.000 --> 00:00:36.000
+Customer
+Branches lists pickup locations. This demo currently renders some
+address text incorrectly; confirm pickup details with the store before
+relying on the address.
+

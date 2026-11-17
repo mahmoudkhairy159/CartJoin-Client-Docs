@@ -1,0 +1,57 @@
+---
+title: "Dashboard metrics and daily triage"
+description: "Dashboards summarize activity and waiting work for the signed-in actor’s scope; they are an entry point to operational records."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Select Today, 7 days or 30 days where offered. Check the generated/updated time and use Refresh when needed. Follow attention links to failed payments, pending approvals, open orders or low stock, then inspect the records before acting.
+
+<SystemTour tour="feature-dashboards" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="tenant" compact startAt={0} />
+
+</details>
+
+## Restrictions and decisions
+
+Period metrics and current snapshots may appear together. Zero activity in the selected period does not mean there are no historical orders. The admin dashboard can span tenants; the vendor dashboard remains tied to its active workspace.
+
+## Data flow and outcome
+
+Scoped transaction data → cached/generated aggregates → cards/charts → filtered operational detail. Always reconcile financial decisions with the underlying ledger.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Dashboard/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/dashboard` |
+| [tenant](/en/roles/tenant) | `/dashboard` |
+| [vendor](/en/roles/vendor) | `/dashboard` |
+| [customer](/en/roles/customer) | `/account` |
+
+[Exact route, field and enum source trail](/en/evidence/dashboards)
+{/* /SCREEN_MAP */}
+
+</details>

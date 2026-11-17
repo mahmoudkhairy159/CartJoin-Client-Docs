@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Confirm the store identity
+Confirm the tenant identity or store code before reviewing records.
+Branches belong to their store; they are not separate vendor workspaces.
+
+2
+00:00:12.000 --> 00:00:24.000
+Check configuration boundaries
+Read editable fields and platform-controlled values separately. A
+displayed setting does not by itself prove a related workflow is
+enabled.
+
+3
+00:00:24.000 --> 00:00:36.000
+Separate method label and credentials
+Provider, customer label and display order are separate fields.
+Credentials are write-only and replaceable; this blank form was not
+saved.
+
+4
+00:00:36.000 --> 00:00:48.000
+Inspect delivery configuration or parcels
+Match the order, carrier, tracking reference and recorded events. A
+missing carrier or arrival time needs follow-up; it is not delivery
+confirmation.
+

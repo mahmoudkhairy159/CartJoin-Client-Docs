@@ -1,0 +1,134 @@
+{
+  "admin-priority": [
+    "Read the platform overview",
+    "اقرأ ملخص المنصة",
+    "admin",
+    [
+      "dashboards",
+      "reports",
+      "notifications",
+      "audit"
+    ]
+  ],
+  "admin-partners": [
+    "Review marketplace participation",
+    "راجع المشاركة في السوق",
+    "admin",
+    [
+      "tenants",
+      "vendors",
+      "products",
+      "team"
+    ]
+  ],
+  "admin-purchase": [
+    "Trace a purchase across records",
+    "تتبع الشراء عبر السجلات",
+    "admin",
+    [
+      "orders",
+      "invoices",
+      "payments",
+      "returns"
+    ]
+  ],
+  "admin-control": [
+    "Read finance and platform controls",
+    "اقرأ المال وضوابط المنصة",
+    "admin",
+    [
+      "commission",
+      "settlements",
+      "wallet",
+      "settings"
+    ]
+  ],
+  "tenant-ready": [
+    "Prepare the store configuration",
+    "جهز إعدادات المتجر",
+    "tenant",
+    [
+      "tenants",
+      "settings",
+      "payments",
+      "shipping"
+    ]
+  ],
+  "tenant-catalog": [
+    "Check the sellable offer",
+    "راجع العرض القابل للبيع",
+    "tenant",
+    [
+      "products",
+      "pricing",
+      "inventory",
+      "vendors"
+    ]
+  ],
+  "tenant-orders": [
+    "Work through the order desk",
+    "نفذ مهام الطلبات",
+    "tenant",
+    [
+      "orders",
+      "payments",
+      "shipping",
+      "returns"
+    ]
+  ],
+  "tenant-growth": [
+    "Connect marketing, service and finance",
+    "اربط التسويق والخدمة والمال",
+    "tenant",
+    [
+      "promotions",
+      "cms",
+      "settlements",
+      "support"
+    ]
+  ],
+  "vendor-workspace": [
+    "Check your workspace and identity",
+    "تحقق من مساحتك وهويتك",
+    "vendor",
+    [
+      "dashboards",
+      "vendors",
+      "vendor-profile",
+      "team"
+    ]
+  ],
+  "vendor-offers": [
+    "Prepare your offer and stock",
+    "جهز عرضك ومخزونك",
+    "vendor",
+    [
+      "products",
+      "inventory",
+      "categories",
+      "settings"
+    ]
+  ],
+  "vendor-fulfillment": [
+    "Follow your seller order",
+    "تابع طلبك كبائع",
+    "vendor",
+    [
+      "orders",
+      "shipping",
+      "returns",
+      "refunds"
+    ]
+  ],
+  "vendor-earnings": [
+    "Trace vendor earnings",
+    "تتبع مستحقات البائع",
+    "vendor",
+    [
+      "commission",
+      "settlements",
+      "invoices",
+      "reports"
+    ]
+  ]
+}

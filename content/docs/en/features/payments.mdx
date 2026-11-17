@@ -1,0 +1,56 @@
+---
+title: "Payments, proof and manual confirmation"
+description: "Payments track what the buyer owes and what has actually been captured against an invoice. Online and manual gateways have different confirmation steps."
+roles: ["ADMIN", "CUSTOMER", "TENANT"]
+---
+
+
+## How to use it
+
+Customers choose an enabled payment method at checkout. For bank transfer, use the payment proof upload and wait for review. Tenant operators inspect Payments and evidence before approving or rejecting. For COD, record collection only after collection occurred.
+
+<SystemTour tour="feature-payments" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="customer" compact startAt={2} />
+
+</details>
+
+## Restrictions and decisions
+
+Online payment success requires a verified provider webhook, never the browser return alone. Bank transfer needs proof and pending approval; rejection returns to awaiting confirmation. COD skips proof. The chosen inactive/unsupported gateway is rejected rather than silently replaced.
+
+## Data flow and outcome
+
+Invoice amount → payment intent → provider verification or named manual approver → payment status → invoice and child-order payment projections. Proof files remain protected.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Payment/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/payments` |
+| [tenant](/en/roles/tenant) | `/payments`, `/payment-gateways` |
+| [customer](/en/roles/customer) | `/account/payments` |
+
+[Exact route, field and enum source trail](/en/evidence/payments)
+{/* /SCREEN_MAP */}
+
+</details>

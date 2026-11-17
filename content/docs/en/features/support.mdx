@@ -1,0 +1,54 @@
+---
+title: "Support tickets and FAQs"
+description: "Support tickets preserve a conversation and evidence about an issue. FAQs provide reusable public help organized by category."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Customers open Account → Support, describe the issue and attach only relevant evidence. Operators open Support tickets, read the history, respond and follow the offered status changes. Maintain FAQ categories and translated answers for recurring questions.
+
+<SystemTour tour="feature-support" compact />
+
+## Restrictions and decisions
+
+A ticket is not an automatic refund, cancellation or payout instruction. Those require their own authorized workflows. Avoid placing sensitive payment details in a public FAQ or unneeded attachments.
+
+## Read the help centre before opening a ticket
+
+Open Help centre from the footer. Choose a category and expand a question to read its answer; this browsing does not require sign-in. If the answer does not resolve your case, use Open a ticket and sign in. In your account, include the invoice or order number, describe what happened and attach only relevant evidence. A ticket does not cancel an order or start a refund by itself.
+
+## Data flow and outcome
+
+Issue + customer context → ticket/messages/attachments → authorized response → resolution evidence; recurring guidance → FAQ publication.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/SupportTicket/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/faqs`, `/faq-categories`, `/support-tickets` |
+| [tenant](/en/roles/tenant) | `/faqs`, `/faq-categories`, `/support-tickets` |
+| [vendor](/en/roles/vendor) | `/faqs` |
+| [customer](/en/roles/customer) | `/faqs`, `/account/support` |
+
+[Exact route, field and enum source trail](/en/evidence/support)
+{/* /SCREEN_MAP */}
+
+</details>

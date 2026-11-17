@@ -1,0 +1,609 @@
+[
+  {
+    "feature": "access",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-access.jpg",
+      "tenant-screen-access.jpg",
+      "vendor-screen-access.jpg",
+      "customer-screen-access.jpg"
+    ],
+    "tour": "feature-access"
+  },
+  {
+    "feature": "attributes",
+    "roles": [
+      "tenant"
+    ],
+    "screens": [
+      "tenant-screen-attributes.jpg"
+    ],
+    "tour": "feature-attributes"
+  },
+  {
+    "feature": "audit",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-audit.jpg",
+      "tenant-screen-audit.jpg"
+    ],
+    "tour": "feature-audit"
+  },
+  {
+    "feature": "banners",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-banners.jpg",
+      "tenant-screen-banners.jpg"
+    ],
+    "tour": "feature-banners"
+  },
+  {
+    "feature": "brands",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-brands.jpg",
+      "tenant-screen-brands.jpg",
+      "vendor-screen-brands.jpg",
+      "customer-screen-brands.jpg",
+      "customer-screen-brand-filter.jpg"
+    ],
+    "tour": "feature-brands"
+  },
+  {
+    "feature": "cart",
+    "roles": [
+      "customer"
+    ],
+    "screens": [
+      "customer-screen-cart.jpg"
+    ],
+    "tour": "feature-cart"
+  },
+  {
+    "feature": "categories",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-categories.jpg",
+      "tenant-screen-categories.jpg",
+      "vendor-screen-categories.jpg"
+    ],
+    "tour": "feature-categories"
+  },
+  {
+    "feature": "checkout",
+    "roles": [
+      "customer"
+    ],
+    "screens": [
+      "customer-screen-checkout.jpg"
+    ],
+    "tour": "feature-checkout"
+  },
+  {
+    "feature": "cms",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-cms.jpg",
+      "tenant-screen-cms.jpg",
+      "customer-screen-cms.jpg"
+    ],
+    "tour": "feature-cms"
+  },
+  {
+    "feature": "commission",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-commission.jpg",
+      "tenant-screen-commission.jpg",
+      "vendor-screen-commission.jpg"
+    ],
+    "tour": "feature-commission"
+  },
+  {
+    "feature": "coupons",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-coupons.jpg",
+      "tenant-screen-coupons.jpg"
+    ],
+    "tour": "feature-coupons"
+  },
+  {
+    "feature": "customers",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-customers.jpg",
+      "tenant-screen-customers.jpg"
+    ],
+    "tour": "feature-customers"
+  },
+  {
+    "feature": "dashboards",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-dashboards.jpg",
+      "tenant-screen-dashboards.jpg",
+      "vendor-screen-dashboards.jpg",
+      "customer-screen-dashboards.jpg"
+    ],
+    "tour": "feature-dashboards"
+  },
+  {
+    "feature": "flash-sales",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-flash-sales.jpg",
+      "tenant-screen-flash-sales.jpg",
+      "customer-screen-flash-sales.jpg"
+    ],
+    "tour": "feature-flash-sales"
+  },
+  {
+    "feature": "gift-cards",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-gift-cards.jpg",
+      "tenant-screen-gift-cards.jpg",
+      "customer-screen-gift-cards.jpg"
+    ],
+    "tour": "feature-gift-cards"
+  },
+  {
+    "feature": "inventory",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-inventory.jpg",
+      "tenant-screen-inventory.jpg",
+      "vendor-screen-inventory.jpg"
+    ],
+    "tour": "feature-inventory"
+  },
+  {
+    "feature": "invoices",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-invoices.jpg",
+      "tenant-screen-invoices.jpg",
+      "vendor-screen-invoices.jpg",
+      "customer-screen-invoices.jpg"
+    ],
+    "tour": "feature-invoices"
+  },
+  {
+    "feature": "loyalty",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-loyalty.jpg",
+      "tenant-screen-loyalty.jpg",
+      "customer-screen-loyalty.jpg"
+    ],
+    "tour": "feature-loyalty"
+  },
+  {
+    "feature": "notifications",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-notifications.jpg",
+      "tenant-screen-notifications.jpg",
+      "vendor-screen-notifications.jpg",
+      "customer-screen-notifications.jpg"
+    ],
+    "tour": "feature-notifications"
+  },
+  {
+    "feature": "orders",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-orders.jpg",
+      "tenant-screen-orders.jpg",
+      "vendor-screen-orders.jpg",
+      "customer-screen-orders.jpg"
+    ],
+    "tour": "feature-orders"
+  },
+  {
+    "feature": "payments",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-payments.jpg",
+      "tenant-screen-payments.jpg",
+      "tenant-screen-payment-method-form.jpg",
+      "customer-screen-payments.jpg"
+    ],
+    "tour": "feature-payments"
+  },
+  {
+    "feature": "pricing",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-pricing.jpg",
+      "tenant-screen-pricing.jpg"
+    ],
+    "tour": "feature-pricing"
+  },
+  {
+    "feature": "products",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-products.jpg",
+      "tenant-screen-products.jpg",
+      "vendor-screen-products.jpg",
+      "customer-screen-products.jpg"
+    ],
+    "tour": "feature-products"
+  },
+  {
+    "feature": "promotions",
+    "roles": [
+      "tenant"
+    ],
+    "screens": [
+      "tenant-screen-promotions.jpg",
+      "tenant-screen-promotion-form.jpg"
+    ],
+    "tour": "feature-promotions"
+  },
+  {
+    "feature": "refunds",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-refunds.jpg",
+      "tenant-screen-refunds.jpg",
+      "vendor-screen-refunds.jpg"
+    ],
+    "tour": "feature-refunds"
+  },
+  {
+    "feature": "reports",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-reports.jpg",
+      "tenant-screen-reports.jpg",
+      "vendor-screen-reports.jpg"
+    ],
+    "tour": "feature-reports"
+  },
+  {
+    "feature": "returns",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-returns.jpg",
+      "tenant-screen-returns.jpg",
+      "vendor-screen-returns.jpg",
+      "customer-screen-returns.jpg"
+    ],
+    "tour": "feature-returns"
+  },
+  {
+    "feature": "reviews",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-reviews.jpg",
+      "tenant-screen-reviews.jpg",
+      "vendor-screen-reviews.jpg",
+      "customer-screen-reviews.jpg"
+    ],
+    "tour": "feature-reviews"
+  },
+  {
+    "feature": "search",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-search.jpg",
+      "tenant-screen-search.jpg",
+      "customer-screen-search.jpg"
+    ],
+    "tour": "feature-search"
+  },
+  {
+    "feature": "seo",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-seo.jpg",
+      "tenant-screen-seo.jpg"
+    ],
+    "tour": "feature-seo"
+  },
+  {
+    "feature": "settings",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-settings.jpg",
+      "tenant-screen-settings.jpg",
+      "tenant-screen-reference-tags.jpg",
+      "vendor-screen-settings.jpg"
+    ],
+    "tour": "feature-settings"
+  },
+  {
+    "feature": "settlements",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-settlements.jpg",
+      "tenant-screen-settlements.jpg",
+      "vendor-screen-settlements.jpg"
+    ],
+    "tour": "feature-settlements"
+  },
+  {
+    "feature": "shipping-providers",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-shipping-providers.jpg",
+      "tenant-screen-shipping-providers.jpg"
+    ],
+    "tour": "feature-shipping-providers"
+  },
+  {
+    "feature": "shipping",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-shipping.jpg",
+      "tenant-screen-shipping.jpg",
+      "vendor-screen-shipping.jpg",
+      "customer-screen-shipping.jpg"
+    ],
+    "tour": "feature-shipping"
+  },
+  {
+    "feature": "storefront",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-storefront.jpg",
+      "tenant-screen-storefront.jpg",
+      "customer-screen-storefront.jpg"
+    ],
+    "tour": "feature-storefront"
+  },
+  {
+    "feature": "support",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-support.jpg",
+      "tenant-screen-support.jpg",
+      "vendor-screen-support.jpg",
+      "customer-screen-support.jpg",
+      "customer-screen-help-centre.jpg",
+      "customer-screen-faq-answer.jpg"
+    ],
+    "tour": "feature-support"
+  },
+  {
+    "feature": "tax-currency",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-tax-currency.jpg",
+      "tenant-screen-tax-currency.jpg",
+      "vendor-screen-tax-currency.jpg"
+    ],
+    "tour": "feature-tax-currency"
+  },
+  {
+    "feature": "team",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-team.jpg",
+      "tenant-screen-team.jpg",
+      "vendor-screen-team.jpg"
+    ],
+    "tour": "feature-team"
+  },
+  {
+    "feature": "tenants",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-tenants.jpg",
+      "tenant-screen-tenants.jpg",
+      "customer-screen-tenants.jpg"
+    ],
+    "tour": "feature-tenants"
+  },
+  {
+    "feature": "vendor-profile",
+    "roles": [
+      "vendor"
+    ],
+    "screens": [
+      "vendor-screen-vendor-profile.jpg"
+    ],
+    "tour": "feature-vendor-profile"
+  },
+  {
+    "feature": "vendors",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "admin-screen-vendors.jpg",
+      "tenant-screen-vendors.jpg",
+      "vendor-screen-vendors.jpg",
+      "customer-screen-vendors.jpg",
+      "customer-screen-vendor-detail.jpg"
+    ],
+    "tour": "feature-vendors"
+  },
+  {
+    "feature": "wallet",
+    "roles": [
+      "admin",
+      "customer",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-wallet.jpg",
+      "tenant-screen-wallet.jpg",
+      "customer-screen-wallet.jpg"
+    ],
+    "tour": "feature-wallet"
+  },
+  {
+    "feature": "webhooks",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "admin-screen-webhooks.jpg",
+      "tenant-screen-webhooks.jpg"
+    ],
+    "tour": "feature-webhooks"
+  },
+  {
+    "feature": "wishlist",
+    "roles": [
+      "customer"
+    ],
+    "screens": [
+      "customer-screen-wishlist.jpg"
+    ],
+    "tour": "feature-wishlist"
+  }
+]

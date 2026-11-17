@@ -1,0 +1,31 @@
+---
+title: "Source evidence: brands"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Brand/routes/admin-api.php`
+- `Modules/Brand/routes/tenant-api.php`
+- `Modules/Brand/routes/user-api.php`
+- `Modules/Brand/routes/vendor-api.php`
+- `Modules/Brand/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Brand/App/Http/Requests/Admin/Brand/StoreBrandRequest.php`: `slug`, `locale`
+- `Modules/Brand/App/Http/Requests/Admin/Brand/UpdateBrandRequest.php`: `slug`, `locale`
+- `Modules/Brand/App/Http/Requests/Tenant/Brand/StoreBrandRequest.php`: `slug`, `locale`
+- `Modules/Brand/App/Http/Requests/Tenant/Brand/UpdateBrandRequest.php`: `slug`, `locale`
+
+## Enum values in source
+
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/brands)

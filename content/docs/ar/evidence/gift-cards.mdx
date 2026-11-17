@@ -1,0 +1,53 @@
+---
+title: "أدلة المصدر: gift-cards"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/GiftCard/routes/admin-api.php`
+- `Modules/GiftCard/routes/tenant-api.php`
+- `Modules/GiftCard/routes/user-api.php`
+- `Modules/GiftCard/routes/vendor-api.php`
+- `Modules/GiftCard/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| GiftCard | `admin-api.php` | GET | `gift-card-overview` | `overview` |
+| GiftCard | `admin-api.php` | GET | `gift-card-reconciliation` | `reconciliation` |
+| GiftCard | `admin-api.php` | GET | `gift-card-security-alerts` | `securityAlerts` |
+| GiftCard | `tenant-api.php` | GET | `gift-cards` | `index` |
+| GiftCard | `tenant-api.php` | POST | `gift-cards` | `store` |
+| GiftCard | `tenant-api.php` | GET | `gift-cards/{publicId}` | `show` |
+| GiftCard | `tenant-api.php` | POST | `gift-cards/{publicId}/suspend` | `suspend` |
+| GiftCard | `tenant-api.php` | POST | `gift-cards/{publicId}/cancel` | `cancel` |
+| GiftCard | `tenant-api.php` | POST | `gift-cards/{publicId}/adjustments` | `adjust` |
+| GiftCard | `tenant-api.php` | GET | `gift-card-policies/{type}` | `show` |
+| GiftCard | `tenant-api.php` | PUT | `gift-card-policies/{type}` | `update` |
+| GiftCard | `tenant-api.php` | GET | `gift-card-liability` | `liability` |
+| GiftCard | `tenant-api.php` | POST | `gift-card-exports` | `export` |
+| GiftCard | `user-api.php` | POST | `validate` | `validateCard` |
+| GiftCard | `user-api.php` | POST | `claim` | `claim` |
+| GiftCard | `user-api.php` | GET | `/` | `index` |
+| GiftCard | `user-api.php` | GET | `{publicId}` | `show` |
+
+## حقول النماذج
+
+- `Modules/GiftCard/App/Http/Requests/BaseGiftCardRequest.php`: `errors`, `message`, `statusCode`
+- `Modules/GiftCard/App/Http/Requests/Tenant/AdjustGiftCardRequest.php`: `amount`, `reason`, `idempotency_key`
+- `Modules/GiftCard/App/Http/Requests/Tenant/IssueGiftCardRequest.php`: `amount`, `currency_id`, `reason`, `idempotency_key`, `recipient_email`, `recipient_name`, `gift_message`
+- `Modules/GiftCard/App/Http/Requests/Tenant/UpdateGiftCardPolicyRequest.php`: `denominations`, `denominations.*`, `minimum_amount`, `maximum_amount`, `expiry_days`, `purchase_refundable`, `stacking_enabled`, `notify_on_issue`, `notify_on_redemption`, `notify_before_expiry`, `maximum_cards_per_order`, `reservation_ttl_minutes`, `status`
+- `Modules/GiftCard/App/Http/Requests/User/ClaimGiftCardRequest.php`: `code`, `errors`, `message`, `statusCode`
+- `Modules/GiftCard/App/Http/Requests/User/ValidateGiftCardRequest.php`: `code`, `currency_code`, `errors`, `message`, `statusCode`
+
+## قيم الحالات من المصدر
+
+- `Modules/GiftCard/App/Enums/GiftCardPolicyStatus.php`: `ACTIVE = 1`, `INACTIVE = 2`
+- `Modules/GiftCard/App/Enums/GiftCardReservationStatus.php`: `ACTIVE = 1`, `CONSUMED = 2`, `RELEASED = 3`, `EXPIRED = 4`
+- `Modules/GiftCard/App/Enums/GiftCardStatus.php`: `PENDING_PAYMENT = 1`, `PENDING_ACTIVATION = 2`, `ACTIVE = 3`, `DEPLETED = 4`, `EXPIRED = 5`, `CANCELLED = 6`, `SUSPENDED = 7`
+- `Modules/GiftCard/App/Enums/GiftCardTransactionType.php`: `ACTIVATION_CREDIT = 1`, `COMPENSATORY_CREDIT = 2`, `REDEMPTION_DEBIT = 3`, `RESTORATION_CREDIT = 4`, `ADJUSTMENT_CREDIT = 5`, `ADJUSTMENT_DEBIT = 6`, `EXPIRY_DEBIT = 7`, `CANCELLATION_DEBIT = 8`
+- `Modules/GiftCard/App/Enums/GiftCardType.php`: `PURCHASED = 1`, `COMPENSATORY = 2`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/gift-cards)

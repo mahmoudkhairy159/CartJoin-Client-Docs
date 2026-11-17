@@ -1,0 +1,138 @@
+---
+title: "Platform admin handbook"
+description: "Investigate marketplace activity, review partners and trace financial records in the platform dashboard."
+roles: ["ADMIN"]
+---
+
+Your platform account oversees multiple stores. Before interpreting a row, identify its tenant, vendor, currency and period. A visible screen does not grant every action: menus, related tabs and buttons depend on your permissions.
+
+## Start with the question you need to answer
+
+| Task | Open | Check first |
+|---|---|---|
+| What needs attention? | Dashboard, notifications and reports | Check the reporting period and generated time. |
+| Can this vendor sell here? | Tenants, Vendors and tenant-vendor participation | Vendor identity and store-specific approval are different. |
+| What happened to this purchase? | Orders → invoice → payments/refunds | Read order, money and parcel states separately. |
+| What is payable? | Commissions, Settlements and Payouts | Match currency, period and state. |
+| Who can do this? | Roles and Admins | Platform staff is separate from store/vendor staff. |
+
+## Read the daily overview
+
+Open **Dashboard**, choose Today, 7 days or 30 days, and read the generated or updated time. Summary cards and charts use the stated period; some waiting-work counts are current snapshots. Open the linked list to inspect the underlying records. A zero chart is not evidence that no store has orders.
+
+Use **Notifications** to follow messages addressed to your account. **Reports** may require an already generated snapshot for the chosen dates. If a report is not ready, do not describe the result as zero sales. Check available export or job status before requesting another long-running operation.
+
+<SystemTour tour="admin-priority" compact />
+
+## Review the business and its participation
+
+Open **Tenants** for the store identity and **Vendors** for the global seller organization. A vendor record alone does not approve that seller in every store. Review the tenant-vendor participation record, its state and related records before deciding what it permits.
+
+Read documents, addresses and payout accounts as separate evidence. A saved bank destination is not automatically verified, and a verified destination is not a completed payout. Follow the approval controls actually offered to your account; do not substitute a profile edit for an approval workflow.
+
+<SystemTour tour="admin-partners" compact />
+
+## Investigate a purchase without changing its fulfillment
+
+1. Open **Orders** and use the tenant and available filters to find the intended purchase.
+2. Open the record, match its number and read the frozen items, vendor context and status history.
+3. Follow its invoice and payment records, then the shipment or return evidence when needed.
+4. Give the tenant team the relevant record number and the specific discrepancy.
+
+**Platform order oversight is read-only.** It does not create, edit, cancel or advance the order. A paid invoice does not prove delivery, and an approved return does not prove a settled refund. If an action belongs to the tenant workflow, hand it to an authorized tenant operator.
+
+<SystemTour tour="admin-purchase" compact />
+
+## Keep financial and access controls separate
+
+Read **Commissions**, **Settlements** and **Payouts** in order: a calculation/ledger entry, a period statement and a transfer state answer different questions. Match the currency and period before comparing records. Never combine amounts in different currencies into a single total. Wallet credit, loyalty points and gift-card balances also have different meanings.
+
+Use **Roles** and **Admins** for the platform team. Tenant and vendor staff use their own administration areas. Viewing, approving and exporting are separate permissions. When investigating a change, use **Audit logs** to match actor, time and affected record; an audit row proves that event, not an entire business process.
+
+<SystemTour tour="admin-control" compact />
+
+## When a record or action is missing
+
+If a record or action is missing, confirm the tenant scope, filters and destination permission. Do not widen access just to make a button appear. Refresh before repeating a timed-out action and inspect its history first. Escalate with screen name, record ID and time; omit credentials and financial secrets.
+
+[Read capability steps and rules](/en/features)
+
+## Dashboard map
+
+[Open the dashboard](https://admin-cart-join.mahmoud-khairy.com/auth/login)
+
+Demo screenshots captured 17 November 2026. Figures are illustrative, not production results.
+
+<details className="guide-technical-details">
+<summary>Screen paths for technical reference</summary>
+
+{/* ROUTE_MAP */}
+| Frontend path | Feature guide |
+|---|---|
+| `/auth` | [access](/en/features/access) |
+| `/dashboard` | [dashboards](/en/features/dashboards) |
+| `/profile` | [access](/en/features/access) |
+| `/roles` | [team](/en/features/team) |
+| `/admins` | [team](/en/features/team) |
+| `/tenants` | [tenants](/en/features/tenants) |
+| `/tenant-branches` | [tenants](/en/features/tenants) |
+| `/geo` | [settings](/en/features/settings) |
+| `/currencies` | [tax-currency](/en/features/tax-currency) |
+| `/configs` | [settings](/en/features/settings) |
+| `/tags` | [settings](/en/features/settings) |
+| `/colors` | [settings](/en/features/settings) |
+| `/platform-settings` | [settings](/en/features/settings) |
+| `/feature-flags` | [settings](/en/features/settings) |
+| `/coupons` | [coupons](/en/features/coupons) |
+| `/orders` | [orders](/en/features/orders) |
+| `/invoices` | [invoices](/en/features/invoices) |
+| `/invoice-sequences` | [invoices](/en/features/invoices) |
+| `/payments` | [payments](/en/features/payments) |
+| `/commissions` | [commission](/en/features/commission) |
+| `/commission-adjustments` | [commission](/en/features/commission) |
+| `/settlements` | [settlements](/en/features/settlements) |
+| `/payouts` | [settlements](/en/features/settlements) |
+| `/wallet` | [wallet](/en/features/wallet) |
+| `/loyalty` | [loyalty](/en/features/loyalty) |
+| `/gift-cards` | [gift-cards](/en/features/gift-cards) |
+| `/price-lists` | [pricing](/en/features/pricing) |
+| `/user-groups` | [customers](/en/features/customers) |
+| `/refunds` | [refunds](/en/features/refunds) |
+| `/returns` | [returns](/en/features/returns) |
+| `/shipments` | [shipping](/en/features/shipping) |
+| `/shipping-providers` | [shipping-providers](/en/features/shipping-providers) |
+| `/inventory/balances` | [inventory](/en/features/inventory) |
+| `/banners` | [banners](/en/features/banners) |
+| `/flash-sales` | [flash-sales](/en/features/flash-sales) |
+| `/taxes` | [tax-currency](/en/features/tax-currency) |
+| `/brands` | [brands](/en/features/brands) |
+| `/categories` | [categories](/en/features/categories) |
+| `/products` | [products](/en/features/products) |
+| `/faqs` | [support](/en/features/support) |
+| `/faq-categories` | [support](/en/features/support) |
+| `/tenant-roles` | [team](/en/features/team) |
+| `/tenant-admins` | [team](/en/features/team) |
+| `/vendors` | [vendors](/en/features/vendors) |
+| `/vendor-admins` | [team](/en/features/team) |
+| `/tenant-vendors` | [vendors](/en/features/vendors) |
+| `/vendor-roles` | [team](/en/features/team) |
+| `/users` | [customers](/en/features/customers) |
+| `/support-tickets` | [support](/en/features/support) |
+| `/notifications` | [notifications](/en/features/notifications) |
+| `/webhooks` | [webhooks](/en/features/webhooks) |
+| `/reports` | [reports](/en/features/reports) |
+| `/jobs` | [reports](/en/features/reports) |
+| `/audit-logs` | [audit](/en/features/audit) |
+| `/search-query-log` | [search](/en/features/search) |
+| `/cms` | [cms](/en/features/cms) |
+| `/reviews` | [reviews](/en/features/reviews) |
+| `/seo` | [seo](/en/features/seo) |
+| `/storefront-settings` | [storefront](/en/features/storefront) |
+| `/dev/style-guide` | Development-only visual reference |
+| `/forbidden` | Access error screen |
+| `/**` | Not-found fallback |
+{/* /ROUTE_MAP */}
+
+</details>
+
+See [shared restrictions](/en/business) and [troubleshooting](/en/troubleshooting).

@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Check the tenant scope
+This filter controls which tenants you are reviewing. Confirm it before
+comparing figures or investigating a record.
+
+2
+00:00:10.000 --> 00:00:20.000
+Choose a reporting period
+Today, 7 days and 30 days change period-based figures. Zero today does
+not mean there are no older orders.
+
+3
+00:00:20.000 --> 00:00:30.000
+Connect an order to its purchase
+The list links each order to its invoice, tenant and vendor. Open the
+record to investigate; platform order access is read-only.
+
+4
+00:00:30.000 --> 00:00:40.000
+Review teams and partners
+Customers, Tenancy and Marketplace lead to the people and organizations
+behind the purchase. Approval and staff access are separate workflows.
+

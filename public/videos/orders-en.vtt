@@ -1,0 +1,20 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Narrow the list first
+Use tenant, filter and search controls to locate the intended record.
+Confirm the context before opening it.
+
+2
+00:00:10.000 --> 00:00:20.000
+Distinguish order and invoice
+The order number identifies fulfillment; the invoice identifies the
+purchase document. One invoice can link several orders.
+
+3
+00:00:20.000 --> 00:00:30.000
+Check who owns the order
+Tenant and vendor columns explain where the order belongs. Tenant-owned
+goods may show Tenant / platform-owned instead of a vendor.
+

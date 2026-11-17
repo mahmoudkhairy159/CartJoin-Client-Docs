@@ -1,0 +1,85 @@
+---
+title: "Source evidence: loyalty"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Loyalty/routes/admin-api.php`
+- `Modules/Loyalty/routes/tenant-api.php`
+- `Modules/Loyalty/routes/user-api.php`
+- `Modules/Loyalty/routes/vendor-api.php`
+- `Modules/Loyalty/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Loyalty | `admin-api.php` | GET | `overview` | `overview` |
+| Loyalty | `admin-api.php` | POST | `reconciliation` | `queueReconciliation` |
+| Loyalty | `admin-api.php` | GET | `reconciliation` | `reconciliationPreview` |
+| Loyalty | `admin-api.php` | GET | `risk-alerts` | `riskAlerts` |
+| Loyalty | `tenant-api.php` | GET | `/` | `show` |
+| Loyalty | `tenant-api.php` | PUT | `/` | `update` |
+| Loyalty | `tenant-api.php` | GET | `versions` | `versions` |
+| Loyalty | `tenant-api.php` | GET | `versions/{version}` | `showVersion` |
+| Loyalty | `tenant-api.php` | POST | `versions` | `storeVersion` |
+| Loyalty | `tenant-api.php` | POST | `versions/{version}/activate` | `activateVersion` |
+| Loyalty | `tenant-api.php` | POST | `pause` | `pause` |
+| Loyalty | `tenant-api.php` | POST | `resume` | `resume` |
+| Loyalty | `tenant-api.php` | POST | `wind-down` | `windDown` |
+| Loyalty | `tenant-api.php` | POST | `deactivate` | `deactivate` |
+| Loyalty | `tenant-api.php` | GET | `/` | `index` |
+| Loyalty | `tenant-api.php` | POST | `/` | `store` |
+| Loyalty | `tenant-api.php` | GET | `{tier}` | `show` |
+| Loyalty | `tenant-api.php` | PUT | `{tier}` | `update` |
+| Loyalty | `tenant-api.php` | POST | `{tier}/deactivate` | `deactivate` |
+| Loyalty | `tenant-api.php` | GET | `/` | `index` |
+| Loyalty | `tenant-api.php` | GET | `{account}` | `show` |
+| Loyalty | `tenant-api.php` | POST | `{account}/suspend` | `suspend` |
+| Loyalty | `tenant-api.php` | POST | `{account}/resume` | `resume` |
+| Loyalty | `tenant-api.php` | POST | `{account}/adjustments` | `store` |
+| Loyalty | `tenant-api.php` | GET | `/` | `index` |
+| Loyalty | `tenant-api.php` | POST | `{adjustment}/approve` | `approve` |
+| Loyalty | `tenant-api.php` | POST | `{adjustment}/reject` | `reject` |
+| Loyalty | `tenant-api.php` | GET | `liability` | `liability` |
+| Loyalty | `tenant-api.php` | GET | `reports/aging` | `aging` |
+| Loyalty | `tenant-api.php` | GET | `reports/engagement` | `engagement` |
+| Loyalty | `tenant-api.php` | GET | `reconciliation` | `reconciliation` |
+| Loyalty | `tenant-api.php` | POST | `exports` | `storeExport` |
+| Loyalty | `tenant-api.php` | GET | `exports/{export}` | `showExport` |
+| Loyalty | `tenant-api.php` | GET | `exports/{export}/download` | `downloadExport` |
+| Loyalty | `user-api.php` | GET | `/account` | `account` |
+| Loyalty | `user-api.php` | GET | `/transactions` | `transactions` |
+| Loyalty | `user-api.php` | GET | `/expiring-points` | `expiringPoints` |
+
+## Form-request field names
+
+- `Modules/Loyalty/App/Http/Requests/Tenant/Account/StoreExportRequest.php`: `report_type`, `filters`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Account/SuspendAccountRequest.php`: `reason`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Adjustment/DecideAdjustmentRequest.php`: `decision_note`, `password`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Adjustment/StoreAdjustmentRequest.php`: `points`, `reason_code`, `explanation`, `credit_expiry_policy`, `credit_expires_at`, `idempotency_key`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Concerns/FormatsValidationErrors.php`: `errors`, `message`, `statusCode`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Program/BeginProgramWindDownRequest.php`: `outstanding_points_disposition`, `wind_down_ends_at`, `replacement_program`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Program/StoreProgramVersionRequest.php`: `earn_numerator`, `earn_denominator`, `value_numerator`, `value_denominator`, `minimum_redemption_points`, `redemption_increment`, `percentage_cap`, `amount_cap_minor`, `reservation_ttl_minutes`, `expiry_days`, `minimum_grace_days`, `qualification_metric`, `negative_floor`, `adjustment_threshold_points`, `tenant_timezone`, `fund_discount`, `fund_tax`, `fund_shipping`, `fund_fees`, `fund_gift_card`, `fund_loyalty`, `redeem_discount`, `redeem_tax`, `redeem_shipping`, `redeem_fees`, `stacking_allowed`, `first_order_bonus_enabled`, `maker_checker_required`, `tenant_funded`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Program/UpdateProgramRequest.php`: `code`, `currency_id`, `timezone`
+- `Modules/Loyalty/App/Http/Requests/Tenant/Tier/StoreTierRequest.php`: `code`, `qualification_metric`, `threshold_value`, `earn_multiplier_numerator`, `earn_multiplier_denominator`, `evaluation_window_days`, `grace_period_days`, `benefit_codes`, `benefit_codes.*`, `sort_order`, `effective_from`, `effective_to`, `translations`, `translations.*.locale`, `translations.*.name`, `translations.*.description`
+
+## Enum values in source
+
+- `Modules/Loyalty/App/Enums/LoyaltyAccountStatus.php`: `ACTIVE = 1`, `SUSPENDED = 2`, `CLOSED = 3`
+- `Modules/Loyalty/App/Enums/LoyaltyAdjustmentStatus.php`: `PENDING = 1`, `APPROVED = 2`, `REJECTED = 3`, `POSTED = 4`, `CANCELLED = 5`
+- `Modules/Loyalty/App/Enums/LoyaltyExportStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/Loyalty/App/Enums/LoyaltyLotStatus.php`: `AVAILABLE = 1`, `RESERVED = 2`, `CONSUMED = 3`, `EXPIRED = 4`, `REVERSED = 5`
+- `Modules/Loyalty/App/Enums/LoyaltyNotificationDeliveryStatus.php`: `PENDING = 1`, `SENT = 2`, `FAILED = 3`
+- `Modules/Loyalty/App/Enums/LoyaltyOrderRedemptionStatus.php`: `CONSUMED = 1`, `PARTIALLY_RESTORED = 2`, `RESTORED = 3`
+- `Modules/Loyalty/App/Enums/LoyaltyOutstandingPointsDisposition.php`: `REDEEM_DURING_WIND_DOWN = 1`, `EXPIRE_AT_PUBLISHED_DEADLINE = 2`, `MIGRATE_TO_REPLACEMENT_PROGRAM = 3`
+- `Modules/Loyalty/App/Enums/LoyaltyProgramStatus.php`: `DRAFT = 1`, `SCHEDULED = 2`, `ACTIVE = 3`, `PAUSED = 4`, `WINDING_DOWN = 5`, `INACTIVE = 6`
+- `Modules/Loyalty/App/Enums/LoyaltyProgramVersionStatus.php`: `DRAFT = 1`, `PENDING_APPROVAL = 2`, `SCHEDULED = 3`, `ACTIVE = 4`, `RETIRED = 5`
+- `Modules/Loyalty/App/Enums/LoyaltyQualificationMetric.php`: `ROLLING_POINTS = 1`, `ROLLING_SPEND = 2`
+- `Modules/Loyalty/App/Enums/LoyaltyReservationStatus.php`: `ACTIVE = 1`, `CONSUMED = 2`, `RELEASED = 3`, `EXPIRED = 4`, `SPLIT = 5`
+- `Modules/Loyalty/App/Enums/LoyaltyRiskAlertStatus.php`: `OPEN = 1`, `INVESTIGATING = 2`, `RESOLVED = 3`, `DISMISSED = 4`
+- `Modules/Loyalty/App/Enums/LoyaltyTierStatus.php`: `ACTIVE = 1`, `INACTIVE = 2`
+- `Modules/Loyalty/App/Enums/LoyaltyTransactionType.php`: `PURCHASE_EARN = 1`, `FIRST_ORDER_BONUS = 2`, `REFERRAL_BONUS = 3`, `BIRTHDAY_BONUS = 4`, `REVIEW_BONUS = 5`, `CAMPAIGN_BONUS = 6`, `MANUAL_CREDIT = 7`, `MANUAL_DEBIT = 8`, `REDEMPTION_DEBIT = 9`, `REDEMPTION_RESTORE = 10`, `EARN_REVERSAL = 11`, `EXPIRY_DEBIT = 12`, `TIER_ADJUSTMENT = 13`, `MIGRATION_CREDIT = 14`, `MIGRATION_DEBIT = 15`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/loyalty)

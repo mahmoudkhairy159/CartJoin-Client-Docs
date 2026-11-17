@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Match the purchase, method, amount and recorded state. Awaiting
+confirmation, pending approval and paid require different next steps; a
+redirect is not payment proof.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Match the purchase, method, amount and recorded state. Awaiting
+confirmation, pending approval and paid require different next steps; a
+redirect is not payment proof.
+
+3
+00:00:24.000 --> 00:00:36.000
+Payment-method setup
+Provider, customer label and display order are separate fields.
+Credentials are write-only and replaceable; this blank form was not
+saved.
+
+4
+00:00:36.000 --> 00:00:48.000
+Customer
+Match the purchase, method, amount and recorded state. Awaiting
+confirmation, pending approval and paid require different next steps; a
+redirect is not payment proof.
+

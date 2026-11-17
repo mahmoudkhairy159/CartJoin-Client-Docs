@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Check the displayed return window
+The demo displays a 14-day request window. Use the configured window
+shown in your store; do not assume every store uses the same duration.
+
+2
+00:00:10.000 --> 00:00:20.000
+Read the request status
+Pending means a decision is still needed; Refunded is a different stage.
+Open the return number to inspect it. The linked order is the
+fulfillment record, not a second return.
+
+3
+00:00:20.000 --> 00:00:30.000
+Match the request to its order
+Overview identifies the order, customer and requested refund method.
+Review Items for quantities before deciding. A chosen refund method does
+not mean a refund has happened.
+
+4
+00:00:30.000 --> 00:00:40.000
+Review the next permitted action
+Handling shows Approve or Reject for this pending request; rejection
+asks for a reason. Review the history. Approval is a return decision,
+not confirmation of receipt, inspection or refund.
+

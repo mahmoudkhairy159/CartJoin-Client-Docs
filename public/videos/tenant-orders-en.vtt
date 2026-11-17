@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Match the order and its state
+Match the order number and invoice, then read payment and shipment
+states independently. One purchase can contain several separately
+fulfilled vendor orders.
+
+2
+00:00:12.000 --> 00:00:24.000
+Read the recorded money state
+Match the purchase, method, amount and recorded state. Awaiting
+confirmation, pending approval and paid require different next steps; a
+redirect is not payment proof.
+
+3
+00:00:24.000 --> 00:00:36.000
+Inspect delivery configuration or parcels
+Match the order, carrier, tracking reference and recorded events. A
+missing carrier or arrival time needs follow-up; it is not delivery
+confirmation.
+
+4
+00:00:36.000 --> 00:00:48.000
+Separate physical and financial work
+Match the return to its order and current stage. Receipt, inspection,
+restocking and financial refund are distinct decisions; use the next
+permitted action.
+

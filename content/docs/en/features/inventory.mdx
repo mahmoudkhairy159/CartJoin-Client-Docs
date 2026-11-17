@@ -1,0 +1,56 @@
+---
+title: "Inventory, reservations and stock movements"
+description: "Stock balances distinguish physically held units from units reserved for pending purchases. Movements explain why stock changed."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open Inventory and select the variant and location. Review on-hand, reserved and available quantities. Use the authorized adjustment or transfer flow with an accurate reason; inspect the movement ledger afterward. Follow low-stock views for replenishment.
+
+<SystemTour tour="feature-inventory" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="inventory" compact />
+
+</details>
+
+## Restrictions and decisions
+
+Available = on hand − reserved. Reservations require enough available units. Transfers require a positive quantity and different source/destination locations. Adding to a cart is not a purchase reservation; final checkout can still reject insufficient stock.
+
+## Data flow and outcome
+
+Balance → checkout reservation → confirm or release → stock movement. A permitted return may add inspected units back through a return movement.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Inventory/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/inventory/balances` |
+| [tenant](/en/roles/tenant) | `/inventory` |
+| [vendor](/en/roles/vendor) | `/inventory` |
+
+[Exact route, field and enum source trail](/en/evidence/inventory)
+{/* /SCREEN_MAP */}
+
+</details>

@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Review redirect source, destination, type and state. A permanent 301 and
+temporary 302 serve different purposes; confirm the intended destination
+before saving.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Review redirect source, destination, type and state. A permanent 301 and
+temporary 302 serve different purposes; confirm the intended destination
+before saving.
+

@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Platform oversight is read-only. Match the order to its invoice, tenant
+and vendor, then inspect payment and shipping states separately.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Match the order number and invoice, then read payment and shipment
+states independently. One purchase can contain several separately
+fulfilled vendor orders.
+
+3
+00:00:24.000 --> 00:00:36.000
+Vendor workspace
+Check the workspace. Match the order number and invoice, then read
+payment and shipment states independently. One purchase can contain
+several separately fulfilled vendor orders.
+
+4
+00:00:36.000 --> 00:00:48.000
+Customer
+Match the order number and invoice, then read payment and shipment
+states independently. One purchase can contain several separately
+fulfilled vendor orders.
+

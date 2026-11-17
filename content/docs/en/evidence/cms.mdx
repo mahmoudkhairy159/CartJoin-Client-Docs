@@ -1,0 +1,37 @@
+---
+title: "Source evidence: cms"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Cms/routes/admin-api.php`
+- `Modules/Cms/routes/tenant-api.php`
+- `Modules/Cms/routes/user-api.php`
+- `Modules/Cms/routes/vendor-api.php`
+- `Modules/Cms/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/StoreCmsPageRequest.php`: `slug`, `sort_order`
+- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/TransitionCmsPageStatusRequest.php`: `status`
+- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/UpdateCmsPageRequest.php`: `slug`, `sort_order`
+- `Modules/Cms/App/Http/Requests/Tenant/ContentBlock/StoreContentBlockRequest.php`: `key`, `type`, `is_active`
+- `Modules/Cms/App/Http/Requests/Tenant/ContentBlock/UpdateContentBlockRequest.php`: `key`, `type`, `is_active`
+- `Modules/Cms/App/Http/Requests/Tenant/NavigationMenu/StoreNavigationMenuRequest.php`: `location`, `is_active`
+- `Modules/Cms/App/Http/Requests/Tenant/NavigationMenu/UpdateNavigationMenuRequest.php`: `location`, `is_active`
+
+## Enum values in source
+
+- `Modules/Cms/App/Enums/CmsPageStatus.php`: `DRAFT = 1`, `PUBLISHED = 2`, `ARCHIVED = 3`
+- `Modules/Cms/App/Enums/ContentBlockType.php`: `HTML = 1`, `TEXT = 2`, `MARKDOWN = 3`
+- `Modules/Cms/App/Enums/NavigationMenuItemLinkType.php`: `CMS_PAGE = 1`, `CATEGORY = 2`, `EXTERNAL = 3`, `NONE = 4`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/cms)

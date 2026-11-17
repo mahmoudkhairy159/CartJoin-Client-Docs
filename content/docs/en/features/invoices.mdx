@@ -1,0 +1,61 @@
+---
+title: "Invoices, credit notes and numbering"
+description: "The invoice is the customer’s purchase document across vendor orders. Credit notes record settled refund corrections without editing the original invoice."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open Invoices and inspect the document, vendor orders, totals and payment status. Customers use Account → Invoices and the invoice detail. Operators use Invoice sequences / integrity where authorized to review numbering anomalies.
+
+<SystemTour tour="feature-invoices" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="customer" compact startAt={1} />
+
+</details>
+
+## Restrictions and decisions
+
+Invoice numbering is tenant-specific and must not be manually renumbered. Vendors see only their allowed line economics with buyer information redacted in vendor invoice resources. Cancellation of one child order does not mean all sibling orders are cancelled.
+
+## Read the vendor and purchased items
+
+The customer invoice can show each linked order’s vendor and purchased items, including SKU, variant, quantity, unit price, discount and line total. Pictures follow the saved purchase snapshot; a missing older picture does not change the financial record. Distinguish a per-unit price from the full quantity-adjusted line total.
+
+## Data flow and outcome
+
+Checkout → issued invoice → payment success marks paid → settled refund produces credit note. When every child order cancels, the invoice can be cancelled by the lifecycle integration.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Invoice/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/invoices`, `/invoice-sequences` |
+| [tenant](/en/roles/tenant) | `/invoices` |
+| [vendor](/en/roles/vendor) | `/invoices` |
+| [customer](/en/roles/customer) | `/account/invoices/:id` |
+
+[Exact route, field and enum source trail](/en/evidence/invoices)
+{/* /SCREEN_MAP */}
+
+</details>

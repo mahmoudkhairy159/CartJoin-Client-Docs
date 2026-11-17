@@ -1,0 +1,52 @@
+---
+title: "Customers, addresses and groups"
+description: "Customer records connect purchases, contact details, addresses and account services. Groups allow targeted commercial configuration such as price-list assignment."
+roles: ["ADMIN", "TENANT"]
+---
+
+
+## How to use it
+
+Operators open Users to locate the customer and related purchases. Customers use Account → Profile to maintain personal details and saved addresses. Operators use User groups and Price lists together when configuring group eligibility.
+
+<SystemTour tour="feature-customers" compact />
+
+## Restrictions and decisions
+
+Customers see their own account records only. Saved address changes do not rewrite the delivery address snapshot of an existing order. A group membership does not grant dashboard staff permissions.
+
+## Using the address book
+
+The address form loads the country list and sorts location names alphabetically. Pick a country to load its states, then a state to load its cities. The two street lines are stored together as one address, and saved street text is reused at checkout. Check the recipient details shown in checkout; an address without its own recipient name can use the account holder’s name.
+
+## Data flow and outcome
+
+Customer → addresses and groups → cart eligibility → invoice and order snapshots. Historical purchases preserve the values used at checkout.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/User/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/user-groups`, `/users` |
+| [tenant](/en/roles/tenant) | `/users`, `/user-groups` |
+
+[Exact route, field and enum source trail](/en/evidence/customers)
+{/* /SCREEN_MAP */}
+
+</details>

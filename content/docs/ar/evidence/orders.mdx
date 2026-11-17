@@ -1,0 +1,43 @@
+---
+title: "أدلة المصدر: orders"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Order/routes/admin-api.php`
+- `Modules/Order/routes/tenant-api.php`
+- `Modules/Order/routes/vendor-api.php`
+- `Modules/Order/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Order | `admin-api.php` | GET | `orders` | `index` |
+| Order | `admin-api.php` | GET | `orders/list-dropdown` | `listDropdown` |
+| Order | `admin-api.php` | GET | `orders/{id}` | `show` |
+| Order | `admin-api.php` | GET | `order-items/list-dropdown` | `listDropdown` |
+| Order | `tenant-api.php` | GET | `orders` | `index` |
+| Order | `tenant-api.php` | GET | `orders/export` | `export` |
+| Order | `tenant-api.php` | GET | `orders/{id}` | `show` |
+| Order | `tenant-api.php` | PUT | `orders/{id}/status` | `updateStatus` |
+| Order | `tenant-api.php` | POST | `orders/{id}/cancel` | `cancel` |
+| Order | `tenant-api.php` | POST | `orders/{id}/notes` | `addNote` |
+| Order | `vendor-api.php` | GET | `orders` | `index` |
+| Order | `vendor-api.php` | GET | `orders/{id}` | `show` |
+| Order | `vendor-api.php` | PUT | `orders/{id}/status` | `updateStatus` |
+
+## حقول النماذج
+
+- `Modules/Order/App/Http/Requests/Tenant/Order/AddNoteRequest.php`: `body`, `is_internal`
+- `Modules/Order/App/Http/Requests/Tenant/Order/UpdateOrderStatusRequest.php`: `status`, `comment`
+- `Modules/Order/App/Http/Requests/Vendor/Order/UpdateOrderStatusRequest.php`: `status`, `comment`
+
+## قيم الحالات من المصدر
+
+- `Modules/Order/App/Enums/OrderStatus.php`: `PENDING = 'pending'`, `CONFIRMED = 'confirmed'`, `PROCESSING = 'processing'`, `SHIPPED = 'shipped'`, `DELIVERED = 'delivered'`, `CANCELLED = 'cancelled'`, `REFUND_REQUESTED = 'refund_requested'`, `REFUNDED = 'refunded'`
+- `Modules/Order/App/Enums/PaymentStatus.php`: `PENDING = 'pending'`, `AWAITING_CONFIRMATION = 'awaiting_confirmation'`, `PENDING_APPROVAL = 'pending_approval'`, `PAID = 'paid'`, `FAILED = 'failed'`, `REFUNDED = 'refunded'`, `PARTIAL_REFUND = 'partial_refund'`
+- `Modules/Order/App/Enums/ShippingStatus.php`: `PENDING = 'pending'`, `PROCESSING = 'processing'`, `SHIPPED = 'shipped'`, `DELIVERED = 'delivered'`, `RETURNED = 'returned'`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/orders)

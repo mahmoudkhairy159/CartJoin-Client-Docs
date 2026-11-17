@@ -1,0 +1,37 @@
+---
+title: "Source evidence: storefront"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Storefront/routes/admin-api.php`
+- `Modules/Storefront/routes/tenant-api.php`
+- `Modules/Storefront/routes/user-api.php`
+- `Modules/Storefront/routes/vendor-api.php`
+- `Modules/Storefront/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Storefront | `admin-api.php` | GET | `/settings` | `show` |
+| Storefront | `tenant-api.php` | GET | `/settings` | `show` |
+| Storefront | `tenant-api.php` | PUT | `/settings` | `update` |
+| Storefront | `tenant-api.php` | GET | `/home-config` | `show` |
+| Storefront | `tenant-api.php` | PUT | `/home-config` | `update` |
+| Storefront | `tenant-api.php` | GET | `/home-config/categories` | `categories` |
+| Storefront | `user-api.php` | GET | `/home` | `home` |
+| Storefront | `user-api.php` | GET | `/products` | `products` |
+| Storefront | `user-api.php` | GET | `/products/{slug}` | `productDetail` |
+| Storefront | `user-api.php` | GET | `/settings` | `publicSettings` |
+
+## Form-request field names
+
+- `Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateHomeConfigRequest.php`: `home_config`, `home_config.sections`, `home_config.sections.*.type`, `home_config.sections.*.placement`, `home_config.sections.*.category_id`, `home_config.sections.*.label`, `home_config.sections.*.limit`
+- `Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontSettingsRequest.php`: `announcement_bar_enabled`, `announcement_bar_text`, `announcement_bar_url`, `maintenance_mode`, `maintenance_message`, `cookie_consent_enabled`, `footer_copyright_text`, `social_links`, `social_links.*`, `favicon`, `logo`, `home_config`, `home_config.sections`, `home_config.sections.*.type`, `home_config.sections.*.placement`, `home_config.sections.*.category_id`, `home_config.sections.*.label`, `home_config.sections.*.limit`
+
+## Enum values in source
+
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/storefront)

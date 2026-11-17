@@ -1,0 +1,49 @@
+---
+title: "Flash sales and allocated offer stock"
+description: "Flash sales expose time-limited discounted offers with campaign-specific product/variant eligibility and stock constraints."
+roles: ["ADMIN", "CUSTOMER", "TENANT"]
+---
+
+
+## How to use it
+
+Open Flash sales, maintain the campaign period and included items, then review activation and stock indicators. Customers browse Flash and open the offer’s product before selecting the variant and checking the cart price.
+
+<SystemTour tour="feature-flash-sales" compact />
+
+## Restrictions and decisions
+
+A countdown is not a stock reservation. Date, active state and remaining allocation must still qualify at purchase time. A displayed sale card is not proof that a stale cart retains the earlier price.
+
+## Data flow and outcome
+
+Campaign + included variants → eligible sale price → cart/checkout validation → allocated usage.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/FlashSale/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/flash-sales` |
+| [tenant](/en/roles/tenant) | `/flash-sales` |
+| [customer](/en/roles/customer) | `/flash` |
+
+[Exact route, field and enum source trail](/en/evidence/flash-sales)
+{/* /SCREEN_MAP */}
+
+</details>

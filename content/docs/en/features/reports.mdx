@@ -1,0 +1,49 @@
+---
+title: "Reports, exports and background jobs"
+description: "Reports turn scoped operational data into comparisons and exportable evidence. Long-running exports can complete asynchronously."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open Reports, choose the report and available date/filter parameters, review the currency and scope, then request an export if permitted. Use the relevant job/export status screen and download only when complete. Platform operators can inspect Jobs where available.
+
+<SystemTour tour="feature-reports" compact />
+
+## Restrictions and decisions
+
+A queued request is not a finished file. Read permission does not automatically grant export. Different report definitions can count placed orders, paid revenue or current balances; compare matching measures and periods.
+
+## Data flow and outcome
+
+Scoped filters → report query/aggregate → queued export → completion metadata/file → authorized download.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Reports/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/reports`, `/jobs` |
+| [tenant](/en/roles/tenant) | `/reports` |
+| [vendor](/en/roles/vendor) | `/reports` |
+
+[Exact route, field and enum source trail](/en/evidence/reports)
+{/* /SCREEN_MAP */}
+
+</details>

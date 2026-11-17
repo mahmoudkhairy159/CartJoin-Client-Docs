@@ -1,0 +1,105 @@
+---
+title: "Vendor handbook"
+description: "Choose an approved workspace, maintain offers, fulfill orders and follow vendor earnings."
+roles: ["VENDOR"]
+---
+
+Your vendor organization can participate in more than one store. The header workspace chooses the tenant you are currently operating in. Confirm it before reading or changing any product, order or financial record. Switching workspace does not turn you into another vendor.
+
+## Choose the task you need
+
+| Task | Open | Check first |
+|---|---|---|
+| Confirm where I am selling | Workspace picker and Workspace terms | Participation must be approved for that store. |
+| Prepare an offer | Products and Inventory | Own product, correct variant, price, stock and publication. |
+| Fulfill a sale | Orders and Fulfilment | Your seller order and the next permitted transition. |
+| Understand earnings | Commissions, Settlements, Payouts and Invoices | Vendor share, active store, currency, period and state. |
+| Maintain my business | My store and Team | Organization profile is separate from your staff account. |
+
+## Check the workspace and business identity
+
+After signing in, read the store name in the header. Choose the intended approved workspace before inspecting its data. If a workspace is unavailable, resolve the participation or access issue rather than using another store as a substitute.
+
+Use **My store** for the vendor organization: Profile, Addresses, Documents and Payout accounts are separate tabs. Use personal account settings for the signed-in staff member. Review **Workspace terms** for the active store. Updating profile text does not approve a document, verify a payout account or change the commercial agreement.
+
+<SystemTour tour="vendor-workspace" compact />
+
+## Prepare an offer customers can buy
+
+Open **Products → All products**, match the product and SKU, and inspect the offer before editing. Maintain the variants, images and permitted commercial data for your own products. Use submission/review actions only when they are available for that state. A saved product does not mean it is published on the storefront.
+
+Check **Inventory** in the same workspace. Physical, reserved and available quantities answer different questions; use history where offered to explain changes. Brands, Categories, Taxes and store configuration can be read-only reference screens. Inspect the final customer-facing product before promising stock, price or delivery.
+
+<SystemTour tour="vendor-offers" compact />
+
+## Fulfill only your part of the purchase
+
+1. Open **Orders** in the correct workspace and match the order and your item lines.
+2. Read order, payment and shipping state separately, then choose an offered legal transition.
+3. Use **Fulfilment → Shipping** for permitted shipment work and follow its recorded state.
+4. Inspect Returns and Refunds when needed; refund visibility is read-only for your allowed scope.
+
+The customer creates the purchase. The vendor cannot rewrite its original items or use tenant-only order notes. Where cancellation is offered through a status transition, vendor cancellation is restricted to pending/confirmed orders and is not allowed after processing. Do not interpret delivery progress as proof of settled earnings.
+
+<SystemTour tour="vendor-fulfillment" compact />
+
+## Read earnings, statements and the transfer trail
+
+Open **Earnings → Commissions** for charges and their source, **Settlements** for the period statement and **Payouts** for transfer state. Match the active store, currency and period. Use the dispute controls only where offered; an approved statement is not proof that money arrived. Review the masked destination without sharing full financial details.
+
+Your **Invoices** view represents the vendor share shown in the workspace and may differ from the customer’s complete purchase invoice. Use **Reports** with a generated period, rather than treating an unavailable snapshot as zero activity. Team roles govern staff actions; Notifications and Feedback support follow-up within your permitted scope.
+
+<SystemTour tour="vendor-earnings" compact />
+
+## When a record or action is missing
+
+If a record disappears after switching workspace, check the header and filters first. Do not assume approval in one store carries into another. When a transition fails, refresh the order before trying again: another staff member or payment event may have changed it. Ask the tenant team about store approval or unsupported actions, with record number and time.
+
+[Read capability steps and rules](/en/features)
+
+## Dashboard map
+
+[Open the dashboard](https://vendor-cart-join.mahmoud-khairy.com/auth/login)
+
+Demo screenshots captured 17 November 2026. Figures are illustrative, not production results.
+
+<details className="guide-technical-details">
+<summary>Screen paths for technical reference</summary>
+
+{/* ROUTE_MAP */}
+| Frontend path | Feature guide |
+|---|---|
+| `/auth` | [access](/en/features/access) |
+| `/dashboard` | [dashboards](/en/features/dashboards) |
+| `/products` | [products](/en/features/products) |
+| `/orders` | [orders](/en/features/orders) |
+| `/inventory` | [inventory](/en/features/inventory) |
+| `/returns` | [returns](/en/features/returns) |
+| `/refunds` | [refunds](/en/features/refunds) |
+| `/shipping` | [shipping](/en/features/shipping) |
+| `/vendor-staff` | [team](/en/features/team) |
+| `/vendor-roles` | [team](/en/features/team) |
+| `/commissions` | [commission](/en/features/commission) |
+| `/settlements` | [settlements](/en/features/settlements) |
+| `/payouts` | [settlements](/en/features/settlements) |
+| `/invoices` | [invoices](/en/features/invoices) |
+| `/reviews` | [reviews](/en/features/reviews) |
+| `/questions` | [reviews](/en/features/reviews) |
+| `/taxes` | [tax-currency](/en/features/tax-currency) |
+| `/faqs` | [support](/en/features/support) |
+| `/brands` | [brands](/en/features/brands) |
+| `/categories` | [categories](/en/features/categories) |
+| `/store-configuration` | [settings](/en/features/settings) |
+| `/workspace-terms` | [vendors](/en/features/vendors) |
+| `/reports` | [reports](/en/features/reports) |
+| `/notifications` | [notifications](/en/features/notifications) |
+| `/vendor-profile` | [vendor-profile](/en/features/vendor-profile) |
+| `/profile` | [access](/en/features/access) |
+| `/dev/style-guide` | Development-only visual reference |
+| `/forbidden` | Access error screen |
+| `/**` | Not-found fallback |
+{/* /ROUTE_MAP */}
+
+</details>
+
+See [shared restrictions](/en/business) and [troubleshooting](/en/troubleshooting).

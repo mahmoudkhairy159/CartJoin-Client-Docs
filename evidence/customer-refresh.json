@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-17",
+  "repository": "CartJoin-Storefront-Frontend",
+  "before": "5fc5565ff14444b8a69fe1428cff1c1ea8ce2ba2",
+  "after": "598d8cd41984e0956a10aac2a9e5838c3db7234b",
+  "pull": "fast-forward",
+  "screensRefreshed": 24,
+  "additionalScreens": 4,
+  "customerTours": [
+    "customer-discover",
+    "customer-buy",
+    "customer-aftercare",
+    "customer-money"
+  ],
+  "sourceFiles": [
+    "src/app/app.routes.ts",
+    "src/app/core/state/wishlist.store.ts",
+    "src/app/features/cart/cart.component.ts",
+    "src/app/features/account/pages/wishlist/wishlist.component.ts",
+    "src/app/features/brands/brands.component.ts",
+    "src/app/features/vendor/vendor-list.component.ts",
+    "src/app/features/vendor/vendor-detail.component.ts",
+    "src/app/features/faqs/faqs.component.ts"
+  ],
+  "limitations": [
+    "Local production-configuration frontend uses deployed demo API; backend deployment parity not verified.",
+    "No checkout, purchase, account edits, wishlist mutations or refunds submitted.",
+    "Help content and flash-sale timers are demo data, not universal policies."
+  ]
+}

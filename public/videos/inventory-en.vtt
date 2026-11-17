@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Read on hand, reserved and available
+On hand is physically held stock. Reserved units are committed to
+pending purchases. Available is what remains. Check the variant and
+location on the same row.
+
+2
+00:00:10.000 --> 00:00:20.000
+Filter the right location
+Use Location and Stock level filters. The search box searches location
+names and codes, not variant SKUs. A missing search result does not
+prove a product has no stock.
+
+3
+00:00:20.000 --> 00:00:30.000
+Identify where the units are held
+Locations distinguish warehouses, stores and virtual buffers. Confirm
+the code, type and active state before using a location in stock
+operations.
+
+4
+00:00:30.000 --> 00:00:40.000
+Trace a stock change
+Movements explain changes caused by orders, returns or adjustments. This
+demo ledger is empty; existing balances alone do not prove a movement
+was recorded.
+

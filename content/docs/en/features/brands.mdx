@@ -1,0 +1,54 @@
+---
+title: "Brands and product associations"
+description: "Brands provide recognizable product grouping and storefront discovery without changing vendor ownership."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open Brands, maintain the brand name, translated content and media where offered, and associate the brand in the product editor. Customers can browse Brands and related catalog results.
+
+<SystemTour tour="feature-brands" compact />
+
+## Restrictions and decisions
+
+A brand is not a vendor account. Brand association does not authorize editing another vendor’s product. Tenant-scoped identifiers must be used inside the current catalog.
+
+## Browse by brand as a customer
+
+You can open Brands without signing in. Choose an available A–Z letter to narrow the tiles; choose it again or Clear to show all loaded brands. Open a tile to see Shop filtered to that brand. Disabled letters have no matching brand in the loaded list. A brand describes the label; the vendor is the business selling and shipping the item.
+
+## Data flow and outcome
+
+Brand metadata → product reference → catalog filter and brand presentation.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Brand/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/brands` |
+| [tenant](/en/roles/tenant) | `/brands` |
+| [vendor](/en/roles/vendor) | `/brands` |
+| [customer](/en/roles/customer) | `/brands` |
+
+[Exact route, field and enum source trail](/en/evidence/brands)
+{/* /SCREEN_MAP */}
+
+</details>

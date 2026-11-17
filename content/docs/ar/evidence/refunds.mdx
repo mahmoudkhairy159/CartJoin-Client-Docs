@@ -1,0 +1,43 @@
+---
+title: "أدلة المصدر: refunds"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Refund/routes/admin-api.php`
+- `Modules/Refund/routes/tenant-api.php`
+- `Modules/Refund/routes/user-api.php`
+- `Modules/Refund/routes/vendor-api.php`
+- `Modules/Refund/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Refund | `admin-api.php` | GET | `refunds` | `index` |
+| Refund | `admin-api.php` | GET | `refunds/{refund}` | `show` |
+| Refund | `tenant-api.php` | POST | `orders/{order}/refunds/preview` | `preview` |
+| Refund | `tenant-api.php` | POST | `orders/{order}/refunds` | `store` |
+| Refund | `tenant-api.php` | GET | `refunds` | `index` |
+| Refund | `tenant-api.php` | GET | `refunds/{refund}` | `show` |
+| Refund | `tenant-api.php` | POST | `refunds/{refund}/settle` | `settle` |
+| Refund | `tenant-api.php` | POST | `refunds/{refund}/withdraw` | `withdraw` |
+| Refund | `user-api.php` | GET | `refunds` | `index` |
+| Refund | `user-api.php` | GET | `refunds/{refund}` | `show` |
+| Refund | `vendor-api.php` | GET | `refunds` | `index` |
+| Refund | `vendor-api.php` | GET | `refunds/{refund}` | `show` |
+
+## حقول النماذج
+
+- `Modules/Refund/App/Http/Requests/Tenant/Refund/PreviewRefundRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `amount`
+- `Modules/Refund/App/Http/Requests/Tenant/Refund/SettleRefundRequest.php`: `comment`
+- `Modules/Refund/App/Http/Requests/Tenant/Refund/StoreRefundRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `amount`, `method`, `reason`, `idempotency_key`
+- `Modules/Refund/App/Http/Requests/Tenant/Refund/WithdrawRefundRequest.php`: `reason`
+
+## قيم الحالات من المصدر
+
+- `Modules/Refund/App/Enums/RefundDestination.php`: `ORIGINAL_PAYMENT = 1`, `WALLET = 2`
+- `Modules/Refund/App/Enums/RefundStatus.php`: `PENDING = 1`, `MANUAL_PENDING = 2`, `SUCCEEDED = 3`, `FAILED = 4`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/refunds)

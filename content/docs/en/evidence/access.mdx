@@ -1,0 +1,64 @@
+---
+title: "Source evidence: access"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Auth/routes/admin-api.php`
+- `Modules/Auth/routes/tenant-api.php`
+- `Modules/Auth/routes/user-api.php`
+- `Modules/Auth/routes/vendor-api.php`
+- `Modules/Auth/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Auth | `tenant-api.php` | POST | `/change-password` | `updatePassword` |
+| Auth | `user-api.php` | POST | `/login` | `login` |
+| Auth | `user-api.php` | POST | `/token/refresh` | `refresh` |
+| Auth | `user-api.php` | DELETE | `/logout` | `destroy` |
+| Auth | `user-api.php` | POST | `/change-password` | `changePassword` |
+| Auth | `user-api.php` | POST | `/social-login` | `socialLogin` |
+| Auth | `user-api.php` | GET | `/social/{provider}/redirect` | `redirect` |
+| Auth | `user-api.php` | GET | `/social/{provider}/callback` | `callback` |
+
+## Form-request field names
+
+- `Modules/Auth/App/Http/Requests/Admin/AdminChangePasswordRequest.php`: `old_password`, `password`
+- `Modules/Auth/App/Http/Requests/Admin/AdminLoginRequest.php`: `identity`, `password`
+- `Modules/Auth/App/Http/Requests/Admin/AdminResetPasswordRequest.php`: `email`, `password`, `code`
+- `Modules/Auth/App/Http/Requests/Admin/AdminVerifyResetPasswordRequest.php`: `code`, `email`
+- `Modules/Auth/App/Http/Requests/Admin/AuthUpdateAdminRequest.php`: `name`, `username`, `email`, `phone`, `birth_date`, `image`
+- `Modules/Auth/App/Http/Requests/Admin/ForgotPasswordRequest.php`: `email`
+- `Modules/Auth/App/Http/Requests/Admin/ForgotPasswordResentCodeRequest.php`: `email`
+- `Modules/Auth/App/Http/Requests/Tenant/AuthUpdateTenantAdminRequest.php`: `name`, `username`, `email`, `phone`, `image`, `birth_date`
+- `Modules/Auth/App/Http/Requests/Tenant/ForgotPasswordRequest.php`: `email`
+- `Modules/Auth/App/Http/Requests/Tenant/ForgotPasswordResentCodeRequest.php`: `email`
+- `Modules/Auth/App/Http/Requests/Tenant/TenantAdminLoginRequest.php`: `identity`, `password`
+- `Modules/Auth/App/Http/Requests/Tenant/TenantAdminResetPasswordRequest.php`: `email`, `password`, `code`
+- `Modules/Auth/App/Http/Requests/Tenant/TenantAdminVerifyResetPasswordRequest.php`: `code`, `email`
+- `Modules/Auth/App/Http/Requests/Tenant/UpdateTenantAdminPasswordRequest.php`: `old_password`, `password`
+- `Modules/Auth/App/Http/Requests/User/ChangePasswordRequest.php`: `old_password`, `password`
+- `Modules/Auth/App/Http/Requests/User/ConfirmPhoneChangeRequest.php`: `code`
+- `Modules/Auth/App/Http/Requests/User/ForgotPasswordRequest.php`: `identity`
+- `Modules/Auth/App/Http/Requests/User/LoginRequest.php`: `identity`, `password`
+- `Modules/Auth/App/Http/Requests/User/RequestPhoneChangeOtpRequest.php`: `phone`
+- `Modules/Auth/App/Http/Requests/User/ResetPasswordRequest.php`: `identity`, `password`, `code`
+- `Modules/Auth/App/Http/Requests/User/UserSocialLoginRequest.php`: `provider`, `provider_token`, `phone`
+- `Modules/Auth/App/Http/Requests/User/VerifyPasswordResetOtpRequest.php`: `code`
+- `Modules/Auth/App/Http/Requests/Vendor/UpdateVendorAdminFcmTokenRequest.php`: `token`, `device_id`
+- `Modules/Auth/App/Http/Requests/Vendor/UpdateVendorAdminRequest.php`: `name`, `email`
+- `Modules/Auth/App/Http/Requests/Vendor/VendorAdminLoginRequest.php`: `identity`, `password`
+- `Modules/Auth/App/Http/Requests/Vendor/VendorChangePasswordRequest.php`: `old_password`, `password`
+- `Modules/Auth/App/Http/Requests/Vendor/VendorForgotPasswordRequest.php`: `email`
+- `Modules/Auth/App/Http/Requests/Vendor/VendorForgotPasswordResentCodeRequest.php`: `email`
+- `Modules/Auth/App/Http/Requests/Vendor/VendorResetPasswordRequest.php`: `email`, `password`, `code`
+- `Modules/Auth/App/Http/Requests/Vendor/VendorVerifyResetPasswordRequest.php`: `code`, `email`
+
+## Enum values in source
+
+- `Modules/Auth/App/Enums/OtpPurpose.php`: `RegisterVerification = 1`, `PhoneVerification = 2`, `PhoneChange = 3`, `PasswordReset = 4`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/access)

@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-17",
+  "repositories": [
+    {
+      "repository": "CartJoin-Admin-Dashboard-Frontend",
+      "before": "a747603affd77af94b899a94309bdd40f4870004",
+      "after": "a747603affd77af94b899a94309bdd40f4870004",
+      "result": "already current",
+      "localEditsPreserved": [
+        "src/environments/environment.development.ts",
+        "bun.lock"
+      ]
+    },
+    {
+      "repository": "CartJoin-Tenant-Dashboard-Frontend",
+      "before": "11f30340f09def1374ebe4821a5dcc4ec560556b",
+      "after": "cb0f52ea12c9ab4d3dcf0afe640b397639b5ce2a",
+      "result": "fast-forward; .gitignore only; no UI/behavior changes",
+      "localEditsPreserved": [
+        "src/environments/environment.development.ts"
+      ]
+    },
+    {
+      "repository": "CartJoin-Vendor-Dashboard-Frontend",
+      "before": "360fd562669bb71edf18d469663ca10d7d5ab632",
+      "after": "360fd562669bb71edf18d469663ca10d7d5ab632",
+      "result": "already current",
+      "localEditsPreserved": [
+        "src/environments/environment.development.ts"
+      ]
+    }
+  ],
+  "captureMethod": "Authorized demo sign-in; deployed UI screenshots; no business mutations",
+  "limitations": [
+    "Source commits reviewed separately from demo deployment; deployment commit parity is not established.",
+    "Read-only tours do not prove transaction completion."
+  ],
+  "captures": {
+    "admin": 38,
+    "tenant": 43,
+    "vendor": 22,
+    "total": 103
+  },
+  "dedicatedTours": 12,
+  "guides": [
+    "en/roles/admin",
+    "ar/roles/admin",
+    "en/roles/tenant",
+    "ar/roles/tenant",
+    "en/roles/vendor",
+    "ar/roles/vendor"
+  ],
+  "noApplicationSourceEdits": true
+}

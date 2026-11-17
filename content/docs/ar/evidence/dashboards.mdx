@@ -1,0 +1,30 @@
+---
+title: "أدلة المصدر: dashboards"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Dashboard/routes/admin-api.php`
+- `Modules/Dashboard/routes/tenant-api.php`
+- `Modules/Dashboard/routes/user-api.php`
+- `Modules/Dashboard/routes/vendor-api.php`
+- `Modules/Dashboard/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Dashboard | `admin-api.php` | GET | `dashboard/widgets/{key}` | `show` |
+| Dashboard | `tenant-api.php` | GET | `dashboard/widgets/{key}` | `show` |
+| Dashboard | `vendor-api.php` | GET | `dashboard/widgets/{key}` | `show` |
+| Dashboard | `vendor-api.php` | GET | `dashboard/summary` | `summary` |
+
+## حقول النماذج
+
+- `Modules/Dashboard/App/Http/Requests/WidgetRequest.php`: `period`, `tenantId`
+
+## قيم الحالات من المصدر
+
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/dashboards)

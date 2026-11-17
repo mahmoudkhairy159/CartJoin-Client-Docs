@@ -1,0 +1,48 @@
+---
+title: "Coupons and eligibility"
+description: "Coupons apply controlled discounts to qualifying carts: percentage, fixed value or shipping discount."
+roles: ["ADMIN", "TENANT"]
+---
+
+
+## How to use it
+
+Operators maintain code, activation dates, limits and product/category eligibility in Coupons. Customers enter the code in Cart and check the recalculated discount. Inspect usage limits when a previously valid code stops applying.
+
+<SystemTour tour="feature-coupons" compact />
+
+## Restrictions and decisions
+
+The code must belong to this tenant, be active within its dates and satisfy minimum amount, usage limits and any first-order/product/category conditions. Fixed discounts cannot exceed subtotal; percentage discounts respect configured caps; free shipping affects shipping only.
+
+## Data flow and outcome
+
+Coupon policy → cart eligibility → computed discount → reserved/redemption lifecycle at purchase. Displayed code acceptance can change if cart contents change.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Coupon/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/coupons` |
+| [tenant](/en/roles/tenant) | `/coupons` |
+
+[Exact route, field and enum source trail](/en/evidence/coupons)
+{/* /SCREEN_MAP */}
+
+</details>

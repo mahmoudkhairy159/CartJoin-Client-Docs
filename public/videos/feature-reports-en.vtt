@@ -1,0 +1,23 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Choose a report category here, then a generated period. Report snapshots
+run on a schedule; this page is the report directory, not a revenue
+result.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Select the report, period and dates together. Not ready or not generated
+can mean no matching snapshot; do not interpret it as zero business
+activity.
+
+3
+00:00:24.000 --> 00:00:36.000
+Vendor workspace
+Check the workspace. Select the report, period and dates together. Not
+ready or not generated can mean no matching snapshot; do not interpret
+it as zero business activity.
+

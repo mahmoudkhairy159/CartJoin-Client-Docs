@@ -1,0 +1,49 @@
+---
+title: "Wallet store credit and controlled adjustments"
+description: "Wallet stores customer credit for one tenant and currency with an append-only ledger and held value for purchases."
+roles: ["ADMIN", "CUSTOMER", "TENANT"]
+---
+
+
+## How to use it
+
+Customers open Account → Wallet to inspect balance and activity, preview available credit and apply it to the cart. Tenant operators review accounts and use the adjustment approval workflow, reconciliation cases and liability reports where permitted.
+
+<SystemTour tour="feature-wallet" compact />
+
+## Restrictions and decisions
+
+Available credit is posted balance less active holds. Manual adjustments require a different approver. No transfers, cash-out, top-up, overdraft or cross-currency conversion are provided in this wallet scope. Corrections use compensating entries, not ledger edits.
+
+## Data flow and outcome
+
+Account + ledger → preview → hold → per-order allocation → capture or release. Eligible refunds restore or credit value through semantic ledger entries.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Wallet/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/wallet` |
+| [tenant](/en/roles/tenant) | `/wallet` |
+| [customer](/en/roles/customer) | `/account/wallet` |
+
+[Exact route, field and enum source trail](/en/evidence/wallet)
+{/* /SCREEN_MAP */}
+
+</details>

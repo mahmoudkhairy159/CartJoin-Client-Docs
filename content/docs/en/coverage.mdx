@@ -1,0 +1,88 @@
+---
+title: "Dashboard coverage and verification limits"
+description: "Source-based coverage with honest readiness labels."
+---
+
+## Edition scope
+
+44 feature guides, four role handbooks and three main business workflows in each language, with detailed source appendices. Navigation coverage comes from all four frontend route trees. Business guidance uses module documents and targeted source review of services, routes and constraints.
+
+| Surface | Mapped route entries | Child route files inspected by extraction |
+|---|---|---|
+| [admin](/en/roles/admin) | 62 | 53 |
+| [tenant](/en/roles/tenant) | 66 | 53 |
+| [vendor](/en/roles/vendor) | 29 | 24 |
+| [customer](/en/roles/customer) | 30 | 4 |
+
+## What was checked
+
+- Extracted frontend routes and mapped every entry to a guide or classified error/developer screen.
+- Reviewed checkout/invoice/order ownership and inventory, payment, refund and selected finance constraints.
+- Signed into demo accounts and observed selected screens with real screenshots.
+
+## Limits and known gaps
+
+- No purchases, payments, transfers or business-record changes were performed to collect screenshots.
+- CartJoin application test suites were not run. Documentation checks/builds are separate.
+- A route is not proof of a complete feature. General Pricing and Promotion remain thin in the status index; advanced recommendations are deferred.
+- Backend documentation contains stale contradictory readiness paragraphs, so this guide does not assert that every module is complete.
+- The current buyer surface is invoice-based; some paths labeled orders display invoice purchases.
+- Homepage copy about return days, shipping and payment options is demo content, not a universal tenant policy.
+- Local source review does not establish that the deployed build matches the checkout. Screenshots reflect the observed deployment on their date.
+
+[Screenshot provenance](/en/screenshots) · [Source evidence](/en/evidence)
+
+{/* visual-coverage:start */}
+## Visual coverage of this edition
+
+All 44 capabilities include an interactive screenshot tour and a short video with English and Arabic captions. The 131 refreshed captures cover 124 dashboard–capability combinations plus seven focused form/reference views. A dash means that dashboard is outside the guide’s observed surface for this capability.
+
+| Capability | Platform | Store | Vendor | Customer |
+|---|---|---|---|---|
+| [Sign-in, profiles and permissions](/en/features/access) | Screen | Screen | Screen | Screen |
+| [Attributes and variant choices](/en/features/attributes) | — | Screen | — | — |
+| [Audit logs and investigation evidence](/en/features/audit) | Screen | Screen | — | — |
+| [Banners and merchandising placements](/en/features/banners) | Screen | Screen | — | — |
+| [Brands and product associations](/en/features/brands) | Screen | Screen | Screen | Screen |
+| [Cart and server-calculated totals](/en/features/cart) | — | — | — | Screen |
+| [Categories and hierarchy](/en/features/categories) | Screen | Screen | Screen | — |
+| [Checkout and vendor-split orders](/en/features/checkout) | — | — | — | Screen |
+| [CMS pages, content blocks and menus](/en/features/cms) | Screen | Screen | — | Screen |
+| [Commission rules, ledger and adjustments](/en/features/commission) | Screen | Screen | Screen | — |
+| [Coupons and eligibility](/en/features/coupons) | Screen | Screen | — | — |
+| [Customers, addresses and groups](/en/features/customers) | Screen | Screen | — | — |
+| [Dashboard metrics and daily triage](/en/features/dashboards) | Screen | Screen | Screen | Screen |
+| [Flash sales and allocated offer stock](/en/features/flash-sales) | Screen | Screen | — | Screen |
+| [Gift cards and redemption policies](/en/features/gift-cards) | Screen | Screen | — | Screen |
+| [Inventory, reservations and stock movements](/en/features/inventory) | Screen | Screen | Screen | — |
+| [Invoices, credit notes and numbering](/en/features/invoices) | Screen | Screen | Screen | Screen |
+| [Loyalty programs, points and expiry](/en/features/loyalty) | Screen | Screen | — | Screen |
+| [Notifications and attention queues](/en/features/notifications) | Screen | Screen | Screen | Screen |
+| [Orders and fulfillment decisions](/en/features/orders) | Screen | Screen | Screen | Screen |
+| [Payments, proof and manual confirmation](/en/features/payments) | Screen | Screen | — | Screen |
+| [Prices, price lists and customer eligibility](/en/features/pricing) | Screen | Screen | — | — |
+| [Products, variants and publication](/en/features/products) | Screen | Screen | Screen | Screen |
+| [Promotions and discount configuration](/en/features/promotions) | — | Screen | — | — |
+| [Refund allocation and reconciliation](/en/features/refunds) | Screen | Screen | Screen | — |
+| [Reports, exports and background jobs](/en/features/reports) | Screen | Screen | Screen | — |
+| [Returns, inspection and exchange](/en/features/returns) | Screen | Screen | Screen | Screen |
+| [Reviews, questions and moderation](/en/features/reviews) | Screen | Screen | Screen | Screen |
+| [Search, discovery and recommendations](/en/features/search) | Screen | Screen | — | Screen |
+| [SEO metadata and discoverability](/en/features/seo) | Screen | Screen | — | — |
+| [Platform settings, flags and reference data](/en/features/settings) | Screen | Screen | Screen | — |
+| [Settlements, disputes and payouts](/en/features/settlements) | Screen | Screen | Screen | — |
+| [Shipping providers and carrier operations](/en/features/shipping-providers) | Screen | Screen | — | — |
+| [Shipping zones, methods, rates and shipments](/en/features/shipping) | Screen | Screen | Screen | Screen |
+| [Storefront identity, settings and maintenance](/en/features/storefront) | Screen | Screen | — | Screen |
+| [Support tickets and FAQs](/en/features/support) | Screen | Screen | Screen | Screen |
+| [Taxes, currencies and monetary interpretation](/en/features/tax-currency) | Screen | Screen | Screen | — |
+| [Staff, roles and account administration](/en/features/team) | Screen | Screen | Screen | — |
+| [Tenants, store identity and branches](/en/features/tenants) | Screen | Screen | — | Screen |
+| [Vendor profile, documents and payout accounts](/en/features/vendor-profile) | — | — | Screen | — |
+| [Vendor onboarding and workspace approval](/en/features/vendors) | Screen | Screen | Screen | Screen |
+| [Wallet store credit and controlled adjustments](/en/features/wallet) | Screen | Screen | — | Screen |
+| [Outbound webhooks and delivery monitoring](/en/features/webhooks) | Screen | Screen | — | — |
+| [Wishlist and saved products](/en/features/wishlist) | — | — | — | Screen |
+
+Admin, tenant and vendor screenshots were refreshed from their demo deployments after reviewing the latest source. Customer screenshots use the pulled local frontend with the demo API. This does not verify the deployed backend commit or successful transaction execution.
+{/* visual-coverage:end */}

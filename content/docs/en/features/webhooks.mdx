@@ -1,0 +1,48 @@
+---
+title: "Outbound webhooks and delivery monitoring"
+description: "Outbound webhooks notify approved external integrations about selected tenant events. They differ from inbound payment-provider confirmation callbacks."
+roles: ["ADMIN", "TENANT"]
+---
+
+
+## How to use it
+
+Tenant operators open Webhooks, configure the permitted HTTPS endpoint and event subscription, then inspect delivery attempts. Investigate failures and replay only through authorized controls. Platform operators monitor and block/unblock subscriptions where allowed.
+
+<SystemTour tour="feature-webhooks" compact />
+
+## Restrictions and decisions
+
+Signed delivery may retry; receivers must handle duplicate business events. Timeout and non-2xx responses fail an attempt. Endpoint safety restrictions and platform blocking still apply. Signing secrets must never appear in screenshots or user-facing examples.
+
+## Data flow and outcome
+
+Tenant event → versioned signed envelope → queued delivery attempt → success or scheduled retry → failure/replay evidence.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Webhook/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/webhooks` |
+| [tenant](/en/roles/tenant) | `/webhooks` |
+
+[Exact route, field and enum source trail](/en/evidence/webhooks)
+{/* /SCREEN_MAP */}
+
+</details>

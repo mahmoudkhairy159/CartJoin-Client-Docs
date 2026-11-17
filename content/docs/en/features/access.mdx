@@ -1,0 +1,50 @@
+---
+title: "Sign-in, profiles and permissions"
+description: "Each surface has its own account type. A customer login does not become a tenant or vendor login. Roles determine which menus, records and actions an operator can use."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open the correct sign-in page. Enter the identity and password issued for that surface. After sign-in, review your profile and use the permission-filtered sidebar. Use password recovery on that same surface when needed.
+
+<SystemTour tour="feature-access" compact />
+
+## Restrictions and decisions
+
+A hidden menu is not permission to open its URL. Expired sessions require sign-in again. A missing permission differs from a missing or out-of-scope record; never change a record ID to work around an error.
+
+## Data flow and outcome
+
+Identity → surface authentication → session → permissions → allowed screens. Profile updates affect the signed-in actor, not the tenant or vendor organization.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Auth/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/auth`, `/profile` |
+| [tenant](/en/roles/tenant) | `/auth`, `/profile` |
+| [vendor](/en/roles/vendor) | `/auth`, `/profile` |
+| [customer](/en/roles/customer) | `/auth`, `/account/profile` |
+
+[Exact route, field and enum source trail](/en/evidence/access)
+{/* /SCREEN_MAP */}
+
+</details>

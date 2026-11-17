@@ -1,0 +1,35 @@
+---
+title: "أدلة المصدر: inventory"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Inventory/routes/admin-api.php`
+- `Modules/Inventory/routes/tenant-api.php`
+- `Modules/Inventory/routes/user-api.php`
+- `Modules/Inventory/routes/vendor-api.php`
+- `Modules/Inventory/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Inventory | `vendor-api.php` | GET | `/inventory/variants` | `index` |
+
+## حقول النماذج
+
+- `Modules/Inventory/App/Http/Requests/Tenant/InventoryAdjustment/StoreInventoryAdjustmentRequest.php`: `reason`, `notes`, `items`, `items.*.variant_id`, `items.*.quantity_change`
+- `Modules/Inventory/App/Http/Requests/Tenant/InventoryLocation/StoreInventoryLocationRequest.php`: `code`, `name`, `name.en`, `name.ar`, `type`, `tenant_branch_id`, `is_active`
+- `Modules/Inventory/App/Http/Requests/Tenant/InventoryLocation/UpdateInventoryLocationRequest.php`: `code`, `name`, `name.en`, `name.ar`, `type`, `tenant_branch_id`, `is_active`
+- `Modules/Inventory/App/Http/Requests/Vendor/InventoryAdjustment/StoreInventoryAdjustmentRequest.php`: `reason`, `notes`, `items`, `items.*.variant_id`, `items.*.quantity_change`
+- `Modules/Inventory/App/Http/Requests/Vendor/InventoryVariant/IndexInventoryVariantRequest.php`: `search`, `page`, `per_page`
+
+## قيم الحالات من المصدر
+
+- `Modules/Inventory/App/Enums/InventoryAdjustmentStatus.php`: `PENDING = 1`, `APPLIED = 2`
+- `Modules/Inventory/App/Enums/InventoryLocationType.php`: `WAREHOUSE = 1`, `STORE = 2`, `VIRTUAL = 3`
+- `Modules/Inventory/App/Enums/InventoryMovementType.php`: `IN = 1`, `OUT = 2`, `TRANSFER = 3`, `ADJUSTMENT = 4`, `RETURN = 5`, `TRANSFER_IN = 6`, `TRANSFER_OUT = 7`, `ADJUSTMENT_IN = 8`, `ADJUSTMENT_OUT = 9`
+- `Modules/Inventory/App/Enums/InventoryReservationStatus.php`: `ACTIVE = 1`, `RELEASED = 2`, `CONFIRMED = 3`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/inventory)

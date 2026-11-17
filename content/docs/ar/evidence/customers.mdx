@@ -1,0 +1,44 @@
+---
+title: "أدلة المصدر: customers"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/User/routes/admin-api.php`
+- `Modules/User/routes/tenant-api.php`
+- `Modules/User/routes/user-api.php`
+- `Modules/User/routes/vendor-api.php`
+- `Modules/User/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## حقول النماذج
+
+- `Modules/User/App/Http/Requests/Admin/User/ImportUsersRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/User/App/Http/Requests/Admin/User/StoreUserRequest.php`: `email`, `name`, `username`, `phone`, `password`, `is_active`, `blocked`, `image`, `tenant_id`, `normalized_phone`, `phone_verified_at`, `must_change_password`
+- `Modules/User/App/Http/Requests/Admin/User/UpdateUserRequest.php`: `email`, `name`, `username`, `phone`, `password`, `is_active`, `blocked`, `image`, `tenant_id`
+- `Modules/User/App/Http/Requests/Tenant/User/ImportUsersRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/User/App/Http/Requests/Tenant/User/StoreUserRequest.php`: `name`, `username`, `email`, `phone`, `password`, `is_active`, `blocked`, `image`
+- `Modules/User/App/Http/Requests/Tenant/User/UpdateUserRequest.php`: `name`, `username`, `email`, `phone`, `password`, `is_active`, `blocked`, `image`, `tenant_id`
+- `Modules/User/App/Http/Requests/User/User/UpdateFcmTokenRequest.php`: `token`, `device_id`
+- `Modules/User/App/Http/Requests/User/User/UpdateUserImageRequest.php`: `image`
+- `Modules/User/App/Http/Requests/User/User/UpdateUserLanguageRequest.php`: `language`
+- `Modules/User/App/Http/Requests/User/User/UpdateUserPreferencesRequest.php`: `dark_mode`
+- `Modules/User/App/Http/Requests/User/User/UpdateUserRequest.php`: `name`
+- `Modules/User/App/Http/Requests/User/UserAddress/StoreUserAddressRequest.php`: `type`, `label`, `phone`, `address`, `latitude`, `longitude`, `postal_code`
+- `Modules/User/App/Http/Requests/User/UserAddress/UpdateUserAddressRequest.php`: `type`, `label`, `phone`, `address`, `latitude`, `longitude`, `postal_code`
+
+## قيم الحالات من المصدر
+
+- `Modules/User/App/Enums/PreferredLanguageEnum.php`: `English = 1`, `Arabic = 2`, `French = 3`, `German = 4`, `Spanish = 5`, `Italian = 6`, `Portuguese = 7`, `Russian = 8`, `Chinese = 9`, `Japanese = 10`, `Korean = 11`, `Turkish = 12`, `Dutch = 13`, `Polish = 14`, `Swedish = 15`, `Danish = 16`, `Finnish = 17`, `Norwegian = 18`, `Czech = 19`, `Hungarian = 20`, `Romanian = 21`, `Slovak = 22`, `Bulgarian = 23`, `Croatian = 24`, `Greek = 25`, `Hebrew = 26`, `Indonesian = 27`, `Malay = 28`, `Thai = 29`, `Vietnamese = 30`, `Ukrainian = 31`, `Persian = 32`, `Hindi = 33`, `Bengali = 34`, `Urdu = 35`, `Swahili = 36`
+- `Modules/User/App/Enums/UserAddressType.php`: `HOME = 1`, `WORK = 2`, `OTHER = 3`
+- `Modules/User/App/Enums/UserExportJobStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/User/App/Enums/UserExportJobType.php`: `EXPORT = 1`, `IMPORT_PREVIEW = 2`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/customers)

@@ -1,0 +1,50 @@
+---
+title: "Reviews, questions and moderation"
+description: "Reviews and product questions support buyer trust while moderation controls what becomes public."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Customers use product feedback controls and Account → Reviews. Tenant operators use Reviews, Questions and Review settings to inspect and moderate. Vendors review or answer feedback only where their own-product permissions allow it.
+
+<SystemTour tour="feature-reviews" compact />
+
+## Restrictions and decisions
+
+Submission does not guarantee immediate publication. Ownership, purchase eligibility and moderation policy determine allowed actions. Replying to feedback does not authorize editing the original purchase.
+
+## Data flow and outcome
+
+Customer submission → eligibility/moderation → public review or answer → catalog trust signals and notifications.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Review/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/reviews` |
+| [tenant](/en/roles/tenant) | `/reviews`, `/questions`, `/review-settings` |
+| [vendor](/en/roles/vendor) | `/reviews`, `/questions` |
+| [customer](/en/roles/customer) | `/account/reviews` |
+
+[Exact route, field and enum source trail](/en/evidence/reviews)
+{/* /SCREEN_MAP */}
+
+</details>

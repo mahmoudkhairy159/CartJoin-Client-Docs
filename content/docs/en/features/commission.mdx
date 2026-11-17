@@ -1,0 +1,49 @@
+---
+title: "Commission rules, ledger and adjustments"
+description: "Commission records the marketplace’s share of vendor sales and the evidence behind each calculation."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Tenant operators configure Commission rules where authorized and inspect Commission records and adjustments. Vendors review their own charges and the originating order context. Use reporting to compare earned, reversed and settled values.
+
+<SystemTour tour="feature-commission" compact />
+
+## Restrictions and decisions
+
+A new rule must not silently rewrite historical captured economics. Refunds and reversals need linked evidence. Vendors cannot edit their own commission to alter a settlement. Commission amount is not the same as vendor payout net.
+
+## Data flow and outcome
+
+Applicable rule → order commission calculation/capture → reversal or adjustment → settlement line.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Commission/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/commissions`, `/commission-adjustments` |
+| [tenant](/en/roles/tenant) | `/commissions`, `/commission-rules`, `/commission-adjustments` |
+| [vendor](/en/roles/vendor) | `/commissions` |
+
+[Exact route, field and enum source trail](/en/evidence/commission)
+{/* /SCREEN_MAP */}
+
+</details>

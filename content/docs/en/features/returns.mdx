@@ -1,0 +1,57 @@
+---
+title: "Returns, inspection and exchange"
+description: "Returns manage the physical post-delivery process separately from the financial refund decision."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Customers open Account → Returns and select an eligible purchase and items. Follow the provided request and shipping instructions. Operators review, approve or reject, receive and inspect actual returned quantities, then choose allowed restock/refund/exchange actions.
+
+<SystemTour tour="feature-returns" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="returns" compact />
+
+</details>
+
+## Restrictions and decisions
+
+Eligibility depends on delivery date, configured return window and non-returnable categories. Refunds use inspected rather than requested quantities. Only suitable-condition items selected for restock return to inventory. A return request is not proof that money was refunded.
+
+## Data flow and outcome
+
+Delivered order → return request → decision → receipt and inspection → independent inventory and refund effects. If a financial action succeeds while restocking fails, reconcile the incident rather than issuing the refund again.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/OrderReturn/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/returns` |
+| [tenant](/en/roles/tenant) | `/returns` |
+| [vendor](/en/roles/vendor) | `/returns` |
+| [customer](/en/roles/customer) | `/account/returns`, `/account/returns/:id` |
+
+[Exact route, field and enum source trail](/en/evidence/returns)
+{/* /SCREEN_MAP */}
+
+</details>

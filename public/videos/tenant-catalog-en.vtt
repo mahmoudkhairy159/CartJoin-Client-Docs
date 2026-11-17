@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Inspect the product and variant
+Match the name, SKU, brand and state before opening a product. A saved
+parent product is separate from a purchasable, active and priced
+variant.
+
+2
+00:00:12.000 --> 00:00:24.000
+Read currency and eligibility
+Read the price rule or list together with its currency, quantity
+threshold and buyer group. The server determines the eligible line
+amount.
+
+3
+00:00:24.000 --> 00:00:36.000
+Read physical, reserved and available stock
+On hand, reserved and available are different quantities. Match the SKU
+and location; scroll wide tables in the system to see the remaining
+columns.
+
+4
+00:00:36.000 --> 00:00:48.000
+Check participation and workspace
+A vendor organization and an approved tenant-vendor link are different
+records. Confirm the active workspace before interpreting products,
+commission or orders.
+

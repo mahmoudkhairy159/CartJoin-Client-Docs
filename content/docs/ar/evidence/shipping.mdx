@@ -1,0 +1,47 @@
+---
+title: "أدلة المصدر: shipping"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Shipping/routes/admin-api.php`
+- `Modules/Shipping/routes/tenant-api.php`
+- `Modules/Shipping/routes/user-api.php`
+- `Modules/Shipping/routes/vendor-api.php`
+- `Modules/Shipping/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Shipping | `tenant-api.php` | GET | `shipping/methods` | `index` |
+| Shipping | `tenant-api.php` | POST | `shipping/zones/{zone}/methods` | `store` |
+| Shipping | `tenant-api.php` | GET | `shipping/methods/{method}` | `show` |
+| Shipping | `tenant-api.php` | PUT | `shipping/methods/{method}` | `update` |
+| Shipping | `tenant-api.php` | DELETE | `shipping/methods/{method}` | `destroy` |
+| Shipping | `tenant-api.php` | GET | `shipping/zones/{zone}/methods` | `listForZone` |
+| Shipping | `tenant-api.php` | GET | `shipping/rates` | `index` |
+| Shipping | `tenant-api.php` | POST | `shipping/methods/{method}/rates` | `store` |
+| Shipping | `tenant-api.php` | GET | `shipping/rates/{rate}` | `show` |
+| Shipping | `tenant-api.php` | PUT | `shipping/rates/{rate}` | `update` |
+| Shipping | `tenant-api.php` | DELETE | `shipping/rates/{rate}` | `destroy` |
+| Shipping | `tenant-api.php` | GET | `shipping/methods/{method}/rates` | `listForMethod` |
+
+## حقول النماذج
+
+- `Modules/Shipping/App/Http/Requests/Tenant/Shipment/AddShipmentEventRequest.php`: `status`, `description`, `location`, `occurred_at`
+- `Modules/Shipping/App/Http/Requests/Tenant/Shipment/AddTrackingRequest.php`: `carrier`, `tracking_number`, `tracking_url`
+- `Modules/Shipping/App/Http/Requests/Tenant/Shipment/UpdateShipmentRequest.php`: `status`, `carrier`, `tracking_number`, `tracking_url`
+- `Modules/Shipping/App/Http/Requests/Tenant/ShippingMethod/StoreShippingMethodRequest.php`: `name`, `description`, `type`, `is_active`, `sort_order`, `estimated_days`, `carrier`
+- `Modules/Shipping/App/Http/Requests/Tenant/ShippingMethod/UpdateShippingMethodRequest.php`: `name`, `description`, `type`, `is_active`, `sort_order`, `estimated_days`, `carrier`
+- `Modules/Shipping/App/Http/Requests/Tenant/ShippingRate/StoreShippingRateRequest.php`: `min_order_amount`, `max_order_amount`, `min_weight`, `max_weight`, `rate`, `is_free`
+- `Modules/Shipping/App/Http/Requests/Tenant/ShippingZone/StoreShippingZoneRequest.php`: `name`, `is_active`, `sort_order`, `regions`, `regions.*.regionable_type`, `regions.*.regionable_id`, `regions.*.regionable_type.in`, `country`, `state`, `city`
+- `Modules/Shipping/App/Http/Requests/Vendor/Shipment/StoreVendorShipmentRequest.php`: `order_id`, `shipping_method_id`, `carrier`, `tracking_number`, `tracking_url`, `status`
+
+## قيم الحالات من المصدر
+
+- `Modules/Shipping/App/Enums/ShipmentStatus.php`: `PENDING = 1`, `PICKED = 2`, `PACKED = 3`, `DISPATCHED = 4`, `IN_TRANSIT = 5`, `DELIVERED = 6`, `RETURNED = 7`
+- `Modules/Shipping/App/Enums/ShippingMethodType.php`: `FLAT_RATE = 1`, `WEIGHT_BASED = 2`, `FREE = 3`, `PICKUP = 4`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/shipping)

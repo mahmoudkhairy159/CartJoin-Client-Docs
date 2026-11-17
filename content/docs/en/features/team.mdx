@@ -1,0 +1,49 @@
+---
+title: "Staff, roles and account administration"
+description: "Delegate work to named staff without sharing an owner account. Platform, tenant and vendor teams have separate role catalogues."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Open the staff list for your organization. Review roles first, create or edit the staff record, assign appropriate roles, and have the staff member sign in through the matching dashboard. Revisit access when responsibilities change.
+
+<SystemTour tour="feature-team" compact />
+
+## Restrictions and decisions
+
+View, create, update, remove and export are independent permissions. Granting list access does not grant every action. Assign only roles available in the current organization; vendor staff do not gain another vendor identity.
+
+## Data flow and outcome
+
+Organization → role permissions → staff assignment → authenticated actions. Account activity and audit evidence identify the actor who performed the operation.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Admin/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/roles`, `/admins`, `/tenant-roles`, `/tenant-admins`, `/vendor-admins`, `/vendor-roles` |
+| [tenant](/en/roles/tenant) | `/tenant-roles`, `/tenant-admins` |
+| [vendor](/en/roles/vendor) | `/vendor-staff`, `/vendor-roles` |
+
+[Exact route, field and enum source trail](/en/evidence/team)
+{/* /SCREEN_MAP */}
+
+</details>

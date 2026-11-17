@@ -1,0 +1,40 @@
+---
+title: "أدلة المصدر: support"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/SupportTicket/routes/admin-api.php`
+- `Modules/SupportTicket/routes/tenant-api.php`
+- `Modules/SupportTicket/routes/user-api.php`
+- `Modules/SupportTicket/routes/vendor-api.php`
+- `Modules/SupportTicket/routes/web.php`
+- `Modules/Faqs/routes/admin-api.php`
+- `Modules/Faqs/routes/tenant-api.php`
+- `Modules/Faqs/routes/user-api.php`
+- `Modules/Faqs/routes/vendor-api.php`
+- `Modules/Faqs/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## حقول النماذج
+
+- `Modules/SupportTicket/App/Http/Requests/Admin/SupportTickets/UpdateSupportTicketRequest.php`: `subject`, `response`, `status`, `priority`, `assigned_id`, `assigned_type`
+- `Modules/SupportTicket/App/Http/Requests/Tenant/SupportTickets/UpdateSupportTicketRequest.php`: `response`, `status`, `priority`
+- `Modules/SupportTicket/App/Http/Requests/User/SupportTickets/StoreSupportTicketRequest.php`: `subject`, `description`, `priority`, `image`
+- `Modules/Faqs/App/Http/Requests/Admin/Faq/ReorderFaqsRequest.php`: `ids`, `ids.*`
+- `Modules/Faqs/App/Http/Requests/Tenant/Faq/ReorderFaqsRequest.php`: `ids`, `ids.*`
+
+## قيم الحالات من المصدر
+
+- `Modules/SupportTicket/App/Enums/SupportTicketPriority.php`: `LOW = 1`, `NORMAL = 2`, `HIGH = 3`, `URGENT = 4`
+- `Modules/SupportTicket/App/Enums/SupportTicketStatus.php`: `SUBMITTED = 1`, `REVIEWING = 2`, `RESOLVED = 3`, `REJECTED = 4`
+- `Modules/SupportTicket/App/Enums/SupportTicketVisibility.php`: `PUBLIC = 1`, `INTERNAL = 2`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/support)

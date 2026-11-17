@@ -1,0 +1,52 @@
+---
+title: "Prices, price lists and customer eligibility"
+description: "Pricing resolves the amount a customer is eligible to pay; price lists associate configured commercial prices with eligible buyers or groups."
+roles: ["ADMIN", "TENANT"]
+---
+
+
+## How to use it
+
+Review variant base prices, then tenant Product prices, Price lists and User groups where enabled. Configure the relevant list and eligibility, then review the resulting cart total for the intended buyer.
+
+<SystemTour tour="feature-pricing" compact />
+
+## Restrictions and decisions
+
+The server recalculates prices. Typed browser totals are not authoritative. Existing orders keep their original money snapshots. Price maintenance requires the relevant permission and the resolved tenant workspace.
+
+## Quantity and pricing authority
+
+Review both the unit price and the quantity-adjusted line total. The pricing pipeline calculates line amounts from unit price × quantity; flash-sale savings apply to the same line once. Authorized tenant operators can inspect and maintain both tenant-owned and vendor-set prices within their own catalog. Vendor access remains limited to that vendor and the selected tenant workspace.
+
+## Data flow and outcome
+
+Variant price + eligible list + applicable discount rules → cart recalculation → checkout money snapshot.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Pricing/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/price-lists` |
+| [tenant](/en/roles/tenant) | `/product-prices`, `/price-lists` |
+
+[Exact route, field and enum source trail](/en/evidence/pricing)
+{/* /SCREEN_MAP */}
+
+</details>

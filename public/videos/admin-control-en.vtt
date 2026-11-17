@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Read the commission context
+Match each commission to its order, rate, currency and status. A
+captured or settled commission is separate from the vendor receiving a
+payout.
+
+2
+00:00:12.000 --> 00:00:24.000
+Check the period statement
+Check statement period, currency, net amount and status. Gross sales,
+commission deductions and paid net are not interchangeable figures.
+
+3
+00:00:24.000 --> 00:00:36.000
+Read available and held credit
+Read available credit and its ledger, not just the total. Holds reserve
+value; gift-card claims and refunds require their own recorded
+transactions.
+
+4
+00:00:36.000 --> 00:00:48.000
+Check configuration boundaries
+Read editable fields and platform-controlled values separately. A
+displayed setting does not by itself prove a related workflow is
+enabled.
+

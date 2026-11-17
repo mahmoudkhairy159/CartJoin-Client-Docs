@@ -1,0 +1,49 @@
+---
+title: "Tenants, store identity and branches"
+description: "A tenant is an independently operated storefront. Branches describe that tenant’s operating locations, while store identity and commerce settings control its presentation and behavior."
+roles: ["ADMIN", "CUSTOMER", "TENANT"]
+---
+
+
+## How to use it
+
+Platform admins open Tenants to inspect or manage the organization. Tenant operators use My store and Tenant branches to maintain their own information and locations. Confirm the store name and address before saving.
+
+<SystemTour tour="feature-tenants" compact />
+
+## Restrictions and decisions
+
+Tenant operators cannot select a different tenant by editing a form. Store identity, branch records and catalog must stay in the resolved tenant. A branch is not automatically an inventory location or a shipping zone.
+
+## Data flow and outcome
+
+Tenant → staff, branches, settings and catalog. Domain/context resolution chooses which storefront data a customer sees.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Tenant/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/tenants`, `/tenant-branches` |
+| [tenant](/en/roles/tenant) | `/my-store`, `/tenant-branches` |
+| [customer](/en/roles/customer) | `/branches` |
+
+[Exact route, field and enum source trail](/en/evidence/tenants)
+{/* /SCREEN_MAP */}
+
+</details>

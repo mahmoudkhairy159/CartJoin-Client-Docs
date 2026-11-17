@@ -1,0 +1,37 @@
+---
+title: "Source evidence: attributes"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Product/routes/admin-api.php`
+- `Modules/Product/routes/tenant-api.php`
+- `Modules/Product/routes/user-api.php`
+- `Modules/Product/routes/vendor-api.php`
+- `Modules/Product/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Product | `tenant-api.php` | GET | `/{productId}/variants` | `index` |
+| Product | `tenant-api.php` | POST | `/{productId}/variants/generate` | `generate` |
+| Product | `tenant-api.php` | PUT | `/{productId}/variants/{variantId}` | `update` |
+| Product | `tenant-api.php` | DELETE | `/{productId}/variants/{variantId}` | `destroy` |
+| Product | `tenant-api.php` | POST | `/{productId}/images` | `upload` |
+| Product | `tenant-api.php` | PUT | `/{productId}/images/reorder` | `reorder` |
+| Product | `tenant-api.php` | DELETE | `/{productId}/images/{imageId}` | `delete` |
+
+## Form-request field names
+
+- `Modules/Product/App/Http/Requests/Tenant/Product/GenerateVariantsRequest.php`: `matrix`, `matrix.*`, `matrix.*.*`
+
+## Enum values in source
+
+- `Modules/Product/App/Enums/AttributeType.php`: `SELECT = 1`, `TEXT = 2`, `COLOR = 3`, `BOOLEAN = 4`
+- `Modules/Product/App/Enums/ProductStatus.php`: `DRAFT = 1`, `ACTIVE = 2`, `INACTIVE = 3`, `ARCHIVED = 4`, `UNDER_REVIEW = 5`
+- `Modules/Product/App/Enums/ProductType.php`: `SIMPLE = 1`, `VARIABLE = 2`
+- `Modules/Product/App/Enums/WeightUnit.php`: `G = 1`, `KG = 2`, `LB = 3`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/attributes)

@@ -1,0 +1,58 @@
+---
+title: "Source evidence: returns"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/OrderReturn/routes/admin-api.php`
+- `Modules/OrderReturn/routes/tenant-api.php`
+- `Modules/OrderReturn/routes/user-api.php`
+- `Modules/OrderReturn/routes/vendor-api.php`
+- `Modules/OrderReturn/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| OrderReturn | `admin-api.php` | GET | `returns` | `index` |
+| OrderReturn | `admin-api.php` | GET | `returns/{return}` | `show` |
+| OrderReturn | `tenant-api.php` | GET | `returns` | `index` |
+| OrderReturn | `tenant-api.php` | GET | `returns/{return}` | `show` |
+| OrderReturn | `tenant-api.php` | PUT | `returns/{return}` | `update` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/approve` | `approve` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/reject` | `reject` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/mark-received` | `markReceived` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/restock` | `restock` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/refund` | `refund` |
+| OrderReturn | `tenant-api.php` | GET | `return-policy` | `policy` |
+| OrderReturn | `user-api.php` | GET | `orders/{order}/return-eligibility` | `eligibility` |
+| OrderReturn | `user-api.php` | POST | `orders/{order}/returns/preview` | `preview` |
+| OrderReturn | `user-api.php` | POST | `orders/{order}/returns` | `store` |
+| OrderReturn | `user-api.php` | GET | `returns` | `index` |
+| OrderReturn | `user-api.php` | GET | `returns/{return}` | `show` |
+| OrderReturn | `user-api.php` | POST | `returns/{return}/shipment` | `attachShipment` |
+| OrderReturn | `vendor-api.php` | GET | `returns` | `index` |
+| OrderReturn | `vendor-api.php` | GET | `returns/{return}` | `show` |
+| OrderReturn | `vendor-api.php` | POST | `returns/{return}/inspect` | `inspect` |
+
+## Form-request field names
+
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/ApproveReturnRequest.php`: `comment`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/MarkReceivedRequest.php`: `items`, `items.*.return_item_id`, `items.*.quantity_received`, `items.*.condition`, `items.*.restock`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RefundReturnRequest.php`: `method`, `amount`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RejectReturnRequest.php`: `reason`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/UpdateReturnRequest.php`: `notes`, `status`
+- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/PreviewReturnRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`
+- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/StoreReturnRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `reason`, `notes`
+- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/StoreReturnShipmentRequest.php`: `carrier`, `tracking_number`, `tracking_url`, `shipped_at`
+- `Modules/OrderReturn/App/Http/Requests/Vendor/OrderReturn/InspectReturnRequest.php`: `items`, `items.*.return_item_id`, `items.*.condition`, `items.*.restock`, `items.*.vendor_recommendation`, `items.*.inspection_notes`
+
+## Enum values in source
+
+- `Modules/OrderReturn/App/Enums/ReturnItemCondition.php`: `NEW = 1`, `GOOD = 2`, `DAMAGED = 3`, `UNUSABLE = 4`
+- `Modules/OrderReturn/App/Enums/ReturnRefundMethod.php`: `ORIGINAL_PAYMENT = 1`, `STORE_CREDIT = 2`, `EXCHANGE = 3`
+- `Modules/OrderReturn/App/Enums/ReturnStatus.php`: `PENDING = 1`, `APPROVED = 2`, `REJECTED = 3`, `RECEIVED = 4`, `RESTOCKED = 5`, `REFUNDED = 6`, `EXCHANGED = 7`
+- `Modules/OrderReturn/App/Enums/VendorReturnRecommendation.php`: `APPROVE = 1`, `REJECT = 2`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/returns)

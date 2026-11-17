@@ -1,0 +1,742 @@
+[
+  {
+    "id": "access",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Sign-in, profiles and permissions",
+      "ar": "تسجيل الدخول والملف والصلاحيات"
+    },
+    "description": {
+      "en": "Each surface has its own account type. A customer login does not become a tenant or vendor login. Roles determine which menus, records and actions an operator can use.",
+      "ar": "لكل واجهة نوع حساب مستقل. حساب العميل لا يمنح صلاحيات إدارة المتجر أو البائع. يحدد الدور القوائم والسجلات والإجراءات المتاحة للمستخدم."
+    }
+  },
+  {
+    "id": "attributes",
+    "roles": [
+      "TENANT"
+    ],
+    "screens": 1,
+    "title": {
+      "en": "Attributes and variant choices",
+      "ar": "السمات وخيارات المتغيرات"
+    },
+    "description": {
+      "en": "Attributes describe selectable differences such as size and color and provide the matrix from which variants are generated.",
+      "ar": "تصف السمات الاختلافات القابلة للاختيار مثل المقاس واللون، وتستخدم لتكوين مجموعة متغيرات المنتج."
+    }
+  },
+  {
+    "id": "audit",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Audit logs and investigation evidence",
+      "ar": "سجلات التدقيق وأدلة التحقيق"
+    },
+    "description": {
+      "en": "Audit evidence links an action to its actor, time and affected record and supports operational investigation.",
+      "ar": "يربط التدقيق الإجراء بمنفذه وتوقيته وسجله، ويدعم التحقيق التشغيلي."
+    }
+  },
+  {
+    "id": "banners",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Banners and merchandising placements",
+      "ar": "اللافتات ومواضع العرض"
+    },
+    "description": {
+      "en": "Banners direct customers to selected collections, products or campaigns within the storefront’s supported placements.",
+      "ar": "توجه اللافتات العميل إلى مجموعات أو منتجات أو حملات ضمن مواضع العرض المدعومة."
+    }
+  },
+  {
+    "id": "brands",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 5,
+    "title": {
+      "en": "Brands and product associations",
+      "ar": "العلامات التجارية وربط المنتجات"
+    },
+    "description": {
+      "en": "Brands provide recognizable product grouping and storefront discovery without changing vendor ownership.",
+      "ar": "تجمع العلامات التجارية المنتجات لتسهيل اكتشافها، دون تغيير ملكية البائع للمنتج."
+    }
+  },
+  {
+    "id": "cart",
+    "roles": [
+      "CUSTOMER"
+    ],
+    "screens": 1,
+    "title": {
+      "en": "Cart and server-calculated totals",
+      "ar": "السلة والإجماليات المحسوبة"
+    },
+    "description": {
+      "en": "The cart holds variant quantities and current commercial adjustments before the purchase is committed.",
+      "ar": "تحفظ السلة كميات المتغيرات والتعديلات التجارية الحالية قبل تثبيت الشراء."
+    }
+  },
+  {
+    "id": "categories",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Categories and hierarchy",
+      "ar": "التصنيفات وشجرتها"
+    },
+    "description": {
+      "en": "Categories organize discovery and can be used to target discounts and other eligibility rules.",
+      "ar": "تنظم التصنيفات اكتشاف المنتجات، ويمكن استخدامها لتحديد أهلية الخصومات والقواعد المرتبطة بها."
+    }
+  },
+  {
+    "id": "checkout",
+    "roles": [
+      "CUSTOMER"
+    ],
+    "screens": 1,
+    "title": {
+      "en": "Checkout and vendor-split orders",
+      "ar": "إتمام الشراء وتقسيم الطلبات حسب البائع"
+    },
+    "description": {
+      "en": "One checkout creates one umbrella invoice with a separate fulfillment order for each vendor group, including tenant-owned goods as their own group.",
+      "ar": "ينشئ إتمام الشراء فاتورة موحدة وطلب تنفيذ مستقلاً لكل مجموعة بائع، وتشكل منتجات المتجر نفسه مجموعة مستقلة."
+    }
+  },
+  {
+    "id": "cms",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "CMS pages, content blocks and menus",
+      "ar": "صفحات المحتوى والكتل والقوائم"
+    },
+    "description": {
+      "en": "CMS content lets tenant operators maintain customer-facing information and navigation without changing the application code.",
+      "ar": "تمكن إدارة المحتوى المتجر من تعديل معلومات العميل والتنقل دون تعديل شيفرة التطبيق."
+    }
+  },
+  {
+    "id": "commission",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Commission rules, ledger and adjustments",
+      "ar": "قواعد العمولة وسجلها وتعديلاتها"
+    },
+    "description": {
+      "en": "Commission records the marketplace’s share of vendor sales and the evidence behind each calculation.",
+      "ar": "تسجل العمولة حصة السوق من مبيعات البائع والأدلة التي بني عليها الحساب."
+    }
+  },
+  {
+    "id": "coupons",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Coupons and eligibility",
+      "ar": "الكوبونات وشروط الاستحقاق"
+    },
+    "description": {
+      "en": "Coupons apply controlled discounts to qualifying carts: percentage, fixed value or shipping discount.",
+      "ar": "تطبق الكوبونات خصماً مضبوطاً على السلال المؤهلة: نسبة أو قيمة ثابتة أو خصم شحن."
+    }
+  },
+  {
+    "id": "customers",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Customers, addresses and groups",
+      "ar": "العملاء والعناوين والمجموعات"
+    },
+    "description": {
+      "en": "Customer records connect purchases, contact details, addresses and account services. Groups allow targeted commercial configuration such as price-list assignment.",
+      "ar": "يربط حساب العميل المشتريات وبيانات الاتصال والعناوين وخدمات الحساب. تتيح المجموعات تخصيص إعدادات تجارية مثل قوائم الأسعار."
+    }
+  },
+  {
+    "id": "dashboards",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Dashboard metrics and daily triage",
+      "ar": "مؤشرات اللوحات والمتابعة اليومية"
+    },
+    "description": {
+      "en": "Dashboards summarize activity and waiting work for the signed-in actor’s scope; they are an entry point to operational records.",
+      "ar": "تلخص اللوحات النشاط والعمل المنتظر في نطاق المستخدم، وهي مدخل للسجلات التشغيلية."
+    }
+  },
+  {
+    "id": "flash-sales",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Flash sales and allocated offer stock",
+      "ar": "التخفيضات الخاطفة ومخزون العرض"
+    },
+    "description": {
+      "en": "Flash sales expose time-limited discounted offers with campaign-specific product/variant eligibility and stock constraints.",
+      "ar": "تعرض التخفيضات الخاطفة عروضاً محددة المدة بأهلية منتجات أو متغيرات وقيود مخزون خاصة."
+    }
+  },
+  {
+    "id": "gift-cards",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Gift cards and redemption policies",
+      "ar": "بطاقات الهدايا وسياسات الاسترداد"
+    },
+    "description": {
+      "en": "Gift cards represent redeemable value governed by tenant policies and their own balance/transaction history.",
+      "ar": "تمثل بطاقات الهدايا قيمة قابلة للاستخدام تحكمها سياسات المتجر وسجل رصيد وحركات مستقل."
+    }
+  },
+  {
+    "id": "inventory",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Inventory, reservations and stock movements",
+      "ar": "المخزون والحجوزات والحركات"
+    },
+    "description": {
+      "en": "Stock balances distinguish physically held units from units reserved for pending purchases. Movements explain why stock changed.",
+      "ar": "يميز رصيد المخزون بين الكمية الفعلية والكمية المحجوزة للمشتريات. توضح الحركات سبب كل تغيير."
+    }
+  },
+  {
+    "id": "invoices",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Invoices, credit notes and numbering",
+      "ar": "الفواتير والإشعارات الدائنة والترقيم"
+    },
+    "description": {
+      "en": "The invoice is the customer’s purchase document across vendor orders. Credit notes record settled refund corrections without editing the original invoice.",
+      "ar": "الفاتورة مستند شراء العميل لجميع طلبات البائعين. تسجل الإشعارات الدائنة الاستردادات المستقرة دون تعديل الفاتورة الأصلية."
+    }
+  },
+  {
+    "id": "loyalty",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Loyalty programs, points and expiry",
+      "ar": "برامج الولاء والنقاط وانتهاؤها"
+    },
+    "description": {
+      "en": "Loyalty manages earned points, eligibility, expiry and redemption under a versioned tenant program.",
+      "ar": "يدير الولاء النقاط المكتسبة وأهليتها وانتهاءها واستخدامها ضمن برنامج متجر ذي إصدارات."
+    }
+  },
+  {
+    "id": "notifications",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Notifications and attention queues",
+      "ar": "الإشعارات وقوائم المتابعة"
+    },
+    "description": {
+      "en": "Notifications surface business events and direct a user to the record that needs attention.",
+      "ar": "تعرض الإشعارات أحداث العمل وتوجه المستخدم للسجل الذي يحتاج المتابعة."
+    }
+  },
+  {
+    "id": "orders",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Orders and fulfillment decisions",
+      "ar": "الطلبات وقرارات التنفيذ"
+    },
+    "description": {
+      "en": "An order is a vendor-specific operational unit with frozen items, addresses and financial values, plus a recorded status timeline.",
+      "ar": "الطلب وحدة تشغيل تخص بائعاً محدداً وتحفظ البنود والعناوين والمبالغ مع سجل لحالات التنفيذ."
+    }
+  },
+  {
+    "id": "payments",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Payments, proof and manual confirmation",
+      "ar": "الدفع والإثبات والتأكيد اليدوي"
+    },
+    "description": {
+      "en": "Payments track what the buyer owes and what has actually been captured against an invoice. Online and manual gateways have different confirmation steps.",
+      "ar": "يتتبع الدفع ما يستحق على العميل وما تم تحصيله فعلياً مقابل الفاتورة. تختلف خطوات التأكيد بين البوابات الإلكترونية واليدوية."
+    }
+  },
+  {
+    "id": "pricing",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Prices, price lists and customer eligibility",
+      "ar": "الأسعار وقوائم الأسعار وأهلية العملاء"
+    },
+    "description": {
+      "en": "Pricing resolves the amount a customer is eligible to pay; price lists associate configured commercial prices with eligible buyers or groups.",
+      "ar": "تحدد خدمة التسعير السعر المستحق للعميل؛ وتربط قوائم الأسعار الأسعار التجارية المحددة بالعملاء أو المجموعات المؤهلة."
+    }
+  },
+  {
+    "id": "products",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Products, variants and publication",
+      "ar": "المنتجات والمتغيرات والنشر"
+    },
+    "description": {
+      "en": "The product describes an offer; its variants carry the purchasable SKU, price and stock identity. Publication controls whether the offer can be sold.",
+      "ar": "يصف المنتج العرض، وتحمل متغيراته رمز الصنف والسعر وهوية المخزون القابلة للشراء. يتحكم النشر في إتاحة البيع."
+    }
+  },
+  {
+    "id": "promotions",
+    "roles": [
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Promotions and discount configuration",
+      "ar": "العروض وإعدادات الخصم"
+    },
+    "description": {
+      "en": "Promotion screens expose configured discount tools, while the backend’s general promotion module remains limited relative to the roadmap.",
+      "ar": "تعرض شاشات العروض أدوات الخصم المتاحة، بينما تظل بعض إمكانات الوحدة العامة محدودة مقارنة بخطة العمل."
+    }
+  },
+  {
+    "id": "refunds",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Refund allocation and reconciliation",
+      "ar": "توزيع الاسترداد وتسويته"
+    },
+    "description": {
+      "en": "Refunds reverse eligible captured value without overwriting the purchase. Allocation protects each order and payment from being refunded twice.",
+      "ar": "يعيد الاسترداد القيمة المحصلة المؤهلة دون تغيير أصل الشراء. يحمي التوزيع كل طلب ودفعة من الاسترداد المكرر."
+    }
+  },
+  {
+    "id": "reports",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Reports, exports and background jobs",
+      "ar": "التقارير والتصدير والمهام الخلفية"
+    },
+    "description": {
+      "en": "Reports turn scoped operational data into comparisons and exportable evidence. Long-running exports can complete asynchronously.",
+      "ar": "تحول التقارير بيانات التشغيل إلى مقارنات وأدلة قابلة للتصدير. قد تكتمل التصديرات الكبيرة في الخلفية."
+    }
+  },
+  {
+    "id": "returns",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Returns, inspection and exchange",
+      "ar": "المرتجعات والفحص والاستبدال"
+    },
+    "description": {
+      "en": "Returns manage the physical post-delivery process separately from the financial refund decision.",
+      "ar": "تدير المرتجعات العملية المادية بعد التسليم بصورة منفصلة عن قرار الاسترداد المالي."
+    }
+  },
+  {
+    "id": "reviews",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Reviews, questions and moderation",
+      "ar": "المراجعات والأسئلة والإشراف"
+    },
+    "description": {
+      "en": "Reviews and product questions support buyer trust while moderation controls what becomes public.",
+      "ar": "تدعم التقييمات وأسئلة المنتجات ثقة العميل، وتحدد المراجعة الإشرافية ما ينشر للعموم."
+    }
+  },
+  {
+    "id": "search",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Search, discovery and recommendations",
+      "ar": "البحث والاكتشاف والتوصيات"
+    },
+    "description": {
+      "en": "Customers discover published offers through catalog filters and search. Operators inspect search-query logs; tenant recommendations provide configured product-discovery tools where available.",
+      "ar": "يكتشف العملاء العروض المنشورة عبر البحث والمرشحات. تراجع الإدارة سجلات كلمات البحث، وتوفر توصيات المتجر أدوات اكتشاف بحسب المتاح."
+    }
+  },
+  {
+    "id": "seo",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "SEO metadata and discoverability",
+      "ar": "بيانات محركات البحث وقابلية الاكتشاف"
+    },
+    "description": {
+      "en": "SEO tools maintain how supported pages describe themselves to search engines and external previews.",
+      "ar": "تحدد أدوات تحسين البحث كيف تصف الصفحات المدعومة نفسها لمحركات البحث ومعاينات الروابط."
+    }
+  },
+  {
+    "id": "settings",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Platform settings, flags and reference data",
+      "ar": "إعدادات المنصة والخصائص والبيانات المرجعية"
+    },
+    "description": {
+      "en": "Settings and reference data provide shared operational inputs such as geography, tags, colors and permitted feature controls.",
+      "ar": "توفر الإعدادات والبيانات المرجعية مدخلات مشتركة كالمناطق والوسوم والألوان والتحكم بالخصائص المتاحة."
+    }
+  },
+  {
+    "id": "settlements",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Settlements, disputes and payouts",
+      "ar": "التسويات والاعتراضات ودفعات الصرف"
+    },
+    "description": {
+      "en": "Settlements turn immutable vendor credits and deductions for a period into a payable balance; payouts record the transfer attempt and result.",
+      "ar": "تحول التسوية مستحقات البائع وخصوماته الثابتة لفترة إلى رصيد مستحق، وتسجل دفعة الصرف محاولة التحويل ونتيجتها."
+    }
+  },
+  {
+    "id": "shipping-providers",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Shipping providers and carrier operations",
+      "ar": "مزودو الشحن وعمليات الناقل"
+    },
+    "description": {
+      "en": "Provider configuration connects parcel operations to supported carriers and their tracking/event behavior.",
+      "ar": "تربط إعدادات المزود تشغيل الطرود بشركات الشحن المدعومة وسلوك التتبع والأحداث."
+    }
+  },
+  {
+    "id": "shipping",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 4,
+    "title": {
+      "en": "Shipping zones, methods, rates and shipments",
+      "ar": "مناطق الشحن وطرقه وأسعاره والشحنات"
+    },
+    "description": {
+      "en": "Shipping configuration prices delivery; shipments record the actual parcel lifecycle. These are related but separate responsibilities.",
+      "ar": "تحدد إعدادات الشحن تكلفة التوصيل، وتسجل الشحنة دورة الطرد الفعلية. ترتبط الوظيفتان وتبقيان منفصلتين."
+    }
+  },
+  {
+    "id": "storefront",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Storefront identity, settings and maintenance",
+      "ar": "هوية واجهة التسوق وإعداداتها والصيانة"
+    },
+    "description": {
+      "en": "Storefront configuration shapes the customer-facing experience for the resolved tenant, including branding and the available operational settings.",
+      "ar": "تشكل إعدادات الواجهة تجربة العميل للمتجر المحدد، بما فيها الهوية والإعدادات التشغيلية المتاحة."
+    }
+  },
+  {
+    "id": "support",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 6,
+    "title": {
+      "en": "Support tickets and FAQs",
+      "ar": "تذاكر الدعم والأسئلة الشائعة"
+    },
+    "description": {
+      "en": "Support tickets preserve a conversation and evidence about an issue. FAQs provide reusable public help organized by category.",
+      "ar": "تحفظ تذكرة الدعم الحوار والأدلة للمشكلة. توفر الأسئلة الشائعة مساعدة عامة منظمة بالتصنيف."
+    }
+  },
+  {
+    "id": "tax-currency",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Taxes, currencies and monetary interpretation",
+      "ar": "الضرائب والعملات وفهم المبالغ"
+    },
+    "description": {
+      "en": "Tax and currency configuration give monetary values their commercial meaning. Always read amounts together with their currency and applied tax context.",
+      "ar": "تحدد الضرائب والعملات معنى المبالغ تجارياً. اقرأ المبلغ مع عملته وسياق الضريبة المطبقة."
+    }
+  },
+  {
+    "id": "team",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Staff, roles and account administration",
+      "ar": "الموظفون والأدوار وإدارة الحسابات"
+    },
+    "description": {
+      "en": "Delegate work to named staff without sharing an owner account. Platform, tenant and vendor teams have separate role catalogues.",
+      "ar": "وزع العمل على حسابات موظفين مسماة بدلاً من مشاركة حساب المالك. توجد أدوار منفصلة لفرق المنصة والمتجر والبائع."
+    }
+  },
+  {
+    "id": "tenants",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Tenants, store identity and branches",
+      "ar": "المتاجر وهوية المتجر والفروع"
+    },
+    "description": {
+      "en": "A tenant is an independently operated storefront. Branches describe that tenant’s operating locations, while store identity and commerce settings control its presentation and behavior.",
+      "ar": "المتجر المستقل هو نطاق تشغيل خاص داخل المنصة. تمثل الفروع مواقع هذا المتجر، وتحدد الهوية والإعدادات طريقة عرضه وتشغيله."
+    }
+  },
+  {
+    "id": "vendor-profile",
+    "roles": [
+      "VENDOR"
+    ],
+    "screens": 1,
+    "title": {
+      "en": "Vendor profile, documents and payout accounts",
+      "ar": "ملف البائع والمستندات وحسابات الصرف"
+    },
+    "description": {
+      "en": "Maintain the business identity and destination details used in marketplace operations and settlement approval.",
+      "ar": "احتفظ بهوية المؤسسة ومستنداتها وبيانات جهة الصرف المستخدمة في تشغيل السوق واعتماد التسويات."
+    }
+  },
+  {
+    "id": "vendors",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 5,
+    "title": {
+      "en": "Vendor onboarding and workspace approval",
+      "ar": "انضمام البائع واعتماد مساحة العمل"
+    },
+    "description": {
+      "en": "Vendors are global organizations that may sell in several tenants. A separate tenant-vendor approval controls participation in each marketplace.",
+      "ar": "البائع مؤسسة عامة يمكن أن تعمل مع عدة متاجر. تتحكم موافقة مستقلة بين المتجر والبائع في إتاحة العمل داخل كل سوق."
+    }
+  },
+  {
+    "id": "wallet",
+    "roles": [
+      "ADMIN",
+      "CUSTOMER",
+      "TENANT"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Wallet store credit and controlled adjustments",
+      "ar": "رصيد المحفظة والتعديلات المضبوطة"
+    },
+    "description": {
+      "en": "Wallet stores customer credit for one tenant and currency with an append-only ledger and held value for purchases.",
+      "ar": "تحفظ المحفظة رصيد العميل لمتجر وعملة محددين بسجل غير قابل للمحو ومبالغ محجوزة للشراء."
+    }
+  },
+  {
+    "id": "webhooks",
+    "roles": [
+      "ADMIN",
+      "TENANT"
+    ],
+    "screens": 2,
+    "title": {
+      "en": "Outbound webhooks and delivery monitoring",
+      "ar": "إشعارات الويب الصادرة ومتابعة التسليم"
+    },
+    "description": {
+      "en": "Outbound webhooks notify approved external integrations about selected tenant events. They differ from inbound payment-provider confirmation callbacks.",
+      "ar": "تبلغ إشعارات الويب الصادرة تكاملات خارجية بأحداث المتجر المختارة. تختلف عن إشعارات تأكيد الدفع الواردة من مزود الدفع."
+    }
+  },
+  {
+    "id": "wishlist",
+    "roles": [
+      "CUSTOMER"
+    ],
+    "screens": 1,
+    "title": {
+      "en": "Wishlist and saved products",
+      "ar": "المفضلة والمنتجات المحفوظة"
+    },
+    "description": {
+      "en": "A wishlist helps a signed-in customer keep products for later without reserving stock or fixing a price.",
+      "ar": "تمكن المفضلة العميل المسجل من حفظ منتجات لاحقاً دون حجز المخزون أو تثبيت السعر."
+    }
+  }
+]

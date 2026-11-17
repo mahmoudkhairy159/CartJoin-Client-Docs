@@ -1,0 +1,30 @@
+---
+title: "Source evidence: dashboards"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Dashboard/routes/admin-api.php`
+- `Modules/Dashboard/routes/tenant-api.php`
+- `Modules/Dashboard/routes/user-api.php`
+- `Modules/Dashboard/routes/vendor-api.php`
+- `Modules/Dashboard/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Dashboard | `admin-api.php` | GET | `dashboard/widgets/{key}` | `show` |
+| Dashboard | `tenant-api.php` | GET | `dashboard/widgets/{key}` | `show` |
+| Dashboard | `vendor-api.php` | GET | `dashboard/widgets/{key}` | `show` |
+| Dashboard | `vendor-api.php` | GET | `dashboard/summary` | `summary` |
+
+## Form-request field names
+
+- `Modules/Dashboard/App/Http/Requests/WidgetRequest.php`: `period`, `tenantId`
+
+## Enum values in source
+
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/dashboards)

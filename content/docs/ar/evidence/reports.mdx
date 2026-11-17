@@ -1,0 +1,47 @@
+---
+title: "أدلة المصدر: reports"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Reports/routes/admin-api.php`
+- `Modules/Reports/routes/tenant-api.php`
+- `Modules/Reports/routes/user-api.php`
+- `Modules/Reports/routes/vendor-api.php`
+- `Modules/Reports/routes/web.php`
+- `Modules/Core/routes/admin-api.php`
+- `Modules/Core/routes/tenant-api.php`
+- `Modules/Core/routes/user-api.php`
+- `Modules/Core/routes/vendor-api.php`
+- `Modules/Core/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Reports | `admin-api.php` | GET | `reports/{type}` | `show` |
+| Reports | `admin-api.php` | POST | `reports/{type}/export` | `export` |
+| Reports | `admin-api.php` | GET | `reports/exports/{jobId}` | `exportStatus` |
+| Reports | `tenant-api.php` | GET | `reports/{type}` | `show` |
+| Reports | `tenant-api.php` | POST | `reports/{type}/export` | `export` |
+| Reports | `tenant-api.php` | GET | `reports/exports/{jobId}` | `exportStatus` |
+| Reports | `vendor-api.php` | GET | `reports/{type}` | `show` |
+| Reports | `vendor-api.php` | POST | `reports/{type}/export` | `export` |
+| Reports | `vendor-api.php` | GET | `reports/exports/{jobId}` | `exportStatus` |
+
+## حقول النماذج
+
+- `Modules/Core/App/Http/Requests/Admin/Color/StoreColorRequest.php`: `code`
+- `Modules/Core/App/Http/Requests/Admin/Color/UpdateColorRequest.php`: `code`
+- `Modules/Core/App/Http/Requests/Admin/Tags/StoreTagRequest.php`: `name`, `is_active`
+- `Modules/Core/App/Http/Requests/Admin/Tags/UpdateTagRequest.php`: `name`, `is_active`
+- `Modules/Core/App/Http/Requests/Concerns/ValidatesRegistryPayload.php`: `key`
+- `Modules/Core/App/Http/Requests/PresignedUpload/BaseGeneratePresignedUploadRequest.php`: `upload_group_uuid`, `model`, `file_name`, `file_type`, `file_size`, `files`, `files.*.file_name`, `files.*.file_type`, `files.*.file_size`
+
+## قيم الحالات من المصدر
+
+- `Modules/Core/App/Enums/ConfigValueType.php`: `STRING = 'string'`, `BOOLEAN = 'boolean'`, `NUMBER = 'number'`, `FILE = 'file'`
+- `Modules/Core/App/Enums/WeekDay.php`: `Sunday = 1`, `Monday = 2`, `Tuesday = 3`, `Wednesday = 4`, `Thursday = 5`, `Friday = 6`, `Saturday = 7`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/reports)

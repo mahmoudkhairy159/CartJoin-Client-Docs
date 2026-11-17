@@ -1,0 +1,34 @@
+---
+title: "Source evidence: shipping-providers"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/ShippingProvider/routes/admin-api.php`
+- `Modules/ShippingProvider/routes/tenant-api.php`
+- `Modules/ShippingProvider/routes/user-api.php`
+- `Modules/ShippingProvider/routes/vendor-api.php`
+- `Modules/ShippingProvider/routes/web.php`
+- `Modules/ShippingProvider/routes/webhook.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| ShippingProvider | `webhook.php` | POST | `/{provider}` | `store` |
+
+## Form-request field names
+
+- `Modules/ShippingProvider/App/Http/Requests/Admin/ShippingProvider/StoreShippingProviderRequest.php`: `code`, `name`, `status`, `supports_labels`, `supports_tracking`
+- `Modules/ShippingProvider/App/Http/Requests/Admin/ShippingProvider/UpdateShippingProviderRequest.php`: `code`, `name`, `status`, `supports_labels`, `supports_tracking`
+- `Modules/ShippingProvider/App/Http/Requests/Tenant/ProviderRateQuote/StoreProviderRateQuoteRequest.php`: `provider_id`, `currency_id`, `shipment_id`, `amount`, `expires_at`, `metadata`
+- `Modules/ShippingProvider/App/Http/Requests/Tenant/ShipmentLabel/StoreShipmentLabelRequest.php`: `label`, `provider_id`, `tracking_number`
+- `Modules/ShippingProvider/App/Http/Requests/Tenant/ShippingProvider/EnableShippingProviderRequest.php`: `is_active`
+- `Modules/ShippingProvider/App/Http/Requests/Tenant/ShippingProvider/UpdateCredentialsRequest.php`: `credentials`, `credentials.*`
+- `Modules/ShippingProvider/App/Http/Requests/Vendor/ShipmentLabel/StoreVendorShipmentLabelRequest.php`: `label`, `provider_id`, `tracking_number`
+
+## Enum values in source
+
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/shipping-providers)

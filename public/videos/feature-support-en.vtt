@@ -1,0 +1,39 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Read subject, priority, state and replies together. A resolved support
+ticket is not proof of a payment, refund or shipment action.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Read subject, priority, state and replies together. A resolved support
+ticket is not proof of a payment, refund or shipment action.
+
+3
+00:00:24.000 --> 00:00:36.000
+Vendor workspace
+Read subject, priority, state and replies together. A resolved support
+ticket is not proof of a payment, refund or shipment action.
+
+4
+00:00:36.000 --> 00:00:48.000
+Customer
+Read subject, priority, state and replies together. A resolved support
+ticket is not proof of a payment, refund or shipment action.
+
+5
+00:00:48.000 --> 00:01:00.000
+Help centre
+Choose a category and expand a question. Guests can read help; a
+personal support ticket requires sign-in.
+
+6
+00:01:00.000 --> 00:01:12.000
+Read an answer
+Expand a question to read the published answer. Store configuration and
+the actual purchase state govern available payment, return and refund
+actions.
+

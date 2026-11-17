@@ -1,0 +1,53 @@
+---
+title: "Gift cards and redemption policies"
+description: "Gift cards represent redeemable value governed by tenant policies and their own balance/transaction history."
+roles: ["ADMIN", "CUSTOMER", "TENANT"]
+---
+
+
+## How to use it
+
+Tenant operators review Gift cards and Gift-card policies before issuing or managing value. Customers use Account → Gift cards and the available redemption controls, then inspect the resulting applied amount and remaining balance.
+
+<SystemTour tour="feature-gift-cards" compact />
+
+## Restrictions and decisions
+
+Gift-card value is not cash in a wallet account. Eligibility, currency, state and policy determine use. Never expose a redeemable secret code in screenshots or treat a saved code as a guaranteed successful redemption.
+
+## Claim feedback
+
+A code that is unknown, not claimable or belongs to another customer produces a field validation message. Correct the code or contact support with a masked reference; do not repeatedly submit it or share the complete secret. A successful claim still needs the resulting balance and transaction evidence to confirm its effect.
+
+## Data flow and outcome
+
+Issued card → policy and balance check → reservation/redemption → order tender allocation and transaction evidence.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/GiftCard/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/gift-cards` |
+| [tenant](/en/roles/tenant) | `/gift-cards`, `/gift-card-policies` |
+| [customer](/en/roles/customer) | `/account/gift-cards` |
+
+[Exact route, field and enum source trail](/en/evidence/gift-cards)
+{/* /SCREEN_MAP */}
+
+</details>

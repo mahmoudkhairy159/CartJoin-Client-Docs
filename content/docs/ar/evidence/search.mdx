@@ -1,0 +1,42 @@
+---
+title: "أدلة المصدر: search"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Search/routes/admin-api.php`
+- `Modules/Search/routes/tenant-api.php`
+- `Modules/Search/routes/user-api.php`
+- `Modules/Search/routes/vendor-api.php`
+- `Modules/Search/routes/web.php`
+- `Modules/RecommendationEngine/routes/admin-api.php`
+- `Modules/RecommendationEngine/routes/tenant-api.php`
+- `Modules/RecommendationEngine/routes/user-api.php`
+- `Modules/RecommendationEngine/routes/vendor-api.php`
+- `Modules/RecommendationEngine/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Search | `admin-api.php` | GET | `search/query-log` | `queryLog` |
+| Search | `tenant-api.php` | GET | `search/query-log` | `queryLog` |
+| Search | `user-api.php` | GET | `search/products` | `searchProducts` |
+
+## حقول النماذج
+
+- `Modules/Search/App/Http/Requests/User/Search/SearchProductsRequest.php`: `q`, `categoryId`, `brandId`, `minPrice`, `maxPrice`, `inStock`, `per_page`
+- `Modules/RecommendationEngine/App/Http/Requests/Tenant/Recommendation/DestroyExclusionRequest.php`: `product_id`, `scope`
+- `Modules/RecommendationEngine/App/Http/Requests/Tenant/Recommendation/DestroyPinRequest.php`: `product_id`, `related_product_id`, `placement`
+- `Modules/RecommendationEngine/App/Http/Requests/Tenant/Recommendation/StoreExclusionRequest.php`: `product_id`, `scope`
+- `Modules/RecommendationEngine/App/Http/Requests/Tenant/Recommendation/StorePinRequest.php`: `product_id`, `related_product_id`, `placement`, `sort_order`
+
+## قيم الحالات من المصدر
+
+- `Modules/RecommendationEngine/App/Enums/ProductRelationType.php`: `SIMILAR = 1`, `FREQUENTLY_BOUGHT = 2`, `CURATED = 3`
+- `Modules/RecommendationEngine/App/Enums/RecommendationExclusionScope.php`: `ALL = 1`, `SIMILAR = 2`, `FBT = 3`, `PERSONALIZED = 4`, `TRENDING = 5`
+- `Modules/RecommendationEngine/App/Enums/RecommendationPlacement.php`: `PRODUCT_PAGE = 1`, `CART_PAGE = 2`, `HOMEPAGE = 3`, `CHECKOUT_PAGE = 4`
+- `Modules/RecommendationEngine/App/Enums/RecommendationRail.php`: `RELATED = 1`, `FREQUENTLY_BOUGHT = 2`, `RECENTLY_VIEWED = 3`, `PERSONALIZED = 4`, `TRENDING = 5`, `BESTSELLER = 6`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/search)

@@ -1,0 +1,29 @@
+---
+title: "Source evidence: promotions"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Promotion/routes/admin-api.php`
+- `Modules/Promotion/routes/tenant-api.php`
+- `Modules/Promotion/routes/user-api.php`
+- `Modules/Promotion/routes/vendor-api.php`
+- `Modules/Promotion/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Promotion | `tenant-api.php` | POST | `promotions/{id}/activate` | `activate` |
+
+## Form-request field names
+
+- `Modules/Promotion/App/Http/Requests/Tenant/Promotion/StorePromotionRequest.php`: `name`, `type`, `status`, `priority`, `is_stackable`, `starts_at`, `ends_at`, `rules`, `rules.*.condition_type`, `rules.*.payload_json`, `rewards`, `rewards.*.reward_type`, `rewards.*.payload_json`, `status.in`
+- `Modules/Promotion/App/Http/Requests/Tenant/Promotion/UpdatePromotionRequest.php`: `name`, `type`, `status`, `priority`, `is_stackable`, `starts_at`, `ends_at`, `rules`, `rules.*.condition_type`, `rules.*.payload_json`, `rewards`, `rewards.*.reward_type`, `rewards.*.payload_json`, `status.in`
+
+## Enum values in source
+
+- `Modules/Promotion/App/Enums/PromotionStatus.php`: `DRAFT = 1`, `ACTIVE = 2`, `ENDED = 3`, `CANCELLED = 4`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/promotions)

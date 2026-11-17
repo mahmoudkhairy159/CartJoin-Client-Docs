@@ -1,0 +1,72 @@
+---
+title: "Source evidence: wallet"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Wallet/routes/admin-api.php`
+- `Modules/Wallet/routes/tenant-api.php`
+- `Modules/Wallet/routes/user-api.php`
+- `Modules/Wallet/routes/vendor-api.php`
+- `Modules/Wallet/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Wallet | `admin-api.php` | GET | `overview` | `overview` |
+| Wallet | `admin-api.php` | GET | `overview/insights` | `insights` |
+| Wallet | `admin-api.php` | GET | `reconciliation-cases` | `cases` |
+| Wallet | `admin-api.php` | GET | `reconciliation-cases/{case}` | `showCase` |
+| Wallet | `admin-api.php` | POST | `accounts/{account}/freeze` | `freeze` |
+| Wallet | `admin-api.php` | POST | `accounts/{account}/unfreeze` | `unfreeze` |
+| Wallet | `tenant-api.php` | GET | `/` | `index` |
+| Wallet | `tenant-api.php` | GET | `{account}` | `show` |
+| Wallet | `tenant-api.php` | GET | `{account}/ledger` | `ledger` |
+| Wallet | `tenant-api.php` | POST | `{account}/adjustments` | `store` |
+| Wallet | `tenant-api.php` | POST | `{account}/freeze` | `freeze` |
+| Wallet | `tenant-api.php` | POST | `{account}/unfreeze` | `unfreeze` |
+| Wallet | `tenant-api.php` | POST | `{account}/begin-closing` | `beginClosing` |
+| Wallet | `tenant-api.php` | POST | `{account}/close` | `close` |
+| Wallet | `tenant-api.php` | GET | `/` | `index` |
+| Wallet | `tenant-api.php` | POST | `{adjustment}/approve` | `approve` |
+| Wallet | `tenant-api.php` | POST | `{adjustment}/reject` | `reject` |
+| Wallet | `tenant-api.php` | GET | `liability` | `liability` |
+| Wallet | `tenant-api.php` | GET | `reconciliation-cases` | `cases` |
+| Wallet | `tenant-api.php` | GET | `reconciliation-cases/{case}` | `showCase` |
+| Wallet | `tenant-api.php` | POST | `reconciliation-cases/{case}/resolve` | `resolveCase` |
+| Wallet | `tenant-api.php` | POST | `exports` | `storeExport` |
+| Wallet | `tenant-api.php` | GET | `exports/{export}` | `showExport` |
+| Wallet | `tenant-api.php` | GET | `exports/{export}/download` | `downloadExport` |
+| Wallet | `user-api.php` | GET | `accounts` | `index` |
+| Wallet | `user-api.php` | GET | `accounts/{publicId}` | `show` |
+| Wallet | `user-api.php` | GET | `accounts/{publicId}/ledger` | `ledger` |
+| Wallet | `user-api.php` | POST | `preview` | `preview` |
+| Wallet | `user-api.php` | PUT | `/` | `apply` |
+| Wallet | `user-api.php` | DELETE | `/` | `remove` |
+
+## Form-request field names
+
+- `Modules/Wallet/App/Http/Requests/Admin/Account/WalletAccountStatusRequest.php`: `tenant_id`, `reason_code`, `note`, `errors`, `message`, `statusCode`
+- `Modules/Wallet/App/Http/Requests/Tenant/Account/WalletAccountStatusRequest.php`: `reason_code`, `note`, `errors`, `message`, `statusCode`
+- `Modules/Wallet/App/Http/Requests/Tenant/Adjustment/DecideWalletAdjustmentRequest.php`: `decision_note`, `errors`, `message`, `statusCode`
+- `Modules/Wallet/App/Http/Requests/Tenant/Adjustment/StoreWalletAdjustmentRequest.php`: `direction`, `amount`, `reason_code`, `note`, `errors`, `message`, `statusCode`
+- `Modules/Wallet/App/Http/Requests/User/Checkout/ApplyWalletRequest.php`: `currency_id`, `requested_amount`, `use_maximum`, `policy_checksum`, `errors`, `message`, `statusCode`
+- `Modules/Wallet/App/Http/Requests/User/Checkout/WalletPreviewRequest.php`: `currency_id`, `requested_amount`, `use_maximum`, `errors`, `message`, `statusCode`
+
+## Enum values in source
+
+- `Modules/Wallet/App/Enums/OrderWalletPaymentStatus.php`: `RESERVED = 1`, `CAPTURED = 2`, `RELEASED = 3`, `RECOVERY_REQUIRED = 4`
+- `Modules/Wallet/App/Enums/WalletAccountStatus.php`: `ACTIVE = 1`, `FROZEN = 2`, `CLOSING = 3`, `CLOSED = 4`
+- `Modules/Wallet/App/Enums/WalletAdjustmentDirection.php`: `CREDIT = 1`, `DEBIT = 2`
+- `Modules/Wallet/App/Enums/WalletAdjustmentStatus.php`: `PENDING = 1`, `APPROVED = 2`, `POSTED = 3`, `REJECTED = 4`, `EXPIRED = 5`, `FAILED = 6`
+- `Modules/Wallet/App/Enums/WalletAuditOutcome.php`: `SUCCEEDED = 1`, `DENIED = 2`, `FAILED = 3`
+- `Modules/Wallet/App/Enums/WalletExportStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/Wallet/App/Enums/WalletHoldStatus.php`: `ACTIVE = 1`, `CAPTURED = 2`, `RELEASED = 3`, `EXPIRED = 4`, `SPLIT = 5`
+- `Modules/Wallet/App/Enums/WalletLedgerEntryType.php`: `REFUND_CREDIT = 1`, `REFUND_RESTORATION_CREDIT = 2`, `GOODWILL_CREDIT = 3`, `MANUAL_CREDIT = 4`, `MANUAL_DEBIT = 5`, `CHECKOUT_DEBIT = 6`, `REVERSAL_CREDIT = 7`, `REVERSAL_DEBIT = 8`, `CORRECTION_CREDIT = 9`, `CORRECTION_DEBIT = 10`, `MIGRATION_CREDIT = 11`, `MIGRATION_DEBIT = 12`, `RECOVERY_OFFSET_DEBIT = 13`
+- `Modules/Wallet/App/Enums/WalletReconciliationCaseType.php`: `BALANCE_DRIFT = 1`, `HELD_BALANCE_DRIFT = 2`, `STALE_HOLD = 3`, `CAPTURE_MISMATCH = 4`, `ORDER_ALLOCATION_MISMATCH = 5`, `REFUND_RESTORATION_MISMATCH = 6`, `TENANT_CURRENCY_MISMATCH = 7`, `IDEMPOTENCY_CONFLICT = 8`, `NEGATIVE_RECOVERY = 9`, `INTEGRATION_FAILURE = 10`
+- `Modules/Wallet/App/Enums/WalletReconciliationSeverity.php`: `LOW = 1`, `MEDIUM = 2`, `HIGH = 3`, `CRITICAL = 4`
+- `Modules/Wallet/App/Enums/WalletReconciliationStatus.php`: `OPEN = 1`, `INVESTIGATING = 2`, `RESOLVED = 3`, `DISMISSED = 4`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/wallet)

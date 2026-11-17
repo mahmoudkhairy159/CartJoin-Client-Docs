@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Inspect the product and variant
+Check the workspace. Match the name, SKU, brand and state before opening
+a product. A saved parent product is separate from a purchasable, active
+and priced variant.
+
+2
+00:00:12.000 --> 00:00:24.000
+Read physical, reserved and available stock
+Check the workspace. On hand, reserved and available are different
+quantities. Match the SKU and location; scroll wide tables in the system
+to see the remaining columns.
+
+3
+00:00:24.000 --> 00:00:36.000
+Use catalog reference data
+The parent column distinguishes a top-level category from a child. Check
+the name, slug and state before assigning products.
+
+4
+00:00:36.000 --> 00:00:48.000
+Check configuration boundaries
+Read editable fields and platform-controlled values separately. A
+displayed setting does not by itself prove a related workflow is
+enabled.
+

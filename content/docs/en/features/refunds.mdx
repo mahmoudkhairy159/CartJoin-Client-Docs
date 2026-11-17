@@ -1,0 +1,49 @@
+---
+title: "Refund allocation and reconciliation"
+description: "Refunds reverse eligible captured value without overwriting the purchase. Allocation protects each order and payment from being refunded twice."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Tenant operators open Refunds, inspect the order and available amounts, preview the selected quantities/value, then initiate through the authorized flow. Follow provider completion or settle/withdraw manual-pending refunds with evidence. Vendors inspect their own refund share.
+
+<SystemTour tour="feature-refunds" compact />
+
+## Restrictions and decisions
+
+The ceiling is the smaller of the order’s remaining refundable value and shared payment headroom. Pending refunds reserve value. Duplicate line IDs are invalid, quantities cap value, and a sibling vendor order’s funds cannot cover an over-refund. Vendor access is read-only.
+
+## Data flow and outcome
+
+Eligible order lines → preview allocation → refund command → online confirmation or manual settlement → refund ledger, payment totals and credit note. Partial refunds across siblings do not mark the whole shared payment fully refunded.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Refund/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/refunds` |
+| [tenant](/en/roles/tenant) | `/refunds` |
+| [vendor](/en/roles/vendor) | `/refunds` |
+
+[Exact route, field and enum source trail](/en/evidence/refunds)
+{/* /SCREEN_MAP */}
+
+</details>

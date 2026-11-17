@@ -1,0 +1,51 @@
+---
+title: "Checkout and vendor-split orders"
+description: "One checkout creates one umbrella invoice with a separate fulfillment order for each vendor group, including tenant-owned goods as their own group."
+roles: ["CUSTOMER"]
+---
+
+
+## How to use it
+
+Follow Checkout’s four steps: Address, Delivery, Payment, Review. Confirm the vendor split and final total, then submit once and wait for the invoice confirmation. Follow the chosen payment method and use Account → Invoices to continue the purchase.
+
+<SystemTour tour="feature-checkout" compact />
+
+## Restrictions and decisions
+
+Empty or invalid carts cannot check out. Address, stock, shipping and payment method must be valid for the tenant. Idempotency prevents a replay of the same command from creating a second purchase. Group totals must sum to the original total to the cent.
+
+## Address and delivery selection
+
+Choose the country first, then its state and city. Saved addresses resolve their location names before delivery options are requested. Select an offered shipping method and review its cost and estimated days; an empty method list needs an address or coverage check. Payment methods follow the store’s configured order. The final Review step remains necessary before placing the purchase.
+
+## Data flow and outcome
+
+Validate cart → lock and group lines → reserve stock → snapshot orders → issue invoice → clear cart in the transaction → initiate payment after placement. A payment redirect alone does not prove success.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Invoice/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [customer](/en/roles/customer) | `/checkout` |
+
+[Exact route, field and enum source trail](/en/evidence/checkout)
+{/* /SCREEN_MAP */}
+
+</details>

@@ -1,0 +1,45 @@
+---
+title: "Source evidence: tenants"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Tenant/routes/admin-api.php`
+- `Modules/Tenant/routes/tenant-api.php`
+- `Modules/Tenant/routes/user-api.php`
+- `Modules/Tenant/routes/vendor-api.php`
+- `Modules/Tenant/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Tenant/App/Http/Requests/Admin/Tenant/ImportTenantsRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/Tenant/App/Http/Requests/Admin/Tenant/StoreTenantRequest.php`: `code`, `type`, `is_active`, `email`, `phone`, `image`
+- `Modules/Tenant/App/Http/Requests/Admin/Tenant/UpdateTenantRequest.php`: `type`, `is_active`, `email`, `phone`, `image`
+- `Modules/Tenant/App/Http/Requests/Admin/TenantBranch/ImportTenantBranchesRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/Tenant/App/Http/Requests/Admin/TenantBranch/StoreTenantBranchRequest.php`: `name`
+- `Modules/Tenant/App/Http/Requests/Admin/TenantBranch/UpdateTenantBranchRequest.php`: `name`
+- `Modules/Tenant/App/Http/Requests/Admin/WorkingHours/UpdateWorkingHoursRequest.php`: `working_days`, `working_days.*.day`, `working_days.*.is_open`, `working_days.*.slots`, `working_days.*.slots.*.from`, `working_days.*.slots.*.to`
+- `Modules/Tenant/App/Http/Requests/Concerns/ValidatesBranchAddress.php`: `address`, `address.type`, `address.phone`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/Tenant/App/Http/Requests/Tenant/Tenant/UpdateTenantRequest.php`: `email`, `phone`, `image`
+- `Modules/Tenant/App/Http/Requests/Tenant/TenantBranch/StoreTenantBranchRequest.php`: `name`
+- `Modules/Tenant/App/Http/Requests/Tenant/TenantBranch/UpdateTenantBranchRequest.php`: `name`
+- `Modules/Tenant/App/Http/Requests/Tenant/WorkingHours/UpdateWorkingHoursRequest.php`: `working_days`, `working_days.*.day`, `working_days.*.is_open`, `working_days.*.slots`, `working_days.*.slots.*.from`, `working_days.*.slots.*.to`
+
+## Enum values in source
+
+- `Modules/Tenant/App/Enums/BranchAddressType.php`: `STORE = 1`, `WAREHOUSE = 2`, `OFFICE = 3`, `OTHER = 4`
+- `Modules/Tenant/App/Enums/TenantBranchExportJobStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/Tenant/App/Enums/TenantBranchExportJobType.php`: `EXPORT = 1`, `IMPORT_PREVIEW = 2`
+- `Modules/Tenant/App/Enums/TenantExportJobStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/Tenant/App/Enums/TenantExportJobType.php`: `EXPORT = 1`, `IMPORT_PREVIEW = 2`
+- `Modules/Tenant/App/Enums/TenantTypeEnum.php`: `RETAILER = 1`, `WHOLESALER = 2`, `MANUFACTURER = 3`, `DROPSHIPPER = 4`, `SERVICE_PROVIDER = 5`, `FRANCHISE = 6`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/tenants)

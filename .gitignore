@@ -1,0 +1,51 @@
+# deps
+/node_modules
+
+# generated content
+.source
+
+# test & build
+/coverage
+/.next/
+/out/
+/build
+*.tsbuildinfo
+
+# misc
+.DS_Store
+*.pem
+/.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# others
+.env*.local
+.vercel
+next-env.d.ts
+# leftovers from an interrupted bun run sync
+*.tmp/
+build.log
+.tour-build/
+
+.capture-runtime/
+
+# Local environment and capture work
+.env
+.env.*
+!.env.example
+/task_plan.md
+/findings.md
+/progress.md
+/evidence/*
+!/evidence/source-inventory.json
+!/evidence/feature-captures.json
+!/evidence/visual-coverage.json
+!/evidence/video-verification.json
+!/evidence/rendered-route-check.json
+!/evidence/operator-refresh.json
+!/evidence/customer-refresh.json
+!/evidence/operator-tour-plan.json
+!/evidence/verification.md
+!/evidence/template-homepage.jpg

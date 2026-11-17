@@ -1,0 +1,39 @@
+---
+title: "Source evidence: notifications"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Notification/routes/admin-api.php`
+- `Modules/Notification/routes/tenant-api.php`
+- `Modules/Notification/routes/user-api.php`
+- `Modules/Notification/routes/vendor-api.php`
+- `Modules/Notification/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Notification/App/Http/Requests/Admin/MarkAllAsReadRequest.php`: `user_id`, `user_type`
+- `Modules/Notification/App/Http/Requests/Admin/SendNotificationRequest.php`: `user_ids`, `user_ids.*`, `user_type`, `title`, `message`, `channels`, `channels.*`, `type`, `data`, `translations`, `translations.*`, `translations.*.title`, `translations.*.message`
+- `Modules/Notification/App/Http/Requests/Admin/UpdateNotificationRequest.php`: `topic_id`, `type`, `channel`, `status`, `data`, `translations`, `translations.*`, `translations.*.title`, `translations.*.message`
+- `Modules/Notification/App/Http/Requests/User/NotificationIndexRequest.php`: `read`, `per_page`, `channel`, `search`, `status`
+- `Modules/Notification/App/Http/Requests/User/TopicIndexRequest.php`: `type`, `search`
+- `Modules/Notification/App/Http/Requests/User/TopicSubscriptionRequest.php`: `topic_key`, `channels`, `channels.*`
+- `Modules/Notification/App/Http/Requests/User/TopicUnsubscriptionRequest.php`: `topic_key`
+
+## Enum values in source
+
+- `Modules/Notification/App/Enums/NotificationAction.php`: `CUSTOMER = 1`, `ORDER = 2`, `PAYMENT = 3`, `TENANT = 4`, `SYSTEM = 5`
+- `Modules/Notification/App/Enums/NotificationTarget.php`: `ALL_CUSTOMERS = 1`, `ALL_TENANT_ADMINS = 2`, `SPECIFIC_CUSTOMERS = 3`, `SPECIFIC_TENANT_ADMINS = 4`, `ALL_ADMINS = 5`, `SPECIFIC_ADMINS = 6`, `ALL_VENDOR_ADMINS = 7`, `SPECIFIC_VENDOR_ADMINS = 8`
+- `Modules/Notification/App/Enums/NotificationTopic.php`: `TENANT = 'tenant'`, `ROLE = 'role'`, `USER_TYPE = 'user_type'`, `SYSTEM = 'system'`, `ALL_USERS = 'all_users'`
+- `Modules/Notification/App/Enums/NotificationType.php`: `CUSTOM = 'custom'`, `CUSTOMER_CREATED = 'customer_created'`, `CUSTOMER_UPDATED = 'customer_updated'`, `CUSTOMER_ACTIVATED = 'customer_activated'`, `CUSTOMER_DEACTIVATED = 'customer_deactivated'`, `TENANT_CREATED = 'tenant_created'`, `TENANT_UPDATED = 'tenant_updated'`, `PAYMENT_RECEIVED = 'payment_received'`, `PAYMENT_FAILED = 'payment_failed'`, `NEW_POLICY_UPDATE = 'new_policy_update'`, `SYSTEM_ANNOUNCEMENT = 'system_announcement'`, `SYSTEM_UPDATE = 'system_update'`
+- `Modules/Notification/App/Enums/NotificationUserType.php`: `CUSTOMER = 1`, `TENANT_ADMIN = 2`, `ADMIN = 3`, `VENDOR_ADMIN = 4`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/notifications)

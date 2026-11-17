@@ -1,0 +1,61 @@
+---
+title: "Vendor onboarding and workspace approval"
+description: "Vendors are global organizations that may sell in several tenants. A separate tenant-vendor approval controls participation in each marketplace."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Review the vendor organization and supporting documents. Open Tenant vendors to inspect the relationship and its approval state. Vendor users sign in, then choose an approved workspace and review Workspace terms before operating.
+
+<SystemTour tour="feature-vendors" compact />
+
+<details className="guide-task-details">
+<summary>Detailed task walkthrough</summary>
+
+<SystemTour tour="vendor" compact startAt={0} />
+
+</details>
+
+## Restrictions and decisions
+
+An active vendor organization alone does not approve every tenant relationship. Every vendor record request is limited by vendor identity and active tenant. A workspace switch must refresh the displayed data.
+
+## Find the seller before choosing a product
+
+Open Vendors and search by name. Select a seller to read its description, available public addresses and product collection. A seller without a dedicated page can open a seller-filtered Shop view. You can browse these pages as a guest; saving or buying requires your customer account. The displayed directory count is not a delivery guarantee.
+
+## Data flow and outcome
+
+Vendor identity + tenant approval → selectable workspace → vendor-owned products and orders. Approval evidence is distinct from product moderation.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Vendor/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/vendors`, `/tenant-vendors` |
+| [tenant](/en/roles/tenant) | `/tenant-vendors` |
+| [vendor](/en/roles/vendor) | `/workspace-terms` |
+| [customer](/en/roles/customer) | `/vendor` |
+
+[Exact route, field and enum source trail](/en/evidence/vendors)
+{/* /SCREEN_MAP */}
+
+</details>

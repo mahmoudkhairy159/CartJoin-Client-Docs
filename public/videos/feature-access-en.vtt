@@ -1,0 +1,27 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Use the profile and security controls for your own account. Changing
+personal details does not grant new dashboard permissions.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Use the profile and security controls for your own account. Changing
+personal details does not grant new dashboard permissions.
+
+3
+00:00:24.000 --> 00:00:36.000
+Vendor workspace
+Account settings exposes password-change and account-removal controls.
+This capture uses empty password fields; no credential or account change
+was submitted.
+
+4
+00:00:36.000 --> 00:00:48.000
+Customer
+Use the profile and security controls for your own account. Changing
+personal details does not grant new dashboard permissions.
+

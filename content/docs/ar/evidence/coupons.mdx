@@ -1,0 +1,35 @@
+---
+title: "أدلة المصدر: coupons"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Coupon/routes/admin-api.php`
+- `Modules/Coupon/routes/tenant-api.php`
+- `Modules/Coupon/routes/user-api.php`
+- `Modules/Coupon/routes/vendor-api.php`
+- `Modules/Coupon/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## حقول النماذج
+
+- `Modules/Coupon/App/Http/Requests/Admin/Coupon/StoreCouponRequest.php`: `tenant_id`, `currency_id`, `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
+- `Modules/Coupon/App/Http/Requests/Admin/Coupon/UpdateCouponRequest.php`: `tenant_id`, `currency_id`, `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
+- `Modules/Coupon/App/Http/Requests/Tenant/Coupon/StoreCouponRequest.php`: `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
+- `Modules/Coupon/App/Http/Requests/Tenant/Coupon/UpdateCouponRequest.php`: `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
+- `Modules/Coupon/App/Http/Requests/User/Coupon/ApplyCouponRequest.php`: `code`, `subtotal`, `shipping_total`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`, `has_existing_discount`
+
+## قيم الحالات من المصدر
+
+- `Modules/Coupon/App/Enums/CouponRedemptionStatus.php`: `PENDING = 'pending'`, `CONFIRMED = 'confirmed'`, `RELEASED = 'released'`
+- `Modules/Coupon/App/Enums/CouponRejectionReason.php`: `NOT_FOUND = 'not_found'`, `INACTIVE = 'inactive'`, `NOT_STARTED = 'not_started'`, `EXPIRED = 'expired'`, `USAGE_LIMIT_REACHED = 'usage_limit_reached'`, `PER_USER_LIMIT_REACHED = 'per_user_limit_reached'`, `BELOW_MINIMUM_ORDER = 'below_minimum_order'`, `PRODUCT_NOT_ELIGIBLE = 'product_not_eligible'`, `FIRST_ORDER_ONLY = 'first_order_only'`, `NOT_STACKABLE = 'not_stackable'`, `ZERO_DISCOUNT = 'zero_discount'`
+- `Modules/Coupon/App/Enums/CouponType.php`: `PERCENTAGE = 'percentage'`, `FIXED = 'fixed'`, `FREE_SHIPPING = 'free_shipping'`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/coupons)

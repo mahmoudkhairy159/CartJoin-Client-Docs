@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+Match invoice identity, state and currency. Open the purchase for vendor
+orders and item snapshots; a PDF that is not ready does not mean the
+invoice is missing.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Match invoice identity, state and currency. Open the purchase for vendor
+orders and item snapshots; a PDF that is not ready does not mean the
+invoice is missing.
+
+3
+00:00:24.000 --> 00:00:36.000
+Vendor workspace
+Check the workspace. Your total is the vendor share shown in this
+workspace. It can differ from the full purchase invoice paid by the
+customer.
+
+4
+00:00:36.000 --> 00:00:48.000
+Customer
+Match invoice identity, state and currency. Open the purchase for vendor
+orders and item snapshots; a PDF that is not ready does not mean the
+invoice is missing.
+

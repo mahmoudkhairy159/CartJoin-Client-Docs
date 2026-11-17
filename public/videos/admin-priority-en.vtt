@@ -1,0 +1,28 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Read the period and snapshot
+Period metrics and current queues answer different questions. Choose the
+reporting period and read the generated time before comparing figures.
+
+2
+00:00:12.000 --> 00:00:24.000
+Choose a generated report
+Choose a report category here, then a generated period. Report snapshots
+run on a schedule; this page is the report directory, not a revenue
+result.
+
+3
+00:00:24.000 --> 00:00:36.000
+Read the account inbox
+This overview covers in-app notifications only. Its queued, delivered
+and read counts do not include email, SMS or push delivery.
+
+4
+00:00:36.000 --> 00:00:48.000
+Match the actor and event
+Match the event, time, affected record and actor. Use the tenant scope
+before investigating a record; a log entry is evidence of that event
+only.
+

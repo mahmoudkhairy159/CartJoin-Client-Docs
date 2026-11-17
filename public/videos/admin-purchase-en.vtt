@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Match the order and its state
+Platform oversight is read-only. Match the order to its invoice, tenant
+and vendor, then inspect payment and shipping states separately.
+
+2
+00:00:12.000 --> 00:00:24.000
+Read the purchase document
+Match invoice identity, state and currency. Open the purchase for vendor
+orders and item snapshots; a PDF that is not ready does not mean the
+invoice is missing.
+
+3
+00:00:24.000 --> 00:00:36.000
+Read the recorded money state
+Match the purchase, method, amount and recorded state. Awaiting
+confirmation, pending approval and paid require different next steps; a
+redirect is not payment proof.
+
+4
+00:00:36.000 --> 00:00:48.000
+Separate physical and financial work
+Match the return to its order and current stage. Receipt, inspection,
+restocking and financial refund are distinct decisions; use the next
+permitted action.
+

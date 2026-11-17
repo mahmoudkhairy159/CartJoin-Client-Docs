@@ -1,0 +1,55 @@
+---
+title: "Cart and server-calculated totals"
+description: "The cart holds variant quantities and current commercial adjustments before the purchase is committed."
+roles: ["CUSTOMER"]
+---
+
+
+## How to use it
+
+Sign in, choose a variant and add it. Open Cart to adjust quantities, remove unavailable items, apply an eligible coupon and inspect credit/points options. Review refreshed totals and validation messages before checkout.
+
+<SystemTour tour="feature-cart" compact />
+
+## Restrictions and decisions
+
+No guest cart is implemented. One cart cannot mix tenants. The default distinct-line cap is 50 and configured expiry is normally seven days. Prices recalculate on mutations; stock can change before checkout. Expired carts may be cleared.
+
+## Read quantities and expiry
+
+Changing quantity must change the line amount, not just the displayed count. Review the refreshed totals before checkout. The storefront now shows cart expiry as a readable date and time. Product pictures use the product image when a variant has no separate picture. A cart picture or price is still provisional until purchase placement succeeds.
+
+## Recheck the basket when you return
+
+Opening Cart now requests the latest basket from the server. Read the variant, quantity and seller group, then the coupon, gift-card, wallet and points adjustments actually applied. An option may be absent when no eligible value is available. Delivery progress messages are estimates; use the final checkout quote. If the page cannot refresh, do not assume an older total is still valid.
+
+## Data flow and outcome
+
+Authenticated buyer + tenant → variant lines → recalculation and eligibility → validated checkout input. Cart totals are provisional until checkout succeeds.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Cart/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [customer](/en/roles/customer) | `/cart` |
+
+[Exact route, field and enum source trail](/en/evidence/cart)
+{/* /SCREEN_MAP */}
+
+</details>

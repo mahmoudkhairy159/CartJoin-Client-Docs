@@ -1,0 +1,51 @@
+---
+title: "أدلة المصدر: checkout"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Invoice/routes/admin-api.php`
+- `Modules/Invoice/routes/api.php`
+- `Modules/Invoice/routes/tenant-api.php`
+- `Modules/Invoice/routes/vendor-api.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Invoice | `admin-api.php` | GET | `invoices` | `index` |
+| Invoice | `admin-api.php` | GET | `invoices/{invoice}` | `show` |
+| Invoice | `admin-api.php` | GET | `invoice-sequences/integrity` | `integrity` |
+| Invoice | `api.php` | POST | `checkout` | `checkout` |
+| Invoice | `api.php` | GET | `invoices` | `index` |
+| Invoice | `api.php` | GET | `invoices/{invoice}` | `show` |
+| Invoice | `api.php` | GET | `invoices/{invoice}/pdf` | `pdf` |
+| Invoice | `api.php` | POST | `invoices/{invoice}/orders/{order}/cancel` | `cancelOrder` |
+| Invoice | `api.php` | GET | `credit-notes` | `index` |
+| Invoice | `tenant-api.php` | GET | `invoices/export` | `export` |
+| Invoice | `tenant-api.php` | GET | `invoices` | `index` |
+| Invoice | `tenant-api.php` | GET | `invoices/{invoice}` | `show` |
+| Invoice | `tenant-api.php` | POST | `invoices/{invoice}/cancel` | `cancel` |
+| Invoice | `tenant-api.php` | GET | `invoices/{invoice}/pdf` | `pdf` |
+| Invoice | `tenant-api.php` | GET | `credit-notes` | `index` |
+| Invoice | `tenant-api.php` | GET | `credit-notes/{creditNote}` | `show` |
+| Invoice | `tenant-api.php` | GET | `credit-notes/{creditNote}/pdf` | `pdf` |
+| Invoice | `tenant-api.php` | GET | `invoice-settings` | `show` |
+| Invoice | `tenant-api.php` | PUT | `invoice-settings` | `update` |
+| Invoice | `vendor-api.php` | GET | `invoices` | `index` |
+| Invoice | `vendor-api.php` | GET | `invoices/{invoice}` | `show` |
+
+## حقول النماذج
+
+- `Modules/Invoice/App/Http/Requests/Tenant/Invoice/CancelInvoiceRequest.php`: `reason`
+- `Modules/Invoice/App/Http/Requests/Tenant/InvoiceSetting/UpdateInvoiceSettingRequest.php`: `is_enabled`, `numbering_reset`, `due_days`, `legal_name`, `tax_registration_number`, `billing_address`, `footer_terms`, `logo_path`
+- `Modules/Invoice/App/Http/Requests/User/Checkout/CheckoutRequest.php`: `shipping_method_id`, `payment_method`, `shipping_address`, `shipping_address.first_name`, `shipping_address.last_name`, `shipping_address.phone`, `shipping_address.address_line_1`, `shipping_address.address_line_2`, `shipping_address.city`, `shipping_address.state`, `shipping_address.country`, `shipping_address.postal_code`, `billing_address`, `billing_address.first_name`, `billing_address.last_name`, `billing_address.phone`, `billing_address.address_line_1`, `billing_address.address_line_2`, `billing_address.city`, `billing_address.state`, `billing_address.country`, `billing_address.postal_code`
+
+## قيم الحالات من المصدر
+
+- `Modules/Invoice/App/Enums/InvoiceNumberingReset.php`: `NEVER = 1`, `YEARLY = 2`, `MONTHLY = 3`
+- `Modules/Invoice/App/Enums/InvoiceSeries.php`: `STANDARD = 'standard'`, `CREDIT_NOTE = 'credit_note'`, `PROFORMA = 'proforma'`
+- `Modules/Invoice/App/Enums/InvoiceStatus.php`: `DRAFT = 1`, `ISSUED = 2`, `PAID = 3`, `PARTIALLY_PAID = 4`, `CANCELLED = 5`, `CREDITED = 6`, `PARTIALLY_CREDITED = 7`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/checkout)

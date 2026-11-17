@@ -1,0 +1,26 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Read the invoice and seller orders
+One invoice can contain separate seller orders. Read each order and
+payment state rather than treating the invoice as one parcel.
+
+2
+00:00:12.000 --> 00:00:24.000
+Follow the parcel
+Use the tracking timeline for the relevant order. A delivery estimate is
+different from a recorded delivery event.
+
+3
+00:00:24.000 --> 00:00:36.000
+Check return progress
+Eligibility and next actions depend on the purchase and store rules.
+Approval, receipt, inspection and refund are separate stages.
+
+4
+00:00:36.000 --> 00:00:48.000
+Read help or open a ticket
+Choose a question in Help centre. If you still need help, sign in and
+open a ticket with the relevant invoice or order number.
+

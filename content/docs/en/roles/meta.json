@@ -1,0 +1,9 @@
+{
+  "title": "Your dashboard",
+  "pages": [
+    "admin",
+    "tenant",
+    "vendor",
+    "customer"
+  ]
+}

@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Match the order and its state
+Check the workspace. Match the order number and invoice, then read
+payment and shipment states independently. One purchase can contain
+several separately fulfilled vendor orders.
+
+2
+00:00:12.000 --> 00:00:24.000
+Inspect delivery configuration or parcels
+Check the workspace. Match the order, carrier, tracking reference and
+recorded events. A missing carrier or arrival time needs follow-up; it
+is not delivery confirmation.
+
+3
+00:00:24.000 --> 00:00:36.000
+Separate physical and financial work
+Check the workspace. Match the return to its order and current stage.
+Receipt, inspection, restocking and financial refund are distinct
+decisions; use the next permitted action.
+
+4
+00:00:36.000 --> 00:00:48.000
+Read the refund trail
+Check the workspace. Match the order, amount, destination and state. A
+pending refund is not settled; return approval alone does not prove
+money was returned.
+

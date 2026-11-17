@@ -1,0 +1,53 @@
+---
+title: "Platform settings, flags and reference data"
+description: "Settings and reference data provide shared operational inputs such as geography, tags, colors and permitted feature controls."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Use the configuration area appropriate to your dashboard: platform settings and feature flags for authorized platform staff; tenant Settings and Reference data for store operation; vendor Store configuration for the offered reference view. Review dependencies before changing a shared value.
+
+<SystemTour tour="feature-settings" compact />
+
+## Restrictions and decisions
+
+Global geography is not tenant-owned catalog data. A flag or saved setting does not prove all associated business workflows are enabled. Configuration changes can affect later calculations but do not rewrite immutable purchase snapshots.
+
+## Localized setting labels
+
+Configuration display names follow the requested interface language, with an English fallback for missing translations. Platform-managed fields remain read-only where indicated. A visible setting label does not by itself prove that every related storefront workflow is enabled.
+
+## Data flow and outcome
+
+Reference/configuration input → permitted tenant/vendor/customer behavior → new calculation or presentation; historical records remain evidence of prior inputs.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Settings/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/geo`, `/configs`, `/tags`, `/colors`, `/platform-settings`, `/feature-flags` |
+| [tenant](/en/roles/tenant) | `/settings`, `/reference-data` |
+| [vendor](/en/roles/vendor) | `/store-configuration` |
+
+[Exact route, field and enum source trail](/en/evidence/settings)
+{/* /SCREEN_MAP */}
+
+</details>

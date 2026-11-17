@@ -1,0 +1,41 @@
+---
+title: "Source evidence: payments"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Payment/routes/admin-api.php`
+- `Modules/Payment/routes/tenant-api.php`
+- `Modules/Payment/routes/user-api.php`
+- `Modules/Payment/routes/vendor-api.php`
+- `Modules/Payment/routes/web.php`
+- `Modules/Payment/routes/webhook.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Payment | `user-api.php` | GET | `payment/methods` | `methods` |
+| Payment | `user-api.php` | POST | `orders/{order}/pay` | `pay` |
+| Payment | `user-api.php` | GET | `payments` | `index` |
+| Payment | `user-api.php` | GET | `payments/{payment}` | `show` |
+| Payment | `user-api.php` | POST | `payments/{payment}/proof` | `proof` |
+| Payment | `webhook.php` | POST | `/{provider}` | `store` |
+
+## Form-request field names
+
+- `Modules/Payment/App/Http/Requests/Api/Payment/InitiateOrderPaymentRequest.php`: `payment_gateway`, `payment_gateway.in`
+- `Modules/Payment/App/Http/Requests/Api/Payment/UploadPaymentProofRequest.php`: `proof`, `proof.required`, `proof.file`, `proof.mimes`, `proof.max`
+- `Modules/Payment/App/Http/Requests/Tenant/Payment/RejectManualCaptureRequest.php`: `reason`, `reason.required`, `reason.max`
+- `Modules/Payment/App/Http/Requests/Tenant/PaymentGateway/StorePaymentGatewayRequest.php`: `provider`, `label`, `is_active`, `config`, `config.*`, `sort_order`
+- `Modules/Payment/App/Http/Requests/Tenant/PaymentGateway/UpdatePaymentGatewayRequest.php`: `label`, `is_active`, `config`, `config.*`, `sort_order`
+
+## Enum values in source
+
+- `Modules/Payment/App/Enums/GatewayKind.php`: `ONLINE = 'online'`, `MANUAL = 'manual'`
+- `Modules/Payment/App/Enums/PaymentGatewayProvider.php`: `COD = 'cod'`, `BANK_TRANSFER = 'bank_transfer'`, `PAYMOB = 'paymob'`, `SYSTEM_CREDIT = 'system_credit'`
+- `Modules/Payment/App/Enums/PaymentIntentStatus.php`: `PENDING = 'pending'`, `REQUIRES_ACTION = 'requires_action'`, `PROCESSING = 'processing'`, `SUCCEEDED = 'succeeded'`, `FAILED = 'failed'`, `CANCELLED = 'cancelled'`
+- `Modules/Payment/App/Enums/PaymentStatus.php`: `PENDING = 'pending'`, `AWAITING_CONFIRMATION = 'awaiting_confirmation'`, `PENDING_APPROVAL = 'pending_approval'`, `PAID = 'paid'`, `FAILED = 'failed'`, `REFUNDED = 'refunded'`, `PARTIAL_REFUND = 'partial_refund'`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/payments)

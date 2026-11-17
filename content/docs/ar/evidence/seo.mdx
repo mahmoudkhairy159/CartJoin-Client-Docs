@@ -1,0 +1,47 @@
+---
+title: "أدلة المصدر: seo"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Seo/routes/admin-api.php`
+- `Modules/Seo/routes/tenant-api.php`
+- `Modules/Seo/routes/user-api.php`
+- `Modules/Seo/routes/vendor-api.php`
+- `Modules/Seo/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Seo | `admin-api.php` | GET | `seo/redirects` | `redirectIndex` |
+| Seo | `admin-api.php` | GET | `seo/redirects/{redirect}` | `redirectShow` |
+| Seo | `admin-api.php` | GET | `seo/meta` | `metaIndex` |
+| Seo | `tenant-api.php` | GET | `seo/redirects` | `index` |
+| Seo | `tenant-api.php` | POST | `seo/redirects` | `store` |
+| Seo | `tenant-api.php` | PUT | `seo/redirects/{redirect}` | `update` |
+| Seo | `tenant-api.php` | DELETE | `seo/redirects/{redirect}` | `destroy` |
+| Seo | `tenant-api.php` | GET | `seo/meta/entities/{entityType}` | `entities` |
+| Seo | `tenant-api.php` | GET | `seo/meta/{entityType}/{entityId}` | `show` |
+| Seo | `tenant-api.php` | PUT | `seo/meta/{entityType}/{entityId}` | `update` |
+| Seo | `tenant-api.php` | GET | `seo/settings` | `show` |
+| Seo | `tenant-api.php` | PUT | `seo/settings` | `update` |
+| Seo | `tenant-api.php` | POST | `seo/sitemap/regenerate` | `regenerate` |
+| Seo | `web.php` | GET | `/sitemap.xml` | `sitemapIndex` |
+| Seo | `web.php` | GET | `/sitemap-{type}.xml` | `sitemapType` |
+| Seo | `web.php` | GET | `/robots.txt` | `robots` |
+
+## حقول النماذج
+
+- `Modules/Seo/App/Http/Requests/Tenant/SeoMeta/UpdateSeoMetaRequest.php`: `title`, `description`, `keywords`, `og_image`, `canonical_url`, `noindex`
+- `Modules/Seo/App/Http/Requests/Tenant/SeoRedirect/StoreSeoRedirectRequest.php`: `from_path`, `to_path`, `type`, `is_active`
+- `Modules/Seo/App/Http/Requests/Tenant/SeoRedirect/UpdateSeoRedirectRequest.php`: `from_path`, `to_path`, `type`, `is_active`
+- `Modules/Seo/App/Http/Requests/Tenant/SeoSettings/UpdateSeoSettingsRequest.php`: `seo_google_analytics_id`, `seo_google_tag_manager_id`, `seo_facebook_pixel_id`, `seo_robots_custom`, `seo_noindex_out_of_stock`, `seo_sitemap_change_frequency`
+
+## قيم الحالات من المصدر
+
+- `Modules/Seo/App/Enums/SeoEntityType.php`: `PRODUCT = 1`, `CATEGORY = 2`, `PAGE = 3`, `BRAND = 4`
+- `Modules/Seo/App/Enums/SeoRedirectType.php`: `MOVED_PERMANENTLY = 301`, `FOUND = 302`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/seo)

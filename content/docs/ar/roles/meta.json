@@ -1,0 +1,9 @@
+{
+  "title": "دليل دورك",
+  "pages": [
+    "admin",
+    "tenant",
+    "vendor",
+    "customer"
+  ]
+}

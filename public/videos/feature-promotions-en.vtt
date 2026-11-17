@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Tenant operator
+Review type, priority, schedule, conditions and rewards. Lower priority
+numbers run first; the promotion type must be recognized by the pricing
+rules.
+
+2
+00:00:12.000 --> 00:00:24.000
+Promotion builder
+Set recognized type and priority, then the schedule, rules and rewards.
+All rules must match. This blank form demonstrates the layout without
+creating a promotion.
+

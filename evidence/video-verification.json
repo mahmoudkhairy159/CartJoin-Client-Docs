@@ -1,0 +1,614 @@
+[
+  {
+    "tour": "admin",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "tenant",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "vendor",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "customer",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "orders",
+    "duration": 30.0,
+    "expected": 30,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "products",
+    "duration": 30.0,
+    "expected": 30,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "inventory",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "returns",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-access",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-attributes",
+    "duration": 12.0,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-audit",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-banners",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-brands",
+    "duration": 60.0,
+    "expected": 60,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-cart",
+    "duration": 12.0,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-categories",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-checkout",
+    "duration": 12.0,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-cms",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-commission",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-coupons",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-customers",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-dashboards",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-flash-sales",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-gift-cards",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-inventory",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-invoices",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-loyalty",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-notifications",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-orders",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-payments",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-pricing",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-products",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-promotions",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-refunds",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-reports",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-returns",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-reviews",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-search",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-seo",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-settings",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-settlements",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-shipping-providers",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-shipping",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-storefront",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-support",
+    "duration": 72.0,
+    "expected": 72,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-tax-currency",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-team",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-tenants",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-vendor-profile",
+    "duration": 12.0,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-vendors",
+    "duration": 60.0,
+    "expected": 60,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-wallet",
+    "duration": 36.0,
+    "expected": 36,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-webhooks",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "feature-wishlist",
+    "duration": 12.0,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "customer-discover",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "customer-buy",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "customer-aftercare",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "customer-money",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "admin-priority",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "admin-partners",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "admin-purchase",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "admin-control",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "tenant-ready",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "tenant-catalog",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "tenant-orders",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "tenant-growth",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "vendor-workspace",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "vendor-offers",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "vendor-fulfillment",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "vendor-earnings",
+    "duration": 48.0,
+    "expected": 48,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  }
+]

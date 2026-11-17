@@ -1,0 +1,52 @@
+---
+title: "Source evidence: vendor-profile"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Vendor/routes/admin-api.php`
+- `Modules/Vendor/routes/tenant-api.php`
+- `Modules/Vendor/routes/user-api.php`
+- `Modules/Vendor/routes/vendor-api.php`
+- `Modules/Vendor/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Vendor/App/Http/Requests/Admin/TenantVendor/StoreTenantVendorRequest.php`: `tenant_id`, `vendor_id`, `commission_percentage`, `notes`
+- `Modules/Vendor/App/Http/Requests/Admin/TenantVendor/UpdateTenantVendorCommissionRequest.php`: `commission_percentage`
+- `Modules/Vendor/App/Http/Requests/Admin/TenantVendor/UpdateTenantVendorStatusRequest.php`: `notes`
+- `Modules/Vendor/App/Http/Requests/Admin/Vendor/ImportVendorsRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorAddress/StoreVendorAddressRequest.php`: `vendor_id`, `tenant_id`, `type`, `country_id`, `state_id`, `city_id`, `line1`, `line2`, `postal_code`, `phone`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorAddress/UpdateVendorAddressRequest.php`: `vendor_id`, `tenant_id`, `type`, `country_id`, `state_id`, `city_id`, `line1`, `line2`, `postal_code`, `phone`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorDocument/StoreVendorDocumentRequest.php`: `vendor_id`, `type`, `path`, `status`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorDocument/UpdateVendorDocumentRequest.php`: `vendor_id`, `type`, `path`, `status`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorDocument/UpdateVendorDocumentStatusRequest.php`: `status`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorPayoutAccount/StoreVendorPayoutAccountRequest.php`: `vendor_id`, `tenant_id`, `provider`, `external_account_reference`, `is_verified`
+- `Modules/Vendor/App/Http/Requests/Admin/VendorPayoutAccount/UpdateVendorPayoutAccountRequest.php`: `vendor_id`, `tenant_id`, `provider`, `external_account_reference`, `is_verified`
+- `Modules/Vendor/App/Http/Requests/Tenant/TenantVendor/UpdateTenantVendorCommissionRequest.php`: `commission_percentage`
+- `Modules/Vendor/App/Http/Requests/Tenant/TenantVendor/UpdateTenantVendorStatusRequest.php`: `notes`
+- `Modules/Vendor/App/Http/Requests/Vendor/VendorAddress/StoreVendorAddressRequest.php`: `type`, `country_id`, `state_id`, `city_id`, `line1`, `line2`, `postal_code`, `phone`
+- `Modules/Vendor/App/Http/Requests/Vendor/VendorAddress/UpdateVendorAddressRequest.php`: `type`, `country_id`, `state_id`, `city_id`, `line1`, `line2`, `postal_code`, `phone`
+- `Modules/Vendor/App/Http/Requests/Vendor/VendorDocument/StoreVendorDocumentRequest.php`: `type`, `path`
+- `Modules/Vendor/App/Http/Requests/Vendor/VendorPayoutAccount/StoreVendorPayoutAccountRequest.php`: `provider`, `external_account_reference`
+- `Modules/Vendor/App/Http/Requests/Vendor/VendorPayoutAccount/UpdateVendorPayoutAccountRequest.php`: `provider`, `external_account_reference`
+
+## Enum values in source
+
+- `Modules/Vendor/App/Enums/TenantVendorActorType.php`: `PLATFORM_ADMIN = 1`, `TENANT_ADMIN = 2`, `SYSTEM = 3`
+- `Modules/Vendor/App/Enums/TenantVendorStatus.php`: `PENDING = 1`, `APPROVED = 2`, `SUSPENDED = 3`, `REJECTED = 4`
+- `Modules/Vendor/App/Enums/VendorAddressType.php`: `LEGAL = 1`, `WAREHOUSE = 2`, `OFFICE = 3`, `RETURNS = 4`
+- `Modules/Vendor/App/Enums/VendorDocumentStatus.php`: `PENDING = 1`, `APPROVED = 2`, `REJECTED = 3`
+- `Modules/Vendor/App/Enums/VendorDocumentType.php`: `TRADE_LICENSE = 1`, `TAX_CERTIFICATE = 2`, `BANK_STATEMENT = 3`, `IDENTITY_DOCUMENT = 4`, `OTHER = 5`
+- `Modules/Vendor/App/Enums/VendorExportJobStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/Vendor/App/Enums/VendorExportJobType.php`: `EXPORT = 1`, `IMPORT_PREVIEW = 2`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/vendor-profile)

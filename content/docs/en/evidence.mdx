@@ -1,0 +1,64 @@
+---
+title: "Source evidence and versions"
+description: "Source snapshot and extracted contracts."
+---
+
+## How to read this evidence
+
+The following is extracted from local source, not acceptance-test results. Backend URI fragments may inherit prefixes, route groups and permissions. A field name does not imply that it is required or editable; its Form Request and context define that. The inventory excludes environment values and credentials.
+
+| Repository | Commit | Local changes present |
+|---|---|---|
+| `CartJoin-Backend` | `f0fe09bf12cd` | Yes |
+| `CartJoin-Admin-Dashboard-Frontend` | `a747603affd7` | Yes |
+| `CartJoin-Tenant-Dashboard-Frontend` | `cb0f52eaf09d` | Yes |
+| `CartJoin-Vendor-Dashboard-Frontend` | `360fd562669b` | Yes |
+| `CartJoin-Storefront-Frontend` | `598d8cd4f144` | No |
+
+## Per-feature source trail
+
+- [access](/en/evidence/access): `Modules/Auth` · 8 explicit route declarations
+- [team](/en/evidence/team): `Modules/Admin`, `Modules/TenantAdmin`, `Modules/VendorAdmin` · 0 explicit route declarations
+- [tenants](/en/evidence/tenants): `Modules/Tenant` · 0 explicit route declarations
+- [vendors](/en/evidence/vendors): `Modules/Vendor` · 0 explicit route declarations
+- [vendor-profile](/en/evidence/vendor-profile): `Modules/Vendor` · 0 explicit route declarations
+- [customers](/en/evidence/customers): `Modules/User` · 0 explicit route declarations
+- [categories](/en/evidence/categories): `Modules/Category` · 0 explicit route declarations
+- [brands](/en/evidence/brands): `Modules/Brand` · 0 explicit route declarations
+- [products](/en/evidence/products): `Modules/Product` · 7 explicit route declarations
+- [attributes](/en/evidence/attributes): `Modules/Product` · 7 explicit route declarations
+- [pricing](/en/evidence/pricing): `Modules/Pricing`, `Modules/PriceList` · 1 explicit route declarations
+- [inventory](/en/evidence/inventory): `Modules/Inventory` · 1 explicit route declarations
+- [search](/en/evidence/search): `Modules/Search`, `Modules/RecommendationEngine` · 3 explicit route declarations
+- [wishlist](/en/evidence/wishlist): `Modules/Wishlist` · 0 explicit route declarations
+- [cart](/en/evidence/cart): `Modules/Cart` · 12 explicit route declarations
+- [checkout](/en/evidence/checkout): `Modules/Invoice` · 21 explicit route declarations
+- [orders](/en/evidence/orders): `Modules/Order` · 13 explicit route declarations
+- [invoices](/en/evidence/invoices): `Modules/Invoice` · 21 explicit route declarations
+- [payments](/en/evidence/payments): `Modules/Payment` · 6 explicit route declarations
+- [refunds](/en/evidence/refunds): `Modules/Refund` · 12 explicit route declarations
+- [returns](/en/evidence/returns): `Modules/OrderReturn` · 20 explicit route declarations
+- [shipping](/en/evidence/shipping): `Modules/Shipping` · 12 explicit route declarations
+- [shipping-providers](/en/evidence/shipping-providers): `Modules/ShippingProvider` · 1 explicit route declarations
+- [coupons](/en/evidence/coupons): `Modules/Coupon` · 0 explicit route declarations
+- [promotions](/en/evidence/promotions): `Modules/Promotion` · 1 explicit route declarations
+- [flash-sales](/en/evidence/flash-sales): `Modules/FlashSale` · 0 explicit route declarations
+- [gift-cards](/en/evidence/gift-cards): `Modules/GiftCard` · 17 explicit route declarations
+- [loyalty](/en/evidence/loyalty): `Modules/Loyalty` · 37 explicit route declarations
+- [wallet](/en/evidence/wallet): `Modules/Wallet` · 30 explicit route declarations
+- [commission](/en/evidence/commission): `Modules/Commission` · 18 explicit route declarations
+- [settlements](/en/evidence/settlements): `Modules/SettlementPayout` · 31 explicit route declarations
+- [tax-currency](/en/evidence/tax-currency): `Modules/Tax`, `Modules/Currency` · 0 explicit route declarations
+- [cms](/en/evidence/cms): `Modules/Cms` · 0 explicit route declarations
+- [banners](/en/evidence/banners): `Modules/Banner` · 0 explicit route declarations
+- [storefront](/en/evidence/storefront): `Modules/Storefront` · 10 explicit route declarations
+- [seo](/en/evidence/seo): `Modules/Seo` · 16 explicit route declarations
+- [reviews](/en/evidence/reviews): `Modules/Review` · 27 explicit route declarations
+- [support](/en/evidence/support): `Modules/SupportTicket`, `Modules/Faqs` · 0 explicit route declarations
+- [notifications](/en/evidence/notifications): `Modules/Notification` · 0 explicit route declarations
+- [dashboards](/en/evidence/dashboards): `Modules/Dashboard` · 4 explicit route declarations
+- [reports](/en/evidence/reports): `Modules/Reports`, `Modules/Core` · 9 explicit route declarations
+- [audit](/en/evidence/audit): `Modules/AuditLog` · 0 explicit route declarations
+- [webhooks](/en/evidence/webhooks): `Modules/Webhook` · 0 explicit route declarations
+- [settings](/en/evidence/settings): `Modules/Settings`, `Modules/Core`, `Modules/Area` · 0 explicit route declarations
+

@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:12.000
+Platform admin
+This overview covers in-app notifications only. Its queued, delivered
+and read counts do not include email, SMS or push delivery.
+
+2
+00:00:12.000 --> 00:00:24.000
+Tenant operator
+Use the inbox for messages addressed to your account. An empty inbox
+means no matching messages are shown, not that orders or payments do not
+exist.
+
+3
+00:00:24.000 --> 00:00:36.000
+Vendor workspace
+Check the workspace. Use the inbox for messages addressed to your
+account. An empty inbox means no matching messages are shown, not that
+orders or payments do not exist.
+
+4
+00:00:36.000 --> 00:00:48.000
+Customer
+Use the inbox for messages addressed to your account. An empty inbox
+means no matching messages are shown, not that orders or payments do not
+exist.
+

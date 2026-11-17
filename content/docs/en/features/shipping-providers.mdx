@@ -1,0 +1,48 @@
+---
+title: "Shipping providers and carrier operations"
+description: "Provider configuration connects parcel operations to supported carriers and their tracking/event behavior."
+roles: ["ADMIN", "TENANT"]
+---
+
+
+## How to use it
+
+Open Shipping providers on an authorized dashboard. Review carrier availability and configured account/settings, then use the shipment’s offered dispatch/tracking controls. Investigate failed provider calls before retrying a physical dispatch.
+
+<SystemTour tour="feature-shipping-providers" compact />
+
+## Restrictions and decisions
+
+Provider credentials are configuration secrets and do not belong in customer guides or screenshots. A carrier acceptance event is different from proof of delivery. Platform visibility does not imply tenant carrier configuration rights.
+
+## Data flow and outcome
+
+Configured carrier → dispatch request → tracking reference/events → shipment status and customer tracking.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/ShippingProvider/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/shipping-providers` |
+| [tenant](/en/roles/tenant) | `/shipping-providers` |
+
+[Exact route, field and enum source trail](/en/evidence/shipping-providers)
+{/* /SCREEN_MAP */}
+
+</details>

@@ -1,0 +1,65 @@
+---
+title: "Source evidence: reviews"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Review/routes/admin-api.php`
+- `Modules/Review/routes/tenant-api.php`
+- `Modules/Review/routes/user-api.php`
+- `Modules/Review/routes/vendor-api.php`
+- `Modules/Review/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Review | `admin-api.php` | GET | `reviews` | `index` |
+| Review | `admin-api.php` | GET | `reviews/{review}` | `show` |
+| Review | `admin-api.php` | DELETE | `reviews/{review}` | `destroy` |
+| Review | `tenant-api.php` | PUT | `reviews/{review}/approve` | `approve` |
+| Review | `tenant-api.php` | PUT | `reviews/{review}/reject` | `reject` |
+| Review | `tenant-api.php` | POST | `reviews/{review}/respond` | `respond` |
+| Review | `tenant-api.php` | GET | `review-settings` | `settings` |
+| Review | `tenant-api.php` | PUT | `review-settings` | `settings` |
+| Review | `tenant-api.php` | GET | `questions` | `questionsIndex` |
+| Review | `tenant-api.php` | GET | `questions/{question}` | `showQuestion` |
+| Review | `tenant-api.php` | PUT | `questions/{question}/publish` | `publishQuestion` |
+| Review | `tenant-api.php` | POST | `questions/{question}/answer` | `answerQuestion` |
+| Review | `user-api.php` | GET | `reviews` | `publicIndex` |
+| Review | `user-api.php` | GET | `reviews/summary` | `summary` |
+| Review | `user-api.php` | GET | `questions` | `publicQuestions` |
+| Review | `user-api.php` | POST | `reviews` | `store` |
+| Review | `user-api.php` | PUT | `reviews/{review}` | `update` |
+| Review | `user-api.php` | DELETE | `reviews/{review}` | `destroy` |
+| Review | `user-api.php` | POST | `reviews/{review}/vote` | `vote` |
+| Review | `user-api.php` | POST | `reviews/{review}/images` | `uploadImage` |
+| Review | `user-api.php` | POST | `questions` | `askQuestion` |
+| Review | `vendor-api.php` | GET | `reviews` | `index` |
+| Review | `vendor-api.php` | GET | `reviews/{review}` | `show` |
+| Review | `vendor-api.php` | GET | `questions` | `index` |
+| Review | `vendor-api.php` | GET | `questions/{question}` | `show` |
+| Review | `vendor-api.php` | POST | `reviews/{review}/respond` | `respond` |
+| Review | `vendor-api.php` | POST | `questions/{question}/answer` | `answer` |
+
+## Form-request field names
+
+- `Modules/Review/App/Http/Requests/Tenant/Review/AnswerQuestionRequest.php`: `answer`
+- `Modules/Review/App/Http/Requests/Tenant/Review/RejectReviewRequest.php`: `reason`
+- `Modules/Review/App/Http/Requests/Tenant/Review/RespondRequest.php`: `body`
+- `Modules/Review/App/Http/Requests/Tenant/Review/UpdateReviewSettingsRequest.php`: `review_auto_approve`
+- `Modules/Review/App/Http/Requests/User/Review/StoreQuestionRequest.php`: `question`
+- `Modules/Review/App/Http/Requests/User/Review/StoreReviewRequest.php`: `order_item_id`, `rating`, `title`, `body`
+- `Modules/Review/App/Http/Requests/User/Review/UpdateReviewRequest.php`: `rating`, `title`, `body`
+- `Modules/Review/App/Http/Requests/User/Review/VoteRequest.php`: `vote`
+- `Modules/Review/App/Http/Requests/Vendor/Review/VendorAnswerQuestionRequest.php`: `answer`
+- `Modules/Review/App/Http/Requests/Vendor/Review/VendorRespondRequest.php`: `body`
+
+## Enum values in source
+
+- `Modules/Review/App/Enums/ProductQuestionStatus.php`: `PENDING = 1`, `PUBLISHED = 2`, `HIDDEN = 3`
+- `Modules/Review/App/Enums/ReviewStatus.php`: `PENDING = 1`, `APPROVED = 2`, `REJECTED = 3`, `HIDDEN = 4`
+- `Modules/Review/App/Enums/ReviewVoteType.php`: `HELPFUL = 1`, `NOT_HELPFUL = 2`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/reviews)

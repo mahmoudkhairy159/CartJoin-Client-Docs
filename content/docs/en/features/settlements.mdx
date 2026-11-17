@@ -1,0 +1,49 @@
+---
+title: "Settlements, disputes and payouts"
+description: "Settlements turn immutable vendor credits and deductions for a period into a payable balance; payouts record the transfer attempt and result."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Tenant finance operators review settlement period, currency and lines, close/review the calculation, handle disputes and approve only against a verified payout account. Follow the payout through processing and record completion evidence in the authorized workflow. Vendors inspect statements and available dispute actions.
+
+<SystemTour tour="feature-settlements" compact />
+
+## Restrictions and decisions
+
+A settlement uses one currency and a half-open period. Closed and later statements are immutable; corrections go to a future period. Negative or below-minimum balances carry forward. MVP permits at most one payout per settlement, no partial payouts. Manual completion needs a unique external reference and timestamp.
+
+## Data flow and outcome
+
+Sales/commission/refund effects → immutable settlement lines → closed → approved → payout pending → paid. Failed payout retries do not regenerate the original financial effects.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/SettlementPayout/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/settlements`, `/payouts` |
+| [tenant](/en/roles/tenant) | `/settlements`, `/payouts`, `/settlement-settings` |
+| [vendor](/en/roles/vendor) | `/settlements`, `/payouts` |
+
+[Exact route, field and enum source trail](/en/evidence/settlements)
+{/* /SCREEN_MAP */}
+
+</details>

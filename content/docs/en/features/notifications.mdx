@@ -1,0 +1,50 @@
+---
+title: "Notifications and attention queues"
+description: "Notifications surface business events and direct a user to the record that needs attention."
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
+---
+
+
+## How to use it
+
+Use the bell for recent notifications and Notifications for the full list. Open the linked record, confirm its current state, and carry out the action only through that record’s permitted workflow. Customers use Account → Notifications.
+
+<SystemTour tour="feature-notifications" compact />
+
+## Restrictions and decisions
+
+Marking read does not approve, pay or resolve the underlying record. A delayed notification may describe a state that has already changed. Following a link still requires ownership and permissions.
+
+## Data flow and outcome
+
+Business event → queued notification → recipient inbox → linked current record and separate business action.
+
+## When something goes wrong
+
+Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+## Evidence and verification limits
+
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+
+`Modules/Notification/` · `documentation/modules/`
+
+<details className="guide-technical-details">
+<summary>Screen paths and source references</summary>
+
+{/* SCREEN_MAP */}
+## Where this feature appears
+
+A route proves navigation, not permission to perform every action. Related-record detail tabs can expose additional entry points.
+
+| Dashboard | Frontend entry paths |
+|---|---|
+| [admin](/en/roles/admin) | `/notifications` |
+| [tenant](/en/roles/tenant) | `/notifications` |
+| [vendor](/en/roles/vendor) | `/notifications` |
+| [customer](/en/roles/customer) | `/account/notifications` |
+
+[Exact route, field and enum source trail](/en/evidence/notifications)
+{/* /SCREEN_MAP */}
+
+</details>

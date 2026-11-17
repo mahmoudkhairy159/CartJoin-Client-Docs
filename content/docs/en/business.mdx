@@ -1,0 +1,77 @@
+---
+title: "Business model and ownership"
+description: "Actors, scope, terms and platform-wide restrictions."
+---
+
+## Four actors, different responsibilities
+
+| Actor | Scope | Responsibility | Boundary |
+|---|---|---|---|
+| Platform admin | Authorized platform-wide oversight | Organizations, platform controls, investigation | Does not gain every tenant operational mutation |
+| Tenant operator | One resolved tenant | Store catalog, partners, orders, finance and content | Cannot browse another tenant’s private records |
+| Vendor | Vendor + approved active tenant | Own products, orders, fulfillment and earnings | No sibling vendor’s lines or customer invoice identity |
+| Customer | Own account in storefront tenant | Shopping, purchase history and post-purchase requests | No staff or other customers’ records |
+
+```mermaid
+flowchart TD
+    Platform[Platform oversight] --> T1[Tenant storefront A]
+    Platform --> T2[Tenant storefront B]
+    Vendor[Global vendor organization] --> A1[Approved link A]
+    Vendor --> A2[Approved link B]
+    A1 --> T1
+    A2 --> T2
+    Buyer[Customer in storefront A] --> Cart[Cart in tenant A]
+    Cart --> Invoice[One invoice]
+    Invoice --> O1[Vendor order A]
+    Invoice --> O2[Vendor order B]
+```
+
+## Rules that apply everywhere
+
+The following is a business relationship map, not a complete database schema. Arrows show ownership and purchase links; tender allocations and ledger tables are summarized.
+
+```mermaid
+erDiagram
+    TENANT ||--o{ TENANT_VENDOR : approves
+    VENDOR ||--o{ TENANT_VENDOR : participates
+    TENANT ||--o{ PRODUCT : owns_catalog
+    VENDOR o|--o{ PRODUCT : supplies
+    PRODUCT ||--o{ VARIANT : offers
+    CUSTOMER ||--o{ INVOICE : purchases
+    INVOICE ||--|{ ORDER : groups
+    ORDER ||--|{ ORDER_ITEM : snapshots
+    INVOICE ||--o{ PAYMENT : attempts
+    ORDER ||--o{ SHIPMENT : fulfills
+    ORDER ||--o{ REFUND : reverses_value
+    VENDOR ||--o{ SETTLEMENT : earns
+    SETTLEMENT ||--o| PAYOUT : funds
+```
+
+- Tenant identity comes from resolved context, not a submitted business form.
+- A wrong-tenant record is treated as not found (404), not an invitation to switch IDs. A permission denial (403) is a separate case.
+- Vendor identity and approved tenant workspace are both checked. Being approved in A does not approve B.
+- Business identifiers such as SKU, slug and coupon code are tenant-specific.
+- Price, discount, tax and shipping calculations are server-authoritative. Existing orders preserve purchase snapshots.
+- Payment status, order status, shipment state and payout status describe different events.
+- Corrections to financial history use refunds, credit notes, adjustments or compensating entries rather than overwriting evidence.
+- Long-running jobs and integration deliveries may complete after the requesting screen returns.
+
+## What is shared and what is isolated?
+
+Vendor organizations and geographic reference data may be global. The tenant-vendor relationship, storefront catalog, cart, operational orders and tenant financial context are scoped. A global vendor does not imply a global product listing shared across tenants.
+
+## Terms used in the guides
+
+| Term | Meaning |
+|---|---|
+| Variant / SKU | The purchasable option of a product |
+| Invoice | Customer purchase document spanning one or more vendor orders |
+| Order | Fulfillment unit belonging to one vendor group |
+| Reservation / hold | Value or stock temporarily committed but not yet consumed |
+| Refund | Reversal of captured purchase value |
+| Return | Physical post-delivery request and inspection process |
+| Settlement | Period statement of vendor credits and deductions |
+| Payout | Transfer attempt against an approved settlement |
+| Idempotency | Replaying the same command does not create a duplicate result |
+
+Source: backend constitution, Tenant/Vendor/Invoice/Order modules and four frontend route trees. For engineering paths and version evidence see [source evidence](/en/evidence).

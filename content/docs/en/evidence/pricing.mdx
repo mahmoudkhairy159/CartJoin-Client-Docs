@@ -1,0 +1,44 @@
+---
+title: "Source evidence: pricing"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Pricing/routes/admin-api.php`
+- `Modules/Pricing/routes/tenant-api.php`
+- `Modules/Pricing/routes/user-api.php`
+- `Modules/Pricing/routes/vendor-api.php`
+- `Modules/Pricing/routes/web.php`
+- `Modules/PriceList/routes/admin-api.php`
+- `Modules/PriceList/routes/tenant-api.php`
+- `Modules/PriceList/routes/user-api.php`
+- `Modules/PriceList/routes/vendor-api.php`
+- `Modules/PriceList/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+| Pricing | `user-api.php` | GET | `products/{variant}/price-quote` | `show` |
+
+## Form-request field names
+
+- `Modules/Pricing/App/Http/Requests/Tenant/ProductPrice/IndexProductPriceRequest.php`: `variantId`, `type`, `minQty`, `active`, `priceRange`, `dateRange`, `page`, `per_page`
+- `Modules/Pricing/App/Http/Requests/Tenant/ProductPrice/StoreProductPriceRequest.php`: `variant_id`, `type`, `price`, `min_quantity`, `start_at`, `end_at`
+- `Modules/Pricing/App/Http/Requests/Tenant/ProductPrice/UpdateProductPriceRequest.php`: `variant_id`, `type`, `price`, `min_quantity`, `start_at`, `end_at`
+- `Modules/Pricing/App/Http/Requests/Vendor/ProductPrice/IndexProductPriceRequest.php`: `variantId`, `type`, `minQty`, `active`, `priceRange`, `dateRange`, `page`, `per_page`
+- `Modules/Pricing/App/Http/Requests/Vendor/ProductPrice/StoreProductPriceRequest.php`: `variant_id`, `type`, `price`, `min_quantity`, `start_at`, `end_at`
+- `Modules/Pricing/App/Http/Requests/Vendor/ProductPrice/UpdateProductPriceRequest.php`: `variant_id`, `type`, `price`, `min_quantity`, `start_at`, `end_at`
+- `Modules/PriceList/App/Http/Requests/Tenant/PriceList/StorePriceListRequest.php`: `name`, `currency_id`, `user_group_id`, `is_active`, `valid_from`, `valid_to`
+- `Modules/PriceList/App/Http/Requests/Tenant/PriceList/SyncItemsRequest.php`: `items`, `items.*.variant_id`, `items.*.price`, `items.*.min_quantity`
+- `Modules/PriceList/App/Http/Requests/Tenant/PriceList/UpdatePriceListRequest.php`: `name`, `currency_id`, `user_group_id`, `is_active`, `valid_from`, `valid_to`
+- `Modules/PriceList/App/Http/Requests/Tenant/UserGroup/AddMembersRequest.php`: `user_ids`, `user_ids.*`
+- `Modules/PriceList/App/Http/Requests/Tenant/UserGroup/StoreUserGroupRequest.php`: `name`, `description`, `is_default`
+- `Modules/PriceList/App/Http/Requests/Tenant/UserGroup/UpdateUserGroupRequest.php`: `name`, `description`, `is_default`
+
+## Enum values in source
+
+- `Modules/Pricing/App/Enums/ProductPriceType.php`: `REGULAR = 1`, `WHOLESALE = 2`, `MEMBER = 3`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/pricing)

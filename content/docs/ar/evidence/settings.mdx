@@ -1,0 +1,50 @@
+---
+title: "أدلة المصدر: settings"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## المراجع
+
+- `Modules/Settings/routes/admin-api.php`
+- `Modules/Settings/routes/tenant-api.php`
+- `Modules/Settings/routes/user-api.php`
+- `Modules/Settings/routes/vendor-api.php`
+- `Modules/Settings/routes/web.php`
+- `Modules/Core/routes/admin-api.php`
+- `Modules/Core/routes/tenant-api.php`
+- `Modules/Core/routes/user-api.php`
+- `Modules/Core/routes/vendor-api.php`
+- `Modules/Core/routes/web.php`
+- `Modules/Area/routes/admin-api.php`
+- `Modules/Area/routes/tenant-api.php`
+- `Modules/Area/routes/user-api.php`
+- `Modules/Area/routes/vendor-api.php`
+- `Modules/Area/routes/web.php`
+
+## مسارات الخادم المستخرجة
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## حقول النماذج
+
+- `Modules/Settings/App/Http/Requests/Admin/Settings/ImportTenantSettingRequest.php`: `version`, `settings`, `source_tenant_id`, `supported`, `key`
+- `Modules/Settings/App/Http/Requests/Admin/Settings/UpdateFeatureFlagRequest.php`: `is_enabled`, `tenant_id`, `key`
+- `Modules/Settings/App/Http/Requests/Admin/Settings/UpdatePlatformSettingRequest.php`: `providers`
+- `Modules/Settings/App/Http/Requests/Tenant/Settings/UpdateTenantSettingRequest.php`: `key`
+- `Modules/Core/App/Http/Requests/Admin/Color/StoreColorRequest.php`: `code`
+- `Modules/Core/App/Http/Requests/Admin/Color/UpdateColorRequest.php`: `code`
+- `Modules/Core/App/Http/Requests/Admin/Tags/StoreTagRequest.php`: `name`, `is_active`
+- `Modules/Core/App/Http/Requests/Admin/Tags/UpdateTagRequest.php`: `name`, `is_active`
+- `Modules/Core/App/Http/Requests/Concerns/ValidatesRegistryPayload.php`: `key`
+- `Modules/Core/App/Http/Requests/PresignedUpload/BaseGeneratePresignedUploadRequest.php`: `upload_group_uuid`, `model`, `file_name`, `file_type`, `file_size`, `files`, `files.*.file_name`, `files.*.file_type`, `files.*.file_size`
+
+## قيم الحالات من المصدر
+
+- `Modules/Settings/App/Enums/SettingSection.php`: `TENANT_DEFAULTS = 'tenant_defaults'`, `PAYMENTS = 'payments'`, `LIMITS = 'limits'`
+- `Modules/Core/App/Enums/ConfigValueType.php`: `STRING = 'string'`, `BOOLEAN = 'boolean'`, `NUMBER = 'number'`, `FILE = 'file'`
+- `Modules/Core/App/Enums/WeekDay.php`: `Sunday = 1`, `Monday = 2`, `Tuesday = 3`, `Wednesday = 4`, `Thursday = 5`, `Friday = 6`, `Saturday = 7`
+
+[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/settings)

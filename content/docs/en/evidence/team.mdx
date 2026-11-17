@@ -1,0 +1,68 @@
+---
+title: "Source evidence: team"
+description: "Extracted backend routes, request fields and enum values."
+---
+
+## Source locations
+
+- `Modules/Admin/routes/admin-api.php`
+- `Modules/Admin/routes/tenant-api.php`
+- `Modules/Admin/routes/user-api.php`
+- `Modules/Admin/routes/vendor-api.php`
+- `Modules/Admin/routes/web.php`
+- `Modules/TenantAdmin/routes/admin-api.php`
+- `Modules/TenantAdmin/routes/api.php`
+- `Modules/TenantAdmin/routes/tenant-api.php`
+- `Modules/TenantAdmin/routes/web.php`
+- `Modules/VendorAdmin/routes/admin-api.php`
+- `Modules/VendorAdmin/routes/tenant-api.php`
+- `Modules/VendorAdmin/routes/user-api.php`
+- `Modules/VendorAdmin/routes/vendor-api.php`
+- `Modules/VendorAdmin/routes/web.php`
+
+## Extracted explicit backend routes
+
+| Module | Surface file | Method | URI fragment | Action |
+|---|---|---|---|---|
+
+No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+
+## Form-request field names
+
+- `Modules/Admin/App/Http/Requests/Admin/ImportAdminsRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/Admin/App/Http/Requests/Admin/StoreAdminRequest.php`: `name`, `username`, `email`, `phone`, `birth_date`, `is_active`, `blocked`, `role_id`, `password`, `image`
+- `Modules/Admin/App/Http/Requests/Admin/UpdateAdminRequest.php`: `name`, `email`, `phone`, `birth_date`, `is_active`, `blocked`, `role_id`, `password`, `image`
+- `Modules/Admin/App/Http/Requests/Admin/UpdateFcmTokenRequest.php`: `token`, `device_id`
+- `Modules/TenantAdmin/App/Http/Requests/Admin/TenantAdmin/ImportTenantAdminsRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/TenantAdmin/App/Http/Requests/Admin/TenantAdmin/StoreTenantAdminRequest.php`: `tenant_id`, `role_id`, `name`, `username`, `email`, `phone`, `password`, `birth_date`, `image`, `is_active`, `blocked`, `address`, `address.type`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/TenantAdmin/App/Http/Requests/Admin/TenantAdmin/UpdateTenantAdminRequest.php`: `tenant_id`, `role_id`, `name`, `username`, `email`, `phone`, `password`, `image`, `is_active`, `blocked`, `birth_date`, `address`, `address.type`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/TenantAdmin/App/Http/Requests/Admin/TenantAdmin/UpdateTenantOwnerRequest.php`: `owner_ids`, `owner_ids.*`
+- `Modules/TenantAdmin/App/Http/Requests/Tenant/TenantAdmin/StoreTenantAdminProfileRequest.php`: `admin_id`, `preferred_locale`, `bio`, `preferences`, `additional_information`, `date_of_birth`, `gender`, `nationality`, `national_id`, `admin_id.required`, `admin_id.exists`, `preferred_locale.string`, `preferred_locale.max`, `bio.string`, `bio.max`, `preferences.array`, `additional_information.array`, `date_of_birth.date`, `date_of_birth.before`, `gender.integer`, `gender.enum`, `nationality.string`, `nationality.max`, `national_id.string`, `national_id.max`
+- `Modules/TenantAdmin/App/Http/Requests/Tenant/TenantAdmin/StoreTenantAdminRequest.php`: `role_id`, `name`, `username`, `email`, `phone`, `password`, `image`, `is_active`, `blocked`, `address`, `address.type`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/TenantAdmin/App/Http/Requests/Tenant/TenantAdmin/UpdateTenantAdminFcmTokenRequest.php`: `token`, `device_id`
+- `Modules/TenantAdmin/App/Http/Requests/Tenant/TenantAdmin/UpdateTenantAdminProfileRequest.php`: `preferred_locale`, `bio`, `preferences`, `additional_information`, `date_of_birth`, `gender`, `nationality`, `national_id`, `preferred_locale.string`, `preferred_locale.max`, `bio.string`, `bio.max`, `preferences.array`, `additional_information.array`, `date_of_birth.date`, `date_of_birth.before`, `gender.integer`, `gender.enum`, `nationality.string`, `nationality.max`, `national_id.string`, `national_id.max`
+- `Modules/TenantAdmin/App/Http/Requests/Tenant/TenantAdmin/UpdateTenantAdminRequest.php`: `role_id`, `name`, `username`, `email`, `phone`, `password`, `image`, `is_active`, `blocked`, `address`, `address.type`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/TenantAdmin/App/Http/Requests/Tenant/TenantAdmin/UpdateTenantOwnerRequest.php`: `owner_ids`, `owner_ids.*`
+- `Modules/VendorAdmin/App/Http/Requests/Admin/VendorAdmin/ImportVendorAdminsRequest.php`: `file`, `chunk_size`, `override`
+- `Modules/VendorAdmin/App/Http/Requests/Admin/VendorAdmin/StoreVendorAdminRequest.php`: `vendor_id`, `role_id`, `name`, `email`, `password`, `is_active`, `is_owner`, `profile`, `profile.preferred_locale`, `profile.bio`, `profile.preferences`, `profile.additional_information`, `profile.date_of_birth`, `profile.gender`, `profile.nationality`, `profile.national_id`, `address`, `address.type`, `address.label`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/VendorAdmin/App/Http/Requests/Admin/VendorAdmin/UpdateVendorAdminRequest.php`: `vendor_id`, `role_id`, `name`, `email`, `password`, `is_active`, `is_owner`, `profile`, `profile.preferred_locale`, `profile.bio`, `profile.preferences`, `profile.additional_information`, `profile.date_of_birth`, `profile.gender`, `profile.nationality`, `profile.national_id`, `address`, `address.type`, `address.label`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/VendorAdmin/App/Http/Requests/Vendor/VendorAdmin/StoreVendorAdminRequest.php`: `role_id`, `name`, `email`, `password`, `is_active`, `is_owner`, `profile`, `profile.preferred_locale`, `profile.bio`, `profile.preferences`, `profile.additional_information`, `profile.date_of_birth`, `profile.gender`, `profile.nationality`, `profile.national_id`, `address`, `address.type`, `address.label`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/VendorAdmin/App/Http/Requests/Vendor/VendorAdmin/UpdateVendorAdminRequest.php`: `role_id`, `name`, `email`, `password`, `is_active`, `is_owner`, `profile`, `profile.preferred_locale`, `profile.bio`, `profile.preferences`, `profile.additional_information`, `profile.date_of_birth`, `profile.gender`, `profile.nationality`, `profile.national_id`, `address`, `address.type`, `address.label`, `address.phone`, `address.address`, `address.latitude`, `address.longitude`, `address.city_id`, `address.state_id`, `address.country_id`, `address.postal_code`
+- `Modules/VendorAdmin/App/Http/Requests/Vendor/VendorAdminInvite/AcceptVendorAdminInviteRequest.php`: `token`, `name`, `password`
+- `Modules/VendorAdmin/App/Http/Requests/Vendor/VendorAdminInvite/StoreVendorAdminInviteRequest.php`: `email`, `role_id`
+
+## Enum values in source
+
+- `Modules/Admin/App/Enums/AdminExportJobStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/Admin/App/Enums/AdminExportJobType.php`: `EXPORT = 1`, `IMPORT_PREVIEW = 2`
+- `Modules/Admin/App/Enums/RolePermissionType.php`: `ALL = 1`, `CUSTOM = 2`
+- `Modules/TenantAdmin/App/Enums/Gender.php`: `MALE = 1`, `FEMALE = 2`
+- `Modules/TenantAdmin/App/Enums/TenantAdminAddressType.php`: `HOME = 1`, `WORK = 2`, `OFFICE = 3`, `OTHER = 4`
+- `Modules/TenantAdmin/App/Enums/TenantAdminExportJobStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
+- `Modules/TenantAdmin/App/Enums/TenantAdminExportJobType.php`: `EXPORT = 1`, `IMPORT_PREVIEW = 2`
+- `Modules/TenantAdmin/App/Enums/TenantRolePermissionType.php`: `ALL = 1`, `CUSTOM = 2`
+- `Modules/VendorAdmin/App/Enums/Gender.php`: `MALE = 1`, `FEMALE = 2`
+- `Modules/VendorAdmin/App/Enums/VendorAdminAddressType.php`: `HOME = 1`, `WORK = 2`, `OFFICE = 3`, `OTHER = 4`
+- `Modules/VendorAdmin/App/Enums/VendorRolePermissionType.php`: `ALL = 1`, `CUSTOM = 2`
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/team)
