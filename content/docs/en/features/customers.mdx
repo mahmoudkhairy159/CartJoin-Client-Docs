@@ -11,6 +11,15 @@ Operators open Users to locate the customer and related purchases. Customers use
 
 <SystemTour tour="feature-customers" compact />
 
+
+## Registration store is fixed
+
+When a platform admin edits an existing customer, the Tenant picker is disabled. It retains the store recorded when the customer was created. A reassignment request is rejected with a field validation error. Create a customer in the intended store initially; do not move their account to change an order's store.
+
+<SystemScreenshot src="/docs/screenshots/admin-customer-signup-origin-en.jpg" alt="Platform-admin customer edit: the registration store is locked and explained below the field." />
+
+This safeguard is implemented. The broader [central customer account model](/en/roadmap/global-platform) remains a planned cutover: this screenshot does not mean cross-store login is enabled yet.
+
 ## Restrictions and decisions
 
 Customers see their own account records only. Saved address changes do not rewrite the delivery address snapshot of an existing order. A group membership does not grant dashboard staff permissions.

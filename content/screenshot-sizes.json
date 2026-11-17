@@ -694,5 +694,13 @@
   "vendor-guest-order-en.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "admin-customer-signup-origin-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-customer-signup-origin-ar.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

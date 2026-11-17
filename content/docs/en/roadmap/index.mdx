@@ -5,6 +5,14 @@ description: "Planning proposal: two merchant modes, isolated tenant shops, cent
 
 > **Planning only — 17 November 2026.** This roadmap records recommended business decisions under the product owner's delegation. It does not announce shipped functionality or authorize application implementation. Existing role handbooks describe the current system.
 
+## Implementation status — 17 November 2026
+
+Implementation has started with the identity foundation: a read-only collision audit, tenant-customer relationship infrastructure, and registration-store reassignment protection in the API and platform-admin form. The [customer guide](/en/features/customers) includes reviewed English/Arabic screenshots of the implemented safeguard.
+
+The development MySQL connection was restored and six pending development migrations were applied without resetting or reseeding. Its identity audit found four customer records, no identity collisions and no phone-normalization blockers. **This is data preflight evidence, not approval or completion of global authentication.** The current login contract is still tenant-scoped.
+
+Phase 0 audit and Phase 1 integration remain in progress. Billing, mode-transition enforcement, the separate global frontend and discovery are not implemented by this first slice. See the [engineering rollout and business-gap register](https://github.com/mahmoudkhairy159/CartJoin-Backend/blob/master/documentation/planning/store-marketplace-implementation.md).
+
 ## Product direction
 
 CartJoin will serve independent businesses through **Store mode** and businesses hosting third-party sellers through **Marketplace mode**. Both use the same tenant commerce foundation. A merchant can grow into Marketplace mode without replacing the tenant or losing purchase history.
