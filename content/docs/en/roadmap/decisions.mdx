@@ -1,0 +1,85 @@
+---
+title: "Decisions, risks and acceptance scenarios"
+description: "Selected defaults, business validation gates and scenarios for later implementation."
+---
+
+> **Planning register — 17 November 2026.** Scenarios below are requirements for future implementation, not reports of completed tests.
+
+## Decision authority
+
+The owner approved this eight-page roadmap and delegated recommended commercial/product defaults. The owner explicitly confirmed that customers are centralized across tenants and that central customer `tenant_id` remains first-registration attribution only.
+
+| ID | Selected direction | Status and revisit trigger |
+|---|---|---|
+| D01 | Tenant storefront stays isolated; global CartJoin frontend is separate | Owner scope requirement; do not repurpose the existing storefront |
+| D02 | One central customer login; automatic internal tenant relationships | Owner requirement; no repeated registration per tenant |
+| D03 | Checkout and money stay within one tenant initially | Recommended default; revisit only after a separate financial and operational design |
+| D04 | Controlled upgrades and scheduled, obligation-aware downgrades | Recommended default; no deletion or rewriting of seller history |
+| D05 | Platform subscription plus optional paid capabilities; no default percentage on all merchant sales at MVP | Recommended default; validate unit economics and acceptance before prices are published |
+| D06 | Explicit opt-in and eligibility checks for global discovery | Recommended default; merchant consent and takedown remain mandatory |
+| D07 | Central identity early, global website and discovery later | Confirmed sequencing; central login does not depend on a public directory |
+| D08 | Central customer `tenant_id` is signup-origin statistics only | Owner requirement; recommend null for global signup, audit corrections and safe deletion rules |
+
+## Values to validate before commercial release
+
+These details do not block writing the roadmap. They are release gates, not permission to guess amounts or terms.
+
+| Item | Planning default or action | Accountable role |
+|---|---|---|
+| Package prices, currency, taxes and included limits | Cost/merchant research and approved versioned offer before publication | Product and finance |
+| Trial and billing recovery | Recommend configurable 14-day trial; approve grace period, notices, retries and cancellation/refund terms | Commercial and operations |
+| Payment and invoice responsibility | Map platform subscription, tenant sale, vendor commission and optional service fees separately | Finance and business owner |
+| Provider and fulfillment readiness | Choose pilot providers; verify contracts, integrations and exception handling | Operations and integrations |
+| Origin attribution retention | Preserve permitted statistics; decide anonymization/null policy for closed tenants and deleted accounts | Product and privacy owner |
+| Duplicate legacy customers | Ownership-verification and recovery process; never merge by matching text alone | Identity and support |
+| Numerical service targets | Establish baseline, denominator and measurement window before committing targets | Accountable workstream owner |
+
+## Business risks and controls
+
+| Risk | Required control and review evidence |
+|---|---|
+| A central customer query leaks cross-store activity | Explicit tenant commerce predicates, relationship authorization, resource-field allowlists and negative access scenarios |
+| Signup-origin field accidentally remains an ownership filter | Inventory every `User.tenant_id` consumer; separate origin reports from active tenant queries and reconcile migration |
+| Origin tenant deletion deletes the customer | Review foreign keys and deletion jobs; preserve account and other tenant relationships |
+| Two different people share a legacy identifier | Verified recovery and collision queue; preserve historical ID mappings and audit trail |
+| Mode or plan restriction abandons paid orders | Restricted-sales state preserves authorized fulfillment, refunds, disputes and payout reconciliation |
+| Billing and provisioning disagree | Authenticated idempotent events, reconciliation and a visible paid-but-unprovisioned queue |
+| Discovery advertises stale or unauthorized products | Explicit publication consent, eligibility checks, monitored indexing and fresh tenant checkout quote |
+| Feature growth overwhelms operators | Pilot gates, named owners, exception queues and measured activation/servicing cost |
+
+## Acceptance scenarios for implementation
+
+| # | Scenario | Required outcome |
+|---|---|---|
+| 1 | Register through tenant 1, then log in at tenant 2 | Same central account and credentials; no new registration; automatic relationship without duplicates |
+| 2 | That customer buys from tenant 2 | Customer `tenant_id` remains tenant 1; cart/invoice/orders belong to tenant 2 |
+| 3 | Existing customer logs in repeatedly or concurrently at another tenant | Exactly one relationship for the pair; origin unchanged |
+| 4 | Customer submits another tenant ID during signup/profile edit | Server derives origin from trusted context; ordinary edits cannot overwrite attribution |
+| 5 | First signup occurs on the future global website | Null origin tenant under the recommended policy; later store access does not overwrite it |
+| 6 | Tenant 1 closes or is removed | Global account and tenant 2 commerce survive; attribution follows the approved retention policy |
+| 7 | Customer or staff requests another tenant's private order | Resource is not exposed; wrong-tenant lookup returns 404 |
+| 8 | Tenant locally blocks a customer | Local restriction does not disable the account everywhere; global security suspension uses a separate authorized process |
+| 9 | Two legacy accounts contain the same email or phone text | No silent credential, order or balance merge; verified collision/recovery handling |
+| 10 | A session crosses to a custom domain | Validated identity handoff and fresh tenant authorization; no arbitrary redirect or leaked token |
+| 11 | Tenant changes Store to Marketplace | Valid plan and approval gates; no duplicate billing or history rewrite on retries |
+| 12 | Tenant requests downgrade with a return or payout obligation | New external selling can stop, but final downgrade waits for obligations or an explicitly approved servicing policy |
+| 13 | Payment webhook is duplicated, delayed or arrives out of order | No double charge or activation; state reconciles through authenticated idempotent handling |
+| 14 | Concurrent actions reach a plan usage limit | Server enforces the same limit for API, imports and jobs; no race-based bypass |
+| 15 | Subscription becomes past due | Apply approved notices and sales restrictions while preserving authorized existing-order servicing |
+| 16 | Vendor approved in tenant 1 opens tenant 2 | No access without tenant 2 approval and matching vendor/tenant scope |
+| 17 | Merchant opts out of global publication or is suspended | Public eligibility is removed and index removal is observed; private records remain private |
+| 18 | Customer follows a stale discovery price | Owning tenant recalculates availability, totals and terms before payment commitment |
+| 19 | A purchase contains vendors from one marketplace tenant | One tenant invoice with its vendor orders; no cross-tenant money mixing |
+| 20 | Operator requests acquisition statistics | Count signup origin separately from tenant purchases; expose only authorized aggregates and local relationships |
+
+## Competitor evidence and positioning
+
+Use competitors to identify valuable workflows, not to claim CartJoin is superior before measurement. Vendor tooling and marketplace operations are established expectations: see [CS-Cart Multi-Vendor](https://www.cs-cart.com/multivendor) and [Mirakl Marketplace Platform](https://www.mirakl.com/products/marketplace-platform/). Guided merchant setup is also an established concern; see [Zid getting started](https://help.zid.sa/en/getting-started).
+
+CartJoin's proposed positioning is a merchant's controlled growth from Store to Marketplace, a reusable customer account, isolated merchant data, clear commercial costs and bilingual operations. These are product choices to validate through activation time, purchase conversion, merchant retention and servicing effort—not unsupported claims that competitors lack these capabilities.
+
+## Review record
+
+The planning baseline reviewed the current tenant settings and business-type enum, tenant-scoped customer model, tenant invoice/vendor-order checkout structure, planned Subscription module and manual shipping adapter. Treat source and real workflow review as Phase 0 evidence; a documentation page or scaffold alone cannot prove readiness.
+
+No backend migration, API behavior or dashboard capability is implemented by this roadmap. Current user guides remain separate from proposed behavior. Future screenshots should be added only after the corresponding capability exists and has been reviewed.

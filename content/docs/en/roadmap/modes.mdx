@@ -1,0 +1,70 @@
+---
+title: "Store and Marketplace business rules"
+description: "Proposed capability boundaries, permissions, upgrade and downgrade rules for the same tenant."
+---
+
+> **Planning rules.** Existing feature switches are implementation inputs, not proof that these lifecycle rules already run.
+
+## Two modes on one commerce foundation
+
+Store mode sells tenant-operated offers. Marketplace mode adds approved third-party sellers and can retain tenant-operated offers alongside them. Enabling Marketplace does not require a new tenant, new customer base or replacement storefront.
+
+| Capability | Store | Marketplace |
+|---|---|---|
+| Tenant branding, CMS, catalog, pricing and stock | Available according to plan | Same foundation |
+| Customer checkout, invoices, payments, delivery and aftercare | Tenant-owned seller group | One tenant invoice, potentially several seller orders |
+| Staff roles, reporting and operational audit | Tenant staff only | Tenant staff plus separately authorized vendor workspaces |
+| Vendor invitations and participation approval | New participation disabled | Allowed within entitlements and permissions |
+| Vendor product submission and moderation | Disabled for new external offers | Allowed for approved sellers under review policy |
+| Commission, settlement and vendor payouts | Not needed for new tenant-owned sales | Enabled where entitled; existing obligations always retained |
+| Coupons, loyalty, wallets and gift cards | According to plan and eligibility | Same tenant-scoped rules; no cross-store value |
+| Global discovery later | Optional, separate eligibility | Optional; every tenant/vendor offer still needs publication eligibility |
+
+Mode, plan, business category and permission are separate concepts. A wholesaler can use either mode; paying for Marketplace does not approve a vendor, and a staff permission cannot unlock an unpurchased capability.
+
+## One effective capability decision
+
+An action requires the intersection of **tenant operational state, effective mode, plan entitlement, actor permission, record ownership/state and applicable approval**. The UI explains the decision; the server enforces it on API calls, imports, exports, scheduled jobs and integration commands. Feature flags may temporarily restrict rollout, but cannot grant commercial or security rights.
+
+Existing `vendor_marketplace_enabled` and the settings registry must be audited before a new mode representation is selected. Prefer one canonical effective decision over two independent booleans that can disagree. Do not repurpose `TenantTypeEnum`; storage, compatibility and API changes need a separate design review.
+
+## Store → Marketplace upgrade
+
+1. An authorized tenant owner chooses the target plan/capabilities and sees the price, effective time and changed responsibilities.
+2. Check the tenant's operational state, payment confirmation or approved trial, staff authority and version of commercial terms.
+3. Prepare vendor policies: participation/review rules, commission basis, settlement schedule, payout responsibility and return/shipping ownership.
+4. Persist the requested transition and billing evidence idempotently. Apply the mode/entitlement change atomically when prerequisites succeed.
+5. Enable invitations and approvals. External offers remain unavailable until the tenant-vendor link, product publication, price and stock are eligible.
+
+Existing orders, invoices, balances, URLs and tenant-owned products retain their identity and historical economics. Replaying the upgrade must not create duplicate charges or invitations. If provisioning fails after a payment, record a recoverable activation exception; do not silently leave the tenant charged but unusable.
+
+## Marketplace → Store downgrade
+
+Recommend an **obligation-aware, scheduled downgrade**, not an instant switch that hides vendor records.
+
+| Stage | Required behavior |
+|---|---|
+| Preview | Show target-plan limits, external offers, approved sellers, pending fulfillment, return/refund exposure and unsettled vendor money |
+| Prepare | Merchant explicitly accepts closure steps; no new external seller approvals after the transition enters its closing stage |
+| Stop new exposure | Disable new external-offer purchases and related discovery publication without rewriting existing purchases |
+| Complete obligations | Preserve authorized fulfillment, returns, refund review, disputes, statements and payout processing until obligations are resolved |
+| Finalize | Apply Store mode at the scheduled effective point only after the final checks pass |
+
+Open financial/operational obligations block finalization by default. A still-open return window requires a servicing plan; it must not disappear merely because no return request exists yet. Any future exception allowing finalization with outstanding obligations needs a separately reviewed restricted-servicing workflow and explicit platform authorization. MVP does not provide that exception.
+
+Do not delete vendors, historical products, seller order lines, documents or ledgers to satisfy a downgrade. Do not replace `vendor_id` with tenant ownership. Other approved workspaces of the global vendor remain unaffected. A cancelled downgrade restores only capabilities still allowed by the current paid plan and approvals.
+
+## Existing tenant migration
+
+Inventory current switch values and actual vendor relationships. Do not mass-classify stores from a default setting: an enabled flag may have been seeded without active external selling. Generate a proposed classification report, flag conflicts, obtain owner/platform confirmation and record the effective date. Never reprice existing purchases during migration.
+
+## Required acceptance scenarios
+
+- Direct API calls cannot create external offers in Store mode even if a hidden menu is bypassed.
+- Upgrade preserves purchase history and creates no duplicate charge on retry.
+- A vendor without approval cannot publish after the upgrade.
+- Downgrade with a pending seller order or unpaid settlement is blocked with an actionable explanation.
+- A global vendor's other tenant remains operational when one tenant downgrades.
+- Staff without plan-management permission cannot change the mode; old mode values in a queued command are revalidated before creating new exposure.
+
+See [billing rules](/en/roadmap/commercial), [phase gates](/en/roadmap/phases) and [decision D04](/en/roadmap/decisions).

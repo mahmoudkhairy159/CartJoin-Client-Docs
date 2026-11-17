@@ -1,0 +1,60 @@
+---
+title: "Merchant and vendor onboarding"
+description: "Proposed activation journeys, responsibilities, failure recovery and launch criteria for both modes."
+---
+
+> **Planning only.** Guided activation can first be delivered through existing admin/tenant dashboards. Public self-service signup belongs to the separate future platform phase.
+
+## Merchant journey
+
+| Step | Responsible actor | Required result | Failure behavior |
+|---|---|---|---|
+| Application or assisted provisioning | Merchant/platform team | Verified owner contact and requested operating mode | Save a resumable application; do not create duplicate tenants on retry |
+| Plan and terms | Authorized owner | Accepted plan version, billing party and effective terms | Show outstanding requirements without granting paid entitlements |
+| Tenant provisioning | Platform service | Tenant, owner, defaults and initial content created once | Recover partial provisioning through a tracked job/operation |
+| Business identity | Owner | Store name, branding and required business/contact details | Draft remains private until launch checks pass |
+| Catalog | Authorized tenant staff | At least one complete eligible product/variant | Explain missing price, stock, media or publication |
+| Payment and delivery | Owner/operations staff | Intended method and delivery path verified | Never treat saved credentials/provider configuration as proof of a successful integration |
+| Customer preview | Tenant staff | Correct tenant, language, currency, policies and navigation | Keep storefront in preview/maintenance until issues are resolved |
+| Launch and first order | Owner | Launch confirmation and monitored first commerce cycle | Route payment/shipment exceptions to a named team |
+
+Use an idempotent onboarding operation with a visible status. Payment collection, tenant creation and long-running initialization need recoverable handoffs, not a browser-only success message. Domain verification and plan activation are separate prerequisites.
+
+## Checklist behavior
+
+- Show completed, blocked and optional items with a reason and direct destination.
+- Mark an item complete from verified system state, not a checkbox alone. A connected shipping carrier requires more evidence than a provider row.
+- Let staff complete only authorized tasks. Owner acceptance of billing or terms cannot be delegated implicitly by a generic product permission.
+- Re-check launch readiness when critical configuration changes. Saved launch approval does not override later suspension, expired entitlements or disabled payment methods.
+- Keep a clear tenant preview with no global CartJoin package advertising inside the shop.
+
+## Store-mode launch
+
+Tenant-operated catalog and fulfillment are the default. Hide external-seller setup from the normal journey. Require correct store identity, customer policy pages, a purchasable variant, eligible payment/delivery configuration and tenant-bound checkout validation. A pilot can use an explicitly labeled manual delivery process; automated-carrier capability may be marketed only after live integration verification.
+
+Guest checkout is enabled only after its frontend and backend journey passes the guest/returning-customer acceptance cases. An existing guest setting is insufficient evidence.
+
+## Marketplace vendor journey
+
+1. The tenant owner enables an entitled Marketplace mode and defines participation terms, commission and service policies.
+2. Invite an existing global vendor or let an eligible applicant request participation. Verify vendor identity before linking an existing organization; do not merge organizations by matching names.
+3. Collect required documents, addresses and payout destination evidence through protected channels. Store approval and payout-account verification are separate decisions.
+4. Authorized tenant/platform reviewers accept or reject the participation with an explanation and audit trail.
+5. Vendor staff select the approved workspace and prepare their own offers. Enforce category, publication, price and stock requirements.
+6. Run the first permitted fulfillment cycle and inspect the commission/statement trail. A published offer is not evidence of a paid settlement.
+
+The vendor organization may be global, but invitations, approval, commission terms and offered catalog remain store-specific. Revocation in one store must not disable another approved store.
+
+## Service policy and review queues
+
+Give reviewers queues for incomplete applications, expiring documents, rejected products, late dispatch, unresolved returns and payout exceptions. Every queue needs a record owner, due-time policy and next permitted action. Start with observable metrics and manual review; introduce automated restrictions only after warning, appeal and restoration rules are approved.
+
+Keep buyer-facing dispatch/return promises aligned with the tenant-vendor agreement. A vendor marketing statement must not silently override the store's purchase terms. Show policy conflicts before publication.
+
+## Migration and activation measures
+
+Existing tenants are not forced through a new paid signup or duplicate owner account. Import their verified completion state, identify missing requirements and explain what changes. Preserve existing vendor approvals and historical agreement versions; request fresh acceptance only where the commercial change actually requires it.
+
+Measure onboarding drop-off, time to first eligible offer, first captured purchase, first successful shipment and first reconciled vendor statement. Track blocked reasons separately from abandoned applications. Numerical targets are set after the pilot baseline, not invented in this roadmap.
+
+Launch evidence: retry after partial provisioning; invitation accepted by the wrong organization; owner/staff separation; disabled gateway; unpublished variant; revoked vendor workspace; domain-context mismatch; and duplicate signup attempts. See [mode rules](/en/roadmap/modes) and [implementation phases](/en/roadmap/phases).

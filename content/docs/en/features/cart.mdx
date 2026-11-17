@@ -7,13 +7,13 @@ roles: ["CUSTOMER"]
 
 ## How to use it
 
-Sign in, choose a variant and add it. Open Cart to adjust quantities, remove unavailable items, apply an eligible coupon and inspect credit/points options. Review refreshed totals and validation messages before checkout.
+Choose a variant and add it without signing in. Open Cart to adjust quantities and remove unavailable items. Sign in to apply eligible coupons, gift cards, credit or points. Review refreshed totals and validation messages before checkout.
 
 <SystemTour tour="feature-cart" compact />
 
 ## Restrictions and decisions
 
-No guest cart is implemented. One cart cannot mix tenants. The default distinct-line cap is 50 and configured expiry is normally seven days. Prices recalculate on mutations; stock can change before checkout. Expired carts may be cleared.
+Guest baskets are supported through a private store-specific shopping capability. One cart cannot mix tenants. The default distinct-line cap is 50 and configured expiry is normally seven days. Prices recalculate on mutations; stock can change before checkout. Expired carts may be cleared.
 
 ## Read quantities and expiry
 
@@ -25,7 +25,7 @@ Opening Cart now requests the latest basket from the server. Read the variant, q
 
 ## Data flow and outcome
 
-Authenticated buyer + tenant → variant lines → recalculation and eligibility → validated checkout input. Cart totals are provisional until checkout succeeds.
+Authenticated buyer or guest capability + tenant → variant lines → recalculation and eligibility → validated checkout input. Cart totals are provisional until checkout succeeds.
 
 ## When something goes wrong
 
@@ -53,3 +53,8 @@ A route proves navigation, not permission to perform every action. Related-recor
 {/* /SCREEN_MAP */}
 
 </details>
+
+
+## Guest checkout update
+
+Guest shopping now supports a basket before sign-in and eligible cash-on-delivery purchases, with required phone and optional email. [Read the complete guest checkout and phone-account guide](/en/workflows/guest-checkout).

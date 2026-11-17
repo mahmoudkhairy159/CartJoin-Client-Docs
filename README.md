@@ -8,12 +8,13 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 
 ## Included
 
+- Eight planning pages per language for Store/Marketplace priorities, business rules, central customer identity, billing and release gates. Planning is separate from shipped capabilities.
 - Four role handbooks: platform admin, tenant operator, vendor and customer.
 - 44 capability guides per language covering steps, rules, data flow and troubleshooting.
-- 208 documentation pages across English and Arabic.
+- 226 documentation pages across English and Arabic.
 - 131 reviewed dashboard captures with interactive explanations and enlargement.
 - 68 short screenshot-based video tours with English/Arabic captions and transcripts.
-- 12 diagram blocks explaining business flows and relationships.
+- 22 diagram blocks explaining business flows and relationships.
 - Searchable capabilities, role-based navigation, language switching and light/dark themes.
 
 Coverage includes catalog, inventory, checkout, vendor-split orders, invoices, payments, shipping, returns, refunds, marketing, rewards, settlements, support and platform operations.
@@ -43,6 +44,8 @@ The docs app runs independently of the CartJoin backend and dashboards. No crede
 | Customer | `/docs/en/roles/customer` | `/docs/ar/roles/customer` |
 
 The capability library lives at `/docs/en/features` and `/docs/ar/features`. The visual learning hub lives at `/docs/en/learn` and `/docs/ar/learn`.
+
+The planning roadmap starts at `/docs/en/roadmap` and `/docs/ar/roadmap`. Central customers use one account across tenants; customer `tenant_id` is planned as first-signup attribution only, while commerce retains tenant ownership.
 
 ## Validate and build
 

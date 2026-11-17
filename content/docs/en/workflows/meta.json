@@ -4,6 +4,7 @@
     "index",
     "commerce",
     "money",
-    "onboarding"
+    "onboarding",
+    "guest-checkout"
   ]
 }

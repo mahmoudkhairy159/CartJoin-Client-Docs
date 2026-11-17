@@ -1,0 +1,73 @@
+---
+title: "Central customers and the future global platform"
+description: "One customer account across shops, signup attribution, private tenant commerce and a later discovery interface."
+---
+
+> **Planning only.** Central identity is early foundation work. The global marketing and discovery website is a separate, later frontend.
+
+## One account, every tenant
+
+A customer who registers at tenant 1 can sign in at tenant 2 with the same verified identity and credentials. **There is no second registration.** An internal customer–tenant relationship is created automatically when needed, once per pair. The relationship records local status and preferences; it is not another password account.
+
+The customer chooses a storefront; trusted request context resolves its tenant. Authentication proves the global person. Authorization then checks the active tenant, the relationship where required, and the requested resource. A global account never grants access to every tenant's records.
+
+## Keep customer tenant_id for first registration statistics
+
+The field name remains **`tenant_id` on the central customer**, as required by the product owner. Its sole meaning is the tenant through which the customer first registered.
+
+| Customer event | Central customer tenant_id | Result |
+|---|---|---|
+| First registration through tenant 1 | Tenant 1 | Attribute acquisition to tenant 1 |
+| Later login or purchase through tenant 2 | Still tenant 1 | No new registration; commerce belongs to tenant 2 |
+| Future first registration on the global CartJoin site | Null, recommended | Attribute to the platform channel separately |
+| Origin tenant closes | Do not delete the global customer | Retain permitted attribution or use a documented anonymization/null policy |
+
+Set attribution from trusted signup context, never a freely supplied request body. Normal profile edits, login and checkout cannot change it. Corrections require a narrowly authorized, audited administrative process. A timestamp and signup-channel metadata can supplement attribution without changing this rule.
+
+Do not use central customer `tenant_id` to resolve the active shop, restrict authentication, filter tenant order access, or infer all customer relationships. Do not let origin-tenant deletion cascade into the global customer. Cart, invoice, order, relationship and financial record tenant IDs continue to enforce real ownership. Tenant operators see their own relationships and permitted statistics, not a global customer directory filtered only by signup origin.
+
+## What travels and what stays private
+
+| Global account capability | Tenant-private boundary |
+|---|---|
+| Verified login, password recovery and account security | Tenant staff cannot reset a global identity without the authorized recovery process |
+| Customer-managed profile | Historical order identity/address snapshots remain unchanged |
+| Optional personal address book | Share an address with a tenant only when the customer selects it for the relevant action |
+| Same login across shops | Carts, purchases, invoices, returns, loyalty, gift cards and balances remain scoped to their owning tenant/program/currency |
+| Account-wide security suspension for confirmed compromise | A merchant's local block applies to its own shop, not every merchant |
+| Later customer-only purchase overview | A tenant cannot use that overview to inspect purchases elsewhere |
+
+Marketing permission is tenant- and purpose-specific. Visiting another shop does not subscribe the customer to every tenant or to CartJoin marketing.
+
+## Sign-in across different storefront domains
+
+The design must support custom domains without assuming that one cookie works everywhere. Use an audited identity handoff with short-lived, audience-bound authorization codes, validated state/nonce and an explicit redirect allowlist. Exchange codes through the authorized flow; keep tokens and credentials out of URLs and documentation captures. Review session expiry, logout scope, revocation and recovery explicitly.
+
+Central identity does not require silent authentication in every browser. A customer may see a login or consent screen because of session or browser policy, but uses the existing account rather than registering again. Customer identity does not merge platform-admin, tenant-admin or vendor-admin permissions.
+
+## Migration from the current tenant-scoped customer model
+
+1. Inventory all customer queries, unique constraints, token claims, foreign keys, exports and delete behavior before changing scope.
+2. Build an explicit legacy-account-to-central-account map. Preserve invoice/order ownership and historical references.
+3. Resolve duplicate identifiers through verified account ownership and a reviewed recovery flow. Matching email or phone text alone is not permission to merge credentials, orders or balances.
+4. Backfill signup origin only from reliable evidence. Flag ambiguous legacy values for review instead of pretending they prove first registration.
+5. Create tenant relationships idempotently and reconcile counts, references and access outcomes in a migration rehearsal.
+6. Switch authentication and audited consumers in stages. Keep commerce tenant predicates and monitor mismatches. Define rollback that preserves new mappings and live activity.
+
+Removing `BelongsToCurrentTenant` from the current `User` model in isolation is not this migration. Central identity requires coordinated authorization, resource exposure and reporting changes.
+
+## Later global website
+
+The separate CartJoin frontend can provide services, package comparisons, merchant applications, subscription onboarding, vendor applications and opt-in discovery. It reuses the earlier identity and billing foundations. It does not replace tenant shops or inject CartJoin-wide products into their catalogs.
+
+Public eligibility requires explicit publication consent, active tenant status, a published offer, permitted inventory visibility and an approved tenant–vendor relationship where applicable. A vendor's approval in one tenant does not approve its offers everywhere. Publish only allowlisted public fields.
+
+Changes and opt-outs must remove or refresh indexed records through observable jobs with retry/reconciliation. Set measurable update/removal targets during implementation. Displayed discovery prices are informational until the owning tenant issues a fresh checkout quote.
+
+## Purchase after discovery
+
+Recommend **one tenant checkout at a time**. A customer discovers an offer globally, opens its owning shop, uses the existing account, and completes a tenant cart, invoice and payment. Show the store identity and applicable terms before commitment.
+
+A future multi-tenant cart would require separate decisions about payment allocation, merchant responsibility, shipping, refunds, tax, dispute handling and reconciliation. It is not enabled merely because customer accounts are centralized.
+
+See [boundaries](/en/roadmap/boundaries), [phases](/en/roadmap/phases) and [acceptance scenarios](/en/roadmap/decisions).

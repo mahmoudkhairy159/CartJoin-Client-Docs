@@ -1,0 +1,69 @@
+---
+title: "Store and Marketplace roadmap"
+description: "Planning proposal: two merchant modes, isolated tenant shops, centralized customer accounts and a separate future CartJoin platform."
+---
+
+> **Planning only — 17 November 2026.** This roadmap records recommended business decisions under the product owner's delegation. It does not announce shipped functionality or authorize application implementation. Existing role handbooks describe the current system.
+
+## Product direction
+
+CartJoin will serve independent businesses through **Store mode** and businesses hosting third-party sellers through **Marketplace mode**. Both use the same tenant commerce foundation. A merchant can grow into Marketplace mode without replacing the tenant or losing purchase history.
+
+`CartJoin-Storefront-Frontend` is the tenant's customer-facing shop. It renders only the resolved tenant's branding, content and eligible offers. It is not CartJoin's marketing website, subscription sales portal or global product directory.
+
+A **separate, later CartJoin platform interface** will present services and packages, onboard tenants, and eventually support public discovery of participating stores, vendors and offers. This later interface must not delay the first tenant-mode releases.
+
+## Selected planning decisions
+
+| ID | Decision | Business reason |
+|---|---|---|
+| D01 | Keep the tenant storefront separate from the future global platform | Preserve merchant branding, ownership and isolation |
+| D02 | Use one centralized customer account across all tenants; create internal store relationships automatically | Reduce repeated registration without sharing private commerce data |
+| D08 | Keep central customer `tenant_id` as first-registration attribution only; nullable for global signup | Preserve acquisition statistics without restricting cross-store login |
+| D03 | Use separate checkout, invoice, payment and refund boundaries per tenant initially | Preserve clear seller responsibility and existing financial isolation |
+| D04 | Allow controlled Store → Marketplace upgrades and obligation-aware downgrades | Enable merchant growth without destroying history |
+| D05 | Start with tenant subscriptions and optional paid capabilities; keep fee streams separate | Predictable platform revenue and understandable merchant costs |
+| D06 | Global discovery is opt-in; publish only approved and eligible public records | Protect merchant choice and public catalog quality |
+| D07 | Deliver centralized identity in the foundation; keep the global website and discovery in later phases | Enable sign-in everywhere without repeated registration; defer global shopping aggregation |
+
+These are selected design directions, not evidence that implementation is complete. Prices, legal terms, providers, delivery estimates and numerical service targets require the validation gates in the [decision register](/en/roadmap/decisions).
+
+## Priority backlog
+
+P0 is a prerequisite for a safe commercial pilot. P1 improves activation, conversion or operational efficiency after that foundation. P2 is later expansion. Priority does not override dependencies.
+
+| Priority | Workstream | Existing foundation | Proposed outcome |
+|---|---|---|---|
+| P0 | Mode and entitlement enforcement | Tenant settings, staff permissions, vendor approvals | One consistent server-side decision for every action and background job |
+| P0 | Central customer identity | Tenant-scoped customer model and existing authentication | One account signs in to every tenant; automatic internal relationship and safe legacy migration |
+| P0 | Tenant storefront isolation | Resolved context, scoped commerce and CMS | Proven isolation across browsing, checkout, caching, media and integrations |
+| P0 | Merchant onboarding and billing | Tenant provisioning; Subscription documented as planned | Guided setup, plan lifecycle and recoverable billing restrictions |
+| P0 | Checkout and fulfillment readiness | Invoice checkout, payment and shipping modules | Verified guest journey where enabled, live carrier pilot and reconciliation |
+| P1 | Store editor and conversion | CMS, configurable home sections, reports | Draft/preview/publish and measured purchase funnels |
+| P1 | Marketplace operations | Vendor workspaces, commission, settlements | Faster seller activation, service metrics and exception queues |
+| P1 | Growth and connectors | Notifications, webhooks, coupons | Consent-aware recovery and monitored integrations |
+| P2 | Global website and discovery | Central customer foundation; global vendor organizations | Separate CartJoin marketing, tenant acquisition and opt-in public discovery |
+| P2 | POS, B2B, shared catalog and advanced AI | Branches, price lists and catalog | Separate validated business cases, not first-release obligations |
+
+## Current evidence and gaps
+
+- The backend already has `vendor_marketplace_enabled` and `allow_guest_checkout` settings. Their presence is not proof of complete mode enforcement or a finished guest journey.
+- `TenantTypeEnum` describes business categories such as retailer and wholesaler. It is not the Store/Marketplace mode.
+- The current customer `User` model is tenant-scoped. Centralized accounts therefore need a deliberate migration, not removal of scopes from current commerce queries.
+- Checkout creates a tenant invoice with vendor-specific orders. A multi-vendor purchase inside one tenant is not a multi-tenant checkout.
+- Subscription billing is a planned module. The reviewed shipping adapter supports manual operations without live carrier API calls.
+- Existing source summaries can lag implementation. Phase 0 verifies current source and actual workflows before accepting a gap as new work.
+
+## Read the roadmap
+
+1. [Interface and data boundaries](/en/roadmap/boundaries)
+2. [Store and Marketplace rules](/en/roadmap/modes)
+3. [Plans, billing and entitlements](/en/roadmap/commercial)
+4. [Merchant and vendor onboarding](/en/roadmap/onboarding)
+5. [Implementation phases and release gates](/en/roadmap/phases)
+6. [Future global platform and identity](/en/roadmap/global-platform)
+7. [Decisions, risks and acceptance scenarios](/en/roadmap/decisions)
+
+## Success measures
+
+Track time to first published product, time to first paid order, checkout completion, payment and shipment exceptions, seller dispatch performance, billing recovery and merchant retention. Define an owner, denominator, reporting window and baseline before setting targets. Sales volume alone does not establish merchant profitability or platform revenue.
