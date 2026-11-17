@@ -1,0 +1,42 @@
+{
+  "reviewed": "2026-11-17",
+  "backend_commit": "19c54053",
+  "customer_commit": "bb7899b",
+  "admin_commit": "356c856",
+  "tenant_commit": "830771d",
+  "vendor_commit": "fb10c6d",
+  "environment": "Isolated local SQLite database with seeded demo data; no production transactions or real OTP delivery.",
+  "browser_verified": [
+    "Guest add-to-cart without sign-in",
+    "Guest checkout with required phone and blank email",
+    "Cash-on-delivery-only guest payment choice",
+    "Successful local purchase and receipt reload",
+    "English and Arabic optional account explanation",
+    "Admin/tenant/vendor password sign-in by phone",
+    "Tenant setting enabled by default in English and Arabic",
+    "Admin and vendor guest-order badges; vendor buyer phone/email redacted"
+  ],
+  "automated_validation": {
+    "backend_focused_tests": 28,
+    "assertions": 129,
+    "frontend_development_builds": 4,
+    "frontend_type_checks": 4,
+    "full_backend_suite_run": false
+  },
+  "new_capture_count": 8,
+  "new_walkthroughs": [
+    "guest-checkout",
+    "guest-operations"
+  ],
+  "video_kind": "Captioned screenshot walkthroughs, 40 seconds each; English/Arabic WebVTT and text transcripts",
+  "deployment_requirement": "Apply the additive migrations and configure SMSMisr and the notification queue before expecting real phone verification.",
+  "documentation_checks": {
+    "pages": 226,
+    "broken_rendered_links": 0,
+    "new_video_assets_served": true,
+    "english_video_playback_verified": true,
+    "arabic_video_playback_verified": true,
+    "arabic_captions_default_verified": true,
+    "browser_console_errors": 0
+  }
+}

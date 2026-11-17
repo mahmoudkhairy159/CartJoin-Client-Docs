@@ -49,3 +49,5 @@ build.log
 !/evidence/operator-tour-plan.json
 !/evidence/verification.md
 !/evidence/template-homepage.jpg
+
+!/evidence/guest-checkout.json

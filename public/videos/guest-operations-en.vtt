@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:10.000
+Recognize a guest purchase
+Platform admins see the Guest purchase badge, invoice and delivery
+contact. An absent email is expected. Payment belongs to the umbrella
+invoice.
+
+2
+00:00:10.000 --> 00:00:20.000
+Let the store choose
+Guest checkout starts enabled. The tenant can save a change here to
+require sign-in for new purchases. Existing receipts remain accessible
+until guest access expires.
+
+3
+00:00:20.000 --> 00:00:30.000
+Explain the same policy in Arabic
+The Arabic control explains required phone, optional email, cash on
+delivery and the account benefits that need sign-in.
+
+4
+00:00:30.000 --> 00:00:40.000
+Fulfill within the approved workspace
+Vendors see their own order and guest badge. Buyer phone and email stay
+hidden. Existing fulfillment, commission and settlement rules continue
+to apply.
+

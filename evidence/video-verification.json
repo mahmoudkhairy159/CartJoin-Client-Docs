@@ -610,5 +610,23 @@
     "width": 1280,
     "height": 720,
     "served": true
+  },
+  {
+    "tour": "guest-checkout",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
+  },
+  {
+    "tour": "guest-operations",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true
   }
 ]

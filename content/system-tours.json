@@ -5232,5 +5232,185 @@
         "guide": "features/reports"
       }
     ]
+  },
+  "guest-checkout": {
+    "title": {
+      "en": "Buy as a guest, save purchases afterward",
+      "ar": "اشترِ كضيف واحفظ مشترياتك لاحقاً"
+    },
+    "intro": {
+      "en": "Follow the required phone, cash payment and optional account steps.",
+      "ar": "اتبع خطوات الهاتف المطلوب والدفع عند الاستلام والحساب الاختياري."
+    },
+    "video": true,
+    "secondsPerStep": 10,
+    "provenance": {
+      "en": "Local seeded preview, 17 November 2026. A guest COD purchase was placed and its receipt reopened. SMS delivery was not exercised. This video is a captioned screenshot tour.",
+      "ar": "عرض محلي ببيانات تجريبية في 17 نوفمبر 2026. تم إنشاء شراء كضيف بالدفع عند الاستلام وإعادة فتح الفاتورة. لم يُختبر وصول الرسائل الفعلية. الفيديو جولة صور شاشة مع ترجمة."
+    },
+    "steps": [
+      {
+        "image": "customer-guest-address-en.jpg",
+        "title": {
+          "en": "Enter delivery details and phone",
+          "ar": "أدخل بيانات التوصيل والهاتف"
+        },
+        "body": {
+          "en": "No sign-in is needed. Choose the address and enter a valid phone. Leave email blank if you do not use one.",
+          "ar": "لا يلزم تسجيل الدخول. اختر العنوان وأدخل هاتفاً صالحاً. اترك البريد فارغاً إذا لم تستخدمه."
+        },
+        "guide": "features/checkout",
+        "focus": [
+          4,
+          10,
+          60,
+          55
+        ]
+      },
+      {
+        "image": "customer-guest-payment-en.jpg",
+        "title": {
+          "en": "Choose cash on delivery",
+          "ar": "اختر الدفع عند الاستلام"
+        },
+        "body": {
+          "en": "Guests are offered cash on delivery. Read the shipping, tax and total before reviewing the purchase. Sign in for other payment methods.",
+          "ar": "يتاح للضيف الدفع عند الاستلام. راجع الشحن والضريبة والإجمالي قبل المراجعة. سجّل الدخول لطرق الدفع الأخرى."
+        },
+        "guide": "features/payments",
+        "focus": [
+          4,
+          10,
+          91,
+          44
+        ]
+      },
+      {
+        "image": "customer-guest-confirm-en.jpg",
+        "title": {
+          "en": "Keep the receipt; an account is optional",
+          "ar": "احتفظ بالفاتورة؛ الحساب اختياري"
+        },
+        "body": {
+          "en": "The purchase is already placed. Save the invoice when its PDF is available. Phone verification is only needed to save these purchases to an account.",
+          "ar": "تم إنشاء الشراء بالفعل. احفظ الفاتورة عند توفر PDF. يلزم التحقق من الهاتف فقط لحفظ المشتريات في حساب."
+        },
+        "guide": "features/invoices",
+        "focus": [
+          18,
+          10,
+          65,
+          65
+        ]
+      },
+      {
+        "image": "customer-guest-confirm-ar.jpg",
+        "title": {
+          "en": "The same journey in Arabic",
+          "ar": "نفس الخطوات باللغة العربية"
+        },
+        "body": {
+          "en": "Arabic readers see the same optional account action. Verify the purchase phone to create a phone-only account or attach purchases to an existing one.",
+          "ar": "تظهر بالعربية نفس خطوة الحساب الاختيارية. تحقق من هاتف الشراء لإنشاء حساب بالهاتف أو حفظ المشتريات في حساب قائم."
+        },
+        "guide": "features/access",
+        "focus": [
+          18,
+          10,
+          65,
+          65
+        ]
+      }
+    ]
+  },
+  "guest-operations": {
+    "title": {
+      "en": "Manage guest purchases across dashboards",
+      "ar": "إدارة مشتريات الضيوف عبر اللوحات"
+    },
+    "intro": {
+      "en": "See the tenant control, order badge and vendor privacy boundary.",
+      "ar": "تعرّف على إعداد المتجر وشارة الطلب وحدود خصوصية البائع."
+    },
+    "video": true,
+    "secondsPerStep": 10,
+    "provenance": {
+      "en": "Authenticated local seeded previews. Settings were inspected without changing them; the order is the locally tested guest purchase. Captioned screenshot tour.",
+      "ar": "عروض محلية مسجلة الدخول ببيانات تجريبية. تمت مراجعة الإعدادات دون تغييرها، والطلب ناتج عن اختبار الشراء المحلي. جولة صور شاشة مترجمة."
+    },
+    "steps": [
+      {
+        "image": "admin-guest-order-en.jpg",
+        "title": {
+          "en": "Recognize a guest purchase",
+          "ar": "تعرّف على طلب الضيف"
+        },
+        "body": {
+          "en": "Platform admins see the Guest purchase badge, invoice and delivery contact. An absent email is expected. Payment belongs to the umbrella invoice.",
+          "ar": "يرى مدير المنصة شارة الضيف والفاتورة وبيانات اتصال التوصيل. غياب البريد طبيعي. الدفع مرتبط بالفاتورة الموحدة."
+        },
+        "guide": "features/orders",
+        "focus": [
+          24,
+          15,
+          71,
+          45
+        ]
+      },
+      {
+        "image": "tenant-guest-checkout-en.jpg",
+        "title": {
+          "en": "Let the store choose",
+          "ar": "دع المتجر يختار"
+        },
+        "body": {
+          "en": "Guest checkout starts enabled. The tenant can save a change here to require sign-in for new purchases. Existing receipts remain accessible until guest access expires.",
+          "ar": "الشراء كضيف مفعّل افتراضياً. يمكن لمدير المتجر حفظ تغيير لطلب تسجيل الدخول في المشتريات الجديدة. تظل الفواتير متاحة حتى انتهاء وصول الضيف."
+        },
+        "guide": "features/storefront",
+        "focus": [
+          23,
+          22,
+          70,
+          45
+        ]
+      },
+      {
+        "image": "tenant-guest-checkout-ar.jpg",
+        "title": {
+          "en": "Explain the same policy in Arabic",
+          "ar": "اشرح نفس السياسة بالعربية"
+        },
+        "body": {
+          "en": "The Arabic control explains required phone, optional email, cash on delivery and the account benefits that need sign-in.",
+          "ar": "يوضح الخيار بالعربية الهاتف المطلوب والبريد الاختياري والدفع عند الاستلام ومزايا الحساب التي تتطلب تسجيل الدخول."
+        },
+        "guide": "features/storefront",
+        "focus": [
+          4,
+          22,
+          72,
+          45
+        ]
+      },
+      {
+        "image": "vendor-guest-order-en.jpg",
+        "title": {
+          "en": "Fulfill within the approved workspace",
+          "ar": "نفّذ الطلب داخل مساحة العمل المعتمدة"
+        },
+        "body": {
+          "en": "Vendors see their own order and guest badge. Buyer phone and email stay hidden. Existing fulfillment, commission and settlement rules continue to apply.",
+          "ar": "يرى البائع طلبه وشارة الضيف. يظل هاتف العميل وبريده محجوبين. تستمر قواعد التنفيذ والعمولات والتسويات المعتادة."
+        },
+        "guide": "features/orders",
+        "focus": [
+          23,
+          17,
+          72,
+          42
+        ]
+      }
+    ]
   }
 }

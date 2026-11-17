@@ -662,5 +662,37 @@
   "vendor-workspace-terms.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "customer-guest-address-en.jpg": {
+    "width": 1264,
+    "height": 2432
+  },
+  "customer-guest-payment-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-guest-confirm-en.jpg": {
+    "width": 1264,
+    "height": 1833
+  },
+  "customer-guest-confirm-ar.jpg": {
+    "width": 1264,
+    "height": 1985
+  },
+  "admin-guest-order-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-guest-checkout-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-guest-checkout-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-guest-order-en.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }
