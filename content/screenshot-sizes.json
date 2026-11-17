@@ -702,5 +702,73 @@
   "admin-customer-signup-origin-ar.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "admin-merchant-review-ar.jpg": {
+    "width": 1264,
+    "height": 1272
+  },
+  "admin-merchant-review-en.jpg": {
+    "width": 1264,
+    "height": 1229
+  },
+  "admin-subscription-plans-ar.jpg": {
+    "width": 1264,
+    "height": 784
+  },
+  "admin-subscription-plans-en.jpg": {
+    "width": 1264,
+    "height": 879
+  },
+  "platform-application-ar.jpg": {
+    "width": 1264,
+    "height": 1184
+  },
+  "platform-application-en.jpg": {
+    "width": 1264,
+    "height": 1168
+  },
+  "platform-application-receipt-ar.jpg": {
+    "width": 1264,
+    "height": 872
+  },
+  "platform-application-receipt-en.jpg": {
+    "width": 1264,
+    "height": 844
+  },
+  "platform-plans-ar.jpg": {
+    "width": 1264,
+    "height": 1899
+  },
+  "platform-plans-en.jpg": {
+    "width": 1264,
+    "height": 1856
+  },
+  "tenant-subscription-ar.jpg": {
+    "width": 1264,
+    "height": 1581
+  },
+  "tenant-subscription-en.jpg": {
+    "width": 1264,
+    "height": 1496
+  },
+  "tenant-subscription-invoice-ar.jpg": {
+    "width": 1264,
+    "height": 1611
+  },
+  "tenant-subscription-paid-ar.jpg": {
+    "width": 1264,
+    "height": 1646
+  },
+  "tenant-subscription-paid-en.jpg": {
+    "width": 1264,
+    "height": 1519
+  },
+  "tenant-subscription-quote-ar.jpg": {
+    "width": 1264,
+    "height": 1912
+  },
+  "tenant-subscription-quote-en.jpg": {
+    "width": 1264,
+    "height": 1808
   }
 }

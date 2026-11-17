@@ -1,0 +1,22 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Start with access and usage
+Read the current version, period and usage. A billing restriction stops
+new sales while authorized work on existing purchases remains available.
+
+2
+00:00:08.000 --> 00:00:16.000
+Review before confirming
+The server fixes the amount, currency, effective period and 15-minute
+expiry. A reviewed change is confirmed with a stable request key; a
+redirect does not activate paid service.
+
+3
+00:00:16.000 --> 00:00:24.000
+Separate the service bill from purchases
+This local test invoice is paid by a simulation. It is neither a
+customer order invoice nor a vendor payout. The service period and
+retained evidence identify the result.
+

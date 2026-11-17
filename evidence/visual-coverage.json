@@ -605,5 +605,32 @@
       "customer-screen-wishlist.jpg"
     ],
     "tour": "feature-wishlist"
+  },
+  {
+    "feature": "subscriptions",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "tenant-subscription-en.jpg",
+      "tenant-subscription-quote-en.jpg",
+      "tenant-subscription-paid-en.jpg"
+    ],
+    "tour": "feature-subscriptions"
+  },
+  {
+    "feature": "merchant-onboarding",
+    "roles": [
+      "admin",
+      "tenant"
+    ],
+    "screens": [
+      "platform-plans-en.jpg",
+      "platform-application-en.jpg",
+      "platform-application-receipt-en.jpg",
+      "admin-merchant-review-en.jpg"
+    ],
+    "tour": "feature-merchant-onboarding"
   }
 ]

@@ -1,8 +1,8 @@
 from pathlib import Path
-import re,json,subprocess,hashlib
+import re,json,subprocess,hashlib,sys
 ROOT=Path(__file__).resolve().parents[1];BASE=ROOT.parent;BACK=BASE/'CartJoin-Backend'
 FEATURE_MODULES={
-'access':['Auth'],'team':['Admin','TenantAdmin','VendorAdmin'],'tenants':['Tenant'],'vendors':['Vendor'],'vendor-profile':['Vendor'],
+'subscriptions':['Subscription'],'merchant-onboarding':['Subscription'],'access':['Auth'],'team':['Admin','TenantAdmin','VendorAdmin'],'tenants':['Tenant'],'vendors':['Vendor'],'vendor-profile':['Vendor'],
 'customers':['User'],'categories':['Category'],'brands':['Brand'],'products':['Product'],'attributes':['Product'],
 'pricing':['Pricing','PriceList'],'inventory':['Inventory'],'search':['Search','RecommendationEngine'],'wishlist':['Wishlist'],'cart':['Cart'],
 'checkout':['Invoice'],'orders':['Order'],'invoices':['Invoice'],'payments':['Payment'],'refunds':['Refund'],'returns':['OrderReturn'],
@@ -14,7 +14,7 @@ FEATURE_MODULES={
 MAP={}
 def assign(feature,paths):
     for p in paths.split():MAP[p]=feature
-assign('access','auth profile');assign('team','admins roles tenant-admins tenant-roles vendor-admins vendor-roles vendor-staff')
+assign('subscriptions','subscription subscription-plans');assign('merchant-onboarding','merchant-applications');assign('access','auth profile');assign('team','admins roles tenant-admins tenant-roles vendor-admins vendor-roles vendor-staff')
 assign('tenants','tenants tenant-branches my-store');assign('vendors','vendors tenant-vendors workspace-terms');assign('vendor-profile','vendor-profile')
 assign('customers','users user-groups');assign('products','products');assign('attributes','attributes');assign('categories','categories');assign('brands','brands')
 assign('pricing','product-prices price-lists');assign('tax-currency','taxes currencies');assign('inventory','inventory inventory/balances')
@@ -30,11 +30,11 @@ assign('products','product/:slug');assign('vendors','vendor');assign('tenants','
 assign('wishlist','wishlist');assign('support','support');assign('webhooks','webhooks')
 SPECIAL={'forbidden':'Access error screen','**':'Not-found fallback','dev/style-guide':'Development-only visual reference'}
 SURFACES={'admin':'CartJoin-Admin-Dashboard-Frontend','tenant':'CartJoin-Tenant-Dashboard-Frontend','vendor':'CartJoin-Vendor-Dashboard-Frontend','customer':'CartJoin-Storefront-Frontend'}
-inventory={'reviewed':'2026-11-17','verification':'Source extraction plus selected read-only demo observations; no transactional acceptance tests.','repositories':{},'surfaces':{},'features':{}}
+inventory={'reviewed':'2026-11-18','verification':'Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.','repositories':{},'surfaces':{},'features':{}}
 def git(repo,*args):
     return subprocess.check_output(['git','-C',str(repo),*args],text=True,encoding='utf-8').strip()
 def clean(s):return re.sub(r'/\*.*?\*/|(?m:^[ \t]*//[^\r\n]*$)','',s,flags=re.S)
-for name in ['CartJoin-Backend',*SURFACES.values()]:
+for name in ['CartJoin-Backend',*SURFACES.values(),'CartJoin-Platform-Frontend']:
     repo=BASE/name
     inventory['repositories'][name]={'commit':git(repo,'rev-parse','HEAD'),'branch':git(repo,'branch','--show-current'),'dirty':bool(git(repo,'status','--porcelain'))}
 for surface,name in SURFACES.items():
@@ -73,6 +73,10 @@ for feature,modules in FEATURE_MODULES.items():
     inventory['features'][feature]={'modules':modules,'route_sources':sources,'explicit_backend_routes':routes,'request_fields':fields,'enums':enums}
 (ROOT/'evidence').mkdir(exist_ok=True)
 (ROOT/'evidence/source-inventory.json').write_text(json.dumps(inventory,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+if '--inventory-only' in sys.argv:
+    print('Updated source inventory without rewriting authored guides.')
+    sys.exit(0)
 
 def putpage(lang,slug,title,desc,body):
     p=ROOT/'content/docs'/lang/(slug+'.mdx');p.parent.mkdir(parents=True,exist_ok=True)

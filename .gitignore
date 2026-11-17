@@ -51,3 +51,6 @@ build.log
 !/evidence/template-homepage.jpg
 
 !/evidence/guest-checkout.json
+
+# Local build and verification output
+*.log

@@ -6,6 +6,8 @@
     "access",
     "team",
     "tenants",
+    "subscriptions",
+    "merchant-onboarding",
     "vendors",
     "vendor-profile",
     "customers",

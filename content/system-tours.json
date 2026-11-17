@@ -5412,5 +5412,302 @@
         ]
       }
     ]
+  },
+  "feature-subscriptions": {
+    "title": {
+      "en": "Understand your package before changing it",
+      "ar": "افهم باقتك قبل تغييرها"
+    },
+    "intro": {
+      "en": "Follow the current package, the server quote and the separate platform invoice. Each step uses the matching English or Arabic screen.",
+      "ar": "اتبع الباقة الحالية وعرض الخادم وفاتورة المنصة المستقلة. تعرض كل خطوة الشاشة الموافقة للغتك."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Local demo accounts · Captured 18 November 2026 · Test amounts only · No live charge or deployment",
+      "ar": "حسابات عرض محلية · التقطت في ١٨ نوفمبر ٢٠٢٦ · مبالغ اختبار فقط · دون خصم أو نشر حي"
+    },
+    "steps": [
+      {
+        "image": "tenant-subscription-en.jpg",
+        "imageAr": "tenant-subscription-ar.jpg",
+        "focus": [
+          21,
+          14,
+          43,
+          40
+        ],
+        "focusAr": [
+          36,
+          14,
+          46,
+          40
+        ],
+        "title": {
+          "en": "Start with access and usage",
+          "ar": "ابدأ بالوصول والاستخدام"
+        },
+        "body": {
+          "en": "Read the current version, period and usage. A billing restriction stops new sales while authorized work on existing purchases remains available.",
+          "ar": "اقرأ النسخة والفترة والاستخدام. تقيد مشكلة الفوترة المبيعات الجديدة مع استمرار العمل المصرح به على المشتريات القائمة."
+        },
+        "guide": "features/subscriptions",
+        "videoCrop": [
+          19,
+          12,
+          79,
+          44
+        ],
+        "videoCropAr": [
+          0,
+          12,
+          83,
+          44
+        ]
+      },
+      {
+        "image": "tenant-subscription-quote-en.jpg",
+        "imageAr": "tenant-subscription-quote-ar.jpg",
+        "focus": [
+          22,
+          49,
+          41,
+          26
+        ],
+        "focusAr": [
+          36,
+          50,
+          43,
+          26
+        ],
+        "title": {
+          "en": "Review before confirming",
+          "ar": "راجع قبل التأكيد"
+        },
+        "body": {
+          "en": "The server fixes the amount, currency, effective period and 15-minute expiry. A reviewed change is confirmed with a stable request key; a redirect does not activate paid service.",
+          "ar": "يحدد الخادم المبلغ والعملة وفترة السريان وصلاحية ١٥ دقيقة. يؤكد التغيير بمفتاح طلب ثابت، ولا يفعل التحويل في المتصفح الخدمة المدفوعة."
+        },
+        "guide": "features/subscriptions",
+        "videoCrop": [
+          19,
+          47,
+          48,
+          31
+        ],
+        "videoCropAr": [
+          33,
+          48,
+          50,
+          31
+        ]
+      },
+      {
+        "image": "tenant-subscription-paid-en.jpg",
+        "imageAr": "tenant-subscription-paid-ar.jpg",
+        "focus": [
+          21,
+          76,
+          75,
+          19
+        ],
+        "focusAr": [
+          2,
+          78,
+          77,
+          18
+        ],
+        "title": {
+          "en": "Separate the service bill from purchases",
+          "ar": "افصل فاتورة الخدمة عن المشتريات"
+        },
+        "body": {
+          "en": "This local test invoice is paid by a simulation. It is neither a customer order invoice nor a vendor payout. The service period and retained evidence identify the result.",
+          "ar": "سددت هذه الفاتورة المحلية بمحاكاة. ليست فاتورة طلب عميل أو صرف بائع. تحدد فترة الخدمة والدليل المحفوظ نتيجة العملية."
+        },
+        "guide": "features/subscriptions",
+        "videoCrop": [
+          19,
+          73,
+          79,
+          26
+        ],
+        "videoCropAr": [
+          0,
+          75,
+          83,
+          24
+        ]
+      }
+    ]
+  },
+  "feature-merchant-onboarding": {
+    "title": {
+      "en": "From a public application to an assisted review",
+      "ar": "من طلب عام إلى مراجعة مصرح بها"
+    },
+    "intro": {
+      "en": "The CartJoin platform website is separate from tenant shops. Application submission never grants merchant access.",
+      "ar": "موقع منصة CartJoin منفصل عن متاجر المستأجرين. إرسال الطلب لا يمنح وصولًا إداريًا."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Local demo accounts · Captured 18 November 2026 · Test amounts only · No live charge or deployment",
+      "ar": "حسابات عرض محلية · التقطت في ١٨ نوفمبر ٢٠٢٦ · مبالغ اختبار فقط · دون خصم أو نشر حي"
+    },
+    "steps": [
+      {
+        "image": "platform-plans-en.jpg",
+        "imageAr": "platform-plans-ar.jpg",
+        "focus": [
+          4,
+          9,
+          92,
+          37
+        ],
+        "focusAr": [
+          4,
+          9,
+          92,
+          37
+        ],
+        "title": {
+          "en": "Choose the operating model",
+          "ar": "اختر نموذج التشغيل"
+        },
+        "body": {
+          "en": "Store sells your own stock. Marketplace adds approved sellers. Published versions carry the actual package terms; the preview prices are test examples.",
+          "ar": "يبيع المتجر مخزونك الخاص ويضيف السوق بائعين معتمدين. تحمل النسخ المنشورة شروط الباقة، والأسعار المعروضة هنا أمثلة اختبار."
+        },
+        "guide": "features/merchant-onboarding",
+        "videoCrop": [
+          0,
+          7,
+          100,
+          42
+        ],
+        "videoCropAr": [
+          0,
+          7,
+          100,
+          42
+        ]
+      },
+      {
+        "image": "platform-application-en.jpg",
+        "imageAr": "platform-application-ar.jpg",
+        "focus": [
+          51,
+          13,
+          44,
+          74
+        ],
+        "focusAr": [
+          4,
+          13,
+          44,
+          74
+        ],
+        "title": {
+          "en": "Submit the business details once",
+          "ar": "قدم بيانات النشاط مرة واحدة"
+        },
+        "body": {
+          "en": "Choose a mode and optional package, then submit for review. The same unchanged retry reuses its request key; correcting the details creates a fresh request key. Applying does not subscribe you to marketing.",
+          "ar": "اختر الوضع وباقة اختيارية ثم أرسل للمراجعة. تستخدم إعادة المحاولة بالبيانات نفسها المفتاح نفسه، ويولد تصحيح البيانات مفتاحًا جديدًا. لا يعني التقديم الاشتراك في التسويق."
+        },
+        "guide": "features/merchant-onboarding",
+        "videoCrop": [
+          48,
+          10,
+          50,
+          78
+        ],
+        "videoCropAr": [
+          2,
+          10,
+          50,
+          78
+        ]
+      },
+      {
+        "image": "platform-application-receipt-en.jpg",
+        "imageAr": "platform-application-receipt-ar.jpg",
+        "focus": [
+          50,
+          23,
+          46,
+          41
+        ],
+        "focusAr": [
+          3,
+          23,
+          46,
+          41
+        ],
+        "title": {
+          "en": "Keep the receipt; access is still pending",
+          "ar": "احتفظ بالمرجع؛ الوصول ما زال معلقًا"
+        },
+        "body": {
+          "en": "The reference proves receipt only. A store and owner account are created after authorized review; owner password recovery still proves contact ownership.",
+          "ar": "يثبت المرجع استلام الطلب فقط. ينشأ المتجر وحساب المالك بعد المراجعة المصرح بها، وتظل استعادة كلمة المرور ضرورية لإثبات ملكية التواصل."
+        },
+        "guide": "features/merchant-onboarding",
+        "videoCrop": [
+          0,
+          10,
+          100,
+          75
+        ],
+        "videoCropAr": [
+          0,
+          10,
+          100,
+          75
+        ]
+      },
+      {
+        "image": "admin-merchant-review-en.jpg",
+        "imageAr": "admin-merchant-review-ar.jpg",
+        "focus": [
+          21,
+          16,
+          76,
+          53
+        ],
+        "focusAr": [
+          2,
+          16,
+          76,
+          53
+        ],
+        "title": {
+          "en": "Review the package and retain a reason",
+          "ar": "راجع الباقة واحتفظ بالسبب"
+        },
+        "body": {
+          "en": "An authorized admin reviews business details, selects an eligible version and records notes before approval or rejection. This capture shows review only; it does not approve the demo merchant.",
+          "ar": "يراجع المشرف بيانات النشاط ويختار نسخة مؤهلة ويسجل ملاحظات قبل الاعتماد أو الرفض. تعرض الصورة المراجعة فقط ولا تعتمد تاجر العرض."
+        },
+        "guide": "features/merchant-onboarding",
+        "videoCrop": [
+          19,
+          14,
+          79,
+          57
+        ],
+        "videoCropAr": [
+          0,
+          14,
+          83,
+          57
+        ]
+      }
+    ]
   }
 }

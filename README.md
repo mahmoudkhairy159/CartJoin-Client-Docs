@@ -10,11 +10,11 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 
 - Eight planning pages per language for Store/Marketplace priorities, business rules, central customer identity, billing and release gates. Planning is separate from shipped capabilities.
 - Four role handbooks: platform admin, tenant operator, vendor and customer.
-- 44 capability guides per language covering steps, rules, data flow and troubleshooting.
-- 226 documentation pages across English and Arabic.
-- 131 reviewed dashboard captures with interactive explanations and enlargement.
-- 68 short screenshot-based video tours with English/Arabic captions and transcripts.
-- 22 diagram blocks explaining business flows and relationships.
+- 46 capability guides per language covering steps, rules, data flow and troubleshooting.
+- 230 documentation pages across English and Arabic.
+- Bilingual reviewed dashboard captures, including the new billing and merchant-application screens with interactive explanations and enlargement.
+- 74 short screenshot-based video files with English/Arabic captions and transcripts.
+- 26 diagram blocks explaining business flows and relationships.
 - Searchable capabilities, role-based navigation, language switching and light/dark themes.
 
 Coverage includes catalog, inventory, checkout, vendor-split orders, invoices, payments, shipping, returns, refunds, marketing, rewards, settlements, support and platform operations.
@@ -129,3 +129,5 @@ Adapted from an existing Fumadocs documentation template for CartJoin. UI refine
 ---
 
 دليل استخدام كارت جوين بالعربية والإنجليزية لإدارة المنصة وإدارة المتجر والبائع والعميل، مع صور تفاعلية وجولات فيديو مترجمة وقواعد العمل وتدفق البيانات. ابدأ من `/docs/ar/start` بعد تشغيل التطبيق.
+
+The development billing and application guides include language-matched screenshots and 24/32-second walkthroughs. Test prices are examples; no live payment or deployment is included. Regenerate source evidence with `python scripts/source-inventory.py --inventory-only` to preserve authored business guides.

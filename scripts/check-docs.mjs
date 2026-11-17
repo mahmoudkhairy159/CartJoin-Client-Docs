@@ -28,7 +28,10 @@ for(const file of files){
  diagramCount += [...text.matchAll(/```mermaid\r?\n([\s\S]*?)```/g)].length;
  if(!pages.has(twin))errors.push(`Missing translation: ${twin}`);
  if(!/^---\r?\n[\s\S]*?title:/m.test(text))errors.push(`Missing frontmatter: ${slug}`);
- if(slug.includes('/features/')&&!slug.endsWith('/index')&&(text.match(/^## /gm)||[]).length<6)errors.push(`Incomplete feature: ${slug}`);
+ if(slug.includes('/features/')&&!slug.endsWith('/index')){
+  if((text.match(/^## /gm)||[]).length<6)errors.push(`Incomplete feature: ${slug}`);
+  for(const heading of (slug.startsWith('ar/')?['## خطوات الاستخدام','## القيود والقرارات','## تدفق البيانات والنتيجة']:['## How to use it','## Restrictions and decisions','## Data flow and outcome']))if(!text.includes(heading))errors.push(`Missing feature jump destination ${slug}: ${heading}`);
+ }
  for(const img of text.matchAll(/<(?:img|SystemScreenshot)\s+src="([^"]+)"/g)){
    if(img[1].startsWith('/docs/')&&!fs.existsSync(path.join(root,'public',img[1].slice(6))))errors.push(`Missing JSX image ${img[1]} on ${slug}`);
  }
@@ -45,6 +48,7 @@ for(const [id,tour] of Object.entries(tours)){
  for(const [index,step] of tour.steps.entries()){
   if(!fs.existsSync(path.join(root,'public/screenshots',step.image)))errors.push(`Missing tour image ${id}: ${step.image}`);
   if(!sizes[step.image]?.width||!sizes[step.image]?.height)errors.push(`Missing dimensions for ${step.image}`);
+  if(step.imageAr&&(!fs.existsSync(path.join(root,'public/screenshots',step.imageAr))||!sizes[step.imageAr]?.width))errors.push(`Missing Arabic tour image or dimensions ${id}: ${step.imageAr}`);
   const [x,y,w,h]=step.focus;
   if(step.focus.length!==4||![x,y,w,h].every(Number.isFinite)||x<0||y<0||w<=0||h<=0||x+w>100||y+h>100)errors.push(`Invalid focus area ${id} step ${index+1}`);
   for(const lang of ['en','ar']){
@@ -52,7 +56,7 @@ for(const [id,tour] of Object.entries(tours)){
    if(!pages.has(`${lang}/${step.guide}`))errors.push(`Broken contextual tour link ${id}: ${step.guide}`);
   }
  }
- if(tour.video)for(const file of [`${id}-tour.mp4`,`${id}-poster.jpg`,`${id}-en.vtt`,`${id}-ar.vtt`]){
+ if(tour.video)for(const file of [...(tour.localizedVideo?['en','ar'].flatMap(lang=>[`${id}-${lang}-tour.mp4`,`${id}-${lang}-poster.jpg`]):[`${id}-tour.mp4`,`${id}-poster.jpg`]),`${id}-en.vtt`,`${id}-ar.vtt`]){
   const media=path.join(root,'public/videos',file);
   if(!fs.existsSync(media)||fs.statSync(media).size===0)errors.push(`Missing tour media ${file}`);
   if(file.endsWith('.vtt')&&fs.existsSync(media)){

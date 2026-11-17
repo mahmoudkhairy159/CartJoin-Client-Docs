@@ -1,29 +1,34 @@
 {
-  "reviewed": "2026-11-17",
-  "verification": "Source extraction plus selected read-only demo observations; no transactional acceptance tests.",
+  "reviewed": "2026-11-18",
+  "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "f0fe09bf12cdd404e51e56434c9e2cec5b7a8dd1",
+      "commit": "a9236b9576ace5e021bef242c2e9149e313a71f2",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "a747603affd77af94b899a94309bdd40f4870004",
+      "commit": "791776cf6b119fc10063f53d744966cba6f66b11",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "cb0f52ea12c9ab4d3dcf0afe640b397639b5ce2a",
+      "commit": "8df49d69da300c003e19b367046ef51c69282a19",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "360fd562669bb71edf18d469663ca10d7d5ab632",
+      "commit": "fb10c6d3802b159113b5117906b88de170c163b8",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "598d8cd41984e0956a10aac2a9e5838c3db7234b",
+      "commit": "638298ee22970110e06d436fd0e550b8a5e9877a",
+      "branch": "master",
+      "dirty": true
+    },
+    "CartJoin-Platform-Frontend": {
+      "commit": "0ac04ba0774334255ecba7f218c46d82d2af13d9",
       "branch": "master",
       "dirty": false
     }
@@ -35,6 +40,21 @@
         {
           "path": "/auth",
           "feature": "access",
+          "special": null
+        },
+        {
+          "path": "/subscription-plans",
+          "feature": "subscriptions",
+          "special": null
+        },
+        {
+          "path": "/merchant-applications",
+          "feature": "merchant-onboarding",
+          "special": null
+        },
+        {
+          "path": "/subscription",
+          "feature": "subscriptions",
           "special": null
         },
         {
@@ -536,7 +556,7 @@
           ":webhookId/deliveries/:deliveryId"
         ]
       },
-      "route_source_sha256": "cc2d264e699edc06eaeadfc41ec0f4e682de4ca867a77f0211124b53389ade60"
+      "route_source_sha256": "a679889a9be562f8cc5ae73fd6a28b145a4d4a41ee8e8a6d9432b33298f7bf0e"
     },
     "tenant": {
       "repository": "CartJoin-Tenant-Dashboard-Frontend",
@@ -544,6 +564,11 @@
         {
           "path": "/auth",
           "feature": "access",
+          "special": null
+        },
+        {
+          "path": "/subscription",
+          "feature": "subscriptions",
           "special": null
         },
         {
@@ -1067,7 +1092,7 @@
           ":id"
         ]
       },
-      "route_source_sha256": "3d36355149c0cd3f4dbcf0b0dea1fb0d886438be8286e422064a3d1446eedd4e"
+      "route_source_sha256": "65e6e0c4fd8a7f13ad3664dfa2a620611d3dd5cefbf982bcb2fe0db56a55f99c"
     },
     "vendor": {
       "repository": "CartJoin-Vendor-Dashboard-Frontend",
@@ -1503,10 +1528,282 @@
           ":slug"
         ]
       },
-      "route_source_sha256": "3d3b6d0e50f585734ed10ccf8e48166659d96097a56e10389efb83cd0aa5b3bf"
+      "route_source_sha256": "3946a32cdf56c2710aee758231ad0063014d09272765ec4fdc7e0306b2505b95"
     }
   },
   "features": {
+    "subscriptions": {
+      "modules": [
+        "Subscription"
+      ],
+      "route_sources": [
+        "Modules/Subscription/routes/admin-api.php",
+        "Modules/Subscription/routes/platform-api.php",
+        "Modules/Subscription/routes/tenant-api.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Subscription",
+          "file": "Modules/Subscription/routes/platform-api.php",
+          "method": "GET",
+          "uri": "plans",
+          "controller": "PublicPlanController",
+          "action": "index"
+        },
+        {
+          "module": "Subscription",
+          "file": "Modules/Subscription/routes/platform-api.php",
+          "method": "POST",
+          "uri": "api/platform/v1/merchant-applications",
+          "controller": "ApplicationController",
+          "action": "submit"
+        },
+        {
+          "module": "Subscription",
+          "file": "Modules/Subscription/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "api/tenant/v1/onboarding",
+          "controller": "OnboardingController",
+          "action": "show"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Subscription/App/Http/Requests/Admin/StorePlanRequest.php",
+          "fields": [
+            "slug",
+            "version",
+            "billing_cycle",
+            "currency_code",
+            "price",
+            "trial_days",
+            "grace_days",
+            "max_products",
+            "max_vendors",
+            "max_staff",
+            "marketplace_enabled",
+            "is_published",
+            "is_active",
+            "is_test",
+            "en",
+            "en.name",
+            "en.description",
+            "ar",
+            "ar.name",
+            "ar.description"
+          ]
+        },
+        {
+          "file": "Modules/Subscription/App/Http/Requests/BillingActionRequest.php",
+          "fields": [
+            "quote",
+            "plan_id",
+            "change",
+            "quote_id",
+            "idempotency_key",
+            "testPayment",
+            "event_id",
+            "succeeded",
+            "cancel",
+            "cancel_at_period_end",
+            "voidInvoice",
+            "reason",
+            "approveApplication",
+            "review_notes",
+            "rejectApplication",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Subscription/App/Http/Requests/PublicApplicationRequest.php",
+          "fields": [
+            "business_name",
+            "owner_name",
+            "phone",
+            "email",
+            "requested_mode",
+            "plan_id",
+            "idempotency_key",
+            "tenant_id"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Subscription/App/Enums/ApplicationStatus.php",
+          "cases": {
+            "SUBMITTED": "1",
+            "UNDER_REVIEW": "2",
+            "APPROVED": "3",
+            "REJECTED": "4",
+            "PROVISIONED": "5"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingCycle.php",
+          "cases": {
+            "MONTHLY": "1",
+            "ANNUAL": "2"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingInvoiceStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "PAID": "2",
+            "VOID": "3",
+            "FAILED": "4"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/SubscriptionStatus.php",
+          "cases": {
+            "TRIALING": "1",
+            "ACTIVE": "2",
+            "PAST_DUE": "3",
+            "SUSPENDED": "4",
+            "CANCELLED": "5",
+            "EXPIRED": "6"
+          }
+        }
+      ]
+    },
+    "merchant-onboarding": {
+      "modules": [
+        "Subscription"
+      ],
+      "route_sources": [
+        "Modules/Subscription/routes/admin-api.php",
+        "Modules/Subscription/routes/platform-api.php",
+        "Modules/Subscription/routes/tenant-api.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Subscription",
+          "file": "Modules/Subscription/routes/platform-api.php",
+          "method": "GET",
+          "uri": "plans",
+          "controller": "PublicPlanController",
+          "action": "index"
+        },
+        {
+          "module": "Subscription",
+          "file": "Modules/Subscription/routes/platform-api.php",
+          "method": "POST",
+          "uri": "api/platform/v1/merchant-applications",
+          "controller": "ApplicationController",
+          "action": "submit"
+        },
+        {
+          "module": "Subscription",
+          "file": "Modules/Subscription/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "api/tenant/v1/onboarding",
+          "controller": "OnboardingController",
+          "action": "show"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Subscription/App/Http/Requests/Admin/StorePlanRequest.php",
+          "fields": [
+            "slug",
+            "version",
+            "billing_cycle",
+            "currency_code",
+            "price",
+            "trial_days",
+            "grace_days",
+            "max_products",
+            "max_vendors",
+            "max_staff",
+            "marketplace_enabled",
+            "is_published",
+            "is_active",
+            "is_test",
+            "en",
+            "en.name",
+            "en.description",
+            "ar",
+            "ar.name",
+            "ar.description"
+          ]
+        },
+        {
+          "file": "Modules/Subscription/App/Http/Requests/BillingActionRequest.php",
+          "fields": [
+            "quote",
+            "plan_id",
+            "change",
+            "quote_id",
+            "idempotency_key",
+            "testPayment",
+            "event_id",
+            "succeeded",
+            "cancel",
+            "cancel_at_period_end",
+            "voidInvoice",
+            "reason",
+            "approveApplication",
+            "review_notes",
+            "rejectApplication",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Subscription/App/Http/Requests/PublicApplicationRequest.php",
+          "fields": [
+            "business_name",
+            "owner_name",
+            "phone",
+            "email",
+            "requested_mode",
+            "plan_id",
+            "idempotency_key",
+            "tenant_id"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Subscription/App/Enums/ApplicationStatus.php",
+          "cases": {
+            "SUBMITTED": "1",
+            "UNDER_REVIEW": "2",
+            "APPROVED": "3",
+            "REJECTED": "4",
+            "PROVISIONED": "5"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingCycle.php",
+          "cases": {
+            "MONTHLY": "1",
+            "ANNUAL": "2"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingInvoiceStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "PAID": "2",
+            "VOID": "3",
+            "FAILED": "4"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/SubscriptionStatus.php",
+          "cases": {
+            "TRIALING": "1",
+            "ACTIVE": "2",
+            "PAST_DUE": "3",
+            "SUSPENDED": "4",
+            "CANCELLED": "5",
+            "EXPIRED": "6"
+          }
+        }
+      ]
+    },
     "access": {
       "modules": [
         "Auth"
@@ -1754,6 +2051,7 @@
           "file": "Modules/Auth/App/Http/Requests/Vendor/UpdateVendorAdminRequest.php",
           "fields": [
             "name",
+            "phone",
             "email"
           ]
         },
@@ -1806,7 +2104,8 @@
             "RegisterVerification": "1",
             "PhoneVerification": "2",
             "PhoneChange": "3",
-            "PasswordReset": "4"
+            "PasswordReset": "4",
+            "GuestPurchaseClaim": "5"
           }
         }
       ]
@@ -2079,6 +2378,7 @@
             "vendor_id",
             "role_id",
             "name",
+            "phone",
             "email",
             "password",
             "is_active",
@@ -2111,6 +2411,7 @@
             "vendor_id",
             "role_id",
             "name",
+            "phone",
             "email",
             "password",
             "is_active",
@@ -2142,6 +2443,7 @@
           "fields": [
             "role_id",
             "name",
+            "phone",
             "email",
             "password",
             "is_active",
@@ -2173,6 +2475,7 @@
           "fields": [
             "role_id",
             "name",
+            "phone",
             "email",
             "password",
             "is_active",
@@ -2432,6 +2735,13 @@
             "WAREHOUSE": "2",
             "OFFICE": "3",
             "OTHER": "4"
+          }
+        },
+        {
+          "file": "Modules/Tenant/App/Enums/CommerceMode.php",
+          "cases": {
+            "STORE": "1",
+            "MARKETPLACE": "2"
           }
         },
         {
@@ -3029,6 +3339,7 @@
             "email",
             "phone",
             "password",
+            "password_confirmation",
             "is_active",
             "blocked",
             "image"
@@ -3037,15 +3348,16 @@
         {
           "file": "Modules/User/App/Http/Requests/Tenant/User/UpdateUserRequest.php",
           "fields": [
+            "is_active",
+            "blocked",
             "name",
             "username",
             "email",
             "phone",
             "password",
-            "is_active",
-            "blocked",
-            "image",
-            "tenant_id"
+            "password_confirmation",
+            "tenant_id",
+            "image"
           ]
         },
         {
@@ -3909,6 +4221,54 @@
         {
           "module": "Cart",
           "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "session",
+          "controller": "GuestSessionController",
+          "action": "store"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "checkout",
+          "controller": "GuestCheckoutController",
+          "action": "checkout"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "GET",
+          "uri": "payment/methods",
+          "controller": "PaymentController",
+          "action": "methods"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "claim/request",
+          "controller": "GuestClaimController",
+          "action": "requestCode"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "claim",
+          "controller": "GuestClaimController",
+          "action": "claim"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/merge-guest",
+          "controller": "GuestSessionController",
+          "action": "merge"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
           "method": "GET",
           "uri": "cart",
           "controller": "CartController",
@@ -4061,6 +4421,13 @@
           "file": "Modules/Cart/App/Http/Requests/User/Cart/UpdateCartItemRequest.php",
           "fields": [
             "quantity"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/GuestClaimRequest.php",
+          "fields": [
+            "code",
+            "password"
           ]
         }
       ],
@@ -4269,6 +4636,7 @@
         {
           "file": "Modules/Invoice/App/Http/Requests/User/Checkout/CheckoutRequest.php",
           "fields": [
+            "email",
             "shipping_method_id",
             "payment_method",
             "shipping_address",
@@ -4705,6 +5073,7 @@
         {
           "file": "Modules/Invoice/App/Http/Requests/User/Checkout/CheckoutRequest.php",
           "fields": [
+            "email",
             "shipping_method_id",
             "payment_method",
             "shipping_address",
@@ -8150,6 +8519,7 @@
         {
           "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontSettingsRequest.php",
           "fields": [
+            "guest_checkout_enabled",
             "announcement_bar_enabled",
             "announcement_bar_text",
             "announcement_bar_url",

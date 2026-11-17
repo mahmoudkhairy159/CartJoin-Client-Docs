@@ -1566,5 +1566,192 @@
     "validated": true,
     "sourceCommit": "fb10c6d3802b159113b5117906b88de170c163b8",
     "supplemental": true
+  },
+  {
+    "role": "admin",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4301/merchant-applications",
+    "sourceUrl": "http://localhost:4301/merchant-applications",
+    "file": "admin-merchant-review-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "admin",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4301/merchant-applications",
+    "sourceUrl": "http://localhost:4301/merchant-applications",
+    "file": "admin-merchant-review-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "admin",
+    "feature": "subscriptions",
+    "url": "http://localhost:4301/subscription-plans",
+    "sourceUrl": "http://localhost:4301/subscription-plans",
+    "file": "admin-subscription-plans-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "admin",
+    "feature": "subscriptions",
+    "url": "http://localhost:4301/subscription-plans",
+    "sourceUrl": "http://localhost:4301/subscription-plans",
+    "file": "admin-subscription-plans-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "platform",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4304/ar/join",
+    "sourceUrl": "http://localhost:4304/ar/join",
+    "file": "platform-application-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "platform",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4304/en/join",
+    "sourceUrl": "http://localhost:4304/en/join",
+    "file": "platform-application-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "platform",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4304/ar/join",
+    "sourceUrl": "http://localhost:4304/ar/join",
+    "file": "platform-application-receipt-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "platform",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4304/en/join",
+    "sourceUrl": "http://localhost:4304/en/join",
+    "file": "platform-application-receipt-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "platform",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4304/ar/plans",
+    "sourceUrl": "http://localhost:4304/ar/plans",
+    "file": "platform-plans-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "platform",
+    "feature": "merchant-onboarding",
+    "url": "http://localhost:4304/en/plans",
+    "sourceUrl": "http://localhost:4304/en/plans",
+    "file": "platform-plans-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-invoice-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-paid-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-paid-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-quote-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "subscriptions",
+    "url": "http://localhost:4302/subscription",
+    "sourceUrl": "http://localhost:4302/subscription",
+    "file": "tenant-subscription-quote-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
   }
 ]

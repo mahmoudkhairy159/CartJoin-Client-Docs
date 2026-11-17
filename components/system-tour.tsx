@@ -11,8 +11,8 @@ import { guideLanguage } from '@/lib/guide-language';
 import { basePath } from '@/lib/shared';
 
 type Copy = { en: string; ar: string };
-type Step = { image: string; focus: number[]; title: Copy; body: Copy; guide: string };
-type Tour = { title: Copy; intro: Copy; video: boolean; steps: Step[]; secondsPerStep?: number; provenance?: Copy };
+type Step = { image: string; imageAr?: string; focus: number[]; focusAr?: number[]; title: Copy; body: Copy; guide: string };
+type Tour = { title: Copy; intro: Copy; video: boolean; localizedVideo?: boolean; steps: Step[]; secondsPerStep?: number; provenance?: Copy };
 const tours: Record<string, Tour> = tourData;
 const sizes: Record<string, { width: number; height: number }> = screenshotSizes;
 
@@ -30,14 +30,18 @@ export function SystemTour({ tour, compact = false, startAt = 0 }: { tour: strin
   const onFeaturePage = pathname === `/${lang}/${step.guide}`;
   const guideHref = onFeaturePage ? `#${arabic ? 'القيود-والقرارات' : 'restrictions-and-decisions'}` : `/${lang}/${step.guide}`;
   const duration = data.steps.length * (data.secondsPerStep ?? 10);
-  const src = `${basePath}/screenshots/${step.image}`;
-  const dimensions = sizes[step.image];
-  const focusStyle = { left: `${step.focus[0]}%`, top: `${step.focus[1]}%`, width: `${step.focus[2]}%`, height: `${step.focus[3]}%` };
+  const localizedImage = (item: Step) => arabic && item.imageAr ? item.imageAr : item.image;
+  const localizedFocus = (item: Step) => arabic && item.focusAr ? item.focusAr : item.focus;
+  const focus = localizedFocus(step);
+  const src = `${basePath}/screenshots/${localizedImage(step)}`;
+  const dimensions = sizes[localizedImage(step)];
+  const videoName = data.localizedVideo ? `${tour}-${lang}` : tour;
+  const focusStyle = { left: `${focus[0]}%`, top: `${focus[1]}%`, width: `${focus[2]}%`, height: `${focus[3]}%` };
 
   function markers() {
-    return data.steps.map((item, index) => item.image === step.image && (
+    return data.steps.map((item, index) => localizedImage(item) === localizedImage(step) && (
       <button key={index} type="button" className="tour-marker" data-active={selected === index}
-        style={{ left: `${item.focus[0] + item.focus[2] / 2}%`, top: `${item.focus[1] + item.focus[3] / 2}%` }}
+        style={{ left: `${localizedFocus(item)[0] + localizedFocus(item)[2] / 2}%`, top: `${localizedFocus(item)[1] + localizedFocus(item)[3] / 2}%` }}
         aria-label={`${stepLabel} ${index + 1}: ${item.title[lang]}`} aria-pressed={selected === index}
         onClick={() => setSelected(index)}><bdi dir="ltr">{index + 1}</bdi></button>
     ));
@@ -78,8 +82,8 @@ export function SystemTour({ tour, compact = false, startAt = 0 }: { tour: strin
       </Dialog.Root>
       {data.video && <details className="tour-video"><summary><Play size={16} strokeWidth={1.5} aria-hidden /><span>{arabic ? `شاهد جولة قصيرة — ${duration} ثانية` : `Watch the short tour — ${duration} seconds`}</span></summary>
         <p>{arabic ? 'جولة صامتة من صور النظام مع شرح بالعربية والإنجليزية. استخدم زر الترجمة في المشغل. هذه ليست عملية شراء أو تعديل حية.' : 'A silent screenshot tour with English and Arabic captions. Use the player’s captions control. It illustrates the interface rather than executing a live transaction.'}</p>
-        <video key={tour + lang} controls playsInline preload="none" width={1280} height={720} poster={`${basePath}/videos/${tour}-poster.jpg`}>
-          <source src={`${basePath}/videos/${tour}-tour.mp4`} type="video/mp4" />
+        <video key={tour + lang} controls playsInline preload="none" width={1280} height={720} poster={`${basePath}/videos/${videoName}-poster.jpg`}>
+          <source src={`${basePath}/videos/${videoName}-tour.mp4`} type="video/mp4" />
           <track src={`${basePath}/videos/${tour}-ar.vtt`} kind="captions" srcLang="ar" label="العربية" default={arabic} />
           <track src={`${basePath}/videos/${tour}-en.vtt`} kind="captions" srcLang="en" label="English" default={!arabic} />
           {arabic ? 'متصفحك لا يدعم الفيديو؛ اتبع الخطوات أعلاه' : 'Your browser does not support video; follow the steps above'}
