@@ -4,6 +4,8 @@ No generated interface, narration, or simulated transaction is introduced.
 Requires ffmpeg/ffprobe and Pillow; preserves the original PNG/JPEG evidence.
 """
 from pathlib import Path
+import argparse
+from datetime import datetime, timezone
 import json
 import shutil
 import subprocess
@@ -50,6 +52,11 @@ GUIDES = {
     },
 }
 
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--guide', action='append', choices=GUIDES, help='Render only this guide in both languages; preserve other manifest entries.')
+arguments = parser.parse_args()
+selected = set(arguments.guide or GUIDES)
+
 def stamp(seconds: float) -> str:
     milliseconds = round(seconds * 1000)
     return f'{milliseconds // 3600000:02}:{milliseconds // 60000 % 60:02}:{milliseconds // 1000 % 60:02}.{milliseconds % 1000:03}'
@@ -66,7 +73,14 @@ manifest = {
         for locale in ('en', 'ar')
     ],
 }
+manifest_path = VIDEOS / 'discovery-media-manifest.json'
+if arguments.guide and manifest_path.is_file():
+    previous = json.loads(manifest_path.read_text(encoding='utf-8'))
+    manifest['entries'] = [entry for entry in previous.get('entries', [])
+        if not any(entry['id'] == f'{key}-{locale}' for key in selected for locale in ('en', 'ar'))]
 for key, guide in GUIDES.items():
+    if key not in selected:
+        continue
     for locale in ('en', 'ar'):
         frames = [SHOTS / f'{key}-{locale}{"-"+suffix if suffix else ""}.png' for suffix in guide['suffixes']]
         for path in frames:
@@ -90,10 +104,17 @@ for key, guide in GUIDES.items():
         manifest['entries'].append({'id': f'{key}-{locale}', 'locale': locale, 'role': guide['role'],
             'url': guide['url'].format(locale=locale), 'frames': [str(path.relative_to(ROOT)).replace('\\', '/') for path in frames],
             'frame_urls': [(f'http://localhost:4300/product/iphone-15-pro-256gb?lang={locale}' if suffix == 'handoff' else guide['url'].format(locale=locale)) for suffix in guide['suffixes']],
+            'frame_provenance': [{'path': str(path.relative_to(ROOT)).replace('\\', '/'),
+                'artifact_updated_at': datetime.fromtimestamp(path.stat().st_mtime, timezone.utc).isoformat(),
+                'mechanism': ('Root CUA final acceptance capture of independently approved store directory, after local origin guard fix; actual JPEG screenshot converted losslessly into a PNG container.'
+                    if key == 'platform-discovery' and suffix == 'stores'
+                    else 'Actual CUA full-viewport screenshot; seeded local development preview.')}
+                for path, suffix in zip(frames, guide['suffixes'])],
             'source_dimensions': [1265, 712], 'video': str(output.relative_to(ROOT)).replace('\\', '/'),
             'captions': str(output.with_suffix('.vtt').relative_to(ROOT)).replace('\\', '/'),
             'video_dimensions': [probe['streams'][0]['width'], probe['streams'][0]['height']],
             'duration_seconds': float(probe['format']['duration']), 'bytes': output.stat().st_size,
             'captions_text': guide[locale]})
         print(f'{key}-{locale}: {probe["format"]["duration"]}s, {output.stat().st_size} bytes')
-(VIDEOS / 'discovery-media-manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+manifest['entries'].sort(key=lambda entry: (list(GUIDES).index(entry['id'].rsplit('-', 1)[0]), entry['locale'] != 'en'))
+manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

@@ -3,34 +3,34 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "b8e35c9a864ca7bf8f1d7f9505eabc5960d97548",
+      "commit": "87dc6df66d29cb791d8eb26daaf5f253d9dee358",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "9db908342bac0ef152c9cadf5ee91c27517f1860",
+      "commit": "442d96165acd3b1f37e8cc48ae41da546d018951",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "2f925c3ea9ee3784ff72e07480bad4568d8b9e63",
+      "commit": "dfebecf4d8c5fabd299b1bbbec2d0f4f87a74959",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "dc6135ba696fe8d139a937496fcaf64c30de7efc",
+      "commit": "93039005178adb58a404e40e63bf0d6a6716fad1",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "f11563a48dd1249905fd1b28122aff32be565eb9",
+      "commit": "f62e15f05335e63f21c2dde1f64f8365107fc5c7",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Platform-Frontend": {
-      "commit": "15cbb52bf352a94226b73a5b54e2f970cb0668d6",
+      "commit": "c5b14aa073f06da0fd8ca7155be39c3c5955801e",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     }
   },
   "surfaces": {
@@ -45,6 +45,11 @@
         {
           "path": "/fulfillment/orders/:id",
           "feature": "packing",
+          "special": null
+        },
+        {
+          "path": "/discovery",
+          "feature": "global-discovery",
           "special": null
         },
         {
@@ -570,7 +575,7 @@
           ":webhookId/deliveries/:deliveryId"
         ]
       },
-      "route_source_sha256": "0d53e6f62d4a5cc08145cd3507f49ae8b97c9647fe9b30989ba2344f0ae74aea"
+      "route_source_sha256": "4e8d527e49f9ca3180bad3125a9dcf138a53ab842fd8c6a6476ce95542dac6fc"
     },
     "tenant": {
       "repository": "CartJoin-Tenant-Dashboard-Frontend",
@@ -583,6 +588,11 @@
         {
           "path": "/fulfillment/orders/:id",
           "feature": "packing",
+          "special": null
+        },
+        {
+          "path": "/discovery",
+          "feature": "global-discovery",
           "special": null
         },
         {
@@ -1076,6 +1086,7 @@
         "src/app/features/storefront/storefront.routes.ts": [
           "",
           "settings",
+          "design",
           "home"
         ],
         "src/app/features/support-tickets/support-tickets.routes.ts": [
@@ -1116,7 +1127,7 @@
           ":id"
         ]
       },
-      "route_source_sha256": "00d66940dd0d9cd3bdf2b471696345e8467dc6b382f37ee5ecafd046b24715fc"
+      "route_source_sha256": "8b7d7712e1d8578287aab1366407a32a97019c27d18c88b866bb1572dc60beab"
     },
     "vendor": {
       "repository": "CartJoin-Vendor-Dashboard-Frontend",
@@ -1134,6 +1145,11 @@
         {
           "path": "/dashboard",
           "feature": "dashboards",
+          "special": null
+        },
+        {
+          "path": "/discovery",
+          "feature": "global-discovery",
           "special": null
         },
         {
@@ -1373,7 +1389,7 @@
           ""
         ]
       },
-      "route_source_sha256": "ab5bbbdada6f618e2cae30191b9b33b9789284f0994fce2a786f7bf498723c48"
+      "route_source_sha256": "eda66bb90e276cae3a93c3c9b3c6390ee8f401aeefe05b4657a234cbd286e2e1"
     },
     "customer": {
       "repository": "CartJoin-Storefront-Frontend",
@@ -4336,6 +4352,12 @@
           }
         },
         {
+          "file": "Modules/Inventory/App/Enums/InventoryReleaseBlockReason.php",
+          "cases": {
+            "PHYSICAL_OBLIGATION": "1"
+          }
+        },
+        {
           "file": "Modules/Inventory/App/Enums/InventoryReservationStatus.php",
           "cases": {
             "ACTIVE": "1",
@@ -6240,6 +6262,10 @@
             "expected_revision",
             "content_fingerprint",
             "message",
+            "shipment_id",
+            "physical_status",
+            "occurred_at",
+            "is_test",
             "allocations",
             "allocations.*",
             "allocations.*.shipment_id",
@@ -6540,6 +6566,10 @@
             "expected_revision",
             "content_fingerprint",
             "message",
+            "shipment_id",
+            "physical_status",
+            "occurred_at",
+            "is_test",
             "allocations",
             "allocations.*",
             "allocations.*.shipment_id",
@@ -7421,6 +7451,22 @@
           "module": "Loyalty",
           "file": "Modules/Loyalty/routes/tenant-api.php",
           "method": "GET",
+          "uri": "loyalty/order-rewards",
+          "controller": "OrderRewardController",
+          "action": "index"
+        },
+        {
+          "module": "Loyalty",
+          "file": "Modules/Loyalty/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "loyalty/order-rewards/{order}/retry",
+          "controller": "OrderRewardController",
+          "action": "retry"
+        },
+        {
+          "module": "Loyalty",
+          "file": "Modules/Loyalty/routes/tenant-api.php",
+          "method": "GET",
           "uri": "/",
           "controller": "LoyaltyProgramController",
           "action": "show"
@@ -7683,6 +7729,14 @@
         }
       ],
       "request_fields": [
+        {
+          "file": "Modules/Loyalty/App/Http/Requests/Tenant/Account/RetryOrderRewardsRequest.php",
+          "fields": [
+            "tenant_id",
+            "user_id",
+            "reason"
+          ]
+        },
         {
           "file": "Modules/Loyalty/App/Http/Requests/Tenant/Account/StoreExportRequest.php",
           "fields": [
@@ -9237,6 +9291,7 @@
       ],
       "route_sources": [
         "Modules/Storefront/routes/admin-api.php",
+        "Modules/Storefront/routes/platform-api.php",
         "Modules/Storefront/routes/tenant-api.php",
         "Modules/Storefront/routes/user-api.php",
         "Modules/Storefront/routes/vendor-api.php",
@@ -9246,10 +9301,74 @@
         {
           "module": "Storefront",
           "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "PUT",
+          "uri": "stores/{tenant}",
+          "controller": "DiscoveryController",
+          "action": "reviewStore"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "PUT",
+          "uri": "stores/{tenant}/offers/{product}",
+          "controller": "DiscoveryController",
+          "action": "reviewOffer"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
           "method": "GET",
           "uri": "/settings",
           "controller": "StorefrontSettingsController",
           "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "discovery",
+          "controller": "DiscoveryController",
+          "action": "browse"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "discovery/stores",
+          "controller": "DiscoveryController",
+          "action": "browseStores"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "customer/purchases",
+          "controller": "DiscoveryController",
+          "action": "purchases"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "catalog",
+          "controller": "DiscoveryController",
+          "action": "catalog"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "store",
+          "controller": "DiscoveryController",
+          "action": "store"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "offers/{product}",
+          "controller": "DiscoveryController",
+          "action": "offer"
         },
         {
           "module": "Storefront",
@@ -9266,6 +9385,22 @@
           "uri": "/settings",
           "controller": "StorefrontSettingsController",
           "action": "update"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "publish",
+          "controller": "StorefrontDesignController",
+          "action": "publish"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "reset",
+          "controller": "StorefrontDesignController",
+          "action": "reset"
         },
         {
           "module": "Storefront",
@@ -9330,9 +9465,42 @@
           "uri": "/settings",
           "controller": "StorefrontController",
           "action": "publicSettings"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/vendor-api.php",
+          "method": "PUT",
+          "uri": "consent",
+          "controller": "DiscoveryController",
+          "action": "consent"
         }
       ],
       "request_fields": [
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Discovery/PublicationRequest.php",
+          "fields": [
+            "opted_in",
+            "tenant_id",
+            "storefront_url"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Discovery/ReviewRequest.php",
+          "fields": [
+            "approved",
+            "revision",
+            "source_hash",
+            "notes",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/StorefrontDesignRevisionRequest.php",
+          "fields": [
+            "revision",
+            "tenant_id"
+          ]
+        },
         {
           "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateHomeConfigRequest.php",
           "fields": [
@@ -9343,6 +9511,16 @@
             "home_config.sections.*.category_id",
             "home_config.sections.*.label",
             "home_config.sections.*.limit"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontDesignRequest.php",
+          "fields": [
+            "design",
+            "design.site_name",
+            "design.logo_url",
+            "design.hero",
+            "design.colors"
           ]
         },
         {
@@ -9370,7 +9548,16 @@
           ]
         }
       ],
-      "enums": []
+      "enums": [
+        {
+          "file": "Modules/Storefront/App/Enums/DiscoveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "APPROVED": "2",
+            "REJECTED": "3"
+          }
+        }
+      ]
     },
     "seo": {
       "modules": [
@@ -9998,7 +10185,24 @@
         "Modules/Notification/routes/vendor-api.php",
         "Modules/Notification/routes/web.php"
       ],
-      "explicit_backend_routes": [],
+      "explicit_backend_routes": [
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "GET",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "index"
+        },
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "PUT",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "update"
+        }
+      ],
       "request_fields": [
         {
           "file": "Modules/Notification/App/Http/Requests/Admin/MarkAllAsReadRequest.php",
@@ -10068,6 +10272,20 @@
           "file": "Modules/Notification/App/Http/Requests/User/TopicUnsubscriptionRequest.php",
           "fields": [
             "topic_key"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/UpdateMarketingConsentRequest.php",
+          "fields": [
+            "tenant_id",
+            "user_id",
+            "purpose",
+            "channel",
+            "granted",
+            "notice_version",
+            "errors",
+            "message",
+            "statusCode"
           ]
         }
       ],
@@ -10653,6 +10871,938 @@
             "Thursday": "5",
             "Friday": "6",
             "Saturday": "7"
+          }
+        }
+      ]
+    },
+    "global-discovery": {
+      "modules": [
+        "Storefront"
+      ],
+      "route_sources": [
+        "Modules/Storefront/routes/admin-api.php",
+        "Modules/Storefront/routes/platform-api.php",
+        "Modules/Storefront/routes/tenant-api.php",
+        "Modules/Storefront/routes/user-api.php",
+        "Modules/Storefront/routes/vendor-api.php",
+        "Modules/Storefront/routes/web.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "PUT",
+          "uri": "stores/{tenant}",
+          "controller": "DiscoveryController",
+          "action": "reviewStore"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "PUT",
+          "uri": "stores/{tenant}/offers/{product}",
+          "controller": "DiscoveryController",
+          "action": "reviewOffer"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/settings",
+          "controller": "StorefrontSettingsController",
+          "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "discovery",
+          "controller": "DiscoveryController",
+          "action": "browse"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "discovery/stores",
+          "controller": "DiscoveryController",
+          "action": "browseStores"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "customer/purchases",
+          "controller": "DiscoveryController",
+          "action": "purchases"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "catalog",
+          "controller": "DiscoveryController",
+          "action": "catalog"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "store",
+          "controller": "DiscoveryController",
+          "action": "store"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "offers/{product}",
+          "controller": "DiscoveryController",
+          "action": "offer"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/settings",
+          "controller": "StorefrontSettingsController",
+          "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "/settings",
+          "controller": "StorefrontSettingsController",
+          "action": "update"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "publish",
+          "controller": "StorefrontDesignController",
+          "action": "publish"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "reset",
+          "controller": "StorefrontDesignController",
+          "action": "reset"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/home-config",
+          "controller": "StorefrontHomeConfigController",
+          "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "/home-config",
+          "controller": "StorefrontHomeConfigController",
+          "action": "update"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/home-config/categories",
+          "controller": "StorefrontHomeConfigController",
+          "action": "categories"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/home",
+          "controller": "StorefrontController",
+          "action": "home"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/facets",
+          "controller": "StorefrontController",
+          "action": "facets"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/products",
+          "controller": "StorefrontController",
+          "action": "products"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/products/{slug}",
+          "controller": "StorefrontController",
+          "action": "productDetail"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/settings",
+          "controller": "StorefrontController",
+          "action": "publicSettings"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/vendor-api.php",
+          "method": "PUT",
+          "uri": "consent",
+          "controller": "DiscoveryController",
+          "action": "consent"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Discovery/PublicationRequest.php",
+          "fields": [
+            "opted_in",
+            "tenant_id",
+            "storefront_url"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Discovery/ReviewRequest.php",
+          "fields": [
+            "approved",
+            "revision",
+            "source_hash",
+            "notes",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/StorefrontDesignRevisionRequest.php",
+          "fields": [
+            "revision",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateHomeConfigRequest.php",
+          "fields": [
+            "home_config",
+            "home_config.sections",
+            "home_config.sections.*.type",
+            "home_config.sections.*.placement",
+            "home_config.sections.*.category_id",
+            "home_config.sections.*.label",
+            "home_config.sections.*.limit"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontDesignRequest.php",
+          "fields": [
+            "design",
+            "design.site_name",
+            "design.logo_url",
+            "design.hero",
+            "design.colors"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontSettingsRequest.php",
+          "fields": [
+            "guest_checkout_enabled",
+            "announcement_bar_enabled",
+            "announcement_bar_text",
+            "announcement_bar_url",
+            "maintenance_mode",
+            "maintenance_message",
+            "cookie_consent_enabled",
+            "footer_copyright_text",
+            "social_links",
+            "social_links.*",
+            "favicon",
+            "logo",
+            "home_config",
+            "home_config.sections",
+            "home_config.sections.*.type",
+            "home_config.sections.*.placement",
+            "home_config.sections.*.category_id",
+            "home_config.sections.*.label",
+            "home_config.sections.*.limit"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Storefront/App/Enums/DiscoveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "APPROVED": "2",
+            "REJECTED": "3"
+          }
+        }
+      ]
+    },
+    "cross-store-purchases": {
+      "modules": [
+        "Storefront",
+        "Order"
+      ],
+      "route_sources": [
+        "Modules/Storefront/routes/admin-api.php",
+        "Modules/Storefront/routes/platform-api.php",
+        "Modules/Storefront/routes/tenant-api.php",
+        "Modules/Storefront/routes/user-api.php",
+        "Modules/Storefront/routes/vendor-api.php",
+        "Modules/Storefront/routes/web.php",
+        "Modules/Order/routes/admin-api.php",
+        "Modules/Order/routes/tenant-api.php",
+        "Modules/Order/routes/vendor-api.php",
+        "Modules/Order/routes/web.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "PUT",
+          "uri": "stores/{tenant}",
+          "controller": "DiscoveryController",
+          "action": "reviewStore"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "PUT",
+          "uri": "stores/{tenant}/offers/{product}",
+          "controller": "DiscoveryController",
+          "action": "reviewOffer"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/settings",
+          "controller": "StorefrontSettingsController",
+          "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "discovery",
+          "controller": "DiscoveryController",
+          "action": "browse"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "discovery/stores",
+          "controller": "DiscoveryController",
+          "action": "browseStores"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/platform-api.php",
+          "method": "GET",
+          "uri": "customer/purchases",
+          "controller": "DiscoveryController",
+          "action": "purchases"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "catalog",
+          "controller": "DiscoveryController",
+          "action": "catalog"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "store",
+          "controller": "DiscoveryController",
+          "action": "store"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "offers/{product}",
+          "controller": "DiscoveryController",
+          "action": "offer"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/settings",
+          "controller": "StorefrontSettingsController",
+          "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "/settings",
+          "controller": "StorefrontSettingsController",
+          "action": "update"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "publish",
+          "controller": "StorefrontDesignController",
+          "action": "publish"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "reset",
+          "controller": "StorefrontDesignController",
+          "action": "reset"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/home-config",
+          "controller": "StorefrontHomeConfigController",
+          "action": "show"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "/home-config",
+          "controller": "StorefrontHomeConfigController",
+          "action": "update"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/home-config/categories",
+          "controller": "StorefrontHomeConfigController",
+          "action": "categories"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/home",
+          "controller": "StorefrontController",
+          "action": "home"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/facets",
+          "controller": "StorefrontController",
+          "action": "facets"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/products",
+          "controller": "StorefrontController",
+          "action": "products"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/products/{slug}",
+          "controller": "StorefrontController",
+          "action": "productDetail"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/settings",
+          "controller": "StorefrontController",
+          "action": "publicSettings"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/vendor-api.php",
+          "method": "PUT",
+          "uri": "consent",
+          "controller": "DiscoveryController",
+          "action": "consent"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders",
+          "controller": "OrderController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/list-dropdown",
+          "controller": "OrderController",
+          "action": "listDropdown"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}",
+          "controller": "OrderController",
+          "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "order-items/list-dropdown",
+          "controller": "OrderItemController",
+          "action": "listDropdown"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders",
+          "controller": "OrderController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/export",
+          "controller": "OrderController",
+          "action": "export"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}",
+          "controller": "OrderController",
+          "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "orders/{id}/status",
+          "controller": "OrderController",
+          "action": "updateStatus"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "orders/{id}/cancel",
+          "controller": "OrderController",
+          "action": "cancel"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "orders/{id}/notes",
+          "controller": "OrderController",
+          "action": "addNote"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "orders",
+          "controller": "OrderController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "orders/{id}",
+          "controller": "OrderController",
+          "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/vendor-api.php",
+          "method": "PUT",
+          "uri": "orders/{id}/status",
+          "controller": "OrderController",
+          "action": "updateStatus"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Discovery/PublicationRequest.php",
+          "fields": [
+            "opted_in",
+            "tenant_id",
+            "storefront_url"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Discovery/ReviewRequest.php",
+          "fields": [
+            "approved",
+            "revision",
+            "source_hash",
+            "notes",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/StorefrontDesignRevisionRequest.php",
+          "fields": [
+            "revision",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateHomeConfigRequest.php",
+          "fields": [
+            "home_config",
+            "home_config.sections",
+            "home_config.sections.*.type",
+            "home_config.sections.*.placement",
+            "home_config.sections.*.category_id",
+            "home_config.sections.*.label",
+            "home_config.sections.*.limit"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontDesignRequest.php",
+          "fields": [
+            "design",
+            "design.site_name",
+            "design.logo_url",
+            "design.hero",
+            "design.colors"
+          ]
+        },
+        {
+          "file": "Modules/Storefront/App/Http/Requests/Tenant/Storefront/UpdateStorefrontSettingsRequest.php",
+          "fields": [
+            "guest_checkout_enabled",
+            "announcement_bar_enabled",
+            "announcement_bar_text",
+            "announcement_bar_url",
+            "maintenance_mode",
+            "maintenance_message",
+            "cookie_consent_enabled",
+            "footer_copyright_text",
+            "social_links",
+            "social_links.*",
+            "favicon",
+            "logo",
+            "home_config",
+            "home_config.sections",
+            "home_config.sections.*.type",
+            "home_config.sections.*.placement",
+            "home_config.sections.*.category_id",
+            "home_config.sections.*.label",
+            "home_config.sections.*.limit"
+          ]
+        },
+        {
+          "file": "Modules/Order/App/Http/Requests/Tenant/Order/AddNoteRequest.php",
+          "fields": [
+            "body",
+            "is_internal"
+          ]
+        },
+        {
+          "file": "Modules/Order/App/Http/Requests/Tenant/Order/UpdateOrderStatusRequest.php",
+          "fields": [
+            "status",
+            "comment"
+          ]
+        },
+        {
+          "file": "Modules/Order/App/Http/Requests/Vendor/Order/UpdateOrderStatusRequest.php",
+          "fields": [
+            "status",
+            "comment"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Storefront/App/Enums/DiscoveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "APPROVED": "2",
+            "REJECTED": "3"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/OrderAddressTypeCode.php",
+          "cases": {
+            "SHIPPING": "1",
+            "BILLING": "2"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/OrderStatus.php",
+          "cases": {
+            "PENDING": "'pending'",
+            "CONFIRMED": "'confirmed'",
+            "PROCESSING": "'processing'",
+            "SHIPPED": "'shipped'",
+            "DELIVERED": "'delivered'",
+            "CANCELLED": "'cancelled'",
+            "REFUND_REQUESTED": "'refund_requested'",
+            "REFUNDED": "'refunded'"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/OrderStatusCode.php",
+          "cases": {
+            "PENDING": "1",
+            "CONFIRMED": "2",
+            "PROCESSING": "3",
+            "SHIPPED": "4",
+            "DELIVERED": "5",
+            "CANCELLED": "6",
+            "REFUND_REQUESTED": "7",
+            "REFUNDED": "8"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/PaymentStatus.php",
+          "cases": {
+            "PENDING": "'pending'",
+            "AWAITING_CONFIRMATION": "'awaiting_confirmation'",
+            "PENDING_APPROVAL": "'pending_approval'",
+            "PAID": "'paid'",
+            "FAILED": "'failed'",
+            "REFUNDED": "'refunded'",
+            "PARTIAL_REFUND": "'partial_refund'"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/PaymentStatusCode.php",
+          "cases": {
+            "PENDING": "1",
+            "AWAITING_CONFIRMATION": "2",
+            "PENDING_APPROVAL": "3",
+            "PAID": "4",
+            "FAILED": "5",
+            "REFUNDED": "6",
+            "PARTIAL_REFUND": "7"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/ShippingStatus.php",
+          "cases": {
+            "PENDING": "'pending'",
+            "PROCESSING": "'processing'",
+            "SHIPPED": "'shipped'",
+            "DELIVERED": "'delivered'",
+            "RETURNED": "'returned'"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/ShippingStatusCode.php",
+          "cases": {
+            "PENDING": "1",
+            "PROCESSING": "2",
+            "SHIPPED": "3",
+            "DELIVERED": "4",
+            "RETURNED": "5"
+          }
+        }
+      ]
+    },
+    "marketing-consent": {
+      "modules": [
+        "Notification"
+      ],
+      "route_sources": [
+        "Modules/Notification/routes/admin-api.php",
+        "Modules/Notification/routes/tenant-api.php",
+        "Modules/Notification/routes/user-api.php",
+        "Modules/Notification/routes/vendor-api.php",
+        "Modules/Notification/routes/web.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "GET",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "index"
+        },
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "PUT",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "update"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/MarkAllAsReadRequest.php",
+          "fields": [
+            "user_id",
+            "user_type"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/SendNotificationRequest.php",
+          "fields": [
+            "user_ids",
+            "user_ids.*",
+            "user_type",
+            "title",
+            "message",
+            "channels",
+            "channels.*",
+            "type",
+            "data",
+            "translations",
+            "translations.*",
+            "translations.*.title",
+            "translations.*.message"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/UpdateNotificationRequest.php",
+          "fields": [
+            "topic_id",
+            "type",
+            "channel",
+            "status",
+            "data",
+            "translations",
+            "translations.*",
+            "translations.*.title",
+            "translations.*.message"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/NotificationIndexRequest.php",
+          "fields": [
+            "read",
+            "per_page",
+            "channel",
+            "search",
+            "status"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicIndexRequest.php",
+          "fields": [
+            "type",
+            "search"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicSubscriptionRequest.php",
+          "fields": [
+            "topic_key",
+            "channels",
+            "channels.*"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicUnsubscriptionRequest.php",
+          "fields": [
+            "topic_key"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/UpdateMarketingConsentRequest.php",
+          "fields": [
+            "tenant_id",
+            "user_id",
+            "purpose",
+            "channel",
+            "granted",
+            "notice_version",
+            "errors",
+            "message",
+            "statusCode"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Notification/App/Enums/NotificationAction.php",
+          "cases": {
+            "CUSTOMER": "1",
+            "ORDER": "2",
+            "PAYMENT": "3",
+            "TENANT": "4",
+            "SYSTEM": "5"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationTarget.php",
+          "cases": {
+            "ALL_CUSTOMERS": "1",
+            "ALL_TENANT_ADMINS": "2",
+            "SPECIFIC_CUSTOMERS": "3",
+            "SPECIFIC_TENANT_ADMINS": "4",
+            "ALL_ADMINS": "5",
+            "SPECIFIC_ADMINS": "6",
+            "ALL_VENDOR_ADMINS": "7",
+            "SPECIFIC_VENDOR_ADMINS": "8"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationTopic.php",
+          "cases": {
+            "TENANT": "'tenant'",
+            "ROLE": "'role'",
+            "USER_TYPE": "'user_type'",
+            "SYSTEM": "'system'",
+            "ALL_USERS": "'all_users'"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationType.php",
+          "cases": {
+            "CUSTOM": "'custom'",
+            "CUSTOMER_CREATED": "'customer_created'",
+            "CUSTOMER_UPDATED": "'customer_updated'",
+            "CUSTOMER_ACTIVATED": "'customer_activated'",
+            "CUSTOMER_DEACTIVATED": "'customer_deactivated'",
+            "TENANT_CREATED": "'tenant_created'",
+            "TENANT_UPDATED": "'tenant_updated'",
+            "PAYMENT_RECEIVED": "'payment_received'",
+            "PAYMENT_FAILED": "'payment_failed'",
+            "NEW_POLICY_UPDATE": "'new_policy_update'",
+            "SYSTEM_ANNOUNCEMENT": "'system_announcement'",
+            "SYSTEM_UPDATE": "'system_update'"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationUserType.php",
+          "cases": {
+            "CUSTOMER": "1",
+            "TENANT_ADMIN": "2",
+            "ADMIN": "3",
+            "VENDOR_ADMIN": "4"
           }
         }
       ]

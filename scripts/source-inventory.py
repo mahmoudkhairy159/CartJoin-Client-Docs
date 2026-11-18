@@ -10,7 +10,8 @@ FEATURE_MODULES={
 'gift-cards':['GiftCard'],'loyalty':['Loyalty'],'wallet':['Wallet'],'commission':['Commission'],'settlements':['SettlementPayout'],
 'tax-currency':['Tax','Currency'],'cms':['Cms'],'banners':['Banner'],'storefront':['Storefront'],'seo':['Seo'],'reviews':['Review'],
 'support':['SupportTicket','Faqs'],'notifications':['Notification'],'dashboards':['Dashboard'],'reports':['Reports','Core'],
-'audit':['AuditLog'],'webhooks':['Webhook'],'settings':['Settings','Core','Area']}
+'audit':['AuditLog'],'webhooks':['Webhook'],'settings':['Settings','Core','Area'],
+'global-discovery':['Storefront'],'cross-store-purchases':['Storefront','Order'],'marketing-consent':['Notification']}
 MAP={}
 def assign(feature,paths):
     for p in paths.split():MAP[p]=feature
@@ -29,6 +30,7 @@ assign('support','support-tickets faqs faq-categories');assign('notifications','
 assign('reports','reports jobs');assign('audit','audit-logs');assign('settings','configs tags colors platform-settings feature-flags settings reference-data geo store-configuration')
 assign('products','product/:slug');assign('vendors','vendor');assign('tenants','branches');assign('cart','cart');assign('checkout','checkout');assign('shipping','track track/:orderNo')
 assign('wishlist','wishlist');assign('support','support');assign('webhooks','webhooks')
+assign('global-discovery','discovery')
 SPECIAL={'forbidden':'Access error screen','**':'Not-found fallback','dev/style-guide':'Development-only visual reference'}
 SURFACES={'admin':'CartJoin-Admin-Dashboard-Frontend','tenant':'CartJoin-Tenant-Dashboard-Frontend','vendor':'CartJoin-Vendor-Dashboard-Frontend','customer':'CartJoin-Storefront-Frontend'}
 inventory={'reviewed':'2026-11-18','verification':'Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.','repositories':{},'surfaces':{},'features':{}}

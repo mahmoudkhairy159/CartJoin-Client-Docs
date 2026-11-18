@@ -3,7 +3,7 @@ title: "Implementation phases and release gates"
 description: "Dependency-based delivery plan, owners, evidence and rollback conditions."
 ---
 
-> **Development status · 18 November 2026.** Central customer login, canonical commerce-mode checks, versioned test billing and assisted merchant applications now have implementation and test evidence. The separate platform frontend has package comparison and application screens. Later operational/discovery gates remain tracked work, and nothing here claims a live deployment. [Current billing guide](/en/features/subscriptions) · [Application guide](/en/features/merchant-onboarding).
+> **Locally tested development checkpoint · 18 November 2026.** Central customer login, commerce-mode checks, versioned test billing and assisted merchant applications are implemented. The current checkpoint also includes physical fulfillment, later-paid COD reward/refund reconciliation, customer marketing choices, opt-in discovery and a private customer purchase overview across stores. Full phase acceptance, remaining growth/integration work and live deployment are separate gates. [Billing](/en/features/subscriptions) · [Merchant applications](/en/features/merchant-onboarding) · [Marketing choices](/en/features/marketing-consent) · [Discovery](/en/features/global-discovery).
 
 > **Roadmap and release gates.** Development delivery is described above. The phases below retain the operational and commercial acceptance gates; source completion does not imply a live pilot or deployment.
 
@@ -19,20 +19,23 @@ across backend, tenant, vendor and admin. [Guide and walkthroughs](/en/features/
 Product submission, correction, resubmission, immutable review receipts, dedicated
 publisher authority and safe import reports are now implemented and tested across
 the three staff dashboards. [Product review guide](/en/features/product-review).
-This does not close the phase: carrier-to-order
-lifecycle integration, dispatch metrics and pilot readiness remain active work.
-Consent-aware growth and opt-in global discovery have not been marked complete.
+This does not close the phase. The current checkpoint adds retained
+carrier-to-order lifecycle integration; measurable dispatch performance and
+operational pilot acceptance still need evidence. Marketing consent and discovery
+publication controls are foundations, not completion of the whole growth phase.
 
 **Fulfillment development checkpoint:** packing, retained carrier evidence and
 quantity-based physical assessment are implemented. Durable sequential order
 receipts, queued reconciliation and replay-safe event publication now have
-controlled integration tests. Delayed events retain the status recorded at the
-time of the decision. Automatic execution is **disabled by default** until the
-remaining payment, reward, manual-confirmation and dashboard checks are complete.
+controlled integration tests. Explicit store confirmation and customer partial
+progress are implemented alongside the staff screens. Delayed events retain the
+status recorded at the time of the decision. Automatic execution remains
+**disabled by default**; activation needs its own reviewed gate, independent of
+the code checkpoint and final cross-dashboard/browser acceptance.
 A partial delivery, editable status or vendor claim cannot complete the whole
 order; test evidence cannot fill missing live deliveries, and unknown dispatch
-time stays unknown. Physical delivery does not collect COD or award points.
-Explicit store confirmation and customer partial-progress screens remain work.
+time stays unknown. Physical delivery does not itself collect COD or grant an
+unsettled purchase reward.
 [Current packing guide](/en/features/packing).
 
 **Review reminder checkpoint:** requests now retain a due date and acknowledgement
@@ -47,8 +50,27 @@ acceptance claim. [Review guide](/en/features/reviews).
 **COD dispatch checkpoint:** internal wallet, gift-card and points commitments
 are now atomic with stock preparation; exact amount/expiry checks block stale
 credit, and cash remains unpaid until collection. Replacement payment attempts
-are blocked after retained handoff. Later-paid COD rewards and net-refund earning
-remain work. [Payment rules](/en/features/payments).
+are blocked after retained handoff. Durable reward reconciliation now handles
+later-paid COD, cumulative money-and-tax refunds, zero-point qualifying spend,
+first-order bonuses, floor limits and protected attached authorizations. Capped
+clawback blocks new redemptions pending operator review. New checkout snapshots
+share a versioned actual-paid item basis; older snapshots retain declared
+compatibility rules. Retaining an expired authorization never reauthorizes
+capture. [Payment rules](/en/features/payments) · [Reward reconciliation](/en/features/loyalty) · [Refunds](/en/features/refunds).
+
+**Consent checkpoint:** customers can independently grant or withdraw offers and
+cart-reminder permission for each store and channel in English or Arabic.
+Defaults are off; consent changes retain their notice version. These controls
+do not send a campaign or complete abandoned-cart recovery.
+[Customer choices](/en/features/marketing-consent).
+
+**Separate platform and discovery checkpoint:** package comparison and merchant
+applications are joined by reviewed store/offer publication, workspace-specific
+vendor opt-in and public store/product/seller discovery. Existing customers can
+sign in and view only their own cross-store purchase summary. Each checkout and
+financial balance remains at its tenant. Global-first customer signup, automatic
+cross-domain SSO and shared cross-tenant checkout are not supplied by this work.
+[Discovery controls](/en/features/global-discovery) · [Private purchases](/en/features/cross-store-purchases).
 
 Central customer identity belongs in the foundation. The separate global CartJoin website can arrive later without requiring customers to register again at each shop.
 
@@ -105,11 +127,27 @@ Manual shipping can support an explicitly described assisted pilot. A claim of l
 
 **P1 · Growth, integrations and analytics owners · depends on stable pilots.** Add consent-aware recovery, measured funnels, reliable webhook delivery, usage reporting and operational dashboards. Prioritize improvements using pilot evidence rather than feature count.
 
+**Current boundary:** tenant/purpose/channel consent is implemented. Remaining
+feature work includes queued, deduplicated recovery that rechecks current consent,
+account/cart/purchase eligibility and contact validity at send time; bounded
+retry/suppression/attention records; and honestly measured outcomes. Retained-fact
+funnels and purchase cohorts must separate signup origin, store relationships and
+later purchases, exclude test activity and avoid inventing historical events.
+Existing reports, notification and webhook infrastructure still need the
+relevant end-to-end connector/transport recovery and operational acceptance.
+Review-reminder transport recovery and operator retry remain explicit work.
+
 **Exit:** marketing consent is scoped by tenant and purpose, retries are bounded and observable, secrets remain private, and attribution separates first signup from later transactions. Tenant reporting never exposes another tenant's customer activity.
 
 ## Phase 6 — Separate CartJoin acquisition website
 
 **P2 · Platform frontend and commercial owners · depends on proven onboarding/billing contracts.** Create a new global interface for CartJoin services, packages, subscriptions and tenant applications. Reuse central identity and provisioning contracts; do not repurpose `CartJoin-Storefront-Frontend`.
+
+**Current boundary:** the separate platform already provides the development
+package/application journey and existing-customer sign-in. First-time customer
+registration through the global platform still needs its verified identity,
+recovery, abuse-prevention and attribution acceptance flow; it must not require a
+fictional origin tenant. Shared credentials do not imply automatic browser SSO.
 
 **Exit:** public package information matches versioned billing offers; applications recover from partial provisioning; merchant administration remains distinct from customer login. Existing tenant shops continue independently.
 
@@ -117,7 +155,23 @@ Manual shipping can support an explicitly described assisted pilot. A claim of l
 
 **P2 · Discovery and trust owners · depends on Phase 6 and publication controls.** Expose eligible public stores, vendors and offers with explicit approval. Send shoppers to the chosen tenant's checkout. A customer-only consolidated purchase overview can follow after privacy and authorization review.
 
+**Current boundary:** explicit store/vendor consent, independent store/offer
+review and the private customer purchase overview are implemented in development.
+The remaining gate is monitored acceptance of domain ownership, changed-content
+re-review, opt-out/suspension removal, stock/price freshness and tenant checkout
+handoff under real operating conditions. Publication controls do not establish a
+live search-index freshness guarantee or close the commercial pilot.
+
 **Exit:** opt-out, suspension, price changes and inventory changes propagate through a measured removal/update process. Recheck availability and price at the tenant checkout. Private customer records never enter the public index.
+
+## Remaining release acceptance
+
+Commercial release also requires approved prices, billing/tax responsibilities,
+grace/reminder/retry terms, named operational owners and provider-specific
+acceptance. These are decisions and release gates, not inferred production
+capabilities. The authorized development finish remains tested code and docs;
+live deployment is separate.
+
 
 ## Expansion requires a separate decision
 

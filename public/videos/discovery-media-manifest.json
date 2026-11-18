@@ -22,6 +22,28 @@
         "http://localhost:4304/en/discover",
         "http://localhost:4300/product/iphone-15-pro-256gb?lang=en"
       ],
+      "frame_provenance": [
+        {
+          "path": "public/screenshots/platform-discovery-en-products.png",
+          "artifact_updated_at": "2026-11-18T20:14:12.994579+00:00",
+          "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
+        },
+        {
+          "path": "public/screenshots/platform-discovery-en-stores.png",
+          "artifact_updated_at": "2026-11-18T21:02:49.442486+00:00",
+          "mechanism": "Root CUA final acceptance capture of independently approved store directory, after local origin guard fix; actual JPEG screenshot converted losslessly into a PNG container."
+        },
+        {
+          "path": "public/screenshots/platform-discovery-en-sellers.png",
+          "artifact_updated_at": "2026-11-18T20:14:13.683036+00:00",
+          "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
+        },
+        {
+          "path": "public/screenshots/platform-discovery-en-handoff.png",
+          "artifact_updated_at": "2026-11-18T20:27:18.671905+00:00",
+          "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
+        }
+      ],
       "source_dimensions": [
         1265,
         712
@@ -33,7 +55,7 @@
         712
       ],
       "duration_seconds": 20.0,
-      "bytes": 188398,
+      "bytes": 246399,
       "captions_text": [
         "Only selected, approved and currently eligible offers appear.",
         "Choose a participating store. Check its current price and purchase terms there.",
@@ -58,6 +80,28 @@
         "http://localhost:4304/ar/discover",
         "http://localhost:4300/product/iphone-15-pro-256gb?lang=ar"
       ],
+      "frame_provenance": [
+        {
+          "path": "public/screenshots/platform-discovery-ar-products.png",
+          "artifact_updated_at": "2026-11-18T20:13:59.641226+00:00",
+          "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
+        },
+        {
+          "path": "public/screenshots/platform-discovery-ar-stores.png",
+          "artifact_updated_at": "2026-11-18T21:02:49.474448+00:00",
+          "mechanism": "Root CUA final acceptance capture of independently approved store directory, after local origin guard fix; actual JPEG screenshot converted losslessly into a PNG container."
+        },
+        {
+          "path": "public/screenshots/platform-discovery-ar-sellers.png",
+          "artifact_updated_at": "2026-11-18T20:14:00.286731+00:00",
+          "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
+        },
+        {
+          "path": "public/screenshots/platform-discovery-ar-handoff.png",
+          "artifact_updated_at": "2026-11-18T20:27:30.735970+00:00",
+          "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
+        }
+      ],
       "source_dimensions": [
         1265,
         712
@@ -69,7 +113,7 @@
         712
       ],
       "duration_seconds": 20.0,
-      "bytes": 169775,
+      "bytes": 220477,
       "captions_text": [
         "لا تظهر إلا العروض المختارة والمعتمدة والمؤهلة حاليًا.",
         "اختر المتجر وراجع السعر الحالي وشروط الشراء داخله.",
