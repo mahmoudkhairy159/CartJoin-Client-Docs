@@ -3,7 +3,7 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "d4845142a34dd3b92d8246cae3cde31e963ac941",
+      "commit": "f4d4342a4617b5d27f6b0c511ea8f16f186b950e",
       "branch": "master",
       "dirty": false
     },
@@ -6365,6 +6365,16 @@
           }
         },
         {
+          "file": "Modules/Shipping/App/Enums/FulfillmentProjectionState.php",
+          "cases": {
+            "PENDING": "1",
+            "BLOCKED": "2",
+            "COMPLETE": "3",
+            "RETRY": "4",
+            "ATTENTION": "5"
+          }
+        },
+        {
           "file": "Modules/Shipping/App/Enums/PackingManifestAction.php",
           "cases": {
             "SAVED": "1",
@@ -6652,6 +6662,16 @@
             "VENDOR": "3",
             "SYSTEM": "4",
             "UNKNOWN": "5"
+          }
+        },
+        {
+          "file": "Modules/Shipping/App/Enums/FulfillmentProjectionState.php",
+          "cases": {
+            "PENDING": "1",
+            "BLOCKED": "2",
+            "COMPLETE": "3",
+            "RETRY": "4",
+            "ATTENTION": "5"
           }
         },
         {
