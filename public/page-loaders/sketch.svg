@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 64 64" role="img" aria-label="Loading page"><style>
+.basket{stroke-dasharray:100;animation:draw 2s ease-in-out infinite}.wheel{transform-box:fill-box;transform-origin:center;animation:pop 2s ease-out infinite}
+@keyframes draw{0%{stroke-dashoffset:100;opacity:0}12%{opacity:1}62%,88%{stroke-dashoffset:0;opacity:1}100%{opacity:0}}
+@keyframes pop{0%,46%{transform:scale(0)}60%{transform:scale(1.25)}70%,88%{transform:scale(1);opacity:1}100%{opacity:0}}@media(prefers-reduced-motion:reduce){*{animation:none!important}.parcel{transform:translateY(12px)}}</style>
+  <rect width="64" height="64" rx="14" fill="#0b0b0c"/>
+  <path class="basket" pathLength="100" d="M13 17h7l5 23h22l5-17H22" fill="none" stroke="#d8b978"
+    stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="basket" pathLength="100" d="M29 31h6m2 0h8" fill="none" stroke="#f2efe9"
+    stroke-width="3.5" stroke-linecap="round"/>
+  <circle class="wheel" cx="29" cy="48" r="2.5" fill="#d8b978"/>
+  <circle class="wheel" cx="44" cy="48" r="2.5" fill="#d8b978"/>
+</svg>

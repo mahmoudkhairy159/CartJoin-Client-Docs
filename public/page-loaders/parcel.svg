@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 64 64" role="img" aria-label="Loading page"><style>
+.parcel{animation:drop 1.6s ease-in infinite}.body{animation:dip 1.6s ease-out infinite}
+@keyframes drop{0%,12%{transform:translateY(-12px) rotate(-8deg);opacity:0}25%{opacity:1}52%,75%{transform:translateY(12px);opacity:1}90%,100%{transform:translateY(12px);opacity:0}}
+@keyframes dip{0%,50%,80%,100%{transform:translateY(0)}59%{transform:translateY(2px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}.parcel{transform:translateY(12px)}}</style>
+  <rect width="64" height="64" rx="14" fill="#0b0b0c"/>
+  <g class="body"><path d="M13 17h7l5 23h22l5-17H22" fill="none" stroke="#d8b978"
+    stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="29" cy="48" r="2.5" fill="#d8b978"/>
+  <circle cx="44" cy="48" r="2.5" fill="#d8b978"/>
+<g class="parcel" style="transform-origin:34px 18px"><rect x="29" y="15" width="11" height="9" rx="1.5" fill="#f2efe9"/><path d="M34 15v4" stroke="#927443" stroke-width="2"/></g></g></svg>
