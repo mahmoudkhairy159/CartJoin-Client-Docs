@@ -978,5 +978,13 @@
   "vendor-operations-response-en.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "tenant-publication-readiness-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-publication-readiness-en.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

@@ -2358,5 +2358,29 @@
     "captured": "2026-11-18",
     "validated": true,
     "note": "Explicitly synthetic policy/case. No real allegation, order, payment or vendor approval changed. Screenshot walkthrough, not a live recording."
+  },
+  {
+    "role": "tenant",
+    "feature": "marketplace-operations",
+    "url": "http://localhost:4302/products/27",
+    "sourceUrl": "http://localhost:4302/products/27",
+    "file": "tenant-publication-readiness-ar.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Explicitly synthetic policy/case. No real allegation, order, payment or vendor approval changed. Screenshot walkthrough, not a live recording."
+  },
+  {
+    "role": "tenant",
+    "feature": "marketplace-operations",
+    "url": "http://localhost:4302/products/27",
+    "sourceUrl": "http://localhost:4302/products/27",
+    "file": "tenant-publication-readiness-en.jpg",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Explicitly synthetic policy/case. No real allegation, order, payment or vendor approval changed. Screenshot walkthrough, not a live recording."
   }
 ]

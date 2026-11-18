@@ -6154,6 +6154,31 @@
           58
         ],
         "guide": "features/marketplace-operations"
+      },
+      {
+        "image": "tenant-publication-readiness-en.jpg",
+        "imageAr": "tenant-publication-readiness-ar.jpg",
+        "title": {
+          "en": "Resolve new-offer publication requirements",
+          "ar": "استكمل متطلبات نشر العرض الجديد"
+        },
+        "body": {
+          "en": "A new vendor activation needs the current policy acceptance and each required verified document. This synthetic draft remains unpublished because a valid trade license is missing. Draft edits, stock corrections and unpublishing remain available.",
+          "ar": "يتطلب تفعيل عرض بائع جديد قبول السياسة الحالية والمستندات المعتمدة المطلوبة. بقيت هذه المسودة التجريبية غير منشورة لغياب سجل تجاري ساري. يظل تعديل المسودات وتصحيح المخزون وإلغاء النشر متاحًا."
+        },
+        "focus": [
+          57,
+          89,
+          40,
+          9
+        ],
+        "focusAr": [
+          1,
+          91,
+          39,
+          7
+        ],
+        "guide": "features/marketplace-operations"
       }
     ],
     "provenance": {

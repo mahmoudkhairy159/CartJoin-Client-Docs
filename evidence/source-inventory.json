@@ -3,7 +3,7 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "7b527247820e7275476d6a3a91d23311e40a8847",
+      "commit": "d081101b9f82f7ff087b3e6147ea568351ba1ba1",
       "branch": "master",
       "dirty": true
     },

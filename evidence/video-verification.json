@@ -765,8 +765,8 @@
   },
   {
     "tour": "tenant-marketplace-operations-en",
-    "duration": 30.0,
-    "expected": 30,
+    "duration": 40.0,
+    "expected": 40,
     "codec": "h264",
     "width": 1280,
     "height": 720,
@@ -775,7 +775,7 @@
     "kind": "localized-screenshot-walkthrough",
     "browser": {
       "ended": true,
-      "currentTime": 30,
+      "currentTime": 40,
       "error": false,
       "defaultCaptions": "en",
       "activeCaptionTrackLoaded": true
@@ -783,8 +783,8 @@
   },
   {
     "tour": "tenant-marketplace-operations-ar",
-    "duration": 30.0,
-    "expected": 30,
+    "duration": 40.0,
+    "expected": 40,
     "codec": "h264",
     "width": 1280,
     "height": 720,
@@ -793,7 +793,7 @@
     "kind": "localized-screenshot-walkthrough",
     "browser": {
       "ended": true,
-      "currentTime": 30,
+      "currentTime": 40,
       "error": false,
       "defaultCaptions": "ar",
       "activeCaptionTrackLoaded": true

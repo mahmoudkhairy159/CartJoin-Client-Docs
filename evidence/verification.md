@@ -1,5 +1,29 @@
 # Verification — 17 November 2026
 
+## 18 November 2026 — New vendor-offer publication readiness
+
+Backend d081101b gates new external activation/republication through the
+Product-owned requirements port. Current policy/hash acceptance and approved,
+nonblank, unexpired required evidence are checked without changing existing
+active corrections, drafts, unpublish or order servicing. Product+MarketplaceOps
+regression129 tests434 assertions passes; final localization/blank-evidence
+checks12 tests63 assertions pass. Locked evidence queries execute against
+development MySQL read-only. No migration or real provider activation is needed.
+
+Local tenant browser attempted to publish synthetic draft27 in English and
+Arabic. Both attempts returned a useful translated document requirement; reload
+confirmed Draft and no publication timestamp. Two screenshots are added. The
+tenant operations tour now has four steps and its localized videos are40s.
+Both revised MP4s played to completion with the correct caption defaults and no
+media errors; screenshot switching uses the matching language. Docs232 pages,
+28 diagrams,78 tours,194 route entries and production build pass. Six localized
+operations videos still exist, with tenant/vendor40s and admin30s.
+
+Dedicated rejection receipts, real publisher/import permission enforcement and
+material vendor-edit review remain active work; this gate is not claimed as the
+entire moderation workflow. Carrier integration, metrics, consent and discovery
+also remain open. No real offer was published and no live deployment occurred.
+
 ## 18 November 2026 — Marketplace service operations
 
 Published application checkpoints: backend7b527247, adminc90cb93, tenant3c983a6,
