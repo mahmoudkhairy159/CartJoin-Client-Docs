@@ -3,7 +3,7 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "a9236b9576ace5e021bef242c2e9149e313a71f2",
+      "commit": "16c53c17d2626c9ad848300036825b60ef3bdeea",
       "branch": "master",
       "dirty": true
     },
@@ -23,7 +23,7 @@
       "dirty": true
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "638298ee22970110e06d436fd0e550b8a5e9877a",
+      "commit": "6f4c756cd15cb0e5b8910531e3ded40d8a9c36a6",
       "branch": "master",
       "dirty": true
     },
@@ -5179,6 +5179,14 @@
           "module": "Payment",
           "file": "Modules/Payment/routes/user-api.php",
           "method": "POST",
+          "uri": "payments/{payment}/simulate",
+          "controller": "PaymentController",
+          "action": "simulate"
+        },
+        {
+          "module": "Payment",
+          "file": "Modules/Payment/routes/user-api.php",
+          "method": "POST",
           "uri": "payments/{payment}/proof",
           "controller": "PaymentController",
           "action": "proof"
@@ -5198,6 +5206,13 @@
           "fields": [
             "payment_gateway",
             "payment_gateway.in"
+          ]
+        },
+        {
+          "file": "Modules/Payment/App/Http/Requests/Api/Payment/SimulatePaymentRequest.php",
+          "fields": [
+            "event_id",
+            "outcome"
           ]
         },
         {

@@ -13,7 +13,7 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 - 46 capability guides per language covering steps, rules, data flow and troubleshooting.
 - 230 documentation pages across English and Arabic.
 - Bilingual reviewed dashboard captures, including the new billing and merchant-application screens with interactive explanations and enlargement.
-- 74 short screenshot-based video files with English/Arabic captions and transcripts.
+- 76 short screenshot-based video files with English/Arabic captions and transcripts.
 - 26 diagram blocks explaining business flows and relationships.
 - Searchable capabilities, role-based navigation, language switching and light/dark themes.
 
@@ -131,3 +131,5 @@ Adapted from an existing Fumadocs documentation template for CartJoin. UI refine
 دليل استخدام كارت جوين بالعربية والإنجليزية لإدارة المنصة وإدارة المتجر والبائع والعميل، مع صور تفاعلية وجولات فيديو مترجمة وقواعد العمل وتدفق البيانات. ابدأ من `/docs/ar/start` بعد تشغيل التطبيق.
 
 The development billing and application guides include language-matched screenshots and 24/32-second walkthroughs. Test prices are examples; no live payment or deployment is included. Regenerate source evidence with `python scripts/source-inventory.py --inventory-only` to preserve authored business guides.
+
+The customer payment guide adds language-matched local test-payment screens and two 32-second walkthroughs for pending, paid and cancelled invoices. A definitive online decline releases holds and requires a new checkout; credit notes show real references and amounts, with refund status remaining authoritative for returned funds.

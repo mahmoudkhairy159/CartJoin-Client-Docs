@@ -46,3 +46,9 @@ A route proves navigation, not permission to perform every action. Related-recor
 {/* /SCREEN_MAP */}
 
 </details>
+
+## Test carrier and uncertain bookings
+
+The development test carrier creates private PDFs marked **TEST / NOT VALID FOR SHIPPING**. It makes no real booking or charge. Its signed callbacks retain durable replay evidence; old progress does not move a delivered shipment backwards. Manual providers reject external callbacks and use authorized staff progress updates.
+
+If an adapter times out, inspect the carrier booking before repeating a purchase. The system asks for review rather than claiming a successful manual fallback. A provider with retained tracking evidence is deactivated instead of deleting that history. Live carrier activation requires separate provider access and verification.

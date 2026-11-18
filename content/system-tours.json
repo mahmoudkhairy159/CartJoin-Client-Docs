@@ -5709,5 +5709,124 @@
         ]
       }
     ]
+  },
+  "feature-test-payments": {
+    "title": {
+      "en": "Understand payment success and decline",
+      "ar": "افهم نجاح الدفع ورفضه"
+    },
+    "intro": {
+      "en": "A local payment simulation, followed by its actual invoice result. Screenshots match your guide language; the short clip is a captioned screenshot walkthrough.",
+      "ar": "محاكاة دفع محلية تتبعها النتيجة الفعلية على الفاتورة. تطابق الصور لغة دليلك، والفيديو القصير شرح بالصور مع ترجمة نصية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Local preview · 18 November 2026 · Synthetic test invoices · No real charge or deployment",
+      "ar": "عرض محلي · ١٨ نوفمبر ٢٠٢٦ · فواتير اختبار اصطناعية · دون خصم حقيقي أو نشر حي"
+    },
+    "steps": [
+      {
+        "image": "customer-test-payment-en.png",
+        "imageAr": "customer-test-payment-ar.png",
+        "focus": [
+          28,
+          54,
+          55,
+          28
+        ],
+        "focusAr": [
+          16,
+          54,
+          55,
+          28
+        ],
+        "title": {
+          "en": "Recognize a test attempt",
+          "ar": "تعرّف على المحاولة التجريبية"
+        },
+        "body": {
+          "en": "Account → Payments shows the invoice, amount and current status. The test notice explicitly says no card or money is involved. Use only the outcome controls on the matching test record.",
+          "ar": "تعرض صفحة المدفوعات الفاتورة والمبلغ والحالة. يوضح التنبيه أن الاختبار لا يستخدم بطاقة أو أموالاً. استخدم أدوات النتيجة على سجل الاختبار المطابق فقط."
+        },
+        "guide": "features/payments"
+      },
+      {
+        "image": "customer-test-confirm-en.png",
+        "imageAr": "customer-test-confirm-ar.png",
+        "focus": [
+          23,
+          79,
+          53,
+          20
+        ],
+        "focusAr": [
+          23,
+          76,
+          53,
+          22
+        ],
+        "title": {
+          "en": "Resume the same invoice",
+          "ar": "استكمل نفس الفاتورة"
+        },
+        "body": {
+          "en": "A refreshed confirmation page reloads its own latest payment. Check the invoice reference and amount before continuing; another store cannot read or simulate this payment.",
+          "ar": "تعيد صفحة التأكيد بعد التحديث تحميل آخر دفعة تخص الفاتورة نفسها. راجع المرجع والمبلغ قبل المتابعة؛ لا يستطيع متجر آخر قراءة هذه الدفعة أو محاكاتها."
+        },
+        "guide": "features/payments"
+      },
+      {
+        "image": "customer-test-paid-en.png",
+        "imageAr": "customer-test-paid-ar.png",
+        "focus": [
+          39,
+          29,
+          22,
+          9
+        ],
+        "focusAr": [
+          38,
+          29,
+          24,
+          9
+        ],
+        "title": {
+          "en": "Success updates the purchase",
+          "ar": "يحدّث النجاح حالة الشراء"
+        },
+        "body": {
+          "en": "The simulated success changed this invoice to Paid and updated its orders through the existing payment flow. This is local test evidence, not a bank receipt or real collection.",
+          "ar": "حوّل النجاح التجريبي هذه الفاتورة إلى مدفوعة وحدّث طلباتها عبر مسار الدفع الموجود. هذا سجل اختبار محلي وليس إيصالاً بنكياً أو تحصيلاً حقيقياً."
+        },
+        "guide": "features/payments"
+      },
+      {
+        "image": "customer-test-declined-en.png",
+        "imageAr": "customer-test-declined-ar.png",
+        "focus": [
+          20,
+          29,
+          60,
+          50
+        ],
+        "focusAr": [
+          20,
+          29,
+          60,
+          50
+        ],
+        "title": {
+          "en": "A closed invoice must not be paid",
+          "ar": "لا تدفع الفاتورة المغلقة"
+        },
+        "body": {
+          "en": "This separate decline example is cancelled, with stock and credit holds released. The original total is historical. Continue shopping to create a new checkout using current prices and availability.",
+          "ar": "أُلغي مثال الرفض المنفصل وتم تحرير حجوزات المخزون والرصيد. الإجمالي الأصلي سجل تاريخي. تابع التسوق لإنشاء طلب جديد بالأسعار والتوفر الحاليين."
+        },
+        "guide": "features/payments"
+      }
+    ]
   }
 }

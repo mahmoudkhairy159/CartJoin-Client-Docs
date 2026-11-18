@@ -21,6 +21,7 @@ description: "Extracted backend routes, request fields and enum values."
 | Payment | `user-api.php` | GET | `payments` | `index` |
 | Payment | `user-api.php` | GET | `payments/{payment}` | `show` |
 | Payment | `user-api.php` | POST | `payments/{payment}/proof` | `proof` |
+| Payment | `user-api.php` | POST | `payments/{payment}/simulate` | `simulate` |
 | Payment | `webhook.php` | POST | `/{provider}` | `store` |
 
 ## حقول النماذج
@@ -39,3 +40,5 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Payment/App/Enums/PaymentStatus.php`: `PENDING = 'pending'`, `AWAITING_CONFIRMATION = 'awaiting_confirmation'`, `PENDING_APPROVAL = 'pending_approval'`, `PAID = 'paid'`, `FAILED = 'failed'`, `REFUNDED = 'refunded'`, `PARTIAL_REFUND = 'partial_refund'`
 
 [العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/payments)
+
+`Modules/Payment/App/Http/Requests/Api/Payment/SimulatePaymentRequest.php`: `event_id` (UUID), `outcome` (`succeeded` / `failed`). Local/testing adapter only; authenticated buyer and current store, persisted test reference, no request-supplied money.

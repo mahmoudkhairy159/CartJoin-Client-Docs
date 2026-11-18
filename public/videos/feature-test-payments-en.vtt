@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Recognize a test attempt
+Account → Payments shows the invoice, amount and current status. The
+test notice explicitly says no card or money is involved. Use only the
+outcome controls on the matching test record.
+
+2
+00:00:08.000 --> 00:00:16.000
+Resume the same invoice
+A refreshed confirmation page reloads its own latest payment. Check the
+invoice reference and amount before continuing; another store cannot
+read or simulate this payment.
+
+3
+00:00:16.000 --> 00:00:24.000
+Success updates the purchase
+The simulated success changed this invoice to Paid and updated its
+orders through the existing payment flow. This is local test evidence,
+not a bank receipt or real collection.
+
+4
+00:00:24.000 --> 00:00:32.000
+A closed invoice must not be paid
+This separate decline example is cancelled, with stock and credit holds
+released. The original total is historical. Continue shopping to create
+a new checkout using current prices and availability.

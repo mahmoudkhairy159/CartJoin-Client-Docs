@@ -48,3 +48,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 {/* /SCREEN_MAP */}
 
 </details>
+
+## Development SMS delivery
+
+The local SMS test adapter stores an encrypted message for ten minutes and does not send a real SMS. An authorized developer can inspect the local outbox; passwords, OTPs and message contents must not appear in screenshots or client documents. A local accepted delivery is not evidence that a mobile network delivered anything. Production test access is disabled; a missing real notification transport must not report a successful send.

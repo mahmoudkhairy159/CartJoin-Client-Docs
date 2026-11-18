@@ -9,11 +9,12 @@ description: "Source snapshot and extracted contracts."
 
 | Repository | Commit | Local changes present |
 |---|---|---|
-| `CartJoin-Backend` | `f0fe09bf12cd` | Yes |
-| `CartJoin-Admin-Dashboard-Frontend` | `a747603affd7` | Yes |
-| `CartJoin-Tenant-Dashboard-Frontend` | `cb0f52eaf09d` | Yes |
-| `CartJoin-Vendor-Dashboard-Frontend` | `360fd562669b` | Yes |
-| `CartJoin-Storefront-Frontend` | `598d8cd4f144` | No |
+| `CartJoin-Backend` | `16c53c17d262` | Yes |
+| `CartJoin-Admin-Dashboard-Frontend` | `791776cf6b11` | Yes |
+| `CartJoin-Tenant-Dashboard-Frontend` | `8df49d69da30` | Yes |
+| `CartJoin-Vendor-Dashboard-Frontend` | `fb10c6d3802b` | Yes |
+| `CartJoin-Storefront-Frontend` | `6f4c756cd15c` | Yes |
+| `CartJoin-Platform-Frontend` | `0ac04ba07743` | No |
 
 ## دليل كل خاصية
 
@@ -31,11 +32,11 @@ description: "Source snapshot and extracted contracts."
 - [inventory](/ar/evidence/inventory): `Modules/Inventory` · 1 explicit route declarations
 - [search](/ar/evidence/search): `Modules/Search`, `Modules/RecommendationEngine` · 3 explicit route declarations
 - [wishlist](/ar/evidence/wishlist): `Modules/Wishlist` · 0 explicit route declarations
-- [cart](/ar/evidence/cart): `Modules/Cart` · 12 explicit route declarations
+- [cart](/ar/evidence/cart): `Modules/Cart` · 18 explicit route declarations
 - [checkout](/ar/evidence/checkout): `Modules/Invoice` · 21 explicit route declarations
 - [orders](/ar/evidence/orders): `Modules/Order` · 13 explicit route declarations
 - [invoices](/ar/evidence/invoices): `Modules/Invoice` · 21 explicit route declarations
-- [payments](/ar/evidence/payments): `Modules/Payment` · 6 explicit route declarations
+- [payments](/ar/evidence/payments): `Modules/Payment` · 7 explicit route declarations
 - [refunds](/ar/evidence/refunds): `Modules/Refund` · 12 explicit route declarations
 - [returns](/ar/evidence/returns): `Modules/OrderReturn` · 20 explicit route declarations
 - [shipping](/ar/evidence/shipping): `Modules/Shipping` · 12 explicit route declarations
@@ -62,3 +63,7 @@ description: "Source snapshot and extracted contracts."
 - [webhooks](/ar/evidence/webhooks): `Modules/Webhook` · 0 explicit route declarations
 - [settings](/ar/evidence/settings): `Modules/Settings`, `Modules/Core`, `Modules/Area` · 0 explicit route declarations
 
+
+## تحقق التطوير — ١٨ نوفمبر ٢٠٢٦
+
+نجح ٢٥١ اختبار انحدار للدفع والفاتورة والاسترداد مع ٩٨٧ تحققاً، و١٧ اختباراً مركزاً لنتائج الدفع وعرض إشعارات الدائن مع ٨٣ تحققاً. جرى اختبار النجاح والرفض محلياً في المتصفح باللغتين باستخدام فواتير اصطناعية ودون خصم حقيقي. موائما الرسائل والشحن الموقّع للتطوير فقط. لا تعني النتائج اعتماد مزود حي أو نشر النظام.

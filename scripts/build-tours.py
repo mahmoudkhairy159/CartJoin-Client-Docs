@@ -1,4 +1,4 @@
-"""Create silent, captioned teaching clips from real screenshots; no simulated transactions."""
+"""Create silent, captioned teaching clips from captured screenshots; not live screen recordings."""
 from pathlib import Path
 import json, shutil, subprocess, textwrap, sys
 from PIL import Image

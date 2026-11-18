@@ -770,5 +770,37 @@
   "tenant-subscription-quote-en.jpg": {
     "width": 1264,
     "height": 1808
+  },
+  "customer-test-payment-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-payment-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-confirm-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-confirm-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-paid-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-paid-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-declined-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-test-declined-ar.png": {
+    "width": 1265,
+    "height": 712
   }
 }

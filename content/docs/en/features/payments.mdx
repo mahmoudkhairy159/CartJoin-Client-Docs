@@ -54,3 +54,17 @@ A route proves navigation, not permission to perform every action. Related-recor
 {/* /SCREEN_MAP */}
 
 </details>
+
+## If an online payment is declined
+
+A definitive online decline cancels the unpaid invoice and its orders, releasing reserved stock and credit. Do not pay that closed invoice. Use **Continue shopping** and check out again so the system verifies current prices, stock, promotions and credit. Historical payment and cancellation evidence remains visible.
+
+A retry is offered only when the server confirms that the invoice and an order remain open, such as an explicitly rejected manual proof. A bank-transfer proof upload is not a capture. A credit note is an issued accounting document; inspect the refund status to confirm whether funds were returned.
+
+## Development preview: no real charge
+
+The following English/Arabic walkthrough uses local test invoices. **Simulate success** and **Simulate decline** appear only for eligible test attempts when a development adapter is enabled. They never ask for card details, contact Paymob or collect money. These controls are unavailable in production. Platform subscription simulation is a separate feature, with separate invoices.
+
+<SystemTour tour="feature-test-payments" compact anchor="test-payment-screen-guide" />
+
+Success records a test payment and updates the invoice and child-order payment projections. Decline keeps its failed evidence and closes the unpaid purchase. On a connection problem, check Payments before starting a new attempt. The same outcome retry is replay-safe; a finished attempt cannot change outcome.

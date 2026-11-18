@@ -1753,5 +1753,93 @@
     "api": "local-preview-sqlite",
     "captured": "2026-11-18",
     "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/account/payments",
+    "sourceUrl": "http://localhost:4300/account/payments",
+    "file": "customer-test-payment-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/account/payments",
+    "sourceUrl": "http://localhost:4300/account/payments",
+    "file": "customer-test-payment-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/checkout/confirm/18",
+    "sourceUrl": "http://localhost:4300/checkout/confirm/18",
+    "file": "customer-test-confirm-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/checkout/confirm/18",
+    "sourceUrl": "http://localhost:4300/checkout/confirm/18",
+    "file": "customer-test-confirm-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/checkout/confirm/18",
+    "sourceUrl": "http://localhost:4300/checkout/confirm/18",
+    "file": "customer-test-paid-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/checkout/confirm/18",
+    "sourceUrl": "http://localhost:4300/checkout/confirm/18",
+    "file": "customer-test-paid-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/checkout/confirm/19",
+    "sourceUrl": "http://localhost:4300/checkout/confirm/19",
+    "file": "customer-test-declined-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "customer",
+    "feature": "payments",
+    "url": "http://localhost:4300/checkout/confirm/19",
+    "sourceUrl": "http://localhost:4300/checkout/confirm/19",
+    "file": "customer-test-declined-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
   }
 ]

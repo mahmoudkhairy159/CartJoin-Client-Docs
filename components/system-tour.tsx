@@ -16,7 +16,7 @@ type Tour = { title: Copy; intro: Copy; video: boolean; localizedVideo?: boolean
 const tours: Record<string, Tour> = tourData;
 const sizes: Record<string, { width: number; height: number }> = screenshotSizes;
 
-export function SystemTour({ tour, compact = false, startAt = 0 }: { tour: string; compact?: boolean; startAt?: number }) {
+export function SystemTour({ tour, compact = false, startAt = 0, anchor = 'screen-guide' }: { tour: string; compact?: boolean; startAt?: number; anchor?: string }) {
   const data = tours[tour];
   const featureTour = tour.startsWith('feature-');
   const pathname = usePathname();
@@ -48,7 +48,7 @@ export function SystemTour({ tour, compact = false, startAt = 0 }: { tour: strin
   }
 
   return (
-    <section id={featureTour ? 'screen-guide' : undefined} className={`system-tour not-prose${compact ? ' is-compact' : ''}${featureTour ? ' is-feature' : ''}`} aria-label={data.title[lang]}>
+    <section id={featureTour ? anchor : undefined} className={`system-tour not-prose${compact ? ' is-compact' : ''}${featureTour ? ' is-feature' : ''}`} aria-label={data.title[lang]}>
       <header className="tour-heading"><span className="tour-label">{arabic ? 'تعلم من شاشة فعلية' : 'Learn from the real screen'}</span><h3>{data.title[lang]}</h3><p>{data.intro[lang]}</p></header>
       <Dialog.Root open={expanded} onOpenChange={setExpanded}>
         <div className="tour-layout">
