@@ -48,6 +48,9 @@ build.log
 !/evidence/customer-refresh.json
 !/evidence/operator-tour-plan.json
 !/evidence/verification.md
+!/evidence/product-review-verification.md
+!/evidence/product-review-guide-en.jpg
+!/evidence/product-review-guide-ar.jpg
 !/evidence/template-homepage.jpg
 
 !/evidence/guest-checkout.json
