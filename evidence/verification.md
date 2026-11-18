@@ -172,3 +172,12 @@ Eight local bilingual screenshots use synthetic expiry metadata and upload forms
 The English and Arabic checkout guides show the shipping address, quoted delivery price, hosted methods, express review and recovery from a changed quote. Their 60-second videos use the local storefront with example API responses and simulated device eligibility. Chrome loaded their captions and played the MP4 files. The hosted provider transaction, a physical Apple Pay device and live SMS delivery still require merchant acceptance. See [media verification](video-verification.json) for the player checks.
 
 The documentation checker verified 234 pages and 85 interactive tours. The staff dashboard, storefront, promotions and merchant application guides include refreshed captures. The backend’s migration and test results are recorded in the CartJoin-Backend competitive enhancement plan.
+
+
+## 19 November 2026 — Cart recovery walkthroughs
+
+The default-off recovery backend and tenant screen are published. Consumer/privacy/stock tests passed 23/81 assertions, the Inventory read contract passed 6/25, and the final tenant suite passed 10 tests, including initial Arabic and live language switching for retained timestamps. The isolated tenant production build passed. Source hashes matched the reviewed recovery leaf, including the notice contrast fix.
+
+Eight actual CUA frames show synthetic service-created accepted-test, missing-consent and temporary-failure cases. Both English and Arabic retry dialogs were cancelled; a refresh retained every attempt at 1/3. The named SQLite API was isolated from the shared MySQL server. No real contact, credential or message provider is used or shown.
+
+The committed documentation candidate c2e3c00 passed a production build and checks covering 248 pages, 48 diagrams, 91 interactive tours and 203 frontend route entries. Both localized 24-second H.264 guided-screenshot clips played to 24/24 in the browser with their matching caption track showing, no media errors and no broken images. Contextual steps changed correctly (English 3/4; Arabic 4/4); Arabic uses RTL. These are silent screenshot walkthroughs, not continuous recordings or delivery/conversion evidence.

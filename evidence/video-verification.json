@@ -1209,5 +1209,49 @@
       "captionTrackSelected": true
     },
     "verified": "2026-11-18"
+  },
+  {
+    "tour": "tenant-cart-recovery-en",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1266,
+    "height": 712,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "en",
+      "captionTrackSelected": true,
+      "brokenImages": 0,
+      "interactiveStep": "3/4"
+    },
+    "verified": "2026-11-19",
+    "limits": "Actual controlled local test examples; no live delivery/recovered revenue. Retry demonstration cancelled without mutation."
+  },
+  {
+    "tour": "tenant-cart-recovery-ar",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1266,
+    "height": 712,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "ar",
+      "captionTrackSelected": true,
+      "brokenImages": 0,
+      "interactiveStep": "4/4"
+    },
+    "verified": "2026-11-19",
+    "limits": "Actual controlled local test examples; no live delivery/recovered revenue. Retry demonstration cancelled without mutation."
   }
 ]
