@@ -1310,5 +1310,53 @@
   "admin-carrier-evidence-ar.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "tenant-order-reward-checks-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-order-reward-checks-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/admin-progress-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/admin-progress-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/customer-progress-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/customer-progress-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/tenant-confirmation-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/tenant-confirmation-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/tenant-progress-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/tenant-progress-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/vendor-progress-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "fulfillment/vendor-progress-en.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

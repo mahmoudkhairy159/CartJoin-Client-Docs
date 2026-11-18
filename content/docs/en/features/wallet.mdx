@@ -13,6 +13,8 @@ Customers open Account → Wallet to inspect balance and activity, preview avail
 
 ## Restrictions and decisions
 
+An active wallet amount attached to a purchase stays reserved once any parcel has retained dispatch evidence, even while other parcels are still being prepared. Expiry or a release request cannot make that amount available to spend elsewhere. This also applies to test dispatch evidence; a label or editable shipment status alone is insufficient. A cart-only hold can still expire normally. Retaining an overdue hold does not authorize late capture: staff must review the settlement issue separately.
+
 Available credit is posted balance less active holds. Manual adjustments require a different approver. No transfers, cash-out, top-up, overdraft or cross-currency conversion are provided in this wallet scope. Corrections use compensating entries, not ledger edits.
 
 ## Data flow and outcome

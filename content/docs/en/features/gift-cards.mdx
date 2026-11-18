@@ -13,6 +13,10 @@ Tenant operators review Gift cards and Gift-card policies before issuing or mana
 
 ## Restrictions and decisions
 
+An active gift-card authorization linked to a partially dispatched purchase stays reserved. The authorization and its backing card value are protected from automatic expiry or release when retained dispatch evidence exists, including test evidence. This does not extend its payment authorization: overdue settlement needs staff review. Independent cart-only holds can still expire. Cancelling a card with any active checkout authorization is blocked; resolve the authorization before cancelling, without silently releasing a dispatched purchase.
+
+Staff balance reductions can use only the unreserved amount. A reduction that would consume value already promised to a checkout is rejected. A repeated adjustment with the same reference is applied once.
+
 Gift-card value is not cash in a wallet account. Eligibility, currency, state and policy determine use. Never expose a redeemable secret code in screenshots or treat a saved code as a guaranteed successful redemption.
 
 ## Claim feedback

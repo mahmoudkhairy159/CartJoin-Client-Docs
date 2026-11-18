@@ -15,6 +15,10 @@ Vendor staff can inspect refund information. Authorized administrators can close
 
 ## Restrictions and decisions
 
+For new checkouts, the refund ceiling uses what was actually paid after coupons and redeemed loyalty, including the frozen tax. Wallet and gift cards are forms of payment; they do not reduce this ceiling again. Example: two items worth 100 EGP, with 20 EGP paid using loyalty, leave 80 EGP of money. Refunding one unit can return at most 40 EGP of money, with any loyalty restoration handled separately.
+
+A monetary adjustment is different from recording returned units. The API supports an explicit zero quantity for a money-only adjustment; it records no returned units and does not restore unit-based loyalty. Staff should use the approved return workflow to record physical returns. Historical purchases retain their original compatibility rules; inconsistent financial evidence requires review rather than a guessed refund.
+
 The ceiling is the smaller of the order’s remaining refundable value and shared payment headroom. Pending refunds reserve value. Duplicate line IDs are invalid, quantities cap value, and a sibling vendor order’s funds cannot cover an over-refund. Vendor access is read-only.
 
 ## Data flow and outcome

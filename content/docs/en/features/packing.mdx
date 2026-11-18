@@ -1,7 +1,7 @@
 ---
 title: "Pack purchased items into parcels"
 description: "Allocate quantities, confirm complete packing and keep a receipt of each change."
-roles: ["ADMIN", "TENANT", "VENDOR"]
+roles: ["ADMIN", "TENANT", "VENDOR", "CUSTOMER"]
 ---
 
 ## What this screen does
@@ -78,14 +78,79 @@ The store, vendor and platform views show the same notices within their own
 permissions. Packing quantities may be read-only while a separately permitted
 parcel action remains available.
 
-Authenticated carrier observations are now retained, but automatic transitions
-of the entire order and explicit store manual confirmation are still separate
-implementation work. A parcel update alone does not prove that every purchased
-unit was dispatched or that COD was collected.
+Authenticated carrier observations and explicit store confirmations now feed
+whole-order readiness. Automatic order updates remain paused until the release
+gate is approved. A parcel update alone does not prove that every purchased unit
+was dispatched or that COD was collected.
 
 <div id="carrier-evidence-guide">
 <SystemTour tour="carrier-evidence" compact />
 </div>
+
+## Read partial dispatch and delivery
+
+**Physical fulfillment** shows required units, units handed to the carrier and
+units received by the customer. For example, **1 / 3 received** means one unit
+has qualifying delivery evidence while two still await confirmation. It does not
+mean that the whole order is delivered. Read each parcel line to compare its
+allocated units and physical outcome. Actual times stay unknown when the source
+only establishes delivery without a known carrier handoff time.
+
+The **Test evidence** notice stays visible for preview examples. Test observations
+cannot fill missing live deliveries. **Automatic order updates are paused** means
+the evidence is saved, while the whole-order status waits for activation and
+readiness; it is not a failed save.
+
+<SystemTour tour="physical-fulfillment" compact />
+
+## Record an accountable store confirmation
+
+A store reviewer with the separate physical-confirmation permission can use
+**Record store confirmation** after complete packing is confirmed:
+
+1. Inspect the parcel and the customer's physical proof or carrier handoff record.
+2. Choose the correct parcel and outcome: **Handed to carrier** or **Received by customer**.
+3. Enter the known actual event time in your local time. Do not substitute today's
+   time for an unknown historical handoff.
+4. Explicitly choose **Live physical event** or **Test / preview event**, and write
+   a 10–4,000 character explanation of how you verified the fact.
+5. Choose **Save physical confirmation**. Inspect the refreshed unit counts.
+   A retry of the unchanged request returns the original confirmation.
+
+A vendor can inspect its own parcel progress and pack its purchased quantities;
+its manual claim cannot supply the independent store delivery confirmation.
+Platform oversight is read-only. The generic order-status menu no longer offers
+Shipped or Delivered; use the evidence workflow instead. Confirmation does not
+approve bank transfer, collect COD, change the purchased seller or move a unit
+to another parcel after handoff.
+
+## Recover a waiting or failed update
+
+Read the reconciliation state and explanation first. Missing parcel proof needs
+physical verification; a payment/stock hold needs a store review. After resolving
+the cause, a separately permitted store operator can write a reason and choose
+**Request reconciliation again**. The original evidence, earlier failure snapshot
+and retry receipt remain retained. Refresh a conflicting record deliberately;
+do not repeatedly send changed commands from an old revision.
+
+Once any parcel has retained handoff evidence, cancellation and replacement
+payment attempts are blocked even while the whole order still says Confirmed.
+Attached stock and credit holds remain obligations for review; their expiry is
+not permission to free already dispatched units. Use the appropriate correction,
+return or reconciliation workflow with the store.
+
+```mermaid
+flowchart TD
+  A[Confirmed packing quantities] --> B[Carrier or accountable store evidence]
+  B --> C{Every remaining unit covered?}
+  C -- No --> P[Show partial progress and retain obligations]
+  C -- Yes --> G{Automatic updates enabled?}
+  G -- No --> H[Keep evidence and show paused notice]
+  G -- Yes --> F{Financial and stock readiness?}
+  F -- No --> R[Review cause and request reconciliation]
+  F -- Yes --> O[Immutable Order receipts and lifecycle]
+  O --> U[Customer order and parcel progress]
+```
 
 ## Restrictions and decisions
 
@@ -115,9 +180,9 @@ flowchart LR
   G --> C
 ```
 
-Automatic carrier-to-whole-order fulfillment is still separate implementation
-work. This guide does not promise that a packing confirmation advances the order
-or triggers loyalty, settlement or payment effects.
+Whole-order updates require a current complete packing record, qualifying
+evidence for every remaining unit and financial readiness. Packing alone never
+collects payment or awards points. The development coordinator remains paused.
 
 Continue with [shipping configuration and tracking](/en/features/shipping) or
 [provider labels and test carriers](/en/features/shipping-providers).

@@ -1,0 +1,15 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.000
+Find the reward check panel
+Open Customers → Loyalty → Loyalty reports. This panel lists failed
+processing checks, not normal purchases waiting for COD collection or
+delivery.
+
+2
+00:00:06.000 --> 00:00:12.000
+Refresh without changing a purchase
+Refresh checks re-reads the list. The real demo has no failures waiting.
+If a failure appears, investigate its cause before requesting an audited
+retry with a reason.

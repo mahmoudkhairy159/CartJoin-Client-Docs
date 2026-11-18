@@ -28,7 +28,7 @@ Tenant staff with permission to view orders receive an inbox notice when an orde
 
 ## Restrictions and decisions
 
-Platform order screens are oversight only. Normal progress is pending → confirmed → processing → shipped → delivered. Vendors cannot cancel from processing; tenant operators have a wider cancellation rule. A status is not a free-form field and a refund is not a total edit.
+Platform order screens are oversight only. Normal progress is pending → confirmed → processing → shipped → delivered. Vendors cannot cancel from processing; tenant operators have a wider pre-handoff cancellation rule. Any retained parcel handoff blocks cancellation, even before the whole order is Shipped. A status is not a free-form field and a refund is not a total edit.
 
 ## Item snapshots and order notes
 
@@ -44,7 +44,7 @@ Check workspace, permission, record state and field errors first. If an action t
 
 ## Evidence and verification limits
 
-Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Earlier walkthroughs use demo captures from 17 November 2026. The physical-fulfillment walkthrough uses the named local test preview captured on 18 November 2026; no real shipment or collection is represented.
 
 `Modules/Order/` · `documentation/modules/`
 
@@ -67,3 +67,25 @@ A route proves navigation, not permission to perform every action. Related-recor
 {/* /SCREEN_MAP */}
 
 </details>
+
+
+## Follow each seller's delivery progress
+
+Open your invoice in the current store. Each seller order has a **Delivery
+progress** panel with its remaining required units and dispatched/received counts.
+The purchased quantities stay visible; only settled physical-unit refunds reduce
+the remaining target. A monetary refund alone does not remove a physical unit. If a later unit refund invalidates the saved parcel plan, dispatch and delivery counts show as unknown rather than zero. The verification notice does not erase earlier delivery evidence; check the order status or contact the store.
+
+A parcel can arrive while another is still waiting. Read the per-parcel outcome
+before assuming the whole order is complete. The test marker identifies a preview,
+not a real delivery. Actual carrier handoff time remains unknown when it was not
+provided; the screen never substitutes the time a later update was recorded.
+
+<SystemTour tour="physical-fulfillment" compact />
+
+Payment remains separate: delivery does not mean COD was collected. Once there is
+retained handoff for any parcel, **Cancel order** is no longer offered and new
+payment attempts are blocked; contact the store to reconcile the existing order.
+If progress cannot load, choose **Try again**. Your global customer login works
+across stores, while these invoices and parcel details remain private to the
+store and purchase owner. Internal evidence IDs and reviewer notes are not shown.

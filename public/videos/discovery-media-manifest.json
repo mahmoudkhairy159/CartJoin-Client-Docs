@@ -1,0 +1,351 @@
+{
+  "capture_date": "2026-11-18",
+  "kind": "guided-screenshot-clips",
+  "mechanism": "Actual CUA full-viewport screenshots, rendered as chapter stills with WebVTT captions; not continuous video and no audio.",
+  "environment": "Seeded local development preview; no live commercial/provider acceptance.",
+  "privacy": "No passwords, tokens, customer addresses, private operational notes, provider documents or payment credentials. Visible names/orders/review reasons are synthetic demo data.",
+  "entries": [
+    {
+      "id": "platform-discovery-en",
+      "locale": "en",
+      "role": "CUSTOMER",
+      "url": "http://localhost:4304/en/discover",
+      "frames": [
+        "public/screenshots/platform-discovery-en-products.png",
+        "public/screenshots/platform-discovery-en-stores.png",
+        "public/screenshots/platform-discovery-en-sellers.png",
+        "public/screenshots/platform-discovery-en-handoff.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4304/en/discover",
+        "http://localhost:4304/en/discover",
+        "http://localhost:4304/en/discover",
+        "http://localhost:4300/product/iphone-15-pro-256gb?lang=en"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/platform-discovery-en.mp4",
+      "captions": "public/videos/platform-discovery-en.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 20.0,
+      "bytes": 188398,
+      "captions_text": [
+        "Only selected, approved and currently eligible offers appear.",
+        "Choose a participating store. Check its current price and purchase terms there.",
+        "Seller consent applies within the chosen store. Checkouts and balances stay separate.",
+        "The chosen store shows current product options and pricing. No payment is made in this tour."
+      ]
+    },
+    {
+      "id": "platform-discovery-ar",
+      "locale": "ar",
+      "role": "CUSTOMER",
+      "url": "http://localhost:4304/ar/discover",
+      "frames": [
+        "public/screenshots/platform-discovery-ar-products.png",
+        "public/screenshots/platform-discovery-ar-stores.png",
+        "public/screenshots/platform-discovery-ar-sellers.png",
+        "public/screenshots/platform-discovery-ar-handoff.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4304/ar/discover",
+        "http://localhost:4304/ar/discover",
+        "http://localhost:4304/ar/discover",
+        "http://localhost:4300/product/iphone-15-pro-256gb?lang=ar"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/platform-discovery-ar.mp4",
+      "captions": "public/videos/platform-discovery-ar.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 20.0,
+      "bytes": 169775,
+      "captions_text": [
+        "لا تظهر إلا العروض المختارة والمعتمدة والمؤهلة حاليًا.",
+        "اختر المتجر وراجع السعر الحالي وشروط الشراء داخله.",
+        "تخص موافقة البائع المتجر المختار. تبقى المدفوعات والأرصدة مستقلة.",
+        "يعرض المتجر المختار الخيارات والسعر الحالي. لا تنفذ الجولة أي دفع."
+      ]
+    },
+    {
+      "id": "tenant-discovery-en",
+      "locale": "en",
+      "role": "TENANT",
+      "url": "http://localhost:4302/discovery",
+      "frames": [
+        "public/screenshots/tenant-discovery-en.png",
+        "public/screenshots/tenant-discovery-en-catalog.png",
+        "public/screenshots/tenant-discovery-en-offers.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4302/discovery",
+        "http://localhost:4302/discovery",
+        "http://localhost:4302/discovery"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/tenant-discovery-en.mp4",
+      "captions": "public/videos/tenant-discovery-en.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 15.0,
+      "bytes": 165569,
+      "captions_text": [
+        "Choose whether your store may appear. New domains require a fresh review.",
+        "Find a product and select it before submitting. This tour stops before submission.",
+        "Store and offer approval are separate. Withdraw only the offers you choose."
+      ]
+    },
+    {
+      "id": "tenant-discovery-ar",
+      "locale": "ar",
+      "role": "TENANT",
+      "url": "http://localhost:4302/discovery",
+      "frames": [
+        "public/screenshots/tenant-discovery-ar.png",
+        "public/screenshots/tenant-discovery-ar-catalog.png",
+        "public/screenshots/tenant-discovery-ar-offers.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4302/discovery",
+        "http://localhost:4302/discovery",
+        "http://localhost:4302/discovery"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/tenant-discovery-ar.mp4",
+      "captions": "public/videos/tenant-discovery-ar.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 15.0,
+      "bytes": 130032,
+      "captions_text": [
+        "اختر مشاركة متجرك. يتطلب تغيير النطاق مراجعة جديدة.",
+        "ابحث عن المنتج وحدده قبل الإرسال. تتوقف الجولة قبل الإرسال.",
+        "اعتماد المتجر والعرض مستقلان. يمكنك سحب العروض التي تختارها فقط."
+      ]
+    },
+    {
+      "id": "vendor-discovery-en",
+      "locale": "en",
+      "role": "VENDOR",
+      "url": "http://localhost:4303/discovery",
+      "frames": [
+        "public/screenshots/vendor-discovery-en.png",
+        "public/screenshots/vendor-discovery-en-offers.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4303/discovery",
+        "http://localhost:4303/discovery"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/vendor-discovery-en.mp4",
+      "captions": "public/videos/vendor-discovery-en.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 12.0,
+      "bytes": 131184,
+      "captions_text": [
+        "Your choice applies only in the selected approved store workspace.",
+        "The store selects offers and the platform reviews them. Your consent alone never publishes."
+      ]
+    },
+    {
+      "id": "vendor-discovery-ar",
+      "locale": "ar",
+      "role": "VENDOR",
+      "url": "http://localhost:4303/discovery",
+      "frames": [
+        "public/screenshots/vendor-discovery-ar.png",
+        "public/screenshots/vendor-discovery-ar-offers.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4303/discovery",
+        "http://localhost:4303/discovery"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/vendor-discovery-ar.mp4",
+      "captions": "public/videos/vendor-discovery-ar.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 12.0,
+      "bytes": 108976,
+      "captions_text": [
+        "يخص اختيارك مساحة المتجر المعتمدة المحددة فقط.",
+        "يختار المتجر العروض وتراجعها المنصة. لا تنشر موافقتك وحدها أي عرض."
+      ]
+    },
+    {
+      "id": "admin-discovery-en",
+      "locale": "en",
+      "role": "ADMIN",
+      "url": "http://localhost:4301/discovery",
+      "frames": [
+        "public/screenshots/admin-discovery-en.png",
+        "public/screenshots/admin-discovery-en-review.png",
+        "public/screenshots/admin-discovery-en-offer.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4301/discovery",
+        "http://localhost:4301/discovery",
+        "http://localhost:4301/discovery"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/admin-discovery-en.mp4",
+      "captions": "public/videos/admin-discovery-en.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 15.0,
+      "bytes": 116018,
+      "captions_text": [
+        "Review explicit store requests and selected offers as separate decisions.",
+        "Verify the store domain and record a reason. This tour does not submit a decision.",
+        "Inspect current product content. Changed source requires a fresh review before approval."
+      ]
+    },
+    {
+      "id": "admin-discovery-ar",
+      "locale": "ar",
+      "role": "ADMIN",
+      "url": "http://localhost:4301/discovery",
+      "frames": [
+        "public/screenshots/admin-discovery-ar.png",
+        "public/screenshots/admin-discovery-ar-review.png",
+        "public/screenshots/admin-discovery-ar-offer.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4301/discovery",
+        "http://localhost:4301/discovery",
+        "http://localhost:4301/discovery"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/admin-discovery-ar.mp4",
+      "captions": "public/videos/admin-discovery-ar.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 15.0,
+      "bytes": 101537,
+      "captions_text": [
+        "راجع طلب المتجر والعروض المختارة كقرارات مستقلة.",
+        "تحقق من نطاق المتجر وسجل السبب. لا تحفظ هذه الجولة قرارًا.",
+        "افحص المحتوى الحالي. يتطلب تغير المصدر مراجعة جديدة قبل الاعتماد."
+      ]
+    },
+    {
+      "id": "platform-purchases-en",
+      "locale": "en",
+      "role": "CUSTOMER",
+      "url": "http://localhost:4304/en/account",
+      "frames": [
+        "public/screenshots/platform-purchases-en-account.png",
+        "public/screenshots/platform-purchases-en.png",
+        "public/screenshots/platform-purchases-en-orders.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4304/en/account",
+        "http://localhost:4304/en/account",
+        "http://localhost:4304/en/account"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/platform-purchases-en.mp4",
+      "captions": "public/videos/platform-purchases-en.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 15.0,
+      "bytes": 166260,
+      "captions_text": [
+        "Use your existing customer account. The summary belongs only to the signed-in owner.",
+        "Read order, payment and delivery separately. Amounts keep their original purchase currency.",
+        "The owning store handles details, returns and support. There is no shared store balance."
+      ]
+    },
+    {
+      "id": "platform-purchases-ar",
+      "locale": "ar",
+      "role": "CUSTOMER",
+      "url": "http://localhost:4304/ar/account",
+      "frames": [
+        "public/screenshots/platform-purchases-ar-account.png",
+        "public/screenshots/platform-purchases-ar.png",
+        "public/screenshots/platform-purchases-ar-orders.png"
+      ],
+      "frame_urls": [
+        "http://localhost:4304/ar/account",
+        "http://localhost:4304/ar/account",
+        "http://localhost:4304/ar/account"
+      ],
+      "source_dimensions": [
+        1265,
+        712
+      ],
+      "video": "public/videos/platform-purchases-ar.mp4",
+      "captions": "public/videos/platform-purchases-ar.vtt",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 15.0,
+      "bytes": 132649,
+      "captions_text": [
+        "استخدم حساب العميل الحالي. يخص الملخص صاحب الحساب المسجل دخوله فقط.",
+        "اقرأ الطلب والدفع والتوصيل بصورة مستقلة. تبقى المبالغ بعملة الشراء الأصلية.",
+        "يدير المتجر المالك التفاصيل والإرجاع والدعم. لا يوجد رصيد مشترك بين المتاجر."
+      ]
+    }
+  ],
+  "retained_superseded_evidence": [
+    {
+      "path": "public/videos/platform-discovery-en.webm",
+      "kind": "early live-browser frame recording with Playwright CLI recorder; retained provenance, not used by current guides",
+      "note": "Captured before handoff URL correction; subsequent actions and final guide frames use CUA only."
+    },
+    {
+      "path": "public/videos/platform-discovery-ar.webm",
+      "kind": "early live-browser frame recording with Playwright CLI recorder; retained provenance, not used by current guides",
+      "note": "Captured before handoff URL correction; subsequent actions and final guide frames use CUA only."
+    }
+  ]
+}

@@ -7321,5 +7321,218 @@
         "guide": "features/packing"
       }
     ]
+  },
+  "feature-order-reward-checks": {
+    "title": {
+      "en": "Review failed order reward checks",
+      "ar": "مراجعة فشل مكافآت الطلبات"
+    },
+    "intro": {
+      "en": "A guided still-screenshot tour of the real tenant report. This demo has no failed checks; no retry or financial mutation is simulated.",
+      "ar": "شرح بالصور الثابتة لتقرير المتجر الفعلي. لا توجد مراجعات فاشلة في العرض ولا تتم محاكاة إعادة محاولة أو تغيير مالي."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "provenance": {
+      "en": "Local tenant preview · 18 November 2026 · Real empty state · Screenshot tour, not continuous recording",
+      "ar": "واجهة متجر محلية · ١٨ نوفمبر ٢٠٢٦ · حالة فارغة فعلية · شرح بالصور وليس تسجيلاً متصلاً"
+    },
+    "steps": [
+      {
+        "image": "tenant-order-reward-checks-en.jpg",
+        "imageAr": "tenant-order-reward-checks-ar.jpg",
+        "focus": [
+          21,
+          58,
+          76,
+          35
+        ],
+        "focusAr": [
+          2,
+          60,
+          76,
+          35
+        ],
+        "title": {
+          "en": "Find the reward check panel",
+          "ar": "اعثر على قسم مراجعة المكافآت"
+        },
+        "body": {
+          "en": "Open Customers → Loyalty → Loyalty reports. This panel lists failed processing checks, not normal purchases waiting for COD collection or delivery.",
+          "ar": "افتح العملاء ← الولاء ← تقارير الولاء. يعرض القسم فشل المعالجة، وليس المشتريات العادية التي تنتظر التحصيل أو التسليم."
+        },
+        "guide": "features/loyalty"
+      },
+      {
+        "image": "tenant-order-reward-checks-en.jpg",
+        "imageAr": "tenant-order-reward-checks-ar.jpg",
+        "focus": [
+          22,
+          79,
+          74,
+          11
+        ],
+        "focusAr": [
+          2,
+          81,
+          74,
+          12
+        ],
+        "title": {
+          "en": "Refresh without changing a purchase",
+          "ar": "حدّث دون تغيير الشراء"
+        },
+        "body": {
+          "en": "Refresh checks re-reads the list. The real demo has no failures waiting. If a failure appears, investigate its cause before requesting an audited retry with a reason.",
+          "ar": "يقرأ تحديث المراجعات القائمة مجدداً. لا توجد حالات فشل معلّقة في هذا العرض الفعلي. عند ظهور فشل، تحقق من سببه قبل طلب مراجعة مدققة مع السبب."
+        },
+        "guide": "features/loyalty"
+      }
+    ]
+  },
+  "physical-fulfillment": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 7,
+    "title": {
+      "en": "Follow physical fulfillment across four roles",
+      "ar": "متابعة التنفيذ الفعلي عبر الأدوار الأربعة"
+    },
+    "intro": {
+      "en": "Compare partial delivery, store verification and buyer visibility using one named local preview.",
+      "ar": "قارن التسليم الجزئي وتحقق المتجر وما يراه العميل في مثال محلي مسمى واحد."
+    },
+    "provenance": {
+      "en": "Named local synthetic preview · Captured 18 November 2026 · Three units, one test-only delivery observation · Captioned screenshot walkthrough, not live footage · No real goods movement or payment collection.",
+      "ar": "معاينة محلية اصطناعية مسماة · التقطت في ١٨ نوفمبر ٢٠٢٦ · ثلاث وحدات ورصد استلام تجريبي لوحدة واحدة · جولة صور مترجمة وليست تصويرًا حيًا · لا حركة بضائع أو تحصيل حقيقي."
+    },
+    "steps": [
+      {
+        "image": "fulfillment/tenant-progress-en.jpg",
+        "imageAr": "fulfillment/tenant-progress-ar.jpg",
+        "title": {
+          "en": "See partial unit coverage",
+          "ar": "قراءة تغطية الوحدات الجزئية"
+        },
+        "body": {
+          "en": "One of three units has test delivery evidence. Two still wait. Packing, physical progress and the full order state are separate; automatic updates remain paused.",
+          "ar": "لوحدة واحدة من ثلاث دليل استلام تجريبي، وتنتظر الوحدتان الأخريان. التعبئة والتقدم الفعلي وحالة الطلب الكامل أمور منفصلة؛ والتحديث التلقائي متوقف."
+        },
+        "guide": "features/packing",
+        "focus": [
+          23,
+          14,
+          73,
+          73
+        ],
+        "focusAr": [
+          2,
+          14,
+          75,
+          73
+        ]
+      },
+      {
+        "image": "fulfillment/tenant-confirmation-en.jpg",
+        "imageAr": "fulfillment/tenant-confirmation-ar.jpg",
+        "title": {
+          "en": "Verify the fact before saving",
+          "ar": "التحقق من الواقعة قبل الحفظ"
+        },
+        "body": {
+          "en": "Only a permitted store reviewer can confirm a parcel. Choose the actual outcome, known event time and explicit live/test mode; explain verification. This form is shown before submission.",
+          "ar": "يؤكد الشحنة مراجع متجر مخول فقط. اختر النتيجة والوقت الفعلي المعروف ونوع الواقعة الحقيقي أو التجريبي، ووضح طريقة التحقق. تظهر الاستمارة هنا قبل الإرسال."
+        },
+        "guide": "features/packing",
+        "focus": [
+          22,
+          12,
+          75,
+          78
+        ],
+        "focusAr": [
+          2,
+          12,
+          75,
+          78
+        ]
+      },
+      {
+        "image": "fulfillment/vendor-progress-en.jpg",
+        "imageAr": "fulfillment/vendor-progress-ar.jpg",
+        "title": {
+          "en": "Inspect your own seller group",
+          "ar": "متابعة مجموعة البائع الخاصة بك"
+        },
+        "body": {
+          "en": "The vendor reads only its approved store workspace and purchased seller quantities. Its editable tracking claim cannot provide independent store delivery confirmation.",
+          "ar": "يرى المورد مساحة المتجر المعتمدة وكميات البائع المشتراة الخاصة به فقط. ادعاء التتبع القابل للتعديل ليس تأكيد استلام مستقلًا من المتجر."
+        },
+        "guide": "features/shipping",
+        "focus": [
+          23,
+          14,
+          73,
+          73
+        ],
+        "focusAr": [
+          2,
+          14,
+          75,
+          73
+        ]
+      },
+      {
+        "image": "fulfillment/admin-progress-en.jpg",
+        "imageAr": "fulfillment/admin-progress-ar.jpg",
+        "title": {
+          "en": "Oversee without changing the proof",
+          "ar": "الرقابة دون تغيير الأدلة"
+        },
+        "body": {
+          "en": "Platform admins inspect partial quantities, test provenance and reconciliation readiness. Normal oversight has no store-confirmation, packing or retry mutation controls.",
+          "ar": "تراجع المنصة الكميات الجزئية ونوع الدليل التجريبي وجاهزية المطابقة. لا يتيح الاطلاع العادي أدوات تعديل التأكيد أو التعبئة أو إعادة المحاولة."
+        },
+        "guide": "features/packing",
+        "focus": [
+          23,
+          14,
+          73,
+          73
+        ],
+        "focusAr": [
+          2,
+          14,
+          75,
+          73
+        ]
+      },
+      {
+        "image": "fulfillment/customer-progress-en.jpg",
+        "imageAr": "fulfillment/customer-progress-ar.jpg",
+        "title": {
+          "en": "Understand what has arrived",
+          "ar": "فهم ما وصل بالفعل"
+        },
+        "body": {
+          "en": "The buyer sees one of three units received and the other parcel waiting. Payment collection remains separate. Retained partial handoff removes cancellation and blocks payment replacement.",
+          "ar": "يرى المشتري استلام وحدة من ثلاث وانتظار الشحنة الأخرى. يبقى تحصيل الدفع منفصلًا. يمنع التسليم الجزئي المحفوظ الإلغاء وتبديل محاولة الدفع."
+        },
+        "guide": "features/orders",
+        "focus": [
+          28,
+          44,
+          66,
+          42
+        ],
+        "focusAr": [
+          3,
+          44,
+          68,
+          42
+        ]
+      }
+    ]
   }
 }
