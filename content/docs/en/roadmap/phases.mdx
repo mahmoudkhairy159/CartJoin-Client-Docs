@@ -3,7 +3,7 @@ title: "Implementation phases and release gates"
 description: "Dependency-based delivery plan, owners, evidence and rollback conditions."
 ---
 
-> **Locally tested development checkpoint · 18 November 2026.** Central customer login, commerce-mode checks, versioned test billing and assisted merchant applications are implemented. The current checkpoint also includes physical fulfillment, later-paid COD reward/refund reconciliation, customer marketing choices, opt-in discovery and a private customer purchase overview across stores. Full phase acceptance, remaining growth/integration work and live deployment are separate gates. [Billing](/en/features/subscriptions) · [Merchant applications](/en/features/merchant-onboarding) · [Marketing choices](/en/features/marketing-consent) · [Discovery](/en/features/global-discovery).
+> **Published development checkpoint · 19 November 2026.** Central customer login, verified global signup and tenant-neutral recovery, commerce-mode checks, versioned test billing and assisted merchant applications are implemented. Published work also includes physical confirmation, later-paid COD reward/refund reconciliation, marketing choices, opt-in discovery and private customer purchase summaries. The bounded cart-recovery backend and tenant screen are published; English/Arabic media verification is still in progress. Full phase acceptance, remaining analytics/integration work and live deployment are separate gates. [Billing](/en/features/subscriptions) · [Merchant applications](/en/features/merchant-onboarding) · [Global accounts](/en/features/global-customer-account) · [Cart recovery](/en/features/cart-recovery).
 
 > **Roadmap and release gates.** Development delivery is described above. The phases below retain the operational and commercial acceptance gates; source completion does not imply a live pilot or deployment.
 
@@ -58,11 +58,17 @@ share a versioned actual-paid item basis; older snapshots retain declared
 compatibility rules. Retaining an expired authorization never reauthorizes
 capture. [Payment rules](/en/features/payments) · [Reward reconciliation](/en/features/loyalty) · [Refunds](/en/features/refunds).
 
-**Consent checkpoint:** customers can independently grant or withdraw offers and
-cart-reminder permission for each store and channel in English or Arabic.
-Defaults are off; consent changes retain their notice version. These controls
-do not send a campaign or complete abandoned-cart recovery.
-[Customer choices](/en/features/marketing-consent).
+**Consent and cart-recovery checkpoint · 19 November 2026:** customers can
+independently grant or withdraw offers and cart-reminder permission for each store
+and channel in English or Arabic. Defaults are off and changes retain their notice
+version. The bounded cart-recovery backend and tenant operator screen are now
+published. The default-off pilot records observed buyer actions, rechecks current
+consent, verified contact, account/local access, cart and purchase eligibility,
+uses checkout-location stock, and retains suppression, bounded retries, attention
+and expiry. Its dedicated guarded adapter records local test acceptance only;
+there is no claim of external delivery or attributed recovered revenue. The
+English/Arabic media checkpoint is still being completed.
+[Customer choices](/en/features/marketing-consent) · [Cart recovery](/en/features/cart-recovery).
 
 **Separate platform and discovery checkpoint:** package comparison and merchant
 applications are joined by reviewed store/offer publication, workspace-specific
@@ -128,15 +134,20 @@ Manual shipping can support an explicitly described assisted pilot. A claim of l
 
 **P1 · Growth, integrations and analytics owners · depends on stable pilots.** Add consent-aware recovery, measured funnels, reliable webhook delivery, usage reporting and operational dashboards. Prioritize improvements using pilot evidence rather than feature count.
 
-**Current boundary:** tenant/purpose/channel consent is implemented. Remaining
-feature work includes queued, deduplicated recovery that rechecks current consent,
-account/cart/purchase eligibility and contact validity at send time; bounded
-retry/suppression/attention records; and honestly measured outcomes. Retained-fact
-funnels and purchase cohorts must separate signup origin, store relationships and
-later purchases, exclude test activity and avoid inventing historical events.
-Existing reports, notification and webhook infrastructure still need the
-relevant end-to-end connector/transport recovery and operational acceptance.
-Review-reminder transport recovery and operator retry remain explicit work.
+**Current boundary:** tenant/purpose/channel consent and the bounded test-only
+cart-recovery backend and tenant operator screen are published. Their media
+checkpoint remains in progress; this does not complete live campaign delivery.
+Retained-fact funnels and purchase cohorts remain feature work: separate signup
+origin, store relationships and purchases, exclude canonical test facts and never
+invent historical browsing or abandonment. Period dispatch/cancellation KPI
+coverage still needs source and acceptance confirmation; per-order monitoring
+already exists. Review-reminder transport recovery and an operator retry screen
+remain explicit feature work. Existing webhook and billing-notice retry
+infrastructure still needs relevant connector end-to-end and operational
+acceptance. Storage-byte and automation/message metering are proposed capacity
+extensions, not current package billing promises. Concurrent appearance and
+feature-policy coverage needs its own checkpoint. Live provider activation and
+final cross-dashboard/mobile/accessibility acceptance remain separate gates.
 
 **Exit:** marketing consent is scoped by tenant and purpose, retries are bounded and observable, secrets remain private, and attribution separates first signup from later transactions. Tenant reporting never exposes another tenant's customer activity.
 
