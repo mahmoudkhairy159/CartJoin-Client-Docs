@@ -986,5 +986,113 @@
   "tenant-publication-readiness-en.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "admin-publication-review-approved-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-publication-review-approved-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-publication-review-conflict-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-publication-review-withdraw-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-publication-review-withdrawn-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-publication-review-withdrawn-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-central-signin-ar.jpg": {
+    "width": 1264,
+    "height": 810
+  },
+  "customer-central-signin-en.jpg": {
+    "width": 1264,
+    "height": 785
+  },
+  "tenant-central-customer-access-ar.jpg": {
+    "width": 1264,
+    "height": 1129
+  },
+  "tenant-central-customer-access-en.jpg": {
+    "width": 1264,
+    "height": 1099
+  },
+  "tenant-product-import-results-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-product-import-results-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-publication-review-approved-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-publication-review-approved-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-publication-review-compare-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-publication-review-compare-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-publication-review-returned-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-approved-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-approved-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-draft-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-draft-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-returned-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-returned-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-publication-review-submit-ar.jpg": {
+    "width": 675,
+    "height": 652
+  },
+  "vendor-publication-review-submit-en.jpg": {
+    "width": 675,
+    "height": 652
+  },
+  "vendor-publication-review-submitted-ar.jpg": {
+    "width": 675,
+    "height": 652
+  },
+  "vendor-publication-review-submitted-en.jpg": {
+    "width": 675,
+    "height": 652
   }
 }

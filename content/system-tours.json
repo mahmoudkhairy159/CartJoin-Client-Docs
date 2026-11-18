@@ -6434,5 +6434,262 @@
       "en": "Synthetic local policy and case · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
       "ar": "سياسة وحالة محليتان تجريبيتان · التقطت في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
     }
+  },
+  "vendor-product-review": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 10,
+    "provenance": {
+      "en": "Synthetic local example · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
+      "ar": "مثال محلي تجريبي · التقط في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
+    },
+    "title": {
+      "en": "From draft to reviewed offer",
+      "ar": "من المسودة إلى العرض المراجع"
+    },
+    "intro": {
+      "en": "Submit clear content, read the correction and keep the review history.",
+      "ar": "أرسل محتوى واضحًا واقرأ التصحيح واحتفظ بسجل المراجعة."
+    },
+    "steps": [
+      {
+        "image": "vendor-publication-review-submit-en.jpg",
+        "imageAr": "vendor-publication-review-submit-ar.jpg",
+        "title": {
+          "en": "Explain what is ready",
+          "ar": "وضح ما أصبح جاهزًا"
+        },
+        "body": {
+          "en": "Open Publication review, explain the submission and choose Submit current content. Saving the product alone does not send it to a publisher.",
+          "ar": "افتح مراجعة النشر ووضح سبب الإرسال ثم اختر إرسال المحتوى الحالي. حفظ المنتج وحده لا يرسله إلى مسؤول النشر."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      },
+      {
+        "image": "vendor-publication-review-returned-en.jpg",
+        "imageAr": "vendor-publication-review-returned-ar.jpg",
+        "title": {
+          "en": "Read the correction before editing",
+          "ar": "اقرأ التصحيح قبل التعديل"
+        },
+        "body": {
+          "en": "The store returned this example to Draft and asked for dimensions in both languages. Correct the content, save it, then submit again with an explanation.",
+          "ar": "أعاد المتجر المثال إلى مسودة وطلب الأبعاد باللغتين. صحح المحتوى واحفظه ثم أرسل مجددًا مع توضيح."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      },
+      {
+        "image": "vendor-publication-review-approved-en.jpg",
+        "imageAr": "vendor-publication-review-approved-ar.jpg",
+        "title": {
+          "en": "Confirm the new decision",
+          "ar": "تحقق من القرار الجديد"
+        },
+        "body": {
+          "en": "The revised submission and store approval remain beside the earlier correction. Material public edits need a new review; stock and price servicing are separate.",
+          "ar": "يبقى الإرسال المعدل واعتماد المتجر بجوار التصحيح السابق. تحتاج التعديلات العامة الأساسية إلى مراجعة جديدة وتبقى خدمة السعر والمخزون منفصلة."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      }
+    ]
+  },
+  "tenant-product-review": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 10,
+    "provenance": {
+      "en": "Synthetic local example · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
+      "ar": "مثال محلي تجريبي · التقط في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
+    },
+    "title": {
+      "en": "Inspect, explain and follow the result",
+      "ar": "افحص ووضح وتابع النتيجة"
+    },
+    "intro": {
+      "en": "Give the vendor an actionable decision and inspect import row corrections.",
+      "ar": "قدم للبائع قرارًا يمكن تنفيذه وافحص تصحيحات صفوف الاستيراد."
+    },
+    "steps": [
+      {
+        "image": "tenant-publication-review-compare-en.jpg",
+        "imageAr": "tenant-publication-review-compare-ar.jpg",
+        "title": {
+          "en": "Compare and give a useful explanation",
+          "ar": "قارن واكتب توضيحًا مفيدًا"
+        },
+        "body": {
+          "en": "Inspect the comparison and the actual descriptions, images and variants. Explain what needs correcting or what you approved. Publisher permission is required.",
+          "ar": "افحص المقارنة والأوصاف الفعلية والصور والخيارات. وضح ما يحتاج للتصحيح أو ما اعتمدته. تلزم صلاحية النشر."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      },
+      {
+        "image": "tenant-publication-review-approved-en.jpg",
+        "imageAr": "tenant-publication-review-approved-ar.jpg",
+        "title": {
+          "en": "Keep the complete decision trail",
+          "ar": "احتفظ بمسار القرار كاملًا"
+        },
+        "body": {
+          "en": "The corrected bilingual lamp was resubmitted and approved. Earlier submission and correction receipts remain; approval does not create stock or payment.",
+          "ar": "أعيد إرسال المصباح المصحح باللغتين واعتمد. تبقى إيصالات الإرسال والتصحيح السابقة؛ لا ينشئ الاعتماد مخزونًا أو دفعة."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      },
+      {
+        "image": "tenant-product-import-results-en.jpg",
+        "imageAr": "tenant-product-import-results-ar.jpg",
+        "title": {
+          "en": "Read the import report row by row",
+          "ar": "اقرأ تقرير الاستيراد صفًا بصف"
+        },
+        "body": {
+          "en": "This completed local import has two rows to review: external activation stayed Draft, and a fractional type was rejected. Correct affected rows deliberately in a new import.",
+          "ar": "اكتمل الاستيراد المحلي مع صفين للمراجعة: بقي التفعيل الخارجي مسودة ورفض النوع الكسري. صحح الصفوف المطلوبة باستيراد جديد مقصود."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      }
+    ]
+  },
+  "admin-product-review": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 10,
+    "provenance": {
+      "en": "Synthetic local example · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
+      "ar": "مثال محلي تجريبي · التقط في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
+    },
+    "title": {
+      "en": "Review publication across stores",
+      "ar": "راجع النشر عبر المتاجر"
+    },
+    "intro": {
+      "en": "Inspect named decisions and current requirements without losing the owning store.",
+      "ar": "افحص القرارات ومتطلبات النشر مع وضوح المتجر المالك."
+    },
+    "steps": [
+      {
+        "image": "admin-publication-review-approved-en.jpg",
+        "imageAr": "admin-publication-review-approved-ar.jpg",
+        "title": {
+          "en": "Read the publisher decision history",
+          "ar": "اقرأ سجل قرارات النشر"
+        },
+        "body": {
+          "en": "The platform can inspect the vendor submission, store correction, resubmission and approval. Historical receipts stay attached to their owning product and store.",
+          "ar": "تفحص المنصة إرسال البائع وتصحيح المتجر وإعادة الإرسال والاعتماد. تبقى الإيصالات التاريخية مرتبطة بمنتجها ومتجرها."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      },
+      {
+        "image": "admin-publication-review-withdrawn-en.jpg",
+        "imageAr": "admin-publication-review-withdrawn-ar.jpg",
+        "title": {
+          "en": "Check current eligibility before republication",
+          "ar": "راجع الجاهزية الحالية قبل إعادة النشر"
+        },
+        "body": {
+          "en": "After authorized withdrawal the offer is Inactive. Republication is blocked until the vendor accepts the current policy and supplies its required valid evidence. Old purchases and receipts remain.",
+          "ar": "بعد السحب المخول يصبح العرض غير نشط. يمنع نشره مجددًا حتى يقبل البائع السياسة الحالية ويقدم الأدلة السارية المطلوبة. تبقى المشتريات والإيصالات السابقة."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          58
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          58
+        ],
+        "guide": "features/product-review"
+      }
+    ]
   }
 }

@@ -646,5 +646,19 @@
       "admin-operations-history-en.jpg"
     ],
     "tour": "admin-marketplace-operations"
+  },
+  {
+    "feature": "product-review",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "vendor-publication-review-submit-en.jpg",
+      "tenant-publication-review-compare-en.jpg",
+      "admin-publication-review-withdrawn-en.jpg"
+    ],
+    "tour": "vendor-product-review"
   }
 ]

@@ -3,22 +3,22 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "d081101b9f82f7ff087b3e6147ea568351ba1ba1",
+      "commit": "583f249286e78639db0693e066432559ec8bd2ec",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "c90cb934b3afe3fa41cb799592b1417a465d49dc",
+      "commit": "e159cfb6e254c4071b1ddb3c7d260c5212e3f93c",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "3c983a60a6ca6e4e56fda84ea2c85b2adba6e3e4",
+      "commit": "94c86419dff6a02dc3c347d9e351b43d664172e0",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "86a10636b200413f0c238c1f41d6052605ba4709",
+      "commit": "5c033a487c3b453589fb1adf0ed48f71ed7c2510",
       "branch": "master",
       "dirty": true
     },
@@ -3765,6 +3765,19 @@
       ],
       "request_fields": [
         {
+          "file": "Modules/Product/App/Http/Requests/Shared/ProductReviewRequest.php",
+          "fields": [
+            "before_id",
+            "idempotency_key",
+            "expected_revision",
+            "content_fingerprint",
+            "message",
+            "success",
+            "errors",
+            "statusCode"
+          ]
+        },
+        {
           "file": "Modules/Product/App/Http/Requests/Tenant/Product/GenerateVariantsRequest.php",
           "fields": [
             "matrix",
@@ -3781,6 +3794,25 @@
             "TEXT": "2",
             "COLOR": "3",
             "BOOLEAN": "4"
+          }
+        },
+        {
+          "file": "Modules/Product/App/Enums/ProductReviewAction.php",
+          "cases": {
+            "SUBMITTED": "1",
+            "APPROVED": "2",
+            "REJECTED": "3",
+            "INVALIDATED": "4"
+          }
+        },
+        {
+          "file": "Modules/Product/App/Enums/ProductReviewActorType.php",
+          "cases": {
+            "PLATFORM": "1",
+            "TENANT": "2",
+            "VENDOR": "3",
+            "SYSTEM": "4",
+            "UNKNOWN": "5"
           }
         },
         {
@@ -3881,6 +3913,19 @@
       ],
       "request_fields": [
         {
+          "file": "Modules/Product/App/Http/Requests/Shared/ProductReviewRequest.php",
+          "fields": [
+            "before_id",
+            "idempotency_key",
+            "expected_revision",
+            "content_fingerprint",
+            "message",
+            "success",
+            "errors",
+            "statusCode"
+          ]
+        },
+        {
           "file": "Modules/Product/App/Http/Requests/Tenant/Product/GenerateVariantsRequest.php",
           "fields": [
             "matrix",
@@ -3897,6 +3942,25 @@
             "TEXT": "2",
             "COLOR": "3",
             "BOOLEAN": "4"
+          }
+        },
+        {
+          "file": "Modules/Product/App/Enums/ProductReviewAction.php",
+          "cases": {
+            "SUBMITTED": "1",
+            "APPROVED": "2",
+            "REJECTED": "3",
+            "INVALIDATED": "4"
+          }
+        },
+        {
+          "file": "Modules/Product/App/Enums/ProductReviewActorType.php",
+          "cases": {
+            "PLATFORM": "1",
+            "TENANT": "2",
+            "VENDOR": "3",
+            "SYSTEM": "4",
+            "UNKNOWN": "5"
           }
         },
         {

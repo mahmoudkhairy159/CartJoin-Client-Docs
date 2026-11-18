@@ -10,12 +10,13 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 
 - Eight planning pages per language for Store/Marketplace priorities, business rules, central customer identity, billing and release gates. Planning is separate from shipped capabilities.
 - Four role handbooks: platform admin, tenant operator, vendor and customer.
-- 47 capability guides per language covering steps, rules, data flow and troubleshooting.
-- 232 documentation pages across English and Arabic.
+- 48 capability guides per language covering steps, rules, data flow and troubleshooting.
+- 234 documentation pages across English and Arabic.
 - Bilingual reviewed dashboard captures, including billing, merchant applications, test payment outcomes and tenant/vendor carrier labels and document expiry/review with interactive explanations and enlargement.
-- 86 short screenshot-based video files with English/Arabic captions and transcripts.
-- 28 diagram blocks explaining business flows and relationships.
+- 92 short screenshot-based video files with English/Arabic captions and transcripts.
+- 30 diagram blocks explaining business flows and relationships.
 - Marketplace service policies, acceptance, cases, review and appeal, with separate tenant, vendor and platform walkthroughs.
+- Product publication review, correction, resubmission, withdrawal and tenant import reports, with three role-specific interactive tours.
 - Searchable capabilities, role-based navigation, language switching and light/dark themes.
 
 Coverage includes catalog, inventory, checkout, vendor-split orders, invoices, payments, shipping, returns, refunds, marketing, rewards, settlements, support and platform operations.
@@ -46,7 +47,7 @@ The docs app runs independently of the CartJoin backend and dashboards. No crede
 
 The capability library lives at `/docs/en/features` and `/docs/ar/features`. The visual learning hub lives at `/docs/en/learn` and `/docs/ar/learn`.
 
-The planning roadmap starts at `/docs/en/roadmap` and `/docs/ar/roadmap`. Central customers use one account across tenants; customer `tenant_id` is planned as first-signup attribution only, while commerce retains tenant ownership.
+The planning roadmap starts at `/docs/en/roadmap` and `/docs/ar/roadmap`. Central customers use one account across tenants; customer `tenant_id` records first-signup attribution only, while commerce retains tenant ownership. Later roadmap phases remain distinct from implemented features.
 
 ## Validate and build
 

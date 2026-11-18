@@ -387,6 +387,23 @@
     }
   },
   {
+    "id": "product-review",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Review and publish vendor products",
+      "ar": "مراجعة منتجات البائع ونشرها"
+    },
+    "description": {
+      "en": "Submit, explain corrections, review revised content, retain publication receipts and follow store import results.",
+      "ar": "أرسل العرض ووضح التصحيحات وراجع المحتوى الجديد واحتفظ بإيصالات النشر وتابع نتائج استيراد المتجر."
+    }
+  },
+  {
     "id": "promotions",
     "roles": [
       "TENANT"
