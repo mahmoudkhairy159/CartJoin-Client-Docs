@@ -684,8 +684,17 @@
       "tenant-packing-en-draft.jpg",
       "vendor-packing-en-conflict.jpg",
       "tenant-packing-en-confirmed.jpg",
-      "admin-packing-en-oversight.jpg"
+      "admin-packing-en-oversight.jpg",
+      "tenant-carrier-evidence-en.jpg",
+      "tenant-carrier-evidence-ar.jpg",
+      "vendor-carrier-evidence-en.jpg",
+      "vendor-carrier-evidence-ar.jpg",
+      "admin-carrier-evidence-en.jpg",
+      "admin-carrier-evidence-ar.jpg"
     ],
-    "tour": "packing-manifest"
+    "tour": "packing-manifest",
+    "supplementaryTours": [
+      "carrier-evidence"
+    ]
   }
 ]

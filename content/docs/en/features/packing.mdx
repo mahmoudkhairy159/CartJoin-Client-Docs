@@ -54,12 +54,37 @@ stay on screen. Choose **Refresh from server**, confirm replacing unsaved quanti
 when asked, and review the current record. Refresh keeps your explanation; it does
 not automatically apply old quantities to the new version.
 
+Switching between English and Arabic updates the packing readiness explanation
+without refreshing the record or replacing your unsaved quantities and explanation.
+
 After an interrupted save, an unchanged retry reuses the same command receipt.
 Changing the explanation or quantities creates a different command. Inspect
 **Packing receipts** rather than assuming a timeout means nothing was recorded.
 
 <div id="screen-guide">
 <SystemTour tour="packing-manifest" compact />
+</div>
+
+## Read carrier evidence separately
+
+**Handoff evidence is retained** means an observation remains independently of
+editable parcel status. Changing the status does not make a handed-off parcel
+unused again. Reopening and voiding stay blocked by retained handoff evidence.
+New observations can also require you to refresh an older packing snapshot.
+
+**Test observation — no live carrier action** identifies a local test-adapter
+observation. It is not proof of a real carrier booking, delivery or payment.
+The store, vendor and platform views show the same notices within their own
+permissions. Packing quantities may be read-only while a separately permitted
+parcel action remains available.
+
+Authenticated carrier observations are now retained, but automatic transitions
+of the entire order and explicit store manual confirmation are still separate
+implementation work. A parcel update alone does not prove that every purchased
+unit was dispatched or that COD was collected.
+
+<div id="carrier-evidence-guide">
+<SystemTour tour="carrier-evidence" compact />
 </div>
 
 ## Restrictions and decisions

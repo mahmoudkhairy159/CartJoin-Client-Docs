@@ -3,22 +3,22 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "3d9077beb0c7b9ab815839cbc737dfdeec9db19b",
+      "commit": "c07fdab11866eb5589dce64f4ffd9b3e3017aa39",
       "branch": "master",
       "dirty": false
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "030689b7d6b4b4d0ca29a6842ad7645cd84213c4",
+      "commit": "9db908342bac0ef152c9cadf5ee91c27517f1860",
       "branch": "master",
       "dirty": false
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "17d644d96f316ccee043932948b0c68e69065a2c",
+      "commit": "2f925c3ea9ee3784ff72e07480bad4568d8b9e63",
       "branch": "master",
       "dirty": false
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "482fecf1fdc5d7503f2519f33a319f40e86fdbda",
+      "commit": "dc6135ba696fe8d139a937496fcaf64c30de7efc",
       "branch": "master",
       "dirty": false
     },
@@ -570,7 +570,7 @@
           ":webhookId/deliveries/:deliveryId"
         ]
       },
-      "route_source_sha256": "05a1a5285cc12c7f6417bf3f0584604e9d5db7f1437826b2f3e3b3fd2b042e23"
+      "route_source_sha256": "0d53e6f62d4a5cc08145cd3507f49ae8b97c9647fe9b30989ba2344f0ae74aea"
     },
     "tenant": {
       "repository": "CartJoin-Tenant-Dashboard-Frontend",
@@ -6381,6 +6381,15 @@
           }
         },
         {
+          "file": "Modules/Shipping/App/Enums/ShipmentEvidenceSource.php",
+          "cases": {
+            "AUTHENTICATED_CARRIER": "1",
+            "STORE_CONFIRMATION": "2",
+            "VENDOR_CLAIM": "3",
+            "LEGACY": "4"
+          }
+        },
+        {
           "file": "Modules/Shipping/App/Enums/ShipmentStatus.php",
           "cases": {
             "PENDING": "1",
@@ -6659,6 +6668,15 @@
           "cases": {
             "DRAFT": "1",
             "SEALED": "2"
+          }
+        },
+        {
+          "file": "Modules/Shipping/App/Enums/ShipmentEvidenceSource.php",
+          "cases": {
+            "AUTHENTICATED_CARRIER": "1",
+            "STORE_CONFIRMATION": "2",
+            "VENDOR_CLAIM": "3",
+            "LEGACY": "4"
           }
         },
         {

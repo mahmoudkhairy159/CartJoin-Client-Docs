@@ -1286,5 +1286,29 @@
   "vendor-packing-en-conflict.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "tenant-carrier-evidence-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-carrier-evidence-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-carrier-evidence-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-carrier-evidence-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-carrier-evidence-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-carrier-evidence-ar.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

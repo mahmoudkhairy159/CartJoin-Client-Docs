@@ -13,7 +13,7 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 - 49 capability guides per language covering steps, rules, data flow and troubleshooting.
 - 236 documentation pages across English and Arabic.
 - Bilingual reviewed dashboard captures, including billing, merchant applications, test payment outcomes and tenant/vendor carrier labels and document expiry/review with interactive explanations and enlargement.
-- 106 short screenshot-based video files with English/Arabic captions and transcripts.
+- 108 short screenshot-based video files with English/Arabic captions and transcripts.
 - 32 diagram blocks explaining business flows and relationships.
 - Marketplace service policies, acceptance, cases, review and appeal, with separate tenant, vendor and platform walkthroughs.
 - Product publication review, correction, resubmission, withdrawal and tenant import reports, with three role-specific interactive tours.

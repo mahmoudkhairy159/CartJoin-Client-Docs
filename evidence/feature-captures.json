@@ -2754,5 +2754,83 @@
     "captured": "2026-11-18",
     "validated": true,
     "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "tenant",
+    "feature": "packing",
+    "url": "http://localhost:4302/fulfillment/orders/22",
+    "sourceUrl": "http://localhost:4302/fulfillment/orders/22",
+    "file": "tenant-carrier-evidence-en.jpg",
+    "frontend": "local-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "language": "en",
+    "validated": true,
+    "scenario": "signed test-carrier handoff; synthetic zero-value order; no live carrier or payment"
+  },
+  {
+    "role": "tenant",
+    "feature": "packing",
+    "url": "http://localhost:4302/fulfillment/orders/22",
+    "sourceUrl": "http://localhost:4302/fulfillment/orders/22",
+    "file": "tenant-carrier-evidence-ar.jpg",
+    "frontend": "local-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "language": "ar",
+    "validated": true,
+    "scenario": "signed test-carrier handoff; synthetic zero-value order; no live carrier or payment"
+  },
+  {
+    "role": "vendor",
+    "feature": "packing",
+    "url": "http://localhost:4303/fulfillment/orders/22",
+    "sourceUrl": "http://localhost:4303/fulfillment/orders/22",
+    "file": "vendor-carrier-evidence-en.jpg",
+    "frontend": "local-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "language": "en",
+    "validated": true,
+    "scenario": "signed test-carrier handoff; synthetic zero-value order; no live carrier or payment"
+  },
+  {
+    "role": "vendor",
+    "feature": "packing",
+    "url": "http://localhost:4303/fulfillment/orders/22",
+    "sourceUrl": "http://localhost:4303/fulfillment/orders/22",
+    "file": "vendor-carrier-evidence-ar.jpg",
+    "frontend": "local-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "language": "ar",
+    "validated": true,
+    "scenario": "signed test-carrier handoff; synthetic zero-value order; no live carrier or payment"
+  },
+  {
+    "role": "admin",
+    "feature": "packing",
+    "url": "http://localhost:4301/fulfillment/orders/22",
+    "sourceUrl": "http://localhost:4301/fulfillment/orders/22",
+    "file": "admin-carrier-evidence-en.jpg",
+    "frontend": "local-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "language": "en",
+    "validated": true,
+    "scenario": "signed test-carrier handoff; synthetic zero-value order; no live carrier or payment"
+  },
+  {
+    "role": "admin",
+    "feature": "packing",
+    "url": "http://localhost:4301/fulfillment/orders/22",
+    "sourceUrl": "http://localhost:4301/fulfillment/orders/22",
+    "file": "admin-carrier-evidence-ar.jpg",
+    "frontend": "local-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "language": "ar",
+    "validated": true,
+    "scenario": "signed test-carrier handoff; synthetic zero-value order; no live carrier or payment"
   }
 ]

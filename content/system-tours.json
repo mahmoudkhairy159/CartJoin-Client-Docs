@@ -7227,5 +7227,99 @@
         "guide": "features/packing"
       }
     ]
+  },
+  "carrier-evidence": {
+    "title": {
+      "en": "Recognize retained carrier evidence",
+      "ar": "التعرّف على دليل شركة الشحن المحفوظ"
+    },
+    "intro": {
+      "en": "Three dashboard views of the same synthetic parcel after a signed local test callback. This captioned screenshot walkthrough demonstrates evidence notices, not a live carrier operation.",
+      "ar": "ثلاث واجهات للطرد التجريبي نفسه بعد إشعار اختبار محلي موقّع. يشرح هذا العرض المصوّر ذو الترجمة تنبيهات الدليل، ولا يعرض عملية شحن فعلية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Captured from local dashboards with synthetic order TEST-CARRIER-EVIDENCE-20261118. A signed test-adapter dispatch observation was accepted once; its identical retry created no second observation. No live booking, delivery or payment occurred. Whole-order automation remains separate work.",
+      "ar": "التُقطت من اللوحات المحلية للطلب التجريبي TEST-CARRIER-EVIDENCE-20261118. قُبل رصد إرسال موقّع من محوّل الاختبار مرة واحدة؛ ولم تنشئ إعادة المحاولة المطابقة رصدًا ثانيًا. لم يحدث حجز أو تسليم أو سداد فعلي. تظل أتمتة حالة الطلب الكامل عملًا منفصلًا."
+    },
+    "steps": [
+      {
+        "image": "tenant-carrier-evidence-en.jpg",
+        "imageAr": "tenant-carrier-evidence-ar.jpg",
+        "title": {
+          "en": "Store: read evidence before changing packing",
+          "ar": "المتجر: اقرأ الدليل قبل تعديل التعبئة"
+        },
+        "body": {
+          "en": "The parcel retains its handoff evidence even if an editable status changes. The test notice means no live carrier action occurred. Packing does not collect COD or advance the whole order.",
+          "ar": "يحتفظ الطرد بدليل التسليم للشحن حتى إذا تغيرت حالته القابلة للتعديل. يعني التنبيه التجريبي عدم تنفيذ إجراء شحن فعلي. لا تسجّل التعبئة تحصيل الدفع عند الاستلام ولا تقدّم حالة الطلب الكامل."
+        },
+        "focus": [
+          22,
+          20,
+          74,
+          46
+        ],
+        "focusAr": [
+          2,
+          25,
+          75,
+          44
+        ],
+        "guide": "features/packing"
+      },
+      {
+        "image": "vendor-carrier-evidence-en.jpg",
+        "imageAr": "vendor-carrier-evidence-ar.jpg",
+        "title": {
+          "en": "Vendor: distinguish quantities from parcel permissions",
+          "ar": "المورد: ميّز صلاحيات الكميات عن إجراءات الطرود"
+        },
+        "body": {
+          "en": "This existing handoff cannot be adopted into a new vendor packing plan or voided as unused. Separately permitted parcel actions may still appear. The test marker stays visible.",
+          "ar": "لا يمكن إدخال هذا الطرد الذي سُلّم للشحن في خطة تعبئة جديدة للمورد أو إلغاؤه كطرد غير مستخدم. قد تظهر إجراءات طرود أخرى تسمح بها الصلاحيات بصورة مستقلة. وتظل علامة الاختبار ظاهرة."
+        },
+        "focus": [
+          22,
+          20,
+          74,
+          46
+        ],
+        "focusAr": [
+          2,
+          25,
+          75,
+          44
+        ],
+        "guide": "features/packing"
+      },
+      {
+        "image": "admin-carrier-evidence-en.jpg",
+        "imageAr": "admin-carrier-evidence-ar.jpg",
+        "title": {
+          "en": "Platform: inspect without changing the record",
+          "ar": "المنصة: راجع السجل دون تعديله"
+        },
+        "body": {
+          "en": "Admin oversight shows the same retained evidence and test marker. This screen provides no save, seal, void or parcel-creation commands. One parcel observation does not prove all purchased units were delivered.",
+          "ar": "يعرض اطلاع المنصة الدليل المحفوظ وعلامة الاختبار نفسيهما. لا توفر هذه الشاشة إجراءات الحفظ أو التأكيد أو الإلغاء أو إنشاء الطرود. ولا يثبت رصد طرد واحد تسليم جميع الوحدات المشتراة."
+        },
+        "focus": [
+          22,
+          20,
+          74,
+          46
+        ],
+        "focusAr": [
+          2,
+          25,
+          75,
+          44
+        ],
+        "guide": "features/packing"
+      }
+    ]
   }
 }

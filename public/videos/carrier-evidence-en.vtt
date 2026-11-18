@@ -1,0 +1,22 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Store: read evidence before changing packing
+The parcel retains its handoff evidence even if an editable status
+changes. The test notice means no live carrier action occurred. Packing
+does not collect COD or advance the whole order.
+
+2
+00:00:08.000 --> 00:00:16.000
+Vendor: distinguish quantities from parcel permissions
+This existing handoff cannot be adopted into a new vendor packing plan
+or voided as unused. Separately permitted parcel actions may still
+appear. The test marker stays visible.
+
+3
+00:00:16.000 --> 00:00:24.000
+Platform: inspect without changing the record
+Admin oversight shows the same retained evidence and test marker. This
+screen provides no save, seal, void or parcel-creation commands. One
+parcel observation does not prove all purchased units were delivered.
