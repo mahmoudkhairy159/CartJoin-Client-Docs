@@ -11,7 +11,8 @@ FEATURE_MODULES={
 'tax-currency':['Tax','Currency'],'cms':['Cms'],'banners':['Banner'],'storefront':['Storefront'],'seo':['Seo'],'reviews':['Review'],
 'support':['SupportTicket','Faqs'],'notifications':['Notification'],'dashboards':['Dashboard'],'reports':['Reports','Core'],
 'audit':['AuditLog'],'webhooks':['Webhook'],'settings':['Settings','Core','Area'],
-'global-discovery':['Storefront'],'cross-store-purchases':['Storefront','Order'],'marketing-consent':['Notification']}
+'global-discovery':['Storefront'],'cross-store-purchases':['Storefront','Order'],'marketing-consent':['Notification'],
+'global-customer-account':['Auth','User'],'cart-recovery':['Cart','Notification','Inventory','Order']}
 MAP={}
 def assign(feature,paths):
     for p in paths.split():MAP[p]=feature
@@ -30,10 +31,10 @@ assign('support','support-tickets faqs faq-categories');assign('notifications','
 assign('reports','reports jobs');assign('audit','audit-logs');assign('settings','configs tags colors platform-settings feature-flags settings reference-data geo store-configuration')
 assign('products','product/:slug');assign('vendors','vendor');assign('tenants','branches');assign('cart','cart');assign('checkout','checkout');assign('shipping','track track/:orderNo')
 assign('wishlist','wishlist');assign('support','support');assign('webhooks','webhooks')
-assign('global-discovery','discovery')
+assign('global-discovery','discovery');assign('cart-recovery','cart-recovery');assign('settings','feature-policies')
 SPECIAL={'forbidden':'Access error screen','**':'Not-found fallback','dev/style-guide':'Development-only visual reference'}
 SURFACES={'admin':'CartJoin-Admin-Dashboard-Frontend','tenant':'CartJoin-Tenant-Dashboard-Frontend','vendor':'CartJoin-Vendor-Dashboard-Frontend','customer':'CartJoin-Storefront-Frontend'}
-inventory={'reviewed':'2026-11-18','verification':'Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.','repositories':{},'surfaces':{},'features':{}}
+inventory={'reviewed':'2026-11-19','verification':'Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.','repositories':{},'surfaces':{},'features':{}}
 def git(repo,*args):
     return subprocess.check_output(['git','-C',str(repo),*args],text=True,encoding='utf-8').strip()
 def clean(s):return re.sub(r'/\*.*?\*/|(?m:^[ \t]*//[^\r\n]*$)','',s,flags=re.S)

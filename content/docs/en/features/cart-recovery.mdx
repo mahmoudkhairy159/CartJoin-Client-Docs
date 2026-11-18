@@ -47,6 +47,8 @@ flowchart TD
 
 Only staff with retry permission can retry a temporary failure. Enter a short explanation of what you reviewed. Avoid phone numbers, emails or secrets. Retry preserves the original deadline and remaining attempt budget and rechecks every rule. It cannot reactivate a suppressed, expired or accepted episode.
 
+Review the confirmation before proceeding. Cancel if the selected basket or explanation is wrong. Confirming requests another eligibility check; it never guarantees acceptance or message delivery. After a successful request, refresh the row and read the new recorded outcome rather than assuming that the customer received a reminder.
+
 ## Restrictions and decisions
 
 This release supports a guarded local SMS test adapter. It does not send live campaigns. Email reminders, campaign design, delivery tracking and marketing conversion reports remain planned. Cancelled or unpaid order attempts may conservatively suppress a reminder; they are never presented as a successful conversion.

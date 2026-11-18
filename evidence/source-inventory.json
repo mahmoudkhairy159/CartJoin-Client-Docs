@@ -1,36 +1,36 @@
 {
-  "reviewed": "2026-11-18",
+  "reviewed": "2026-11-19",
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "87dc6df66d29cb791d8eb26daaf5f253d9dee358",
+      "commit": "cf2001f5bdf1d9a6a14692797f7f81753ccafee0",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "442d96165acd3b1f37e8cc48ae41da546d018951",
+      "commit": "e5b2205bc437d39f87be47b5e9ae259f52e8983c",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "dfebecf4d8c5fabd299b1bbbec2d0f4f87a74959",
+      "commit": "5b693db189fa971954d4ea9d70c18878d13649bf",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "93039005178adb58a404e40e63bf0d6a6716fad1",
+      "commit": "adcf7cc6f635681352a4c31a6e7fab33fa048afc",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "f62e15f05335e63f21c2dde1f64f8365107fc5c7",
+      "commit": "2a14414ddbd5e435248e5c92509121dd62ac0acd",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Platform-Frontend": {
-      "commit": "c5b14aa073f06da0fd8ca7155be39c3c5955801e",
+      "commit": "9a03fa1f5f6e4f8a479b9ef871ae014828caff7b",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     }
   },
   "surfaces": {
@@ -596,6 +596,11 @@
           "special": null
         },
         {
+          "path": "/cart-recovery",
+          "feature": "cart-recovery",
+          "special": null
+        },
+        {
           "path": "/marketplace-operations",
           "feature": "marketplace-operations",
           "special": null
@@ -896,6 +901,11 @@
           "special": null
         },
         {
+          "path": "/feature-policies",
+          "feature": "settings",
+          "special": null
+        },
+        {
           "path": "/settings",
           "feature": "settings",
           "special": null
@@ -1127,7 +1137,7 @@
           ":id"
         ]
       },
-      "route_source_sha256": "8b7d7712e1d8578287aab1366407a32a97019c27d18c88b866bb1572dc60beab"
+      "route_source_sha256": "b14d57b8bdd70f13ce9d8a8327b27e04e24869480e748d31f9baa23ac4c43415"
     },
     "vendor": {
       "repository": "CartJoin-Vendor-Dashboard-Frontend",
@@ -1583,7 +1593,7 @@
           ":slug"
         ]
       },
-      "route_source_sha256": "15a08d63bb58bfa68cb27f3c485f109e0689c698885fdfe7843935b11cfd37bb"
+      "route_source_sha256": "518dd5481d6d8366929d60373d3470c2497becbd345f9cbe1024d59870f42ca6"
     }
   },
   "features": {
@@ -1773,6 +1783,8 @@
             "is_published",
             "is_active",
             "is_test",
+            "feature_keys",
+            "feature_keys.*",
             "en",
             "en.name",
             "en.description",
@@ -1924,6 +1936,8 @@
             "is_published",
             "is_active",
             "is_test",
+            "feature_keys",
+            "feature_keys.*",
             "en",
             "en.name",
             "en.description",
@@ -2027,6 +2041,38 @@
         "Modules/Auth/routes/web.php"
       ],
       "explicit_backend_routes": [
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "registration/challenges",
+          "controller": "CustomerRegistrationController",
+          "action": "challenge"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "register",
+          "controller": "CustomerRegistrationController",
+          "action": "register"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "forgot-password",
+          "controller": "CustomerRegistrationController",
+          "action": "forgotPassword"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "reset-password",
+          "controller": "CustomerRegistrationController",
+          "action": "resetPassword"
+        },
         {
           "module": "Auth",
           "file": "Modules/Auth/routes/platform-api.php",
@@ -2167,6 +2213,32 @@
           "file": "Modules/Auth/App/Http/Requests/Admin/ForgotPasswordResentCodeRequest.php",
           "fields": [
             "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Platform/GlobalCustomerRecoveryRequest.php",
+          "fields": [
+            "identity",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Platform/RegisterCustomerRequest.php",
+          "fields": [
+            "challenge_id",
+            "code",
+            "name",
+            "password",
+            "tenant_id",
+            "email",
+            "phone"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Platform/RequestCustomerRegistrationChallengeRequest.php",
+          "fields": [
+            "phone",
+            "tenant_id"
           ]
         },
         {
@@ -4535,6 +4607,22 @@
       "explicit_backend_routes": [
         {
           "module": "Cart",
+          "file": "Modules/Cart/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "cart-recovery",
+          "controller": "CartRecoveryController",
+          "action": "index"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "cart-recovery/{work}/retry",
+          "controller": "CartRecoveryController",
+          "action": "retry"
+        },
+        {
+          "module": "Cart",
           "file": "Modules/Cart/routes/user-api.php",
           "method": "POST",
           "uri": "session",
@@ -4688,6 +4776,14 @@
       ],
       "request_fields": [
         {
+          "file": "Modules/Cart/App/Http/Requests/Tenant/CartRecovery/RetryCartRecoveryRequest.php",
+          "fields": [
+            "reason",
+            "tenant_id",
+            "user_id"
+          ]
+        },
+        {
           "file": "Modules/Cart/App/Http/Requests/User/Cart/ApplyCouponRequest.php",
           "fields": [
             "code"
@@ -4762,7 +4858,43 @@
           ]
         }
       ],
-      "enums": []
+      "enums": [
+        {
+          "file": "Modules/Cart/App/Enums/CartRecoveryReason.php",
+          "cases": {
+            "DISABLED": "1",
+            "SOURCE_TEST": "2",
+            "CART_MISSING": "3",
+            "CART_CHANGED": "4",
+            "CART_EMPTY": "5",
+            "CART_EXPIRED": "6",
+            "ACCOUNT_INELIGIBLE": "7",
+            "RELATIONSHIP_INELIGIBLE": "8",
+            "CONSENT_MISSING": "9",
+            "NOTICE_CHANGED": "10",
+            "CONTACT_UNVERIFIED": "11",
+            "CONTACT_CHANGED": "12",
+            "PURCHASE_OBSERVED": "13",
+            "FREQUENCY_LIMIT": "14",
+            "TRANSPORT_UNAVAILABLE": "15",
+            "ATTEMPT_FAILED": "16",
+            "DEADLINE": "17",
+            "STORE_INELIGIBLE": "18",
+            "CART_UNAVAILABLE": "19"
+          }
+        },
+        {
+          "file": "Modules/Cart/App/Enums/CartRecoveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "ACCEPTED_TEST": "2",
+            "SUPPRESSED": "3",
+            "ATTENTION": "4",
+            "EXPIRED": "5",
+            "RETRY": "6"
+          }
+        }
+      ]
     },
     "checkout": {
       "modules": [
@@ -9430,6 +9562,14 @@
           "module": "Storefront",
           "file": "Modules/Storefront/routes/user-api.php",
           "method": "GET",
+          "uri": "/storefront/design",
+          "controller": "StorefrontController",
+          "action": "publicDesign"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
           "uri": "/home",
           "controller": "StorefrontController",
           "action": "home"
@@ -9520,7 +9660,12 @@
             "design.site_name",
             "design.logo_url",
             "design.hero",
-            "design.colors"
+            "design.colors",
+            "design.templates",
+            "design.sections",
+            "design.chrome",
+            "design.chrome.favicon_url",
+            "design.chrome.share_image_url"
           ]
         },
         {
@@ -10734,7 +10879,24 @@
         "Modules/Area/routes/vendor-api.php",
         "Modules/Area/routes/web.php"
       ],
-      "explicit_backend_routes": [],
+      "explicit_backend_routes": [
+        {
+          "module": "Settings",
+          "file": "Modules/Settings/routes/user-api.php",
+          "method": "GET",
+          "uri": "v1/feature-access",
+          "controller": "FeatureAccessController",
+          "action": "customer"
+        },
+        {
+          "module": "Settings",
+          "file": "Modules/Settings/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "feature-access",
+          "controller": "FeatureAccessController",
+          "action": "vendor"
+        }
+      ],
       "request_fields": [
         {
           "file": "Modules/Settings/App/Http/Requests/Admin/Settings/ImportTenantSettingRequest.php",
@@ -10758,6 +10920,30 @@
           "file": "Modules/Settings/App/Http/Requests/Admin/Settings/UpdatePlatformSettingRequest.php",
           "fields": [
             "providers"
+          ]
+        },
+        {
+          "file": "Modules/Settings/App/Http/Requests/Tenant/FeaturePolicy/ListFeaturePolicySubjectsRequest.php",
+          "fields": [
+            "tenant_id",
+            "search"
+          ]
+        },
+        {
+          "file": "Modules/Settings/App/Http/Requests/Tenant/FeaturePolicy/UpdateFeaturePolicyRequest.php",
+          "fields": [
+            "tenant_id",
+            "master_enabled",
+            "default_enabled"
+          ]
+        },
+        {
+          "file": "Modules/Settings/App/Http/Requests/Tenant/FeaturePolicy/UpdateFeaturePolicySubjectRequest.php",
+          "fields": [
+            "tenant_id",
+            "vendor_id",
+            "user_id",
+            "enabled"
           ]
         },
         {
@@ -11020,6 +11206,14 @@
           "module": "Storefront",
           "file": "Modules/Storefront/routes/user-api.php",
           "method": "GET",
+          "uri": "/storefront/design",
+          "controller": "StorefrontController",
+          "action": "publicDesign"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
           "uri": "/home",
           "controller": "StorefrontController",
           "action": "home"
@@ -11110,7 +11304,12 @@
             "design.site_name",
             "design.logo_url",
             "design.hero",
-            "design.colors"
+            "design.colors",
+            "design.templates",
+            "design.sections",
+            "design.chrome",
+            "design.chrome.favicon_url",
+            "design.chrome.share_image_url"
           ]
         },
         {
@@ -11294,6 +11493,14 @@
           "uri": "/home-config/categories",
           "controller": "StorefrontHomeConfigController",
           "action": "categories"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/storefront/design",
+          "controller": "StorefrontController",
+          "action": "publicDesign"
         },
         {
           "module": "Storefront",
@@ -11493,7 +11700,12 @@
             "design.site_name",
             "design.logo_url",
             "design.hero",
-            "design.colors"
+            "design.colors",
+            "design.templates",
+            "design.sections",
+            "design.chrome",
+            "design.chrome.favicon_url",
+            "design.chrome.share_image_url"
           ]
         },
         {
@@ -11803,6 +12015,1383 @@
             "TENANT_ADMIN": "2",
             "ADMIN": "3",
             "VENDOR_ADMIN": "4"
+          }
+        }
+      ]
+    },
+    "global-customer-account": {
+      "modules": [
+        "Auth",
+        "User"
+      ],
+      "route_sources": [
+        "Modules/Auth/routes/admin-api.php",
+        "Modules/Auth/routes/platform-api.php",
+        "Modules/Auth/routes/tenant-api.php",
+        "Modules/Auth/routes/user-api.php",
+        "Modules/Auth/routes/vendor-api.php",
+        "Modules/Auth/routes/web.php",
+        "Modules/User/routes/admin-api.php",
+        "Modules/User/routes/tenant-api.php",
+        "Modules/User/routes/user-api.php",
+        "Modules/User/routes/vendor-api.php",
+        "Modules/User/routes/web.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "registration/challenges",
+          "controller": "CustomerRegistrationController",
+          "action": "challenge"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "register",
+          "controller": "CustomerRegistrationController",
+          "action": "register"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "forgot-password",
+          "controller": "CustomerRegistrationController",
+          "action": "forgotPassword"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "reset-password",
+          "controller": "CustomerRegistrationController",
+          "action": "resetPassword"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "POST",
+          "uri": "login",
+          "controller": "CustomerSessionController",
+          "action": "login"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "GET",
+          "uri": "session",
+          "controller": "CustomerSessionController",
+          "action": "show"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/platform-api.php",
+          "method": "DELETE",
+          "uri": "session",
+          "controller": "CustomerSessionController",
+          "action": "destroy"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "/change-password",
+          "controller": "AuthController",
+          "action": "updatePassword"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "POST",
+          "uri": "/login",
+          "controller": "AuthController",
+          "action": "login"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "POST",
+          "uri": "/token/refresh",
+          "controller": "AuthController",
+          "action": "refresh"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "DELETE",
+          "uri": "/logout",
+          "controller": "AuthController",
+          "action": "destroy"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "POST",
+          "uri": "/change-password",
+          "controller": "ChangePasswordController",
+          "action": "changePassword"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "POST",
+          "uri": "/social-login",
+          "controller": "SocialAuthController",
+          "action": "socialLogin"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "GET",
+          "uri": "/social/{provider}/redirect",
+          "controller": "SocialAuthController",
+          "action": "redirect"
+        },
+        {
+          "module": "Auth",
+          "file": "Modules/Auth/routes/user-api.php",
+          "method": "GET",
+          "uri": "/social/{provider}/callback",
+          "controller": "SocialAuthController",
+          "action": "callback"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/AdminChangePasswordRequest.php",
+          "fields": [
+            "old_password",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/AdminLoginRequest.php",
+          "fields": [
+            "identity",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/AdminResetPasswordRequest.php",
+          "fields": [
+            "email",
+            "password",
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/AdminVerifyResetPasswordRequest.php",
+          "fields": [
+            "code",
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/AuthUpdateAdminRequest.php",
+          "fields": [
+            "name",
+            "username",
+            "email",
+            "phone",
+            "birth_date",
+            "image"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/ForgotPasswordRequest.php",
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Admin/ForgotPasswordResentCodeRequest.php",
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Platform/GlobalCustomerRecoveryRequest.php",
+          "fields": [
+            "identity",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Platform/RegisterCustomerRequest.php",
+          "fields": [
+            "challenge_id",
+            "code",
+            "name",
+            "password",
+            "tenant_id",
+            "email",
+            "phone"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Platform/RequestCustomerRegistrationChallengeRequest.php",
+          "fields": [
+            "phone",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/AuthUpdateTenantAdminRequest.php",
+          "fields": [
+            "name",
+            "username",
+            "email",
+            "phone",
+            "image",
+            "birth_date"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/ForgotPasswordRequest.php",
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/ForgotPasswordResentCodeRequest.php",
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/TenantAdminLoginRequest.php",
+          "fields": [
+            "identity",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/TenantAdminResetPasswordRequest.php",
+          "fields": [
+            "email",
+            "password",
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/TenantAdminVerifyResetPasswordRequest.php",
+          "fields": [
+            "code",
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Tenant/UpdateTenantAdminPasswordRequest.php",
+          "fields": [
+            "old_password",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/ChangePasswordRequest.php",
+          "fields": [
+            "old_password",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/ConfirmPhoneChangeRequest.php",
+          "fields": [
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/ForgotPasswordRequest.php",
+          "fields": [
+            "identity"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/LoginRequest.php",
+          "fields": [
+            "identity",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/RequestPhoneChangeOtpRequest.php",
+          "fields": [
+            "phone"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/ResetPasswordRequest.php",
+          "fields": [
+            "identity",
+            "password",
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/UserSocialLoginRequest.php",
+          "fields": [
+            "provider",
+            "provider_token",
+            "phone"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/User/VerifyPasswordResetOtpRequest.php",
+          "fields": [
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/UpdateVendorAdminFcmTokenRequest.php",
+          "fields": [
+            "token",
+            "device_id"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/UpdateVendorAdminRequest.php",
+          "fields": [
+            "name",
+            "phone",
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/VendorAdminLoginRequest.php",
+          "fields": [
+            "identity",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/VendorChangePasswordRequest.php",
+          "fields": [
+            "old_password",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/VendorForgotPasswordRequest.php",
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/VendorForgotPasswordResentCodeRequest.php",
+          "fields": [
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/VendorResetPasswordRequest.php",
+          "fields": [
+            "email",
+            "password",
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Auth/App/Http/Requests/Vendor/VendorVerifyResetPasswordRequest.php",
+          "fields": [
+            "code",
+            "email"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/Admin/User/ImportUsersRequest.php",
+          "fields": [
+            "file",
+            "chunk_size",
+            "override"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/Admin/User/StoreUserRequest.php",
+          "fields": [
+            "email",
+            "name",
+            "username",
+            "phone",
+            "password",
+            "is_active",
+            "blocked",
+            "image",
+            "tenant_id",
+            "normalized_phone",
+            "phone_verified_at",
+            "must_change_password"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/Admin/User/UpdateUserRequest.php",
+          "fields": [
+            "email",
+            "name",
+            "username",
+            "phone",
+            "password",
+            "is_active",
+            "blocked",
+            "image",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/Tenant/User/ImportUsersRequest.php",
+          "fields": [
+            "file",
+            "chunk_size",
+            "override"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/Tenant/User/StoreUserRequest.php",
+          "fields": [
+            "name",
+            "username",
+            "email",
+            "phone",
+            "password",
+            "password_confirmation",
+            "is_active",
+            "blocked",
+            "image"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/Tenant/User/UpdateUserRequest.php",
+          "fields": [
+            "is_active",
+            "blocked",
+            "name",
+            "username",
+            "email",
+            "phone",
+            "password",
+            "password_confirmation",
+            "tenant_id",
+            "image"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/User/UpdateFcmTokenRequest.php",
+          "fields": [
+            "token",
+            "device_id"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/User/UpdateUserImageRequest.php",
+          "fields": [
+            "image"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/User/UpdateUserLanguageRequest.php",
+          "fields": [
+            "language"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/User/UpdateUserPreferencesRequest.php",
+          "fields": [
+            "dark_mode"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/User/UpdateUserRequest.php",
+          "fields": [
+            "name"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/UserAddress/StoreUserAddressRequest.php",
+          "fields": [
+            "type",
+            "label",
+            "phone",
+            "address",
+            "latitude",
+            "longitude",
+            "postal_code"
+          ]
+        },
+        {
+          "file": "Modules/User/App/Http/Requests/User/UserAddress/UpdateUserAddressRequest.php",
+          "fields": [
+            "type",
+            "label",
+            "phone",
+            "address",
+            "latitude",
+            "longitude",
+            "postal_code"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Auth/App/Enums/OtpPurpose.php",
+          "cases": {
+            "RegisterVerification": "1",
+            "PhoneVerification": "2",
+            "PhoneChange": "3",
+            "PasswordReset": "4",
+            "GuestPurchaseClaim": "5",
+            "GuestOrderTracking": "6"
+          }
+        },
+        {
+          "file": "Modules/User/App/Enums/PreferredLanguageEnum.php",
+          "cases": {
+            "English": "1",
+            "Arabic": "2",
+            "French": "3",
+            "German": "4",
+            "Spanish": "5",
+            "Italian": "6",
+            "Portuguese": "7",
+            "Russian": "8",
+            "Chinese": "9",
+            "Japanese": "10",
+            "Korean": "11",
+            "Turkish": "12",
+            "Dutch": "13",
+            "Polish": "14",
+            "Swedish": "15",
+            "Danish": "16",
+            "Finnish": "17",
+            "Norwegian": "18",
+            "Czech": "19",
+            "Hungarian": "20",
+            "Romanian": "21",
+            "Slovak": "22",
+            "Bulgarian": "23",
+            "Croatian": "24",
+            "Greek": "25",
+            "Hebrew": "26",
+            "Indonesian": "27",
+            "Malay": "28",
+            "Thai": "29",
+            "Vietnamese": "30",
+            "Ukrainian": "31",
+            "Persian": "32",
+            "Hindi": "33",
+            "Bengali": "34",
+            "Urdu": "35",
+            "Swahili": "36"
+          }
+        },
+        {
+          "file": "Modules/User/App/Enums/UserAddressType.php",
+          "cases": {
+            "HOME": "1",
+            "WORK": "2",
+            "OTHER": "3"
+          }
+        },
+        {
+          "file": "Modules/User/App/Enums/UserExportJobStatus.php",
+          "cases": {
+            "QUEUED": "1",
+            "PROCESSING": "2",
+            "COMPLETED": "3",
+            "FAILED": "4",
+            "EXPIRED": "5"
+          }
+        },
+        {
+          "file": "Modules/User/App/Enums/UserExportJobType.php",
+          "cases": {
+            "EXPORT": "1",
+            "IMPORT_PREVIEW": "2"
+          }
+        }
+      ]
+    },
+    "cart-recovery": {
+      "modules": [
+        "Cart",
+        "Notification",
+        "Inventory",
+        "Order"
+      ],
+      "route_sources": [
+        "Modules/Cart/routes/admin-api.php",
+        "Modules/Cart/routes/tenant-api.php",
+        "Modules/Cart/routes/user-api.php",
+        "Modules/Cart/routes/vendor-api.php",
+        "Modules/Cart/routes/web.php",
+        "Modules/Notification/routes/admin-api.php",
+        "Modules/Notification/routes/tenant-api.php",
+        "Modules/Notification/routes/user-api.php",
+        "Modules/Notification/routes/vendor-api.php",
+        "Modules/Notification/routes/web.php",
+        "Modules/Inventory/routes/admin-api.php",
+        "Modules/Inventory/routes/tenant-api.php",
+        "Modules/Inventory/routes/user-api.php",
+        "Modules/Inventory/routes/vendor-api.php",
+        "Modules/Inventory/routes/web.php",
+        "Modules/Order/routes/admin-api.php",
+        "Modules/Order/routes/tenant-api.php",
+        "Modules/Order/routes/vendor-api.php",
+        "Modules/Order/routes/web.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "cart-recovery",
+          "controller": "CartRecoveryController",
+          "action": "index"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "cart-recovery/{work}/retry",
+          "controller": "CartRecoveryController",
+          "action": "retry"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "session",
+          "controller": "GuestSessionController",
+          "action": "store"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "checkout",
+          "controller": "GuestCheckoutController",
+          "action": "checkout"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "GET",
+          "uri": "payment/methods",
+          "controller": "PaymentController",
+          "action": "methods"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "claim/request",
+          "controller": "GuestClaimController",
+          "action": "requestCode"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "claim",
+          "controller": "GuestClaimController",
+          "action": "claim"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "PUT",
+          "uri": "cart/from-orders/{orderId}",
+          "controller": "CartController",
+          "action": "repeatOrder"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/merge-guest",
+          "controller": "GuestSessionController",
+          "action": "merge"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "GET",
+          "uri": "cart",
+          "controller": "CartController",
+          "action": "index"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/coupon",
+          "controller": "CartController",
+          "action": "applyCoupon"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "DELETE",
+          "uri": "cart/coupon",
+          "controller": "CartController",
+          "action": "removeCoupon"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/shipping-estimate",
+          "controller": "CartController",
+          "action": "shippingEstimate"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/gift-cards",
+          "controller": "CartController",
+          "action": "applyGiftCard"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "DELETE",
+          "uri": "cart/gift-cards/{applicationId}",
+          "controller": "CartController",
+          "action": "removeGiftCard"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/loyalty-redemption/preview",
+          "controller": "CartController",
+          "action": "previewLoyalty"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "PUT",
+          "uri": "cart/loyalty-redemption",
+          "controller": "CartController",
+          "action": "applyLoyalty"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "DELETE",
+          "uri": "cart/loyalty-redemption",
+          "controller": "CartController",
+          "action": "removeLoyalty"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "POST",
+          "uri": "cart/items",
+          "controller": "CartController",
+          "action": "store"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "PUT",
+          "uri": "cart/items/{itemId}",
+          "controller": "CartController",
+          "action": "update"
+        },
+        {
+          "module": "Cart",
+          "file": "Modules/Cart/routes/user-api.php",
+          "method": "DELETE",
+          "uri": "cart/items/{itemId}",
+          "controller": "CartController",
+          "action": "destroy"
+        },
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "GET",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "index"
+        },
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "PUT",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "update"
+        },
+        {
+          "module": "Inventory",
+          "file": "Modules/Inventory/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "/inventory/variants",
+          "controller": "InventoryVariantController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders",
+          "controller": "OrderController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/list-dropdown",
+          "controller": "OrderController",
+          "action": "listDropdown"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}",
+          "controller": "OrderController",
+          "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "order-items/list-dropdown",
+          "controller": "OrderItemController",
+          "action": "listDropdown"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders",
+          "controller": "OrderController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/export",
+          "controller": "OrderController",
+          "action": "export"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}",
+          "controller": "OrderController",
+          "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "orders/{id}/status",
+          "controller": "OrderController",
+          "action": "updateStatus"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "orders/{id}/cancel",
+          "controller": "OrderController",
+          "action": "cancel"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "orders/{id}/notes",
+          "controller": "OrderController",
+          "action": "addNote"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "orders",
+          "controller": "OrderController",
+          "action": "index"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "orders/{id}",
+          "controller": "OrderController",
+          "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/vendor-api.php",
+          "method": "PUT",
+          "uri": "orders/{id}/status",
+          "controller": "OrderController",
+          "action": "updateStatus"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Cart/App/Http/Requests/Tenant/CartRecovery/RetryCartRecoveryRequest.php",
+          "fields": [
+            "reason",
+            "tenant_id",
+            "user_id"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/ApplyCouponRequest.php",
+          "fields": [
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/ApplyGiftCardRequest.php",
+          "fields": [
+            "code",
+            "requested_amount",
+            "errors",
+            "message",
+            "statusCode"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/ApplyLoyaltyRedemptionRequest.php",
+          "fields": [
+            "points_requested",
+            "idempotency_key",
+            "policy_checksum",
+            "errors",
+            "message",
+            "statusCode"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/PreviewLoyaltyRedemptionRequest.php",
+          "fields": [
+            "points_requested",
+            "errors",
+            "message",
+            "statusCode"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/ShippingEstimateRequest.php",
+          "fields": [
+            "address",
+            "address.country",
+            "address.region",
+            "address.city",
+            "address.postal_code"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/StoreCartItemRequest.php",
+          "fields": [
+            "variant_id",
+            "quantity"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/Cart/UpdateCartItemRequest.php",
+          "fields": [
+            "quantity"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/GuestClaimRequest.php",
+          "fields": [
+            "code",
+            "password"
+          ]
+        },
+        {
+          "file": "Modules/Cart/App/Http/Requests/User/GuestTrackingRequest.php",
+          "fields": [
+            "order_number",
+            "phone",
+            "code"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/MarkAllAsReadRequest.php",
+          "fields": [
+            "user_id",
+            "user_type"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/SendNotificationRequest.php",
+          "fields": [
+            "user_ids",
+            "user_ids.*",
+            "user_type",
+            "title",
+            "message",
+            "channels",
+            "channels.*",
+            "type",
+            "data",
+            "translations",
+            "translations.*",
+            "translations.*.title",
+            "translations.*.message"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/UpdateNotificationRequest.php",
+          "fields": [
+            "topic_id",
+            "type",
+            "channel",
+            "status",
+            "data",
+            "translations",
+            "translations.*",
+            "translations.*.title",
+            "translations.*.message"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/NotificationIndexRequest.php",
+          "fields": [
+            "read",
+            "per_page",
+            "channel",
+            "search",
+            "status"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicIndexRequest.php",
+          "fields": [
+            "type",
+            "search"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicSubscriptionRequest.php",
+          "fields": [
+            "topic_key",
+            "channels",
+            "channels.*"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicUnsubscriptionRequest.php",
+          "fields": [
+            "topic_key"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/UpdateMarketingConsentRequest.php",
+          "fields": [
+            "tenant_id",
+            "user_id",
+            "purpose",
+            "channel",
+            "granted",
+            "notice_version",
+            "errors",
+            "message",
+            "statusCode"
+          ]
+        },
+        {
+          "file": "Modules/Inventory/App/Http/Requests/Tenant/InventoryAdjustment/StoreInventoryAdjustmentRequest.php",
+          "fields": [
+            "reason",
+            "notes",
+            "items",
+            "items.*.variant_id",
+            "items.*.quantity_change"
+          ]
+        },
+        {
+          "file": "Modules/Inventory/App/Http/Requests/Tenant/InventoryLocation/StoreInventoryLocationRequest.php",
+          "fields": [
+            "code",
+            "name",
+            "name.en",
+            "name.ar",
+            "type",
+            "tenant_branch_id",
+            "is_active"
+          ]
+        },
+        {
+          "file": "Modules/Inventory/App/Http/Requests/Tenant/InventoryLocation/UpdateInventoryLocationRequest.php",
+          "fields": [
+            "code",
+            "name",
+            "name.en",
+            "name.ar",
+            "type",
+            "tenant_branch_id",
+            "is_active"
+          ]
+        },
+        {
+          "file": "Modules/Inventory/App/Http/Requests/Vendor/InventoryAdjustment/StoreInventoryAdjustmentRequest.php",
+          "fields": [
+            "reason",
+            "notes",
+            "items",
+            "items.*.variant_id",
+            "items.*.quantity_change"
+          ]
+        },
+        {
+          "file": "Modules/Inventory/App/Http/Requests/Vendor/InventoryVariant/IndexInventoryVariantRequest.php",
+          "fields": [
+            "search",
+            "page",
+            "per_page"
+          ]
+        },
+        {
+          "file": "Modules/Order/App/Http/Requests/Tenant/Order/AddNoteRequest.php",
+          "fields": [
+            "body",
+            "is_internal"
+          ]
+        },
+        {
+          "file": "Modules/Order/App/Http/Requests/Tenant/Order/UpdateOrderStatusRequest.php",
+          "fields": [
+            "status",
+            "comment"
+          ]
+        },
+        {
+          "file": "Modules/Order/App/Http/Requests/Vendor/Order/UpdateOrderStatusRequest.php",
+          "fields": [
+            "status",
+            "comment"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Cart/App/Enums/CartRecoveryReason.php",
+          "cases": {
+            "DISABLED": "1",
+            "SOURCE_TEST": "2",
+            "CART_MISSING": "3",
+            "CART_CHANGED": "4",
+            "CART_EMPTY": "5",
+            "CART_EXPIRED": "6",
+            "ACCOUNT_INELIGIBLE": "7",
+            "RELATIONSHIP_INELIGIBLE": "8",
+            "CONSENT_MISSING": "9",
+            "NOTICE_CHANGED": "10",
+            "CONTACT_UNVERIFIED": "11",
+            "CONTACT_CHANGED": "12",
+            "PURCHASE_OBSERVED": "13",
+            "FREQUENCY_LIMIT": "14",
+            "TRANSPORT_UNAVAILABLE": "15",
+            "ATTEMPT_FAILED": "16",
+            "DEADLINE": "17",
+            "STORE_INELIGIBLE": "18",
+            "CART_UNAVAILABLE": "19"
+          }
+        },
+        {
+          "file": "Modules/Cart/App/Enums/CartRecoveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "ACCEPTED_TEST": "2",
+            "SUPPRESSED": "3",
+            "ATTENTION": "4",
+            "EXPIRED": "5",
+            "RETRY": "6"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationAction.php",
+          "cases": {
+            "CUSTOMER": "1",
+            "ORDER": "2",
+            "PAYMENT": "3",
+            "TENANT": "4",
+            "SYSTEM": "5"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationTarget.php",
+          "cases": {
+            "ALL_CUSTOMERS": "1",
+            "ALL_TENANT_ADMINS": "2",
+            "SPECIFIC_CUSTOMERS": "3",
+            "SPECIFIC_TENANT_ADMINS": "4",
+            "ALL_ADMINS": "5",
+            "SPECIFIC_ADMINS": "6",
+            "ALL_VENDOR_ADMINS": "7",
+            "SPECIFIC_VENDOR_ADMINS": "8"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationTopic.php",
+          "cases": {
+            "TENANT": "'tenant'",
+            "ROLE": "'role'",
+            "USER_TYPE": "'user_type'",
+            "SYSTEM": "'system'",
+            "ALL_USERS": "'all_users'"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationType.php",
+          "cases": {
+            "CUSTOM": "'custom'",
+            "CUSTOMER_CREATED": "'customer_created'",
+            "CUSTOMER_UPDATED": "'customer_updated'",
+            "CUSTOMER_ACTIVATED": "'customer_activated'",
+            "CUSTOMER_DEACTIVATED": "'customer_deactivated'",
+            "TENANT_CREATED": "'tenant_created'",
+            "TENANT_UPDATED": "'tenant_updated'",
+            "PAYMENT_RECEIVED": "'payment_received'",
+            "PAYMENT_FAILED": "'payment_failed'",
+            "NEW_POLICY_UPDATE": "'new_policy_update'",
+            "SYSTEM_ANNOUNCEMENT": "'system_announcement'",
+            "SYSTEM_UPDATE": "'system_update'"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationUserType.php",
+          "cases": {
+            "CUSTOMER": "1",
+            "TENANT_ADMIN": "2",
+            "ADMIN": "3",
+            "VENDOR_ADMIN": "4"
+          }
+        },
+        {
+          "file": "Modules/Inventory/App/Enums/InventoryAdjustmentStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "APPLIED": "2"
+          }
+        },
+        {
+          "file": "Modules/Inventory/App/Enums/InventoryLocationType.php",
+          "cases": {
+            "WAREHOUSE": "1",
+            "STORE": "2",
+            "VIRTUAL": "3"
+          }
+        },
+        {
+          "file": "Modules/Inventory/App/Enums/InventoryMovementType.php",
+          "cases": {
+            "IN": "1",
+            "OUT": "2",
+            "TRANSFER": "3",
+            "ADJUSTMENT": "4",
+            "RETURN": "5",
+            "TRANSFER_IN": "6",
+            "TRANSFER_OUT": "7",
+            "ADJUSTMENT_IN": "8",
+            "ADJUSTMENT_OUT": "9"
+          }
+        },
+        {
+          "file": "Modules/Inventory/App/Enums/InventoryReleaseBlockReason.php",
+          "cases": {
+            "PHYSICAL_OBLIGATION": "1"
+          }
+        },
+        {
+          "file": "Modules/Inventory/App/Enums/InventoryReservationStatus.php",
+          "cases": {
+            "ACTIVE": "1",
+            "RELEASED": "2",
+            "CONFIRMED": "3"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/OrderAddressTypeCode.php",
+          "cases": {
+            "SHIPPING": "1",
+            "BILLING": "2"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/OrderStatus.php",
+          "cases": {
+            "PENDING": "'pending'",
+            "CONFIRMED": "'confirmed'",
+            "PROCESSING": "'processing'",
+            "SHIPPED": "'shipped'",
+            "DELIVERED": "'delivered'",
+            "CANCELLED": "'cancelled'",
+            "REFUND_REQUESTED": "'refund_requested'",
+            "REFUNDED": "'refunded'"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/OrderStatusCode.php",
+          "cases": {
+            "PENDING": "1",
+            "CONFIRMED": "2",
+            "PROCESSING": "3",
+            "SHIPPED": "4",
+            "DELIVERED": "5",
+            "CANCELLED": "6",
+            "REFUND_REQUESTED": "7",
+            "REFUNDED": "8"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/PaymentStatus.php",
+          "cases": {
+            "PENDING": "'pending'",
+            "AWAITING_CONFIRMATION": "'awaiting_confirmation'",
+            "PENDING_APPROVAL": "'pending_approval'",
+            "PAID": "'paid'",
+            "FAILED": "'failed'",
+            "REFUNDED": "'refunded'",
+            "PARTIAL_REFUND": "'partial_refund'"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/PaymentStatusCode.php",
+          "cases": {
+            "PENDING": "1",
+            "AWAITING_CONFIRMATION": "2",
+            "PENDING_APPROVAL": "3",
+            "PAID": "4",
+            "FAILED": "5",
+            "REFUNDED": "6",
+            "PARTIAL_REFUND": "7"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/ShippingStatus.php",
+          "cases": {
+            "PENDING": "'pending'",
+            "PROCESSING": "'processing'",
+            "SHIPPED": "'shipped'",
+            "DELIVERED": "'delivered'",
+            "RETURNED": "'returned'"
+          }
+        },
+        {
+          "file": "Modules/Order/App/Enums/ShippingStatusCode.php",
+          "cases": {
+            "PENDING": "1",
+            "PROCESSING": "2",
+            "SHIPPED": "3",
+            "DELIVERED": "4",
+            "RETURNED": "5"
           }
         }
       ]
