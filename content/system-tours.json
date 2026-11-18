@@ -5828,5 +5828,124 @@
         "guide": "features/payments"
       }
     ]
+  },
+  "feature-carrier-labels": {
+    "title": {
+      "en": "Create a label without confusing it with dispatch",
+      "ar": "أنشئ ملصقاً دون الخلط بينه وبين تسليم الشحنة"
+    },
+    "intro": {
+      "en": "Follow the tenant permission and vendor label journey. Choose a step to see the matching screen and explanation. The short clips are captioned screenshot walkthroughs.",
+      "ar": "تابع صلاحية المتجر ومسار ملصق البائع. اختر خطوة لعرض الشاشة وشرحها معاً. الفيديوهات القصيرة شروح بالصور مع ترجمة نصية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Local development · 18 November 2026 · Synthetic orders · No real carrier booking or charge",
+      "ar": "تطوير محلي · ١٨ نوفمبر ٢٠٢٦ · طلبات اصطناعية · دون حجز حقيقي لدى ناقل أو خصم"
+    },
+    "steps": [
+      {
+        "image": "tenant-carrier-policy-en.png",
+        "imageAr": "tenant-carrier-policy-ar.png",
+        "title": {
+          "en": "The store controls vendor access",
+          "ar": "المتجر يتحكم في وصول البائع"
+        },
+        "body": {
+          "en": "Tenant → Carriers shows whether vendor labels are Allowed or Off for each connected carrier. An authorized operator reviews and confirms a change; it does not erase existing labels or cancel bookings.",
+          "ar": "تعرض شركات الشحن في لوحة المتجر ما إذا كانت ملصقات البائعين مسموحة أو متوقفة لكل شركة مرتبطة. يراجع المشغل المخول التغيير ويؤكده؛ ولا يحذف ذلك الملصقات القديمة أو يلغي الحجوزات."
+        },
+        "focus": [
+          76,
+          47,
+          19,
+          15
+        ],
+        "focusAr": [
+          4,
+          47,
+          23,
+          15
+        ],
+        "guide": "features/shipping-providers"
+      },
+      {
+        "image": "tenant-test-label-ready-en.png",
+        "imageAr": "tenant-test-label-ready-ar.png",
+        "title": {
+          "en": "Choose a named carrier on the shipment",
+          "ar": "اختر شركة بالاسم داخل الشحنة"
+        },
+        "body": {
+          "en": "Tenant → Shipments → Labels lists only eligible connected carriers. The local test choice needs no uploaded file: Generate label creates a private sample PDF. A manual carrier still requires the actual label file.",
+          "ar": "تعرض الشحنات ← بطاقات الشحن الشركات المرتبطة والمؤهلة فقط. لا يتطلب ناقل الاختبار المحلي رفع ملف: ينشئ زر إنشاء الملصق ملف PDF تجريبياً خاصاً. أما الناقل اليدوي فيتطلب رفع ملف الملصق الحقيقي."
+        },
+        "focus": [
+          21,
+          66,
+          73,
+          29
+        ],
+        "focusAr": [
+          2,
+          66,
+          77,
+          29
+        ],
+        "guide": "features/shipping-providers"
+      },
+      {
+        "image": "vendor-test-label-ready-en.png",
+        "imageAr": "vendor-test-label-ready-ar.png",
+        "title": {
+          "en": "Vendors choose from the store-approved list",
+          "ar": "يختار البائع من قائمة المتجر المسموح بها"
+        },
+        "body": {
+          "en": "Vendor → Shipping → owned shipment → Add label replaces numeric carrier IDs with names. Only carriers enabled for this store and vendor label use appear. Ask the store operator when the list is empty; do not enter another store’s shipment.",
+          "ar": "يختار البائع الشحن ← شحنته الخاصة ← إضافة ملصق. تظهر أسماء الشركات بدلاً من أرقامها، وتقتصر القائمة على ما فعله المتجر لاستخدام البائع. إذا كانت فارغة فتواصل مع إدارة المتجر؛ لا تستخدم شحنة متجر آخر."
+        },
+        "focus": [
+          28,
+          31,
+          42,
+          48
+        ],
+        "focusAr": [
+          28,
+          31,
+          42,
+          48
+        ],
+        "guide": "features/shipping-providers"
+      },
+      {
+        "image": "vendor-test-label-generated-en.png",
+        "imageAr": "vendor-test-label-generated-ar.png",
+        "title": {
+          "en": "Read the result and keep dispatch separate",
+          "ar": "اقرأ النتيجة وافصلها عن التسليم للناقل"
+        },
+        "body": {
+          "en": "The saved row shows TEST, its tracking reference and a download link. Opening the private sample was verified locally. Repeating the same carrier label reuses the saved result. Label generation alone leaves the shipment Pending; real dispatch needs its separate authorized update.",
+          "ar": "يعرض السجل علامة تجريبي ومرجع التتبع ورابط التنزيل. تم التحقق محلياً من فتح الملف الخاص. تكرار ملصق نفس الشركة يعيد النتيجة المحفوظة. إنشاء الملصق وحده يترك الشحنة قيد الانتظار؛ وتسليمها الفعلي للناقل يحتاج تحديثاً منفصلاً مخولاً."
+        },
+        "focus": [
+          22,
+          64,
+          76,
+          29
+        ],
+        "focusAr": [
+          2,
+          64,
+          76,
+          29
+        ],
+        "guide": "features/shipping"
+      }
+    ]
   }
 }

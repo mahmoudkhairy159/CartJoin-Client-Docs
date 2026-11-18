@@ -12,8 +12,8 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 - Four role handbooks: platform admin, tenant operator, vendor and customer.
 - 46 capability guides per language covering steps, rules, data flow and troubleshooting.
 - 230 documentation pages across English and Arabic.
-- Bilingual reviewed dashboard captures, including the new billing and merchant-application screens with interactive explanations and enlargement.
-- 76 short screenshot-based video files with English/Arabic captions and transcripts.
+- Bilingual reviewed dashboard captures, including billing, merchant applications, test payment outcomes and tenant/vendor carrier labels with interactive explanations and enlargement.
+- 78 short screenshot-based video files with English/Arabic captions and transcripts.
 - 26 diagram blocks explaining business flows and relationships.
 - Searchable capabilities, role-based navigation, language switching and light/dark themes.
 

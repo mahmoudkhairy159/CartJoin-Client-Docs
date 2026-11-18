@@ -1841,5 +1841,126 @@
     "api": "local-preview-sqlite",
     "captured": "2026-11-18",
     "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipments/3?tab=labels",
+    "sourceUrl": "http://localhost:4302/shipments/3?tab=labels",
+    "file": "tenant-test-label-generated-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipments/3?tab=labels",
+    "sourceUrl": "http://localhost:4302/shipments/3?tab=labels",
+    "file": "tenant-test-label-generated-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipments/3?tab=labels",
+    "sourceUrl": "http://localhost:4302/shipments/3?tab=labels",
+    "file": "tenant-test-label-ready-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipments/3?tab=labels",
+    "sourceUrl": "http://localhost:4302/shipments/3?tab=labels",
+    "file": "tenant-test-label-ready-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "vendor",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4303/shipping/4",
+    "sourceUrl": "http://localhost:4303/shipping/4",
+    "file": "vendor-test-label-generated-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "vendor",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4303/shipping/4",
+    "sourceUrl": "http://localhost:4303/shipping/4",
+    "file": "vendor-test-label-generated-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "vendor",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4303/shipping/4",
+    "sourceUrl": "http://localhost:4303/shipping/4",
+    "file": "vendor-test-label-ready-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "vendor",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4303/shipping/4",
+    "sourceUrl": "http://localhost:4303/shipping/4",
+    "file": "vendor-test-label-ready-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipping-providers",
+    "sourceUrl": "http://localhost:4302/shipping-providers",
+    "file": "tenant-carrier-policy-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipping-providers",
+    "sourceUrl": "http://localhost:4302/shipping-providers",
+    "file": "tenant-carrier-policy-confirm-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
+  },
+  {
+    "role": "tenant",
+    "feature": "shipping-providers",
+    "url": "http://localhost:4302/shipping-providers",
+    "sourceUrl": "http://localhost:4302/shipping-providers",
+    "file": "tenant-carrier-policy-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true
   }
 ]

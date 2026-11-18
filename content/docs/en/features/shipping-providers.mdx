@@ -1,7 +1,7 @@
 ---
 title: "Shipping providers and carrier operations"
 description: "Provider configuration connects parcel operations to supported carriers and their tracking/event behavior."
-roles: ["ADMIN", "TENANT"]
+roles: ["ADMIN", "TENANT", "VENDOR"]
 ---
 
 
@@ -52,3 +52,17 @@ A route proves navigation, not permission to perform every action. Related-recor
 The development test carrier creates private PDFs marked **TEST / NOT VALID FOR SHIPPING**. It makes no real booking or charge. Its signed callbacks retain durable replay evidence; old progress does not move a delivered shipment backwards. Manual providers reject external callbacks and use authorized staff progress updates.
 
 If an adapter times out, inspect the carrier booking before repeating a purchase. The system asks for review rather than claiming a successful manual fallback. A provider with retained tracking evidence is deactivated instead of deleting that history. Live carrier activation requires separate provider access and verification.
+
+
+## Create and review a shipping label
+
+1. **Tenant operator:** open **Shipping → Carriers**. The **Vendor labels** column controls new vendor label requests for each connected carrier. Use its Allow/Block action only with the dedicated permission, and read the confirmation. Existing labels and history remain available for authorized servicing.
+2. Open the relevant **Shipment → Labels**. Choose a carrier by name. A manual label requires its PDF, ZPL or image file; a generated label does not require a placeholder upload.
+3. **Vendor:** select the approved store workspace, open **Shipping → your shipment → Add label**, then choose an offered carrier. An empty list means the store has no eligible carrier enabled for your use; ask its operator.
+4. Review the saved tracking number and **Open/Download** link. Generating the same shipment/carrier label again reuses its saved result. Creating a different label after dispatch is refused. A generated tracking reference does not mark the parcel shipped or delivered.
+
+<SystemTour tour="feature-carrier-labels" anchor="carrier-label-screen-guide" compact />
+
+The test option exists only in enabled local/test environments and is permanently marked **TEST — not valid for shipping**. Its download is private and temporary; reload the shipment to obtain a fresh link after expiry. No customer address, real booking or payment is sent to a carrier. A named carrier in the catalog is not proof that a live adapter is connected.
+
+If generation times out, investigate the carrier result before trying again. Removing a label row does not cancel a carrier booking; retained signed tracking evidence can block deletion. Disabling vendor label access affects new requests, while approved vendors retain access to their authorized historical shipment records.

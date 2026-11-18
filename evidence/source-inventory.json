@@ -3,27 +3,27 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "16c53c17d2626c9ad848300036825b60ef3bdeea",
+      "commit": "b61ac88bce5d4f89ca9ff32f62e29507292974d3",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "791776cf6b119fc10063f53d744966cba6f66b11",
+      "commit": "0d7362c3f8dbf0b980041db74d0e532d8dc239b8",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "8df49d69da300c003e19b367046ef51c69282a19",
+      "commit": "baf5b40973bac92bcc5518dfd46833823d600041",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "fb10c6d3802b159113b5117906b88de170c163b8",
+      "commit": "ec9d2447c2f5c42c8a01b0c30f03c9aa24efda20",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "6f4c756cd15cb0e5b8910531e3ded40d8a9c36a6",
+      "commit": "c7823db1378e78504f91f040ef20178320e15892",
       "branch": "master",
       "dirty": true
     },
@@ -6043,6 +6043,12 @@
           "fields": [
             "credentials",
             "credentials.*"
+          ]
+        },
+        {
+          "file": "Modules/ShippingProvider/App/Http/Requests/Tenant/ShippingProvider/UpdateVendorLabelPolicyRequest.php",
+          "fields": [
+            "enabled"
           ]
         },
         {

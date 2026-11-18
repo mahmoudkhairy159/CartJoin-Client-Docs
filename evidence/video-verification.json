@@ -694,5 +694,39 @@
     "served": true,
     "captured": "2026-11-18",
     "kind": "localized-screenshot-walkthrough"
+  },
+  {
+    "tour": "feature-carrier-labels-en",
+    "duration": 32.0,
+    "expected": 32,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 32,
+      "error": false,
+      "defaultCaptions": "en"
+    }
+  },
+  {
+    "tour": "feature-carrier-labels-ar",
+    "duration": 32.0,
+    "expected": 32,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 32,
+      "error": false,
+      "defaultCaptions": "ar"
+    }
   }
 ]

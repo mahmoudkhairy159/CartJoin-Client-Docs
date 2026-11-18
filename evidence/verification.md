@@ -100,3 +100,11 @@
 - Browser verified EN/AR package listing, application receipt and protected review rows, quote confirmation and simulated paid activation. No actual money, transfer or live deployment occurred. Admin/tenant console error checks were empty.
 - Docs build and typecheck passed; all230 rendered pages returned200 without broken internal guide links. Feature jump headings are now checked for both languages. Browser verified English and Arabic screenshot selection, step navigation, actual24-second MP4 playback and default Arabic captions. Four new MP4s have valid H.2641280×720 streams and24/32-second durations. They are labeled screenshot walkthroughs rather than live transaction recordings.
 - Later roadmap phases are not marked complete. New captures are synthetic local preview data; original deployed capture provenance is preserved.
+
+## 18 November 2026 — Carrier labels and session review
+
+Tenant73, vendor47, admin16 and customer8 focused tests passed; all four production builds passed. Backend Shipping/ShippingProvider72 passed195 assertions before the final projection/envelope changes, followed by signed-carrier16 passed67 and tenant-auth10 passed29. Published tenantbaf5b40, vendorec9d244, admin0d7362c, storefrontc7823db; backend shipping806d750f/e55ed88f and authb61ac88b.
+
+Browser generated and reused private TEST labels for tenant shipment3 and vendor shipment4 in a synthetic local SQLite preview. Verified the private PDF download, named eligible carrier list, explicit vendor-label policy confirmation, persistent TEST marker, unchanged Pending status after label generation, and matched English/Arabic screens. Local tenant selector corrected from6 to1 without publishing environment overrides. A nested label response that hid existing rows and parallel JWT renewal races were found and fixed. No live carrier booking, external message or charge.
+
+Added11 screenshots, one contextual four-step tour and two32-second captioned walkthroughs. Both MP4s played to completion with the correct default captions and no media errors. English/Arabic carrier guide console checks had zero errors. Docs check230 pages26 diagrams74 tours and production build passed. Later marketplace operations, consent and global discovery remain active work; live provider/pilot/deployment gates remain separate.

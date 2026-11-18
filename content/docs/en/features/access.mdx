@@ -53,3 +53,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 ## Guest checkout update
 
 Guest shopping now supports a basket before sign-in and eligible cash-on-delivery purchases, with required phone and optional email. [Read the complete guest checkout and phone-account guide](/en/workflows/guest-checkout).
+
+## Keep working across tabs
+
+Supported browsers coordinate session renewal between tabs of the same dashboard. The customer storefront can restore an expired access token while its renewal window remains valid. A new sign-in in another tab is treated as a different session, so an old request is not replayed into that account. Logout or a revoked session still requires sign-in. Older saved sessions may need one fresh sign-in after this update. This does not enable silent login across different store domains: use your same central customer credentials when prompted.

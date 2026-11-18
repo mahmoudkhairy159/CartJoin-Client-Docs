@@ -1,0 +1,32 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+The store controls vendor access
+Tenant → Carriers shows whether vendor labels are Allowed or Off for
+each connected carrier. An authorized operator reviews and confirms a
+change; it does not erase existing labels or cancel bookings.
+
+2
+00:00:08.000 --> 00:00:16.000
+Choose a named carrier on the shipment
+Tenant → Shipments → Labels lists only eligible connected carriers. The
+local test choice needs no uploaded file: Generate label creates a
+private sample PDF. A manual carrier still requires the actual label
+file.
+
+3
+00:00:16.000 --> 00:00:24.000
+Vendors choose from the store-approved list
+Vendor → Shipping → owned shipment → Add label replaces numeric carrier
+IDs with names. Only carriers enabled for this store and vendor label
+use appear. Ask the store operator when the list is empty; do not enter
+another store’s shipment.
+
+4
+00:00:24.000 --> 00:00:32.000
+Read the result and keep dispatch separate
+The saved row shows TEST, its tracking reference and a download link.
+Opening the private sample was verified locally. Repeating the same
+carrier label reuses the saved result. Label generation alone leaves the
+shipment Pending; real dispatch needs its separate authorized update.

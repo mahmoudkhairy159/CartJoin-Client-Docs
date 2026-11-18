@@ -802,5 +802,49 @@
   "customer-test-declined-ar.png": {
     "width": 1265,
     "height": 712
+  },
+  "tenant-test-label-generated-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-test-label-generated-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-test-label-ready-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-test-label-ready-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-test-label-generated-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-test-label-generated-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-test-label-ready-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-test-label-ready-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-carrier-policy-ar.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-carrier-policy-confirm-en.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-carrier-policy-en.png": {
+    "width": 1265,
+    "height": 712
   }
 }
