@@ -7647,5 +7647,99 @@
       "en": "Synthetic demo account · Captured 18 November 2026 · Test verification only · Recovery stops before password reset",
       "ar": "حساب عرض تجريبي · التقطت الصور في ١٨ نوفمبر ٢٠٢٦ · تحقق اختباري فقط · تتوقف الاستعادة قبل تغيير كلمة المرور"
     }
+  },
+  "feature-cart-recovery": {
+    "title": {
+      "en": "Understand cart reminder checks",
+      "ar": "تعرف على فحص تذكيرات السلة"
+    },
+    "intro": {
+      "en": "Follow the actual tenant screen with controlled local examples and a confirmation that is cancelled.",
+      "ar": "اتبع شاشة التاجر الفعلية بأمثلة محلية مقيدة وحوار تأكيد يُلغى في العرض."
+    },
+    "video": false,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "tenant-cart-recovery-en-checks.png",
+        "imageAr": "tenant-cart-recovery-ar-checks.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Start with the test boundary",
+          "ar": "ابدأ بحدود الاختبار"
+        },
+        "body": {
+          "en": "The feature is off by default. Existing controlled examples remain visible; no new buyer activity is observed while disabled.",
+          "ar": "الميزة معطلة افتراضيًا. تبقى أمثلة الاختبار المقيدة ظاهرة ولا تُرصد أنشطة جديدة للعملاء أثناء التعطيل."
+        },
+        "guide": "features/cart-recovery"
+      },
+      {
+        "image": "tenant-cart-recovery-en-outcomes.png",
+        "imageAr": "tenant-cart-recovery-ar-outcomes.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read the outcome and reason",
+          "ar": "اقرأ النتيجة والسبب"
+        },
+        "body": {
+          "en": "Withdrawn reminder permission suppresses the attempt. Accepted by the test adapter means a local test record, not delivery, a recovered order or revenue.",
+          "ar": "يمنع سحب إذن التذكير المحاولة. القبول لدى محوّل الاختبار سجل محلي فقط، ولا يعني تسليم رسالة أو استعادة طلب أو إيرادًا."
+        },
+        "guide": "features/cart-recovery"
+      },
+      {
+        "image": "tenant-cart-recovery-en-reason.png",
+        "imageAr": "tenant-cart-recovery-ar-reason.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Explain a reviewed temporary failure",
+          "ar": "اشرح العطل المؤقت الذي راجعته"
+        },
+        "body": {
+          "en": "Authorized staff may request a bounded retry with a meaningful reason. Keep customer contacts and secrets out of that explanation.",
+          "ar": "يمكن للموظف المخول طلب إعادة محدودة بسبب واضح. لا تُدرج بيانات اتصال العملاء أو أسرارًا في الشرح."
+        },
+        "guide": "features/cart-recovery"
+      },
+      {
+        "image": "tenant-cart-recovery-en-confirm.png",
+        "imageAr": "tenant-cart-recovery-ar-confirm.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Review before confirming",
+          "ar": "راجع قبل التأكيد"
+        },
+        "body": {
+          "en": "A retry keeps the deadline and remaining budget and rechecks every rule. This demonstration cancels the dialog and submits no retry.",
+          "ar": "تحافظ الإعادة على الموعد النهائي والمحاولات المتبقية وتعيد فحص القواعد. يُلغى الحوار في هذا العرض دون إرسال إعادة محاولة."
+        },
+        "guide": "features/cart-recovery"
+      }
+    ],
+    "provenance": {
+      "en": "Controlled synthetic local examples · Captured 19 November 2026 · Test acceptance only · Both retry dialogs cancelled",
+      "ar": "أمثلة محلية تجريبية مقيدة · التقطت في ١٩ نوفمبر ٢٠٢٦ · قبول اختباري فقط · أُلغي حوارا إعادة المحاولة"
+    }
   }
 }

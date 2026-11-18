@@ -1,0 +1,131 @@
+{
+  "capture_date": "2026-11-19",
+  "capture_timezone": "Africa/Cairo",
+  "kind": "guided-screenshot-clips",
+  "mechanism": "Actual root CUA JPEG screenshot pixels preserved in PNG files, then rendered as four six-second still chapters with WebVTT captions; not continuous recording and no audio.",
+  "environment": "Controlled synthetic local Tenant dashboard examples; feature disabled by default. No live campaign or provider delivery acceptance.",
+  "privacy": "No customer contact, password, token, verification code or private operational evidence is published. Retry reasons contain only synthetic operator explanations.",
+  "limits": "accepted_test means local test-adapter acceptance only, not delivery, recovered order or revenue. The retry demonstration stops at confirmation and is cancelled.",
+  "entries": [
+    {
+      "id": "tenant-cart-recovery-en",
+      "locale": "en",
+      "role": "TENANT",
+      "url": "http://127.0.0.1:4318/cart-recovery",
+      "frames": [
+        {
+          "path": "public/screenshots/tenant-cart-recovery-en-checks.png",
+          "raw_artifact": "tenant-cart-recovery-en-checks.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:54:13.842452+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-cart-recovery-en-outcomes.png",
+          "raw_artifact": "tenant-cart-recovery-en-outcomes.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:54:22.918277+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-cart-recovery-en-reason.png",
+          "raw_artifact": "tenant-cart-recovery-en-reason.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:54:32.819508+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-cart-recovery-en-confirm.png",
+          "raw_artifact": "tenant-cart-recovery-en-confirm.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:54:39.250108+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        }
+      ],
+      "video": "public/videos/tenant-cart-recovery-en-tour.mp4",
+      "captions": "public/videos/tenant-cart-recovery-en.vtt",
+      "poster": "public/screenshots/tenant-cart-recovery-en-checks.png",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 24.0,
+      "bytes": 208725,
+      "captions_text": [
+        "Cart reminder checks are off by default. These are controlled local test examples.",
+        "Read each outcome and reason. Test acceptance is not message delivery, an order or revenue.",
+        "Only authorized staff can request a bounded retry. Record what you reviewed without customer details.",
+        "Review the confirmation before acting. This demonstration cancels here and submits no retry."
+      ]
+    },
+    {
+      "id": "tenant-cart-recovery-ar",
+      "locale": "ar",
+      "role": "TENANT",
+      "url": "http://127.0.0.1:4318/cart-recovery",
+      "frames": [
+        {
+          "path": "public/screenshots/tenant-cart-recovery-ar-checks.png",
+          "raw_artifact": "tenant-cart-recovery-ar-checks.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:53:02.363548+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-cart-recovery-ar-outcomes.png",
+          "raw_artifact": "tenant-cart-recovery-ar-outcomes.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:53:10.673019+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-cart-recovery-ar-reason.png",
+          "raw_artifact": "tenant-cart-recovery-ar-reason.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:53:25.016746+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-cart-recovery-ar-confirm.png",
+          "raw_artifact": "tenant-cart-recovery-ar-confirm.jpg",
+          "raw_artifact_updated_at": "2026-11-18T22:53:45.046723+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        }
+      ],
+      "video": "public/videos/tenant-cart-recovery-ar-tour.mp4",
+      "captions": "public/videos/tenant-cart-recovery-ar.vtt",
+      "poster": "public/screenshots/tenant-cart-recovery-ar-checks.png",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 24.0,
+      "bytes": 167734,
+      "captions_text": [
+        "فحص تذكيرات السلة معطل افتراضيًا. هذه أمثلة اختبار محلية مقيدة.",
+        "اقرأ النتيجة والسبب. قبول الاختبار لا يعني تسليم رسالة أو طلبًا أو إيرادًا.",
+        "يطلب الموظف المخول إعادة محدودة فقط. سجل ما راجعته دون بيانات العملاء.",
+        "راجع التأكيد قبل التنفيذ. يُلغى الإجراء هنا في العرض دون إرسال إعادة محاولة."
+      ]
+    }
+  ]
+}

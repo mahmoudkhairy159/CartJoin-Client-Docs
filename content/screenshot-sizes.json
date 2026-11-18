@@ -1398,5 +1398,37 @@
   "global-customer-en-signup.png": {
     "width": 1265,
     "height": 712
+  },
+  "tenant-cart-recovery-en-checks.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-en-outcomes.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-en-reason.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-en-confirm.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-ar-checks.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-ar-outcomes.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-ar-reason.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-cart-recovery-ar-confirm.png": {
+    "width": 1265,
+    "height": 712
   }
 }

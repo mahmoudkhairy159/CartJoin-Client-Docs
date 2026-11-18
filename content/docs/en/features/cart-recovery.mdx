@@ -22,6 +22,13 @@ Open **Cart recovery checks** with the appropriate staff permission. Each row ex
 
 The first check waits at least one hour after the customer's action. An episode expires 24 hours after that action and gets at most three processing attempts. At most one test acceptance is permitted for the same customer in your store per rolling day.
 
+<video style={{ width: "100%", height: "auto" }} controls playsInline preload="none" poster="/docs/screenshots/tenant-cart-recovery-en-checks.png" aria-label="Read cart reminder checks and review a retry safely">
+  <source src="/docs/videos/tenant-cart-recovery-en-tour.mp4" type="video/mp4" />
+  <track kind="captions" src="/docs/videos/tenant-cart-recovery-en.vtt" srcLang="en" label="English" default />
+</video>
+
+> **Guided screenshot tour, with captions and no audio.** Captured on 19 November 2026 in Cairo from a controlled local Tenant preview with synthetic examples. The feature is disabled by default. The demonstration reads outcomes and opens a retry confirmation, then cancels it; no retry is submitted. A test acceptance does not prove message delivery, an order or revenue.
+
 | Outcome | Meaning | What to do |
 | --- | --- | --- |
 | Waiting for worker | An episode is durably queued. | Refresh after the worker runs. |
@@ -48,6 +55,8 @@ flowchart TD
 Only staff with retry permission can retry a temporary failure. Enter a short explanation of what you reviewed. Avoid phone numbers, emails or secrets. Retry preserves the original deadline and remaining attempt budget and rechecks every rule. It cannot reactivate a suppressed, expired or accepted episode.
 
 Review the confirmation before proceeding. Cancel if the selected basket or explanation is wrong. Confirming requests another eligibility check; it never guarantees acceptance or message delivery. After a successful request, refresh the row and read the new recorded outcome rather than assuming that the customer received a reminder.
+
+<SystemTour tour="feature-cart-recovery" />
 
 ## Restrictions and decisions
 
