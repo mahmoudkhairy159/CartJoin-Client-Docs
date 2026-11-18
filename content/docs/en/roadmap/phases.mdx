@@ -23,6 +23,16 @@ This does not close the phase: carrier-to-order
 lifecycle integration, dispatch metrics and pilot readiness remain active work.
 Consent-aware growth and opt-in global discovery have not been marked complete.
 
+**Fulfillment development checkpoint:** packing and retained carrier evidence are
+implemented, including the quantity-based physical assessment. The assessment
+requires a current confirmed packing plan and qualifying evidence for every
+included parcel. A partial delivery, an editable status or a vendor claim cannot
+complete the whole order. Test observations cannot fill missing live deliveries,
+and an unknown dispatch time stays unknown. This internal assessment does not yet
+change order status, collect payment or award loyalty points. The durable order
+transitions, explicit store confirmation and customer partial-progress view remain
+implementation work. [Current packing guide](/en/features/packing).
+
 Central customer identity belongs in the foundation. The separate global CartJoin website can arrive later without requiring customers to register again at each shop.
 
 ```mermaid
