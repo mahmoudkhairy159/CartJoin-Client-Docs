@@ -1,0 +1,52 @@
+---
+title: "Cart reminder checks"
+description: "Understand when a store can test a cart reminder and why a reminder may be suppressed."
+roles: ["TENANT", "ADMIN", "CUSTOMER"]
+---
+
+## What this feature does
+
+The tenant dashboard includes **Cart recovery checks**, a controlled test of cart reminder eligibility. It is disabled by default. A test acceptance is a local record: it does not mean an SMS was delivered, an order was recovered or revenue was earned.
+
+Only a new cart action by a signed-in customer can start a reminder episode. Opening the cart or refreshing prices does not count as shopping activity, and old baskets are not filled with invented activity dates.
+
+## For the customer
+
+Use **Account → Profile & addresses → Your marketing choices** to allow or withdraw **Cart reminders → SMS** for this store. Your choices at other stores stay independent. Allowing email offers does not permit an SMS cart reminder.
+
+The check requires an explicitly verified phone. Turning permission off before processing stops the reminder. A changed cart, expired cart or later order attempt at this store also stops the old episode. Your original registration store remains a statistic; it does not restrict your account to that store.
+
+## How to use it
+
+Open **Cart recovery checks** with the appropriate staff permission. Each row explains the basket reference, last observed action, processing attempts, fixed deadline and outcome. Reasons distinguish withdrawn permission, changed contact/cart, unavailable stock, unavailable vendor offers, store maintenance or billing restrictions.
+
+The first check waits at least one hour after the customer's action. An episode expires 24 hours after that action and gets at most three processing attempts. At most one test acceptance is permitted for the same customer in your store per rolling day.
+
+| Outcome | Meaning | What to do |
+| --- | --- | --- |
+| Waiting for worker | An episode is durably queued. | Refresh after the worker runs. |
+| Accepted by test adapter | All checks passed and a local test record was accepted. | Do not count it as a delivered message or sale. |
+| Suppressed | A business or permission check prevented the attempt. | Read the reason. A retry cannot bypass the restriction. |
+| Waiting for bounded retry | Processing failed temporarily, with budget remaining. | Review the issue; an authorized operator may retry with a reason. |
+| Operator attention required | The attempt budget was exhausted. | Investigate; do not repeatedly reset the episode. |
+| Deadline expired | The fixed reminder window ended. | No further retry is allowed for this episode. |
+
+## Data flow and outcome
+
+```mermaid
+flowchart TD
+    A[New signed-in cart action] --> B[Wait at least one hour]
+    B --> C[Recheck store, cart, consent and contact]
+    C --> D{Still eligible?}
+    D -->|No| E[Suppress and explain the reason]
+    D -->|Yes| F[Accept once in the local test adapter]
+    C -->|Processing failure| G[Bounded retry or operator attention]
+```
+
+## Retry safely
+
+Only staff with retry permission can retry a temporary failure. Enter a short explanation of what you reviewed. Avoid phone numbers, emails or secrets. Retry preserves the original deadline and remaining attempt budget and rechecks every rule. It cannot reactivate a suppressed, expired or accepted episode.
+
+## Restrictions and decisions
+
+This release supports a guarded local SMS test adapter. It does not send live campaigns. Email reminders, campaign design, delivery tracking and marketing conversion reports remain planned. Cancelled or unpaid order attempts may conservatively suppress a reminder; they are never presented as a successful conversion.
