@@ -1171,5 +1171,43 @@
       "activeCaptionTrackLoaded": true
     },
     "verified": "2026-11-18"
+  },
+  {
+    "tour": "packing-manifest-en",
+    "duration": 32,
+    "expected": 32,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 32,
+      "error": false,
+      "defaultCaptions": "en",
+      "captionTrackSelected": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "packing-manifest-ar",
+    "duration": 32,
+    "expected": 32,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 32,
+      "error": false,
+      "defaultCaptions": "ar",
+      "captionTrackSelected": true
+    },
+    "verified": "2026-11-18"
   }
 ]

@@ -57,3 +57,6 @@ build.log
 
 # Local build and verification output
 *.log
+
+!/evidence/packing-verification.md
+!/evidence/packing-guide-ar.jpg

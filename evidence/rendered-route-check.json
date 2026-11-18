@@ -5,6 +5,11 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/coverage",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/evidence/attributes",
     "status": 200,
     "brokenLinks": []
@@ -15,17 +20,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/coverage",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/evidence/audit",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/cart",
+    "slug": "ar/evidence/brands",
     "status": 200,
     "brokenLinks": []
   },
@@ -35,12 +35,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/categories",
+    "slug": "ar/evidence/cart",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/checkout",
+    "slug": "ar/evidence/categories",
     "status": 200,
     "brokenLinks": []
   },
@@ -55,12 +55,17 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/evidence/coupons",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/evidence/customers",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/coupons",
+    "slug": "ar/evidence/checkout",
     "status": 200,
     "brokenLinks": []
   },
@@ -90,12 +95,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/brands",
+    "slug": "ar/evidence/loyalty",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/loyalty",
+    "slug": "ar/evidence/notifications",
     "status": 200,
     "brokenLinks": []
   },
@@ -120,11 +125,6 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/notifications",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/evidence/promotions",
     "status": 200,
     "brokenLinks": []
@@ -140,12 +140,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/returns",
+    "slug": "ar/evidence/reviews",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/reviews",
+    "slug": "ar/evidence/returns",
     "status": 200,
     "brokenLinks": []
   },
@@ -160,17 +160,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/settlements",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/evidence/settings",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/shipping",
+    "slug": "ar/evidence/settlements",
     "status": 200,
     "brokenLinks": []
   },
@@ -180,12 +175,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/team",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "ar/evidence/tax-currency",
+    "slug": "ar/evidence/shipping",
     "status": 200,
     "brokenLinks": []
   },
@@ -195,7 +185,17 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/tenants",
+    "slug": "ar/evidence/support",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/evidence/tax-currency",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/evidence/team",
     "status": 200,
     "brokenLinks": []
   },
@@ -205,7 +205,17 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/support",
+    "slug": "ar/evidence/vendors",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/evidence/wallet",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/evidence/tenants",
     "status": 200,
     "brokenLinks": []
   },
@@ -215,17 +225,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/evidence/vendors",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/evidence/wishlist",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "ar/evidence/wallet",
     "status": 200,
     "brokenLinks": []
   },
@@ -245,12 +245,17 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/features/audit",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/features/banners",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/audit",
+    "slug": "ar/features/brands",
     "status": 200,
     "brokenLinks": []
   },
@@ -261,11 +266,6 @@
   },
   {
     "slug": "ar/features/categories",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "ar/features/brands",
     "status": 200,
     "brokenLinks": []
   },
@@ -300,6 +300,11 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/features/flash-sales",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/features/gift-cards",
     "status": 200,
     "brokenLinks": []
@@ -315,22 +320,17 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/flash-sales",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/features/invoices",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/marketplace-operations",
+    "slug": "ar/features/loyalty",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/loyalty",
+    "slug": "ar/features/marketplace-operations",
     "status": 200,
     "brokenLinks": []
   },
@@ -350,7 +350,17 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/features/notifications",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/features/orders",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/features/promotions",
     "status": 200,
     "brokenLinks": []
   },
@@ -360,17 +370,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/notifications",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "ar/features/product-review",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "ar/features/promotions",
+    "slug": "ar/features/products",
     "status": 200,
     "brokenLinks": []
   },
@@ -385,7 +385,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/products",
+    "slug": "ar/features/product-review",
     "status": 200,
     "brokenLinks": []
   },
@@ -405,12 +405,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/shipping-providers",
+    "slug": "ar/features/seo",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/seo",
+    "slug": "ar/features/shipping-providers",
     "status": 200,
     "brokenLinks": []
   },
@@ -420,12 +420,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/settlements",
+    "slug": "ar/features/settings",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/settings",
+    "slug": "ar/features/settlements",
     "status": 200,
     "brokenLinks": []
   },
@@ -436,11 +436,6 @@
   },
   {
     "slug": "ar/features/subscriptions",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "ar/features/support",
     "status": 200,
     "brokenLinks": []
   },
@@ -465,11 +460,6 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/vendors",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/features/wallet",
     "status": 200,
     "brokenLinks": []
@@ -480,12 +470,22 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/features/wishlist",
+    "slug": "ar/features/support",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/features/vendors",
     "status": 200,
     "brokenLinks": []
   },
   {
     "slug": "ar/learn",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "ar/features/wishlist",
     "status": 200,
     "brokenLinks": []
   },
@@ -500,12 +500,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/roadmap/global-platform",
+    "slug": "ar/roadmap/decisions",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/roadmap/decisions",
+    "slug": "ar/roadmap/global-platform",
     "status": 200,
     "brokenLinks": []
   },
@@ -530,6 +530,11 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/roles/admin",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/roles/customer",
     "status": 200,
     "brokenLinks": []
@@ -540,17 +545,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "ar/roles/vendor",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "ar/screenshots",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/roles/admin",
+    "slug": "ar/roles/vendor",
     "status": 200,
     "brokenLinks": []
   },
@@ -570,12 +570,17 @@
     "brokenLinks": []
   },
   {
+    "slug": "ar/workflows",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "ar/workflows/guest-checkout",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "ar/workflows",
+    "slug": "en/business",
     "status": 200,
     "brokenLinks": []
   },
@@ -590,12 +595,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/business",
+    "slug": "en/coverage",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/coverage",
+    "slug": "en/evidence/audit",
     "status": 200,
     "brokenLinks": []
   },
@@ -610,17 +615,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/audit",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "en/evidence/banners",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "en/evidence/brands",
     "status": 200,
     "brokenLinks": []
   },
@@ -640,6 +635,11 @@
     "brokenLinks": []
   },
   {
+    "slug": "en/evidence/brands",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "en/evidence/cms",
     "status": 200,
     "brokenLinks": []
@@ -651,11 +651,6 @@
   },
   {
     "slug": "en/evidence/coupons",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "en/evidence/customers",
     "status": 200,
     "brokenLinks": []
   },
@@ -680,12 +675,22 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/inventory",
+    "slug": "en/evidence/customers",
     "status": 200,
     "brokenLinks": []
   },
   {
     "slug": "en/evidence/loyalty",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "en/evidence/notifications",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "en/evidence/inventory",
     "status": 200,
     "brokenLinks": []
   },
@@ -715,16 +720,6 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/notifications",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "en/evidence/refunds",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "en/evidence/reports",
     "status": 200,
     "brokenLinks": []
@@ -750,17 +745,22 @@
     "brokenLinks": []
   },
   {
+    "slug": "en/evidence/refunds",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "en/evidence/settings",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/settlements",
+    "slug": "en/evidence/shipping-providers",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/shipping-providers",
+    "slug": "en/evidence/settlements",
     "status": 200,
     "brokenLinks": []
   },
@@ -775,6 +775,11 @@
     "brokenLinks": []
   },
   {
+    "slug": "en/evidence/support",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "en/evidence/tax-currency",
     "status": 200,
     "brokenLinks": []
@@ -785,17 +790,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/team",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "en/evidence/vendor-profile",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/support",
+    "slug": "en/evidence/vendors",
     "status": 200,
     "brokenLinks": []
   },
@@ -805,7 +805,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/vendors",
+    "slug": "en/evidence/team",
     "status": 200,
     "brokenLinks": []
   },
@@ -820,11 +820,6 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/evidence/webhooks",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "en/features/access",
     "status": 200,
     "brokenLinks": []
@@ -835,12 +830,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/features/banners",
+    "slug": "en/features/attributes",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/features/attributes",
+    "slug": "en/evidence/webhooks",
     "status": 200,
     "brokenLinks": []
   },
@@ -850,12 +845,17 @@
     "brokenLinks": []
   },
   {
+    "slug": "en/features/categories",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
     "slug": "en/features/cart",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/features/categories",
+    "slug": "en/features/banners",
     "status": 200,
     "brokenLinks": []
   },
@@ -885,11 +885,6 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/features/dashboards",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
     "slug": "en/features/flash-sales",
     "status": 200,
     "brokenLinks": []
@@ -901,6 +896,11 @@
   },
   {
     "slug": "en/features",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "en/features/dashboards",
     "status": 200,
     "brokenLinks": []
   },
@@ -935,12 +935,12 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/features/pricing",
+    "slug": "en/features/notifications",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/features/product-review",
+    "slug": "en/features/orders",
     "status": 200,
     "brokenLinks": []
   },
@@ -970,17 +970,17 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/features/reviews",
+    "slug": "en/features/product-review",
+    "status": 200,
+    "brokenLinks": []
+  },
+  {
+    "slug": "en/features/pricing",
     "status": 200,
     "brokenLinks": []
   },
   {
     "slug": "en/features/search",
-    "status": 200,
-    "brokenLinks": []
-  },
-  {
-    "slug": "en/features/seo",
     "status": 200,
     "brokenLinks": []
   },
@@ -1125,7 +1125,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/screenshots",
+    "slug": "en/features/reviews",
     "status": 200,
     "brokenLinks": []
   },
@@ -1145,7 +1145,7 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/workflows/guest-checkout",
+    "slug": "en/features/merchant-onboarding",
     "status": 200,
     "brokenLinks": []
   },
@@ -1165,17 +1165,17 @@
     "brokenLinks": []
   },
   {
-    "slug": "en/features/merchant-onboarding",
+    "slug": "en/screenshots",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/features/orders",
+    "slug": "en/workflows/guest-checkout",
     "status": 200,
     "brokenLinks": []
   },
   {
-    "slug": "en/features/notifications",
+    "slug": "en/features/seo",
     "status": 200,
     "brokenLinks": []
   }
