@@ -16,7 +16,10 @@ function showLoader(image: HTMLImageElement | null) {
 export default function Loading() {
   return (
     <div role="status" className="grid min-h-48 place-items-center">
-      <img ref={showLoader} src={directory + 'sketch.svg'} width={56} height={56} alt="Loading page" />
+      <picture>
+        <source media="(prefers-reduced-motion: reduce)" srcSet={directory + 'still.svg'} />
+        <img ref={showLoader} src={directory + 'sketch.svg'} width={56} height={56} alt="Loading page" />
+      </picture>
     </div>
   );
 }

@@ -1,10 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 64 64" role="img" aria-label="Loading page"><style>
-.parcel{animation:drop 1.6s ease-in infinite}.body{animation:dip 1.6s ease-out infinite}
-@keyframes drop{0%,12%{transform:translateY(-12px) rotate(-8deg);opacity:0}25%{opacity:1}52%,75%{transform:translateY(12px);opacity:1}90%,100%{transform:translateY(12px);opacity:0}}
-@keyframes dip{0%,50%,80%,100%{transform:translateY(0)}59%{transform:translateY(2px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}.parcel{transform:translateY(12px)}}</style>
-  <rect width="64" height="64" rx="14" fill="#0b0b0c"/>
-  <g class="body"><path d="M13 17h7l5 23h22l5-17H22" fill="none" stroke="#d8b978"
-    stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="29" cy="48" r="2.5" fill="#d8b978"/>
-  <circle cx="44" cy="48" r="2.5" fill="#d8b978"/>
-<g class="parcel" style="transform-origin:34px 18px"><rect x="29" y="15" width="11" height="9" rx="1.5" fill="#f2efe9"/><path d="M34 15v4" stroke="#927443" stroke-width="2"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 62 62" role="img" aria-label="Loading page">
+  <style>
+    .parcel { animation: settle 2s infinite; transform-origin: 35px 25px; }
+    @keyframes settle {
+      0%, 100% { opacity: 0; transform: translateY(-9px) rotate(-8deg); }
+      17% { opacity: 1; transform: translateY(-7px) rotate(-6deg); }
+      48% { opacity: 1; transform: translateY(7px) rotate(0deg); }
+      58%, 76% { opacity: 1; transform: translateY(6px); }
+      92% { opacity: 0; transform: translateY(6px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+  <g class="parcel" stroke="#99733e" stroke-width="1.3" stroke-linejoin="round">
+    <path fill="#f0d4a2" d="m28 20 7-3.6 7 3.6-7 3.6z"/>
+    <path fill="#d3a66a" d="m28 20 7 3.6v8L28 28z"/>
+    <path fill="#b58a50" d="m35 23.6 7-3.6v8l-7 3.6z"/>
+  </g>
+  <path d="M7 17h5.2c1.5 0 2.7 1 3 2.5l4.2 19.2a4 4 0 0 0 3.9 3.1h23.1a4 4 0 0 0 3.8-2.9l4.2-14.6H16.3" fill="none" stroke="#99733e" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ac8547"><circle cx="24" cy="48" r="2.8"/><circle cx="45" cy="48" r="2.8"/></g>
+</svg>
