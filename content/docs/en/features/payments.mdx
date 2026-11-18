@@ -30,6 +30,38 @@ On a supported device, signed-in shoppers at an enrolled store can select delive
 
 Online payment success requires a verified provider webhook, never the browser return alone. Bank transfer needs proof and pending approval; rejection returns to awaiting confirmation. COD skips proof. The chosen inactive/unsupported gateway is rejected rather than silently replaced.
 
+## COD with wallet credit, gift cards or points
+
+Internal credit and cash collection are separate. When an eligible COD order is
+prepared for dispatch, the system commits its reserved wallet credit, gift-card
+value and redeemed points together with stock preparation. If stock preparation
+fails, those changes roll back. Repeating the step or recording cash later does
+not spend the credit again. An expired or mismatched reservation blocks dispatch;
+ask the store to resolve it rather than changing the agreed purchase amount.
+
+If a small number of high-value points cannot be divided across your selected
+sellers without losing part of a discount, checkout stops before charging. Remove
+points to continue or purchase each seller's items separately.
+
+COD stays **awaiting collection** until an authorized operator records actual
+collection. Bank-transfer proof awaiting approval does not qualify as COD.
+After dispatch, a new payment method or attempt cannot replace the recorded
+collection, even if an editable order status was reset. Contact the store for
+reconciliation. Vendors cannot approve the customer's payment through a shipping
+status change.
+
+```mermaid
+flowchart LR
+  A[Check COD amount and reserved credit] --> B{Stock and credit commit together}
+  B -->|Failure| C[Roll back and resolve the blocker]
+  B -->|Success| D[Dispatched; COD still unpaid]
+  D --> E[Record actual cash collection]
+  E --> F[Reuse committed credit]
+```
+
+Automatic carrier-to-order fulfillment remains disabled in this development
+checkpoint while the remaining delivery, reward and dashboard work is completed.
+
 ## Data flow and outcome
 
 Invoice amount → payment intent → provider verification or named manual approver → payment status → invoice and child-order payment projections. Proof files remain protected.
