@@ -66,11 +66,9 @@ node scripts/check-rendered-routes.mjs
 
 Checks cover language parity, guide structure, links, screenshots, captions, tours and route coverage. They do not run backend or dashboard application test suites.
 
-The current configuration uses Next.js standalone output. After building, copy the public/static assets before starting it. In PowerShell:
+The build includes screenshots, videos, captions and Next.js static assets in `.next/standalone`. Deploy this complete directory and start its server. For example, from the repository root in PowerShell:
 
 ```powershell
-Copy-Item -Path public -Destination .next/standalone/public -Recurse -Force
-Copy-Item -Path .next/static -Destination .next/standalone/.next/static -Recurse -Force
 $env:PORT = '3100'
 node .next/standalone/server.js
 ```
