@@ -44,6 +44,7 @@
       "refunds",
       "returns",
       "shipping",
+      "packing",
       "shipping-providers"
     ]
   },

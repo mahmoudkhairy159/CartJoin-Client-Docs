@@ -5,9 +5,17 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 ---
 
 
+From a delivered order in your account, choose **Buy again**. The store checks the original variants against current catalog availability, stock and prices. A repeat request keeps the larger quantity already in your cart. If any line is unavailable, your cart stays as it was.
+
 ## How to use it
 
 Open Orders, filter by the available status or ownership fields, and open the detail. Inspect items, payment state and history. Tenant operators use allowed status changes and notes. Vendors advance their own fulfillment only through offered transitions.
+
+A payment settlement review badge means a captured payment needs attention before fulfillment. Check stock for this vendor order. Once the missing stock is available, the maintenance worker can retry settlement. A vendor can continue shipping after the hold clears.
+
+Tenant staff with permission to view orders receive an inbox notice when an order first goes on hold. A cancellation or refund after capture needs manual reconciliation before fulfillment.
+
+<SystemTour tour="dashboard-settlement-review" compact />
 
 <SystemTour tour="feature-orders" compact />
 

@@ -1,0 +1,29 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Assign units to a parcel
+Match the purchased item and parcel, enter a positive whole quantity,
+explain the work and save a draft. Partial drafts are allowed; unsaved
+quantities cannot be confirmed.
+
+2
+00:00:08.000 --> 00:00:16.000
+Refresh an outdated snapshot deliberately
+A competing change blocks this stale vendor command. Quantities and
+explanation remain on screen. Refresh, inspect the current revision and
+reconsider before submitting again.
+
+3
+00:00:16.000 --> 00:00:24.000
+Confirm complete packing, not dispatch
+Every remaining unit is assigned. The store confirmed revision 6 after
+reopening and voiding an unused parcel. The order remains confirmed and
+unpaid, with no handoff or delivery.
+
+4
+00:00:24.000 --> 00:00:32.000
+Inspect the record with platform oversight
+Platform admins can read the store, seller, quantities and receipt
+trail. They cannot save, confirm, reopen, void or create parcels from
+this oversight screen.

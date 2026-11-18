@@ -1095,39 +1095,117 @@
   },
   "feature-checkout": {
     "title": {
-      "en": "Start with the delivery address",
-      "ar": "البدء بعنوان التوصيل"
+      "en": "Choose and verify delivery",
+      "ar": "اختيار طريقة التوصيل والتحقق منها"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Follow the address, delivery, payment and delivery-price review steps.",
+      "ar": "تابع خطوات العنوان والتوصيل والدفع ومراجعة سعر التوصيل."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
-      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
+      "en": "Captured on 18 November 2026 in the local storefront with example addresses, shipping quotes and payment methods. No money changed hands.",
+      "ar": "التُقطت الشاشات في المتجر المحلي في ١٨ نوفمبر ٢٠٢٦ باستخدام عناوين وأسعار توصيل وطرق دفع تجريبية. لم تُحوّل أي أموال."
     },
     "steps": [
       {
-        "image": "customer-screen-checkout.jpg",
+        "image": "checkout-address-en.png",
         "focus": [
-          3,
-          16,
-          93,
-          77
+          2,
+          2,
+          96,
+          96
         ],
         "title": {
-          "en": "Customer",
-          "ar": "العميل"
+          "en": "Shipping address",
+          "ar": "عنوان الشحن"
         },
         "body": {
-          "en": "The capture shows the Address stage, the four checkout stages and the vendor split. Choose an address before requesting delivery options; no purchase was placed for capture.",
-          "ar": "تعرض الصورة مرحلة العنوان ومراحل الشراء الأربع والتقسيم حسب البائع. اختر عنواناً قبل طلب خيارات التوصيل؛ لم ينشأ شراء لالتقاط الصورة."
+          "en": "Enter the recipient’s details and choose the country, state and city to request delivery options.",
+          "ar": "أدخل بيانات المستلم واختر البلد والمحافظة والمدينة لعرض طرق التوصيل."
+        },
+        "guide": "features/checkout",
+        "imageAr": "checkout-address-ar.png"
+      },
+      {
+        "image": "checkout-delivery-quote-en.png",
+        "imageAr": "checkout-delivery-quote-ar.png",
+        "focus": [
+          2,
+          12,
+          95,
+          60
+        ],
+        "title": {
+          "en": "Compare the quoted methods",
+          "ar": "مقارنة طرق التوصيل المتاحة"
+        },
+        "body": {
+          "en": "Choose the delivery method for this address. The example shows paid delivery and free pickup. A preferred day does not override the quoted price.",
+          "ar": "اختر طريقة التوصيل المناسبة للعنوان. يعرض المثال توصيلًا برسوم واستلامًا مجانيًا. اختيار اليوم المفضل لا يغير السعر."
+        },
+        "guide": "features/checkout"
+      },
+      {
+        "image": "checkout-hosted-methods-en.png",
+        "imageAr": "checkout-hosted-methods-ar.png",
+        "focus": [
+          2,
+          12,
+          95,
+          59
+        ],
+        "title": {
+          "en": "Review hosted payment options",
+          "ar": "مراجعة خيارات الدفع المستضافة"
+        },
+        "body": {
+          "en": "This signed-in demo lists the payment methods configured for Paymob. The provider confirms final eligibility on its own checkout page.",
+          "ar": "يعرض المثال لمستخدم مسجّل خيارات الدفع المهيأة في Paymob. تتحقق البوابة من الأهلية النهائية على صفحة الدفع الخاصة بها."
+        },
+        "guide": "features/checkout"
+      },
+      {
+        "image": "checkout-express-en.png",
+        "imageAr": "checkout-express-ar.png",
+        "focus": [
+          2,
+          48,
+          96,
+          50
+        ],
+        "title": {
+          "en": "Review with Apple Pay",
+          "ar": "مراجعة الطلب باستخدام آبل باي"
+        },
+        "body": {
+          "en": "After selecting delivery, eligible signed-in shoppers can go directly to review. Placing the order opens the store’s enrolled Apple Pay method on Paymob. This capture simulates a supported device.",
+          "ar": "بعد اختيار التوصيل يستطيع العميل المؤهل والمسجل الدخول الانتقال مباشرةً إلى المراجعة. يفتح تأكيد الطلب طريقة آبل باي المسجّلة للمتجر لدى باي موب. تحاكي هذه اللقطة جهازاً مدعوماً."
+        },
+        "guide": "features/payments"
+      },
+      {
+        "image": "checkout-requoted-en.png",
+        "imageAr": "checkout-requoted-ar.png",
+        "focus": [
+          2,
+          12,
+          95,
+          59
+        ],
+        "title": {
+          "en": "Select delivery again after a changed quote",
+          "ar": "إعادة اختيار التوصيل بعد تغير السعر"
+        },
+        "body": {
+          "en": "A changed quote returns the buyer to delivery with the address and cart preserved. Review the updated methods before submitting again.",
+          "ar": "يعيد تغير السعر المشتري إلى خطوة التوصيل مع الاحتفاظ بالعنوان والسلة. راجع الطرق المتاحة مجددًا قبل إعادة إرسال الطلب."
         },
         "guide": "features/checkout"
       }
-    ]
+    ],
+    "localizedVideo": true
   },
   "feature-cms": {
     "title": {
@@ -2185,8 +2263,8 @@
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
-      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
+      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
+      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
     },
     "steps": [
       {
@@ -2259,7 +2337,14 @@
           "en": "Read the chosen SKU, current price and availability before adding a variant. Delivery and points text are estimates, not proof of fulfillment or earned credit.",
           "ar": "اقرأ رمز الخيار وسعره الحالي وتوافره قبل الإضافة. نصوص التوصيل والنقاط تقديرات لا تثبت التنفيذ أو اكتساب رصيد."
         },
-        "guide": "features/products"
+        "guide": "features/products",
+        "imageAr": "customer-screen-products-ar.jpg",
+        "focusAr": [
+          4,
+          16,
+          93,
+          77
+        ]
       }
     ]
   },
@@ -2275,12 +2360,12 @@
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
-      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
+      "en": "Local tenant dashboard and sample API data, 18 November 2026. The form was filled without submitting a campaign.",
+      "ar": "لوحة متجر محلية وبيانات تجريبية، 18 نوفمبر 2026. تم ملء النموذج دون إرسال الحملة."
     },
     "steps": [
       {
-        "image": "tenant-screen-promotions.jpg",
+        "image": "tenant-promotions-en.jpg",
         "focus": [
           22,
           22,
@@ -2292,13 +2377,14 @@
           "ar": "إدارة المتجر"
         },
         "body": {
-          "en": "Review type, priority, schedule, conditions and rewards. Lower priority numbers run first; the promotion type must be recognized by the pricing rules.",
-          "ar": "راجع النوع والأولوية والجدول والشروط والمكافآت. تنفذ أرقام الأولوية الأقل أولاً، ويجب أن تعرف قواعد التسعير نوع العرض."
+          "en": "Open Promotions. The highest priority number runs first among active promotions in their time window.",
+          "ar": "افتح العروض. بين العروض النشطة في فترتها الزمنية تُعطى الأولوية للرقم الأكبر."
         },
-        "guide": "features/promotions"
+        "guide": "features/promotions",
+        "imageAr": "tenant-promotions-ar.jpg"
       },
       {
-        "image": "tenant-screen-promotion-form.jpg",
+        "image": "tenant-promotion-kinds-en.jpg",
         "focus": [
           22,
           22,
@@ -2310,12 +2396,14 @@
           "ar": "منشئ العرض"
         },
         "body": {
-          "en": "Set recognized type and priority, then the schedule, rules and rewards. All rules must match. This blank form demonstrates the layout without creating a promotion.",
-          "ar": "اضبط النوع المعروف والأولوية ثم الجدول والقواعد والمكافآت. يجب تطابق جميع القواعد. يعرض النموذج الفارغ التصميم دون إنشاء عرض."
+          "en": "Enter product IDs and a percentage reward. This example discounts matching products by 10 percent after activation.",
+          "ar": "أدخل معرّفات المنتجات ومكافأة بنسبة مئوية. يخصم هذا المثال 10 بالمئة من المنتجات المطابقة بعد التفعيل."
         },
-        "guide": "features/promotions"
+        "guide": "features/promotions",
+        "imageAr": "tenant-promotion-kinds-ar.jpg"
       }
-    ]
+    ],
+    "localizedVideo": true
   },
   "feature-refunds": {
     "title": {
@@ -2653,8 +2741,8 @@
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
-      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
+      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
+      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
     },
     "steps": [
       {
@@ -2709,7 +2797,14 @@
           "en": "Use the controls for the current discovery view. A search result, recommendation exclusion and search-log entry describe different stages of discovery.",
           "ar": "استخدم أدوات شاشة الاكتشاف الحالية. تختلف نتيجة البحث واستبعاد التوصية وإدخال سجل البحث في معناها ومرحلتها."
         },
-        "guide": "features/search"
+        "guide": "features/search",
+        "imageAr": "customer-screen-search-ar.jpg",
+        "focusAr": [
+          4,
+          16,
+          93,
+          77
+        ]
       }
     ]
   },
@@ -3805,8 +3900,8 @@
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo customer · 17 November 2026 · Storefront commit 598d8cd with demo API · Read-only captures; no purchase or account changes submitted",
-      "ar": "عميل تجريبي · 17 نوفمبر 2026 · إصدار الواجهة 598d8cd مع بيانات العرض · لقطات قراءة دون إرسال شراء أو تعديل حساب"
+      "en": "Demo customer · 17 November 2026 · Storefront commit 598d8cd with demo API · Read-only captures; no purchase or account changes submitted Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
+      "ar": "عميل تجريبي · 17 نوفمبر 2026 · إصدار الواجهة 598d8cd مع بيانات العرض · لقطات قراءة دون إرسال شراء أو تعديل حساب حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
     },
     "steps": [
       {
@@ -3825,7 +3920,14 @@
           "en": "Open Shop or Search to narrow the catalog. Read the item and seller before opening the product.",
           "ar": "افتح التسوق أو البحث لتضييق الكتالوج. اقرأ اسم المنتج والبائع قبل فتحه."
         },
-        "guide": "features/search"
+        "guide": "features/search",
+        "imageAr": "customer-screen-search-ar.jpg",
+        "focusAr": [
+          1,
+          15,
+          98,
+          80
+        ]
       },
       {
         "image": "customer-screen-brand-filter.jpg",
@@ -3879,7 +3981,14 @@
           "en": "Check the selected option, current price and availability. Wishlist saves a variant without reserving stock.",
           "ar": "راجع الخيار المحدد والسعر والإتاحة. تحفظ المفضلة المتغير دون حجز المخزون."
         },
-        "guide": "features/products"
+        "guide": "features/products",
+        "imageAr": "customer-screen-products-ar.jpg",
+        "focusAr": [
+          1,
+          15,
+          98,
+          80
+        ]
       }
     ]
   },
@@ -5556,8 +5665,8 @@
     "localizedVideo": true,
     "secondsPerStep": 8,
     "provenance": {
-      "en": "Local demo accounts · Captured 18 November 2026 · Test amounts only · No live charge or deployment",
-      "ar": "حسابات عرض محلية · التقطت في ١٨ نوفمبر ٢٠٢٦ · مبالغ اختبار فقط · دون خصم أو نشر حي"
+      "en": "Platform screens captured on 18 November 2026 from the local production build with illustrative application and plan responses. Protected admin review uses the existing local demo capture.",
+      "ar": "التُقطت شاشات المنصة في ١٨ نوفمبر ٢٠٢٦ من نسخة الإنتاج المحلية باستخدام استجابات توضيحية للطلب والباقة. تعرض شاشة المراجعة الإدارية لقطة تجريبية محلية."
     },
     "steps": [
       {
@@ -5565,15 +5674,15 @@
         "imageAr": "platform-plans-ar.jpg",
         "focus": [
           4,
-          9,
-          92,
-          37
+          18,
+          86,
+          26
         ],
         "focusAr": [
-          4,
-          9,
-          92,
-          37
+          8,
+          18,
+          86,
+          26
         ],
         "title": {
           "en": "Choose the operating model",
@@ -5602,74 +5711,125 @@
         "imageAr": "platform-application-ar.jpg",
         "focus": [
           51,
-          13,
-          44,
-          74
+          17,
+          41,
+          63
         ],
         "focusAr": [
-          4,
-          13,
-          44,
-          74
+          7,
+          17,
+          42,
+          63
         ],
         "title": {
-          "en": "Submit the business details once",
-          "ar": "قدم بيانات النشاط مرة واحدة"
+          "en": "Enter business and contact details",
+          "ar": "إدخال بيانات النشاط والتواصل"
         },
         "body": {
-          "en": "Choose a mode and optional package, then submit for review. The same unchanged retry reuses its request key; correcting the details creates a fresh request key. Applying does not subscribe you to marketing.",
-          "ar": "اختر الوضع وباقة اختيارية ثم أرسل للمراجعة. تستخدم إعادة المحاولة بالبيانات نفسها المفتاح نفسه، ويولد تصحيح البيانات مفتاحًا جديدًا. لا يعني التقديم الاشتراك في التسويق."
+          "en": "Give the owner’s reachable phone number. Save it for the application status check.",
+          "ar": "أدخل رقم هاتف يمكن الوصول من خلاله إلى المالك. احتفظ به للاستعلام عن حالة الطلب."
         },
-        "guide": "features/merchant-onboarding",
-        "videoCrop": [
-          48,
-          10,
-          50,
-          78
+        "guide": "features/merchant-onboarding"
+      },
+      {
+        "image": "platform-application-mode-en.jpg",
+        "imageAr": "platform-application-mode-ar.jpg",
+        "focus": [
+          51,
+          17,
+          41,
+          63
         ],
-        "videoCropAr": [
-          2,
-          10,
-          50,
-          78
-        ]
+        "focusAr": [
+          7,
+          17,
+          42,
+          63
+        ],
+        "title": {
+          "en": "Choose mode and package",
+          "ar": "اختيار الوضع والباقة"
+        },
+        "body": {
+          "en": "Select Store or Marketplace. Choose a published package or ask for assistance.",
+          "ar": "حدد متجرًا أو سوقًا ثم اختر باقة منشورة أو اطلب المساعدة."
+        },
+        "guide": "features/merchant-onboarding"
+      },
+      {
+        "image": "platform-application-review-en.jpg",
+        "imageAr": "platform-application-review-ar.jpg",
+        "focus": [
+          51,
+          17,
+          41,
+          63
+        ],
+        "focusAr": [
+          7,
+          17,
+          42,
+          63
+        ],
+        "title": {
+          "en": "Review before submitting",
+          "ar": "مراجعة البيانات قبل الإرسال"
+        },
+        "body": {
+          "en": "Check the name, phone, operating mode and package. Back keeps your entered details.",
+          "ar": "راجع الاسم والهاتف والوضع والباقة. يمكنك الرجوع مع الاحتفاظ بالبيانات المدخلة."
+        },
+        "guide": "features/merchant-onboarding"
       },
       {
         "image": "platform-application-receipt-en.jpg",
         "imageAr": "platform-application-receipt-ar.jpg",
         "focus": [
-          50,
-          23,
-          46,
-          41
+          51,
+          17,
+          41,
+          63
         ],
         "focusAr": [
-          3,
-          23,
-          46,
-          41
+          7,
+          17,
+          42,
+          63
         ],
         "title": {
-          "en": "Keep the receipt; access is still pending",
-          "ar": "احتفظ بالمرجع؛ الوصول ما زال معلقًا"
+          "en": "Keep your private reference",
+          "ar": "الاحتفاظ بمرجع الطلب"
         },
         "body": {
-          "en": "The reference proves receipt only. A store and owner account are created after authorized review; owner password recovery still proves contact ownership.",
-          "ar": "يثبت المرجع استلام الطلب فقط. ينشأ المتجر وحساب المالك بعد المراجعة المصرح بها، وتظل استعادة كلمة المرور ضرورية لإثبات ملكية التواصل."
+          "en": "Submission produces a private reference. Approval and owner handover are separate steps.",
+          "ar": "بعد الإرسال يظهر مرجع خاص. تحتاج الموافقة وتسليم حساب المالك إلى خطوات لاحقة."
         },
-        "guide": "features/merchant-onboarding",
-        "videoCrop": [
-          0,
-          10,
-          100,
-          75
+        "guide": "features/merchant-onboarding"
+      },
+      {
+        "image": "platform-application-status-en.jpg",
+        "imageAr": "platform-application-status-ar.jpg",
+        "focus": [
+          51,
+          17,
+          41,
+          63
         ],
-        "videoCropAr": [
-          0,
-          10,
-          100,
-          75
-        ]
+        "focusAr": [
+          7,
+          17,
+          42,
+          63
+        ],
+        "title": {
+          "en": "Follow the review",
+          "ar": "متابعة المراجعة"
+        },
+        "body": {
+          "en": "Use the reference and application phone to see the current review state.",
+          "ar": "استخدم المرجع ورقم هاتف الطلب لمعرفة حالة المراجعة الحالية."
+        },
+        "guide": "features/merchant-onboarding"
       },
       {
         "image": "admin-merchant-review-en.jpg",
@@ -6689,6 +6849,382 @@
           58
         ],
         "guide": "features/product-review"
+      }
+    ]
+  },
+  "dashboard-product-views": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Tenant dashboard with synthetic API responses, captured 18 November 2026. Captioned screenshot walkthrough.",
+      "ar": "لوحة المتجر ببيانات تجريبية، التقطت الصور في ١٨ نوفمبر ٢٠٢٦. جولة صور مع تعليقات توضيحية."
+    },
+    "title": {
+      "en": "Save a product list view",
+      "ar": "احفظ طريقة عرض المنتجات"
+    },
+    "intro": {
+      "en": "Save the active filters and sorting under a name. Staff with product export permission can also select rows on this page and export them as a CSV.",
+      "ar": "احفظ المرشحات والترتيب باسم تختاره. يستطيع الموظف المخوّل بتصدير المنتجات تحديد صفوف من الصفحة الحالية وتصديرها إلى ملف CSV."
+    },
+    "steps": [
+      {
+        "image": "tenant-product-views-en.jpg",
+        "imageAr": "tenant-product-views-ar.jpg",
+        "title": {
+          "en": "Save a product list view",
+          "ar": "احفظ طريقة عرض المنتجات"
+        },
+        "body": {
+          "en": "Save the active filters and sorting under a name. Staff with product export permission can also select rows on this page and export them as a CSV.",
+          "ar": "احفظ المرشحات والترتيب باسم تختاره. يستطيع الموظف المخوّل بتصدير المنتجات تحديد صفوف من الصفحة الحالية وتصديرها إلى ملف CSV."
+        },
+        "focus": [
+          18,
+          16,
+          80,
+          67
+        ],
+        "focusAr": [
+          2,
+          16,
+          80,
+          67
+        ],
+        "guide": "features/products"
+      },
+      {
+        "image": "tenant-product-publish-en.jpg",
+        "imageAr": "tenant-product-publish-ar.jpg",
+        "title": {
+          "en": "Publish the eligible selection",
+          "ar": "انشر المنتجات المؤهلة من التحديد"
+        },
+        "body": {
+          "en": "Inspect each offer and any blocked requirements. Enter a decision reason and publish the eligible offers. The dialog reports each result separately.",
+          "ar": "افحص كل عرض والمتطلبات الناقصة. أدخل سبب القرار ثم انشر العروض المؤهلة. تظهر نتيجة كل منتج على حدة."
+        },
+        "focus": [
+          24,
+          21,
+          50,
+          60
+        ],
+        "focusAr": [
+          24,
+          21,
+          50,
+          60
+        ],
+        "guide": "features/products"
+      }
+    ]
+  },
+  "dashboard-settlement-review": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Tenant dashboard with synthetic API responses, captured 18 November 2026. Captioned screenshot walkthrough.",
+      "ar": "لوحة المتجر ببيانات تجريبية، التقطت الصور في ١٨ نوفمبر ٢٠٢٦. جولة صور مع تعليقات توضيحية."
+    },
+    "title": {
+      "en": "Recognize a payment settlement hold",
+      "ar": "تعرّف على تعليق تسوية الدفع"
+    },
+    "intro": {
+      "en": "The warning appears alongside the order status. Fulfilment and cancellation actions stay unavailable while the payment settlement needs review.",
+      "ar": "تظهر شارة التحذير بجوار حالة الطلب. تظل إجراءات التنفيذ والإلغاء غير متاحة أثناء مراجعة تسوية الدفع."
+    },
+    "steps": [
+      {
+        "image": "tenant-order-settlement-en.jpg",
+        "imageAr": "tenant-order-settlement-ar.jpg",
+        "title": {
+          "en": "Recognize a payment settlement hold",
+          "ar": "تعرّف على تعليق تسوية الدفع"
+        },
+        "body": {
+          "en": "The warning appears alongside the order status. Fulfilment and cancellation actions stay unavailable while the payment settlement needs review.",
+          "ar": "تظهر شارة التحذير بجوار حالة الطلب. تظل إجراءات التنفيذ والإلغاء غير متاحة أثناء مراجعة تسوية الدفع."
+        },
+        "focus": [
+          18,
+          12,
+          76,
+          42
+        ],
+        "focusAr": [
+          5,
+          12,
+          76,
+          42
+        ],
+        "guide": "features/orders"
+      }
+    ]
+  },
+  "guest-tracking": {
+    "title": {
+      "en": "Track a guest order",
+      "ar": "تتبع طلب زائر"
+    },
+    "intro": {
+      "en": "Verify the purchase phone to view order and shipment updates.",
+      "ar": "تحقق من هاتف الشراء لعرض حالة الطلب والشحنة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "provenance": {
+      "en": "Local storefront with simulated tracking responses and demonstration order details. No SMS was sent.",
+      "ar": "واجهة متجر محلية بردود تتبع وبيانات طلب تجريبية. لم تُرسل رسالة نصية."
+    },
+    "steps": [
+      {
+        "image": "guest-tracking-form-en.jpg",
+        "imageAr": "guest-tracking-form-ar.jpg",
+        "focus": [
+          2,
+          20,
+          44,
+          54
+        ],
+        "focusAr": [
+          54,
+          20,
+          44,
+          54
+        ],
+        "title": {
+          "en": "Request a code",
+          "ar": "طلب رمز"
+        },
+        "body": {
+          "en": "Enter the order number and the phone used for delivery, then request the code.",
+          "ar": "أدخل رقم الطلب وهاتف التوصيل ثم اطلب رمز التحقق."
+        },
+        "guide": "workflows/guest-checkout"
+      },
+      {
+        "image": "guest-tracking-status-en.jpg",
+        "imageAr": "guest-tracking-status-ar.jpg",
+        "focus": [
+          2,
+          18,
+          44,
+          45
+        ],
+        "focusAr": [
+          54,
+          18,
+          44,
+          45
+        ],
+        "title": {
+          "en": "Read shipment updates",
+          "ar": "عرض تحديثات الشحن"
+        },
+        "body": {
+          "en": "After verification, read the order status and the status of each shipment.",
+          "ar": "بعد التحقق اعرض حالة الطلب وحالة كل شحنة."
+        },
+        "guide": "workflows/guest-checkout"
+      }
+    ]
+  },
+  "catalog-options": {
+    "title": {
+      "en": "Filter products and request a stock alert",
+      "ar": "تصفية المنتجات وطلب تنبيه المخزون"
+    },
+    "intro": {
+      "en": "Find a product option and follow an unavailable variant.",
+      "ar": "اعثر على خيار المنتج وتابع توفره."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "provenance": {
+      "en": "Local storefront with demonstration product, catalog counts and simulated stock-watch responses.",
+      "ar": "متجر محلي بمنتج وأعداد تجريبية واستجابات محاكاة لتنبيه المخزون."
+    },
+    "steps": [
+      {
+        "image": "discovery-filters-en.jpg",
+        "imageAr": "discovery-filters-ar.jpg",
+        "focus": [
+          2,
+          16,
+          33,
+          68
+        ],
+        "focusAr": [
+          65,
+          16,
+          33,
+          68
+        ],
+        "title": {
+          "en": "Narrow the catalog",
+          "ar": "تصفية الكتالوج"
+        },
+        "body": {
+          "en": "Use the price limit, product option, minimum rating and availability filters. Option counts refer to products.",
+          "ar": "استخدم حد السعر وخيار المنتج وأدنى تقييم وفلتر المخزون. تعرض الأعداد المنتجات المطابقة."
+        },
+        "guide": "features/search"
+      },
+      {
+        "image": "discovery-restock-en.jpg",
+        "imageAr": "discovery-restock-ar.jpg",
+        "focus": [
+          45,
+          15,
+          50,
+          70
+        ],
+        "focusAr": [
+          5,
+          15,
+          50,
+          70
+        ],
+        "title": {
+          "en": "Follow an unavailable variant",
+          "ar": "متابعة خيار غير متوفر"
+        },
+        "body": {
+          "en": "Sign in and request a stock alert. Cancel it here or check your inbox after the variant becomes available.",
+          "ar": "سجّل الدخول واطلب تنبيه المخزون. يمكنك إلغاؤه هنا أو مراجعة صندوق الإشعارات عند عودة الخيار للمخزون."
+        },
+        "guide": "features/products"
+      }
+    ]
+  },
+  "packing-manifest": {
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "title": {
+      "en": "From purchased units to confirmed packing",
+      "ar": "من الوحدات المشتراة إلى التعبئة المؤكّدة"
+    },
+    "intro": {
+      "en": "Follow the store, vendor and platform roles through one local packing example.",
+      "ar": "تابع دور المتجر والمورد والمنصة في مثال تعبئة محلي واحد."
+    },
+    "provenance": {
+      "en": "Zero-value local demonstration · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording · No shipment or payment executed.",
+      "ar": "مثال محلي بقيمة صفر · التقط في ١٨ نوفمبر ٢٠٢٦ · جولة صور مترجمة وليست تسجيلًا حيًا · لم ينفّذ شحن أو سداد."
+    },
+    "steps": [
+      {
+        "image": "tenant-packing-en-draft.jpg",
+        "imageAr": "tenant-packing-ar-draft.jpg",
+        "title": {
+          "en": "Assign units to a parcel",
+          "ar": "توزيع الوحدات على طرد"
+        },
+        "body": {
+          "en": "Match the purchased item and parcel, enter a positive whole quantity, explain the work and save a draft. Partial drafts are allowed; unsaved quantities cannot be confirmed.",
+          "ar": "حدّد المنتج المشترى والطرد وأدخل كمية صحيحة موجبة، ثم وضّح العمل واحفظ المسودة. المسودة الجزئية مسموحة؛ لا يمكن تأكيد الكميات غير المحفوظة."
+        },
+        "focus": [
+          22,
+          27,
+          74,
+          39
+        ],
+        "focusAr": [
+          2,
+          42,
+          75,
+          28
+        ],
+        "guide": "features/packing",
+        "videoCropAr": [
+          0,
+          32,
+          100,
+          40
+        ]
+      },
+      {
+        "image": "vendor-packing-en-conflict.jpg",
+        "imageAr": "vendor-packing-ar-conflict.jpg",
+        "title": {
+          "en": "Refresh an outdated snapshot deliberately",
+          "ar": "تحديث النسخة القديمة بعد مراجعتها"
+        },
+        "body": {
+          "en": "A competing change blocks this stale vendor command. Quantities and explanation remain on screen. Refresh, inspect the current revision and reconsider before submitting again.",
+          "ar": "يمنع تغيير زميل آخر إرسال إجراء المورد من النسخة القديمة. تبقى الكميات والتوضيح. حدّث وافحص الإصدار الحالي وأعد المراجعة قبل الإرسال."
+        },
+        "focus": [
+          21,
+          50,
+          76,
+          13
+        ],
+        "focusAr": [
+          2,
+          50,
+          76,
+          13
+        ],
+        "guide": "features/packing"
+      },
+      {
+        "image": "tenant-packing-en-confirmed.jpg",
+        "imageAr": "tenant-packing-ar-confirmed.jpg",
+        "title": {
+          "en": "Confirm complete packing, not dispatch",
+          "ar": "تأكيد اكتمال التعبئة دون افتراض الشحن"
+        },
+        "body": {
+          "en": "Every remaining unit is assigned. The store confirmed revision 6 after reopening and voiding an unused parcel. The order remains confirmed and unpaid, with no handoff or delivery.",
+          "ar": "تم توزيع كل الوحدات المتبقية. أكّد المتجر الإصدار ٦ بعد إعادة الفتح وإلغاء طرد غير مستخدم. يبقى الطلب مؤكّدًا وغير مدفوع، دون تسليم للشحن أو تسليم للعميل."
+        },
+        "focus": [
+          22,
+          34,
+          74,
+          40
+        ],
+        "focusAr": [
+          2,
+          34,
+          75,
+          40
+        ],
+        "guide": "features/packing"
+      },
+      {
+        "image": "admin-packing-en-oversight.jpg",
+        "imageAr": "admin-packing-ar-oversight.jpg",
+        "title": {
+          "en": "Inspect the record with platform oversight",
+          "ar": "الاطلاع على السجل من المنصة"
+        },
+        "body": {
+          "en": "Platform admins can read the store, seller, quantities and receipt trail. They cannot save, confirm, reopen, void or create parcels from this oversight screen.",
+          "ar": "يستطيع مسؤول المنصة قراءة المتجر والبائع والكميات ومسار السجلات. لا يستطيع الحفظ أو التأكيد أو إعادة الفتح أو إلغاء الطرود أو إنشاؤها من شاشة الاطلاع."
+        },
+        "focus": [
+          22,
+          32,
+          74,
+          47
+        ],
+        "focusAr": [
+          2,
+          32,
+          75,
+          47
+        ],
+        "guide": "features/packing"
       }
     ]
   }

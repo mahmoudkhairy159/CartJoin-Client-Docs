@@ -6,7 +6,7 @@ FEATURE_MODULES={
 'customers':['User'],'categories':['Category'],'brands':['Brand'],'products':['Product'],'attributes':['Product'],
 'pricing':['Pricing','PriceList'],'inventory':['Inventory'],'search':['Search','RecommendationEngine'],'wishlist':['Wishlist'],'cart':['Cart'],
 'checkout':['Invoice'],'orders':['Order'],'invoices':['Invoice'],'payments':['Payment'],'refunds':['Refund'],'returns':['OrderReturn'],
-'shipping':['Shipping'],'shipping-providers':['ShippingProvider'],'coupons':['Coupon'],'promotions':['Promotion'],'flash-sales':['FlashSale'],
+'shipping':['Shipping'],'packing':['Shipping'],'shipping-providers':['ShippingProvider'],'coupons':['Coupon'],'promotions':['Promotion'],'flash-sales':['FlashSale'],
 'gift-cards':['GiftCard'],'loyalty':['Loyalty'],'wallet':['Wallet'],'commission':['Commission'],'settlements':['SettlementPayout'],
 'tax-currency':['Tax','Currency'],'cms':['Cms'],'banners':['Banner'],'storefront':['Storefront'],'seo':['Seo'],'reviews':['Review'],
 'support':['SupportTicket','Faqs'],'notifications':['Notification'],'dashboards':['Dashboard'],'reports':['Reports','Core'],
@@ -20,13 +20,14 @@ assign('customers','users user-groups');assign('products','products');assign('at
 assign('pricing','product-prices price-lists');assign('tax-currency','taxes currencies');assign('inventory','inventory inventory/balances')
 assign('orders','orders');assign('invoices','invoices invoice-sequences');assign('payments','payments payment-gateways');assign('refunds','refunds');assign('returns','returns')
 assign('shipping','shipping shipping-zones shipping-methods shipping-rates shipments shipping-rate-quotes');assign('shipping-providers','shipping-providers')
+assign('packing','fulfillment/orders/:id')
 assign('coupons','coupons');assign('promotions','promotions');assign('flash-sales','flash-sales flash');assign('search','recommendations search-query-log shop')
 assign('gift-cards','gift-cards gift-card-policies');assign('loyalty','loyalty');assign('wallet','wallet');assign('commission','commissions commission-rules commission-adjustments')
 assign('settlements','settlements payouts settlement-settings');assign('cms','cms cms/pages cms/content-blocks cms/navigation-menus journal pages/:slug page/:slug')
 assign('banners','banners');assign('storefront','storefront storefront-settings maintenance');assign('seo','seo');assign('reviews','reviews questions review-settings')
 assign('support','support-tickets faqs faq-categories');assign('notifications','notifications');assign('dashboards','dashboard account')
 assign('reports','reports jobs');assign('audit','audit-logs');assign('settings','configs tags colors platform-settings feature-flags settings reference-data geo store-configuration')
-assign('products','product/:slug');assign('vendors','vendor');assign('tenants','branches');assign('cart','cart');assign('checkout','checkout');assign('shipping','track/:orderNo')
+assign('products','product/:slug');assign('vendors','vendor');assign('tenants','branches');assign('cart','cart');assign('checkout','checkout');assign('shipping','track track/:orderNo')
 assign('wishlist','wishlist');assign('support','support');assign('webhooks','webhooks')
 SPECIAL={'forbidden':'Access error screen','**':'Not-found fallback','dev/style-guide':'Development-only visual reference'}
 SURFACES={'admin':'CartJoin-Admin-Dashboard-Frontend','tenant':'CartJoin-Tenant-Dashboard-Frontend','vendor':'CartJoin-Vendor-Dashboard-Frontend','customer':'CartJoin-Storefront-Frontend'}

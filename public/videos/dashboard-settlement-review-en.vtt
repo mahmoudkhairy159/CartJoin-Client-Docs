@@ -1,0 +1,8 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Recognize a payment settlement hold
+The warning appears alongside the order status. Fulfilment and
+cancellation actions stay unavailable while the payment settlement needs
+review.

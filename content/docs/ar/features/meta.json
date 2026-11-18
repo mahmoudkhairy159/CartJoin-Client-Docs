@@ -30,6 +30,7 @@
     "refunds",
     "returns",
     "shipping",
+    "packing",
     "shipping-providers",
     "---العروض والمكافآت---",
     "coupons",

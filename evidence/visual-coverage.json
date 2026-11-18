@@ -321,8 +321,10 @@
       "tenant"
     ],
     "screens": [
-      "tenant-screen-promotions.jpg",
-      "tenant-screen-promotion-form.jpg"
+      "tenant-promotions-en.jpg",
+      "tenant-promotions-ar.jpg",
+      "tenant-promotion-kinds-en.jpg",
+      "tenant-promotion-kinds-ar.jpg"
     ],
     "tour": "feature-promotions"
   },
@@ -627,9 +629,19 @@
     ],
     "screens": [
       "platform-plans-en.jpg",
+      "platform-plans-ar.jpg",
       "platform-application-en.jpg",
+      "platform-application-ar.jpg",
+      "platform-application-mode-en.jpg",
+      "platform-application-mode-ar.jpg",
+      "platform-application-review-en.jpg",
+      "platform-application-review-ar.jpg",
       "platform-application-receipt-en.jpg",
-      "admin-merchant-review-en.jpg"
+      "platform-application-receipt-ar.jpg",
+      "platform-application-status-en.jpg",
+      "platform-application-status-ar.jpg",
+      "admin-merchant-review-en.jpg",
+      "admin-merchant-review-ar.jpg"
     ],
     "tour": "feature-merchant-onboarding"
   },
@@ -660,5 +672,20 @@
       "admin-publication-review-withdrawn-en.jpg"
     ],
     "tour": "vendor-product-review"
+  },
+  {
+    "feature": "packing",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "tenant-packing-en-draft.jpg",
+      "vendor-packing-en-conflict.jpg",
+      "tenant-packing-en-confirmed.jpg",
+      "admin-packing-en-oversight.jpg"
+    ],
+    "tour": "packing-manifest"
   }
 ]

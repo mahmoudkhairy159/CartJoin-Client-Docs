@@ -165,3 +165,10 @@ Added11 screenshots, one contextual four-step tour and two32-second captioned wa
 Backend8db1df30: Vendor48 tests127 assertions, including UTC day boundaries, reversible additive migration, stale approval, immutable vendor, forced Pending uploads and generic status permission enforcement. Expiry migration applied to development MySQL and local SQLite without reset/reseed. Admin26 document/API/i18n tests passed; final explicit unchanged-choice refinement13 dialog tests passed; vendor17 document/i18n tests passed. Admin7ef78b1 and vendoree9b240 production/development builds passed and are pushed. Storefront56aa211 fixes renewable expired basket routing,9 focused tests/prod build passed.
 
 Eight local bilingual screenshots use synthetic expiry metadata and upload forms without submitting compliance files. Browser observed expired/due/undated rows, disabled expired approval and explicit unchanged-review choice; zero admin/vendor console errors. New4-step tour and two32-second clips played to completion with EN/AR default captions and no errors. Docs230 pages26 diagrams75 tours and production build passed. Fixed an existing duplicate vendor participation tour anchor. Marketplace policy, targets, case/appeal/operational queues, consent and discovery remain active work.
+
+
+## Competitive enhancements verified on 18 November 2026
+
+The English and Arabic checkout guides show the shipping address, quoted delivery price, hosted methods, express review and recovery from a changed quote. Their 60-second videos use the local storefront with example API responses and simulated device eligibility. Chrome loaded their captions and played the MP4 files. The hosted provider transaction, a physical Apple Pay device and live SMS delivery still require merchant acceptance. See [media verification](video-verification.json) for the player checks.
+
+The documentation checker verified 234 pages and 85 interactive tours. The staff dashboard, storefront, promotions and merchant application guides include refreshed captures. The backend’s migration and test results are recorded in the CartJoin-Backend competitive enhancement plan.

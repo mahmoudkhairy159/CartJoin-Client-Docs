@@ -1,7 +1,7 @@
 [
   {
     "tour": "admin",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -10,7 +10,7 @@
   },
   {
     "tour": "tenant",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -19,7 +19,7 @@
   },
   {
     "tour": "vendor",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -28,7 +28,7 @@
   },
   {
     "tour": "customer",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -37,7 +37,7 @@
   },
   {
     "tour": "orders",
-    "duration": 30.0,
+    "duration": 30,
     "expected": 30,
     "codec": "h264",
     "width": 1280,
@@ -46,7 +46,7 @@
   },
   {
     "tour": "products",
-    "duration": 30.0,
+    "duration": 30,
     "expected": 30,
     "codec": "h264",
     "width": 1280,
@@ -55,7 +55,7 @@
   },
   {
     "tour": "inventory",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -64,7 +64,7 @@
   },
   {
     "tour": "returns",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -73,7 +73,7 @@
   },
   {
     "tour": "feature-access",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -82,7 +82,7 @@
   },
   {
     "tour": "feature-attributes",
-    "duration": 12.0,
+    "duration": 12,
     "expected": 12,
     "codec": "h264",
     "width": 1280,
@@ -91,7 +91,7 @@
   },
   {
     "tour": "feature-audit",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -100,7 +100,7 @@
   },
   {
     "tour": "feature-banners",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -109,7 +109,7 @@
   },
   {
     "tour": "feature-brands",
-    "duration": 60.0,
+    "duration": 60,
     "expected": 60,
     "codec": "h264",
     "width": 1280,
@@ -118,7 +118,7 @@
   },
   {
     "tour": "feature-cart",
-    "duration": 12.0,
+    "duration": 12,
     "expected": 12,
     "codec": "h264",
     "width": 1280,
@@ -127,7 +127,7 @@
   },
   {
     "tour": "feature-categories",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -136,16 +136,26 @@
   },
   {
     "tour": "feature-checkout",
-    "duration": 12.0,
-    "expected": 12,
+    "duration": 60,
+    "expected": 60,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 60,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-cms",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -154,7 +164,7 @@
   },
   {
     "tour": "feature-commission",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -163,7 +173,7 @@
   },
   {
     "tour": "feature-coupons",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -172,7 +182,7 @@
   },
   {
     "tour": "feature-customers",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -181,7 +191,7 @@
   },
   {
     "tour": "feature-dashboards",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -190,7 +200,7 @@
   },
   {
     "tour": "feature-flash-sales",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -199,7 +209,7 @@
   },
   {
     "tour": "feature-gift-cards",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -208,7 +218,7 @@
   },
   {
     "tour": "feature-inventory",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -217,7 +227,7 @@
   },
   {
     "tour": "feature-invoices",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -226,7 +236,7 @@
   },
   {
     "tour": "feature-loyalty",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -235,7 +245,7 @@
   },
   {
     "tour": "feature-notifications",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -244,7 +254,7 @@
   },
   {
     "tour": "feature-orders",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -253,7 +263,7 @@
   },
   {
     "tour": "feature-payments",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -262,7 +272,7 @@
   },
   {
     "tour": "feature-pricing",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -271,25 +281,44 @@
   },
   {
     "tour": "feature-products",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 48,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-promotions",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-refunds",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -298,7 +327,7 @@
   },
   {
     "tour": "feature-reports",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -307,7 +336,7 @@
   },
   {
     "tour": "feature-returns",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -316,7 +345,7 @@
   },
   {
     "tour": "feature-reviews",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -325,16 +354,25 @@
   },
   {
     "tour": "feature-search",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 36,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-seo",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -343,7 +381,7 @@
   },
   {
     "tour": "feature-settings",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -352,7 +390,7 @@
   },
   {
     "tour": "feature-settlements",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -361,7 +399,7 @@
   },
   {
     "tour": "feature-shipping-providers",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -370,7 +408,7 @@
   },
   {
     "tour": "feature-shipping",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -379,7 +417,7 @@
   },
   {
     "tour": "feature-storefront",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -388,7 +426,7 @@
   },
   {
     "tour": "feature-support",
-    "duration": 72.0,
+    "duration": 72,
     "expected": 72,
     "codec": "h264",
     "width": 1280,
@@ -397,7 +435,7 @@
   },
   {
     "tour": "feature-tax-currency",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -406,7 +444,7 @@
   },
   {
     "tour": "feature-team",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -415,7 +453,7 @@
   },
   {
     "tour": "feature-tenants",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -424,7 +462,7 @@
   },
   {
     "tour": "feature-vendor-profile",
-    "duration": 12.0,
+    "duration": 12,
     "expected": 12,
     "codec": "h264",
     "width": 1280,
@@ -433,7 +471,7 @@
   },
   {
     "tour": "feature-vendors",
-    "duration": 60.0,
+    "duration": 60,
     "expected": 60,
     "codec": "h264",
     "width": 1280,
@@ -442,7 +480,7 @@
   },
   {
     "tour": "feature-wallet",
-    "duration": 36.0,
+    "duration": 36,
     "expected": 36,
     "codec": "h264",
     "width": 1280,
@@ -451,7 +489,7 @@
   },
   {
     "tour": "feature-webhooks",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -460,7 +498,7 @@
   },
   {
     "tour": "feature-wishlist",
-    "duration": 12.0,
+    "duration": 12,
     "expected": 12,
     "codec": "h264",
     "width": 1280,
@@ -469,16 +507,25 @@
   },
   {
     "tour": "customer-discover",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 48,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "customer-buy",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -487,7 +534,7 @@
   },
   {
     "tour": "customer-aftercare",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -496,7 +543,7 @@
   },
   {
     "tour": "customer-money",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -505,7 +552,7 @@
   },
   {
     "tour": "admin-priority",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -514,7 +561,7 @@
   },
   {
     "tour": "admin-partners",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -523,7 +570,7 @@
   },
   {
     "tour": "admin-purchase",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -532,7 +579,7 @@
   },
   {
     "tour": "admin-control",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -541,7 +588,7 @@
   },
   {
     "tour": "tenant-ready",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -550,7 +597,7 @@
   },
   {
     "tour": "tenant-catalog",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -559,7 +606,7 @@
   },
   {
     "tour": "tenant-orders",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -568,7 +615,7 @@
   },
   {
     "tour": "tenant-growth",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -577,7 +624,7 @@
   },
   {
     "tour": "vendor-workspace",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -586,7 +633,7 @@
   },
   {
     "tour": "vendor-offers",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -595,7 +642,7 @@
   },
   {
     "tour": "vendor-fulfillment",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -604,7 +651,7 @@
   },
   {
     "tour": "vendor-earnings",
-    "duration": 48.0,
+    "duration": 48,
     "expected": 48,
     "codec": "h264",
     "width": 1280,
@@ -613,7 +660,7 @@
   },
   {
     "tour": "guest-checkout",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -622,7 +669,7 @@
   },
   {
     "tour": "guest-operations",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -631,7 +678,7 @@
   },
   {
     "tour": "feature-subscriptions-en",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -642,7 +689,7 @@
   },
   {
     "tour": "feature-subscriptions-ar",
-    "duration": 24.0,
+    "duration": 24,
     "expected": 24,
     "codec": "h264",
     "width": 1280,
@@ -653,29 +700,45 @@
   },
   {
     "tour": "feature-merchant-onboarding-en",
-    "duration": 32.0,
-    "expected": 32,
+    "duration": 56,
+    "expected": 56,
     "codec": "h264",
     "width": 1280,
     "height": 720,
     "served": true,
     "captured": "2026-11-18",
-    "kind": "localized-screenshot-walkthrough"
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 56,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-merchant-onboarding-ar",
-    "duration": 32.0,
-    "expected": 32,
+    "duration": 56,
+    "expected": 56,
     "codec": "h264",
     "width": 1280,
     "height": 720,
     "served": true,
     "captured": "2026-11-18",
-    "kind": "localized-screenshot-walkthrough"
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 56,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-test-payments-en",
-    "duration": 32.0,
+    "duration": 32,
     "expected": 32,
     "codec": "h264",
     "width": 1280,
@@ -686,7 +749,7 @@
   },
   {
     "tour": "feature-test-payments-ar",
-    "duration": 32.0,
+    "duration": 32,
     "expected": 32,
     "codec": "h264",
     "width": 1280,
@@ -697,7 +760,7 @@
   },
   {
     "tour": "feature-carrier-labels-en",
-    "duration": 32.0,
+    "duration": 32,
     "expected": 32,
     "codec": "h264",
     "width": 1280,
@@ -710,11 +773,12 @@
       "currentTime": 32,
       "error": false,
       "defaultCaptions": "en"
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-carrier-labels-ar",
-    "duration": 32.0,
+    "duration": 32,
     "expected": 32,
     "codec": "h264",
     "width": 1280,
@@ -727,11 +791,12 @@
       "currentTime": 32,
       "error": false,
       "defaultCaptions": "ar"
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-document-expiry-en",
-    "duration": 32.0,
+    "duration": 32,
     "expected": 32,
     "codec": "h264",
     "width": 1280,
@@ -744,11 +809,12 @@
       "currentTime": 32,
       "error": false,
       "defaultCaptions": "en"
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "feature-document-expiry-ar",
-    "duration": 32.0,
+    "duration": 32,
     "expected": 32,
     "codec": "h264",
     "width": 1280,
@@ -761,11 +827,12 @@
       "currentTime": 32,
       "error": false,
       "defaultCaptions": "ar"
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "tenant-marketplace-operations-en",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -779,11 +846,12 @@
       "error": false,
       "defaultCaptions": "en",
       "activeCaptionTrackLoaded": true
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "tenant-marketplace-operations-ar",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -797,11 +865,12 @@
       "error": false,
       "defaultCaptions": "ar",
       "activeCaptionTrackLoaded": true
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "vendor-marketplace-operations-en",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -815,11 +884,12 @@
       "error": false,
       "defaultCaptions": "en",
       "activeCaptionTrackLoaded": true
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "vendor-marketplace-operations-ar",
-    "duration": 40.0,
+    "duration": 40,
     "expected": 40,
     "codec": "h264",
     "width": 1280,
@@ -833,11 +903,12 @@
       "error": false,
       "defaultCaptions": "ar",
       "activeCaptionTrackLoaded": true
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "admin-marketplace-operations-en",
-    "duration": 30.0,
+    "duration": 30,
     "expected": 30,
     "codec": "h264",
     "width": 1280,
@@ -851,11 +922,12 @@
       "error": false,
       "defaultCaptions": "en",
       "activeCaptionTrackLoaded": true
-    }
+    },
+    "verified": "2026-11-18"
   },
   {
     "tour": "admin-marketplace-operations-ar",
-    "duration": 30.0,
+    "duration": 30,
     "expected": 30,
     "codec": "h264",
     "width": 1280,
@@ -869,6 +941,235 @@
       "error": false,
       "defaultCaptions": "ar",
       "activeCaptionTrackLoaded": true
-    }
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "feature-promotions-en",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "feature-promotions-ar",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "feature-checkout-en",
+    "duration": 60,
+    "expected": 60,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 60,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "feature-checkout-ar",
+    "duration": 60,
+    "expected": 60,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 60,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "dashboard-settlement-review-en",
+    "duration": 8,
+    "expected": 8,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 8,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "dashboard-settlement-review-ar",
+    "duration": 8,
+    "expected": 8,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 8,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "dashboard-product-views-en",
+    "duration": 16,
+    "expected": 16,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 16,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "dashboard-product-views-ar",
+    "duration": 16,
+    "expected": 16,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 16,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "guest-tracking-en",
+    "duration": 12,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 12,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "guest-tracking-ar",
+    "duration": 12,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 12,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "catalog-options-en",
+    "duration": 12,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 12,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
+  },
+  {
+    "tour": "catalog-options-ar",
+    "duration": 12,
+    "expected": 12,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 12,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    },
+    "verified": "2026-11-18"
   }
 ]

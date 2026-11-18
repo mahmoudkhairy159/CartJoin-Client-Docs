@@ -9,6 +9,14 @@ roles: ["ADMIN", "CUSTOMER", "TENANT"]
 
 Customers choose an enabled payment method at checkout. For bank transfer, use the payment proof upload and wait for review. Tenant operators inspect Payments and evidence before approving or rejecting. For COD, record collection only after collection occurred.
 
+For Egyptian stores with an enrolled Paymob account, the checkout payment step lists the hosted options configured by the merchant. Choose Paymob, place the order, then continue to its hosted page. valU, Sympl and Apple Pay availability depends on the merchant setup and buyer eligibility. Guest checkout uses cash on delivery. Keep gateway credentials out of receipts, screenshots and support messages.
+
+When your store enables saved cards on Paymob, you can choose to save a card there. At your next signed-in checkout, Paymob can offer cards saved on your last paid hosted purchase from the same store and merchant account. If none appear, enter your card on Paymob.
+
+On a supported device, signed-in shoppers at an enrolled store can select delivery and choose **Review order with Apple Pay**. Check the address and total before placing the order and completing payment on Paymob.
+
+<SystemTour tour="feature-checkout" compact startAt={2} />
+
 <SystemTour tour="feature-payments" compact />
 
 <details className="guide-task-details">

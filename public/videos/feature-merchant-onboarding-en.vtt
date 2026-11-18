@@ -9,20 +9,35 @@ examples.
 
 2
 00:00:08.000 --> 00:00:16.000
-Submit the business details once
-Choose a mode and optional package, then submit for review. The same
-unchanged retry reuses its request key; correcting the details creates a
-fresh request key. Applying does not subscribe you to marketing.
+Enter business and contact details
+Give the owner’s reachable phone number. Save it for the application
+status check.
 
 3
 00:00:16.000 --> 00:00:24.000
-Keep the receipt; access is still pending
-The reference proves receipt only. A store and owner account are created
-after authorized review; owner password recovery still proves contact
-ownership.
+Choose mode and package
+Select Store or Marketplace. Choose a published package or ask for
+assistance.
 
 4
 00:00:24.000 --> 00:00:32.000
+Review before submitting
+Check the name, phone, operating mode and package. Back keeps your
+entered details.
+
+5
+00:00:32.000 --> 00:00:40.000
+Keep your private reference
+Submission produces a private reference. Approval and owner handover are
+separate steps.
+
+6
+00:00:40.000 --> 00:00:48.000
+Follow the review
+Use the reference and application phone to see the current review state.
+
+7
+00:00:48.000 --> 00:00:56.000
 Review the package and retain a reason
 An authorized admin reviews business details, selects an eligible
 version and records notes before approval or rejection. This capture

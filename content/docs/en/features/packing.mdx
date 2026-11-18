@@ -1,0 +1,96 @@
+---
+title: "Pack purchased items into parcels"
+description: "Allocate quantities, confirm complete packing and keep a receipt of each change."
+roles: ["ADMIN", "TENANT", "VENDOR"]
+---
+
+## What this screen does
+
+Open an order → **Packing and parcels**. Store operators work within their store;
+vendors work within their selected approved workspace and their own seller group.
+Platform admins inspect packing without changing it. Check the store, seller and
+order number before working.
+
+Packing answers **which units belong in which parcel**. Confirming it does not
+book a carrier, dispatch the order, prove delivery or collect payment.
+
+## How to use it
+
+1. Compare **Purchased**, **Refunded units** and **Still required**. Only settled
+   physical-unit refunds reduce the packing target. A monetary adjustment alone
+   does not remove a unit from the parcel.
+2. Inspect **Order parcels**. With parcel-creation permission, choose **Add empty
+   parcel** and confirm. This creates an unbooked parcel without allocating items.
+   If creation has an uncertain result, refresh and inspect the list before adding
+   another parcel.
+3. Choose **Add allocation**, select the parcel and purchased item, and enter a
+   positive whole quantity. You can split one item across different parcels. Each
+   parcel/item pair may appear once; assigned units cannot exceed the remaining
+   quantity.
+4. Write an explanation of 10–4,000 characters and choose **Save packing draft**.
+   Partial drafts are allowed. Check the new revision and receipt. Removing every
+   allocation and saving deliberately clears the draft; it does not delete a parcel.
+
+## Confirm, reopen or void
+
+**Confirm complete packing** becomes available after the saved draft allocates
+every remaining unit and every active parcel contains an item. Review the saved
+quantities, enter a new explanation and confirm. Unsaved edits must be saved first.
+
+Confirmation freezes that revision. Before any handoff, an authorized operator
+can explain why and choose **Reopen packing**. Earlier receipts remain available.
+New parcels cannot be added behind a confirmed packing record.
+
+For an unused parcel, explain why and choose **Void unused parcel**, then read the
+confirmation. The parcel remains in history and its current allocations are
+removed. A handed-off or booked parcel cannot be voided this way. This action
+does not cancel a carrier booking or delete a private label file.
+
+## Work safely with another operator
+
+If the order, parcels, tracking or settled refunded quantities change after your
+read, the server can reject an outdated command. Your quantities and explanation
+stay on screen. Choose **Refresh from server**, confirm replacing unsaved quantities
+when asked, and review the current record. Refresh keeps your explanation; it does
+not automatically apply old quantities to the new version.
+
+After an interrupted save, an unchanged retry reuses the same command receipt.
+Changing the explanation or quantities creates a different command. Inspect
+**Packing receipts** rather than assuming a timeout means nothing was recorded.
+
+<SystemTour tour="packing-manifest" compact />
+
+## Restrictions and decisions
+
+- Reading shipments and creating parcels are separate permissions from managing
+  packing. An account can inspect a record without being allowed to change it.
+- Platform oversight is read-only. Customers receive parcel tracking information,
+  without packing explanations, staff history or internal commands.
+- Pending, cancelled, refunded or delivered orders cannot start new packing work.
+  A settlement review or failed/refunded payment can also block it. Unpaid eligible
+  orders retain their payment state when packing is confirmed.
+- Legacy shipment claims do not become trusted historical evidence merely because
+  someone opens this screen. A vendor cannot adopt an existing handoff into a new
+  packing plan.
+- Explanations are shared with permitted store, vendor and platform operators.
+  Keep customer contact details and private documents out of them.
+
+## Data flow and outcome
+
+```mermaid
+flowchart LR
+  A[Purchased item snapshots] --> B[Remaining physical units]
+  B --> C[Draft parcel allocations]
+  C --> D[Saved quantities and receipt]
+  D --> E[Explicit complete packing confirmation]
+  E --> F[Separate handoff and delivery evidence]
+  E --> G[Reopen before handoff when permitted]
+  G --> C
+```
+
+Automatic carrier-to-whole-order fulfillment is still separate implementation
+work. This guide does not promise that a packing confirmation advances the order
+or triggers loyalty, settlement or payment effects.
+
+Continue with [shipping configuration and tracking](/en/features/shipping) or
+[provider labels and test carriers](/en/features/shipping-providers).

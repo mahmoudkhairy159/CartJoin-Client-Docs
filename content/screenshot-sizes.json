@@ -720,28 +720,28 @@
     "height": 879
   },
   "platform-application-ar.jpg": {
-    "width": 1264,
-    "height": 1184
+    "width": 1440,
+    "height": 980
   },
   "platform-application-en.jpg": {
-    "width": 1264,
-    "height": 1168
+    "width": 1440,
+    "height": 980
   },
   "platform-application-receipt-ar.jpg": {
-    "width": 1264,
-    "height": 872
+    "width": 1440,
+    "height": 980
   },
   "platform-application-receipt-en.jpg": {
-    "width": 1264,
-    "height": 844
+    "width": 1440,
+    "height": 980
   },
   "platform-plans-ar.jpg": {
-    "width": 1264,
-    "height": 1899
+    "width": 1440,
+    "height": 980
   },
   "platform-plans-en.jpg": {
-    "width": 1264,
-    "height": 1856
+    "width": 1440,
+    "height": 980
   },
   "tenant-subscription-ar.jpg": {
     "width": 1264,
@@ -1094,5 +1094,197 @@
   "vendor-publication-review-submitted-en.jpg": {
     "width": 675,
     "height": 652
+  },
+  "checkout-address-ar.png": {
+    "width": 717,
+    "height": 985
+  },
+  "checkout-address-en.png": {
+    "width": 717,
+    "height": 939
+  },
+  "checkout-delivery-quote-ar.png": {
+    "width": 717,
+    "height": 512
+  },
+  "checkout-delivery-quote-en.png": {
+    "width": 717,
+    "height": 491
+  },
+  "checkout-express-ar.png": {
+    "width": 717,
+    "height": 558
+  },
+  "checkout-express-en.png": {
+    "width": 717,
+    "height": 537
+  },
+  "checkout-hosted-methods-ar.png": {
+    "width": 717,
+    "height": 391
+  },
+  "checkout-hosted-methods-en.png": {
+    "width": 717,
+    "height": 371
+  },
+  "checkout-requoted-ar.png": {
+    "width": 717,
+    "height": 533
+  },
+  "checkout-requoted-en.png": {
+    "width": 717,
+    "height": 509
+  },
+  "customer-screen-products-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-screen-search-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "discovery-filters-ar.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "discovery-filters-en.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "discovery-restock-ar.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "discovery-restock-en.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "guest-tracking-form-ar.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "guest-tracking-form-en.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "guest-tracking-status-ar.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "guest-tracking-status-en.jpg": {
+    "width": 1265,
+    "height": 800
+  },
+  "platform-application-mode-ar.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-application-mode-en.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-application-review-ar.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-application-review-en.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-application-status-ar.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-application-status-en.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-customer-account-ar.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-customer-account-en.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-features-ar.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "platform-features-en.jpg": {
+    "width": 1440,
+    "height": 980
+  },
+  "tenant-order-settlement-ar.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-order-settlement-en.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-product-publish-ar.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-product-publish-en.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-product-views-ar.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-product-views-en.jpg": {
+    "width": 1280,
+    "height": 720
+  },
+  "tenant-promotion-kinds-ar.jpg": {
+    "width": 1440,
+    "height": 1000
+  },
+  "tenant-promotion-kinds-en.jpg": {
+    "width": 1440,
+    "height": 1000
+  },
+  "tenant-promotions-ar.jpg": {
+    "width": 1440,
+    "height": 1000
+  },
+  "tenant-promotions-en.jpg": {
+    "width": 1440,
+    "height": 1000
+  },
+  "admin-packing-ar-oversight.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "admin-packing-en-oversight.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-packing-ar-confirmed.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-packing-ar-draft.jpg": {
+    "width": 1264,
+    "height": 2055
+  },
+  "tenant-packing-en-confirmed.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-packing-en-draft.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-packing-ar-conflict.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-packing-en-conflict.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

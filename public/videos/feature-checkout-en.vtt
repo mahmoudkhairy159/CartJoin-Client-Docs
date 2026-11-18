@@ -2,8 +2,32 @@ WEBVTT
 
 1
 00:00:00.000 --> 00:00:12.000
-Customer
-The capture shows the Address stage, the four checkout stages and the
-vendor split. Choose an address before requesting delivery options; no
-purchase was placed for capture.
+Shipping address
+Enter the recipient’s details and choose the country, state and city to
+request delivery options.
 
+2
+00:00:12.000 --> 00:00:24.000
+Compare the quoted methods
+Choose the delivery method for this address. The example shows paid
+delivery and free pickup. A preferred day does not override the quoted
+price.
+
+3
+00:00:24.000 --> 00:00:36.000
+Review hosted payment options
+This signed-in demo lists the payment methods configured for Paymob. The
+provider confirms final eligibility on its own checkout page.
+
+4
+00:00:36.000 --> 00:00:48.000
+Review with Apple Pay
+After selecting delivery, eligible signed-in shoppers can go directly to
+review. Placing the order opens the store’s enrolled Apple Pay method on
+Paymob. This capture simulates a supported device.
+
+5
+00:00:48.000 --> 00:01:00.000
+Select delivery again after a changed quote
+A changed quote returns the buyer to delivery with the address and cart
+preserved. Review the updated methods before submitting again.

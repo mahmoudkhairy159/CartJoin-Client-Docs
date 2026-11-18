@@ -7,7 +7,7 @@ roles: ["TENANT"]
 
 ## How to use it
 
-Tenant operators open Promotions and review only controls actually offered. Use Coupons or Flash sales for those explicit campaigns, and confirm the final pricing result in a customer cart before communicating an offer.
+Choose a draft promotion and add a rule with type `product` and payload `{"product_ids":[12,24]}`. Add a `percentage` reward with `{"value":"10.00"}` for ten percent off, or choose `fixed` with `{"amount":"25.00","currency":"EGP"}`. Activate the draft and check a matching product in the cart. Cart thresholds, category conditions and free shipping currently have no effect on line prices.
 
 <SystemTour tour="feature-promotions" compact />
 
@@ -25,7 +25,7 @@ Check workspace, permission, record state and field errors first. If an action t
 
 ## Evidence and verification limits
 
-Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 18 November 2026, not production results.
 
 `Modules/Promotion/` · `documentation/modules/`
 

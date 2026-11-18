@@ -408,7 +408,7 @@
     "roles": [
       "TENANT"
     ],
-    "screens": 2,
+    "screens": 4,
     "title": {
       "en": "Promotions and discount configuration",
       "ar": "العروض وإعدادات الخصم"
@@ -771,6 +771,23 @@
     "description": {
       "en": "Publish and accept versioned expectations, review concerns and appeals, and investigate operational evidence without automatic penalties.",
       "ar": "انشر توقعات الخدمة واقبل إصداراتها، وراجع الملاحظات والاعتراضات، وافحص الأدلة دون عقوبات تلقائية."
+    }
+  },
+  {
+    "id": "packing",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Packing and parcel quantities",
+      "ar": "التعبئة وكميات الطرود"
+    },
+    "description": {
+      "en": "Allocate purchased units, save a draft, confirm complete packing and inspect immutable receipts without assuming dispatch or payment.",
+      "ar": "وزّع الوحدات المشتراة واحفظ مسودة وأكّد اكتمال التعبئة وافحص سجلات الإجراءات دون افتراض الشحن أو السداد."
     }
   }
 ]

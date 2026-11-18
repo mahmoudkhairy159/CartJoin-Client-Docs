@@ -2658,5 +2658,101 @@
     "captured": "2026-11-18",
     "validated": true,
     "note": "Synthetic local product and import. Submission, correction, resubmission, approval, stale-review conflict and withdrawal were browser-verified. No live purchase, provider or cloud upload. Captioned screenshot walkthrough, not a live recording."
+  },
+  {
+    "role": "admin",
+    "feature": "packing",
+    "url": "http://localhost:4301/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4301/fulfillment/orders/21",
+    "file": "admin-packing-ar-oversight.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "admin",
+    "feature": "packing",
+    "url": "http://localhost:4301/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4301/fulfillment/orders/21",
+    "file": "admin-packing-en-oversight.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "tenant",
+    "feature": "packing",
+    "url": "http://localhost:4302/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4302/fulfillment/orders/21",
+    "file": "tenant-packing-ar-confirmed.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "tenant",
+    "feature": "packing",
+    "url": "http://localhost:4302/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4302/fulfillment/orders/21",
+    "file": "tenant-packing-ar-draft.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "tenant",
+    "feature": "packing",
+    "url": "http://localhost:4302/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4302/fulfillment/orders/21",
+    "file": "tenant-packing-en-confirmed.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "tenant",
+    "feature": "packing",
+    "url": "http://localhost:4302/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4302/fulfillment/orders/21",
+    "file": "tenant-packing-en-draft.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "vendor",
+    "feature": "packing",
+    "url": "http://localhost:4303/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4303/fulfillment/orders/21",
+    "file": "vendor-packing-ar-conflict.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
+  },
+  {
+    "role": "vendor",
+    "feature": "packing",
+    "url": "http://localhost:4303/fulfillment/orders/21",
+    "sourceUrl": "http://localhost:4303/fulfillment/orders/21",
+    "file": "vendor-packing-en-conflict.jpg",
+    "frontend": "local-preview",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic zero-value packing order; no invoice, carrier handoff, delivery or payment."
   }
 ]

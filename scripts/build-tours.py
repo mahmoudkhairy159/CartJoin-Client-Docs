@@ -10,7 +10,8 @@ if not FFMPEG:
     raise SystemExit('FFmpeg is required to regenerate the optional tour videos.')
 OUT = ROOT/'public/videos'; OUT.mkdir(exist_ok=True)
 TMP = ROOT/'.tour-build'; TMP.mkdir(exist_ok=True)
-shutil.copyfile(Path('C:/Windows/Fonts/segoeui.ttf'), TMP/'guide.ttf')
+if not (TMP/'guide.ttf').exists():
+    shutil.copyfile(Path('C:/Windows/Fonts/segoeui.ttf'), TMP/'guide.ttf')
 
 def run(args):
     result = subprocess.run([FFMPEG,'-hide_banner','-loglevel','error','-y',*args],cwd=ROOT,capture_output=True,text=True)
@@ -35,7 +36,7 @@ for name,tour in DATA.items():
             ox=(1280-sw)//2; oy=24
             x,y,rw,rh=step.get('focusAr',step['focus']) if media_lang=='ar' else step['focus']
             bx=round(ox+sw*(x-cx)/cw); by=round(oy+sh*(y-cy)/ch); bw=round(sw*rw/cw); bh=round(sh*rh/ch)
-            vf=(f'crop={cropw}:{croph}:{int(w*cx/100)}:{int(h*cy/100)},scale={sw}:{sh},pad=1280:720:{ox}:{oy}:color=0x171a18,'
+            vf=(f'crop={cropw}:{croph}:{int(w*cx/100)}:{int(h*cy/100)},scale={sw}:{sh},setsar=1,pad=1280:720:{ox}:{oy}:color=0x171a18,'
                 f'drawbox=x={bx}:y={by}:w={bw}:h={bh}:color=0xc4dfb6:t=3,'
                 f"drawtext=fontfile=.tour-build/guide.ttf:text='{index+1} / {len(tour['steps'])}':x=40:y=656:fontsize=24:fontcolor=0xe8ece5,"
                 "drawtext=fontfile=.tour-build/guide.ttf:text='CartJoin / Screenshot tour':x=180:y=660:fontsize=18:fontcolor=0xa9b2a9")
