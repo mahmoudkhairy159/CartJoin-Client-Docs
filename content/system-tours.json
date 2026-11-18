@@ -7642,6 +7642,10 @@
         "guide": "features/global-customer-account"
       }
     ],
-    "secondsPerStep": 5
+    "secondsPerStep": 5,
+    "provenance": {
+      "en": "Synthetic demo account · Captured 18 November 2026 · Test verification only · Recovery stops before password reset",
+      "ar": "حساب عرض تجريبي · التقطت الصور في ١٨ نوفمبر ٢٠٢٦ · تحقق اختباري فقط · تتوقف الاستعادة قبل تغيير كلمة المرور"
+    }
   }
 }
