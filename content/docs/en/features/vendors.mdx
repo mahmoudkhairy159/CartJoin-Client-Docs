@@ -14,9 +14,23 @@ Review the vendor organization and supporting documents. Open Tenant vendors to 
 <details className="guide-task-details">
 <summary>Detailed task walkthrough</summary>
 
-<SystemTour tour="vendor" compact startAt={0} />
+<SystemTour tour="vendor" anchor="vendor-participation-screen-guide" compact startAt={0} />
 
 </details>
+
+## Document expiry and platform review
+
+**Vendor:** open **My store → Documents**. Read verification status and **Expiry date** separately. Filter this vendor's list by expired, next-30-day or undated records. Choose **Upload document**, select its type and enter the printed date using the calendar. Leave the date blank when unknown or inapplicable. A vendor upload always starts **Pending review**.
+
+**Platform reviewer:** open **Vendors → selected vendor → Compliance → Documents**. Expired evidence cannot be approved, including through generic create/edit requests. Approve and reject require their own permissions; upload or edit permission alone is insufficient.
+
+The edit form starts with **No explicit status change**. Changing the file, type or expiry—including clearing a date—returns the document to Pending unless an authorized reviewer explicitly chooses a reviewed status. Leaving the file empty preserves the stored file. A document cannot be reassigned to another vendor; create a separate evidence record instead.
+
+<SystemTour tour="feature-document-expiry" anchor="document-expiry-screen-guide" compact />
+
+A date remains current through the end of its UTC calendar day. The warning window includes today and the next 30 days. **No expiry recorded** means no date was supplied, not permanent validity. Expiry does not automatically suspend a vendor in every marketplace. Workspace participation, payout verification and document verification remain separate controls.
+
+These screenshots use synthetic local expiry metadata. Some preview rows deliberately have no compliance file; the upload form was demonstrated without sending one. Source tests verify review rules separately. Tenant operators do not gain access to global compliance files. Marketplace-wide operations and review/appeal queues remain roadmap work.
 
 ## Restrictions and decisions
 

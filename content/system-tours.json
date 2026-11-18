@@ -5947,5 +5947,124 @@
         "guide": "features/shipping"
       }
     ]
+  },
+  "feature-document-expiry": {
+    "title": {
+      "en": "Check document expiry before review",
+      "ar": "تحقق من صلاحية المستند قبل المراجعة"
+    },
+    "intro": {
+      "en": "Follow the vendor upload and platform review screens. These are captioned screenshot walkthroughs, with explanations beside each step.",
+      "ar": "تابع شاشات رفع البائع ومراجعة المنصة. هذه شروح بالصور مع ترجمة نصية وتفسير بجانب كل خطوة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Local preview · 18 November 2026 · Synthetic expiry metadata · No compliance file uploaded or verified",
+      "ar": "عرض محلي · ١٨ نوفمبر ٢٠٢٦ · بيانات صلاحية اصطناعية · دون رفع أو التحقق من ملف امتثال"
+    },
+    "steps": [
+      {
+        "image": "vendor-document-expiry-en.png",
+        "imageAr": "vendor-document-expiry-ar.png",
+        "title": {
+          "en": "Read two separate checks",
+          "ar": "اقرأ فحصين منفصلين"
+        },
+        "body": {
+          "en": "My store → Documents shows verification and expiry separately. Filter this vendor’s expired, next-30-day or undated records. No expiry recorded is not a permanent-validity promise.",
+          "ar": "تعرض متجري ← المستندات الاعتماد والصلاحية بشكل منفصل. صفّ مستندات هذا البائع المنتهية أو القريبة من الانتهاء أو بلا تاريخ. عدم تسجيل تاريخ لا يعني صلاحية دائمة."
+        },
+        "focus": [
+          22,
+          55,
+          75,
+          39
+        ],
+        "focusAr": [
+          2,
+          55,
+          75,
+          39
+        ],
+        "guide": "features/vendor-profile"
+      },
+      {
+        "image": "vendor-document-upload-en.png",
+        "imageAr": "vendor-document-upload-ar.png",
+        "title": {
+          "en": "Use the printed date",
+          "ar": "استخدم التاريخ المطبوع"
+        },
+        "body": {
+          "en": "Select the document type and printed expiry with the calendar. Leave an unknown date blank. Vendor uploads start Pending review. This form was demonstrated without sending a file.",
+          "ar": "حدد نوع المستند والتاريخ المطبوع من التقويم. اترك التاريخ غير المعروف فارغاً. يبدأ رفع البائع قيد المراجعة. عُرض هذا النموذج دون إرسال ملف."
+        },
+        "focus": [
+          28,
+          27,
+          43,
+          49
+        ],
+        "focusAr": [
+          28,
+          27,
+          43,
+          49
+        ],
+        "guide": "features/vendor-profile"
+      },
+      {
+        "image": "admin-document-expiry-en.png",
+        "imageAr": "admin-document-expiry-ar.png",
+        "title": {
+          "en": "Expired evidence cannot be approved",
+          "ar": "لا يمكن اعتماد إثبات منتهٍ"
+        },
+        "body": {
+          "en": "Vendors → selected vendor → Compliance → Documents shows this vendor’s expiry risks. Approve is disabled here, and the backend also rejects expired approval through either write path.",
+          "ar": "تعرض البائعون ← البائع المحدد ← الامتثال ← المستندات مخاطر صلاحية مستنداته. الاعتماد معطل هنا، ويرفض الخادم اعتماد المنتهي عبر مساري الكتابة أيضاً."
+        },
+        "focus": [
+          24,
+          37,
+          73,
+          53
+        ],
+        "focusAr": [
+          2,
+          37,
+          73,
+          53
+        ],
+        "guide": "features/vendors"
+      },
+      {
+        "image": "admin-document-review-en.png",
+        "imageAr": "admin-document-review-ar.png",
+        "title": {
+          "en": "Make review explicit",
+          "ar": "اجعل المراجعة صريحة"
+        },
+        "body": {
+          "en": "The edit form does not silently reuse an old approval. File, type or expiry changes return evidence to Pending unless an authorized reviewer explicitly selects a reviewed status. Vendor identity cannot be reassigned.",
+          "ar": "لا يعيد التعديل استخدام اعتماد سابق بصمت. يعيد تغيير الملف أو النوع أو الصلاحية المستند قيد المراجعة ما لم يحدد المراجع المخول حالة تمت مراجعتها صراحة. لا يمكن إعادة إسناد هوية البائع."
+        },
+        "focus": [
+          27,
+          28,
+          46,
+          51
+        ],
+        "focusAr": [
+          27,
+          28,
+          46,
+          51
+        ],
+        "guide": "features/vendors"
+      }
+    ]
   }
 }

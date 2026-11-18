@@ -3,12 +3,12 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "b61ac88bce5d4f89ca9ff32f62e29507292974d3",
+      "commit": "8db1df30ec2cd36fe314c0205be5ef791fa46ecd",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "0d7362c3f8dbf0b980041db74d0e532d8dc239b8",
+      "commit": "7ef78b140460ec8ce87dffa76c20b15be3307647",
       "branch": "master",
       "dirty": true
     },
@@ -18,12 +18,12 @@
       "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "ec9d2447c2f5c42c8a01b0c30f03c9aa24efda20",
+      "commit": "ee9b2405017dfb7103ae3a0d60a92120072e289a",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "c7823db1378e78504f91f040ef20178320e15892",
+      "commit": "56aa2113b02284ba88d7d717a5d5cb88b8050eff",
       "branch": "master",
       "dirty": true
     },
@@ -2867,6 +2867,7 @@
           "file": "Modules/Vendor/App/Http/Requests/Admin/VendorDocument/StoreVendorDocumentRequest.php",
           "fields": [
             "vendor_id",
+            "expires_on",
             "type",
             "path",
             "status"
@@ -2876,6 +2877,7 @@
           "file": "Modules/Vendor/App/Http/Requests/Admin/VendorDocument/UpdateVendorDocumentRequest.php",
           "fields": [
             "vendor_id",
+            "expires_on",
             "type",
             "path",
             "status"
@@ -2948,6 +2950,7 @@
         {
           "file": "Modules/Vendor/App/Http/Requests/Vendor/VendorDocument/StoreVendorDocumentRequest.php",
           "fields": [
+            "expires_on",
             "type",
             "path"
           ]
@@ -3107,6 +3110,7 @@
           "file": "Modules/Vendor/App/Http/Requests/Admin/VendorDocument/StoreVendorDocumentRequest.php",
           "fields": [
             "vendor_id",
+            "expires_on",
             "type",
             "path",
             "status"
@@ -3116,6 +3120,7 @@
           "file": "Modules/Vendor/App/Http/Requests/Admin/VendorDocument/UpdateVendorDocumentRequest.php",
           "fields": [
             "vendor_id",
+            "expires_on",
             "type",
             "path",
             "status"
@@ -3188,6 +3193,7 @@
         {
           "file": "Modules/Vendor/App/Http/Requests/Vendor/VendorDocument/StoreVendorDocumentRequest.php",
           "fields": [
+            "expires_on",
             "type",
             "path"
           ]

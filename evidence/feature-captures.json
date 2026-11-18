@@ -1962,5 +1962,101 @@
     "api": "local-preview-sqlite",
     "captured": "2026-11-18",
     "validated": true
+  },
+  {
+    "role": "vendor",
+    "feature": "vendor-profile",
+    "url": "http://localhost:4303/vendor-profile?tab=documents",
+    "sourceUrl": "http://localhost:4303/vendor-profile?tab=documents",
+    "file": "vendor-document-expiry-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "vendor",
+    "feature": "vendor-profile",
+    "url": "http://localhost:4303/vendor-profile?tab=documents",
+    "sourceUrl": "http://localhost:4303/vendor-profile?tab=documents",
+    "file": "vendor-document-expiry-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "vendor",
+    "feature": "vendor-profile",
+    "url": "http://localhost:4303/vendor-profile?tab=documents",
+    "sourceUrl": "http://localhost:4303/vendor-profile?tab=documents",
+    "file": "vendor-document-upload-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "vendor",
+    "feature": "vendor-profile",
+    "url": "http://localhost:4303/vendor-profile?tab=documents",
+    "sourceUrl": "http://localhost:4303/vendor-profile?tab=documents",
+    "file": "vendor-document-upload-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "admin",
+    "feature": "vendors",
+    "url": "http://localhost:4301/vendors/1?tab=documents",
+    "sourceUrl": "http://localhost:4301/vendors/1?tab=documents",
+    "file": "admin-document-expiry-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "admin",
+    "feature": "vendors",
+    "url": "http://localhost:4301/vendors/1?tab=documents",
+    "sourceUrl": "http://localhost:4301/vendors/1?tab=documents",
+    "file": "admin-document-expiry-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "admin",
+    "feature": "vendors",
+    "url": "http://localhost:4301/vendors/1?tab=documents",
+    "sourceUrl": "http://localhost:4301/vendors/1?tab=documents",
+    "file": "admin-document-review-en.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
+  },
+  {
+    "role": "admin",
+    "feature": "vendors",
+    "url": "http://localhost:4301/vendors/1?tab=documents",
+    "sourceUrl": "http://localhost:4301/vendors/1?tab=documents",
+    "file": "admin-document-review-ar.png",
+    "frontend": "local-tested-development",
+    "api": "local-preview-sqlite",
+    "captured": "2026-11-18",
+    "validated": true,
+    "note": "Synthetic expiry metadata; no compliance file uploaded."
   }
 ]

@@ -1,0 +1,30 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Read two separate checks
+My store → Documents shows verification and expiry separately. Filter
+this vendor’s expired, next-30-day or undated records. No expiry
+recorded is not a permanent-validity promise.
+
+2
+00:00:08.000 --> 00:00:16.000
+Use the printed date
+Select the document type and printed expiry with the calendar. Leave an
+unknown date blank. Vendor uploads start Pending review. This form was
+demonstrated without sending a file.
+
+3
+00:00:16.000 --> 00:00:24.000
+Expired evidence cannot be approved
+Vendors → selected vendor → Compliance → Documents shows this vendor’s
+expiry risks. Approve is disabled here, and the backend also rejects
+expired approval through either write path.
+
+4
+00:00:24.000 --> 00:00:32.000
+Make review explicit
+The edit form does not silently reuse an old approval. File, type or
+expiry changes return evidence to Pending unless an authorized reviewer
+explicitly selects a reviewed status. Vendor identity cannot be
+reassigned.
