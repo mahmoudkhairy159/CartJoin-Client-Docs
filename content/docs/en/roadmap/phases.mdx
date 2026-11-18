@@ -68,8 +68,9 @@ do not send a campaign or complete abandoned-cart recovery.
 applications are joined by reviewed store/offer publication, workspace-specific
 vendor opt-in and public store/product/seller discovery. Existing customers can
 sign in and view only their own cross-store purchase summary. Each checkout and
-financial balance remains at its tenant. Global-first customer signup, automatic
-cross-domain SSO and shared cross-tenant checkout are not supplied by this work.
+financial balance remains at its tenant. Verified global customer signup and
+tenant-neutral recovery now have their own [account flow](/en/features/global-customer-account).
+Automatic cross-domain SSO and shared cross-tenant checkout remain outside this scope.
 [Discovery controls](/en/features/global-discovery) · [Private purchases](/en/features/cross-store-purchases).
 
 Central customer identity belongs in the foundation. The separate global CartJoin website can arrive later without requiring customers to register again at each shop.
@@ -144,10 +145,12 @@ Review-reminder transport recovery and operator retry remain explicit work.
 **P2 · Platform frontend and commercial owners · depends on proven onboarding/billing contracts.** Create a new global interface for CartJoin services, packages, subscriptions and tenant applications. Reuse central identity and provisioning contracts; do not repurpose `CartJoin-Storefront-Frontend`.
 
 **Current boundary:** the separate platform already provides the development
-package/application journey and existing-customer sign-in. First-time customer
-registration through the global platform still needs its verified identity,
-recovery, abuse-prevention and attribution acceptance flow; it must not require a
-fictional origin tenant. Shared credentials do not imply automatic browser SSO.
+package/application journey, existing-customer sign-in, verified phone-first
+registration and tenant-neutral password recovery. Registration creates no usable
+customer before proof and no fictitious origin tenant or store membership.
+The bounded development verification adapters remain test-only; provider
+activation is separate. Shared credentials do not imply automatic browser SSO.
+[Account guide and actual walkthrough](/en/features/global-customer-account).
 
 **Exit:** public package information matches versioned billing offers; applications recover from partial provisioning; merchant administration remains distinct from customer login. Existing tenant shops continue independently.
 

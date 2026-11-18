@@ -7534,5 +7534,114 @@
         ]
       }
     ]
+  },
+  "feature-global-customer-account": {
+    "title": {
+      "en": "Create or recover your customer account",
+      "ar": "أنشئ حساب العميل أو استعده"
+    },
+    "intro": {
+      "en": "Follow the actual customer screens. Codes and passwords are intentionally absent from these demonstration captures.",
+      "ar": "اتبع شاشات العميل الفعلية. تخلو صور العرض عمدًا من الرموز وكلمات المرور."
+    },
+    "video": false,
+    "steps": [
+      {
+        "image": "global-customer-en-signup.png",
+        "imageAr": "global-customer-ar-signup.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Start with your phone",
+          "ar": "ابدأ بهاتفك"
+        },
+        "body": {
+          "en": "Create one customer identity with your phone. Email is not required. This is separate from opening a merchant store.",
+          "ar": "أنشئ هوية عميل واحدة بهاتفك. البريد الإلكتروني غير مطلوب. هذا المسار منفصل عن فتح متجر كتاجر."
+        },
+        "guide": "features/global-customer-account"
+      },
+      {
+        "image": "global-customer-en-proof.png",
+        "imageAr": "global-customer-ar-proof.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Prove access before creating an account",
+          "ar": "أثبت الوصول قبل إنشاء الحساب"
+        },
+        "body": {
+          "en": "Use the delivered code before expiry, then enter your name and new password. Never share the code. These fields are blank in the capture.",
+          "ar": "استخدم الرمز المرسل قبل انتهاء صلاحيته ثم أدخل الاسم وكلمة المرور الجديدة. لا تشارك الرمز. هذه الحقول فارغة في الصورة."
+        },
+        "guide": "features/global-customer-account"
+      },
+      {
+        "image": "global-customer-en-account.png",
+        "imageAr": "global-customer-ar-account.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Understand your new account",
+          "ar": "تعرف على حسابك الجديد"
+        },
+        "body": {
+          "en": "Your new account has no purchases yet. Each store keeps responsibility for its own orders, support and balances.",
+          "ar": "حسابك الجديد بلا مشتريات بعد. يحتفظ كل متجر بمسؤولية طلباته والدعم والأرصدة الخاصة به."
+        },
+        "guide": "features/global-customer-account"
+      },
+      {
+        "image": "global-customer-en-recovery.png",
+        "imageAr": "global-customer-ar-recovery.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Recover an existing account",
+          "ar": "استعد حسابًا قائمًا"
+        },
+        "body": {
+          "en": "Use the phone or email already associated with your account. This does not create a second customer identity.",
+          "ar": "استخدم الهاتف أو البريد المرتبط بحسابك القائم. لا ينشئ هذا المسار هوية عميل ثانية."
+        },
+        "guide": "features/global-customer-account"
+      },
+      {
+        "image": "global-customer-en-ack.png",
+        "imageAr": "global-customer-ar-ack.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read the neutral acknowledgement",
+          "ar": "اقرأ الإقرار العام"
+        },
+        "body": {
+          "en": "The response does not confirm account existence. If eligible, follow the delivered recovery instructions. After reset, sign in again.",
+          "ar": "لا تؤكد الاستجابة وجود الحساب. إذا كان مؤهلًا فاتبع تعليمات الاستعادة المرسلة. سجل الدخول مجددًا بعد إعادة التعيين."
+        },
+        "guide": "features/global-customer-account"
+      }
+    ],
+    "secondsPerStep": 5
   }
 }

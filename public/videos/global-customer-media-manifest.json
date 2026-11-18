@@ -1,0 +1,139 @@
+{
+  "kind": "guided-screenshot-clips",
+  "mechanism": "Five actual root CUA screenshot chapters per language, five seconds each, with WebVTT captions; not continuous recording and no audio. Original CUA JPEG pixels were preserved when converted to PNG containers.",
+  "environment": "Isolated tested local Platform preview on localhost:4316; approved test message adapter. No live provider or deployment acceptance.",
+  "privacy": "Frames contain only synthetic demonstration data. No OTP, password, token or test outbox appears in the guide.",
+  "acceptance": "Root verified completed signup, central verified identity with null signup origin, zero store memberships and zero orders, sign-out and a fresh neutral recovery acknowledgement. The recovery tour stops before password reset; no live provider acceptance is claimed.",
+  "entries": [
+    {
+      "id": "global-customer-en",
+      "locale": "en",
+      "role": "CUSTOMER",
+      "url": "http://localhost:4316/en/account",
+      "frames": [
+        {
+          "path": "public/screenshots/global-customer-en-signup.png",
+          "artifact_updated_at": "2026-11-18T21:40:56.946007+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-en-proof.png",
+          "artifact_updated_at": "2026-11-18T21:40:56.979227+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-en-account.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.009066+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-en-recovery.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.037484+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-en-ack.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.052137+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        }
+      ],
+      "video": "public/videos/global-customer-en-tour.mp4",
+      "captions": "public/videos/global-customer-en.vtt",
+      "poster": "public/screenshots/global-customer-en-signup.png",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 25.0,
+      "bytes": 186025,
+      "captions_text": [
+        "Create one customer identity with your phone. Email is not required.",
+        "Use the delivered code before expiry. Never share it.",
+        "Your new account has no purchases yet. Store balances remain separate.",
+        "Recover an existing account using its phone or email.",
+        "A neutral acknowledgement does not confirm account existence. After reset, sign in again."
+      ]
+    },
+    {
+      "id": "global-customer-ar",
+      "locale": "ar",
+      "role": "CUSTOMER",
+      "url": "http://localhost:4316/ar/account",
+      "frames": [
+        {
+          "path": "public/screenshots/global-customer-ar-signup.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.084559+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-ar-proof.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.110040+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-ar-account.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.140323+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-ar-recovery.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.162617+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/global-customer-ar-ack.png",
+          "artifact_updated_at": "2026-11-18T21:40:57.182916+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        }
+      ],
+      "video": "public/videos/global-customer-ar-tour.mp4",
+      "captions": "public/videos/global-customer-ar.vtt",
+      "poster": "public/screenshots/global-customer-ar-signup.png",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 25.0,
+      "bytes": 144102,
+      "captions_text": [
+        "أنشئ هوية عميل واحدة بهاتفك. البريد الإلكتروني غير مطلوب.",
+        "استخدم الرمز المرسل قبل انتهاء صلاحيته ولا تشاركه.",
+        "حسابك الجديد بلا مشتريات بعد وتبقى أرصدة المتاجر مستقلة.",
+        "استعد حسابًا قائمًا باستخدام هاتفه أو بريده الإلكتروني.",
+        "لا يؤكد الإقرار العام وجود الحساب. سجل الدخول مجددًا بعد إعادة التعيين."
+      ]
+    }
+  ]
+}
