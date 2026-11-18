@@ -10,16 +10,24 @@ Customer payment/invoice/refund regression:251 passed987 assertions. Focused pay
 
 ## Edition scope
 
-44 feature guides, four role handbooks and three main business workflows in each language, with detailed source appendices. Navigation coverage comes from all four frontend route trees. Business guidance uses module documents and targeted source review of services, routes and constraints.
+47 feature guides, four role handbooks and three main business workflows in each language, with detailed source appendices. Navigation coverage comes from all four frontend route trees. Business guidance uses module documents and targeted source review of services, routes and constraints.
 
 | Surface | Mapped route entries | Child route files inspected by extraction |
 |---|---|---|
-| [admin](/en/roles/admin) | 62 | 53 |
-| [tenant](/en/roles/tenant) | 66 | 53 |
-| [vendor](/en/roles/vendor) | 29 | 24 |
+| [admin](/en/roles/admin) | 66 | 54 |
+| [tenant](/en/roles/tenant) | 68 | 53 |
+| [vendor](/en/roles/vendor) | 30 | 24 |
 | [customer](/en/roles/customer) | 30 | 4 |
 
 ## What was checked
+
+Marketplace operations: policy acceptance, vendor reply/appeal, store review,
+platform assignment/dismissal, work queues and immutable history were checked
+with synthetic local examples in EN/AR. Three contextual tours and six30–40s
+captioned screenshot clips played to completion with the correct default
+language and no captured console/media errors. Backend evidence hardening:
+53 tests239 assertions; Order regression62 tests177 assertions. Admin55 focused
+and related checks pass. These results do not complete later roadmap phases.
 
 - Extracted frontend routes and mapped every entry to a guide or classified error/developer screen.
 - Reviewed checkout/invoice/order ownership and inventory, payment, refund and selected finance constraints.

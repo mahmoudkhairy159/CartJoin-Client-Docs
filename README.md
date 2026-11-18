@@ -10,11 +10,12 @@ Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left sup
 
 - Eight planning pages per language for Store/Marketplace priorities, business rules, central customer identity, billing and release gates. Planning is separate from shipped capabilities.
 - Four role handbooks: platform admin, tenant operator, vendor and customer.
-- 46 capability guides per language covering steps, rules, data flow and troubleshooting.
-- 230 documentation pages across English and Arabic.
+- 47 capability guides per language covering steps, rules, data flow and troubleshooting.
+- 232 documentation pages across English and Arabic.
 - Bilingual reviewed dashboard captures, including billing, merchant applications, test payment outcomes and tenant/vendor carrier labels and document expiry/review with interactive explanations and enlargement.
-- 80 short screenshot-based video files with English/Arabic captions and transcripts.
-- 26 diagram blocks explaining business flows and relationships.
+- 86 short screenshot-based video files with English/Arabic captions and transcripts.
+- 28 diagram blocks explaining business flows and relationships.
+- Marketplace service policies, acceptance, cases, review and appeal, with separate tenant, vendor and platform walkthroughs.
 - Searchable capabilities, role-based navigation, language switching and light/dark themes.
 
 Coverage includes catalog, inventory, checkout, vendor-split orders, invoices, payments, shipping, returns, refunds, marketing, rewards, settlements, support and platform operations.

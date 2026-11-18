@@ -738,5 +738,22 @@
       "en": "A wishlist helps a signed-in customer keep products for later without reserving stock or fixing a price.",
       "ar": "تمكن المفضلة العميل المسجل من حفظ منتجات لاحقاً دون حجز المخزون أو تثبيت السعر."
     }
+  },
+  {
+    "id": "marketplace-operations",
+    "roles": [
+      "ADMIN",
+      "TENANT",
+      "VENDOR"
+    ],
+    "screens": 3,
+    "title": {
+      "en": "Marketplace service policies and cases",
+      "ar": "سياسات الخدمة وحالات السوق"
+    },
+    "description": {
+      "en": "Publish and accept versioned expectations, review concerns and appeals, and investigate operational evidence without automatic penalties.",
+      "ar": "انشر توقعات الخدمة واقبل إصداراتها، وراجع الملاحظات والاعتراضات، وافحص الأدلة دون عقوبات تلقائية."
+    }
   }
 ]

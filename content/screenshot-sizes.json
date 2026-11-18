@@ -878,5 +878,105 @@
   "admin-document-review-ar.png": {
     "width": 1265,
     "height": 712
+  },
+  "admin-operations-assignment-en.jpg": {
+    "width": 1264,
+    "height": 1752
+  },
+  "admin-operations-evidence-ar.jpg": {
+    "width": 1264,
+    "height": 958
+  },
+  "admin-operations-evidence-en.jpg": {
+    "width": 1264,
+    "height": 992
+  },
+  "admin-operations-history-ar.jpg": {
+    "width": 1264,
+    "height": 1662
+  },
+  "admin-operations-history-en.jpg": {
+    "width": 1264,
+    "height": 1671
+  },
+  "admin-operations-mobile-ar.jpg": {
+    "width": 375,
+    "height": 811
+  },
+  "admin-operations-review-ar.jpg": {
+    "width": 1264,
+    "height": 1456
+  },
+  "tenant-operations-case-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-operations-case-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-operations-evidence-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-operations-evidence-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-operations-policy-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-operations-policy-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-operations-warning-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-appeal-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-appeal-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-appeal-history-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-evidence-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-evidence-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-history-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-history-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-policy-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-policy-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-response-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "vendor-operations-response-en.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

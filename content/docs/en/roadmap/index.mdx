@@ -12,7 +12,7 @@ Central customer login is implemented in development: the same account signs in 
 
 Tenant operators now manage local access instead of global credentials. Address defaults and notifications respect the active store. MySQL and browser-preview migrations were applied without reset/reseed. See the [customer guide with English/Arabic screenshots](/en/features/customers).
 
-Mode enforcement, billing/onboarding and the separate platform are the next implementation workstreams. Payment, shipping and SMS integrations use test adapters until provider access is ready. Live deployment remains separate. [Engineering implementation record](https://github.com/mahmoudkhairy159/CartJoin-Backend/blob/master/documentation/planning/store-marketplace-implementation.md).
+Mode enforcement, versioned test billing, assisted onboarding and the separate package/application frontend now have development implementation and test evidence. Payment, shipping and SMS integrations use test adapters until provider access is ready. Marketplace policies, acceptance, cases, reply/appeal and seven evidence queues are implemented across the backend and three operator dashboards; [follow the bilingual guide](/en/features/marketplace-operations). Publication eligibility/rejection, carrier-to-order lifecycle integration, growth consent and opt-in discovery remain active work. Live deployment remains separate. [Engineering implementation record](https://github.com/mahmoudkhairy159/CartJoin-Backend/blob/master/documentation/planning/store-marketplace-implementation.md).
 
 ## Product direction
 
@@ -60,7 +60,7 @@ P0 is a prerequisite for a safe commercial pilot. P1 improves activation, conver
 - `TenantTypeEnum` describes business categories such as retailer and wholesaler. It is not the Store/Marketplace mode.
 - The central `User` account is global. `tenant_customers` and commerce models retain tenant isolation; signup origin is never the active shop.
 - Checkout creates a tenant invoice with vendor-specific orders. A multi-vendor purchase inside one tenant is not a multi-tenant checkout.
-- Subscription billing is a planned module. The reviewed shipping adapter supports manual operations without live carrier API calls.
+- Versioned subscription and test billing flows are implemented in development. Shipping supports manual evidence and guarded test carrier labels/tracking; live carrier readiness remains a separate gate.
 - Existing source summaries can lag implementation. Phase 0 verifies current source and actual workflows before accepting a gap as new work.
 
 ## Read the roadmap

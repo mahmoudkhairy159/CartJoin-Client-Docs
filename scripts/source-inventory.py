@@ -2,7 +2,7 @@ from pathlib import Path
 import re,json,subprocess,hashlib,sys
 ROOT=Path(__file__).resolve().parents[1];BASE=ROOT.parent;BACK=BASE/'CartJoin-Backend'
 FEATURE_MODULES={
-'subscriptions':['Subscription'],'merchant-onboarding':['Subscription'],'access':['Auth'],'team':['Admin','TenantAdmin','VendorAdmin'],'tenants':['Tenant'],'vendors':['Vendor'],'vendor-profile':['Vendor'],
+'marketplace-operations':['MarketplaceOps'],'subscriptions':['Subscription'],'merchant-onboarding':['Subscription'],'access':['Auth'],'team':['Admin','TenantAdmin','VendorAdmin'],'tenants':['Tenant'],'vendors':['Vendor'],'vendor-profile':['Vendor'],
 'customers':['User'],'categories':['Category'],'brands':['Brand'],'products':['Product'],'attributes':['Product'],
 'pricing':['Pricing','PriceList'],'inventory':['Inventory'],'search':['Search','RecommendationEngine'],'wishlist':['Wishlist'],'cart':['Cart'],
 'checkout':['Invoice'],'orders':['Order'],'invoices':['Invoice'],'payments':['Payment'],'refunds':['Refund'],'returns':['OrderReturn'],
@@ -14,7 +14,7 @@ FEATURE_MODULES={
 MAP={}
 def assign(feature,paths):
     for p in paths.split():MAP[p]=feature
-assign('subscriptions','subscription subscription-plans');assign('merchant-onboarding','merchant-applications');assign('access','auth profile');assign('team','admins roles tenant-admins tenant-roles vendor-admins vendor-roles vendor-staff')
+assign('marketplace-operations','marketplace-operations');assign('subscriptions','subscription subscription-plans');assign('merchant-onboarding','merchant-applications');assign('access','auth profile');assign('team','admins roles tenant-admins tenant-roles vendor-admins vendor-roles vendor-staff')
 assign('tenants','tenants tenant-branches my-store');assign('vendors','vendors tenant-vendors workspace-terms');assign('vendor-profile','vendor-profile')
 assign('customers','users user-groups');assign('products','products');assign('attributes','attributes');assign('categories','categories');assign('brands','brands')
 assign('pricing','product-prices price-lists');assign('tax-currency','taxes currencies');assign('inventory','inventory inventory/balances')

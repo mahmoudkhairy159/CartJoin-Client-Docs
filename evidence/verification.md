@@ -1,5 +1,32 @@
 # Verification — 17 November 2026
 
+## 18 November 2026 — Marketplace service operations
+
+Published application checkpoints: backend7b527247, adminc90cb93, tenant3c983a6,
+vendor86a1063. Backend MarketplaceOps51 tests230 assertions plus final2 actor/paging
+tests9 assertions pass; related Order62 tests177 assertions pass. All seven
+metadata queues and the bounded evidence reconciliation query execute against
+development MySQL read-only. Admin13 operation tests plus42 catalogue/scope/nav
+checks, scoped lint, generated145-file drift and production/development builds pass.
+
+EN/AR browser evidence includes policy acceptance, case reply/appeal, manual
+warning/resolution, platform assignment/dismissal, named immutable history,
+evidence queues, store filter and390px light/dark/RTL checks. All mutations used
+an explicitly synthetic local case/policy; no real allegation, order, payment,
+compliance upload or vendor approval changed.25 reviewed screenshots are added.
+
+Three contextual tours add six localized30–40s MP4s and bilingual VTT transcripts.
+All six played to completion with the correct default caption language; active
+caption tracks loaded successfully. Interactive step/image switching, Arabic zoom
+and both flow diagrams render. No browser console or media errors were recorded.
+Docs check:232 pages,28 diagrams,78 tours,194 mapped frontend routes; production
+build passes after the final coverage-text/source-inventory refresh. Provenance explicitly gives
+18 November and calls the clips screenshot walkthroughs, not live recordings.
+
+Remaining work is visible: publication eligibility/rejection, carrier-to-order
+integration, dispatch cohorts/metrics, growth consent and opt-in discovery.
+Test adapters stay guarded; live provider/pilot/deployment gates remain separate.
+
 ## Completed checks
 
 - `bun run build`: passed; compiled/prerendered all 206 documentation pages and their Markdown representations, including the new visual-learning pages.

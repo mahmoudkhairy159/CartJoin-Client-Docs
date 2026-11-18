@@ -762,5 +762,113 @@
       "error": false,
       "defaultCaptions": "ar"
     }
+  },
+  {
+    "tour": "tenant-marketplace-operations-en",
+    "duration": 30.0,
+    "expected": 30,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 30,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    }
+  },
+  {
+    "tour": "tenant-marketplace-operations-ar",
+    "duration": 30.0,
+    "expected": 30,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 30,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    }
+  },
+  {
+    "tour": "vendor-marketplace-operations-en",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 40,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    }
+  },
+  {
+    "tour": "vendor-marketplace-operations-ar",
+    "duration": 40.0,
+    "expected": 40,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 40,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    }
+  },
+  {
+    "tour": "admin-marketplace-operations-en",
+    "duration": 30.0,
+    "expected": 30,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 30,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true
+    }
+  },
+  {
+    "tour": "admin-marketplace-operations-ar",
+    "duration": 30.0,
+    "expected": 30,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 30,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true
+    }
   }
 ]

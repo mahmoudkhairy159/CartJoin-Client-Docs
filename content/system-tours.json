@@ -6066,5 +6066,348 @@
         "guide": "features/vendors"
       }
     ]
+  },
+  "tenant-marketplace-operations": {
+    "title": {
+      "en": "Set expectations and review service concerns",
+      "ar": "حدد توقعات الخدمة وراجع الملاحظات"
+    },
+    "intro": {
+      "en": "Follow the policy, case and evidence screens. These examples use synthetic local data.",
+      "ar": "تابع السياسة والحالة والأدلة. تستخدم الأمثلة بيانات محلية تجريبية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 10,
+    "steps": [
+      {
+        "image": "tenant-operations-policy-en.jpg",
+        "imageAr": "tenant-operations-policy-ar.jpg",
+        "title": {
+          "en": "Publish a clear policy version",
+          "ar": "انشر إصدار سياسة واضحًا"
+        },
+        "body": {
+          "en": "Store service policies retains bilingual versions, optional dispatch hours and required evidence. Vendor acceptance is specific to that version and store; later terms do not rewrite old orders.",
+          "ar": "تحفظ سياسات خدمة المتجر الإصدارات باللغتين وساعات الإرسال الاختيارية والأدلة المطلوبة. يخص قبول البائع هذا الإصدار والمتجر، ولا تعيد شروط لاحقة كتابة الطلبات القديمة."
+        },
+        "focus": [
+          22,
+          53,
+          73,
+          34
+        ],
+        "focusAr": [
+          2,
+          53,
+          73,
+          34
+        ],
+        "guide": "features/marketplace-operations"
+      },
+      {
+        "image": "tenant-operations-case-en.jpg",
+        "imageAr": "tenant-operations-case-ar.jpg",
+        "title": {
+          "en": "Read the concern and its owner",
+          "ar": "اقرأ الملاحظة ومسؤولها"
+        },
+        "body": {
+          "en": "Choose a case, confirm its vendor and responsible reviewer, and read the immutable conversation before making an explicit decision. A case deadline is separate from the order dispatch commitment.",
+          "ar": "اختر الحالة وتحقق من البائع والمراجع المسؤول، واقرأ الحوار المحفوظ قبل قرار صريح. موعد الحالة منفصل عن التزام إرسال الطلب."
+        },
+        "focus": [
+          50,
+          18,
+          45,
+          60
+        ],
+        "focusAr": [
+          2,
+          18,
+          45,
+          60
+        ],
+        "guide": "features/marketplace-operations"
+      },
+      {
+        "image": "tenant-operations-evidence-en.jpg",
+        "imageAr": "tenant-operations-evidence-ar.jpg",
+        "title": {
+          "en": "Inspect evidence before taking action",
+          "ar": "افحص الأدلة قبل القرار"
+        },
+        "body": {
+          "en": "Work queues help find missing evidence and other operational exceptions. Open the original record and investigate; appearing in a queue does not prove fault or automatically suspend a vendor.",
+          "ar": "تساعد قوائم العمل على اكتشاف الأدلة الناقصة والاستثناءات التشغيلية. افتح السجل الأصلي وافحصه؛ الظهور في القائمة لا يثبت خطأ ولا يوقف البائع تلقائيًا."
+        },
+        "focus": [
+          22,
+          29,
+          73,
+          58
+        ],
+        "focusAr": [
+          2,
+          29,
+          73,
+          58
+        ],
+        "guide": "features/marketplace-operations"
+      }
+    ],
+    "provenance": {
+      "en": "Synthetic local policy and case · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
+      "ar": "سياسة وحالة محليتان تجريبيتان · التقطت في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
+    }
+  },
+  "vendor-marketplace-operations": {
+    "title": {
+      "en": "Understand, reply and appeal",
+      "ar": "افهم السياسة ورد واعترض"
+    },
+    "intro": {
+      "en": "Choose a step to see what your vendor workspace allows. All cases shown are synthetic examples.",
+      "ar": "اختر خطوة لفهم ما تسمح به مساحة البائع. جميع الحالات المعروضة أمثلة تجريبية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 10,
+    "steps": [
+      {
+        "image": "vendor-operations-policy-en.jpg",
+        "imageAr": "vendor-operations-policy-ar.jpg",
+        "title": {
+          "en": "Read the exact accepted version",
+          "ar": "اقرأ الإصدار المقبول بالضبط"
+        },
+        "body": {
+          "en": "Confirm the selected store, read the policy and check the acceptance receipt. Acceptance covers this store only. A new version needs a new acceptance and never silently changes earlier order targets.",
+          "ar": "تحقق من المتجر المختار واقرأ السياسة وإيصال قبولها. يخص القبول هذا المتجر فقط. يحتاج الإصدار الجديد قبولًا جديدًا ولا يغيّر التزامات الطلبات السابقة بصمت."
+        },
+        "focus": [
+          22,
+          47,
+          73,
+          46
+        ],
+        "focusAr": [
+          2,
+          47,
+          73,
+          46
+        ],
+        "guide": "features/marketplace-operations"
+      },
+      {
+        "image": "vendor-operations-response-en.jpg",
+        "imageAr": "vendor-operations-response-ar.jpg",
+        "title": {
+          "en": "Reply with useful evidence",
+          "ar": "رد بأدلة مفيدة"
+        },
+        "body": {
+          "en": "Choose Reply and explain the evidence for reviewers. This English form contains a demonstration draft. Sending a response does not resolve the case, approve a payout or move money.",
+          "ar": "اختر الرد واشرح الأدلة للمراجعين. يعرض النموذج الإنجليزي مسودة توضيحية. لا يحل الإرسال الحالة ولا يعتمد مستحقات أو ينقل أموالًا."
+        },
+        "focus": [
+          51,
+          48,
+          44,
+          45
+        ],
+        "focusAr": [
+          2,
+          48,
+          44,
+          45
+        ],
+        "guide": "features/marketplace-operations"
+      },
+      {
+        "image": "vendor-operations-appeal-en.jpg",
+        "imageAr": "vendor-operations-appeal-ar.jpg",
+        "title": {
+          "en": "Ask for a recorded warning to be reconsidered",
+          "ar": "اطلب إعادة النظر في تنبيه مسجّل"
+        },
+        "body": {
+          "en": "An unappealed warning allows one appeal, even after resolution. Choose Appeal a warning, explain why, and wait for human review. A dismissed warning cannot be appealed again.",
+          "ar": "يسمح التنبيه الذي لم يُعترض عليه باعتراض واحد حتى بعد الحل. اختر الاعتراض واشرح السبب وانتظر المراجعة البشرية. لا يعاد الاعتراض على تنبيه صُرف النظر عنه."
+        },
+        "focus": [
+          51,
+          62,
+          44,
+          36
+        ],
+        "focusAr": [
+          2,
+          62,
+          44,
+          36
+        ],
+        "guide": "features/marketplace-operations"
+      },
+      {
+        "image": "vendor-operations-evidence-en.jpg",
+        "imageAr": "vendor-operations-evidence-ar.jpg",
+        "title": {
+          "en": "Use your workspace evidence queue",
+          "ar": "تابع أدلة مساحة عملك"
+        },
+        "body": {
+          "en": "Review missing documents and other exceptions belonging to your organization and active store. Private staff identifiers, buyer details, bank data and compliance-file secrets are not exposed here.",
+          "ar": "راجع المستندات الناقصة والاستثناءات الخاصة بمؤسستك والمتجر النشط. لا تعرض هذه الشاشة معرفات الموظفين الخاصة أو بيانات المشترين والبنوك أو أسرار ملفات الامتثال."
+        },
+        "focus": [
+          22,
+          29,
+          73,
+          60
+        ],
+        "focusAr": [
+          2,
+          29,
+          73,
+          60
+        ],
+        "guide": "features/marketplace-operations"
+      }
+    ],
+    "provenance": {
+      "en": "Synthetic local policy and case · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
+      "ar": "سياسة وحالة محليتان تجريبيتان · التقطت في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
+    }
+  },
+  "admin-marketplace-operations": {
+    "title": {
+      "en": "Review fairly across stores",
+      "ar": "راجع الحالات بوضوح عبر المتاجر"
+    },
+    "intro": {
+      "en": "Platform oversight preserves each store boundary and records each human decision. The examples are local and synthetic.",
+      "ar": "تحافظ مراجعة المنصة على حدود كل متجر وتسجل القرار البشري. الأمثلة محلية وتجريبية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 10,
+    "steps": [
+      {
+        "image": "admin-operations-assignment-en.jpg",
+        "imageAr": "admin-operations-review-ar.jpg",
+        "title": {
+          "en": "Assign a responsible store reviewer",
+          "ar": "سجّل نتيجة مراجعة صريحة"
+        },
+        "body": {
+          "en": "Change reviewer or due date is a separate recorded action. Select eligible staff from the owning store and explain the change. An untouched deadline keeps its exact timestamp; a partial date/time cannot submit.",
+          "ar": "بعد قراءة الرد والاعتراض اختر نتيجة واضحة واشرح السبب. يعرض المثال صرف النظر عن ملاحظة تجريبية. لا يعني القرار تغيير اعتماد البائع أو دفعاته."
+        },
+        "focus": [
+          22,
+          61,
+          73,
+          31
+        ],
+        "focusAr": [
+          2,
+          56,
+          73,
+          36
+        ],
+        "guide": "features/marketplace-operations",
+        "videoCrop": [
+          20,
+          50,
+          78,
+          45
+        ],
+        "videoCropAr": [
+          1,
+          45,
+          78,
+          50
+        ]
+      },
+      {
+        "image": "admin-operations-history-en.jpg",
+        "imageAr": "admin-operations-history-ar.jpg",
+        "title": {
+          "en": "Read who decided and why",
+          "ar": "اقرأ من قرر ولماذا"
+        },
+        "body": {
+          "en": "Case history retains replies, warning, resolution, appeal, assignment and dismissal. Names identify resolved actors; earlier events remain immutable. A recorded warning is not an automatic financial penalty.",
+          "ar": "يحفظ سجل الحالة الرد والتنبيه والحل والاعتراض والإسناد وصرف النظر. توضح الأسماء هوية من أمكن التحقق منه، وتبقى الأحداث السابقة ثابتة. التنبيه ليس عقوبة مالية تلقائية."
+        },
+        "focus": [
+          22,
+          37,
+          73,
+          56
+        ],
+        "focusAr": [
+          2,
+          37,
+          73,
+          56
+        ],
+        "guide": "features/marketplace-operations",
+        "videoCrop": [
+          20,
+          32,
+          78,
+          64
+        ],
+        "videoCropAr": [
+          1,
+          32,
+          78,
+          64
+        ]
+      },
+      {
+        "image": "admin-operations-evidence-en.jpg",
+        "imageAr": "admin-operations-evidence-ar.jpg",
+        "title": {
+          "en": "Check the owning store and missing evidence",
+          "ar": "تحقق من المتجر والدليل الناقص"
+        },
+        "body": {
+          "en": "The store filter applies to case lists, summaries and work queues. This required-evidence row identifies the store, vendor and missing document type without exposing a private file. Investigate before deciding.",
+          "ar": "يسري مرشح المتجر على الحالات والملخصات وقوائم العمل. يوضح صف الأدلة المطلوبة المتجر والبائع ونوع المستند الناقص دون كشف ملف خاص. افحص قبل القرار."
+        },
+        "focus": [
+          22,
+          59,
+          73,
+          29
+        ],
+        "focusAr": [
+          2,
+          59,
+          73,
+          29
+        ],
+        "guide": "features/marketplace-operations",
+        "videoCrop": [
+          20,
+          38,
+          78,
+          55
+        ],
+        "videoCropAr": [
+          1,
+          38,
+          78,
+          55
+        ]
+      }
+    ],
+    "provenance": {
+      "en": "Synthetic local policy and case · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording",
+      "ar": "سياسة وحالة محليتان تجريبيتان · التقطت في ١٨ نوفمبر ٢٠٢٦ · جولة صور مع ترجمة وليست تسجيلًا حيًا"
+    }
   }
 }

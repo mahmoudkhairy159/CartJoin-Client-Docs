@@ -3,22 +3,22 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "8db1df30ec2cd36fe314c0205be5ef791fa46ecd",
+      "commit": "7b527247820e7275476d6a3a91d23311e40a8847",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "7ef78b140460ec8ce87dffa76c20b15be3307647",
+      "commit": "c90cb934b3afe3fa41cb799592b1417a465d49dc",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "baf5b40973bac92bcc5518dfd46833823d600041",
+      "commit": "3c983a60a6ca6e4e56fda84ea2c85b2adba6e3e4",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "ee9b2405017dfb7103ae3a0d60a92120072e289a",
+      "commit": "86a10636b200413f0c238c1f41d6052605ba4709",
       "branch": "master",
       "dirty": true
     },
@@ -40,6 +40,11 @@
         {
           "path": "/auth",
           "feature": "access",
+          "special": null
+        },
+        {
+          "path": "/marketplace-operations",
+          "feature": "marketplace-operations",
           "special": null
         },
         {
@@ -448,6 +453,10 @@
           "reconciliation",
           "risk-alerts"
         ],
+        "src/app/features/marketplace-operations/operations.routes.ts": [
+          "",
+          ":id"
+        ],
         "src/app/features/notifications/notifications.routes.ts": [
           "",
           "broadcast",
@@ -556,7 +565,7 @@
           ":webhookId/deliveries/:deliveryId"
         ]
       },
-      "route_source_sha256": "a679889a9be562f8cc5ae73fd6a28b145a4d4a41ee8e8a6d9432b33298f7bf0e"
+      "route_source_sha256": "79c2991035aca0e4ea9788adcefb6b688638c8d67bd3b93d775d1c57cb455a6f"
     },
     "tenant": {
       "repository": "CartJoin-Tenant-Dashboard-Frontend",
@@ -564,6 +573,11 @@
         {
           "path": "/auth",
           "feature": "access",
+          "special": null
+        },
+        {
+          "path": "/marketplace-operations",
+          "feature": "marketplace-operations",
           "special": null
         },
         {
@@ -1092,7 +1106,7 @@
           ":id"
         ]
       },
-      "route_source_sha256": "65e6e0c4fd8a7f13ad3664dfa2a620611d3dd5cefbf982bcb2fe0db56a55f99c"
+      "route_source_sha256": "f21a809b595dc0042db34c6d01fd41f77a5dc2baf057b761aed5d27ad3982b63"
     },
     "vendor": {
       "repository": "CartJoin-Vendor-Dashboard-Frontend",
@@ -1105,6 +1119,11 @@
         {
           "path": "/dashboard",
           "feature": "dashboards",
+          "special": null
+        },
+        {
+          "path": "/marketplace-operations",
+          "feature": "marketplace-operations",
           "special": null
         },
         {
@@ -1339,7 +1358,7 @@
           ""
         ]
       },
-      "route_source_sha256": "645f8964e22ce0c4553019b93853df56cc843bfab0f373b94206eeb45837e374"
+      "route_source_sha256": "f3dc5f1af9b4b7b57ba63eb750cad68c545da9befc12a2c1075bdbd12b09721f"
     },
     "customer": {
       "repository": "CartJoin-Storefront-Frontend",
@@ -1532,6 +1551,131 @@
     }
   },
   "features": {
+    "marketplace-operations": {
+      "modules": [
+        "MarketplaceOps"
+      ],
+      "route_sources": [
+        "Modules/MarketplaceOps/routes/admin-api.php",
+        "Modules/MarketplaceOps/routes/tenant-api.php",
+        "Modules/MarketplaceOps/routes/vendor-api.php"
+      ],
+      "explicit_backend_routes": [],
+      "request_fields": [
+        {
+          "file": "Modules/MarketplaceOps/App/Http/Requests/OperationsRequest.php",
+          "fields": [
+            "tenant_id",
+            "actor_id",
+            "actor_type",
+            "status",
+            "revision",
+            "idempotency_key",
+            "expected_revision",
+            "message",
+            "publish",
+            "en",
+            "ar",
+            "en.title",
+            "ar.title",
+            "en.body",
+            "ar.body",
+            "dispatch_hours",
+            "required_document_types",
+            "required_document_types.*",
+            "required_expiry_types",
+            "required_expiry_types.*",
+            "accept",
+            "policy_id",
+            "policy_hash",
+            "store",
+            "vendor_id",
+            "kind",
+            "title",
+            "source_id",
+            "owner_id",
+            "due_at",
+            "respond",
+            "intent",
+            "review",
+            "outcome",
+            "assign",
+            "page",
+            "per_page",
+            "before_id",
+            "case_status",
+            "search"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/DispatchEvidence.php",
+          "cases": {
+            "AWAITING": "1",
+            "RECORDED": "2",
+            "TIME_UNKNOWN": "3"
+          }
+        },
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/OperationsActorType.php",
+          "cases": {
+            "PLATFORM": "1",
+            "TENANT": "2",
+            "VENDOR": "3",
+            "SYSTEM": "4",
+            "CUSTOMER": "5",
+            "UNKNOWN": "6"
+          }
+        },
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/ServiceCaseEventKind.php",
+          "cases": {
+            "OPENED": "1",
+            "RESPONSE": "2",
+            "APPEAL": "3",
+            "REVIEW": "4",
+            "ASSIGNMENT": "5"
+          }
+        },
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/ServiceCaseKind.php",
+          "cases": {
+            "LATE_DISPATCH": "1",
+            "CANCELLATION": "2",
+            "DOCUMENT": "3",
+            "GENERAL": "4"
+          }
+        },
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/ServiceCaseResponseIntent.php",
+          "cases": {
+            "REPLY": "1",
+            "APPEAL": "2"
+          }
+        },
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/ServiceCaseStatus.php",
+          "cases": {
+            "OPEN": "1",
+            "RESPONSE_RECEIVED": "2",
+            "WARNING": "3",
+            "RESOLVED": "4",
+            "DISMISSED": "5"
+          }
+        },
+        {
+          "file": "Modules/MarketplaceOps/App/Enums/ServiceTargetReason.php",
+          "cases": {
+            "MONITORED": "1",
+            "NO_POLICY": "2",
+            "NO_ACCEPTANCE": "3",
+            "CLOCK_DISABLED": "4",
+            "NO_CONFIRMATION_EVIDENCE": "5"
+          }
+        }
+      ]
+    },
     "subscriptions": {
       "modules": [
         "Subscription"

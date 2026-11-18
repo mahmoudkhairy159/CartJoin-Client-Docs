@@ -632,5 +632,19 @@
       "admin-merchant-review-en.jpg"
     ],
     "tour": "feature-merchant-onboarding"
+  },
+  {
+    "feature": "marketplace-operations",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "tenant-operations-policy-en.jpg",
+      "vendor-operations-response-en.jpg",
+      "admin-operations-history-en.jpg"
+    ],
+    "tour": "admin-marketplace-operations"
   }
 ]
