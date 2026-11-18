@@ -19,4 +19,3 @@ Separate the service bill from purchases
 This local test invoice is paid by a simulation. It is neither a
 customer order invoice nor a vendor payout. The service period and
 retained evidence identify the result.
-

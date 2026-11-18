@@ -52,4 +52,4 @@ for name,tour in DATA.items():
         cues=['WEBVTT','']
         for index,step in enumerate(tour['steps']):
             cues += [str(index+1),f'{timestamp(index*seconds)} --> {timestamp((index+1)*seconds)}',step['title'][lang],*textwrap.wrap(step['body'][lang],width=72),'']
-        (OUT/f'{name}-{lang}.vtt').write_text('\n'.join(cues)+'\n',encoding='utf-8')
+        (OUT/f'{name}-{lang}.vtt').write_text('\n'.join(cues).rstrip()+'\n',encoding='utf-8')

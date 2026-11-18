@@ -628,5 +628,49 @@
     "width": 1280,
     "height": 720,
     "served": true
+  },
+  {
+    "tour": "feature-subscriptions-en",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough"
+  },
+  {
+    "tour": "feature-subscriptions-ar",
+    "duration": 24.0,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough"
+  },
+  {
+    "tour": "feature-merchant-onboarding-en",
+    "duration": 32.0,
+    "expected": 32,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough"
+  },
+  {
+    "tour": "feature-merchant-onboarding-ar",
+    "duration": 32.0,
+    "expected": 32,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-18",
+    "kind": "localized-screenshot-walkthrough"
   }
 ]
