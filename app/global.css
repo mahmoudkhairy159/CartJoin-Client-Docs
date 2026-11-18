@@ -93,6 +93,8 @@ bdi, code, kbd { unicode-bidi: isolate; }
 #nd-sidebar a[data-active='true']::before { background: var(--color-fd-primary); }
 #nd-toc { font-size: 13px; }
 #nd-toc a { line-height: 1.65; }
+.guide-page-pagination > a { text-align: start; }
+.guide-page-pagination .flex-row-reverse { justify-content: flex-end; }
 .guide-language-switch { display: inline-grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; padding: 4px; inline-size: 100%; max-inline-size: 224px; border: 1px solid var(--color-fd-border); border-radius: 10px; background: var(--color-fd-muted); }
 .guide-language-switch a { display: flex; align-items: center; justify-content: center; min-block-size: 36px; padding-inline: 12px; border: 1px solid transparent; border-radius: 6px; color: var(--color-fd-muted-foreground); font-size: 14px; line-height: 1.5; white-space: nowrap; transition: color 160ms var(--guide-ease), background-color 160ms var(--guide-ease); }
 .guide-language-switch a:hover { color: var(--color-fd-foreground); background: var(--color-fd-accent); }
@@ -183,12 +185,12 @@ bdi, code, kbd { unicode-bidi: isolate; }
 .role-card:hover { border-color: var(--guide-accent); }
 .role-card:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
 .guide-home .journey-strip { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; border-block: 1px solid var(--guide-line); }
-.journey-strip h2 { margin-block-end: 0; }
+.guide-home h2:has(+ .section-description) { margin-block-end: 16px; }
 .journey-links { display: grid; align-content: center; }
 .journey-links a, .feature-grid a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-block-size: 56px; padding-block: 16px; border-block-end: 1px solid var(--guide-line); text-decoration: none; font-size: 15px; line-height: 1.6; }
 .journey-links a svg, .feature-grid a svg { flex-shrink: 0; color: var(--guide-muted); }
 .journey-links a:hover span, .feature-grid a:hover span { text-decoration: underline; text-underline-offset: 4px; }
-.section-description { margin-block: -16px 32px; font-size: 16px; line-height: 1.75; color: var(--guide-secondary); }
+.section-description { margin-block: 0 32px; font-size: 16px; line-height: 1.75; color: var(--guide-secondary); }
 .feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; }
 .home-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding-block: 24px 40px; border-block-start: 1px solid var(--guide-line); font-size: 13px; line-height: 1.6; color: var(--guide-secondary); }
 
