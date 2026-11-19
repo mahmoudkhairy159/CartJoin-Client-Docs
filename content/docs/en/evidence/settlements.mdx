@@ -53,7 +53,7 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/FailPayoutRequest.php`: `failure_code`, `failure_reason`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/HoldPayoutRequest.php`: `reason`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/RecordPaidPayoutRequest.php`: `provider`, `transfer_reference`, `transferred_at`, `proof_reference`, `note`
-- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/AdjustSettlementRequest.php`: `vendor_id`, `currency_id`, `amount`, `reason`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/AdjustSettlementRequest.php`: `vendor_id`, `currency_id`, `amount`, `reason`, `idempotency_key`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/ApproveSettlementRequest.php`: `vendor_payout_account_id`, `note`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/DisputeSettlementRequest.php`: `reason`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/ExportSettlementRequest.php`: `vendor_id`, `currency_id`, `from`, `to`

@@ -29,6 +29,24 @@ Order confirmation alone does not make its fee snapshot payable. The relevant se
 
 Unknown original seller ownership or refund timing requires finance review, not a guessed full vendor credit. Settled commission history cannot be reopened, rewritten or deleted. Use a new authorized adjustment for corrections. Any supplied order/item reference must match the same store, seller, currency and original order; an intentionally unreferenced manual adjustment can still be valid.
 
+If a manual adjustment request times out, retry the same values in the open form. An unchanged submission uses the original request key and returns the existing entry if it already posted. A correction started from a settlement uses that statement’s seller and currency, and records a link to it.
+
+## Schedule commission changes
+
+Open **Commissions → Commission rules**. Set the scope, currency, fee and any effective dates. The UTC start is included and the end is excluded. The list shows whether each rule is scheduled, effective, inactive or ended. To change an active dated rule, select **Schedule replacement** and choose a future UTC start. The previous rule ends when the replacement starts. Keep its scope, priority and currency for a direct replacement.
+
+For several changes, open **Bulk rate changes** and add up to 100 rules before applying the batch. The batch saves together. If any rule is invalid or would overlap another rule in the same scope, currency and priority, review the flagged rows and resubmit the batch.
+
+Currency-specific fees use the selected currency without conversion. A percentage rule can also add a flat fee and set a minimum. The flat fee and minimum apply once per order line. CartJoin calculates the percentage on the eligible base, adds the flat fee, applies the minimum, and caps the fee at that base. For example, 8.50% plus 2.00 on a base of 100.00 yields 10.50, or 12.00 when the minimum is 12.00.
+
+Use **Commission tools** to preview a rate with a currency and an evaluation time in UTC. The preview uses saved effective windows and the current terms of any undated rules or fallback settings. The commission detail shows the actual terms saved with a capture. Refunds use the original captured fee.
+
+## Download a commission statement
+
+In the tenant dashboard, open **Commissions → Commission tools** and use the statement export. In the vendor dashboard, use **Export commission statement** on the commissions list. Choose a currency and UTC dates and, on the tenant dashboard, a vendor. The start is included and the end is excluded. Download the private CSV when it is ready. It includes opening and closing balances for the commission activity in scope, with order, adjustment and refund references where available. Use the settlement statement for the balance that includes sales and recorded payouts.
+
+For manual adjustments, the order and commission pickers use the selected vendor and currency. Changing either clears the previous references. The adjustment ledger shows the signed effect on the vendor balance, including a credit when a refund reverses an original commission fee.
+
 ## When something goes wrong
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
@@ -50,7 +68,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/commissions`, `/commission-adjustments` |
-| [tenant](/en/roles/tenant) | `/commissions`, `/commission-rules`, `/commission-adjustments` |
+| [tenant](/en/roles/tenant) | `/commissions`, `/commission-rules`, `/commission-rules/bulk`, `/commission-adjustments` |
 | [vendor](/en/roles/vendor) | `/commissions` |
 
 [Exact route, field and enum source trail](/en/evidence/commission)

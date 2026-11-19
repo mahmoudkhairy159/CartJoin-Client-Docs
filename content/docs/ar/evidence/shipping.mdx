@@ -11,6 +11,8 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Shipping/routes/vendor-api.php`
 - `Modules/Shipping/routes/web.php`
 
+تعرض علامة الشحنات في طلب المتجر نتائج `GET /api/tenant/v1/shipments?orderId=…` وفق صلاحية عرض الشحنات. تعرض قائمة التتبع لدى المشتري طرود طلبه من `GET /api/user/v1/shipments/orders/{order}`.
+
 ## مسارات الخادم المستخرجة
 
 | Module | Surface file | Method | URI fragment | Action |

@@ -28,6 +28,12 @@ description: "Extracted backend routes, request fields and enum values."
 | Refund | `vendor-api.php` | GET | `refunds` | `index` |
 | Refund | `vendor-api.php` | GET | `refunds/{refund}` | `show` |
 
+## Finance reconciliation routes
+
+The Tenant list accepts `refund_id` for the exact refund leg. The buyer resource includes the source order, owned invoice, funding rail, destination, matching credit note when issued, and replacement lineage scoped to the same order.
+
+The refund module registers `GET /api/{tenant,admin}/v1/refund-reconciliation` and `GET /api/{tenant,admin}/v1/refund-reconciliation/{case}` through `Modules/Payment/App/Providers/ReconciliationRoutes.php`. Tenant POST actions use `/{case}/assign`, `/{case}/request-check`, `/{case}/submit-evidence` and `/{case}/replace-failed-leg`. The command request requires `request_key` and `revision`. Evidence submission accepts `event_id` or `reference`. Admin access is read-only.
+
 ## Form-request field names
 
 - `Modules/Refund/App/Http/Requests/Tenant/Refund/PreviewRefundRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `amount`

@@ -13,7 +13,7 @@ Tenant finance operators review settlement period, currency and lines, close/rev
 
 ## Restrictions and decisions
 
-A settlement uses one currency and a half-open period. Closed and later statements are immutable; corrections go to a future period. Negative or below-minimum balances carry forward. MVP permits at most one payout per settlement, no partial payouts. Manual completion needs a unique external reference and timestamp.
+A settlement uses one currency and a half-open period. Closed and later statements are immutable; corrections go to a future period. Negative or below-minimum balances carry forward. Each settlement can have one active or paid payout at a time. A canceled payout may have a linked replacement. Manual completion needs a unique external reference and timestamp.
 
 ## Data flow and outcome
 
@@ -30,6 +30,22 @@ The end must be after the start and cannot be in the future. An exact repeat ret
 The updated development workflow checks the immutable statement's original financial effects, signs, currency, totals and supporting evidence. Only a successful recorded verification supports the **reconciled statement** milestone in [merchant lifecycle](/en/features/merchant-lifecycle). Closed, approved and paid labels alone do not establish it. A manual-only correction cannot manufacture a genuine commercial milestone; a carried balance needs its earlier verified origin.
 
 Verification does not approve a transfer, send money or prove a bank/carrier result. Approval and payout completion remain separately authorized actions with their own checks. A carry-forward balance can be consumed once by a later eligible statement and cannot also be paid from its earlier statement.
+
+## Scheduled closes and payouts
+
+An enabled vendor schedule with a closing day closes completed periods in its configured time zone and currency. For weekly and biweekly schedules, choose a day from 1 (Monday) through 7 (Sunday). Older schedules without a closing day need one before automatic closing can begin. Biweekly schedules follow a fixed two-week calendar. The scheduler resumes from **Schedule processed through**, including empty periods. A financially blocked period stays pending until the underlying exception is resolved. The **Earliest transfer time** on a payout uses the delay saved when the statement closed.
+
+If a payout was canceled, first check the bank or payout provider for movement. Finance can create a linked replacement from the canceled payout using a verified account, a reason and confirmation that no funds moved. The canceled attempt stays in the payout history.
+
+## Review settlement exceptions
+
+In the tenant dashboard, open **Settlements → Settlement exceptions**. Open a case to review the reason, order references and decision history. Use **Acknowledge** to record that Finance has seen the case, or **Recheck evidence** after the owning payment, refund or commission data has been corrected. The case resolves once the source records establish eligibility.
+
+## Download a CSV statement
+
+In the tenant or vendor dashboard, open **Settlements → Settlement runs** or the **Settlements** list, then choose the statement export. Select a currency and dates and, on the tenant dashboard, a vendor. The date range is expressed in UTC, with its start included and its end excluded. When the job is ready, select **Download** in the same panel. The file is available for 24 hours and access is checked against the requesting account and workspace.
+
+Use the opening and closing rows to reconcile the balance. Credits increase the vendor balance and debits reduce it. The file includes source, settlement and recorded payout references when available. Open a settlement's **Statement lines** to check individual entries.
 
 ## When something goes wrong
 
@@ -52,7 +68,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/settlements`, `/payouts` |
-| [tenant](/en/roles/tenant) | `/settlements`, `/payouts`, `/settlement-settings` |
+| [tenant](/en/roles/tenant) | `/settlements`, `/payouts`, `/settlement-settings`, `/settlement-exceptions` |
 | [vendor](/en/roles/vendor) | `/settlements`, `/payouts` |
 
 [Exact route, field and enum source trail](/en/evidence/settlements)

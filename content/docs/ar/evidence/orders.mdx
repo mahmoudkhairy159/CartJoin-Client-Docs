@@ -10,6 +10,8 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Order/routes/vendor-api.php`
 - `Modules/Order/routes/web.php`
 
+تخضع المدفوعات والشحنات والمرتجعات والاستردادات والإشعارات الدائنة المرتبطة بالطلب لمرشحات وصلاحيات وحداتها. يستخدم مرشح المدفوعات التوزيع المحفوظ للطلب المحدد، ويتبع مرشح إشعارات المتجر الطلب المرتبط بالاسترداد.
+
 ## مسارات الخادم المستخرجة
 
 | Module | Surface file | Method | URI fragment | Action |
@@ -17,10 +19,12 @@ description: "Extracted backend routes, request fields and enum values."
 | Order | `admin-api.php` | GET | `orders` | `index` |
 | Order | `admin-api.php` | GET | `orders/list-dropdown` | `listDropdown` |
 | Order | `admin-api.php` | GET | `orders/{id}` | `show` |
+| Order | `admin-api.php` | GET | `orders/{id}/confirmation` | `admin` |
 | Order | `admin-api.php` | GET | `order-items/list-dropdown` | `listDropdown` |
 | Order | `tenant-api.php` | GET | `orders` | `index` |
 | Order | `tenant-api.php` | GET | `orders/export` | `export` |
 | Order | `tenant-api.php` | GET | `orders/{id}` | `show` |
+| Order | `tenant-api.php` | GET | `orders/{id}/confirmation` | `tenant` |
 | Order | `tenant-api.php` | PUT | `orders/{id}/status` | `updateStatus` |
 | Order | `tenant-api.php` | POST | `orders/{id}/cancel` | `cancel` |
 | Order | `tenant-api.php` | POST | `orders/{id}/notes` | `addNote` |

@@ -1006,6 +1006,7 @@
           "",
           "credit-notes",
           "settings",
+          "sequences",
           ":id"
         ],
         "src/app/features/loyalty/loyalty.routes.ts": [
@@ -5214,6 +5215,14 @@
         },
         {
           "module": "Invoice",
+          "file": "Modules/Invoice/routes/api.php",
+          "method": "GET",
+          "uri": "credit-notes/{creditNote}",
+          "controller": "CreditNoteController",
+          "action": "show"
+        },
+        {
+          "module": "Invoice",
           "file": "Modules/Invoice/routes/tenant-api.php",
           "method": "GET",
           "uri": "invoices/export",
@@ -5307,6 +5316,46 @@
           "uri": "invoices/{invoice}",
           "controller": "InvoiceController",
           "action": "show"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/integrity",
+          "controller": "InvoiceSequenceController",
+          "action": "integrity"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
         }
       ],
       "request_fields": [
@@ -5505,6 +5554,22 @@
           "uri": "orders/{id}/status",
           "controller": "OrderController",
           "action": "updateStatus"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [
@@ -5706,6 +5771,14 @@
         },
         {
           "module": "Invoice",
+          "file": "Modules/Invoice/routes/api.php",
+          "method": "GET",
+          "uri": "credit-notes/{creditNote}",
+          "controller": "CreditNoteController",
+          "action": "show"
+        },
+        {
+          "module": "Invoice",
           "file": "Modules/Invoice/routes/tenant-api.php",
           "method": "GET",
           "uri": "invoices/export",
@@ -5799,6 +5872,46 @@
           "uri": "invoices/{invoice}",
           "controller": "InvoiceController",
           "action": "show"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/integrity",
+          "controller": "InvoiceSequenceController",
+          "action": "integrity"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
         }
       ],
       "request_fields": [
@@ -8987,6 +9100,7 @@
             "order_id",
             "order_item_id",
             "order_item_commission_id",
+            "idempotency_key",
             "metadata",
             "metadata.idempotency_key"
           ]
@@ -9002,6 +9116,7 @@
             "order_id",
             "order_item_id",
             "order_item_commission_id",
+            "idempotency_key",
             "metadata"
           ]
         },
@@ -9413,7 +9528,8 @@
             "vendor_id",
             "currency_id",
             "amount",
-            "reason"
+            "reason",
+            "idempotency_key"
           ]
         },
         {
@@ -12173,6 +12289,22 @@
           "uri": "orders/{id}/status",
           "controller": "OrderController",
           "action": "updateStatus"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [
@@ -13530,6 +13662,22 @@
           "uri": "orders/{id}/status",
           "controller": "OrderController",
           "action": "updateStatus"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [
@@ -15185,6 +15333,62 @@
           "uri": "invoices/{invoice}",
           "controller": "InvoiceController",
           "action": "show"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/integrity",
+          "controller": "InvoiceSequenceController",
+          "action": "integrity"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [
@@ -16688,6 +16892,62 @@
           "uri": "reports/exports/{jobId}",
           "controller": "ReportController",
           "action": "exportStatus"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/integrity",
+          "controller": "InvoiceSequenceController",
+          "action": "integrity"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [
@@ -18311,6 +18571,22 @@
           "uri": "refunds/{refund}",
           "controller": "RefundController",
           "action": "show"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [
@@ -19091,7 +19367,8 @@
             "vendor_id",
             "currency_id",
             "amount",
-            "reason"
+            "reason",
+            "idempotency_key"
           ]
         },
         {
@@ -19158,6 +19435,7 @@
             "order_id",
             "order_item_id",
             "order_item_commission_id",
+            "idempotency_key",
             "metadata",
             "metadata.idempotency_key"
           ]
@@ -19173,6 +19451,7 @@
             "order_id",
             "order_item_id",
             "order_item_commission_id",
+            "idempotency_key",
             "metadata"
           ]
         },
@@ -20596,6 +20875,62 @@
           "uri": "cart/items/{itemId}",
           "controller": "CartController",
           "action": "destroy"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/admin-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/integrity",
+          "controller": "InvoiceSequenceController",
+          "action": "integrity"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/exceptions",
+          "controller": "InvoiceSequenceController",
+          "action": "exceptions"
+        },
+        {
+          "module": "Invoice",
+          "file": "Modules/Invoice/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "invoice-sequences/documents/{documentType}/{document}",
+          "controller": "InvoiceSequenceController",
+          "action": "document"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/admin-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "admin"
+        },
+        {
+          "module": "Order",
+          "file": "Modules/Order/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "orders/{id}/confirmation",
+          "controller": "OrderConfirmationController",
+          "action": "tenant"
         }
       ],
       "request_fields": [

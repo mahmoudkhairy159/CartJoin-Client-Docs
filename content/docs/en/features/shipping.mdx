@@ -9,6 +9,8 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 Tenant operators configure zones, methods and rates, and inspect rate quotes. For fulfillment, open Shipments, select the permitted order/items, and follow picking, packing and dispatch actions. Customers track their parcels from account or the tracking surface.
 
+Tenant staff with shipment access can open **Shipments** from the order and select the exact parcel. Buyers can open the seller order on their invoice and track each parcel as its status becomes available.
+
 <SystemTour tour="feature-shipping" compact />
 
 ## Restrictions and decisions
@@ -76,3 +78,13 @@ After a retained partial handoff, cancellation, payment replacement and expiry
 release of attached obligations are blocked. Correct the operational cause,
 then use the separately permitted reasoned reconciliation retry. This preserves
 source evidence and prior retry history; it does not collect payment.
+
+## Saved carrier exceptions
+
+When Bosta is disabled for the store, authorized operators can still open
+saved booking and tracking evidence. Carrier jobs, callbacks and recovery
+make no outbound requests while it is disabled. Check the current parcel or
+return for the saved outcome before arranging another pickup. Deactivate an
+account with saved work to pause service and keep its evidence. See the
+[return pickup workflow](/en/features/returns#uncertain-carrier-pickups) and
+[COD statement workflow](/en/features/payments#carrier-cod-statement-review).

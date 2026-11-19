@@ -20,9 +20,16 @@ description: "Extracted backend routes, request fields and enum values."
 | Payment | `user-api.php` | POST | `orders/{order}/pay` | `pay` |
 | Payment | `user-api.php` | GET | `payments` | `index` |
 | Payment | `user-api.php` | GET | `payments/{payment}` | `show` |
+| Payment | `user-api.php` | GET | `invoices/{invoice}/payment-action` | `paymentAction` |
 | Payment | `user-api.php` | POST | `payments/{payment}/proof` | `proof` |
 | Payment | `user-api.php` | POST | `payments/{payment}/simulate` | `simulate` |
 | Payment | `webhook.php` | POST | `/{provider}` | `store` |
+
+يعرض تصفية المدفوعات بـ `orderId` في لوحتي الإدارة والمتجر سجلًا واحدًا لكل دفعة، مع فصل إجمالي الفاتورة وقيمة دفعتها وحصة طلب البائع المحفوظة. تقبل قائمة تسوية المدفوعات في المتجر المعرّف `payment_id` للانتقال إلى حالات الدفعة المحددة.
+
+## مسارات المطابقة المالية
+
+يسجل المكون مساري القراءة `GET /api/{tenant,admin}/v1/payment-reconciliation` و`GET /api/{tenant,admin}/v1/payment-reconciliation/{case}` عبر `Modules/Payment/App/Providers/ReconciliationRoutes.php`. تتوفر أوامر المستأجر `/{case}/assign` و`/{case}/request-check` و`/{case}/submit-evidence`. يتطلب الأمر `request_key` و`revision`. يقبل إرسال الدليل `event_id` أو `reference`. وصول مسؤول المنصة للقراءة فقط.
 
 ## حقول النماذج
 

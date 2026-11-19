@@ -1,7 +1,7 @@
 ---
 title: "Refund allocation and reconciliation"
 description: "Refunds reverse eligible captured value without overwriting the purchase. Allocation protects each order and payment from being refunded twice."
-roles: ["ADMIN", "TENANT", "VENDOR"]
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 ---
 
 
@@ -11,9 +11,13 @@ Tenant operators open Refunds, inspect the order and available amounts, preview 
 
 Vendor staff can inspect refund information. Authorized administrators can close the order refund once all successful refunds for that order cover its full total. A partial refund keeps the order open.
 
+In **Account → Payments**, open **Refunds** to see the amount, source purchase, destination, and progress. An eligible cancellation refund can appear while it is pending. Its credit note is available once issued. If a failed refund has a replacement, the history identifies the replacement and shows its own status. The store confirms any method-specific timing.
+
 <SystemTour tour="feature-refunds" compact />
 
 ## Restrictions and decisions
+
+With finance access, open **Marketplace Operations** and select **Refund reconciliation** for a dispatched refund whose result is still unclear. Request a check or submit a stored event ID or provider reference. The original amount remains reserved while the outcome is unknown. If the provider conclusively verifies that an eligible leg never executed, authorized refund staff can request a replacement for that leg. Successful legs stay settled.
 
 In a local development preview, guarded test tooling can confirm or decline a previously dispatched test-payment refund. Confirmation updates the normal refund history and balances. A decline releases only that refund’s reservation; other pending refunds remain reserved. These are simulated results, not money returned by a live provider.
 

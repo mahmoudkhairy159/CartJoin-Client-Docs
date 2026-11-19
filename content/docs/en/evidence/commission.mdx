@@ -35,8 +35,8 @@ description: "Extracted backend routes, request fields and enum values."
 
 ## Form-request field names
 
-- `Modules/Commission/App/Http/Requests/Admin/CommissionAdjustment/StoreCommissionAdjustmentRequest.php`: `tenant_id`, `vendor_id`, `currency_id`, `amount`, `type`, `reason`, `order_id`, `order_item_id`, `order_item_commission_id`, `metadata`, `metadata.idempotency_key`
-- `Modules/Commission/App/Http/Requests/Tenant/CommissionAdjustment/StoreCommissionAdjustmentRequest.php`: `vendor_id`, `currency_id`, `amount`, `type`, `reason`, `order_id`, `order_item_id`, `order_item_commission_id`, `metadata`
+- `Modules/Commission/App/Http/Requests/Admin/CommissionAdjustment/StoreCommissionAdjustmentRequest.php`: `tenant_id`, `vendor_id`, `currency_id`, `amount`, `type`, `reason`, `order_id`, `order_item_id`, `order_item_commission_id`, `idempotency_key`, `metadata`, `metadata.idempotency_key`
+- `Modules/Commission/App/Http/Requests/Tenant/CommissionAdjustment/StoreCommissionAdjustmentRequest.php`: `vendor_id`, `currency_id`, `amount`, `type`, `reason`, `order_id`, `order_item_id`, `order_item_commission_id`, `idempotency_key`, `metadata`
 - `Modules/Commission/App/Http/Requests/Tenant/CommissionRule/StoreCommissionRuleRequest.php`: `vendor_id`, `product_id`, `category_id`, `type`, `value`, `priority`, `status`, `model`
 - `Modules/Commission/App/Http/Requests/Tenant/CommissionRule/UpdateCommissionRuleRequest.php`: `vendor_id`, `product_id`, `category_id`, `type`, `value`, `priority`, `status`, `model`
 

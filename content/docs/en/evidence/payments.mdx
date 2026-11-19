@@ -20,9 +20,16 @@ description: "Extracted backend routes, request fields and enum values."
 | Payment | `user-api.php` | POST | `orders/{order}/pay` | `pay` |
 | Payment | `user-api.php` | GET | `payments` | `index` |
 | Payment | `user-api.php` | GET | `payments/{payment}` | `show` |
+| Payment | `user-api.php` | GET | `invoices/{invoice}/payment-action` | `paymentAction` |
 | Payment | `user-api.php` | POST | `payments/{payment}/proof` | `proof` |
 | Payment | `user-api.php` | POST | `payments/{payment}/simulate` | `simulate` |
 | Payment | `webhook.php` | POST | `/{provider}` | `store` |
+
+## Finance reconciliation routes
+
+Admin and Tenant payments filtered by `orderId` return a single row per payment and distinguish invoice total, invoice payment amount and the frozen seller-order allocation. The Tenant reconciliation list accepts `payment_id` for the exact source payment.
+
+The payment module registers `GET /api/{tenant,admin}/v1/payment-reconciliation` and `GET /api/{tenant,admin}/v1/payment-reconciliation/{case}` through `Modules/Payment/App/Providers/ReconciliationRoutes.php`. Tenant POST actions use `/{case}/assign`, `/{case}/request-check`, `/{case}/submit-evidence`. The command request requires `request_key` and `revision`. Evidence submission accepts `event_id` or `reference`. Admin access is read-only.
 
 ## Form-request field names
 

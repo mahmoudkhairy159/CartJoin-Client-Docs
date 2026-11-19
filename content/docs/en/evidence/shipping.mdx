@@ -11,6 +11,8 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Shipping/routes/vendor-api.php`
 - `Modules/Shipping/routes/web.php`
 
+The Tenant order’s shipments link uses `GET /api/tenant/v1/shipments?orderId=…` under the shipment read permission. The buyer tracking list uses `GET /api/user/v1/shipments/orders/{order}` to read the buyer’s individual parcels.
+
 ## Extracted explicit backend routes
 
 | Module | Surface file | Method | URI fragment | Action |

@@ -17,12 +17,15 @@ description: "Extracted backend routes, request fields and enum values."
 | Invoice | `admin-api.php` | GET | `invoices` | `index` |
 | Invoice | `admin-api.php` | GET | `invoices/{invoice}` | `show` |
 | Invoice | `admin-api.php` | GET | `invoice-sequences/integrity` | `integrity` |
+| Invoice | `admin-api.php` | GET | `invoice-sequences/exceptions` | `exceptions` |
+| Invoice | `admin-api.php` | GET | `invoice-sequences/documents/{documentType}/{document}` | `document` |
 | Invoice | `api.php` | POST | `checkout` | `checkout` |
 | Invoice | `api.php` | GET | `invoices` | `index` |
 | Invoice | `api.php` | GET | `invoices/{invoice}` | `show` |
 | Invoice | `api.php` | GET | `invoices/{invoice}/pdf` | `pdf` |
 | Invoice | `api.php` | POST | `invoices/{invoice}/orders/{order}/cancel` | `cancelOrder` |
 | Invoice | `api.php` | GET | `credit-notes` | `index` |
+| Invoice | `api.php` | GET | `credit-notes/{creditNote}` | `show` |
 | Invoice | `tenant-api.php` | GET | `invoices/export` | `export` |
 | Invoice | `tenant-api.php` | GET | `invoices` | `index` |
 | Invoice | `tenant-api.php` | GET | `invoices/{invoice}` | `show` |
@@ -31,12 +34,17 @@ description: "Extracted backend routes, request fields and enum values."
 | Invoice | `tenant-api.php` | GET | `credit-notes` | `index` |
 | Invoice | `tenant-api.php` | GET | `credit-notes/{creditNote}` | `show` |
 | Invoice | `tenant-api.php` | GET | `credit-notes/{creditNote}/pdf` | `pdf` |
+| Invoice | `tenant-api.php` | GET | `invoice-sequences/integrity` | `integrity` |
+| Invoice | `tenant-api.php` | GET | `invoice-sequences/exceptions` | `exceptions` |
+| Invoice | `tenant-api.php` | GET | `invoice-sequences/documents/{documentType}/{document}` | `document` |
 | Invoice | `tenant-api.php` | GET | `invoice-settings` | `show` |
 | Invoice | `tenant-api.php` | PUT | `invoice-settings` | `update` |
 | Invoice | `vendor-api.php` | GET | `invoices` | `index` |
 | Invoice | `vendor-api.php` | GET | `invoices/{invoice}` | `show` |
 
 ## Form-request field names
+
+Sequence evidence is read-only. Admin uses `invoices.export`, and Tenant uses `invoice-sequences.show` in the resolved workspace. The audit time and active numbering version describe the saved snapshot. The document drill-down displays an exact source summary.
 
 - `Modules/Invoice/App/Http/Requests/Tenant/Invoice/CancelInvoiceRequest.php`: `reason`
 - `Modules/Invoice/App/Http/Requests/Tenant/InvoiceSetting/UpdateInvoiceSettingRequest.php`: `is_enabled`, `numbering_reset`, `due_days`, `legal_name`, `tax_registration_number`, `billing_address`, `footer_terms`, `logo_path`

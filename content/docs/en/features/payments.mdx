@@ -19,6 +19,8 @@ On a supported device, signed-in shoppers at an enrolled store can select delive
 
 Open the confirmation page or **Account → Invoices and orders → Invoice**, then choose **Continue to payment** if the invoice offers it. If the provider result is still being checked, use **Check payment status**. For a bank transfer awaiting proof, open **Upload proof** and wait for the store’s review.
 
+**Upload proof** opens the eligible bank transfer for that invoice, including older payments. The store checks that the payment still belongs to the invoice and can accept proof. Payments, refunds, and credit notes each have their own pages in **Account → Payments**.
+
 If the invoice PDF is preparing, try the download again once the file is ready.
 
 <SystemTour tour="feature-checkout" compact startAt={2} />
@@ -33,6 +35,8 @@ If the invoice PDF is preparing, try the download again once the file is ready.
 </details>
 
 ## Restrictions and decisions
+
+With finance access, open **Marketplace Operations** and select **Payment reconciliation**. Open the case to see its amount, reason and history, assign it to yourself, or request a check. If you have a stored event ID or provider reference, submit it for verification. A reference alone cannot confirm payment. While verification is pending, buyers can refresh the invoice for updates. Another charge remains blocked until the outcome is established.
 
 Online payment success requires a verified provider webhook, never the browser return alone. Bank transfer needs proof and pending approval; rejection returns to awaiting confirmation. COD skips proof. The chosen inactive/unsupported gateway is rejected rather than silently replaced.
 
@@ -113,3 +117,27 @@ The following English/Arabic walkthrough uses local test invoices. **Simulate su
 <SystemTour tour="feature-test-payments" compact anchor="test-payment-screen-guide" />
 
 Success records a test payment and updates the invoice and child-order payment projections. Decline keeps the failed attempt in payment history and closes the unpaid purchase. On a connection problem, check Payments before starting a new attempt. Retrying the same outcome is safe. A finished attempt keeps its recorded outcome.
+
+## Carrier COD statement review
+
+Tenant finance staff can preview a version 2 synthetic CSV in the carrier COD
+reconciliation view. Use the approved store’s carrier account binding and the
+same statement reference throughout the file. Each line has its own reference,
+tracking number, date, EGP amount and type. The types cover cash collection,
+transfer, fee and adjustment. Preview shows the comparison before you save.
+Reimporting identical evidence shows the original import results.
+If a saved statement is waiting for verified collection or payment evidence,
+recheck it after that evidence arrives. This adds the new matching result to
+the original statement.
+
+Expected transfer equals verified collection less fees plus signed adjustments.
+Compare it with the total transferred for that shipment. Investigate a short or
+excess transfer using the linked source records if you have access to them.
+Platform finance can view exceptions for a selected store. The import records
+remittance evidence. Payment approval and vendor payouts follow their usual
+authorized workflows.
+
+The local workflow uses synthetic files for single-seller, single-parcel EGP
+orders. A live carrier file or bank feed requires separate verification. Before
+expanding the pilot, complete two consecutive remittance cycles with zero
+unexplained variance.

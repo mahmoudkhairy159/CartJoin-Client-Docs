@@ -11,6 +11,10 @@ Open Invoices and inspect the document, vendor orders, totals and payment status
 
 <SystemTour tour="feature-invoices" compact />
 
+Open an issued credit note from its refund in **Account → Payments**, or browse the **Credit notes** section. The credit note links back to the owning invoice. A refund can already be visible while its note is being issued.
+
+The invoice title follows its recorded state. An issued invoice awaiting payment shows **Unpaid invoice**. A partly paid invoice shows **Partially paid invoice**. The original number remains the purchase reference. A stored PDF reflects the state recorded when the file was generated.
+
 <details className="guide-task-details">
 <summary>Detailed task walkthrough</summary>
 
@@ -21,6 +25,8 @@ Open Invoices and inspect the document, vendor orders, totals and payment status
 ## Restrictions and decisions
 
 Invoice numbering is tenant-specific and must not be manually renumbered. Vendors see only their allowed line economics with buyer information redacted in vendor invoice resources. Cancellation of one child order does not mean all sibling orders are cancelled.
+
+In **Invoice sequences**, review the audit timestamp in UTC before acting on an exception. The scheduled audit reports the affected ranges and opens the exact recorded document when one exists. Cancelled numbered invoices remain in their series. Older numbers that cannot be identified with confidence appear for review. A request to change the numbering reset shows its effective UTC date. It applies to future issuance, and the original issuer snapshot stays with each issued document.
 
 ## Read the vendor and purchased items
 
@@ -51,7 +57,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/invoices`, `/invoice-sequences` |
-| [tenant](/en/roles/tenant) | `/invoices` |
+| [tenant](/en/roles/tenant) | `/invoices`, `/invoices/sequences` |
 | [vendor](/en/roles/vendor) | `/invoices` |
 | [customer](/en/roles/customer) | `/account/invoices/:id` |
 

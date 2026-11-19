@@ -28,6 +28,12 @@ description: "Extracted backend routes, request fields and enum values."
 | Refund | `vendor-api.php` | GET | `refunds` | `index` |
 | Refund | `vendor-api.php` | GET | `refunds/{refund}` | `show` |
 
+تقبل قائمة تسوية الاستردادات في المتجر المعرّف `refund_id` للدفعة المحددة. يعرض سجل المشتري الطلب الأصلي والفاتورة التابعة له ووسيلة التمويل والوجهة، والإشعار الدائن بعد إصداره، وعلاقة الدفعة البديلة ضمن الطلب نفسه.
+
+## مسارات المطابقة المالية
+
+يسجل المكون مساري القراءة `GET /api/{tenant,admin}/v1/refund-reconciliation` و`GET /api/{tenant,admin}/v1/refund-reconciliation/{case}` عبر `Modules/Payment/App/Providers/ReconciliationRoutes.php`. تتوفر أوامر المستأجر `/{case}/assign` و`/{case}/request-check` و`/{case}/submit-evidence` و`/{case}/replace-failed-leg`. يتطلب الأمر `request_key` و`revision`. يقبل إرسال الدليل `event_id` أو `reference`. وصول مسؤول المنصة للقراءة فقط.
+
 ## حقول النماذج
 
 - `Modules/Refund/App/Http/Requests/Tenant/Refund/PreviewRefundRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `amount`
