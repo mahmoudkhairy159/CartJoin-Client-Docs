@@ -1,23 +1,32 @@
 ---
 title: "Flash sales and allocated offer stock"
 description: "Flash sales expose time-limited discounted offers with campaign-specific product/variant eligibility and stock constraints."
-roles: ["ADMIN", "CUSTOMER", "TENANT"]
+roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 ---
 
 
 ## How to use it
 
-Open Flash sales, maintain the campaign period and included items, then review activation and stock indicators. Customers browse Flash and open the offer’s product before selecting the variant and checking the cart price.
+- **Store staff** create a draft, set the sale window, and enroll individual variants or preview a bulk enrollment. Publish from the campaign page. Authorized staff can review vendor proposals and open the allocation report there.
+- **Vendors** open Flash sales in their tenant workspace. They propose an offer for one of their variants with a price, allocated quantity, and maximum markdown they agree to fund. The tenant decides whether to approve the terms. Vendors can review decisions or withdraw their own offers.
+- **Platform staff** inspect campaigns across tenants. Staff with the moderation permission can end or cancel a campaign and must record the reason.
+- **Shoppers** open a live campaign and select an offer to open the enrolled variant directly. Signed-in shoppers can request or remove a reminder from an upcoming campaign.
+
+Published times use the store time zone. Use the UTC editor to enter an exact instant if a store clock time repeats or is skipped during a daylight-saving change.
 
 <SystemTour tour="feature-flash-sales" compact />
 
 ## Restrictions and decisions
 
-A countdown is not a stock reservation. Date, active state and remaining allocation must still qualify at purchase time. A displayed sale card is not proof that a stale cart retains the earlier price.
+A countdown or item in the basket does not reserve the promotional quantity. The checkout reviews the current offer and allocation before placing the order. If the price or available quantity changes, review the refreshed basket and amount before confirming again. An offer with a per-buyer limit requires a signed-in account.
+
+A campaign must allow stacking before another eligible discount can apply with its flash price. Vendor-funded offers also follow the vendor’s approved terms. Promotional holds and confirmed usage appear separately in campaign reports.
+
+For bank-transfer flash-sale orders, submit proof by the deadline shown with the payment. The deadline is 24 hours from payment initiation.
 
 ## Data flow and outcome
 
-Campaign + included variants → eligible sale price → cart/checkout validation → allocated usage.
+Draft and approved variant terms → published campaign → eligible variant price → checkout reconfirmation and allocation → payment confirmation or hold release.
 
 ## When something goes wrong
 
@@ -41,7 +50,8 @@ A route proves navigation, not permission to perform every action. Related-recor
 |---|---|
 | [admin](/en/roles/admin) | `/flash-sales` |
 | [tenant](/en/roles/tenant) | `/flash-sales` |
-| [customer](/en/roles/customer) | `/flash` |
+| [vendor](/en/roles/vendor) | `/flash-sales` |
+| [customer](/en/roles/customer) | `/flash`, `/flash/[campaign]` |
 
 [Exact route, field and enum source trail](/en/evidence/flash-sales)
 {/* /SCREEN_MAP */}
