@@ -1838,5 +1838,61 @@
   "merchant-lifecycle-vendor-coverage-ar.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "admin-flash-moderation-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "admin-flash-moderation-ar.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "tenant-flash-schedule-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "tenant-flash-schedule-ar.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "tenant-flash-offers-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "tenant-flash-offers-ar.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "vendor-flash-proposal-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "vendor-flash-proposal-ar.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "customer-flash-landing-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "customer-flash-landing-ar.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "customer-flash-variant-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "customer-flash-variant-ar.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "customer-flash-cart-en.jpg": {
+    "width": 1280,
+    "height": 800
+  },
+  "customer-flash-cart-ar.jpg": {
+    "width": 1280,
+    "height": 800
   }
 }

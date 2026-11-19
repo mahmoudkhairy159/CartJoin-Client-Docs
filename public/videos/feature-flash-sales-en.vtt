@@ -1,20 +1,44 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:12.000
-Platform admin
-Check the sale state and start/end times. Sale prices and allocated
-quantities belong to specific variants, not every option of a product.
+00:00:00.000 --> 00:00:09.000
+Review campaign moderation · Confirm the campaign and
+its schedule before ending or cancelling it. Add a
+reason for the moderation record.
 
 2
-00:00:12.000 --> 00:00:24.000
-Tenant operator
-Check the sale state and start/end times. Sale prices and allocated
-quantities belong to specific variants, not every option of a product.
+00:00:09.000 --> 00:00:18.000
+Set the campaign schedule · Set the start and end in
+the store time zone. Switch to the UTC editor to enter
+an exact instant when local clock times repeat.
 
 3
-00:00:24.000 --> 00:00:36.000
-Customer
-Check the sale state and start/end times. Sale prices and allocated
-quantities belong to specific variants, not every option of a product.
+00:00:18.000 --> 00:00:27.000
+Check variant prices and allocations · Review the
+enrolled variant, offer price, and quantity. Preview
+bulk enrollment before saving changes.
 
+4
+00:00:27.000 --> 00:00:36.000
+Prepare a vendor-funded proposal · In the store
+workspace, choose your variant and review the price,
+quantity, and maximum markdown before submitting it
+for approval.
+
+5
+00:00:36.000 --> 00:00:45.000
+Find a live campaign · Open a campaign to see which
+variants qualify. Upcoming campaigns show when their
+offers begin.
+
+6
+00:00:45.000 --> 00:00:54.000
+Check the exact variant · Follow the offer to the
+selected variant. Verify its price and quantity before
+adding it to your cart.
+
+7
+00:00:54.000 --> 00:01:03.000
+Review the cart before checkout · Check the offer
+price and quantity on the cart line. Review any
+updated amounts before placing the order.
