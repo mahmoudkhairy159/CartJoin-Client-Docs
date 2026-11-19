@@ -23,6 +23,14 @@ Tenant event → versioned signed envelope → queued delivery attempt → succe
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
 
+## Interrupted deliveries and safe retry
+
+A temporary queue interruption does not erase a normal delivery. CartJoin retains a recovery marker and checks it during the five-minute maintenance sweep. A reserved attempt that remains unfinished for 15 minutes is recorded as abandoned before recovery; automatic delivery remains limited to six attempts.
+
+A test notification is never automatically resent by recovery. If its reserved attempt is interrupted, it becomes **Failed**, with the interruption recorded in its history. After checking the endpoint, an authorized tenant operator can use the existing retry control. A second worker cannot start another request while the same delivery still has an open attempt.
+
+Receivers must still deduplicate using the delivery identifier: a receiver may accept a request before its acknowledgement is lost. Recovery preserves the original signed payload and delivery identity.
+
 ## Evidence and verification limits
 
 Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
