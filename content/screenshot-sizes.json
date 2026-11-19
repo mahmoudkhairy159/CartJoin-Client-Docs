@@ -1494,5 +1494,77 @@
   "customer-review-feedback-ar-read.png": {
     "width": 1265,
     "height": 712
+  },
+  "cohort-admin-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-admin-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-admin-matrix-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-admin-matrix-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-admin-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-admin-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-tenant-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-tenant-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-tenant-matrix-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-tenant-matrix-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-tenant-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-tenant-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-vendor-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-vendor-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-vendor-matrix-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-vendor-matrix-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-vendor-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "cohort-vendor-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

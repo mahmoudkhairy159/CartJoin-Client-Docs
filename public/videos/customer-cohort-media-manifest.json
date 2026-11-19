@@ -1,0 +1,712 @@
+{
+  "capture_date": "2026-11-19",
+  "capture_timezone": "Africa/Cairo",
+  "kind": "guided-screenshot-clips",
+  "backend_source_commit": "6d889faba952bf1e05e2f3fd90315761c4676d68",
+  "environment": "Actual root CUA captures of isolated production dashboard candidates connected to the named local SQLite preview. Figures and accounts are controlled synthetic examples.",
+  "mechanism": "Published JPEG screenshots are byte-identical to reviewed raw CUA captures whose private filenames end in .png. Existing filtered renderer creates silent screenshot chapters with focus boxes, padding and bilingual WebVTT captions; these are not continuous recordings.",
+  "privacy": "No customer identities, contacts, credentials, tokens, OTPs or private financial evidence are published. Demo operator and store labels are synthetic.",
+  "limits": "Reports illustrate retained synthetic customer counts, not real customers, revenue, payments or delivery. No live-provider or live-deployment acceptance is implied. This clip does not execute generation, export or another transaction.",
+  "renderer": {
+    "path": "scripts/build-tours.py",
+    "sha256": "96d2b3033802c30236356163f5bc88a2e9474c396ca518800acdaf59ca9a02f7",
+    "command": "python scripts/build-tours.py feature-customer-cohorts-admin feature-customer-cohorts-tenant feature-customer-cohorts-vendor"
+  },
+  "screen_review": "All 18 final captures inspected. Vendor Arabic matrix recaptured to show its column header and complete September/October rows; November bottom may be partial in that frame. The full 12-month table is horizontally scrollable and not entirely visible. Native month input labels may remain English in the Arabic interface.",
+  "ui_sources": {
+    "admin": {
+      "preview_url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "provenance_artifact": "admin-cohorts-production-provenance-20261119.json",
+      "provenance_sha256": "d008af1689a1aec2c58681375d6e8887e100485d9db528d1b12ee8da50f40a60",
+      "base_commit": "51a6a5ac330a760ad4b350af9f84938846c05cda",
+      "backend_commit": "6d889faba952bf1e05e2f3fd90315761c4676d68",
+      "published_feature_commit": "67803f5c704c2a166a5b05c3c7a3d2c8728979ec",
+      "source_state": "Capture used a production candidate built from the recorded base commit plus reviewed cohort UI files, not the base commit alone. Root subsequently verified the feature published to master at published_feature_commit; original tested candidate provenance is retained.",
+      "candidate_source_files": [
+        {
+          "path": "src/app/features/reports/cohorts/cohort-api.service.spec.ts",
+          "sha256": "80749650d78859c8f949ad909812ad1baff5a5c6cf9aa65005f9eb9f03d65322"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-api.service.ts",
+          "sha256": "de0aef8641391e70ae44774eb832bedab474c1387995d422dcbfca425678b8f2"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.html",
+          "sha256": "e4ec70b4a2763738a5a0282f5e91b34686aa388a1cda9abd52a34f603c6b6842"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.scss",
+          "sha256": "e1c837a0d04d59155bc7c71a7a68d29b392fe381420bb6250432c0d8244893c0"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.spec.ts",
+          "sha256": "e3d344cda498ee956a9dceb9c2630d1a000a21f073c41fbcedb3537e5d3a5289"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.ts",
+          "sha256": "239c6ab223ac42acfb2ab8191fc8e53ed04da0cb1aabc06a4a19716c7180165d"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort.model.ts",
+          "sha256": "89378bdd49d14a6285e48cd21daff49ed96ec112f91da4638f5ea175fff4eae2"
+        }
+      ],
+      "production_build": {
+        "exit_code": 0,
+        "log_artifact": "admin-cohorts-calendar-production-build-20261119.log"
+      }
+    },
+    "tenant": {
+      "preview_url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "provenance_artifact": "tenant-cohorts-production-provenance-20261119.json",
+      "provenance_sha256": "361c9e7c6809d9270d32694dd6ba5d14ed79d2a1aeceea6e2fa4d8371e776fcd",
+      "base_commit": "557615bb680604142196f777f2cd41290f93c63f",
+      "backend_commit": "6d889faba952bf1e05e2f3fd90315761c4676d68",
+      "published_feature_commit": "9638afe4bb1da1e3722cca8338deee9d66d03f1d",
+      "source_state": "Capture used a production candidate built from the recorded base commit plus reviewed cohort UI files, not the base commit alone. Root subsequently verified the feature published to master at published_feature_commit; original tested candidate provenance is retained.",
+      "candidate_source_files": [
+        {
+          "path": "src/app/features/reports/cohorts/cohort-api.service.spec.ts",
+          "sha256": "80749650d78859c8f949ad909812ad1baff5a5c6cf9aa65005f9eb9f03d65322"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-api.service.ts",
+          "sha256": "b32d626f332b0d509d542d066665bf32d5e3ae1186b5dd4ad4a8b3392ca7f9e7"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.html",
+          "sha256": "bcd69161a1e475e331220e4b796af570ea71f4fe7be2a8f9b63ce4bbe98ef25c"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.scss",
+          "sha256": "e1c837a0d04d59155bc7c71a7a68d29b392fe381420bb6250432c0d8244893c0"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.spec.ts",
+          "sha256": "c6e1cf0bbc165f504f2019a82b4d3d2bc1642d51c4a5bcef7ca1c060dd32553a"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.ts",
+          "sha256": "a9727611b5af61e8c111f830dedc3572310d09637ce527ff989b35c1750c5f2b"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort.model.ts",
+          "sha256": "89378bdd49d14a6285e48cd21daff49ed96ec112f91da4638f5ea175fff4eae2"
+        }
+      ],
+      "production_build": {
+        "exit_code": 0,
+        "log_artifact": "tenant-cohorts-calendar-production-build-20261119.log"
+      }
+    },
+    "vendor": {
+      "preview_url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "provenance_artifact": "vendor-cohorts-production-provenance-20261119.json",
+      "provenance_sha256": "e7e10b3df982345bc94a1b769813cf30a296d0264f3b44eda2f64e18f483c551",
+      "base_commit": "950457d115ee6f1a3977b998298da7aef3e16350",
+      "backend_commit": "6d889faba952bf1e05e2f3fd90315761c4676d68",
+      "published_feature_commit": "06c737a905d823848ab505a2cc5270d1e7ccd10a",
+      "source_state": "Capture used a production candidate built from the recorded base commit plus reviewed cohort UI files, not the base commit alone. Root subsequently verified the feature published to master at published_feature_commit; original tested candidate provenance is retained.",
+      "candidate_source_files": [
+        {
+          "path": "src/app/features/reports/cohorts/cohort-api.service.spec.ts",
+          "sha256": "80749650d78859c8f949ad909812ad1baff5a5c6cf9aa65005f9eb9f03d65322"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-api.service.ts",
+          "sha256": "a9ffc67d018dd25b593cd247571593d02d3ce5f178ab471347e9e0ff5d1a83d0"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.html",
+          "sha256": "bcd69161a1e475e331220e4b796af570ea71f4fe7be2a8f9b63ce4bbe98ef25c"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.scss",
+          "sha256": "e1c837a0d04d59155bc7c71a7a68d29b392fe381420bb6250432c0d8244893c0"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.spec.ts",
+          "sha256": "72358bd428f2b35501347842eb679ad516f80d9074277594a9ae60cef1b8eced"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort-report.component.ts",
+          "sha256": "5636945832c098e8759fed243d8e0651322f104e34660be7ee90baf882e50d97"
+        },
+        {
+          "path": "src/app/features/reports/cohorts/cohort.model.ts",
+          "sha256": "89378bdd49d14a6285e48cd21daff49ed96ec112f91da4638f5ea175fff4eae2"
+        }
+      ],
+      "production_build": {
+        "exit_code": 0,
+        "log_artifact": "vendor-cohorts-calendar-production-build-20261119.log"
+      }
+    }
+  },
+  "entries": [
+    {
+      "role": "admin",
+      "locale": "en",
+      "chapter": "scope",
+      "url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-admin-scope-en.jpg",
+      "raw_artifact": "cohort-admin-scope-en.png",
+      "raw_sha256": "c5a6b29460e347b896370bbe7befc4721723837e41f5db133d2ae9ea0fdf7565",
+      "published_sha256": "c5a6b29460e347b896370bbe7befc4721723837e41f5db133d2ae9ea0fdf7565",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:06:56.052345+00:00"
+    },
+    {
+      "role": "admin",
+      "locale": "ar",
+      "chapter": "scope",
+      "url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-admin-scope-ar.jpg",
+      "raw_artifact": "cohort-admin-scope-ar.png",
+      "raw_sha256": "b8d44da1b873571501b57b071da00d909bd9fdf76b15554778faa0ea8a2ce5bb",
+      "published_sha256": "b8d44da1b873571501b57b071da00d909bd9fdf76b15554778faa0ea8a2ce5bb",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:06:37.204234+00:00"
+    },
+    {
+      "role": "admin",
+      "locale": "en",
+      "chapter": "matrix",
+      "url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-admin-matrix-en.jpg",
+      "raw_artifact": "cohort-admin-matrix-en.png",
+      "raw_sha256": "c486080d874f1239e9a1565604426d05c563aee8188c6cf9c15f2679367def50",
+      "published_sha256": "c486080d874f1239e9a1565604426d05c563aee8188c6cf9c15f2679367def50",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:08:11.227464+00:00"
+    },
+    {
+      "role": "admin",
+      "locale": "ar",
+      "chapter": "matrix",
+      "url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-admin-matrix-ar.jpg",
+      "raw_artifact": "cohort-admin-matrix-ar.png",
+      "raw_sha256": "956a59aef566d30de29df629b75297c987b0fee2316c31858eeff330ae8de24a",
+      "published_sha256": "956a59aef566d30de29df629b75297c987b0fee2316c31858eeff330ae8de24a",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:06:47.622712+00:00"
+    },
+    {
+      "role": "admin",
+      "locale": "en",
+      "chapter": "coverage",
+      "url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-admin-coverage-en.jpg",
+      "raw_artifact": "cohort-admin-coverage-en.png",
+      "raw_sha256": "5d4b7287eb40556b61e22f2a521ebb15e04b936697f945302f55580da64152b0",
+      "published_sha256": "5d4b7287eb40556b61e22f2a521ebb15e04b936697f945302f55580da64152b0",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:06:55.472159+00:00"
+    },
+    {
+      "role": "admin",
+      "locale": "ar",
+      "chapter": "coverage",
+      "url": "http://127.0.0.1:4321/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-admin-coverage-ar.jpg",
+      "raw_artifact": "cohort-admin-coverage-ar.png",
+      "raw_sha256": "69ba32ea386507d05be8dcfd00e40348c173547fa8edd3d3254bdbbdb79251ec",
+      "published_sha256": "69ba32ea386507d05be8dcfd00e40348c173547fa8edd3d3254bdbbdb79251ec",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:06:47.917770+00:00"
+    },
+    {
+      "role": "tenant",
+      "locale": "en",
+      "chapter": "scope",
+      "url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-tenant-scope-en.jpg",
+      "raw_artifact": "cohort-tenant-scope-en.png",
+      "raw_sha256": "7b3517e7c49d2b6c25b097d14a2fd6dbbc7cac02b0f8091b3b6c565a2e01b6f3",
+      "published_sha256": "7b3517e7c49d2b6c25b097d14a2fd6dbbc7cac02b0f8091b3b6c565a2e01b6f3",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:14.917063+00:00"
+    },
+    {
+      "role": "tenant",
+      "locale": "ar",
+      "chapter": "scope",
+      "url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-tenant-scope-ar.jpg",
+      "raw_artifact": "cohort-tenant-scope-ar.png",
+      "raw_sha256": "c5a54df0bd13f4fdaae21e5c62ac9be226ab8f90265b1fa48453a590a09dbfac",
+      "published_sha256": "c5a54df0bd13f4fdaae21e5c62ac9be226ab8f90265b1fa48453a590a09dbfac",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:25.193047+00:00"
+    },
+    {
+      "role": "tenant",
+      "locale": "en",
+      "chapter": "matrix",
+      "url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-tenant-matrix-en.jpg",
+      "raw_artifact": "cohort-tenant-matrix-en.png",
+      "raw_sha256": "98da3817b3fe5c73145176ffa7a71e02539fdaea6ab37e0c882102dfab607807",
+      "published_sha256": "98da3817b3fe5c73145176ffa7a71e02539fdaea6ab37e0c882102dfab607807",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:15.223729+00:00"
+    },
+    {
+      "role": "tenant",
+      "locale": "ar",
+      "chapter": "matrix",
+      "url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-tenant-matrix-ar.jpg",
+      "raw_artifact": "cohort-tenant-matrix-ar.png",
+      "raw_sha256": "dfd91aeef855524a760755e298f6bae1ad499cba8cb0b69d38aa15ca07b75be9",
+      "published_sha256": "dfd91aeef855524a760755e298f6bae1ad499cba8cb0b69d38aa15ca07b75be9",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:08:11.521297+00:00"
+    },
+    {
+      "role": "tenant",
+      "locale": "en",
+      "chapter": "coverage",
+      "url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-tenant-coverage-en.jpg",
+      "raw_artifact": "cohort-tenant-coverage-en.png",
+      "raw_sha256": "fb0b06c034019391e93e3088e08f9affb549a81ece5ca038e106e8acde921555",
+      "published_sha256": "fb0b06c034019391e93e3088e08f9affb549a81ece5ca038e106e8acde921555",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:15.521126+00:00"
+    },
+    {
+      "role": "tenant",
+      "locale": "ar",
+      "chapter": "coverage",
+      "url": "http://127.0.0.1:4322/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-tenant-coverage-ar.jpg",
+      "raw_artifact": "cohort-tenant-coverage-ar.png",
+      "raw_sha256": "c0b81ecdb8fab6984de78f1f3d685e8b71036f46ba36630292d4294bc4b9642a",
+      "published_sha256": "c0b81ecdb8fab6984de78f1f3d685e8b71036f46ba36630292d4294bc4b9642a",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:24.624115+00:00"
+    },
+    {
+      "role": "vendor",
+      "locale": "en",
+      "chapter": "scope",
+      "url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-vendor-scope-en.jpg",
+      "raw_artifact": "cohort-vendor-scope-en.png",
+      "raw_sha256": "b8dcc20361b90e2a602f2f393bb8e1321e97874f9a628cbdae68b57e37e70e51",
+      "published_sha256": "b8dcc20361b90e2a602f2f393bb8e1321e97874f9a628cbdae68b57e37e70e51",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:40.504001+00:00"
+    },
+    {
+      "role": "vendor",
+      "locale": "ar",
+      "chapter": "scope",
+      "url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-vendor-scope-ar.jpg",
+      "raw_artifact": "cohort-vendor-scope-ar.png",
+      "raw_sha256": "52caf34f13c6a2d8cea645309c0aff13d0e697751c555b92a82bf41254c5dcc7",
+      "published_sha256": "52caf34f13c6a2d8cea645309c0aff13d0e697751c555b92a82bf41254c5dcc7",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:53.932275+00:00"
+    },
+    {
+      "role": "vendor",
+      "locale": "en",
+      "chapter": "matrix",
+      "url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-vendor-matrix-en.jpg",
+      "raw_artifact": "cohort-vendor-matrix-en.png",
+      "raw_sha256": "d76e17ebe86f46e58d58d18eba53f9bab499d12de6d007b90753f974e7b04b4e",
+      "published_sha256": "d76e17ebe86f46e58d58d18eba53f9bab499d12de6d007b90753f974e7b04b4e",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:40.785014+00:00"
+    },
+    {
+      "role": "vendor",
+      "locale": "ar",
+      "chapter": "matrix",
+      "url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-vendor-matrix-ar.jpg",
+      "raw_artifact": "cohort-vendor-matrix-ar.png",
+      "raw_sha256": "bc114afaa62adfeb7a59862ca735a3b2c2c69e974a246af04fadea3dde4002f1",
+      "published_sha256": "bc114afaa62adfeb7a59862ca735a3b2c2c69e974a246af04fadea3dde4002f1",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:09:06.334888+00:00"
+    },
+    {
+      "role": "vendor",
+      "locale": "en",
+      "chapter": "coverage",
+      "url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-vendor-coverage-en.jpg",
+      "raw_artifact": "cohort-vendor-coverage-en.png",
+      "raw_sha256": "dafb5cfa99f965f6837bee9e12ab9efcfa45af3d7975ae5f71f92f43a299efbc",
+      "published_sha256": "dafb5cfa99f965f6837bee9e12ab9efcfa45af3d7975ae5f71f92f43a299efbc",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:41.036538+00:00"
+    },
+    {
+      "role": "vendor",
+      "locale": "ar",
+      "chapter": "coverage",
+      "url": "http://127.0.0.1:4323/reports/customer-cohorts",
+      "path": "public/screenshots/cohort-vendor-coverage-ar.jpg",
+      "raw_artifact": "cohort-vendor-coverage-ar.png",
+      "raw_sha256": "1fca156f369f510a048c8cf67df6665c2c97a794a27cc783dd027fccc1751068",
+      "published_sha256": "1fca156f369f510a048c8cf67df6665c2c97a794a27cc783dd027fccc1751068",
+      "byte_identical": true,
+      "encoding": "JPEG",
+      "dimensions": [
+        1265,
+        712
+      ],
+      "raw_updated_at_utc": "2026-11-19T02:07:53.391138+00:00"
+    }
+  ],
+  "owned_files": [
+    "content/system-tours.json",
+    "content/screenshot-sizes.json",
+    "public/videos/customer-cohort-media-manifest.json",
+    "public/screenshots/cohort-admin-scope-en.jpg",
+    "public/screenshots/cohort-admin-scope-ar.jpg",
+    "public/screenshots/cohort-admin-matrix-en.jpg",
+    "public/screenshots/cohort-admin-matrix-ar.jpg",
+    "public/screenshots/cohort-admin-coverage-en.jpg",
+    "public/screenshots/cohort-admin-coverage-ar.jpg",
+    "public/screenshots/cohort-tenant-scope-en.jpg",
+    "public/screenshots/cohort-tenant-scope-ar.jpg",
+    "public/screenshots/cohort-tenant-matrix-en.jpg",
+    "public/screenshots/cohort-tenant-matrix-ar.jpg",
+    "public/screenshots/cohort-tenant-coverage-en.jpg",
+    "public/screenshots/cohort-tenant-coverage-ar.jpg",
+    "public/screenshots/cohort-vendor-scope-en.jpg",
+    "public/screenshots/cohort-vendor-scope-ar.jpg",
+    "public/screenshots/cohort-vendor-matrix-en.jpg",
+    "public/screenshots/cohort-vendor-matrix-ar.jpg",
+    "public/screenshots/cohort-vendor-coverage-en.jpg",
+    "public/screenshots/cohort-vendor-coverage-ar.jpg",
+    "public/videos/feature-customer-cohorts-admin-en-tour.mp4",
+    "public/videos/feature-customer-cohorts-admin-en-poster.jpg",
+    "public/videos/feature-customer-cohorts-admin-en.vtt",
+    "public/videos/feature-customer-cohorts-admin-ar-tour.mp4",
+    "public/videos/feature-customer-cohorts-admin-ar-poster.jpg",
+    "public/videos/feature-customer-cohorts-admin-ar.vtt",
+    "public/videos/feature-customer-cohorts-tenant-en-tour.mp4",
+    "public/videos/feature-customer-cohorts-tenant-en-poster.jpg",
+    "public/videos/feature-customer-cohorts-tenant-en.vtt",
+    "public/videos/feature-customer-cohorts-tenant-ar-tour.mp4",
+    "public/videos/feature-customer-cohorts-tenant-ar-poster.jpg",
+    "public/videos/feature-customer-cohorts-tenant-ar.vtt",
+    "public/videos/feature-customer-cohorts-vendor-en-tour.mp4",
+    "public/videos/feature-customer-cohorts-vendor-en-poster.jpg",
+    "public/videos/feature-customer-cohorts-vendor-en.vtt",
+    "public/videos/feature-customer-cohorts-vendor-ar-tour.mp4",
+    "public/videos/feature-customer-cohorts-vendor-ar-poster.jpg",
+    "public/videos/feature-customer-cohorts-vendor-ar.vtt"
+  ],
+  "clips": [
+    {
+      "tour": "feature-customer-cohorts-admin",
+      "role": "admin",
+      "locale": "en",
+      "video": "public/videos/feature-customer-cohorts-admin-en-tour.mp4",
+      "video_sha256": "f8d3d2840feac162c77dc5577bdb5c911ae3e2d7d200cb7a9a6b7762347b3b91",
+      "poster": "public/videos/feature-customer-cohorts-admin-en-poster.jpg",
+      "poster_sha256": "1f2ca7d8a6ff978e8e2d32501911c990f82c7a918ddf969fcad4dd020ecbf304",
+      "captions": "public/videos/feature-customer-cohorts-admin-en.vtt",
+      "captions_sha256": "da09c471e0a151d66a9dd0325f70126482fa28dd8afffa0fb6607d279eacc14d",
+      "duration_seconds": 18.0,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "audio_streams": 0,
+      "caption_cues": 3,
+      "bytes": 184529,
+      "caption_text": [
+        {
+          "title": "Check scope and month window",
+          "body": "The header selects all stores or one store. Apply a monthly window; generation prepares a saved snapshot, not a live customer list."
+        },
+        {
+          "title": "Separate complete, partial and future months",
+          "body": "Read September's complete October rate, November's partial count and future months marked unobserved. These synthetic figures illustrate repeat buyers, not revenue."
+        },
+        {
+          "title": "Read the gaps before drawing conclusions",
+          "body": "Coverage counts expose missing historical identity, timing and funding evidence. Test purchases are excluded. Unknown history is not zero customers."
+        }
+      ]
+    },
+    {
+      "tour": "feature-customer-cohorts-admin",
+      "role": "admin",
+      "locale": "ar",
+      "video": "public/videos/feature-customer-cohorts-admin-ar-tour.mp4",
+      "video_sha256": "23a54e156a8765c830d4c9da023afc003a89ed98df8d6a885cdffdd626d799f2",
+      "poster": "public/videos/feature-customer-cohorts-admin-ar-poster.jpg",
+      "poster_sha256": "5ed0fe1f6e1eb3c625a78f8bf8fe0292308a21e958f01e6d907aabf834db797a",
+      "captions": "public/videos/feature-customer-cohorts-admin-ar.vtt",
+      "captions_sha256": "65fbdd84b511d73cb4d625c4f6718e682f9403fe84d7d936a91c1062f9330c6d",
+      "duration_seconds": 18.0,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "audio_streams": 0,
+      "caption_cues": 3,
+      "bytes": 153778,
+      "caption_text": [
+        {
+          "title": "راجع النطاق وفترة الأشهر",
+          "body": "يحدد الشريط العلوي جميع المتاجر أو متجرًا واحدًا. طبّق نطاق الأشهر؛ يجهز التوليد لقطة محفوظة، لا قائمة عملاء حية."
+        },
+        {
+          "title": "ميّز الأشهر المكتملة والجزئية والمستقبلية",
+          "body": "اقرأ نسبة أكتوبر المكتملة لشريحة سبتمبر، وعدد نوفمبر الجزئي، والأشهر المستقبلية غير المرصودة. توضح الأرقام التجريبية تكرار المشترين، لا الإيرادات."
+        },
+        {
+          "title": "اقرأ الفجوات قبل استخلاص النتائج",
+          "body": "توضح أعداد التغطية نقص أدلة الهوية والتوقيت والتمويل التاريخية. تُستبعد المشتريات الاختبارية. التاريخ المجهول لا يعني انعدام العملاء."
+        }
+      ]
+    },
+    {
+      "tour": "feature-customer-cohorts-tenant",
+      "role": "tenant",
+      "locale": "en",
+      "video": "public/videos/feature-customer-cohorts-tenant-en-tour.mp4",
+      "video_sha256": "c59588eac592ff16eed3325cca985620b2ee56c87a9c48213a3464fd75920cc1",
+      "poster": "public/videos/feature-customer-cohorts-tenant-en-poster.jpg",
+      "poster_sha256": "4c72d488928f78f0ed5a59ef6e724d13666a1361089c9f4eba2619cea3786672",
+      "captions": "public/videos/feature-customer-cohorts-tenant-en.vtt",
+      "captions_sha256": "e971a84235fd2d305e4433432135d285096512a80a7055916c19527d06d3915b",
+      "duration_seconds": 18.0,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "audio_streams": 0,
+      "caption_cues": 3,
+      "bytes": 176241,
+      "caption_text": [
+        {
+          "title": "Check scope and month window",
+          "body": "Choose up to twelve cohort months for this store. Registration origin, store relationships and paid purchases describe separate events; do not add their counts together."
+        },
+        {
+          "title": "Separate complete, partial and future months",
+          "body": "Read September's complete October rate, November's partial count and future months marked unobserved. These synthetic figures illustrate repeat buyers, not revenue."
+        },
+        {
+          "title": "Read the gaps before drawing conclusions",
+          "body": "Investigate missing historical identity, timing and funding evidence before comparing months. Test purchases are excluded; zero retained observations does not prove no historic customers."
+        }
+      ]
+    },
+    {
+      "tour": "feature-customer-cohorts-tenant",
+      "role": "tenant",
+      "locale": "ar",
+      "video": "public/videos/feature-customer-cohorts-tenant-ar-tour.mp4",
+      "video_sha256": "0e380a0fda256d83791fb32532cad184ad5db37a9eca78a8bc4b6ba58f5a2741",
+      "poster": "public/videos/feature-customer-cohorts-tenant-ar-poster.jpg",
+      "poster_sha256": "c2a1ec8fa1b625ce20b406659a19f016d7fbe287431eac596db138a2342e3978",
+      "captions": "public/videos/feature-customer-cohorts-tenant-ar.vtt",
+      "captions_sha256": "ff40c35d845bd12b1802f232db5e26e5af5d970f465e6effaa3e0d7ab2e132f6",
+      "duration_seconds": 18.0,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "audio_streams": 0,
+      "caption_cues": 3,
+      "bytes": 150693,
+      "caption_text": [
+        {
+          "title": "راجع النطاق وفترة الأشهر",
+          "body": "اختر حتى اثني عشر شهرًا لهذا المتجر. مصدر التسجيل وعلاقات المتجر والمشتريات المدفوعة أحداث منفصلة؛ لا تجمع أعدادها معًا."
+        },
+        {
+          "title": "ميّز الأشهر المكتملة والجزئية والمستقبلية",
+          "body": "اقرأ نسبة أكتوبر المكتملة لشريحة سبتمبر، وعدد نوفمبر الجزئي، والأشهر المستقبلية غير المرصودة. توضح الأرقام التجريبية تكرار المشترين، لا الإيرادات."
+        },
+        {
+          "title": "اقرأ الفجوات قبل استخلاص النتائج",
+          "body": "راجع نقص أدلة الهوية والتوقيت والتمويل التاريخية قبل مقارنة الأشهر. تُستبعد المشتريات الاختبارية؛ ولا يثبت صفر الملاحظات المحفوظة عدم وجود عملاء تاريخيين."
+        }
+      ]
+    },
+    {
+      "tour": "feature-customer-cohorts-vendor",
+      "role": "vendor",
+      "locale": "en",
+      "video": "public/videos/feature-customer-cohorts-vendor-en-tour.mp4",
+      "video_sha256": "167892962b7525bbae1c7f7f79e74b1bd0d94a625980a82f7c685c87a41f810e",
+      "poster": "public/videos/feature-customer-cohorts-vendor-en-poster.jpg",
+      "poster_sha256": "730d85e1e46cde8aa11f2c62dc5056ec2daaa35f9419052b11be7518644a9da7",
+      "captions": "public/videos/feature-customer-cohorts-vendor-en.vtt",
+      "captions_sha256": "810586f5dbd6ec80ade8da1bc8f64d9c137f82d25ba9287a21bde2065886b958",
+      "duration_seconds": 18.0,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "audio_streams": 0,
+      "caption_cues": 3,
+      "bytes": 186618,
+      "caption_text": [
+        {
+          "title": "Check scope and month window",
+          "body": "Use your approved store workspace. Only your vendor's retained qualifying purchases are included; registration origins, other sellers and customer identities are excluded."
+        },
+        {
+          "title": "Separate complete, partial and future months",
+          "body": "Read September's complete October rate, November's partial count and future months marked unobserved. These synthetic figures illustrate repeat buyers, not revenue."
+        },
+        {
+          "title": "Read the gaps before drawing conclusions",
+          "body": "These coverage gaps concern only this vendor's purchases in the selected workspace. They reveal no other seller's totals or store-wide signup origins."
+        }
+      ]
+    },
+    {
+      "tour": "feature-customer-cohorts-vendor",
+      "role": "vendor",
+      "locale": "ar",
+      "video": "public/videos/feature-customer-cohorts-vendor-ar-tour.mp4",
+      "video_sha256": "bbba719536d0f43da51b15cc2f0b651214bee60ca9b22e621b3b7cf4afceebff",
+      "poster": "public/videos/feature-customer-cohorts-vendor-ar-poster.jpg",
+      "poster_sha256": "d2f8fa1660e876160d39695ca4c4fa4a4317193313234946cdcf683e6aaf516b",
+      "captions": "public/videos/feature-customer-cohorts-vendor-ar.vtt",
+      "captions_sha256": "4a598f22759824d7ba2873d0e45abd13261af40dc67503a327e01431d0802c77",
+      "duration_seconds": 18.0,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "codec": "h264",
+      "audio_streams": 0,
+      "caption_cues": 3,
+      "bytes": 154851,
+      "caption_text": [
+        {
+          "title": "راجع النطاق وفترة الأشهر",
+          "body": "استخدم مساحة المتجر المعتمدة. تظهر مشتريات مورّدك المؤهلة المحفوظة فقط؛ ولا تظهر مصادر التسجيل أو البائعون الآخرون أو هويات العملاء."
+        },
+        {
+          "title": "ميّز الأشهر المكتملة والجزئية والمستقبلية",
+          "body": "اقرأ نسبة أكتوبر المكتملة لشريحة سبتمبر، وعدد نوفمبر الجزئي، والأشهر المستقبلية غير المرصودة. توضح الأرقام التجريبية تكرار المشترين، لا الإيرادات."
+        },
+        {
+          "title": "اقرأ الفجوات قبل استخلاص النتائج",
+          "body": "تخص فجوات التغطية مشتريات هذا المورّد في المساحة المحددة فقط. ولا تكشف إجماليات بائع آخر أو مصادر التسجيل للمتجر كله."
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "raw_screenshots_byte_identical": 18,
+    "clips_probed": 6,
+    "posters_checked": 6,
+    "localized_caption_files_checked": 6,
+    "interactive_focus_review": "English and Arabic focus regions independently selected from all reviewed role/chapter screenshots.",
+    "browser_playback": "Verified 19 November 2026 in the isolated production docs app on loopback port 3103: all six English/Arabic videos played with duration 18 seconds, advancing currentTime, no media errors and default localized caption tracks. Arabic captions were visually observed. Chapter selection and enlarged screenshot dialogs were exercised in both languages; both guide tabs had no warning/error console entries.",
+    "docs_check": "PASS: npm run docs:check after root added the three role tours to both language guides.",
+    "rendered_posters_visually_reviewed": 6
+  }
+}

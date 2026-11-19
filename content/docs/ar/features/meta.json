@@ -60,6 +60,7 @@
     "marketing-consent",
     "dashboards",
     "reports",
+    "customer-cohorts",
     "audit",
     "webhooks",
     "settings"

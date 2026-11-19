@@ -7835,5 +7835,287 @@
       "en": "Controlled synthetic local examples · Captured 19 November 2026 · Private test preview · Both retry confirmations cancelled",
       "ar": "أمثلة محلية تجريبية مقيدة · التقطت في ١٩ نوفمبر ٢٠٢٦ · معاينة اختبار خاصة · أُلغي حوارا إعادة المحاولة"
     }
+  },
+  "feature-customer-cohorts-admin": {
+    "title": {
+      "en": "Compare customer cohorts as platform admin",
+      "ar": "قارن شرائح العملاء من إدارة المنصة"
+    },
+    "intro": {
+      "en": "Actual local preview screens with synthetic figures. Select a step to connect the report controls, monthly cells and evidence limits.",
+      "ar": "شاشات معاينة محلية فعلية بأرقام تجريبية. اختر خطوة لربط عناصر التقرير والخلايا الشهرية وحدود الأدلة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "cohort-admin-scope-en.jpg",
+        "imageAr": "cohort-admin-scope-ar.jpg",
+        "focus": [
+          22.5,
+          45.5,
+          73,
+          43
+        ],
+        "focusAr": [
+          3.8,
+          36.5,
+          72.5,
+          40
+        ],
+        "title": {
+          "en": "Check scope and month window",
+          "ar": "راجع النطاق وفترة الأشهر"
+        },
+        "body": {
+          "en": "The header selects all stores or one store. Apply a monthly window; generation prepares a saved snapshot, not a live customer list.",
+          "ar": "يحدد الشريط العلوي جميع المتاجر أو متجرًا واحدًا. طبّق نطاق الأشهر؛ يجهز التوليد لقطة محفوظة، لا قائمة عملاء حية."
+        },
+        "guide": "features/customer-cohorts"
+      },
+      {
+        "image": "cohort-admin-matrix-en.jpg",
+        "imageAr": "cohort-admin-matrix-ar.jpg",
+        "focus": [
+          22.5,
+          28,
+          56,
+          42
+        ],
+        "focusAr": [
+          39,
+          50,
+          37,
+          42
+        ],
+        "title": {
+          "en": "Separate complete, partial and future months",
+          "ar": "ميّز الأشهر المكتملة والجزئية والمستقبلية"
+        },
+        "body": {
+          "en": "Read September's complete October rate, November's partial count and future months marked unobserved. These synthetic figures illustrate repeat buyers, not revenue.",
+          "ar": "اقرأ نسبة أكتوبر المكتملة لشريحة سبتمبر، وعدد نوفمبر الجزئي، والأشهر المستقبلية غير المرصودة. توضح الأرقام التجريبية تكرار المشترين، لا الإيرادات."
+        },
+        "guide": "features/customer-cohorts"
+      },
+      {
+        "image": "cohort-admin-coverage-en.jpg",
+        "imageAr": "cohort-admin-coverage-ar.jpg",
+        "focus": [
+          22.5,
+          56,
+          73,
+          43
+        ],
+        "focusAr": [
+          3.8,
+          51.5,
+          72.5,
+          35
+        ],
+        "title": {
+          "en": "Read the gaps before drawing conclusions",
+          "ar": "اقرأ الفجوات قبل استخلاص النتائج"
+        },
+        "body": {
+          "en": "Coverage counts expose missing historical identity, timing and funding evidence. Test purchases are excluded. Unknown history is not zero customers.",
+          "ar": "توضح أعداد التغطية نقص أدلة الهوية والتوقيت والتمويل التاريخية. تُستبعد المشتريات الاختبارية. التاريخ المجهول لا يعني انعدام العملاء."
+        },
+        "guide": "features/customer-cohorts"
+      }
+    ],
+    "provenance": {
+      "en": "Synthetic local SQLite preview · Captured 19 November 2026 · Screenshot-based silent tour · No real money, delivery or live deployment",
+      "ar": "معاينة SQLite محلية ببيانات تجريبية · التقطت في ١٩ نوفمبر ٢٠٢٦ · جولة صامتة من صور · لا أموال أو تسليم حقيقي ولا نشر حي"
+    }
+  },
+  "feature-customer-cohorts-tenant": {
+    "title": {
+      "en": "Understand repeat buyers at your store",
+      "ar": "افهم تكرار الشراء في متجرك"
+    },
+    "intro": {
+      "en": "Actual local preview screens with synthetic figures. Select a step to connect the report controls, monthly cells and evidence limits.",
+      "ar": "شاشات معاينة محلية فعلية بأرقام تجريبية. اختر خطوة لربط عناصر التقرير والخلايا الشهرية وحدود الأدلة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "cohort-tenant-scope-en.jpg",
+        "imageAr": "cohort-tenant-scope-ar.jpg",
+        "focus": [
+          22.5,
+          42,
+          73,
+          49
+        ],
+        "focusAr": [
+          3.8,
+          47,
+          72.5,
+          47
+        ],
+        "title": {
+          "en": "Check scope and month window",
+          "ar": "راجع النطاق وفترة الأشهر"
+        },
+        "body": {
+          "en": "Choose up to twelve cohort months for this store. Registration origin, store relationships and paid purchases describe separate events; do not add their counts together.",
+          "ar": "اختر حتى اثني عشر شهرًا لهذا المتجر. مصدر التسجيل وعلاقات المتجر والمشتريات المدفوعة أحداث منفصلة؛ لا تجمع أعدادها معًا."
+        },
+        "guide": "features/customer-cohorts"
+      },
+      {
+        "image": "cohort-tenant-matrix-en.jpg",
+        "imageAr": "cohort-tenant-matrix-ar.jpg",
+        "focus": [
+          22.5,
+          59,
+          56,
+          40
+        ],
+        "focusAr": [
+          39,
+          19,
+          37,
+          43
+        ],
+        "title": {
+          "en": "Separate complete, partial and future months",
+          "ar": "ميّز الأشهر المكتملة والجزئية والمستقبلية"
+        },
+        "body": {
+          "en": "Read September's complete October rate, November's partial count and future months marked unobserved. These synthetic figures illustrate repeat buyers, not revenue.",
+          "ar": "اقرأ نسبة أكتوبر المكتملة لشريحة سبتمبر، وعدد نوفمبر الجزئي، والأشهر المستقبلية غير المرصودة. توضح الأرقام التجريبية تكرار المشترين، لا الإيرادات."
+        },
+        "guide": "features/customer-cohorts"
+      },
+      {
+        "image": "cohort-tenant-coverage-en.jpg",
+        "imageAr": "cohort-tenant-coverage-ar.jpg",
+        "focus": [
+          22.5,
+          43,
+          73,
+          45
+        ],
+        "focusAr": [
+          3.8,
+          53,
+          72.5,
+          38.5
+        ],
+        "title": {
+          "en": "Read the gaps before drawing conclusions",
+          "ar": "اقرأ الفجوات قبل استخلاص النتائج"
+        },
+        "body": {
+          "en": "Investigate missing historical identity, timing and funding evidence before comparing months. Test purchases are excluded; zero retained observations does not prove no historic customers.",
+          "ar": "راجع نقص أدلة الهوية والتوقيت والتمويل التاريخية قبل مقارنة الأشهر. تُستبعد المشتريات الاختبارية؛ ولا يثبت صفر الملاحظات المحفوظة عدم وجود عملاء تاريخيين."
+        },
+        "guide": "features/customer-cohorts"
+      }
+    ],
+    "provenance": {
+      "en": "Synthetic local SQLite preview · Captured 19 November 2026 · Screenshot-based silent tour · No real money, delivery or live deployment",
+      "ar": "معاينة SQLite محلية ببيانات تجريبية · التقطت في ١٩ نوفمبر ٢٠٢٦ · جولة صامتة من صور · لا أموال أو تسليم حقيقي ولا نشر حي"
+    }
+  },
+  "feature-customer-cohorts-vendor": {
+    "title": {
+      "en": "Read your vendor purchase cohorts",
+      "ar": "اقرأ شرائح مشتري مورّدك"
+    },
+    "intro": {
+      "en": "Actual local preview screens with synthetic figures. Select a step to connect the report controls, monthly cells and evidence limits.",
+      "ar": "شاشات معاينة محلية فعلية بأرقام تجريبية. اختر خطوة لربط عناصر التقرير والخلايا الشهرية وحدود الأدلة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "cohort-vendor-scope-en.jpg",
+        "imageAr": "cohort-vendor-scope-ar.jpg",
+        "focus": [
+          22.5,
+          42,
+          73,
+          50
+        ],
+        "focusAr": [
+          3.8,
+          42,
+          72.5,
+          46
+        ],
+        "title": {
+          "en": "Check scope and month window",
+          "ar": "راجع النطاق وفترة الأشهر"
+        },
+        "body": {
+          "en": "Use your approved store workspace. Only your vendor's retained qualifying purchases are included; registration origins, other sellers and customer identities are excluded.",
+          "ar": "استخدم مساحة المتجر المعتمدة. تظهر مشتريات مورّدك المؤهلة المحفوظة فقط؛ ولا تظهر مصادر التسجيل أو البائعون الآخرون أو هويات العملاء."
+        },
+        "guide": "features/customer-cohorts"
+      },
+      {
+        "image": "cohort-vendor-matrix-en.jpg",
+        "imageAr": "cohort-vendor-matrix-ar.jpg",
+        "focus": [
+          22.5,
+          38.5,
+          56,
+          45
+        ],
+        "focusAr": [
+          39,
+          60.5,
+          37,
+          34
+        ],
+        "title": {
+          "en": "Separate complete, partial and future months",
+          "ar": "ميّز الأشهر المكتملة والجزئية والمستقبلية"
+        },
+        "body": {
+          "en": "Read September's complete October rate, November's partial count and future months marked unobserved. These synthetic figures illustrate repeat buyers, not revenue.",
+          "ar": "اقرأ نسبة أكتوبر المكتملة لشريحة سبتمبر، وعدد نوفمبر الجزئي، والأشهر المستقبلية غير المرصودة. توضح الأرقام التجريبية تكرار المشترين، لا الإيرادات."
+        },
+        "guide": "features/customer-cohorts"
+      },
+      {
+        "image": "cohort-vendor-coverage-en.jpg",
+        "imageAr": "cohort-vendor-coverage-ar.jpg",
+        "focus": [
+          22.5,
+          53,
+          73,
+          35
+        ],
+        "focusAr": [
+          3.8,
+          57,
+          72.5,
+          34
+        ],
+        "title": {
+          "en": "Read the gaps before drawing conclusions",
+          "ar": "اقرأ الفجوات قبل استخلاص النتائج"
+        },
+        "body": {
+          "en": "These coverage gaps concern only this vendor's purchases in the selected workspace. They reveal no other seller's totals or store-wide signup origins.",
+          "ar": "تخص فجوات التغطية مشتريات هذا المورّد في المساحة المحددة فقط. ولا تكشف إجماليات بائع آخر أو مصادر التسجيل للمتجر كله."
+        },
+        "guide": "features/customer-cohorts"
+      }
+    ],
+    "provenance": {
+      "en": "Synthetic local SQLite preview · Captured 19 November 2026 · Screenshot-based silent tour · No real money, delivery or live deployment",
+      "ar": "معاينة SQLite محلية ببيانات تجريبية · التقطت في ١٩ نوفمبر ٢٠٢٦ · جولة صامتة من صور · لا أموال أو تسليم حقيقي ولا نشر حي"
+    }
   }
 }
