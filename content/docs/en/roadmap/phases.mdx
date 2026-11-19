@@ -157,9 +157,16 @@ bounded retries are implemented and tested in development. Separate purchase-fee
 choices, inbox message display and persisted read state are verified in English and
 Arabic, with actual screenshots and captioned walkthroughs. Processing remains off
 by default; SMS acceptance uses a guarded test adapter and proves no external delivery.
-Existing webhook and billing-notice retry
-infrastructure still needs relevant connector end-to-end and operational
-acceptance. Storage-byte and automation/message metering are proposed capacity
+**Outbound webhook development checkpoint:** durable enqueue recovery, bounded
+tenant-scoped scans, abandoned-attempt recovery and duplicate-worker protection
+are published. The isolated webhook suite passes 36 tests and 191 assertions,
+including a real loopback TLS receiver returning 503 then 200 with the same
+signed delivery envelope. Interrupted test notifications become failed and need
+an authorized manual retry; recovery does not resend them automatically.
+[Recovery guide](/en/features/webhooks).
+This verifies the outbound transport and recovery component. Each business
+connector's end-to-end and operational acceptance, plus billing-notice transport
+acceptance, remain separate. Storage-byte and automation/message metering are proposed capacity
 extensions, not current package billing promises. Concurrent appearance and
 feature-policy coverage needs its own checkpoint. Live provider activation and
 final cross-dashboard/mobile/accessibility acceptance remain separate gates.
