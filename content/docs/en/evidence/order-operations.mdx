@@ -1,0 +1,92 @@
+---
+title: "Source evidence: order operations"
+description: "Trace the scoped dispatch and cancellation report to its backend contract and staff dashboard sources."
+---
+
+> **Development source review · 19 November 2026.** Backend references below were checked at `f8946a0089a37f8d72c136f6540573c590db99b0`. Dashboard source checkpoints are Admin `d2f1780`, Tenant `98ea02d` and Vendor `03441e6`. Source evidence establishes the implementation contract; it does not establish release, browser acceptance, verified screenshots/videos or live operation.
+
+Read the [business guide](/en/features/order-operations) for explanations and the synthetic worked example. This appendix helps reviewers trace those explanations to code.
+
+## Registered staff routes
+
+The common route file is `CartJoin-Backend/Modules/Reports/routes/order-operations.php`, included by `admin-api.php`, `tenant-api.php` and `vendor-api.php` in that directory. Prefix each fragment below with `/api/{admin|tenant|vendor}/v1/`.
+
+| Method | URI fragment | Permission |
+| --- | --- | --- |
+| GET | `reports/order-operations` | `reports.show` |
+| POST | `reports/order-operations/generate` | `reports.generate` |
+| GET | `reports/order-operations/generations/{id}` | `reports.show` |
+| POST | `reports/order-operations/export` | `reports.export` |
+| GET | `reports/order-operations/exports/{id}` | `reports.export` |
+| GET | `reports/order-operations/exports/{id}/download` | `reports.export` |
+
+Each surface supplies its own JWT guard and ACL middleware. Work references are UUIDs. Tenant scope comes from resolved context; vendor scope additionally uses the authenticated vendor and its approved workspace. Admin can select an optional query-only `tenantId`; request-body scope does not select a store. Vendor population excludes other sellers, and the store-owned count is `null`, not a disclosed store total.
+
+## Input, cutoff and response contract
+
+Backend paths below are relative to `CartJoin-Backend`.
+
+- `Modules/Reports/App/Http/Controllers/OrderOperationsController.php`: scope selection, service delegation and private download response.
+- `Modules/Reports/App/Http/Requests/OrderOperationsRequest.php`: optional `from` and `to` in `Y-m-d` format; prohibits body `tenant_id`, `vendor_id`, `user_id` and body `tenantId`.
+- `Modules/Reports/App/Support/OrderOperationsPeriod.php`: at most 93 inclusive closed UTC days, default last 30 completed days, and an exclusive current-day 00:00 UTC observation cutoff frozen at request time.
+- `Modules/Reports/App/Http/Resources/OrderOperationsResource.php`: allowlisted snapshot/work metadata inside the project's response envelope, including `as_of`, `definition_version`, generation status and stale-snapshot metadata.
+- `Modules/Reports/App/Services/OrderOperationsReportService.php`: lightweight saved-snapshot reads, queued generation/export, current actor/workspace checks, actor-private expiring exports and work recovery.
+- `Modules/Reports/App/Repositories/OrderOperationsReportRepository.php`: durable work, leases and saved snapshot/export storage.
+
+Generation time does not extend the saved cutoff. Evidence learned later cannot be added to an older snapshot just because its occurrence was backdated. The cutoff is separate from the selected placement, cancellation-event and due-date windows.
+
+## Seven data sections
+
+`definition_version: 1` uses these finite section keys under `data`. Unknown or incomplete evidence is retained explicitly; a missing percentage is `null`, not zero.
+
+| Key | Population or purpose |
+| --- | --- |
+| `population` | Eligible placed child orders, with store-owned/vendor composition where authorized. |
+| `cancellation` | Observed cancellations among those placements; no arbitrary 30-day cancellation limit. |
+| `cancellation_event_counts` | Cancellations occurring during the selected days, including older orders; no placement-denominator percentage. |
+| `lifecycle_as_of` | Open, terminal and unknown state at the saved cutoff. |
+| `dispatch` | Whole-order dispatch proof, exact/unknown timing and supported latency samples. |
+| `sla` | Original accepted vendor commitments due during the selected days, with separate outcomes and unmonitored reasons. |
+| `coverage` | Source rollout, exclusions and uncertainty for the distinct `placed`, `events` and `due` populations. |
+
+Business aggregation and timing methods are in `Modules/Reports/App/Services/Generators/OrderOperationsGenerator.php`, `Modules/Reports/App/Support/OrderOperationsAccumulator.php` and `Modules/Reports/App/Support/OrderOperationsMath.php`. Store shipping estimates do not create accepted deadlines. Counts are child orders, not unique customers or invoices; signup-origin `users.tenant_id` is not an order scope.
+
+## Object maps remain objects
+
+`Modules/Reports/App/Support/OrderOperationsJsonDocument.php` preserves JSON dictionaries through HTTP resources and private JSON exports. In particular, an empty `lifecycle_as_of.by_state`, `sla.unmonitored_placed_orders` or `coverage.source_populations` dictionary is `{}`, not `[]`. A nonempty list is not a dictionary. This shape fragment is not a complete response:
+
+```json
+{
+  "lifecycle_as_of": { "by_state": {} },
+  "sla": { "unmonitored_placed_orders": {} }
+}
+```
+
+Dashboard models use finite recognized state, actor, reason and population keys. They validate counts, UTC timestamps, work UUIDs, measurement bases and nullable decimal-string rates before display. Empty object maps do not establish zero activity or complete coverage.
+
+## Producer-owned evidence ports
+
+Reports consumes bounded, scoped source ports rather than treating today's editable status or ownership as historical proof.
+
+| Owner | Source interface |
+| --- | --- |
+| Order | `Modules/Order/App/Contracts/OrderOperationsReadInterface.php` — placement and cancellation-event pages plus per-order lifecycle. |
+| Order | `Modules/Order/App/Contracts/OrderOperationsPhysicalReceiptReadInterface.php` — frozen placement and retained physical receipts for Shipping. |
+| MarketplaceOps | `Modules/MarketplaceOps/App/Contracts/OrderOperationsCommitmentReadInterface.php` — retained accepted clocks and unmonitored/coverage evidence. |
+| Shipping | `Modules/Shipping/App/Contracts/HistoricalDispatchReadInterface.php` — original frozen-seal dispatch evidence and defensible timing refinement. |
+| Payment | `Modules/Payment/App/Contracts/OrderOperationsPaymentProvenanceReadInterface.php` — retained captured-payment test provenance at the knowledge cutoff. |
+
+Unknown legacy history stays unknown. A label, one parcel or delivery time alone cannot manufacture an exact whole-order dispatch time. A failed test-payment attempt does not independently prove that a genuine order is a test. Report outputs contain aggregates rather than buyer identities, staff IDs or private reasons. Metrics do not automatically penalize sellers or change payouts.
+
+## Three dashboard source trails
+
+Each of `CartJoin-Admin-Dashboard-Frontend`, `CartJoin-Tenant-Dashboard-Frontend` and `CartJoin-Vendor-Dashboard-Frontend` currently contains:
+
+- `src/app/features/reports/reports.routes.ts`: the permission-guarded `order-operations` route before the generic `:type` route.
+- `src/app/features/reports/order-operations/operations-api.service.ts`: snapshot, generation, status, export and protected download calls.
+- `src/app/features/reports/order-operations/operations.model.ts`: finite section maps and response validation.
+- `src/app/features/reports/order-operations/operations-report.component.ts` and `.html`: report controls, state and presentation.
+
+The admin scope behavior also appears in `src/app/core/interceptors/tenant-scope.interceptor.ts`. The UI source trail must be checked against its actual built browser behavior before acceptance; a route, model, fixture or test file alone does not prove that a user can complete the workflow.
+
+[Back to evidence](/en/evidence) · [Business guide](/en/features/order-operations)

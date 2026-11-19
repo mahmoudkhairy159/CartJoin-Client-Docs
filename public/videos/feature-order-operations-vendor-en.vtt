@@ -1,0 +1,28 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.000
+Check scope, days and cutoff
+Only your recorded child orders in this approved workspace are included.
+Check dates and the saved UTC cutoff.
+
+2
+00:00:06.000 --> 00:00:12.000
+Keep cancellation populations separate
+Placed-order cancellations differ from events during the period.
+Lifecycle is observed at cutoff; who initiated cancellation does not
+establish fault.
+
+3
+00:00:12.000 --> 00:00:18.000
+Read whole-order dispatch and samples
+A label or one parcel is not whole-order dispatch. Durations use
+supported samples and nearest-rank percentiles; missing timing is
+unavailable, not zero.
+
+4
+00:00:18.000 --> 00:00:24.000
+Check accepted commitments and coverage
+Review your original accepted deadlines in this workspace. Due
+commitments are a separate population; incomplete evidence does not
+prove a breach.

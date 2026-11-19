@@ -43,6 +43,7 @@
     "notifications",
     "dashboards",
     "reports",
+    "order-operations",
     "audit",
     "webhooks",
     "settings"

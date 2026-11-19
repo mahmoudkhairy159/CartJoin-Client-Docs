@@ -1,0 +1,92 @@
+---
+title: "أدلة المصدر: تشغيل الطلبات"
+description: "تتبّع تقرير الشحن والإلغاءات إلى عقد الخادم ومصادر لوحات الموظفين مع توضيح حدود الإثبات."
+---
+
+> **مراجعة مصدر قيد التطوير · 19 نوفمبر 2026.** تم التحقق من مراجع الخادم أدناه عند الإصدار `f8946a0089a37f8d72c136f6540573c590db99b0`. ونقاط مصدر اللوحات هي Admin `d2f1780` وTenant `98ea02d` وVendor `03441e6`. يوضح المصدر عقد التنفيذ، لكنه لا يثبت إصدار الميزة أو قبولها في المتصفح أو التحقق من الصور والفيديوهات أو التشغيل الفعلي.
+
+اقرأ [دليل الخاصية](/ar/features/order-operations) للشرح والمثال التجريبي. يساعد هذا الملحق المراجعين على ربط الشرح بالكود.
+
+## مسارات الموظفين المسجّلة
+
+الملف المشترك هو `CartJoin-Backend/Modules/Reports/routes/order-operations.php`، وتضمّنه ملفات `admin-api.php` و`tenant-api.php` و`vendor-api.php` في المجلد نفسه. أضف البادئة `/api/{admin|tenant|vendor}/v1/` إلى كل مسار في الجدول.
+
+| الطريقة | جزء المسار | الصلاحية |
+| --- | --- | --- |
+| GET | `reports/order-operations` | `reports.show` |
+| POST | `reports/order-operations/generate` | `reports.generate` |
+| GET | `reports/order-operations/generations/{id}` | `reports.show` |
+| POST | `reports/order-operations/export` | `reports.export` |
+| GET | `reports/order-operations/exports/{id}` | `reports.export` |
+| GET | `reports/order-operations/exports/{id}/download` | `reports.export` |
+
+لكل واجهة حارس JWT وطبقة صلاحيات مستقلان. مراجع المهام بصيغة UUID. يأتي نطاق المستأجر من السياق المحسوم، ويضيف نطاق البائع هويته المعتمدة ومساحة عمله الموافق عليها. يستطيع مسؤول المنصة اختيار `tenantId` اختياريًا من استعلام الرابط فقط؛ جسم الطلب لا يختار المتجر. تستبعد مجموعة البائع البائعين الآخرين، ويكون عدد طلبات منتجات المتجر `null`، وليس إجماليًا مكشوفًا للمتجر.
+
+## المدخلات ووقت الرصد وعقد الاستجابة
+
+المسارات التالية نسبية إلى مستودع `CartJoin-Backend`.
+
+- `Modules/Reports/App/Http/Controllers/OrderOperationsController.php`: تحديد النطاق، وتفويض الخدمة، واستجابة التنزيل الخاص.
+- `Modules/Reports/App/Http/Requests/OrderOperationsRequest.php`: التاريخان الاختياريان `from` و`to` بصيغة `Y-m-d`، مع منع `tenant_id` و`vendor_id` و`user_id` و`tenantId` من جسم الطلب.
+- `Modules/Reports/App/Support/OrderOperationsPeriod.php`: حتى 93 يومًا مكتملًا شاملًا بتوقيت UTC، وافتراضيًا آخر 30 يومًا مكتملًا، ووقت رصد حصري عند بداية اليوم الحالي 00:00 UTC يُثبت وقت الطلب.
+- `Modules/Reports/App/Http/Resources/OrderOperationsResource.php`: حقول النسخة والمهمة المسموح بها داخل غلاف الاستجابة المعتمد، ومنها `as_of` و`definition_version` وحالة الإنشاء ومعلومات تقادم النسخة.
+- `Modules/Reports/App/Services/OrderOperationsReportService.php`: قراءة النسخة المحفوظة دون حساب ثقيل، وإنشاء وتصدير عبر الطابور، وإعادة التحقق من الموظف ومساحة العمل، وتصدير خاص بالموظف محدود الصلاحية، واستعادة المهام.
+- `Modules/Reports/App/Repositories/OrderOperationsReportRepository.php`: حفظ المهام الدائم وحجوزات العمال والنسخ وملفات التصدير.
+
+لا يوسّع وقت تنفيذ الإنشاء وقت الرصد المحفوظ. لا يضاف دليل عُرف لاحقًا إلى نسخة أقدم لمجرد أن تاريخ حدوثه قديم. وقت الرصد مستقل عن نوافذ إنشاء الطلبات وأحداث الإلغاء ومواعيد الاستحقاق.
+
+## أقسام البيانات السبعة
+
+تستخدم النسخة `definition_version: 1` المفاتيح المحددة التالية داخل `data`. تظل الأدلة غير المعروفة أو الناقصة صريحة؛ النسبة غير المتاحة تساوي `null`، وليست صفرًا.
+
+| المفتاح | مجموعة القياس أو الغرض |
+| --- | --- |
+| `population` | الطلبات الفرعية المؤهلة المنشأة، مع توزيع منتجات المتجر والبائعين حيث تسمح الصلاحية. |
+| `cancellation` | الإلغاءات المرصودة ضمن تلك الطلبات؛ دون حد اعتباطي يستبعد الإلغاء بعد 30 يومًا. |
+| `cancellation_event_counts` | الإلغاءات الواقعة خلال الأيام المحددة، بما فيها الطلبات الأقدم؛ دون نسبة إلى مقام الطلبات المنشأة. |
+| `lifecycle_as_of` | الحالات المفتوحة والنهائية وغير المعروفة عند وقت الرصد المحفوظ. |
+| `dispatch` | إثبات شحن الطلب بالكامل، والتوقيت المعروف أو غير المعروف، وعينات الزمن المدعومة. |
+| `sla` | التزامات البائع الأصلية المقبولة والمستحقة خلال الأيام المحددة، مع النتائج وأسباب عدم المراقبة. |
+| `coverage` | بداية حفظ الأدلة والاستبعادات وعدم اليقين لمجموعات `placed` و`events` و`due` المستقلة. |
+
+توجد قواعد التجميع وحساب الزمن في `Modules/Reports/App/Services/Generators/OrderOperationsGenerator.php` و`Modules/Reports/App/Support/OrderOperationsAccumulator.php` و`Modules/Reports/App/Support/OrderOperationsMath.php`. تقدير مدة الشحن لا ينشئ التزامًا مقبولًا. الأعداد تخص طلبات فرعية، وليست عملاء فريدين أو فواتير؛ وحقل متجر التسجيل الأول `users.tenant_id` ليس نطاق الطلب.
+
+## تظل خرائط الكائنات كائنات
+
+يحافظ `Modules/Reports/App/Support/OrderOperationsJsonDocument.php` على شكل قواميس JSON في استجابات HTTP وملفات JSON الخاصة المصدّرة. خصوصًا، يكون القاموس الفارغ في `lifecycle_as_of.by_state` أو `sla.unmonitored_placed_orders` أو `coverage.source_populations` بالشكل `{}`، وليس `[]`. القائمة غير الفارغة ليست قاموسًا. المثال التالي جزء يوضح الشكل، وليس استجابة كاملة:
+
+```json
+{
+  "lifecycle_as_of": { "by_state": {} },
+  "sla": { "unmonitored_placed_orders": {} }
+}
+```
+
+تستخدم نماذج اللوحات مفاتيح محددة للحالات والفاعلين والأسباب ومجموعات القياس. وتتحقق من الأعداد وأوقات UTC ومراجع UUID وأساس القياس والنسب العشرية النصية القابلة للقيمة `null` قبل العرض. خرائط الكائنات الفارغة لا تثبت انعدام النشاط أو اكتمال التغطية.
+
+## واجهات أدلة تملكها الوحدات المنتجة
+
+يستهلك التقرير واجهات مصدر محدودة القراءة ومقيّدة بالنطاق، بدل اعتبار حالة الطلب أو ملكيته القابلتين للتعديل اليوم دليلًا تاريخيًا.
+
+| الوحدة المالكة | واجهة المصدر |
+| --- | --- |
+| Order | `Modules/Order/App/Contracts/OrderOperationsReadInterface.php` — صفحات الإنشاء وأحداث الإلغاء وحالة كل طلب. |
+| Order | `Modules/Order/App/Contracts/OrderOperationsPhysicalReceiptReadInterface.php` — الإنشاء المثبت والإيصالات المادية المحفوظة لوحدة الشحن. |
+| MarketplaceOps | `Modules/MarketplaceOps/App/Contracts/OrderOperationsCommitmentReadInterface.php` — ساعات الالتزام المقبولة المحفوظة وأدلة عدم المراقبة والتغطية. |
+| Shipping | `Modules/Shipping/App/Contracts/HistoricalDispatchReadInterface.php` — دليل الشحن المرتبط بالتعبئة الأصلية المثبتة وتحسين التوقيت عند توفر دليل كافٍ. |
+| Payment | `Modules/Payment/App/Contracts/OrderOperationsPaymentProvenanceReadInterface.php` — دليل الطبيعة الاختبارية للدفع المحصّل والمحفوظ عند وقت الرصد. |
+
+يبقى التاريخ القديم غير المعروف كذلك. لا يصنع ملصق الشحن أو طرد واحد أو وقت التسليم وحده توقيتًا دقيقًا لشحن الطلب بالكامل. ولا تثبت محاولة دفع اختبارية فاشلة وحدها أن طلبًا حقيقيًا هو طلب اختباري. تعرض النتائج إجماليات بدل هويات العملاء وأرقام الموظفين والأسباب الخاصة. ولا تفرض المقاييس عقوبة تلقائية أو تغيّر مستحقات البائع.
+
+## مراجع لوحات التحكم الثلاث
+
+تحتوي ملفات العمل الحالية لكل من `CartJoin-Admin-Dashboard-Frontend` و`CartJoin-Tenant-Dashboard-Frontend` و`CartJoin-Vendor-Dashboard-Frontend` على:
+
+- `src/app/features/reports/reports.routes.ts`: مسار `order-operations` المحمي بالصلاحية، قبل المسار العام `:type`.
+- `src/app/features/reports/order-operations/operations-api.service.ts`: طلبات النسخة والإنشاء والحالة والتصدير والتنزيل المحمي.
+- `src/app/features/reports/order-operations/operations.model.ts`: خرائط الأقسام المحددة والتحقق من الاستجابة.
+- `src/app/features/reports/order-operations/operations-report.component.ts` و`.html`: أدوات التقرير وحالته وطريقة عرضه.
+
+يظهر سلوك نطاق مسؤول المنصة أيضًا في `src/app/core/interceptors/tenant-scope.interceptor.ts`. يجب مطابقة هذا المصدر مع سلوك النسخة المبنية في المتصفح قبل القبول؛ وجود مسار أو نموذج أو بيانات اختبار أو ملف اختبارات وحده لا يثبت قدرة المستخدم على إكمال سير العمل.
+
+[العودة للأدلة](/ar/evidence) · [دليل الخاصية](/ar/features/order-operations)

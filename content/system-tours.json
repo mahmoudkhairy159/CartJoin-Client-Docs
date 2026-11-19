@@ -8518,5 +8518,362 @@
       "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; no live purchases, payments or deliveries.",
       "ar": "معاينة محلية ببيانات مصطنعة · التقطت في 19 نوفمبر 2026 · صور إرشادية، وليست مشتريات أو مدفوعات أو تسليمات حية."
     }
+  },
+  "feature-order-operations-admin": {
+    "title": {
+      "en": "Review recorded operations across the platform",
+      "ar": "راجع العمليات المسجّلة عبر المنصة"
+    },
+    "intro": {
+      "en": "Actual local staff screens using controlled synthetic orders. Four six-second screenshot chapters explain distinct order populations, supported observations and evidence limits.",
+      "ar": "شاشات موظفين محلية فعلية باستخدام طلبات مصطنعة مضبوطة. تشرح أربعة فصول من اللقطات مدة كل منها ست ثوانٍ مجموعات الطلبات المستقلة والملاحظات المثبتة وحدود الأدلة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "order-operations-admin-en-population.jpg",
+        "imageAr": "order-operations-admin-ar-population.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check scope, days and cutoff",
+          "ar": "تحقق من النطاق والأيام وحد الرصد"
+        },
+        "body": {
+          "en": "Confirm global or selected-store scope. Counts are child orders, not customers. Check the saved UTC observation cutoff.",
+          "ar": "حدد نطاق المنصة أو المتجر المختار. الأعداد لطلبات فرعية وليست للعملاء. تحقق من حد الرصد المحفوظ بالتوقيت العالمي."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-admin-en-cancellations.jpg",
+        "imageAr": "order-operations-admin-ar-cancellations.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Keep cancellation populations separate",
+          "ar": "افصل بين مجموعات قياس الإلغاء"
+        },
+        "body": {
+          "en": "Placed-order cancellations differ from events during the period. Lifecycle is observed at cutoff; who initiated cancellation does not establish fault.",
+          "ar": "تختلف إلغاءات الطلبات المنشأة عن أحداث الإلغاء خلال الفترة. تُرصد حالة الطلب عند الحد الزمني، والمبادرة بالإلغاء لا تثبت الخطأ."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-admin-en-dispatch.jpg",
+        "imageAr": "order-operations-admin-ar-dispatch.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read whole-order dispatch and samples",
+          "ar": "اقرأ شحن الطلب بالكامل وعيناته"
+        },
+        "body": {
+          "en": "A label or one parcel is not whole-order dispatch. Durations use supported samples and nearest-rank percentiles; missing timing is unavailable, not zero.",
+          "ar": "الملصق أو الطرد الواحد لا يعني شحن الطلب بالكامل. تستند المدد إلى عينات مثبتة ورتب مئوية بطريقة الرتبة الأقرب؛ الوقت المفقود غير متاح، وليس صفرًا."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-admin-en-commitments.jpg",
+        "imageAr": "order-operations-admin-ar-commitments.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check accepted commitments and coverage",
+          "ar": "راجع الالتزامات المقبولة والتغطية"
+        },
+        "body": {
+          "en": "Due commitments use original accepted deadlines, a separate population. First-party orders can be unmonitored. Incomplete evidence does not prove a breach.",
+          "ar": "تعتمد الالتزامات المستحقة على المواعيد الأصلية المقبولة ضمن مجتمع مستقل. قد لا تخضع طلبات المتجر لقياس الالتزام. الأدلة الناقصة لا تثبت مخالفة."
+        },
+        "guide": "features/order-operations"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; not continuous recording, live operations or evidence of real fault, purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت بتاريخ 2026-11-19 · صور إرشادية، وليست تسجيلًا متصلًا أو عمليات حية أو دليلًا على أخطاء أو مشتريات أو مدفوعات أو تسليمات فعلية."
+    }
+  },
+  "feature-order-operations-tenant": {
+    "title": {
+      "en": "Review this store’s recorded order operations",
+      "ar": "راجع عمليات الطلبات المسجّلة لهذا المتجر"
+    },
+    "intro": {
+      "en": "Actual local staff screens using controlled synthetic orders. Four six-second screenshot chapters explain distinct order populations, supported observations and evidence limits.",
+      "ar": "شاشات موظفين محلية فعلية باستخدام طلبات مصطنعة مضبوطة. تشرح أربعة فصول من اللقطات مدة كل منها ست ثوانٍ مجموعات الطلبات المستقلة والملاحظات المثبتة وحدود الأدلة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "order-operations-tenant-en-population.jpg",
+        "imageAr": "order-operations-tenant-ar-population.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check scope, days and cutoff",
+          "ar": "تحقق من النطاق والأيام وحد الرصد"
+        },
+        "body": {
+          "en": "Only this store’s recorded child orders are included. Check selected days and the saved UTC observation cutoff.",
+          "ar": "تظهر الطلبات الفرعية المسجّلة لهذا المتجر فقط. تحقق من الأيام المختارة وحد الرصد المحفوظ بالتوقيت العالمي."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-tenant-en-cancellations.jpg",
+        "imageAr": "order-operations-tenant-ar-cancellations.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Keep cancellation populations separate",
+          "ar": "افصل بين مجموعات قياس الإلغاء"
+        },
+        "body": {
+          "en": "Placed-order cancellations differ from events during the period. Lifecycle is observed at cutoff; who initiated cancellation does not establish fault.",
+          "ar": "تختلف إلغاءات الطلبات المنشأة عن أحداث الإلغاء خلال الفترة. تُرصد حالة الطلب عند الحد الزمني، والمبادرة بالإلغاء لا تثبت الخطأ."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-tenant-en-dispatch.jpg",
+        "imageAr": "order-operations-tenant-ar-dispatch.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read whole-order dispatch and samples",
+          "ar": "اقرأ شحن الطلب بالكامل وعيناته"
+        },
+        "body": {
+          "en": "A label or one parcel is not whole-order dispatch. Durations use supported samples and nearest-rank percentiles; missing timing is unavailable, not zero.",
+          "ar": "الملصق أو الطرد الواحد لا يعني شحن الطلب بالكامل. تستند المدد إلى عينات مثبتة ورتب مئوية بطريقة الرتبة الأقرب؛ الوقت المفقود غير متاح، وليس صفرًا."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-tenant-en-commitments.jpg",
+        "imageAr": "order-operations-tenant-ar-commitments.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check accepted commitments and coverage",
+          "ar": "راجع الالتزامات المقبولة والتغطية"
+        },
+        "body": {
+          "en": "Due commitments use original accepted deadlines, a separate population. First-party orders can be unmonitored. Incomplete evidence does not prove a breach.",
+          "ar": "تعتمد الالتزامات المستحقة على المواعيد الأصلية المقبولة ضمن مجتمع مستقل. قد لا تخضع طلبات المتجر لقياس الالتزام. الأدلة الناقصة لا تثبت مخالفة."
+        },
+        "guide": "features/order-operations"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; not continuous recording, live operations or evidence of real fault, purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت بتاريخ 2026-11-19 · صور إرشادية، وليست تسجيلًا متصلًا أو عمليات حية أو دليلًا على أخطاء أو مشتريات أو مدفوعات أو تسليمات فعلية."
+    }
+  },
+  "feature-order-operations-vendor": {
+    "title": {
+      "en": "Review your recorded order operations",
+      "ar": "راجع عمليات طلباتك المسجّلة"
+    },
+    "intro": {
+      "en": "Actual local staff screens using controlled synthetic orders. Four six-second screenshot chapters explain distinct order populations, supported observations and evidence limits.",
+      "ar": "شاشات موظفين محلية فعلية باستخدام طلبات مصطنعة مضبوطة. تشرح أربعة فصول من اللقطات مدة كل منها ست ثوانٍ مجموعات الطلبات المستقلة والملاحظات المثبتة وحدود الأدلة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "order-operations-vendor-en-population.jpg",
+        "imageAr": "order-operations-vendor-ar-population.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check scope, days and cutoff",
+          "ar": "تحقق من النطاق والأيام وحد الرصد"
+        },
+        "body": {
+          "en": "Only your recorded child orders in this approved workspace are included. Check dates and the saved UTC cutoff.",
+          "ar": "تظهر طلباتك الفرعية المسجّلة في مساحة المتجر المعتمدة فقط. تحقق من الأيام وحد الرصد المحفوظ بالتوقيت العالمي."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-vendor-en-cancellations.jpg",
+        "imageAr": "order-operations-vendor-ar-cancellations.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Keep cancellation populations separate",
+          "ar": "افصل بين مجموعات قياس الإلغاء"
+        },
+        "body": {
+          "en": "Placed-order cancellations differ from events during the period. Lifecycle is observed at cutoff; who initiated cancellation does not establish fault.",
+          "ar": "تختلف إلغاءات الطلبات المنشأة عن أحداث الإلغاء خلال الفترة. تُرصد حالة الطلب عند الحد الزمني، والمبادرة بالإلغاء لا تثبت الخطأ."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-vendor-en-dispatch.jpg",
+        "imageAr": "order-operations-vendor-ar-dispatch.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read whole-order dispatch and samples",
+          "ar": "اقرأ شحن الطلب بالكامل وعيناته"
+        },
+        "body": {
+          "en": "A label or one parcel is not whole-order dispatch. Durations use supported samples and nearest-rank percentiles; missing timing is unavailable, not zero.",
+          "ar": "الملصق أو الطرد الواحد لا يعني شحن الطلب بالكامل. تستند المدد إلى عينات مثبتة ورتب مئوية بطريقة الرتبة الأقرب؛ الوقت المفقود غير متاح، وليس صفرًا."
+        },
+        "guide": "features/order-operations"
+      },
+      {
+        "image": "order-operations-vendor-en-commitments.jpg",
+        "imageAr": "order-operations-vendor-ar-commitments.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check accepted commitments and coverage",
+          "ar": "راجع الالتزامات المقبولة والتغطية"
+        },
+        "body": {
+          "en": "Review your original accepted deadlines in this workspace. Due commitments are a separate population; incomplete evidence does not prove a breach.",
+          "ar": "راجع مواعيدك الأصلية المقبولة في مساحة المتجر الحالية. الالتزامات المستحقة مجموعة مستقلة؛ والأدلة الناقصة لا تثبت مخالفة."
+        },
+        "guide": "features/order-operations"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; not continuous recording, live operations or evidence of real fault, purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت بتاريخ 2026-11-19 · صور إرشادية، وليست تسجيلًا متصلًا أو عمليات حية أو دليلًا على أخطاء أو مشتريات أو مدفوعات أو تسليمات فعلية."
+    }
   }
 }

@@ -1,0 +1,475 @@
+{
+  "feature": "recorded-order-operations",
+  "capture_date": "2026-11-19",
+  "capture_timezone": "Africa/Cairo",
+  "kind": "guided-screenshot-clips",
+  "mechanism": "Only new root-reviewed CUA JPEGs; byte-identical copies to Docs screenshots. Four 6-second still chapters, complete viewport letterboxed without fabricated UI; localized sidecar WebVTT. Not a continuous screen recording.",
+  "backend_reference": "f8946a0089a37f8d72c136f6540573c590db99b0",
+  "privacy_review": "Root confirmed these synthetic actual UI frames contain no contact details, credentials, tokens, private free-text operational notes or actor/customer identifiers. No automated privacy-detection claim.",
+  "provenance": {
+    "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; not continuous recording, live operations or evidence of real fault, purchases, payments or deliveries.",
+    "ar": "معاينة محلية ببيانات مصطنعة · التقطت بتاريخ 2026-11-19 · صور إرشادية، وليست تسجيلًا متصلًا أو عمليات حية أو دليلًا على أخطاء أو مشتريات أو مدفوعات أو تسليمات فعلية."
+  },
+  "tools": {
+    "ffmpeg": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 9.0.2-full_build-www.gyan.dev Copyright (c) 2007-2026 the FFmpeg developers"
+  },
+  "entries": [
+    {
+      "id": "feature-order-operations-admin-en",
+      "role": "admin",
+      "locale": "en",
+      "url": "http://localhost:4431/reports/order-operations",
+      "frames": [
+        {
+          "path": "public/screenshots/order-operations-admin-en-population.jpg",
+          "raw_artifact": "admin-en-population.jpg",
+          "raw_sha256": "920faa760b171b07103bc016267b6f87df0a4cd18d415ebdb9a949f2fecd6a18",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 89238,
+          "raw_modified_at_utc": "2026-11-19T07:15:26.806946+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-admin-en-cancellations.jpg",
+          "raw_artifact": "admin-en-cancellations.jpg",
+          "raw_sha256": "114ab22b3714c14ea71238503d730101fe3ddbcaede7f2fe6312e5af3e160c75",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 82893,
+          "raw_modified_at_utc": "2026-11-19T07:15:54.129018+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-admin-en-dispatch.jpg",
+          "raw_artifact": "admin-en-dispatch.jpg",
+          "raw_sha256": "a9a3363b3f56d57cfe19cf0b9de9b3653545025330036554666a380859550a5f",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 88266,
+          "raw_modified_at_utc": "2026-11-19T07:16:10.441911+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-admin-en-commitments.jpg",
+          "raw_artifact": "admin-en-commitments.jpg",
+          "raw_sha256": "aaf0265c166adab82b5f3c799ab18d55c1c8fdcc9b5b9560ca60d541b58e5344",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 91846,
+          "raw_modified_at_utc": "2026-11-19T07:16:27.519919+00:00"
+        }
+      ],
+      "video": "public/videos/feature-order-operations-admin-en-tour.mp4",
+      "poster": "public/videos/feature-order-operations-admin-en-poster.jpg",
+      "captions": "public/videos/feature-order-operations-admin-en.vtt",
+      "duration_seconds": 24.0,
+      "codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "audio": false,
+      "bytes": 399381,
+      "video_sha256": "22f63575c0639f85a82a797e54e21ee8dd9922ffabc5c43bfecaa2661b9284cf",
+      "poster_sha256": "86f23f6cfa662d28a18bcd7d84565a5de2ac5dfee8873498fa4dc73d0caf6c8a",
+      "captions_sha256": "6652110a3757b39a76143863f34b0b2ad76a97a2a843d5f2137a71b50d791da5",
+      "browser_playback": {
+        "verified": true,
+        "date": "2026-11-19",
+        "duration_seconds": 24,
+        "ended_at_seconds": 24,
+        "media_error": null,
+        "localized_captions_visible": true,
+        "review_origin": "http://127.0.0.1:3105",
+        "method": "Expanded native player; real keyboard playback completed; caption track loaded and visible. No programmatic play or seek."
+      }
+    },
+    {
+      "id": "feature-order-operations-admin-ar",
+      "role": "admin",
+      "locale": "ar",
+      "url": "http://localhost:4431/reports/order-operations",
+      "frames": [
+        {
+          "path": "public/screenshots/order-operations-admin-ar-population.jpg",
+          "raw_artifact": "admin-ar-population.jpg",
+          "raw_sha256": "e6aa41facb147c4dab2c551c5d6b644cae2de210b41a4030d0a0417ff230bafc",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 75740,
+          "raw_modified_at_utc": "2026-11-19T07:17:32.946130+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-admin-ar-cancellations.jpg",
+          "raw_artifact": "admin-ar-cancellations.jpg",
+          "raw_sha256": "9b5dec194604573a198c1261153f231d2c13046df9dea683865d2e27ddb21f9d",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 66554,
+          "raw_modified_at_utc": "2026-11-19T07:17:19.692637+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-admin-ar-dispatch.jpg",
+          "raw_artifact": "admin-ar-dispatch.jpg",
+          "raw_sha256": "f182dda715fc0ef01a8a4820b2e3620cdf25117d90b11dd16eecb7fe8445c8b1",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 71083,
+          "raw_modified_at_utc": "2026-11-19T07:17:04.131642+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-admin-ar-commitments.jpg",
+          "raw_artifact": "admin-ar-commitments.jpg",
+          "raw_sha256": "4f0cd4a526aba947e49da1bc6b74c5a356ebe4204020ae6250a59ef3ea05abe7",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 70261,
+          "raw_modified_at_utc": "2026-11-19T07:16:56.122796+00:00"
+        }
+      ],
+      "video": "public/videos/feature-order-operations-admin-ar-tour.mp4",
+      "poster": "public/videos/feature-order-operations-admin-ar-poster.jpg",
+      "captions": "public/videos/feature-order-operations-admin-ar.vtt",
+      "duration_seconds": 24.0,
+      "codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "audio": false,
+      "bytes": 305504,
+      "video_sha256": "c89589cffafe6f390f8eb29a5b979280587184c063839e2d0e19934f954aaeab",
+      "poster_sha256": "29f2df482077aa01edf9d249cb4a9514a998543f9cd6b439265827a9374c3e60",
+      "captions_sha256": "cdc8399e8b7969c068aa63ada679bfd1ee6d9c85571927214c739a0c8ec7b8c1",
+      "browser_playback": {
+        "verified": true,
+        "date": "2026-11-19",
+        "duration_seconds": 24,
+        "ended_at_seconds": 24,
+        "media_error": null,
+        "localized_captions_visible": true,
+        "review_origin": "http://127.0.0.1:3105",
+        "method": "Expanded native player; real keyboard playback completed; caption track loaded and visible. No programmatic play or seek."
+      }
+    },
+    {
+      "id": "feature-order-operations-tenant-en",
+      "role": "tenant",
+      "locale": "en",
+      "url": "http://localhost:4432/reports/order-operations",
+      "frames": [
+        {
+          "path": "public/screenshots/order-operations-tenant-en-population.jpg",
+          "raw_artifact": "tenant-en-population.jpg",
+          "raw_sha256": "a348f7ae3b57ec2a87ff0fccda631486199a399805a7ae2768ad25e003d6fb3d",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 90475,
+          "raw_modified_at_utc": "2026-11-19T07:18:31.809790+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-tenant-en-cancellations.jpg",
+          "raw_artifact": "tenant-en-cancellations.jpg",
+          "raw_sha256": "55391e1800482686f25ed6788aa3ed3574236fa821ddeb568caf77ac8b925aa3",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 85417,
+          "raw_modified_at_utc": "2026-11-19T07:18:38.868185+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-tenant-en-dispatch.jpg",
+          "raw_artifact": "tenant-en-dispatch.jpg",
+          "raw_sha256": "4a17eebf7fbf1831e4fb91c23b23eac402e618e1099dc1b782b8dffddcbc6efe",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 91439,
+          "raw_modified_at_utc": "2026-11-19T07:18:45.293334+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-tenant-en-commitments.jpg",
+          "raw_artifact": "tenant-en-commitments.jpg",
+          "raw_sha256": "c876f05b5bcb1ea8f995993e1e3d117010d0c27091e0c2a26b230e29785f7398",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 89949,
+          "raw_modified_at_utc": "2026-11-19T07:18:51.082177+00:00"
+        }
+      ],
+      "video": "public/videos/feature-order-operations-tenant-en-tour.mp4",
+      "poster": "public/videos/feature-order-operations-tenant-en-poster.jpg",
+      "captions": "public/videos/feature-order-operations-tenant-en.vtt",
+      "duration_seconds": 24.0,
+      "codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "audio": false,
+      "bytes": 391199,
+      "video_sha256": "5a6ad64b1a0765d549a2569e82bdcaef854fc601e339a6566cb2708c22adf14f",
+      "poster_sha256": "6a0bcd5824a360b7d9f4e66b98b9e5152fd105f878e29843f1cb38cf2da524e4",
+      "captions_sha256": "3494f36ca14cf17de0c0db7e287fc3aacfec3166cc2e6dca9d5892947c51ca05",
+      "browser_playback": {
+        "verified": true,
+        "date": "2026-11-19",
+        "duration_seconds": 24,
+        "ended_at_seconds": 24,
+        "media_error": null,
+        "localized_captions_visible": true,
+        "review_origin": "http://127.0.0.1:3105",
+        "method": "Expanded native player; real keyboard playback completed; caption track loaded and visible. No programmatic play or seek."
+      }
+    },
+    {
+      "id": "feature-order-operations-tenant-ar",
+      "role": "tenant",
+      "locale": "ar",
+      "url": "http://localhost:4432/reports/order-operations",
+      "frames": [
+        {
+          "path": "public/screenshots/order-operations-tenant-ar-population.jpg",
+          "raw_artifact": "tenant-ar-population.jpg",
+          "raw_sha256": "adae3929a28a219245c22dbc4f98a0a81f7ade668f029bd09b7763961fe4d11d",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 76608,
+          "raw_modified_at_utc": "2026-11-19T07:19:38.248631+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-tenant-ar-cancellations.jpg",
+          "raw_artifact": "tenant-ar-cancellations.jpg",
+          "raw_sha256": "236821ab206417a2850f2ff892b0adcd52fccd7c9ccdc70d44d70d9292a49a17",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 67379,
+          "raw_modified_at_utc": "2026-11-19T07:19:28.963727+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-tenant-ar-dispatch.jpg",
+          "raw_artifact": "tenant-ar-dispatch.jpg",
+          "raw_sha256": "973f8fea45dbf1ba1ed026a9dd5c67bab51634dcf8dd8403d8b4ff86a42b3781",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 70424,
+          "raw_modified_at_utc": "2026-11-19T07:19:22.430890+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-tenant-ar-commitments.jpg",
+          "raw_artifact": "tenant-ar-commitments.jpg",
+          "raw_sha256": "044b124816d7d76cd0bd9334b93292504af5cd1b5fa181fe29a3dc8c84f41145",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 69114,
+          "raw_modified_at_utc": "2026-11-19T07:19:12.814624+00:00"
+        }
+      ],
+      "video": "public/videos/feature-order-operations-tenant-ar-tour.mp4",
+      "poster": "public/videos/feature-order-operations-tenant-ar-poster.jpg",
+      "captions": "public/videos/feature-order-operations-tenant-ar.vtt",
+      "duration_seconds": 24.0,
+      "codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "audio": false,
+      "bytes": 352185,
+      "video_sha256": "3306f3ccb47ba010890e0bce28d3dd827199a963847f1491e5a826776cef2f56",
+      "poster_sha256": "605a55849b594417c93479c36ac9975c92fc173eaea6a76acef0ed38a057aa61",
+      "captions_sha256": "7b4b3ded983c5f8dcc8a2ea6cb59bfed3bce5c20485d5df983d8ebf79826f980",
+      "browser_playback": {
+        "verified": true,
+        "date": "2026-11-19",
+        "duration_seconds": 24,
+        "ended_at_seconds": 24,
+        "media_error": null,
+        "localized_captions_visible": true,
+        "review_origin": "http://127.0.0.1:3105",
+        "method": "Expanded native player; real keyboard playback completed; caption track loaded and visible. No programmatic play or seek."
+      }
+    },
+    {
+      "id": "feature-order-operations-vendor-en",
+      "role": "vendor",
+      "locale": "en",
+      "url": "http://localhost:4433/reports/order-operations",
+      "frames": [
+        {
+          "path": "public/screenshots/order-operations-vendor-en-population.jpg",
+          "raw_artifact": "vendor-en-population.jpg",
+          "raw_sha256": "afd2f5a14c24f2989f4a8a873458743aff1b4062eefc040d32be39fc026c449a",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 88075,
+          "raw_modified_at_utc": "2026-11-19T07:21:43.503253+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-vendor-en-cancellations.jpg",
+          "raw_artifact": "vendor-en-cancellations.jpg",
+          "raw_sha256": "c3e137d44f3cdf151f010b8b54d9844dcc0165edf5c8a0b91426207ae4785066",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 82242,
+          "raw_modified_at_utc": "2026-11-19T07:21:51.966497+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-vendor-en-dispatch.jpg",
+          "raw_artifact": "vendor-en-dispatch.jpg",
+          "raw_sha256": "5fe55a2395eaa73800e8a67f5ef5b8b309d01d5188bf5934450ca8539204714b",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 86660,
+          "raw_modified_at_utc": "2026-11-19T07:21:59.533792+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-vendor-en-commitments.jpg",
+          "raw_artifact": "vendor-en-commitments.jpg",
+          "raw_sha256": "2e6159cb37b889eef8209f9cc1bdf2d61b949a3800ab3c5d668f32ad68537372",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 90826,
+          "raw_modified_at_utc": "2026-11-19T07:22:06.375389+00:00"
+        }
+      ],
+      "video": "public/videos/feature-order-operations-vendor-en-tour.mp4",
+      "poster": "public/videos/feature-order-operations-vendor-en-poster.jpg",
+      "captions": "public/videos/feature-order-operations-vendor-en.vtt",
+      "duration_seconds": 24.0,
+      "codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "audio": false,
+      "bytes": 486988,
+      "video_sha256": "f107f480e19682661ee8997657393676f7ee801643a40389ccf0fb5438c6b799",
+      "poster_sha256": "ed846c9e827afec74bfc6430461d58d50e5070d367fdc2988d74624d64e64c7c",
+      "captions_sha256": "0dd83e4efc234d271b91aca03c95585bf3fd545f76d18c0c29dc8a6760b85984",
+      "browser_playback": {
+        "verified": true,
+        "date": "2026-11-19",
+        "duration_seconds": 24,
+        "ended_at_seconds": 24,
+        "media_error": null,
+        "localized_captions_visible": true,
+        "review_origin": "http://127.0.0.1:3105",
+        "method": "Expanded native player; real keyboard playback completed; caption track loaded and visible. No programmatic play or seek."
+      }
+    },
+    {
+      "id": "feature-order-operations-vendor-ar",
+      "role": "vendor",
+      "locale": "ar",
+      "url": "http://localhost:4433/reports/order-operations",
+      "frames": [
+        {
+          "path": "public/screenshots/order-operations-vendor-ar-population.jpg",
+          "raw_artifact": "vendor-ar-population.jpg",
+          "raw_sha256": "5869565c859a5427a541a8cf8f785bbd9bd0d59aae245c8f00b367da7200996d",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 72507,
+          "raw_modified_at_utc": "2026-11-19T07:22:51.192650+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-vendor-ar-cancellations.jpg",
+          "raw_artifact": "vendor-ar-cancellations.jpg",
+          "raw_sha256": "1be4100f08cb001da97528dde9980bd5038bf256e125dfc445b2d77c3e2afea1",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 66234,
+          "raw_modified_at_utc": "2026-11-19T07:22:42.715191+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-vendor-ar-dispatch.jpg",
+          "raw_artifact": "vendor-ar-dispatch.jpg",
+          "raw_sha256": "8a70ad9e584af661291cc77e8de5c738f1ef2033dc5a8f638bf1d7bb8a96ccfb",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 71224,
+          "raw_modified_at_utc": "2026-11-19T07:22:35.285685+00:00"
+        },
+        {
+          "path": "public/screenshots/order-operations-vendor-ar-commitments.jpg",
+          "raw_artifact": "vendor-ar-commitments.jpg",
+          "raw_sha256": "5d8f56d3291f08290e9eef8a4df8b0c24cc521cf02005152ac10a05ad51e2b24",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "bytes": 69510,
+          "raw_modified_at_utc": "2026-11-19T07:22:26.183558+00:00"
+        }
+      ],
+      "video": "public/videos/feature-order-operations-vendor-ar-tour.mp4",
+      "poster": "public/videos/feature-order-operations-vendor-ar-poster.jpg",
+      "captions": "public/videos/feature-order-operations-vendor-ar.vtt",
+      "duration_seconds": 24.0,
+      "codec": "h264",
+      "video_dimensions": [
+        1280,
+        720
+      ],
+      "audio": false,
+      "bytes": 367018,
+      "video_sha256": "54dc617ab183eb2c752f51217692fca40ac9b8845d78aa969432b09926d51f1e",
+      "poster_sha256": "936ed8d1bc7c99891e06d3c591699a97b6ae55237cf0909897988f989f9ed965",
+      "captions_sha256": "082485ece028793be57a7b02fb6f4aed6fab63fad0dd976437ae2d52d12d4183",
+      "browser_playback": {
+        "verified": true,
+        "date": "2026-11-19",
+        "duration_seconds": 24,
+        "ended_at_seconds": 24,
+        "media_error": null,
+        "localized_captions_visible": true,
+        "review_origin": "http://127.0.0.1:3105",
+        "method": "Expanded native player; real keyboard playback completed; caption track loaded and visible. No programmatic play or seek."
+      }
+    }
+  ]
+}

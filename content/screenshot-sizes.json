@@ -1670,5 +1670,101 @@
   "funnel-customer-withdrawal-ar.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "order-operations-admin-en-population.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-en-cancellations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-en-dispatch.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-en-commitments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-ar-population.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-ar-cancellations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-ar-dispatch.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-admin-ar-commitments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-en-population.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-en-cancellations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-en-dispatch.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-en-commitments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-ar-population.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-ar-cancellations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-ar-dispatch.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-tenant-ar-commitments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-en-population.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-en-cancellations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-en-dispatch.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-en-commitments.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-ar-population.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-ar-cancellations.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-ar-dispatch.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "order-operations-vendor-ar-commitments.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }
