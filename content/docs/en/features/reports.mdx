@@ -15,6 +15,43 @@ Open Reports, choose the report and available date/filter parameters, review the
 
 Use [customer cohorts](/en/features/customer-cohorts) for retained purchase groups and [shopping funnels](/en/features/shopping-funnel) for optional measured journeys. The [recorded order-operations guide](/en/features/order-operations) explains child-order cancellations, whole-order dispatch and original vendor commitments; that feature has a tested local development checkpoint, with live rollout kept separate. These populations are different and should not be added together.
 
+## Review coupon performance
+
+Choose **Coupons** to see reserved uses, confirmed uses, discounts, and settled refunds by code and currency. Store and platform users can also see each seller's share. A split invoice counts once in the store totals even when it appears for multiple sellers.
+
+Reserved uses are pending holds created during the selected dates. Discount costs are confirmed savings, and refunds are shown on the date they settled. An authorized export refreshes the report for the selected dates.
+
+Generated codes show their batch name in the per-code table. Use **Coupon batch performance** to review grouped results by currency, and **Coupon batch performance by vendor** to review each seller’s share. The [coupon batch guide](/en/features/coupons) shows how to generate and download the codes.
+
+## Download a private report
+
+1. Select the report, period and filters. Check the workspace before choosing **Export**.
+2. Wait while the export is queued or processing. You can keep reading the report while it runs.
+3. When the file is ready, choose **Download**. The dashboard downloads the JSON attachment using your signed-in account.
+4. Save the file securely. It may contain customer or business information; downloading it does not make it public.
+
+The file is available for **24 hours from the export request**, not from the moment you first download it. After expiry, request a new export. If your permissions or workspace approval change, an earlier export may become unavailable before that time. A copied job identifier or download address does not grant another operator access.
+
+| Your dashboard | What the file includes |
+|---|---|
+| Platform admin | The scope and filters selected when the export was requested. Changing a filter does not change an existing file. |
+| Tenant | Your current tenant's report. Another tenant cannot retrieve it. |
+| Vendor | Your vendor's report within the selected approved tenant workspace. Switch workspace before requesting another report. |
+
+```mermaid
+flowchart LR
+  A[Choose report and scope] --> B[Request export]
+  B --> C[Queued or processing]
+  C --> D[Ready before expiry]
+  D --> E[Download with your account]
+  D --> F[Expired or access changed]
+  F --> A
+```
+
+If a download is unavailable, check that you are signed in to the account that requested it, still have export permission, and have selected the correct workspace. Then request a new export if needed. A failed export is not a completed file. Older profit exports using an unsupported calculation definition remain unavailable; generate a current result before exporting again.
+
+This private-download checkpoint has backend acceptance coverage in local development. Dashboard integration and release acceptance are tracked separately; it is not a claim of live deployment.
+
 ## Restrictions and decisions
 
 A queued request is not a finished file. Read permission does not automatically grant export. Different report definitions can count placed orders, paid revenue or current balances; compare matching measures and periods.

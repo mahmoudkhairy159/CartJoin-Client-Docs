@@ -136,7 +136,13 @@
     ],
     "screens": [
       "admin-screen-coupons.jpg",
-      "tenant-screen-coupons.jpg"
+      "tenant-screen-coupons.jpg",
+      "tenant-coupon-batch-form-en.jpg",
+      "tenant-coupon-batch-form-ar.jpg",
+      "tenant-coupon-batches-en.jpg",
+      "tenant-coupon-batches-ar.jpg",
+      "tenant-coupon-batch-report-en.jpg",
+      "tenant-coupon-batch-report-ar.jpg"
     ],
     "tour": "feature-coupons"
   },

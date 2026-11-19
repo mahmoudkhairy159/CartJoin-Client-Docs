@@ -24,12 +24,25 @@ No explicit controller-array route declarations were extracted. Inspect the sour
 - `Modules/Coupon/App/Http/Requests/Admin/Coupon/UpdateCouponRequest.php`: `tenant_id`, `currency_id`, `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
 - `Modules/Coupon/App/Http/Requests/Tenant/Coupon/StoreCouponRequest.php`: `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
 - `Modules/Coupon/App/Http/Requests/Tenant/Coupon/UpdateCouponRequest.php`: `code`, `type`, `value`, `min_order_amount`, `max_discount_amount`, `usage_limit_global`, `usage_limit_per_user`, `is_active`, `is_stackable`, `first_order_only`, `starts_at`, `ends_at`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`
-- `Modules/Coupon/App/Http/Requests/User/Coupon/ApplyCouponRequest.php`: `code`, `subtotal`, `shipping_total`, `product_ids`, `product_ids.*`, `category_ids`, `category_ids.*`, `has_existing_discount`
+- `Modules/Coupon/App/Http/Requests/User/Coupon/ApplyCouponRequest.php` accepts `code`. The server reads the active cart to evaluate eligibility.
+- `Modules/Invoice/App/Http/Requests/User/Checkout/CheckoutRequest.php` accepts `quote_revision` from the selected shipping estimate.
+
+Admin selects `tenant_id` on creation. The update request rejects changes to ownership.
+
+## Batch creation and export
+
+The tenant application routes are `/coupons/batches` and `/coupons/batches/new`. `Modules/Coupon/routes/tenant-api.php` defines `GET /coupons/batches`, `POST /coupons/batches` and `GET /coupons/batches/{id}/export` under `/api/tenant/v1`. `CreateCouponBatchRequest` adds `batch_name`, `quantity`, `prefix` and `request_id` to the shared rules. The coupon report includes `batch_id`, `batch_name`, `batches` and the store and platform `batch_vendors` breakdown.
+
+## Redemption evidence
+
+Admin and Tenant history resources expose `invoice_id`, `currency_code`, `discount_amount`, `shipping_discount_amount`, `confirmed_at`, and `released_at`. The discount total includes the shipping portion. Historical redemptions can reference `order_id`.
 
 ## Enum values in source
 
 - `Modules/Coupon/App/Enums/CouponRedemptionStatus.php`: `PENDING = 'pending'`, `CONFIRMED = 'confirmed'`, `RELEASED = 'released'`
 - `Modules/Coupon/App/Enums/CouponRejectionReason.php`: `NOT_FOUND = 'not_found'`, `INACTIVE = 'inactive'`, `NOT_STARTED = 'not_started'`, `EXPIRED = 'expired'`, `USAGE_LIMIT_REACHED = 'usage_limit_reached'`, `PER_USER_LIMIT_REACHED = 'per_user_limit_reached'`, `BELOW_MINIMUM_ORDER = 'below_minimum_order'`, `PRODUCT_NOT_ELIGIBLE = 'product_not_eligible'`, `FIRST_ORDER_ONLY = 'first_order_only'`, `NOT_STACKABLE = 'not_stackable'`, `ZERO_DISCOUNT = 'zero_discount'`
 - `Modules/Coupon/App/Enums/CouponType.php`: `PERCENTAGE = 'percentage'`, `FIXED = 'fixed'`, `FREE_SHIPPING = 'free_shipping'`
+
+The resolver also returns `currency_mismatch` when the coupon's denomination does not match the cart.
 
 [Back to evidence](/en/evidence) · [Business guide](/en/features/coupons)

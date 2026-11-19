@@ -1,4 +1,28 @@
 {
+  "tenant-coupon-batch-form-en.jpg": {
+    "width": 1440,
+    "height": 900
+  },
+  "tenant-coupon-batch-form-ar.jpg": {
+    "width": 1440,
+    "height": 900
+  },
+  "tenant-coupon-batches-en.jpg": {
+    "width": 1440,
+    "height": 900
+  },
+  "tenant-coupon-batches-ar.jpg": {
+    "width": 1440,
+    "height": 900
+  },
+  "tenant-coupon-batch-report-en.jpg": {
+    "width": 1440,
+    "height": 900
+  },
+  "tenant-coupon-batch-report-ar.jpg": {
+    "width": 1440,
+    "height": 900
+  },
   "admin-audit.jpg": {
     "width": 1265,
     "height": 712

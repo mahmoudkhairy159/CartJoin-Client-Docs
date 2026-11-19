@@ -1,14 +1,19 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:12.000
-Platform admin
-Read the code, discount type, value, usage limits and schedule.
-Eligibility is recalculated when the customer applies it.
+00:00:00.000 --> 00:00:09.000
+Create a batch
+Set a batch name, number of codes, and an optional prefix. All codes
+share the discount and eligibility rules.
 
 2
-00:00:12.000 --> 00:00:24.000
-Tenant operator
-Read the code, discount type, value, usage limits and schedule.
-Eligibility is recalculated when the customer applies it.
+00:00:09.000 --> 00:00:18.000
+Export the codes
+Open Coupon batches and choose Download CSV on the batch you want to
+distribute.
 
+3
+00:00:18.000 --> 00:00:27.000
+Track batch performance
+Open the Coupon report to review reserved and confirmed uses, discount
+cost, and settled refunds by batch, seller, and currency.

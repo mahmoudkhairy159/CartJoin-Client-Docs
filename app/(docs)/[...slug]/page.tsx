@@ -28,7 +28,7 @@ export default async function Page(props: PageProps<'/[...slug]'>) {
       footer={{ className: 'guide-page-pagination' }}
       lang={params.slug[0] === 'ar' ? 'ar' : 'en'} dir={params.slug[0] === 'ar' ? 'rtl' : 'ltr'}>
       <header className="guide-page-heading">
-        <p className="guide-doc-kind">{arabic ? (feature ? 'دليل خاصية' : 'دليل كارت جوين') : (feature ? 'Capability guide' : 'CartJoin guide')}</p>
+        <p className="guide-doc-kind">{arabic ? (feature ? 'دليل استخدام الميزة' : 'دليل كارت جوين') : (feature ? 'Feature guide' : 'CartJoin guide')}</p>
         <DocsTitle className="guide-page-title">{page.data.title}</DocsTitle>
         <p className="guide-page-description">{page.data.description}</p>
         <div className="guide-page-meta">

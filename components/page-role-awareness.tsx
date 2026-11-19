@@ -42,7 +42,7 @@ export function PageAudience({ roles = [] }: { roles?: string[] }) {
           <Info size={16} strokeWidth={1.5} className="shrink-0" aria-hidden />
           <span>
             {arabic
-              ? `هذه الصفحة خارج دليل ${roleName(role, lang)}، وتظهر لأنك فتحت رابطها مباشرة`
+              ? `هذه الصفحة ليست ضمن دليل ${roleName(role, lang)}. ظهرت لأنك فتحت رابطها مباشرةً.`
               : `This page is outside the ${roleName(role, lang)} guide. You opened it through a direct link.`}
           </span>
         </p>

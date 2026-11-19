@@ -2,7 +2,7 @@
   {
     "title": {
       "en": "Account and business",
-      "ar": "الحساب والنشاط"
+      "ar": "الحساب والنشاط التجاري"
     },
     "features": [
       "access",
@@ -32,8 +32,8 @@
   },
   {
     "title": {
-      "en": "Orders and delivery",
-      "ar": "الطلبات والتوصيل"
+      "en": "Orders and shipping",
+      "ar": "الطلبات والشحن"
     },
     "features": [
       "cart",
@@ -76,7 +76,7 @@
   {
     "title": {
       "en": "Storefront and content",
-      "ar": "واجهة التسوق والمحتوى"
+      "ar": "واجهة المتجر والمحتوى"
     },
     "features": [
       "cms",

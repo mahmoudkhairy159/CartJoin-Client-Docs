@@ -172,13 +172,42 @@
     "served": true
   },
   {
-    "tour": "feature-coupons",
-    "duration": 24,
-    "expected": 24,
+    "tour": "feature-coupons-en",
+    "duration": 27,
+    "expected": 27,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "lang": "en",
+      "captionMode": "showing",
+      "captionCueCount": 3,
+      "seekedToSeconds": 4
+    },
+    "verified": "2026-11-19",
+    "limits": "Local Tenant dashboard with demo API fixtures. Create, CSV download, and coupon report exercised with sample data."
+  },
+  {
+    "tour": "feature-coupons-ar",
+    "duration": 27,
+    "expected": 27,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "lang": "ar",
+      "captionMode": "showing",
+      "captionCueCount": 3,
+      "seekedToSeconds": 4
+    },
+    "verified": "2026-11-19",
+    "limits": "Local Tenant dashboard with demo API fixtures. Create, CSV download, and coupon report exercised with sample data."
   },
   {
     "tour": "feature-customers",

@@ -7,17 +7,26 @@ roles: ["ADMIN", "TENANT"]
 
 ## How to use it
 
-Operators maintain code, activation dates, limits and product/category eligibility in Coupons. Customers enter the code in Cart and check the recalculated discount. Inspect usage limits when a previously valid code stops applying.
+Operators maintain code, activation dates, limits and product/category eligibility in Coupons. Signed-in customers can apply, change or remove a code in Cart or at order review. Choose delivery to see any shipping savings. Inspect usage limits when a previously valid code stops applying.
+
+## Create and track a coupon batch
+
+1. In the Tenant dashboard, open **Coupons → Coupon batches → Create batch**.
+2. Enter a batch name, choose 1–100 codes and add an optional prefix. Set the shared discount, dates and eligibility rules, then choose **Generate codes**.
+3. On the batch row, choose **Download CSV**. Each row contains a distinct code ready to distribute.
+4. Open **Coupon report** from the batch list. Choose a reporting period to review activity by code, batch, seller and currency. The batch tables show codes with activity during that period.
+
+Each code can be confirmed once. In-progress checkout holds the code until payment confirms or the reservation is released. A refund leaves a confirmed code spent. You can pause or reactivate an individual code from its coupon record. Its code and shared rules remain fixed.
 
 <SystemTour tour="feature-coupons" compact />
 
 ## Restrictions and decisions
 
-The code must belong to this tenant, be active within its dates and satisfy minimum amount, usage limits and any first-order/product/category conditions. Fixed discounts cannot exceed subtotal; percentage discounts respect configured caps; free shipping affects shipping only.
+The code must belong to this store, be active within its dates and satisfy minimum amount, usage limits and any first-order or catalog conditions. Merchandise discounts apply to eligible products and respect the configured caps. Free-shipping coupons apply to the selected delivery price.
 
 ## Data flow and outcome
 
-Coupon policy → cart eligibility → computed discount → reserved/redemption lifecycle at purchase. Displayed code acceptance can change if cart contents change.
+The server calculates coupon savings from the current basket and selected delivery method. If pricing changes before placement, review the updated total before placing the order. An invoice reserves one use, including when it covers orders from multiple sellers. Each seller order records its share of the discount.
 
 ## When something goes wrong
 
@@ -25,7 +34,7 @@ Check workspace, permission, record state and field errors first. If an action t
 
 ## Evidence and verification limits
 
-Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. The batch tour uses demo data in the local Tenant dashboard.
 
 `Modules/Coupon/` · `documentation/modules/`
 
