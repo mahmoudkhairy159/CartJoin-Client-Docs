@@ -7,7 +7,7 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 ## How to use it
 
-Customers open Account → Returns and select an eligible purchase and items. Follow the provided request and shipping instructions. Operators review, approve or reject, receive and inspect actual returned quantities, then choose allowed restock/refund/exchange actions.
+Open **Account → Returns** and select a purchase. Use the page controls for older orders or start from a seller order on your invoice. Select eligible items and follow the shipping instructions. Store operators approve or reject the request, inspect the received quantities, and record restock and refund decisions separately.
 
 <SystemTour tour="feature-returns" compact />
 
@@ -20,7 +20,9 @@ Customers open Account → Returns and select an eligible purchase and items. Fo
 
 ## Restrictions and decisions
 
-Eligibility depends on delivery date, configured return window and non-returnable categories. Refunds use inspected rather than requested quantities. Only suitable-condition items selected for restock return to inventory. A return request is not proof that money was refunded.
+Eligibility uses verified delivered quantities per item and the store’s return window and product policy. If parcels arrive at different times, the dates and quantities can differ between items. Only inspected units in suitable condition that staff select for restock return to inventory.
+
+Return detail shows when a refund is awaiting settlement, partially settled, under review, or settled. A like-for-like replacement, when offered by the store, is a separate action for the original seller and variant. Track the linked replacement from the return detail. Availability depends on replacement stock and store permissions.
 
 ## Data flow and outcome
 

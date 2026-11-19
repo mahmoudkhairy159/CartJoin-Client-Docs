@@ -13,6 +13,12 @@ If your selected method is unavailable at review, choose delivery again. A tempo
 
 On a supported device, signed-in shoppers at an enrolled store can select delivery and choose **Review order with Apple Pay**. Check the address and total before placing the order and completing payment on Paymob.
 
+### Open a draft the store shared
+
+Sign in with the account the store selected. Open the draft link, enter your delivery address, choose the shipping and payment methods, and review the current total before confirming. The draft uses its own item list. Your regular basket stays available for a separate purchase.
+
+If the quote changes, check the updated total before confirming again. If the draft already became an invoice, the link opens the existing purchase. If the link expired or the store withdrew it, ask the store for a new draft.
+
 <SystemTour tour="feature-checkout" compact />
 
 ## Restrictions and decisions
@@ -25,7 +31,7 @@ Choose the country first, then its state and city. Saved addresses resolve their
 
 ## Data flow and outcome
 
-Validate cart → lock and group lines → reserve stock → snapshot orders → issue invoice → clear cart in the transaction → initiate payment after placement. A payment redirect alone does not prove success.
+Validate cart → lock and group lines → reserve stock → snapshot orders → issue invoice → clear cart in the transaction → initiate payment after placement. A payment redirect alone does not prove success. If checkout issued an invoice but payment could not start, use **Continue to payment** from confirmation or from the invoice in your account.
 
 ## When something goes wrong
 
