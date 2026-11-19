@@ -5,8 +5,8 @@
       "ar": "تعرف على لوحة إدارة المنصة"
     },
     "intro": {
-      "en": "Choose a step or a number on the screenshot to learn what it does and when to use it",
-      "ar": "اختر خطوة من القائمة أو رقماً على الصورة لتعرف وظيفة الجزء ومتى تستخدمه"
+      "en": "Choose a step or select a number on the screenshot to see how to use it",
+      "ar": "اختر خطوة من القائمة أو اضغط على رقم في الصورة لتعرف كيف تستخدم هذا الجزء"
     },
     "video": true,
     "steps": [
@@ -19,12 +19,12 @@
           8
         ],
         "title": {
-          "en": "Check the tenant scope",
-          "ar": "تحقق من نطاق المتجر"
+          "en": "Check which store you’re viewing",
+          "ar": "تأكّد من المتجر الذي تعرض بياناته"
         },
         "body": {
-          "en": "This filter controls which tenants you are reviewing. Confirm it before comparing figures or investigating a record.",
-          "ar": "يحدد المرشح المتاجر التي تتابعها. تحقق منه قبل مقارنة الأرقام أو فحص سجل."
+          "en": "This filter controls which stores you are reviewing. Confirm it before comparing figures or investigating a record.",
+          "ar": "يحدد عامل التصفية المتاجر التي تتابعها. تحقق منه قبل مقارنة الأرقام أو فحص سجل."
         },
         "guide": "business"
       },
@@ -41,8 +41,8 @@
           "ar": "حدد فترة المتابعة"
         },
         "body": {
-          "en": "Today, 7 days and 30 days change period-based figures. Zero today does not mean there are no older orders.",
-          "ar": "تغير خيارات اليوم وسبعة وثلاثين يوماً مؤشرات الفترة. صفر اليوم لا يعني غياب الطلبات القديمة."
+          "en": "Choose today, the last 7 days or the last 30 days to update the figures. If today’s count is zero, check a longer period for older orders.",
+          "ar": "اختر اليوم أو آخر 7 أيام أو آخر 30 يومًا لتحديث المؤشرات. إذا كان عدد الطلبات اليوم صفرًا، راجع فترة أطول للاطلاع على الطلبات السابقة."
         },
         "guide": "features/dashboards"
       },
@@ -59,7 +59,7 @@
           "ar": "اربط الطلب بعملية الشراء"
         },
         "body": {
-          "en": "The list links each order to its invoice, tenant and vendor. Open the record to investigate; platform order access is read-only.",
+          "en": "The list links each order to its invoice, store and vendor. Open the record to investigate; platform order access is read-only.",
           "ar": "تربط القائمة الطلب بالفاتورة والمتجر والبائع. افتح السجل للتحقيق؛ طلبات المنصة للقراءة فقط."
         },
         "guide": "features/orders"
@@ -86,8 +86,8 @@
   },
   "tenant": {
     "title": {
-      "en": "Run your store from one workspace",
-      "ar": "شغل متجرك من مساحة واحدة"
+      "en": "Manage your store from one workspace",
+      "ar": "أدِر متجرك من مساحة عمل واحدة"
     },
     "intro": {
       "en": "Follow the callouts from store setup to the daily order desk",
@@ -108,8 +108,8 @@
           "ar": "تأكد من اسم متجرك"
         },
         "body": {
-          "en": "The header identifies your store. Your account keeps records inside this tenant; this label is not a switch to another business.",
-          "ar": "يعرض الرأس اسم المتجر. يبقى نطاق حسابك داخل هذا المتجر؛ الاسم ليس وسيلة للانتقال إلى مؤسسة أخرى."
+          "en": "The header shows which store you’re in. This account can access records for that store only. The store name is a label.",
+          "ar": "يظهر اسم المتجر أعلى الصفحة. يتيح هذا الحساب الوصول إلى سجلات هذا المتجر فقط. الاسم المعروض للتعريف بالمتجر."
         },
         "guide": "features/tenants"
       },
@@ -127,7 +127,7 @@
         },
         "body": {
           "en": "Product, category, brand, attribute and stock shortcuts lead to the store setup tasks. Complete variants, price and inventory before promising availability.",
-          "ar": "تفتح اختصارات المنتجات والتصنيفات والعلامات والسمات والمخزون مهام التجهيز. أكمل المتغير والسعر والمخزون قبل تأكيد الإتاحة."
+          "ar": "توصلك الاختصارات إلى إعداد المنتجات والتصنيفات والعلامات التجارية والخصائص والمخزون. راجع خيارات المنتج وسعره ومخزونه قبل تأكيد توفره."
         },
         "guide": "features/products"
       },
@@ -171,8 +171,8 @@
   },
   "vendor": {
     "title": {
-      "en": "Sell in the right tenant workspace",
-      "ar": "بع داخل مساحة المتجر الصحيحة"
+      "en": "Sell in the right store workspace",
+      "ar": "بع من مساحة عمل المتجر المناسب"
     },
     "intro": {
       "en": "Learn where to choose a store, find your work and follow earnings",
@@ -193,8 +193,8 @@
           "ar": "اختر مساحة معتمدة"
         },
         "body": {
-          "en": "Check the tenant name before working. Switching workspace changes the tenant context while your vendor identity stays the same.",
-          "ar": "راجع اسم المتجر قبل العمل. يغير تبديل المساحة نطاق المتجر بينما تبقى هوية البائع نفسها."
+          "en": "Check the store name before you start. Switching workspaces changes which store you’re working in while you stay signed in as the same vendor.",
+          "ar": "راجع اسم المتجر قبل البدء. عند تبديل مساحة العمل تنتقل إلى متجر آخر وتظل مسجّلًا بحساب البائع نفسه."
         },
         "guide": "features/vendors"
       },
@@ -212,7 +212,7 @@
         },
         "body": {
           "en": "Products holds your offers in this workspace. Variants, prices, images and publication determine what customers can buy.",
-          "ar": "تضم المنتجات عروضك داخل المساحة الحالية. تحدد المتغيرات والأسعار والصور والنشر ما يستطيع العميل شراءه."
+          "ar": "تضم المنتجات عروضك داخل المساحة الحالية. تحدد خيارات المنتج والأسعار والصور والنشر ما يستطيع العميل شراءه."
         },
         "guide": "features/products"
       },
@@ -229,8 +229,8 @@
           "ar": "تابع الطلبات المنتظرة منك"
         },
         "body": {
-          "en": "Open orders is a current snapshot. Go to orders to inspect your items and permitted fulfillment transitions, even when sales today are zero.",
-          "ar": "الطلبات المفتوحة لقطة حالية. افتحها لمراجعة بنودك وخطوات التنفيذ المسموحة حتى إن كانت مبيعات اليوم صفراً."
+          "en": "Open Orders shows the current count. Visit the Orders page to review your items and the available fulfilment actions, even when there are no sales today.",
+          "ar": "تعرض بطاقة الطلبات المفتوحة العدد الحالي. افتح صفحة الطلبات لمراجعة منتجاتك وإجراءات تجهيز الطلب المتاحة، حتى لو لم تسجّل مبيعات اليوم."
         },
         "guide": "features/orders"
       },
@@ -248,7 +248,7 @@
         },
         "body": {
           "en": "Earnings leads to commission, settlement and payout information. An order being paid does not mean your payout has reached its destination.",
-          "ar": "يفتح قسم المستحقات معلومات العمولة والتسوية والصرف. دفع العميل للطلب لا يعني وصول دفعة الصرف إليك."
+          "ar": "راجع العمولات والتسويات وتحويلات المستحقات في قسم المستحقات. وصول دفعة العميل لا يعني وصول مستحقاتك إلى حسابك."
         },
         "guide": "features/settlements"
       }
@@ -345,7 +345,7 @@
       "ar": "اقرأ قائمة الطلبات دون خلط السجلات"
     },
     "intro": {
-      "en": "This is the platform oversight screen; available actions differ in tenant and vendor dashboards",
+      "en": "This is the platform oversight screen; available actions differ in store and vendor dashboards",
       "ar": "هذه شاشة متابعة المنصة؛ تختلف الإجراءات المتاحة في لوحتي المتجر والبائع"
     },
     "video": true,
@@ -363,8 +363,8 @@
           "ar": "رشح القائمة أولاً"
         },
         "body": {
-          "en": "Use tenant, filter and search controls to locate the intended record. Confirm the context before opening it.",
-          "ar": "استخدم المتجر والمرشحات والبحث لتحديد السجل المقصود. تحقق من السياق قبل فتحه."
+          "en": "Choose a store, then search or filter to find the order. Check that it belongs to the right store before opening it.",
+          "ar": "اختر المتجر، ثم استخدم البحث أو عوامل التصفية للعثور على الطلب. تأكّد من المتجر قبل فتح الطلب."
         },
         "guide": "features/orders"
       },
@@ -399,8 +399,8 @@
           "ar": "تحقق من مالك الطلب"
         },
         "body": {
-          "en": "Tenant and vendor columns explain where the order belongs. Tenant-owned goods may show Tenant / platform-owned instead of a vendor.",
-          "ar": "يوضح المتجر والبائع ملكية الطلب. قد تعرض منتجات المتجر ملكية المتجر أو المنصة بدلاً من بائع."
+          "en": "Check the store and vendor columns to see who handles the order. Items sold directly by the store or platform may have no vendor listed.",
+          "ar": "راجع عمودي المتجر والبائع لمعرفة الجهة المسؤولة عن الطلب. قد لا يظهر اسم بائع للمنتجات التي يبيعها المتجر أو المنصة مباشرةً."
         },
         "guide": "business"
       }
@@ -412,8 +412,8 @@
       "ar": "ابحث عن منتج وافحص تفاصيله"
     },
     "intro": {
-      "en": "A tenant catalog example: find the offer, inspect its identity, then review its variants",
-      "ar": "مثال من كتالوج المتجر: ابحث عن العرض وافحص هويته ثم راجع المتغيرات"
+      "en": "Find a product in the store catalog, check its details and review its options",
+      "ar": "ابحث عن المنتج في كتالوج المتجر، وراجع بياناته وخياراته"
     },
     "video": true,
     "steps": [
@@ -431,7 +431,7 @@
         },
         "body": {
           "en": "Use the list search and filters to find the right product. Open its name to inspect the record before editing.",
-          "ar": "استخدم البحث والمرشحات لتحديد المنتج الصحيح. افتح اسمه لمراجعة السجل قبل التعديل."
+          "ar": "استخدم البحث وعوامل التصفية لتحديد المنتج الصحيح. افتح اسمه لمراجعة السجل قبل التعديل."
         },
         "guide": "features/products"
       },
@@ -462,8 +462,8 @@
           8
         ],
         "title": {
-          "en": "Review variants and related content",
-          "ar": "راجع المتغيرات والمحتوى المرتبط"
+          "en": "Review product options and related content",
+          "ar": "راجع خيارات المنتج والمحتوى المرتبط"
         },
         "body": {
           "en": "Variants, images and categories have separate tabs. A cart buys a variant, so review the actual option, its price and stock rather than just the parent product.",
@@ -498,7 +498,7 @@
         },
         "body": {
           "en": "On hand is physically held stock. Reserved units are committed to pending purchases. Available is what remains. Check the variant and location on the same row.",
-          "ar": "الفعلي هو المخزون الموجود، والمحجوز مخصص لمشتريات قيد التنفيذ، والمتاح هو الباقي. تحقق من المتغير والموقع في الصف نفسه."
+          "ar": "الفعلي هو المخزون الموجود، والمحجوز مخصص لمشتريات قيد التنفيذ، والمتاح هو الباقي. تحقق من خيار المنتج والموقع في الصف نفسه."
         },
         "guide": "features/inventory"
       },
@@ -560,8 +560,8 @@
   },
   "returns": {
     "title": {
-      "en": "Review a return before deciding",
-      "ar": "راجع طلب الإرجاع قبل اتخاذ القرار"
+      "en": "Review a return request",
+      "ar": "راجع طلب الإرجاع"
     },
     "intro": {
       "en": "Find the request, verify its purchase and inspect the available handling actions",
@@ -637,7 +637,7 @@
         },
         "body": {
           "en": "Handling shows Approve or Reject for this pending request; rejection asks for a reason. Review the history. Approval is a return decision, not confirmation of receipt, inspection or refund.",
-          "ar": "يعرض تبويب المعالجة الموافقة أو الرفض لهذا الطلب المعلق، ويتطلب الرفض سبباً. راجع السجل. الموافقة قرار إرجاع وليست إثباتاً للاستلام أو الفحص أو رد المال."
+          "ar": "يعرض تبويب المعالجة الموافقة أو الرفض لهذا الطلب المعلق، ويتطلب الرفض سبباً. راجع السجل. الموافقة قرار إرجاع وليست إثباتاً للاستلام أو الفحص أو استرداد المبلغ."
         },
         "guide": "features/returns"
       }
@@ -649,13 +649,13 @@
       "ar": "الملف وأمان الحساب"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -669,7 +669,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Use the profile and security controls for your own account. Changing personal details does not grant new dashboard permissions.",
@@ -686,8 +686,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Use the profile and security controls for your own account. Changing personal details does not grant new dashboard permissions.",
@@ -739,13 +739,13 @@
       "ar": "وصف خيارات المنتج"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -758,12 +758,12 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Attributes describe choices such as colour, size and material. The empty demo list does not mean a product already has configured variants.",
-          "ar": "تصف السمات خيارات اللون والمقاس والخامة. فراغ القائمة التجريبية لا يعني أن متغيرات المنتج مضبوطة مسبقاً."
+          "ar": "تصف السمات خيارات اللون والمقاس والخامة. فراغ القائمة التجريبية لا يعني أن خيارات المنتج مضبوطة مسبقاً."
         },
         "guide": "features/attributes"
       }
@@ -775,13 +775,13 @@
       "ar": "تتبع إجراء مسجل"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -795,10 +795,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Match the event, time, affected record and actor. Use the tenant scope before investigating a record; a log entry is evidence of that event only.",
+          "en": "Match the event, time, affected record and actor. Use the store scope before investigating a record; a log entry is evidence of that event only.",
           "ar": "طابق الحدث والوقت والسجل المتأثر ومن نفذ الإجراء. حدد نطاق المتجر قبل التحقيق؛ يثبت الإدخال الحدث المسجل فقط."
         },
         "guide": "features/audit"
@@ -812,11 +812,11 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
-          "en": "Match the event, time, affected record and actor. Use the tenant scope before investigating a record; a log entry is evidence of that event only.",
+          "en": "Match the event, time, affected record and actor. Use the store scope before investigating a record; a log entry is evidence of that event only.",
           "ar": "طابق الحدث والوقت والسجل المتأثر ومن نفذ الإجراء. حدد نطاق المتجر قبل التحقيق؛ يثبت الإدخال الحدث المسجل فقط."
         },
         "guide": "features/audit"
@@ -829,13 +829,13 @@
       "ar": "تحديد موضع اللافتة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -849,7 +849,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Check placement, destination link, schedule, display order and active state together. An active flag alone does not override the publication period.",
@@ -866,8 +866,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Check placement, destination link, schedule, display order and active state together. An active flag alone does not override the publication period.",
@@ -883,13 +883,13 @@
       "ar": "قراءة علامة الكتالوج"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -903,7 +903,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Brands label products; vendors fulfill purchases. Check the name and slug before linking a product to a brand.",
@@ -920,8 +920,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Brands label products; vendors fulfill purchases. Check the name and slug before linking a product to a brand.",
@@ -991,13 +991,13 @@
       "ar": "مراجعة السلة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1015,7 +1015,7 @@
         },
         "body": {
           "en": "Check each variant, quantity and unit price against its line total, then review discounts and the summary. The expiry is shown as a date and time.",
-          "ar": "طابق المتغير والكمية وسعر الوحدة مع إجمالي البند، ثم راجع الخصومات والملخص. يظهر انتهاء السلة بتاريخ ووقت."
+          "ar": "طابق خيار المنتج والكمية وسعر الوحدة مع إجمالي البند، ثم راجع الخصومات والملخص. يظهر انتهاء السلة بتاريخ ووقت."
         },
         "guide": "features/cart"
       }
@@ -1027,13 +1027,13 @@
       "ar": "قراءة شجرة التصنيفات"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1047,7 +1047,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "The parent column distinguishes a top-level category from a child. Check the name, slug and state before assigning products.",
@@ -1064,8 +1064,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "The parent column distinguishes a top-level category from a child. Check the name, slug and state before assigning products.",
@@ -1213,13 +1213,13 @@
       "ar": "التمييز بين المسودة والمحتوى المنشور"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1233,7 +1233,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read title, slug, publication state and date. Saving a draft does not make a page visible to customers.",
@@ -1250,8 +1250,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read title, slug, publication state and date. Saving a draft does not make a page visible to customers.",
@@ -1285,13 +1285,13 @@
       "ar": "فهم قيد العمولة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1305,11 +1305,11 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match each commission to its order, rate, currency and status. A captured or settled commission is separate from the vendor receiving a payout.",
-          "ar": "طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع دفعة مالية."
+          "ar": "راجع الطلب ونسبة العمولة وعملتها وحالتها. تسجيل العمولة أو تسويتها لا يعني أن المستحقات حُوّلت إلى البائع."
         },
         "guide": "features/commission"
       },
@@ -1322,12 +1322,12 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match each commission to its order, rate, currency and status. A captured or settled commission is separate from the vendor receiving a payout.",
-          "ar": "طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع دفعة مالية."
+          "ar": "راجع الطلب ونسبة العمولة وعملتها وحالتها. تسجيل العمولة أو تسويتها لا يعني أن المستحقات حُوّلت إلى البائع."
         },
         "guide": "features/commission"
       },
@@ -1345,7 +1345,7 @@
         },
         "body": {
           "en": "Check the workspace. Match each commission to its order, rate, currency and status. A captured or settled commission is separate from the vendor receiving a payout.",
-          "ar": "تحقق من مساحة العمل. طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع دفعة مالية."
+          "ar": "تحقق من مساحة العمل. طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع تحويل مستحقات."
         },
         "guide": "features/commission"
       }
@@ -1354,16 +1354,16 @@
   "feature-coupons": {
     "title": {
       "en": "Check coupon eligibility",
-      "ar": "التحقق من أهلية الكوبون"
+      "ar": "التحقق من شروط كوبون الخصم"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1377,11 +1377,11 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Read the code, discount type, value, usage limits and schedule. Eligibility is recalculated when the customer applies it.",
-          "ar": "راجع الرمز ونوع الخصم وقيمته وحدود الاستخدام والجدول. يعاد فحص الأهلية عندما يطبق العميل الكوبون."
+          "en": "Check the discount code, type, amount, usage limits and dates. The store checks eligibility when the customer applies the coupon.",
+          "ar": "راجع كود الخصم ونوع الخصم وقيمته وحدود الاستخدام وتواريخه. يتحقق المتجر من الشروط عندما يستخدم العميل كوبون الخصم."
         },
         "guide": "features/coupons"
       },
@@ -1394,12 +1394,12 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
-          "en": "Read the code, discount type, value, usage limits and schedule. Eligibility is recalculated when the customer applies it.",
-          "ar": "راجع الرمز ونوع الخصم وقيمته وحدود الاستخدام والجدول. يعاد فحص الأهلية عندما يطبق العميل الكوبون."
+          "en": "Check the discount code, type, amount, usage limits and dates. The store checks eligibility when the customer applies the coupon.",
+          "ar": "راجع كود الخصم ونوع الخصم وقيمته وحدود الاستخدام وتواريخه. يتحقق المتجر من الشروط عندما يستخدم العميل كوبون الخصم."
         },
         "guide": "features/coupons"
       }
@@ -1411,13 +1411,13 @@
       "ar": "تحديد العميل الصحيح"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1431,7 +1431,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "This list is filtered to the demo customer. Verify account identity, active and blocked states before opening related purchases or addresses.",
@@ -1448,8 +1448,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "This list is filtered to the demo customer. Verify account identity, active and blocked states before opening related purchases or addresses.",
@@ -1465,13 +1465,13 @@
       "ar": "قراءة الفترة قبل الأرقام"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1485,7 +1485,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Period metrics and current queues answer different questions. Choose the reporting period and read the generated time before comparing figures.",
@@ -1502,8 +1502,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Period metrics and current queues answer different questions. Choose the reporting period and read the generated time before comparing figures.",
@@ -1555,13 +1555,13 @@
       "ar": "قراءة جدول التخفيض"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1575,7 +1575,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Check the sale state and start/end times. Sale prices and allocated quantities belong to specific variants, not every option of a product.",
@@ -1592,8 +1592,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Check the sale state and start/end times. Sale prices and allocated quantities belong to specific variants, not every option of a product.",
@@ -1627,13 +1627,13 @@
       "ar": "فحص القيمة دون كشف الرمز"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1647,10 +1647,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Read outstanding card balances by tenant and currency. Do not add amounts from different currencies into one total.",
+          "en": "Read outstanding card balances by store and currency. Do not add amounts from different currencies into one total.",
           "ar": "اقرأ أرصدة البطاقات القائمة حسب المتجر والعملة. لا تجمع مبالغ العملات المختلفة في إجمالي واحد."
         },
         "guide": "features/gift-cards"
@@ -1664,8 +1664,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read the masked reference, state, balance and currency. The full secret is never needed in a screenshot or support conversation.",
@@ -1696,16 +1696,16 @@
   "feature-inventory": {
     "title": {
       "en": "Match stock to a variant and location",
-      "ar": "مطابقة المخزون بالمتغير والموقع"
+      "ar": "مطابقة المخزون بخيار المنتج والموقع"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1719,7 +1719,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "On hand, reserved and available are different quantities. Match the SKU and location; scroll wide tables in the system to see the remaining columns.",
@@ -1736,8 +1736,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "On hand, reserved and available are different quantities. Match the SKU and location; scroll wide tables in the system to see the remaining columns.",
@@ -1771,13 +1771,13 @@
       "ar": "تمييز مستند الشراء"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1791,7 +1791,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match invoice identity, state and currency. Open the purchase for vendor orders and item snapshots; a PDF that is not ready does not mean the invoice is missing.",
@@ -1808,8 +1808,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match invoice identity, state and currency. Open the purchase for vendor orders and item snapshots; a PDF that is not ready does not mean the invoice is missing.",
@@ -1861,13 +1861,13 @@
       "ar": "قراءة النقاط بصورة منفصلة عن المال"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1881,10 +1881,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Outstanding and reserved point counts are liabilities in points, not money. Compare the tenant rows without inventing a points-to-currency conversion.",
+          "en": "Outstanding and reserved point counts are liabilities in points, not money. Compare the store rows without inventing a points-to-currency conversion.",
           "ar": "تمثل أعداد النقاط القائمة والمحجوزة التزامات بالنقاط لا بالمال. قارن صفوف المتاجر دون افتراض سعر تحويل نقدي."
         },
         "guide": "features/loyalty"
@@ -1898,8 +1898,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "The demo program is active but has no live rule version. Review rule versions before promising earning or redemption; program state alone is insufficient.",
@@ -1933,13 +1933,13 @@
       "ar": "قراءة صندوق الإشعارات"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -1953,7 +1953,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "This overview covers in-app notifications only. Its queued, delivered and read counts do not include email, SMS or push delivery.",
@@ -1970,8 +1970,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Use the inbox for messages addressed to your account. An empty inbox means no matching messages are shown, not that orders or payments do not exist.",
@@ -2023,13 +2023,13 @@
       "ar": "فصل حالات الطلب والدفع والشحن"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2043,10 +2043,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Platform oversight is read-only. Match the order to its invoice, tenant and vendor, then inspect payment and shipping states separately.",
+          "en": "Platform oversight is read-only. Match the order to its invoice, store and vendor, then inspect payment and shipping states separately.",
           "ar": "رقابة طلبات المنصة للقراءة فقط. طابق الطلب مع الفاتورة والمتجر والبائع، ثم افحص حالتي الدفع والشحن منفصلتين."
         },
         "guide": "features/orders"
@@ -2060,8 +2060,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match the order number and invoice, then read payment and shipment states independently. One purchase can contain several separately fulfilled vendor orders.",
@@ -2113,13 +2113,13 @@
       "ar": "قراءة حالة الدفع المسجلة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2133,11 +2133,11 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Match the purchase, method, amount and recorded state. Awaiting confirmation, pending approval and paid require different next steps; a redirect is not payment proof.",
-          "ar": "طابق الشراء والطريقة والمبلغ والحالة المسجلة. لانتظار التأكيد والموافقة والدفع خطوات مختلفة؛ إعادة التوجيه ليست إثبات دفع."
+          "en": "Check the purchase, payment method, amount and status. The next step depends on whether the payment is awaiting confirmation, pending approval or paid. Confirm that the payment succeeded in the payment record. A redirect alone does not confirm payment.",
+          "ar": "راجع عملية الشراء ووسيلة الدفع والمبلغ والحالة. تعتمد الخطوة التالية على ما إذا كانت الدفعة بانتظار التأكيد أو الموافقة أو تم دفعها. تأكّد من حالة الدفع في السجل؛ فتح صفحة أخرى وحده لا يثبت نجاح الدفع."
         },
         "guide": "features/payments"
       },
@@ -2150,12 +2150,12 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
-          "en": "Match the purchase, method, amount and recorded state. Awaiting confirmation, pending approval and paid require different next steps; a redirect is not payment proof.",
-          "ar": "طابق الشراء والطريقة والمبلغ والحالة المسجلة. لانتظار التأكيد والموافقة والدفع خطوات مختلفة؛ إعادة التوجيه ليست إثبات دفع."
+          "en": "Check the purchase, payment method, amount and status. The next step depends on whether the payment is awaiting confirmation, pending approval or paid. Confirm that the payment succeeded in the payment record. A redirect alone does not confirm payment.",
+          "ar": "راجع عملية الشراء ووسيلة الدفع والمبلغ والحالة. تعتمد الخطوة التالية على ما إذا كانت الدفعة بانتظار التأكيد أو الموافقة أو تم دفعها. تأكّد من حالة الدفع في السجل؛ فتح صفحة أخرى وحده لا يثبت نجاح الدفع."
         },
         "guide": "features/payments"
       },
@@ -2190,8 +2190,8 @@
           "ar": "العميل"
         },
         "body": {
-          "en": "Match the purchase, method, amount and recorded state. Awaiting confirmation, pending approval and paid require different next steps; a redirect is not payment proof.",
-          "ar": "طابق الشراء والطريقة والمبلغ والحالة المسجلة. لانتظار التأكيد والموافقة والدفع خطوات مختلفة؛ إعادة التوجيه ليست إثبات دفع."
+          "en": "Check the purchase, payment method, amount and status. The next step depends on whether the payment is awaiting confirmation, pending approval or paid. Confirm that the payment succeeded in the payment record. A redirect alone does not confirm payment.",
+          "ar": "راجع عملية الشراء ووسيلة الدفع والمبلغ والحالة. تعتمد الخطوة التالية على ما إذا كانت الدفعة بانتظار التأكيد أو الموافقة أو تم دفعها. تأكّد من حالة الدفع في السجل؛ فتح صفحة أخرى وحده لا يثبت نجاح الدفع."
         },
         "guide": "features/payments"
       }
@@ -2203,13 +2203,13 @@
       "ar": "مراجعة أهلية السعر والكمية"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2223,7 +2223,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read the price rule or list together with its currency, quantity threshold and buyer group. The server determines the eligible line amount.",
@@ -2240,8 +2240,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read the price rule or list together with its currency, quantity threshold and buyer group. The server determines the eligible line amount.",
@@ -2257,14 +2257,14 @@
       "ar": "التحقق من الهوية والنشر"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
-      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions. Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
+      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · شاشات للمعاينة دون تنفيذ معاملات. حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
     },
     "steps": [
       {
@@ -2277,7 +2277,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match the name, SKU, brand and state before opening a product. A saved parent product is separate from a purchasable, active and priced variant.",
@@ -2294,8 +2294,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match the name, SKU, brand and state before opening a product. A saved parent product is separate from a purchasable, active and priced variant.",
@@ -2354,8 +2354,8 @@
       "ar": "قراءة القواعد قبل تفعيل المكافأة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
@@ -2373,8 +2373,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Open Promotions. The highest priority number runs first among active promotions in their time window.",
@@ -2407,17 +2407,17 @@
   },
   "feature-refunds": {
     "title": {
-      "en": "Follow the financial refund",
-      "ar": "متابعة الاسترداد المالي"
+      "en": "Track a refund",
+      "ar": "متابعة استرداد المبلغ"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2431,11 +2431,11 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match the order, amount, destination and state. A pending refund is not settled; return approval alone does not prove money was returned.",
-          "ar": "طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت رد المال."
+          "ar": "طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت استرداد المبلغ."
         },
         "guide": "features/refunds"
       },
@@ -2448,12 +2448,12 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match the order, amount, destination and state. A pending refund is not settled; return approval alone does not prove money was returned.",
-          "ar": "طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت رد المال."
+          "ar": "طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت استرداد المبلغ."
         },
         "guide": "features/refunds"
       },
@@ -2471,7 +2471,7 @@
         },
         "body": {
           "en": "Check the workspace. Match the order, amount, destination and state. A pending refund is not settled; return approval alone does not prove money was returned.",
-          "ar": "تحقق من مساحة العمل. طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت رد المال."
+          "ar": "تحقق من مساحة العمل. طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت استرداد المبلغ."
         },
         "guide": "features/refunds"
       }
@@ -2483,13 +2483,13 @@
       "ar": "اختيار فترة تقرير مولدة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2503,11 +2503,11 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Choose a report category here, then a generated period. Report snapshots run on a schedule; this page is the report directory, not a revenue result.",
-          "ar": "اختر فئة التقرير هنا ثم فترة مولدة. تجهز لقطات التقارير بجدول؛ هذه الصفحة فهرس التقارير لا نتيجة إيراد."
+          "en": "Choose a report type and a period with available data. Reports update on a schedule. Open a report to see the results.",
+          "ar": "اختر نوع التقرير وفترة تتوفر عنها بيانات. تُحدّث التقارير بانتظام. افتح التقرير لعرض النتائج."
         },
         "guide": "features/reports"
       },
@@ -2520,8 +2520,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Select the report, period and dates together. Not ready or not generated can mean no matching snapshot; do not interpret it as zero business activity.",
@@ -2555,13 +2555,13 @@
       "ar": "مراجعة الإرجاع المادي"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2575,7 +2575,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match the return to its order and current stage. Receipt, inspection, restocking and financial refund are distinct decisions; use the next permitted action.",
@@ -2592,8 +2592,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match the return to its order and current stage. Receipt, inspection, restocking and financial refund are distinct decisions; use the next permitted action.",
@@ -2645,13 +2645,13 @@
       "ar": "قراءة الإشراف والتحقق من الشراء"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2665,7 +2665,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Rating, moderation state, verified purchase and reply state are separate facts. Check the product and author before responding or moderating.",
@@ -2682,8 +2682,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Rating, moderation state, verified purchase and reply state are separate facts. Check the product and author before responding or moderating.",
@@ -2735,14 +2735,14 @@
       "ar": "البحث وفهم نتائج الاكتشاف"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
-      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions. Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
+      "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · شاشات للمعاينة دون تنفيذ معاملات. حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
     },
     "steps": [
       {
@@ -2755,7 +2755,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "The top queries summarize the rows on this page only. Use zero-result filters to investigate; the ranking is not platform-wide demand.",
@@ -2772,8 +2772,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Recommendations has exclusions, pinned pairs and rail performance. An exclusion removes a product from the chosen rail; it does not unpublish the product.",
@@ -2814,13 +2814,13 @@
       "ar": "التحقق من المسار الأصلي والوجهة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2834,7 +2834,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Review redirect source, destination, type and state. A permanent 301 and temporary 302 serve different purposes; confirm the intended destination before saving.",
@@ -2851,8 +2851,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Review redirect source, destination, type and state. A permanent 301 and temporary 302 serve different purposes; confirm the intended destination before saving.",
@@ -2868,13 +2868,13 @@
       "ar": "معرفة من يدير كل إعداد"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2888,7 +2888,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read editable fields and platform-controlled values separately. A displayed setting does not by itself prove a related workflow is enabled.",
@@ -2905,8 +2905,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read editable fields and platform-controlled values separately. A displayed setting does not by itself prove a related workflow is enabled.",
@@ -2958,13 +2958,13 @@
       "ar": "قراءة كشف البائع"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -2978,7 +2978,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Check statement period, currency, net amount and status. Gross sales, commission deductions and paid net are not interchangeable figures.",
@@ -2995,8 +2995,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Check statement period, currency, net amount and status. Gross sales, commission deductions and paid net are not interchangeable figures.",
@@ -3030,13 +3030,13 @@
       "ar": "فحص قدرات الناقل واتصاله"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3050,11 +3050,11 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read label/tracking support, connection state and credential status. Stored credentials do not prove a shipment or tracking event succeeded.",
-          "ar": "راجع دعم الملصقات والتتبع وحالة الاتصال والاعتماد. حفظ بيانات الاتصال لا يثبت نجاح شحنة أو حدث تتبع."
+          "ar": "راجع دعم بوالص الشحن والتتبع وحالة الاتصال والاعتماد. حفظ بيانات الاتصال لا يثبت نجاح شحنة أو حدث تتبع."
         },
         "guide": "features/shipping-providers"
       },
@@ -3067,12 +3067,12 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read label/tracking support, connection state and credential status. Stored credentials do not prove a shipment or tracking event succeeded.",
-          "ar": "راجع دعم الملصقات والتتبع وحالة الاتصال والاعتماد. حفظ بيانات الاتصال لا يثبت نجاح شحنة أو حدث تتبع."
+          "ar": "راجع دعم بوالص الشحن والتتبع وحالة الاتصال والاعتماد. حفظ بيانات الاتصال لا يثبت نجاح شحنة أو حدث تتبع."
         },
         "guide": "features/shipping-providers"
       }
@@ -3084,13 +3084,13 @@
       "ar": "قراءة أدلة الطرد"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3104,7 +3104,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match the order, carrier, tracking reference and recorded events. A missing carrier or arrival time needs follow-up; it is not delivery confirmation.",
@@ -3121,8 +3121,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match the order, carrier, tracking reference and recorded events. A missing carrier or arrival time needs follow-up; it is not delivery confirmation.",
@@ -3174,13 +3174,13 @@
       "ar": "مراجعة ما يراه المتسوق"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3194,10 +3194,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Select a tenant before reading its storefront configuration. The platform view is read-only; tenant operators maintain the editable storefront settings.",
+          "en": "Select a store before reading its storefront configuration. The platform view is read-only; store administrators maintain the editable storefront settings.",
           "ar": "اختر المتجر قبل قراءة إعدادات واجهته. عرض المنصة للقراءة فقط؛ تدير إدارة المتجر إعدادات الواجهة القابلة للتعديل."
         },
         "guide": "features/storefront"
@@ -3211,8 +3211,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Storefront presentation combines branding, announcements, content and publication. Inspect the live page after permitted changes; display settings are separate from payment eligibility.",
@@ -3246,13 +3246,13 @@
       "ar": "متابعة محادثة التذكرة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3266,7 +3266,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read subject, priority, state and replies together. A resolved support ticket is not proof of a payment, refund or shipment action.",
@@ -3283,8 +3283,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read subject, priority, state and replies together. A resolved support ticket is not proof of a payment, refund or shipment action.",
@@ -3372,13 +3372,13 @@
       "ar": "قراءة النسب والعملات المضبوطة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3392,7 +3392,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Check code, country, rate and active state. These are demo configuration values; interpret purchase amounts in their recorded currency.",
@@ -3409,8 +3409,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Check code, country, rate and active state. These are demo configuration values; interpret purchase amounts in their recorded currency.",
@@ -3444,13 +3444,13 @@
       "ar": "فصل الموظفين عن العملاء"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3464,7 +3464,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read each staff member’s role and active/blocked state. Staff permissions govern dashboard actions; customer groups do not grant these permissions.",
@@ -3481,8 +3481,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read each staff member’s role and active/blocked state. Staff permissions govern dashboard actions; customer groups do not grant these permissions.",
@@ -3516,13 +3516,13 @@
       "ar": "التحقق من سياق النشاط"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3536,10 +3536,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Confirm the tenant identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
+          "en": "Confirm the store identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
           "ar": "تحقق من هوية المتجر أو رمزه قبل مراجعة السجلات. تتبع الفروع متجرها ولا تشكل مساحات عمل مستقلة للبائع."
         },
         "guide": "features/tenants"
@@ -3553,11 +3553,11 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
-          "en": "Confirm the tenant identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
+          "en": "Confirm the store identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
           "ar": "تحقق من هوية المتجر أو رمزه قبل مراجعة السجلات. تتبع الفروع متجرها ولا تشكل مساحات عمل مستقلة للبائع."
         },
         "guide": "features/tenants"
@@ -3588,13 +3588,13 @@
       "ar": "إدارة هوية البائع"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3612,7 +3612,7 @@
         },
         "body": {
           "en": "Check the workspace. Profile, addresses, documents and payout accounts are separate tabs. Updating public profile text does not approve a document or verify a payout account.",
-          "ar": "تحقق من مساحة العمل. للملف والعناوين والمستندات وحسابات الصرف تبويبات مستقلة. تعديل النص العام لا يعتمد مستنداً ولا يتحقق من حساب صرف."
+          "ar": "تحقق من مساحة العمل. للملف والعناوين والمستندات وحسابات تحويل المستحقات تبويبات مستقلة. تعديل النص العام لا يعتمد مستنداً ولا يتحقق من حساب صرف."
         },
         "guide": "features/vendor-profile"
       }
@@ -3624,13 +3624,13 @@
       "ar": "التحقق من الاعتماد ومساحة العمل"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3644,10 +3644,10 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "A vendor organization and an approved tenant-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
+          "en": "A vendor organization and an approved store-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
           "ar": "تختلف مؤسسة البائع عن رابط اعتمادها في المتجر. تحقق من مساحة العمل النشطة قبل تفسير المنتجات أو العمولات أو الطلبات."
         },
         "guide": "features/vendors"
@@ -3661,11 +3661,11 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
-          "en": "A vendor organization and an approved tenant-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
+          "en": "A vendor organization and an approved store-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
           "ar": "تختلف مؤسسة البائع عن رابط اعتمادها في المتجر. تحقق من مساحة العمل النشطة قبل تفسير المنتجات أو العمولات أو الطلبات."
         },
         "guide": "features/vendors"
@@ -3683,7 +3683,7 @@
           "ar": "مساحة البائع"
         },
         "body": {
-          "en": "Check the workspace. A vendor organization and an approved tenant-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
+          "en": "Check the workspace. A vendor organization and an approved store-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
           "ar": "تحقق من مساحة العمل. تختلف مؤسسة البائع عن رابط اعتمادها في المتجر. تحقق من مساحة العمل النشطة قبل تفسير المنتجات أو العمولات أو الطلبات."
         },
         "guide": "features/vendors"
@@ -3701,7 +3701,7 @@
           "ar": "العميل"
         },
         "body": {
-          "en": "A vendor organization and an approved tenant-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
+          "en": "A vendor organization and an approved store-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
           "ar": "تختلف مؤسسة البائع عن رابط اعتمادها في المتجر. تحقق من مساحة العمل النشطة قبل تفسير المنتجات أو العمولات أو الطلبات."
         },
         "guide": "features/vendors"
@@ -3732,13 +3732,13 @@
       "ar": "فصل الرصيد الدفتري والمحجوز والمتاح"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3752,7 +3752,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Read available credit and its ledger, not just the total. Holds reserve value; gift-card claims and refunds require their own recorded transactions.",
@@ -3769,8 +3769,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Read available credit and its ledger, not just the total. Holds reserve value; gift-card claims and refunds require their own recorded transactions.",
@@ -3804,13 +3804,13 @@
       "ar": "فحص حالة التسليم بصورة مستقلة"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3824,7 +3824,7 @@
         ],
         "title": {
           "en": "Platform admin",
-          "ar": "إدارة المنصة"
+          "ar": "مسؤول المنصة"
         },
         "body": {
           "en": "Match endpoint, event subscriptions, registration state and delivery history. An active registration is not evidence that the receiving system accepted an event.",
@@ -3841,8 +3841,8 @@
           70
         ],
         "title": {
-          "en": "Tenant operator",
-          "ar": "إدارة المتجر"
+          "en": "Store admin",
+          "ar": "مسؤول المتجر"
         },
         "body": {
           "en": "Match endpoint, event subscriptions, registration state and delivery history. An active registration is not evidence that the receiving system accepted an event.",
@@ -3858,13 +3858,13 @@
       "ar": "حفظ متغير لوقت لاحق"
     },
     "intro": {
-      "en": "Choose your dashboard below. The explanation and screen change together.",
-      "ar": "اختر لوحتك أدناه ليتغير الشرح والشاشة معاً."
+      "en": "Choose your dashboard to see its screenshot and instructions.",
+      "ar": "اختر لوحة التحكم لعرض صورتها وخطوات استخدامها."
     },
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
+      "en": "Demo data · 17 November 2026 · Deployed admin, store and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions",
       "ar": "بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة"
     },
     "steps": [
@@ -3882,7 +3882,7 @@
         },
         "body": {
           "en": "Saved variants do not reserve stock or freeze a price. Opening the page refreshes the saved list; reopen the product and check its current price before buying.",
-          "ar": "لا يحجز حفظ المتغير مخزوناً ولا يثبت سعراً. يحدث فتح الصفحة قائمة الحفظ؛ افتح المنتج وراجع سعره الحالي قبل الشراء."
+          "ar": "الإضافة إلى المفضلة لا تحجز المخزون ولا تثبّت السعر. تُحدّث قائمة المفضلة عند فتحها. افتح المنتج وراجع سعره الحالي قبل الشراء."
         },
         "guide": "features/wishlist"
       }
@@ -3900,8 +3900,8 @@
     "video": true,
     "secondsPerStep": 12,
     "provenance": {
-      "en": "Demo customer · 17 November 2026 · Storefront commit 598d8cd with demo API · Read-only captures; no purchase or account changes submitted Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
-      "ar": "عميل تجريبي · 17 نوفمبر 2026 · إصدار الواجهة 598d8cd مع بيانات العرض · لقطات قراءة دون إرسال شراء أو تعديل حساب حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
+      "en": "Demo customer · 17 November 2026 · Storefront commit 598d8cd with demo API · Read-only captures; no purchase or account changes submitted. Catalog and product captures refreshed on 18 November 2026 using the local seeded storefront and Arabic or English product data.",
+      "ar": "عميل تجريبي · 17 نوفمبر 2026 · إصدار الواجهة 598d8cd مع بيانات العرض · لقطات قراءة دون إجراء عمليات شراء أو تغيير الحساب. حُدثت لقطات الكتالوج والمنتج في 18 نوفمبر 2026 باستخدام متجر محلي وبيانات منتجات بالعربية والإنجليزية."
     },
     "steps": [
       {
@@ -3974,12 +3974,12 @@
           80
         ],
         "title": {
-          "en": "Choose the exact variant",
-          "ar": "اختر المتغير المحدد"
+          "en": "Choose the product option",
+          "ar": "اختر خيار المنتج"
         },
         "body": {
           "en": "Check the selected option, current price and availability. Wishlist saves a variant without reserving stock.",
-          "ar": "راجع الخيار المحدد والسعر والإتاحة. تحفظ المفضلة المتغير دون حجز المخزون."
+          "ar": "راجع الخيار المحدد والسعر والإتاحة. تحفظ المفضلة خيار المنتج دون حجز المخزون."
         },
         "guide": "features/products",
         "imageAr": "customer-screen-products-ar.jpg",
@@ -3995,7 +3995,7 @@
   "customer-buy": {
     "title": {
       "en": "From saved item to checkout",
-      "ar": "من الحفظ إلى إتمام الشراء"
+      "ar": "من الحفظ إلى إتمام الطلب"
     },
     "intro": {
       "en": "Choose a step to see its actual customer screen and explanation. Enlarge for detail or watch the short captioned tour.",
@@ -4040,7 +4040,7 @@
         },
         "body": {
           "en": "Review variants, quantities, seller groups and accepted adjustments. Recheck the final currency and total.",
-          "ar": "راجع المتغيرات والكميات ومجموعات البائعين والتعديلات المقبولة. تحقق من العملة والإجمالي."
+          "ar": "راجع خيارات المنتج والكميات ومجموعات البائعين والتعديلات المقبولة. تحقق من العملة والإجمالي."
         },
         "guide": "features/cart"
       },
@@ -4309,8 +4309,8 @@
           "ar": "اختر تقريراً مولداً"
         },
         "body": {
-          "en": "Choose a report category here, then a generated period. Report snapshots run on a schedule; this page is the report directory, not a revenue result.",
-          "ar": "اختر فئة التقرير هنا ثم فترة مولدة. تجهز لقطات التقارير بجدول؛ هذه الصفحة فهرس التقارير لا نتيجة إيراد."
+          "en": "Choose a report type and a period with available data. Reports update on a schedule. Open a report to see the results.",
+          "ar": "اختر نوع التقرير وفترة تتوفر عنها بيانات. تُحدّث التقارير بانتظام. افتح التقرير لعرض النتائج."
         },
         "guide": "features/reports"
       },
@@ -4345,7 +4345,7 @@
           "ar": "طابق المنفذ والحدث"
         },
         "body": {
-          "en": "Match the event, time, affected record and actor. Use the tenant scope before investigating a record; a log entry is evidence of that event only.",
+          "en": "Match the event, time, affected record and actor. Use the store scope before investigating a record; a log entry is evidence of that event only.",
           "ar": "طابق الحدث والوقت والسجل المتأثر ومن نفذ الإجراء. حدد نطاق المتجر قبل التحقيق؛ يثبت الإدخال الحدث المسجل فقط."
         },
         "guide": "features/audit"
@@ -4381,7 +4381,7 @@
           "ar": "أكد هوية المتجر"
         },
         "body": {
-          "en": "Confirm the tenant identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
+          "en": "Confirm the store identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
           "ar": "تحقق من هوية المتجر أو رمزه قبل مراجعة السجلات. تتبع الفروع متجرها ولا تشكل مساحات عمل مستقلة للبائع."
         },
         "guide": "features/tenants"
@@ -4399,7 +4399,7 @@
           "ar": "راجع المشاركة والمساحة"
         },
         "body": {
-          "en": "A vendor organization and an approved tenant-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
+          "en": "A vendor organization and an approved store-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
           "ar": "تختلف مؤسسة البائع عن رابط اعتمادها في المتجر. تحقق من مساحة العمل النشطة قبل تفسير المنتجات أو العمولات أو الطلبات."
         },
         "guide": "features/vendors"
@@ -4413,8 +4413,8 @@
           70
         ],
         "title": {
-          "en": "Inspect the product and variant",
-          "ar": "افحص المنتج والمتغير"
+          "en": "Review the product and its option",
+          "ar": "راجع المنتج وخياره"
         },
         "body": {
           "en": "Match the name, SKU, brand and state before opening a product. A saved parent product is separate from a purchasable, active and priced variant.",
@@ -4471,7 +4471,7 @@
           "ar": "طابق الطلب وحالته"
         },
         "body": {
-          "en": "Platform oversight is read-only. Match the order to its invoice, tenant and vendor, then inspect payment and shipping states separately.",
+          "en": "Platform oversight is read-only. Match the order to its invoice, store and vendor, then inspect payment and shipping states separately.",
           "ar": "رقابة طلبات المنصة للقراءة فقط. طابق الطلب مع الفاتورة والمتجر والبائع، ثم افحص حالتي الدفع والشحن منفصلتين."
         },
         "guide": "features/orders"
@@ -4507,8 +4507,8 @@
           "ar": "اقرأ الحالة المالية المسجلة"
         },
         "body": {
-          "en": "Match the purchase, method, amount and recorded state. Awaiting confirmation, pending approval and paid require different next steps; a redirect is not payment proof.",
-          "ar": "طابق الشراء والطريقة والمبلغ والحالة المسجلة. لانتظار التأكيد والموافقة والدفع خطوات مختلفة؛ إعادة التوجيه ليست إثبات دفع."
+          "en": "Check the purchase, payment method, amount and status. The next step depends on whether the payment is awaiting confirmation, pending approval or paid. Confirm that the payment succeeded in the payment record. A redirect alone does not confirm payment.",
+          "ar": "راجع عملية الشراء ووسيلة الدفع والمبلغ والحالة. تعتمد الخطوة التالية على ما إذا كانت الدفعة بانتظار التأكيد أو الموافقة أو تم دفعها. تأكّد من حالة الدفع في السجل؛ فتح صفحة أخرى وحده لا يثبت نجاح الدفع."
         },
         "guide": "features/payments"
       },
@@ -4557,12 +4557,12 @@
           70
         ],
         "title": {
-          "en": "Read the commission context",
+          "en": "Review the commission details",
           "ar": "اقرأ سياق العمولة"
         },
         "body": {
           "en": "Match each commission to its order, rate, currency and status. A captured or settled commission is separate from the vendor receiving a payout.",
-          "ar": "طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع دفعة مالية."
+          "ar": "راجع الطلب ونسبة العمولة وعملتها وحالتها. تسجيل العمولة أو تسويتها لا يعني أن المستحقات حُوّلت إلى البائع."
         },
         "guide": "features/commission"
       },
@@ -4651,7 +4651,7 @@
           "ar": "أكد هوية المتجر"
         },
         "body": {
-          "en": "Confirm the tenant identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
+          "en": "Confirm the store identity or store code before reviewing records. Branches belong to their store; they are not separate vendor workspaces.",
           "ar": "تحقق من هوية المتجر أو رمزه قبل مراجعة السجلات. تتبع الفروع متجرها ولا تشكل مساحات عمل مستقلة للبائع."
         },
         "guide": "features/tenants"
@@ -4737,8 +4737,8 @@
           70
         ],
         "title": {
-          "en": "Inspect the product and variant",
-          "ar": "افحص المنتج والمتغير"
+          "en": "Review the product and its option",
+          "ar": "راجع المنتج وخياره"
         },
         "body": {
           "en": "Match the name, SKU, brand and state before opening a product. A saved parent product is separate from a purchasable, active and priced variant.",
@@ -4795,7 +4795,7 @@
           "ar": "راجع المشاركة والمساحة"
         },
         "body": {
-          "en": "A vendor organization and an approved tenant-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
+          "en": "A vendor organization and an approved store-vendor link are different records. Confirm the active workspace before interpreting products, commission or orders.",
           "ar": "تختلف مؤسسة البائع عن رابط اعتمادها في المتجر. تحقق من مساحة العمل النشطة قبل تفسير المنتجات أو العمولات أو الطلبات."
         },
         "guide": "features/vendors"
@@ -4849,8 +4849,8 @@
           "ar": "اقرأ الحالة المالية المسجلة"
         },
         "body": {
-          "en": "Match the purchase, method, amount and recorded state. Awaiting confirmation, pending approval and paid require different next steps; a redirect is not payment proof.",
-          "ar": "طابق الشراء والطريقة والمبلغ والحالة المسجلة. لانتظار التأكيد والموافقة والدفع خطوات مختلفة؛ إعادة التوجيه ليست إثبات دفع."
+          "en": "Check the purchase, payment method, amount and status. The next step depends on whether the payment is awaiting confirmation, pending approval or paid. Confirm that the payment succeeded in the payment record. A redirect alone does not confirm payment.",
+          "ar": "راجع عملية الشراء ووسيلة الدفع والمبلغ والحالة. تعتمد الخطوة التالية على ما إذا كانت الدفعة بانتظار التأكيد أو الموافقة أو تم دفعها. تأكّد من حالة الدفع في السجل؛ فتح صفحة أخرى وحده لا يثبت نجاح الدفع."
         },
         "guide": "features/payments"
       },
@@ -5044,11 +5044,11 @@
         ],
         "title": {
           "en": "Separate profile, documents and payout accounts",
-          "ar": "افصل الملف والمستندات وحسابات الصرف"
+          "ar": "افصل الملف والمستندات وحسابات تحويل المستحقات"
         },
         "body": {
           "en": "Check the workspace. Profile, addresses, documents and payout accounts are separate tabs. Updating public profile text does not approve a document or verify a payout account.",
-          "ar": "تحقق من مساحة العمل. للملف والعناوين والمستندات وحسابات الصرف تبويبات مستقلة. تعديل النص العام لا يعتمد مستنداً ولا يتحقق من حساب صرف."
+          "ar": "تحقق من مساحة العمل. للملف والعناوين والمستندات وحسابات تحويل المستحقات تبويبات مستقلة. تعديل النص العام لا يعتمد مستنداً ولا يتحقق من حساب صرف."
         },
         "guide": "features/vendor-profile"
       },
@@ -5097,8 +5097,8 @@
           70
         ],
         "title": {
-          "en": "Inspect the product and variant",
-          "ar": "افحص المنتج والمتغير"
+          "en": "Review the product and its option",
+          "ar": "راجع المنتج وخياره"
         },
         "body": {
           "en": "Check the workspace. Match the name, SKU, brand and state before opening a product. A saved parent product is separate from a purchasable, active and priced variant.",
@@ -5246,7 +5246,7 @@
         },
         "body": {
           "en": "Check the workspace. Match the order, amount, destination and state. A pending refund is not settled; return approval alone does not prove money was returned.",
-          "ar": "تحقق من مساحة العمل. طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت رد المال."
+          "ar": "تحقق من مساحة العمل. طابق الطلب والمبلغ والوجهة والحالة. الاسترداد المعلق غير مسوى؛ قبول الإرجاع وحده لا يثبت استرداد المبلغ."
         },
         "guide": "features/refunds"
       }
@@ -5277,12 +5277,12 @@
           70
         ],
         "title": {
-          "en": "Read the commission context",
+          "en": "Review the commission details",
           "ar": "اقرأ سياق العمولة"
         },
         "body": {
           "en": "Check the workspace. Match each commission to its order, rate, currency and status. A captured or settled commission is separate from the vendor receiving a payout.",
-          "ar": "تحقق من مساحة العمل. طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع دفعة مالية."
+          "ar": "تحقق من مساحة العمل. طابق العمولة مع طلبها ونسبتها وعملتها وحالتها. احتساب العمولة أو تسويتها يختلف عن استلام البائع تحويل مستحقات."
         },
         "guide": "features/commission"
       },
@@ -5438,7 +5438,7 @@
       "ar": "إدارة مشتريات الضيوف عبر اللوحات"
     },
     "intro": {
-      "en": "See the tenant control, order badge and vendor privacy boundary.",
+      "en": "See how the store manages guest checkout, identifies guest orders and limits vendor access to customer details.",
       "ar": "تعرّف على إعداد المتجر وشارة الطلب وحدود خصوصية البائع."
     },
     "video": true,
@@ -5473,7 +5473,7 @@
           "ar": "دع المتجر يختار"
         },
         "body": {
-          "en": "Guest checkout starts enabled. The tenant can save a change here to require sign-in for new purchases. Existing receipts remain accessible until guest access expires.",
+          "en": "Guest checkout starts enabled. The store can save a change here to require sign-in for new purchases. Existing receipts remain accessible until guest access expires.",
           "ar": "الشراء كضيف مفعّل افتراضياً. يمكن لمدير المتجر حفظ تغيير لطلب تسجيل الدخول في المشتريات الجديدة. تظل الفواتير متاحة حتى انتهاء وصول الضيف."
         },
         "guide": "features/storefront",
@@ -5658,8 +5658,8 @@
       "ar": "من طلب عام إلى مراجعة مصرح بها"
     },
     "intro": {
-      "en": "The CartJoin platform website is separate from tenant shops. Application submission never grants merchant access.",
-      "ar": "موقع منصة CartJoin منفصل عن متاجر المستأجرين. إرسال الطلب لا يمنح وصولًا إداريًا."
+      "en": "The CartJoin platform website is separate from individual stores. Applying does not give merchants access to a dashboard.",
+      "ar": "موقع منصة كارت جوين منفصل عن المتاجر. تقديم طلب الانضمام لا يمنح التاجر صلاحية الدخول إلى لوحة التحكم."
     },
     "video": true,
     "localizedVideo": true,
@@ -5991,12 +5991,12 @@
   },
   "feature-carrier-labels": {
     "title": {
-      "en": "Create a label without confusing it with dispatch",
-      "ar": "أنشئ ملصقاً دون الخلط بينه وبين تسليم الشحنة"
+      "en": "Create a shipping label",
+      "ar": "إنشاء بوليصة الشحن"
     },
     "intro": {
-      "en": "Follow the tenant permission and vendor label journey. Choose a step to see the matching screen and explanation. The short clips are captioned screenshot walkthroughs.",
-      "ar": "تابع صلاحية المتجر ومسار ملصق البائع. اختر خطوة لعرض الشاشة وشرحها معاً. الفيديوهات القصيرة شروح بالصور مع ترجمة نصية."
+      "en": "See how a store admin lets vendors create shipping labels, then follow the steps for creating a label. The short clips include captions.",
+      "ar": "تعرّف على طريقة السماح للبائعين بإنشاء بوالص شحن، ثم تابع خطوات إنشاء البوليصة. تتضمن المقاطع القصيرة شرحًا مكتوبًا."
     },
     "video": true,
     "localizedVideo": true,
@@ -6015,7 +6015,7 @@
         },
         "body": {
           "en": "Tenant → Carriers shows whether vendor labels are Allowed or Off for each connected carrier. An authorized operator reviews and confirms a change; it does not erase existing labels or cancel bookings.",
-          "ar": "تعرض شركات الشحن في لوحة المتجر ما إذا كانت ملصقات البائعين مسموحة أو متوقفة لكل شركة مرتبطة. يراجع المشغل المخول التغيير ويؤكده؛ ولا يحذف ذلك الملصقات القديمة أو يلغي الحجوزات."
+          "ar": "تعرض شركات الشحن في لوحة المتجر ما إذا كانت بوالص شحن البائعين مسموحة أو متوقفة لكل شركة مرتبطة. يراجع المشغل المخول التغيير ويؤكده؛ ولا يحذف ذلك بوالص الشحن القديمة أو يلغي الحجوزات."
         },
         "focus": [
           76,
@@ -6040,7 +6040,7 @@
         },
         "body": {
           "en": "Tenant → Shipments → Labels lists only eligible connected carriers. The local test choice needs no uploaded file: Generate label creates a private sample PDF. A manual carrier still requires the actual label file.",
-          "ar": "تعرض الشحنات ← بطاقات الشحن الشركات المرتبطة والمؤهلة فقط. لا يتطلب ناقل الاختبار المحلي رفع ملف: ينشئ زر إنشاء الملصق ملف PDF تجريبياً خاصاً. أما الناقل اليدوي فيتطلب رفع ملف الملصق الحقيقي."
+          "ar": "في صفحة الشحنات، تعرض بوالص الشحن شركات الشحن المرتبطة والمتاحة فقط. يتيح الخيار التجريبي إنشاء ملف PDF خاص للمعاينة دون رفع ملف. أما عند التعامل يدويًا مع شركة الشحن، فارفع ملف البوليصة الفعلي."
         },
         "focus": [
           21,
@@ -6065,7 +6065,7 @@
         },
         "body": {
           "en": "Vendor → Shipping → owned shipment → Add label replaces numeric carrier IDs with names. Only carriers enabled for this store and vendor label use appear. Ask the store operator when the list is empty; do not enter another store’s shipment.",
-          "ar": "يختار البائع الشحن ← شحنته الخاصة ← إضافة ملصق. تظهر أسماء الشركات بدلاً من أرقامها، وتقتصر القائمة على ما فعله المتجر لاستخدام البائع. إذا كانت فارغة فتواصل مع إدارة المتجر؛ لا تستخدم شحنة متجر آخر."
+          "ar": "يختار البائع الشحن ← شحنته الخاصة ← إضافة بوليصة شحن. تظهر أسماء الشركات بدلاً من أرقامها، وتقتصر القائمة على ما فعله المتجر لاستخدام البائع. إذا كانت فارغة فتواصل مع إدارة المتجر؛ لا تستخدم شحنة متجر آخر."
         },
         "focus": [
           28,
@@ -6090,7 +6090,7 @@
         },
         "body": {
           "en": "The saved row shows TEST, its tracking reference and a download link. Opening the private sample was verified locally. Repeating the same carrier label reuses the saved result. Label generation alone leaves the shipment Pending; real dispatch needs its separate authorized update.",
-          "ar": "يعرض السجل علامة تجريبي ومرجع التتبع ورابط التنزيل. تم التحقق محلياً من فتح الملف الخاص. تكرار ملصق نفس الشركة يعيد النتيجة المحفوظة. إنشاء الملصق وحده يترك الشحنة قيد الانتظار؛ وتسليمها الفعلي للناقل يحتاج تحديثاً منفصلاً مخولاً."
+          "ar": "يعرض السجل علامة تجريبي ومرجع التتبع ورابط التنزيل. تم التحقق محلياً من فتح الملف الخاص. تكرار بوليصة الشركة نفسها يعيد النتيجة المحفوظة. إنشاء البوليصة وحده يترك الشحنة قيد الانتظار؛ وتسليمها الفعلي لشركة الشحن يحتاج تحديثاً منفصلاً مخولاً."
         },
         "focus": [
           22,
@@ -6866,7 +6866,7 @@
     },
     "intro": {
       "en": "Save the active filters and sorting under a name. Staff with product export permission can also select rows on this page and export them as a CSV.",
-      "ar": "احفظ المرشحات والترتيب باسم تختاره. يستطيع الموظف المخوّل بتصدير المنتجات تحديد صفوف من الصفحة الحالية وتصديرها إلى ملف CSV."
+      "ar": "احفظ عوامل التصفية والترتيب باسم تختاره. يستطيع الموظف المخوّل بتصدير المنتجات تحديد صفوف من الصفحة الحالية وتصديرها إلى ملف CSV."
     },
     "steps": [
       {
@@ -6878,7 +6878,7 @@
         },
         "body": {
           "en": "Save the active filters and sorting under a name. Staff with product export permission can also select rows on this page and export them as a CSV.",
-          "ar": "احفظ المرشحات والترتيب باسم تختاره. يستطيع الموظف المخوّل بتصدير المنتجات تحديد صفوف من الصفحة الحالية وتصديرها إلى ملف CSV."
+          "ar": "احفظ عوامل التصفية والترتيب باسم تختاره. يستطيع الموظف المخوّل بتصدير المنتجات تحديد صفوف من الصفحة الحالية وتصديرها إلى ملف CSV."
         },
         "focus": [
           18,
@@ -7109,11 +7109,11 @@
     "secondsPerStep": 8,
     "title": {
       "en": "From purchased units to confirmed packing",
-      "ar": "من الوحدات المشتراة إلى التعبئة المؤكّدة"
+      "ar": "من الوحدات المشتراة إلى التغليف المؤكّدة"
     },
     "intro": {
       "en": "Follow the store, vendor and platform roles through one local packing example.",
-      "ar": "تابع دور المتجر والمورد والمنصة في مثال تعبئة محلي واحد."
+      "ar": "تابع دور المتجر والبائع والمنصة في مثال تغليف محلي واحد."
     },
     "provenance": {
       "en": "Zero-value local demonstration · Captured 18 November 2026 · Captioned screenshot walkthrough, not a live recording · No shipment or payment executed.",
@@ -7181,7 +7181,7 @@
         "imageAr": "tenant-packing-ar-confirmed.jpg",
         "title": {
           "en": "Confirm complete packing, not dispatch",
-          "ar": "تأكيد اكتمال التعبئة دون افتراض الشحن"
+          "ar": "تأكيد اكتمال التغليف دون افتراض الشحن"
         },
         "body": {
           "en": "Every remaining unit is assigned. The store confirmed revision 6 after reopening and voiding an unused parcel. The order remains confirmed and unpaid, with no handoff or delivery.",
@@ -7328,7 +7328,7 @@
       "ar": "مراجعة فشل مكافآت الطلبات"
     },
     "intro": {
-      "en": "A guided still-screenshot tour of the real tenant report. This demo has no failed checks; no retry or financial mutation is simulated.",
+      "en": "A guided still-screenshot tour of the real store report. This demo has no failed checks; no retry or financial mutation is simulated.",
       "ar": "شرح بالصور الثابتة لتقرير المتجر الفعلي. لا توجد مراجعات فاشلة في العرض ولا تتم محاكاة إعادة محاولة أو تغيير مالي."
     },
     "video": true,
@@ -7654,7 +7654,7 @@
       "ar": "تعرف على فحص تذكيرات السلة"
     },
     "intro": {
-      "en": "Follow the actual tenant screen with controlled local examples and a confirmation that is cancelled.",
+      "en": "Follow the actual store screen with controlled local examples and a confirmation that is cancelled.",
       "ar": "اتبع شاشة التاجر الفعلية بأمثلة محلية مقيدة وحوار تأكيد يُلغى في العرض."
     },
     "video": false,
@@ -7748,7 +7748,7 @@
       "ar": "تابع دعوة التقييم"
     },
     "intro": {
-      "en": "Actual local tenant screens with controlled synthetic examples. Inspect each channel and its history before acting.",
+      "en": "Actual local store screens with controlled synthetic examples. Inspect each channel and its history before acting.",
       "ar": "شاشات متجر محلية فعلية بأمثلة تجريبية مقيدة. افحص كل قناة وسجلها قبل التنفيذ."
     },
     "video": false,
@@ -8603,7 +8603,7 @@
         },
         "body": {
           "en": "A label or one parcel is not whole-order dispatch. Durations use supported samples and nearest-rank percentiles; missing timing is unavailable, not zero.",
-          "ar": "الملصق أو الطرد الواحد لا يعني شحن الطلب بالكامل. تستند المدد إلى عينات مثبتة ورتب مئوية بطريقة الرتبة الأقرب؛ الوقت المفقود غير متاح، وليس صفرًا."
+          "ar": "بوليصة الشحن أو تسليم طرد واحد لا يثبتان شحن الطلب بالكامل. تُحسب مدد الشحن من الحالات المثبتة باستخدام الرتب المئوية بطريقة الرتبة الأقرب. عند غياب التوقيت، تظهر المدة على أنها غير متاحة."
         },
         "guide": "features/order-operations"
       },
@@ -8722,7 +8722,7 @@
         },
         "body": {
           "en": "A label or one parcel is not whole-order dispatch. Durations use supported samples and nearest-rank percentiles; missing timing is unavailable, not zero.",
-          "ar": "الملصق أو الطرد الواحد لا يعني شحن الطلب بالكامل. تستند المدد إلى عينات مثبتة ورتب مئوية بطريقة الرتبة الأقرب؛ الوقت المفقود غير متاح، وليس صفرًا."
+          "ar": "بوليصة الشحن أو تسليم طرد واحد لا يثبتان شحن الطلب بالكامل. تُحسب مدد الشحن من الحالات المثبتة باستخدام الرتب المئوية بطريقة الرتبة الأقرب. عند غياب التوقيت، تظهر المدة على أنها غير متاحة."
         },
         "guide": "features/order-operations"
       },
@@ -8841,7 +8841,7 @@
         },
         "body": {
           "en": "A label or one parcel is not whole-order dispatch. Durations use supported samples and nearest-rank percentiles; missing timing is unavailable, not zero.",
-          "ar": "الملصق أو الطرد الواحد لا يعني شحن الطلب بالكامل. تستند المدد إلى عينات مثبتة ورتب مئوية بطريقة الرتبة الأقرب؛ الوقت المفقود غير متاح، وليس صفرًا."
+          "ar": "بوليصة الشحن أو تسليم طرد واحد لا يثبتان شحن الطلب بالكامل. تُحسب مدد الشحن من الحالات المثبتة باستخدام الرتب المئوية بطريقة الرتبة الأقرب. عند غياب التوقيت، تظهر المدة على أنها غير متاحة."
         },
         "guide": "features/order-operations"
       },

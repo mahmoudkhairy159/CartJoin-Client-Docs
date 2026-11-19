@@ -10,11 +10,11 @@
     "screens": 4,
     "title": {
       "en": "Sign-in, profiles and permissions",
-      "ar": "تسجيل الدخول والملف والصلاحيات"
+      "ar": "تسجيل الدخول والملفات الشخصية والصلاحيات"
     },
     "description": {
-      "en": "Each surface has its own account type. A customer login does not become a tenant or vendor login. Roles determine which menus, records and actions an operator can use.",
-      "ar": "لكل واجهة نوع حساب مستقل. حساب العميل لا يمنح صلاحيات إدارة المتجر أو البائع. يحدد الدور القوائم والسجلات والإجراءات المتاحة للمستخدم."
+      "en": "Each dashboard and the customer account use different sign-in details. Roles control which menus, records and actions each team member can access.",
+      "ar": "لكل لوحة تحكم ولحساب العميل بيانات دخول خاصة به. يحدد الدور القوائم والسجلات والإجراءات التي يمكن لكل عضو في الفريق الوصول إليها."
     }
   },
   {
@@ -24,12 +24,12 @@
     ],
     "screens": 1,
     "title": {
-      "en": "Attributes and variant choices",
-      "ar": "السمات وخيارات المتغيرات"
+      "en": "Product attributes and options",
+      "ar": "خصائص المنتج وخياراته"
     },
     "description": {
-      "en": "Attributes describe selectable differences such as size and color and provide the matrix from which variants are generated.",
-      "ar": "تصف السمات الاختلافات القابلة للاختيار مثل المقاس واللون، وتستخدم لتكوين مجموعة متغيرات المنتج."
+      "en": "Set up attributes such as size and colour, then combine their values to create product variants.",
+      "ar": "أضف خصائص مثل المقاس واللون، ثم اجمع قيمها لإنشاء خيارات المنتج."
     }
   },
   {
@@ -40,12 +40,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "Audit logs and investigation evidence",
-      "ar": "سجلات التدقيق وأدلة التحقيق"
+      "en": "Audit log",
+      "ar": "سجل التدقيق"
     },
     "description": {
-      "en": "Audit evidence links an action to its actor, time and affected record and supports operational investigation.",
-      "ar": "يربط التدقيق الإجراء بمنفذه وتوقيته وسجله، ويدعم التحقيق التشغيلي."
+      "en": "Use the audit log to see who made a change, when it happened and which record it affected.",
+      "ar": "راجع سجل التدقيق لمعرفة من أجرى التغيير، ومتى حدث، وأي سجل تأثّر به."
     }
   },
   {
@@ -56,12 +56,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "Banners and merchandising placements",
-      "ar": "اللافتات ومواضع العرض"
+      "en": "Storefront banners",
+      "ar": "بانرات واجهة المتجر"
     },
     "description": {
-      "en": "Banners direct customers to selected collections, products or campaigns within the storefront’s supported placements.",
-      "ar": "توجه اللافتات العميل إلى مجموعات أو منتجات أو حملات ضمن مواضع العرض المدعومة."
+      "en": "Place banners in supported areas of the storefront to link customers to selected collections, products or campaigns.",
+      "ar": "أضف بانرات في المواضع المتاحة بواجهة المتجر لتوجيه العملاء إلى مجموعات أو منتجات أو حملات محددة."
     }
   },
   {
@@ -74,12 +74,12 @@
     ],
     "screens": 5,
     "title": {
-      "en": "Brands and product associations",
-      "ar": "العلامات التجارية وربط المنتجات"
+      "en": "Product brands",
+      "ar": "العلامات التجارية للمنتجات"
     },
     "description": {
-      "en": "Brands provide recognizable product grouping and storefront discovery without changing vendor ownership.",
-      "ar": "تجمع العلامات التجارية المنتجات لتسهيل اكتشافها، دون تغيير ملكية البائع للمنتج."
+      "en": "Group products by brand so customers can find them more easily. Changing the brand leaves vendor ownership unchanged.",
+      "ar": "اجمع المنتجات حسب العلامة التجارية ليسهل على العملاء العثور عليها. تغيير العلامة التجارية لا يغيّر البائع المسؤول عن المنتج."
     }
   },
   {
@@ -89,12 +89,12 @@
     ],
     "screens": 1,
     "title": {
-      "en": "Cart and server-calculated totals",
-      "ar": "السلة والإجماليات المحسوبة"
+      "en": "Cart and totals",
+      "ar": "سلة التسوق والإجماليات"
     },
     "description": {
-      "en": "The cart holds variant quantities and current commercial adjustments before the purchase is committed.",
-      "ar": "تحفظ السلة كميات المتغيرات والتعديلات التجارية الحالية قبل تثبيت الشراء."
+      "en": "Before you place an order, the cart shows your selected variants, quantities, discounts and totals calculated by the store.",
+      "ar": "قبل تأكيد الطلب، تعرض سلة التسوق خيارات المنتجات والكميات والخصومات والإجماليات التي يحسبها المتجر."
     }
   },
   {
@@ -106,12 +106,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Categories and hierarchy",
-      "ar": "التصنيفات وشجرتها"
+      "en": "Product categories",
+      "ar": "تصنيفات المنتجات"
     },
     "description": {
-      "en": "Categories organize discovery and can be used to target discounts and other eligibility rules.",
-      "ar": "تنظم التصنيفات اكتشاف المنتجات، ويمكن استخدامها لتحديد أهلية الخصومات والقواعد المرتبطة بها."
+      "en": "Organise products into categories so customers can find them. Categories can also determine which products qualify for a discount.",
+      "ar": "نظّم المنتجات في تصنيفات لتسهيل العثور عليها. ويمكنك استخدام التصنيفات لتحديد المنتجات التي يشملها الخصم."
     }
   },
   {
@@ -121,12 +121,12 @@
     ],
     "screens": 1,
     "title": {
-      "en": "Checkout and vendor-split orders",
-      "ar": "إتمام الشراء وتقسيم الطلبات حسب البائع"
+      "en": "Checkout and orders by vendor",
+      "ar": "إتمام الطلب وتقسيمه حسب البائع"
     },
     "description": {
-      "en": "One checkout creates one umbrella invoice with a separate fulfillment order for each vendor group, including tenant-owned goods as their own group.",
-      "ar": "ينشئ إتمام الشراء فاتورة موحدة وطلب تنفيذ مستقلاً لكل مجموعة بائع، وتشكل منتجات المتجر نفسه مجموعة مستقلة."
+      "en": "Checkout creates one invoice for the purchase. Each vendor gets a separate order to prepare, including a separate order for items sold by the store itself.",
+      "ar": "عند إتمام الطلب، تصدر فاتورة واحدة لعملية الشراء. يحصل كل بائع على طلب منفصل لتجهيزه، وتُجمع المنتجات التي يبيعها المتجر مباشرةً في طلب منفصل أيضًا."
     }
   },
   {
@@ -138,12 +138,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "CMS pages, content blocks and menus",
-      "ar": "صفحات المحتوى والكتل والقوائم"
+      "en": "Pages, content sections and menus",
+      "ar": "الصفحات وأقسام المحتوى والقوائم"
     },
     "description": {
-      "en": "CMS content lets tenant operators maintain customer-facing information and navigation without changing the application code.",
-      "ar": "تمكن إدارة المحتوى المتجر من تعديل معلومات العميل والتنقل دون تعديل شيفرة التطبيق."
+      "en": "Store admins can update the information and navigation customers see from the content editor.",
+      "ar": "يمكن لمسؤولي المتجر تحديث المعلومات والقوائم التي تظهر للعملاء من محرّر المحتوى."
     }
   },
   {
@@ -155,12 +155,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Commission rules, ledger and adjustments",
-      "ar": "قواعد العمولة وسجلها وتعديلاتها"
+      "en": "Commission rules, records and adjustments",
+      "ar": "قواعد العمولات وسجلاتها وتسوياتها"
     },
     "description": {
-      "en": "Commission records the marketplace’s share of vendor sales and the evidence behind each calculation.",
-      "ar": "تسجل العمولة حصة السوق من مبيعات البائع والأدلة التي بني عليها الحساب."
+      "en": "Review the marketplace’s commission on vendor sales and see how each amount was calculated.",
+      "ar": "راجع عمولة السوق الإلكتروني على مبيعات البائعين وكيف حُسب كل مبلغ."
     }
   },
   {
@@ -171,12 +171,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "Coupons and eligibility",
-      "ar": "الكوبونات وشروط الاستحقاق"
+      "en": "Coupons and usage rules",
+      "ar": "كوبونات الخصم وشروط استخدامها"
     },
     "description": {
-      "en": "Coupons apply controlled discounts to qualifying carts: percentage, fixed value or shipping discount.",
-      "ar": "تطبق الكوبونات خصماً مضبوطاً على السلال المؤهلة: نسبة أو قيمة ثابتة أو خصم شحن."
+      "en": "A coupon can give customers a percentage discount, a fixed discount or a shipping discount. Its rules determine which orders qualify.",
+      "ar": "يمكن لكوبون الخصم أن يقدّم خصمًا بنسبة مئوية أو بمبلغ ثابت أو على تكلفة الشحن. تحدد شروط الكوبون الطلبات التي يشملها الخصم."
     }
   },
   {
@@ -188,11 +188,11 @@
     "screens": 2,
     "title": {
       "en": "Customers, addresses and groups",
-      "ar": "العملاء والعناوين والمجموعات"
+      "ar": "العملاء والعناوين ومجموعات العملاء"
     },
     "description": {
-      "en": "Customer records connect purchases, contact details, addresses and account services. Groups allow targeted commercial configuration such as price-list assignment.",
-      "ar": "يربط حساب العميل المشتريات وبيانات الاتصال والعناوين وخدمات الحساب. تتيح المجموعات تخصيص إعدادات تجارية مثل قوائم الأسعار."
+      "en": "See a customer’s purchases, contact details and addresses. Use groups to assign offers such as a separate price list.",
+      "ar": "راجع مشتريات العميل وبيانات الاتصال وعناوينه. استخدم مجموعات العملاء لتخصيص مزايا مثل قائمة أسعار مستقلة."
     }
   },
   {
@@ -205,12 +205,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Dashboard metrics and daily triage",
-      "ar": "مؤشرات اللوحات والمتابعة اليومية"
+      "en": "Dashboard metrics and daily tasks",
+      "ar": "مؤشرات لوحة التحكم والمهام اليومية"
     },
     "description": {
-      "en": "Dashboards summarize activity and waiting work for the signed-in actor’s scope; they are an entry point to operational records.",
-      "ar": "تلخص اللوحات النشاط والعمل المنتظر في نطاق المستخدم، وهي مدخل للسجلات التشغيلية."
+      "en": "See activity and tasks for the store or workspace you can access, then open the relevant records to follow up.",
+      "ar": "راجع النشاط والمهام في المتجر أو مساحة العمل المتاحة لك، ثم افتح السجلات لمتابعتها."
     }
   },
   {
@@ -222,12 +222,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Flash sales and allocated offer stock",
-      "ar": "التخفيضات الخاطفة ومخزون العرض"
+      "en": "Flash sales and offer stock",
+      "ar": "العروض لفترة محدودة ومخزونها"
     },
     "description": {
-      "en": "Flash sales expose time-limited discounted offers with campaign-specific product/variant eligibility and stock constraints.",
-      "ar": "تعرض التخفيضات الخاطفة عروضاً محددة المدة بأهلية منتجات أو متغيرات وقيود مخزون خاصة."
+      "en": "Set up a limited-time discount, choose the products or variants it applies to and allocate stock for the offer.",
+      "ar": "حدّد خصمًا لفترة محدودة، واختر المنتجات أو خياراتها التي يشملها العرض، وخصّص الكمية المتاحة له."
     }
   },
   {
@@ -239,12 +239,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Gift cards and redemption policies",
-      "ar": "بطاقات الهدايا وسياسات الاسترداد"
+      "en": "Gift cards and usage rules",
+      "ar": "بطاقات الهدايا وشروط استخدامها"
     },
     "description": {
-      "en": "Gift cards represent redeemable value governed by tenant policies and their own balance/transaction history.",
-      "ar": "تمثل بطاقات الهدايا قيمة قابلة للاستخدام تحكمها سياسات المتجر وسجل رصيد وحركات مستقل."
+      "en": "Each gift card has a balance and a transaction history. Store rules determine when and how customers can use it.",
+      "ar": "لكل بطاقة هدايا رصيد وسجل معاملات. تحدد قواعد المتجر متى وكيف يمكن للعملاء استخدامها."
     }
   },
   {
@@ -257,11 +257,11 @@
     "screens": 3,
     "title": {
       "en": "Inventory, reservations and stock movements",
-      "ar": "المخزون والحجوزات والحركات"
+      "ar": "المخزون والحجوزات وحركات المخزون"
     },
     "description": {
-      "en": "Stock balances distinguish physically held units from units reserved for pending purchases. Movements explain why stock changed.",
-      "ar": "يميز رصيد المخزون بين الكمية الفعلية والكمية المحجوزة للمشتريات. توضح الحركات سبب كل تغيير."
+      "en": "Stock balances distinguish units on hand from units reserved for pending purchases. Stock movements explain each change.",
+      "ar": "يوضح رصيد المخزون الفرق بين الكمية الفعلية والكمية المحجوزة لعمليات الشراء المعلّقة. وتبيّن حركات المخزون سبب كل تغيير."
     }
   },
   {
@@ -278,8 +278,8 @@
       "ar": "الفواتير والإشعارات الدائنة والترقيم"
     },
     "description": {
-      "en": "The invoice is the customer’s purchase document across vendor orders. Credit notes record settled refund corrections without editing the original invoice.",
-      "ar": "الفاتورة مستند شراء العميل لجميع طلبات البائعين. تسجل الإشعارات الدائنة الاستردادات المستقرة دون تعديل الفاتورة الأصلية."
+      "en": "The invoice documents the customer’s purchase across all vendor orders. Credit notes record completed refunds while preserving the original invoice.",
+      "ar": "توثّق الفاتورة عملية شراء العميل وتشمل طلبات كل البائعين. توثّق الإشعارات الدائنة المبالغ المستردة بعد اكتمالها مع بقاء الفاتورة الأصلية كما هي."
     }
   },
   {
@@ -291,12 +291,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Loyalty programs, points and expiry",
-      "ar": "برامج الولاء والنقاط وانتهاؤها"
+      "en": "Loyalty programs and points",
+      "ar": "برامج الولاء والنقاط"
     },
     "description": {
-      "en": "Loyalty manages earned points, eligibility, expiry and redemption under a versioned tenant program.",
-      "ar": "يدير الولاء النقاط المكتسبة وأهليتها وانتهاءها واستخدامها ضمن برنامج متجر ذي إصدارات."
+      "en": "A loyalty program sets how customers earn and redeem points, who qualifies and when points expire. Program rules are saved by version.",
+      "ar": "يحدد برنامج الولاء كيفية كسب النقاط واستبدالها، ومن يستحقها، ومتى تنتهي صلاحيتها. تُحفظ القواعد في إصدارات."
     }
   },
   {
@@ -309,12 +309,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Notifications and attention queues",
-      "ar": "الإشعارات وقوائم المتابعة"
+      "en": "Notifications and follow-up",
+      "ar": "الإشعارات والمتابعة"
     },
     "description": {
-      "en": "Notifications surface business events and direct a user to the record that needs attention.",
-      "ar": "تعرض الإشعارات أحداث العمل وتوجه المستخدم للسجل الذي يحتاج المتابعة."
+      "en": "Notifications tell you what happened and link you to the record that needs your attention.",
+      "ar": "تعرفك الإشعارات بما حدث وتوصلك إلى السجل الذي يحتاج إلى متابعة."
     }
   },
   {
@@ -327,12 +327,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Orders and fulfillment decisions",
-      "ar": "الطلبات وقرارات التنفيذ"
+      "en": "Orders and fulfilment",
+      "ar": "الطلبات وتجهيزها"
     },
     "description": {
-      "en": "An order is a vendor-specific operational unit with frozen items, addresses and financial values, plus a recorded status timeline.",
-      "ar": "الطلب وحدة تشغيل تخص بائعاً محدداً وتحفظ البنود والعناوين والمبالغ مع سجل لحالات التنفيذ."
+      "en": "Each order belongs to one seller, either the store or a vendor. Its original items, addresses and amounts are kept on record, along with the history of status changes.",
+      "ar": "يخصّ كل طلب جهة بيع واحدة، سواء كان المتجر نفسه أو أحد البائعين. تُحفظ المنتجات والعناوين والمبالغ الأصلية مع سجل تغيّرات حالة الطلب."
     }
   },
   {
@@ -345,11 +345,11 @@
     "screens": 4,
     "title": {
       "en": "Payments, proof and manual confirmation",
-      "ar": "الدفع والإثبات والتأكيد اليدوي"
+      "ar": "المدفوعات وإثبات الدفع والتأكيد اليدوي"
     },
     "description": {
-      "en": "Payments track what the buyer owes and what has actually been captured against an invoice. Online and manual gateways have different confirmation steps.",
-      "ar": "يتتبع الدفع ما يستحق على العميل وما تم تحصيله فعلياً مقابل الفاتورة. تختلف خطوات التأكيد بين البوابات الإلكترونية واليدوية."
+      "en": "See how much the customer owes and how much has been collected against the invoice. Confirmation differs for online and manual payment methods.",
+      "ar": "راجع المبلغ المستحق على العميل وما تم تحصيله مقابل الفاتورة. تختلف خطوات التأكيد بين وسائل الدفع الإلكتروني واليدوي."
     }
   },
   {
@@ -360,12 +360,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "Prices, price lists and customer eligibility",
-      "ar": "الأسعار وقوائم الأسعار وأهلية العملاء"
+      "en": "Prices and price lists",
+      "ar": "الأسعار وقوائم الأسعار"
     },
     "description": {
-      "en": "Pricing resolves the amount a customer is eligible to pay; price lists associate configured commercial prices with eligible buyers or groups.",
-      "ar": "تحدد خدمة التسعير السعر المستحق للعميل؛ وتربط قوائم الأسعار الأسعار التجارية المحددة بالعملاء أو المجموعات المؤهلة."
+      "en": "Prices depend on the rules that apply to the customer. You can assign a price list to specific customers or groups.",
+      "ar": "يُحسب السعر حسب القواعد التي تنطبق على العميل. يمكنك تخصيص قائمة أسعار لعملاء أو مجموعات محددة."
     }
   },
   {
@@ -378,12 +378,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Products, variants and publication",
-      "ar": "المنتجات والمتغيرات والنشر"
+      "en": "Products, options and publishing",
+      "ar": "المنتجات وخياراتها والنشر"
     },
     "description": {
-      "en": "The product describes an offer; its variants carry the purchasable SKU, price and stock identity. Publication controls whether the offer can be sold.",
-      "ar": "يصف المنتج العرض، وتحمل متغيراته رمز الصنف والسعر وهوية المخزون القابلة للشراء. يتحكم النشر في إتاحة البيع."
+      "en": "Each product option has a SKU, price and stock record. Publishing determines whether customers can buy the product.",
+      "ar": "لكل خيار من خيارات المنتج رمز صنف وسعر وسجل مخزون. يحدد النشر ما إذا كان المنتج متاحًا للشراء."
     }
   },
   {
@@ -396,11 +396,11 @@
     "screens": 3,
     "title": {
       "en": "Review and publish vendor products",
-      "ar": "مراجعة منتجات البائع ونشرها"
+      "ar": "مراجعة منتجات البائعين ونشرها"
     },
     "description": {
-      "en": "Submit, explain corrections, review revised content, retain publication receipts and follow store import results.",
-      "ar": "أرسل العرض ووضح التصحيحات وراجع المحتوى الجديد واحتفظ بإيصالات النشر وتابع نتائج استيراد المتجر."
+      "en": "Submit products for review, explain what needs to change, review the updated listing and check publication or import results.",
+      "ar": "أرسل المنتجات للمراجعة، ووضّح التعديلات المطلوبة، وراجع بيانات المنتج بعد تعديلها، وتابع نتائج النشر أو الاستيراد."
     }
   },
   {
@@ -410,12 +410,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Promotions and discount configuration",
-      "ar": "العروض وإعدادات الخصم"
+      "en": "Promotions and discounts",
+      "ar": "العروض الترويجية والخصومات"
     },
     "description": {
-      "en": "Promotion screens expose configured discount tools, while the backend’s general promotion module remains limited relative to the roadmap.",
-      "ar": "تعرض شاشات العروض أدوات الخصم المتاحة، بينما تظل بعض إمكانات الوحدة العامة محدودة مقارنة بخطة العمل."
+      "en": "The promotion screens show the discount tools currently available. Additional tools are listed in the roadmap.",
+      "ar": "تعرض شاشات العروض الترويجية أدوات الخصم المتاحة حاليًا. وتوضح خطة التطوير الأدوات الإضافية."
     }
   },
   {
@@ -428,11 +428,11 @@
     "screens": 3,
     "title": {
       "en": "Refund allocation and reconciliation",
-      "ar": "توزيع الاسترداد وتسويته"
+      "ar": "توزيع المبالغ المستردة ومطابقتها"
     },
     "description": {
-      "en": "Refunds reverse eligible captured value without overwriting the purchase. Allocation protects each order and payment from being refunded twice.",
-      "ar": "يعيد الاسترداد القيمة المحصلة المؤهلة دون تغيير أصل الشراء. يحمي التوزيع كل طلب ودفعة من الاسترداد المكرر."
+      "en": "Refunds return eligible amounts already collected and leave the original purchase record intact. Allocating each refund helps keep the same amount from being refunded twice.",
+      "ar": "يسترد العميل المبالغ المحصّلة التي تنطبق عليها الشروط، مع بقاء سجل الشراء الأصلي كما هو. يساعد توزيع المبالغ المستردة على عدم ردّ المبلغ نفسه مرتين."
     }
   },
   {
@@ -444,12 +444,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Reports, exports and background jobs",
-      "ar": "التقارير والتصدير والمهام الخلفية"
+      "en": "Reports, exports and background tasks",
+      "ar": "التقارير والتصدير والمهام في الخلفية"
     },
     "description": {
-      "en": "Reports turn scoped operational data into comparisons and exportable evidence. Long-running exports can complete asynchronously.",
-      "ar": "تحول التقارير بيانات التشغيل إلى مقارنات وأدلة قابلة للتصدير. قد تكتمل التصديرات الكبيرة في الخلفية."
+      "en": "Compare figures for the data you can access and export reports. Large exports can continue in the background.",
+      "ar": "قارن الأرقام ضمن البيانات المتاحة لك وصدّر التقارير. يمكن أن يستمر تصدير الملفات الكبيرة في الخلفية."
     }
   },
   {
@@ -462,12 +462,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Returns, inspection and exchange",
-      "ar": "المرتجعات والفحص والاستبدال"
+      "en": "Return requests, inspection and exchange",
+      "ar": "طلبات الإرجاع والفحص والاستبدال"
     },
     "description": {
-      "en": "Returns manage the physical post-delivery process separately from the financial refund decision.",
-      "ar": "تدير المرتجعات العملية المادية بعد التسليم بصورة منفصلة عن قرار الاسترداد المالي."
+      "en": "Use return requests to receive and inspect goods after delivery. The decision to refund the customer’s money is a separate step.",
+      "ar": "استخدم طلبات الإرجاع لاستلام المنتجات وفحصها بعد التسليم. ويُتخذ قرار استرداد المبلغ للعميل في خطوة مستقلة."
     }
   },
   {
@@ -481,11 +481,11 @@
     "screens": 4,
     "title": {
       "en": "Reviews, questions and moderation",
-      "ar": "المراجعات والأسئلة والإشراف"
+      "ar": "التقييمات والأسئلة والمراجعة"
     },
     "description": {
-      "en": "Reviews and product questions support buyer trust while moderation controls what becomes public.",
-      "ar": "تدعم التقييمات وأسئلة المنتجات ثقة العميل، وتحدد المراجعة الإشرافية ما ينشر للعموم."
+      "en": "Reviews and product questions help customers decide what to buy. Moderation controls which responses and reviews appear publicly.",
+      "ar": "تساعد تقييمات المنتجات والأسئلة عنها العملاء على اتخاذ قرار الشراء. وتحدد المراجعة ما يظهر للجميع من التقييمات والردود."
     }
   },
   {
@@ -497,12 +497,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Search, discovery and recommendations",
-      "ar": "البحث والاكتشاف والتوصيات"
+      "en": "Search and recommendations",
+      "ar": "البحث وتوصيات المنتجات"
     },
     "description": {
-      "en": "Customers discover published offers through catalog filters and search. Operators inspect search-query logs; tenant recommendations provide configured product-discovery tools where available.",
-      "ar": "يكتشف العملاء العروض المنشورة عبر البحث والمرشحات. تراجع الإدارة سجلات كلمات البحث، وتوفر توصيات المتجر أدوات اكتشاف بحسب المتاح."
+      "en": "Customers find published offers by searching and filtering the catalog. Store staff can review search terms and manage product recommendations where available.",
+      "ar": "يجد العملاء العروض المنشورة بالبحث وتصفية الكتالوج. يمكن لفريق المتجر مراجعة كلمات البحث وإدارة توصيات المنتجات إذا كانت الميزة متاحة."
     }
   },
   {
@@ -513,12 +513,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "SEO metadata and discoverability",
-      "ar": "بيانات محركات البحث وقابلية الاكتشاف"
+      "en": "Search engine settings",
+      "ar": "إعدادات تحسين محركات البحث"
     },
     "description": {
-      "en": "SEO tools maintain how supported pages describe themselves to search engines and external previews.",
-      "ar": "تحدد أدوات تحسين البحث كيف تصف الصفحات المدعومة نفسها لمحركات البحث ومعاينات الروابط."
+      "en": "Choose how supported pages appear in search engines and when someone shares a link.",
+      "ar": "حدّد كيفية ظهور الصفحات المدعومة في محركات البحث وعند مشاركة روابطها."
     }
   },
   {
@@ -530,12 +530,12 @@
     ],
     "screens": 4,
     "title": {
-      "en": "Platform settings, flags and reference data",
-      "ar": "إعدادات المنصة والخصائص والبيانات المرجعية"
+      "en": "Platform settings, feature controls and reference data",
+      "ar": "إعدادات المنصة والتحكم في المزايا والبيانات المرجعية"
     },
     "description": {
-      "en": "Settings and reference data provide shared operational inputs such as geography, tags, colors and permitted feature controls.",
-      "ar": "توفر الإعدادات والبيانات المرجعية مدخلات مشتركة كالمناطق والوسوم والألوان والتحكم بالخصائص المتاحة."
+      "en": "Manage shared reference data, such as regions, tags and colours, and control which platform features are available.",
+      "ar": "أدِر البيانات المرجعية المشتركة، مثل المناطق والوسوم والألوان، وحدّد المزايا المتاحة على المنصة."
     }
   },
   {
@@ -548,11 +548,11 @@
     "screens": 3,
     "title": {
       "en": "Settlements, disputes and payouts",
-      "ar": "التسويات والاعتراضات ودفعات الصرف"
+      "ar": "التسويات والاعتراضات وتحويلات المستحقات"
     },
     "description": {
-      "en": "Settlements turn immutable vendor credits and deductions for a period into a payable balance; payouts record the transfer attempt and result.",
-      "ar": "تحول التسوية مستحقات البائع وخصوماته الثابتة لفترة إلى رصيد مستحق، وتسجل دفعة الصرف محاولة التحويل ونتيجتها."
+      "en": "A settlement totals a vendor’s fixed credits and deductions for the period. A payout records the transfer attempt and its result.",
+      "ar": "يجمع كشف التسوية مستحقات البائع والخصومات المثبتة خلال الفترة. ويسجّل تحويل المستحقات محاولة التحويل ونتيجتها."
     }
   },
   {
@@ -563,12 +563,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "Shipping providers and carrier operations",
-      "ar": "مزودو الشحن وعمليات الناقل"
+      "en": "Shipping carriers and integrations",
+      "ar": "شركات الشحن والربط معها"
     },
     "description": {
-      "en": "Provider configuration connects parcel operations to supported carriers and their tracking/event behavior.",
-      "ar": "تربط إعدادات المزود تشغيل الطرود بشركات الشحن المدعومة وسلوك التتبع والأحداث."
+      "en": "Connect supported carriers and see which shipping labels and tracking updates each carrier supports.",
+      "ar": "اربط شركات الشحن المدعومة واعرف بوالص الشحن وتحديثات التتبع التي تدعمها كل شركة."
     }
   },
   {
@@ -582,11 +582,11 @@
     "screens": 4,
     "title": {
       "en": "Shipping zones, methods, rates and shipments",
-      "ar": "مناطق الشحن وطرقه وأسعاره والشحنات"
+      "ar": "مناطق وطرق وأسعار الشحن والشحنات"
     },
     "description": {
-      "en": "Shipping configuration prices delivery; shipments record the actual parcel lifecycle. These are related but separate responsibilities.",
-      "ar": "تحدد إعدادات الشحن تكلفة التوصيل، وتسجل الشحنة دورة الطرد الفعلية. ترتبط الوظيفتان وتبقيان منفصلتين."
+      "en": "Shipping settings determine delivery costs. Shipment records show the progress of each parcel.",
+      "ar": "تحدد إعدادات الشحن تكلفة التوصيل. توضح سجلات الشحنات حالة كل طرد."
     }
   },
   {
@@ -598,12 +598,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Storefront identity, settings and maintenance",
-      "ar": "هوية واجهة التسوق وإعداداتها والصيانة"
+      "en": "Storefront branding and settings",
+      "ar": "هوية واجهة المتجر وإعداداتها"
     },
     "description": {
-      "en": "Storefront configuration shapes the customer-facing experience for the resolved tenant, including branding and the available operational settings.",
-      "ar": "تشكل إعدادات الواجهة تجربة العميل للمتجر المحدد، بما فيها الهوية والإعدادات التشغيلية المتاحة."
+      "en": "Manage the branding and settings that shape what customers see in your store.",
+      "ar": "أدِر الهوية والإعدادات التي تحدد ما يراه العملاء على واجهة متجرك."
     }
   },
   {
@@ -620,8 +620,8 @@
       "ar": "تذاكر الدعم والأسئلة الشائعة"
     },
     "description": {
-      "en": "Support tickets preserve a conversation and evidence about an issue. FAQs provide reusable public help organized by category.",
-      "ar": "تحفظ تذكرة الدعم الحوار والأدلة للمشكلة. توفر الأسئلة الشائعة مساعدة عامة منظمة بالتصنيف."
+      "en": "Use a support ticket to keep the conversation and evidence about an issue together. Organise common answers into FAQ categories.",
+      "ar": "احتفظ بالمحادثة والمرفقات المتعلقة بالمشكلة في تذكرة الدعم، ونظّم الإجابات المتكررة في تصنيفات الأسئلة الشائعة."
     }
   },
   {
@@ -633,12 +633,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Taxes, currencies and monetary interpretation",
-      "ar": "الضرائب والعملات وفهم المبالغ"
+      "en": "Taxes, currencies and amounts",
+      "ar": "الضرائب والعملات والمبالغ"
     },
     "description": {
-      "en": "Tax and currency configuration give monetary values their commercial meaning. Always read amounts together with their currency and applied tax context.",
-      "ar": "تحدد الضرائب والعملات معنى المبالغ تجارياً. اقرأ المبلغ مع عملته وسياق الضريبة المطبقة."
+      "en": "Check each amount with its currency and any tax applied to it.",
+      "ar": "راجع كل مبلغ مع عملته والضريبة المطبّقة عليه."
     }
   },
   {
@@ -654,8 +654,8 @@
       "ar": "الموظفون والأدوار وإدارة الحسابات"
     },
     "description": {
-      "en": "Delegate work to named staff without sharing an owner account. Platform, tenant and vendor teams have separate role catalogues.",
-      "ar": "وزع العمل على حسابات موظفين مسماة بدلاً من مشاركة حساب المالك. توجد أدوار منفصلة لفرق المنصة والمتجر والبائع."
+      "en": "Give each team member their own account and the permissions they need. Platform, store and vendor teams manage roles separately.",
+      "ar": "خصّص لكل عضو في الفريق حسابًا وصلاحيات تناسب مهامه. يدير كل فريق، سواء للمنصة أو المتجر أو البائع، أدواره بصورة مستقلة."
     }
   },
   {
@@ -667,12 +667,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Tenants, store identity and branches",
-      "ar": "المتاجر وهوية المتجر والفروع"
+      "en": "Stores, branding and branches",
+      "ar": "المتاجر وهويتها وفروعها"
     },
     "description": {
-      "en": "A tenant is an independently operated storefront. Branches describe that tenant’s operating locations, while store identity and commerce settings control its presentation and behavior.",
-      "ar": "المتجر المستقل هو نطاق تشغيل خاص داخل المنصة. تمثل الفروع مواقع هذا المتجر، وتحدد الهوية والإعدادات طريقة عرضه وتشغيله."
+      "en": "Each store operates independently. Branches record its locations, and the store’s branding and sales settings determine how it looks and operates.",
+      "ar": "يعمل كل متجر بصورة مستقلة. توثّق الفروع مواقعه، وتحدد إعدادات الهوية والمبيعات طريقة عرضه وتشغيله."
     }
   },
   {
@@ -683,11 +683,11 @@
     "screens": 1,
     "title": {
       "en": "Vendor profile, documents and payout accounts",
-      "ar": "ملف البائع والمستندات وحسابات الصرف"
+      "ar": "الملف الشخصي للبائع ومستنداته وحسابات تحويل المستحقات"
     },
     "description": {
-      "en": "Maintain the business identity and destination details used in marketplace operations and settlement approval.",
-      "ar": "احتفظ بهوية المؤسسة ومستنداتها وبيانات جهة الصرف المستخدمة في تشغيل السوق واعتماد التسويات."
+      "en": "Keep the vendor’s business details, documents and payout accounts up to date for marketplace operations and settlement approval.",
+      "ar": "حدّث بيانات نشاط البائع ومستنداته وحسابات تحويل المستحقات المستخدمة في السوق الإلكتروني وعند اعتماد التسويات."
     }
   },
   {
@@ -700,12 +700,12 @@
     ],
     "screens": 5,
     "title": {
-      "en": "Vendor onboarding and workspace approval",
-      "ar": "انضمام البائع واعتماد مساحة العمل"
+      "en": "Vendor onboarding and store approval",
+      "ar": "انضمام البائع واعتماده في المتجر"
     },
     "description": {
-      "en": "Vendors are global organizations that may sell in several tenants. A separate tenant-vendor approval controls participation in each marketplace.",
-      "ar": "البائع مؤسسة عامة يمكن أن تعمل مع عدة متاجر. تتحكم موافقة مستقلة بين المتجر والبائع في إتاحة العمل داخل كل سوق."
+      "en": "A vendor can sell in several stores. Each store approves the vendor separately before they can sell there.",
+      "ar": "يمكن للبائع البيع في أكثر من متجر. يحتاج إلى موافقة مستقلة من كل متجر قبل أن يبدأ البيع فيه."
     }
   },
   {
@@ -717,12 +717,12 @@
     ],
     "screens": 3,
     "title": {
-      "en": "Wallet store credit and controlled adjustments",
-      "ar": "رصيد المحفظة والتعديلات المضبوطة"
+      "en": "Store credit and wallet adjustments",
+      "ar": "رصيد المتجر وتسويات المحفظة"
     },
     "description": {
-      "en": "Wallet stores customer credit for one tenant and currency with an append-only ledger and held value for purchases.",
-      "ar": "تحفظ المحفظة رصيد العميل لمتجر وعملة محددين بسجل غير قابل للمحو ومبالغ محجوزة للشراء."
+      "en": "The wallet holds a customer’s store credit in one currency. It keeps a record of every balance change and of amounts reserved for purchases.",
+      "ar": "تحتفظ المحفظة برصيد العميل في متجر محدد وبعملة واحدة. وتسجّل كل تغيير في الرصيد والمبالغ المحجوزة للمشتريات."
     }
   },
   {
@@ -733,12 +733,12 @@
     ],
     "screens": 2,
     "title": {
-      "en": "Outbound webhooks and delivery monitoring",
-      "ar": "إشعارات الويب الصادرة ومتابعة التسليم"
+      "en": "Outbound webhooks and delivery tracking",
+      "ar": "إشعارات Webhook الصادرة ومتابعة وصولها"
     },
     "description": {
-      "en": "Outbound webhooks notify approved external integrations about selected tenant events. They differ from inbound payment-provider confirmation callbacks.",
-      "ar": "تبلغ إشعارات الويب الصادرة تكاملات خارجية بأحداث المتجر المختارة. تختلف عن إشعارات تأكيد الدفع الواردة من مزود الدفع."
+      "en": "Outbound webhooks send selected store events to approved integrations. Payment providers send their own callbacks to confirm payment.",
+      "ar": "ترسل إشعارات Webhook الصادرة أحداثًا محددة من المتجر إلى الأنظمة المرتبطة المعتمدة. ويرسل مزوّدو الدفع إشعارات منفصلة لتأكيد الدفع."
     }
   },
   {
@@ -752,8 +752,8 @@
       "ar": "المفضلة والمنتجات المحفوظة"
     },
     "description": {
-      "en": "A wishlist helps a signed-in customer keep products for later without reserving stock or fixing a price.",
-      "ar": "تمكن المفضلة العميل المسجل من حفظ منتجات لاحقاً دون حجز المخزون أو تثبيت السعر."
+      "en": "Signed-in customers can save products for later. Saving a product leaves its price and stock availability free to change.",
+      "ar": "يمكن للعملاء المسجّلين حفظ المنتجات في المفضلة للشراء لاحقًا. الإضافة إلى المفضلة لا تحجز المخزون ولا تثبّت السعر."
     }
   },
   {
@@ -766,11 +766,11 @@
     "screens": 3,
     "title": {
       "en": "Marketplace service policies and cases",
-      "ar": "سياسات الخدمة وحالات السوق"
+      "ar": "سياسات الخدمة وحالات المتابعة في السوق الإلكتروني"
     },
     "description": {
-      "en": "Publish and accept versioned expectations, review concerns and appeals, and investigate operational evidence without automatic penalties.",
-      "ar": "انشر توقعات الخدمة واقبل إصداراتها، وراجع الملاحظات والاعتراضات، وافحص الأدلة دون عقوبات تلقائية."
+      "en": "Publish service policies, record which version each vendor accepted, and review cases and appeals. These reviews do not trigger automatic penalties.",
+      "ar": "انشر سياسات الخدمة وسجّل الإصدار الذي وافق عليه كل بائع، ثم راجع الحالات والاعتراضات. لا تترتب على هذه المتابعة عقوبات تلقائية."
     }
   },
   {
@@ -779,11 +779,11 @@
     "screens": 0,
     "title": {
       "en": "Merchant activation and lifecycle",
-      "ar": "تفعيل التجار ودورة نشاطهم"
+      "ar": "تفعيل التجار ومراحل نشاطهم"
     },
     "description": {
-      "en": "Review recorded merchant milestones, commercial activity and billing recovery, with clear limits for missing history and each dashboard's scope.",
-      "ar": "راجع مراحل تقدم التجار والنشاط التجاري ومعالجة مشكلات الاشتراك، مع توضيح التاريخ غير المتاح ونطاق كل لوحة."
+      "en": "Follow recorded milestones, sales activity and subscription recovery. Check each dashboard’s scope and which periods have data.",
+      "ar": "تابع مراحل تفعيل التجار ونشاط المبيعات ومعالجة مشكلات الاشتراك، وراجع نطاق كل لوحة والفترات التي تتوفر عنها بيانات."
     }
   },
   {
@@ -796,11 +796,11 @@
     "screens": 3,
     "title": {
       "en": "Packing and parcel quantities",
-      "ar": "التعبئة وكميات الطرود"
+      "ar": "التغليف وكميات الطرود"
     },
     "description": {
-      "en": "Allocate purchased units, save a draft, confirm complete packing and inspect immutable receipts without assuming dispatch or payment.",
-      "ar": "وزّع الوحدات المشتراة واحفظ مسودة وأكّد اكتمال التعبئة وافحص سجلات الإجراءات دون افتراض الشحن أو السداد."
+      "en": "Assign purchased units to parcels, save a draft, confirm packing and review the permanent record. Shipping and payment are tracked separately.",
+      "ar": "وزّع الوحدات المشتراة على الطرود واحفظ المسودة، ثم أكّد التغليف وراجع السجل الدائم. ويظل تتبع الشحن والدفع في خطوات مستقلة."
     }
   }
 ]

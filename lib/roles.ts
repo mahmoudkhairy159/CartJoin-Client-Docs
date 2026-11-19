@@ -1,6 +1,6 @@
 export const roles = [
-  {code: 'ADMIN', name: 'Platform admin · إدارة المنصة', slug: 'admin'},
-  {code: 'TENANT', name: 'Tenant operator · إدارة المتجر', slug: 'tenant'},
+  {code: 'ADMIN', name: 'Platform admin · مسؤول المنصة', slug: 'admin'},
+  {code: 'TENANT', name: 'Store admin · مسؤول المتجر', slug: 'tenant'},
   {code: 'VENDOR', name: 'Vendor · البائع', slug: 'vendor'},
   {code: 'CUSTOMER', name: 'Customer · العميل', slug: 'customer'},
 ] as const;

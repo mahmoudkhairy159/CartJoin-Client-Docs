@@ -107,7 +107,7 @@ export function RolePicker({ compact = false }: { compact?: boolean }) {
             'guide-role-label'
           }
         >
-          {lang === 'ar' ? 'تصفح حسب دورك' : 'Browse by role'}
+          {lang === 'ar' ? 'تصفّح الأدلة حسب دورك' : 'Browse guides by role'}
         </Select.Label>
         <Select.Trigger
           className={`guide-role-trigger ${focusRing}`}
