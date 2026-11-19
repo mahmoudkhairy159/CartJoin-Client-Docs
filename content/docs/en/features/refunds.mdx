@@ -25,6 +25,12 @@ The ceiling is the smaller of the order’s remaining refundable value and share
 
 Eligible order lines → preview allocation → refund command → online confirmation or manual settlement → refund ledger, payment totals and credit note. Partial refunds across siblings do not mark the whole shared payment fully refunded.
 
+## Follow the vendor balance after success
+
+In the pre-release financial correction, a successful original-line refund reduces the vendor balance by its supported gross amount, including the recorded refund tax. This remains true at a zero commission rate. The related platform fee reversal is separate, and cumulative full refunds consume the remaining reversible fee rather than leaving a rounding cent behind.
+
+Creating a request or waiting for a provider does not prove the refund succeeded. Statement selection uses actual success/settlement evidence. A financial refund with no returned units does not prove goods came back, were restocked or were delivered. Missing original seller ownership or success timing requires review. Repairing a delayed fee reversal does not send the customer another refund or rewrite the original purchase.
+
 ## When something goes wrong
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.

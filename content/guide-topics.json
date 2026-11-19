@@ -96,6 +96,7 @@
       "notifications",
       "dashboards",
       "reports",
+      "merchant-lifecycle",
       "audit",
       "webhooks",
       "settings"

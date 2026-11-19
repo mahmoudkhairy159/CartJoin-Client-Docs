@@ -774,6 +774,19 @@
     }
   },
   {
+    "id": "merchant-lifecycle",
+    "roles": ["ADMIN", "TENANT", "VENDOR"],
+    "screens": 0,
+    "title": {
+      "en": "Merchant activation and lifecycle",
+      "ar": "تفعيل التجار ودورة نشاطهم"
+    },
+    "description": {
+      "en": "Review recorded merchant milestones, commercial activity and billing recovery, with clear limits for missing history and each dashboard's scope.",
+      "ar": "راجع مراحل تقدم التجار والنشاط التجاري ومعالجة مشكلات الاشتراك، مع توضيح التاريخ غير المتاح ونطاق كل لوحة."
+    }
+  },
+  {
     "id": "packing",
     "roles": [
       "ADMIN",

@@ -19,6 +19,16 @@ A new rule must not silently rewrite historical captured economics. Refunds and 
 
 Applicable rule → order commission calculation/capture → reversal or adjustment → settlement line.
 
+## Read fees and vendor money separately
+
+**Pre-release financial correction · 19 November 2026.** The updated calculation is under final release acceptance. The fee card shows the assessed commission after supported automatic fee reversals. Manual vendor adjustments are separate signed credits or debits; they do not change that fee or prove platform profit or a payout.
+
+For a 100.00 sale with a 10.00 fee, the vendor balance starts at 90.00 before other effects. A 40.00 successful refund deducts 40.00 from the vendor balance even when the commission rate is zero. Any supported fee reversal is a separate credit. A manual +20.00 vendor credit does not turn a 10.00 commission into 30.00.
+
+Order confirmation alone does not make its fee snapshot payable. The relevant seller order needs supported full funding. A newly recognized amount appears when that recognition succeeds; a late repair does not silently insert it into an already closed earlier period. Successful earlier refunds are checked before recognizing the balance.
+
+Unknown original seller ownership or refund timing requires finance review, not a guessed full vendor credit. Settled commission history cannot be reopened, rewritten or deleted. Use a new authorized adjustment for corrections. Any supplied order/item reference must match the same store, seller, currency and original order; an intentionally unreferenced manual adjustment can still be valid.
+
 ## When something goes wrong
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.

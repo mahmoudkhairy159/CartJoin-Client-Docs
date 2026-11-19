@@ -16,6 +16,7 @@ FEATURE_MODULES={
 'review-reminders':['Review','Notification'],
 'customer-cohorts':['Reports','User','Cart','Order','Payment','Invoice'],
 'shopping-funnel':['Storefront','Cart','Invoice','Order','Payment','Reports'],
+'merchant-lifecycle':['Reports','Tenant','Vendor','Auth','Subscription','Product','Payment','Order','SettlementPayout','Commission','Refund'],
 'order-operations':['Reports','Order','Invoice','MarketplaceOps','Shipping','Payment','Cart']}
 MAP={}
 def assign(feature,paths):

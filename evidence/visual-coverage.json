@@ -696,5 +696,38 @@
     "supplementaryTours": [
       "carrier-evidence"
     ]
+  },
+  {
+    "feature": "merchant-lifecycle",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "merchant-lifecycle-admin-scope-en.jpg",
+      "merchant-lifecycle-admin-scope-ar.jpg",
+      "merchant-lifecycle-admin-activity-en.jpg",
+      "merchant-lifecycle-admin-activity-ar.jpg",
+      "merchant-lifecycle-admin-coverage-en.jpg",
+      "merchant-lifecycle-admin-coverage-ar.jpg",
+      "merchant-lifecycle-tenant-scope-en.jpg",
+      "merchant-lifecycle-tenant-scope-ar.jpg",
+      "merchant-lifecycle-tenant-activity-en.jpg",
+      "merchant-lifecycle-tenant-activity-ar.jpg",
+      "merchant-lifecycle-tenant-coverage-en.jpg",
+      "merchant-lifecycle-tenant-coverage-ar.jpg",
+      "merchant-lifecycle-vendor-scope-en.jpg",
+      "merchant-lifecycle-vendor-scope-ar.jpg",
+      "merchant-lifecycle-vendor-activity-en.jpg",
+      "merchant-lifecycle-vendor-activity-ar.jpg",
+      "merchant-lifecycle-vendor-coverage-en.jpg",
+      "merchant-lifecycle-vendor-coverage-ar.jpg"
+    ],
+    "tour": "feature-merchant-lifecycle-admin",
+    "supplementaryTours": [
+      "feature-merchant-lifecycle-tenant",
+      "feature-merchant-lifecycle-vendor"
+    ]
   }
 ]

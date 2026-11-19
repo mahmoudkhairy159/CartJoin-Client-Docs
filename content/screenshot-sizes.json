@@ -1766,5 +1766,77 @@
   "order-operations-vendor-ar-commitments.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "merchant-lifecycle-admin-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-admin-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-admin-activity-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-admin-activity-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-admin-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-admin-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-tenant-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-tenant-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-tenant-activity-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-tenant-activity-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-tenant-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-tenant-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-vendor-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-vendor-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-vendor-activity-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-vendor-activity-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-vendor-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "merchant-lifecycle-vendor-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

@@ -60,6 +60,12 @@ A simulated decline is recorded; it does not remove an existing paid period. A p
 
 Confirm a fresh quote when an unpaid invoice has expired or its terms have changed. CartJoin voids the old invoice and keeps it in your history. If the current unpaid invoice is still valid, use it or ask platform finance to void it before confirming a different change.
 
+## Read recovery in merchant reports
+
+The pre-release [merchant lifecycle report](/en/features/merchant-lifecycle) separates payment recovery from application of the related service term. Applying a term does not override a separate administrative suspension. Renewal during grace can apply the next term without restoring access, because access was already allowed. Use the current subscription screen to check what the merchant can do now.
+
+A zero-amount resolution is not captured cash. A paid invoice that could not be applied is different from an unpaid first activation or a renewal gap. The report follows each original obligation rather than counting every failed retry as another merchant. Trial expiry without debt and intentional period-end cancellation are not failed paid renewals. Existing test payment simulations remain test activity, not commercial recovery.
+
 ## Cancellation and restrictions
 
 Cancellation is scheduled for period end and may be revoked before it takes effect. Renewal reuses the current invoice for the same service period and terms. After the recorded grace deadline, CartJoin blocks new sales and capacity expansion while keeping authorized fulfillment, returns, refunds, history and finance available. Billing does not deactivate the tenant identity or erase records.

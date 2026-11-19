@@ -8875,5 +8875,287 @@
       "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; not continuous recording, live operations or evidence of real fault, purchases, payments or deliveries.",
       "ar": "معاينة محلية ببيانات مصطنعة · التقطت بتاريخ 2026-11-19 · صور إرشادية، وليست تسجيلًا متصلًا أو عمليات حية أو دليلًا على أخطاء أو مشتريات أو مدفوعات أو تسليمات فعلية."
     }
+  },
+  "feature-merchant-lifecycle-admin": {
+    "title": {
+      "en": "Platform admin: recorded merchant lifecycle",
+      "ar": "إدارة المنصة: تقدم التجار المسجل"
+    },
+    "intro": {
+      "en": "Three eight-second chapters use actual local screens with synthetic data: saved scope and export, independent achievements, and incomplete evidence. This is a guided screenshot walkthrough.",
+      "ar": "ثلاثة فصول مدة كل منها ثماني ثوانٍ، بلقطات محلية فعلية وبيانات مصطنعة: النطاق والتصدير، والإنجازات المستقلة، والأدلة غير المكتملة. شرح إرشادي بالصور الثابتة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "steps": [
+      {
+        "image": "merchant-lifecycle-admin-scope-en.jpg",
+        "imageAr": "merchant-lifecycle-admin-scope-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read the saved scope and private export",
+          "ar": "اقرأ النطاق المحفوظ والتصدير الخاص"
+        },
+        "body": {
+          "en": "Review platform or selected-store scope, the saved UTC cutoff, ready generation and private export. These counts are controlled local examples.",
+          "ar": "راجع نطاق المنصة أو المتجر وحد UTC المحفوظ وجاهزية التقرير والتصدير الخاص. الأعداد أمثلة محلية مصطنعة."
+        },
+        "guide": "features/merchant-lifecycle"
+      },
+      {
+        "image": "merchant-lifecycle-admin-activity-en.jpg",
+        "imageAr": "merchant-lifecycle-admin-activity-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read independent recorded achievements",
+          "ar": "اقرأ الإنجازات المسجلة المستقلة"
+        },
+        "body": {
+          "en": "Business milestones are independent. Read observed, unknown, applicability and supported samples. This frame shows part of the achievement table, not the retention table.",
+          "ar": "إنجازات المتجر مستقلة. اقرأ المرصود والمجهول ومدى الانطباق والعينات المثبتة. تعرض اللقطة جزءًا من الإنجازات، لا جدول الاستمرارية."
+        },
+        "guide": "features/merchant-lifecycle"
+      },
+      {
+        "image": "merchant-lifecycle-admin-coverage-en.jpg",
+        "imageAr": "merchant-lifecycle-admin-coverage-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check what the evidence cannot prove",
+          "ar": "راجع ما لا تثبته الأدلة"
+        },
+        "body": {
+          "en": "An applied term and no-charge resolution differ from restored access. Coverage is incomplete; known counts do not prove complete history or recovered cash.",
+          "ar": "تطبيق المدة والتسوية دون رسوم يختلفان عن استعادة الوصول. الأدلة غير مكتملة؛ الأعداد المعروفة لا تثبت تاريخًا كاملًا أو تحصيلًا نقديًا."
+        },
+        "guide": "features/merchant-lifecycle"
+      }
+    ],
+    "provenance": {
+      "en": "Actual local screenshots · Captured 19 November 2026 · Synthetic facts dated 19 November under a controlled 21 November 2026 clock. Guided still frames, not a continuous recording, real payments or live deployment.",
+      "ar": "لقطات محلية فعلية · التقطت في ١٩ نوفمبر ٢٠٢٦ · وقائع مصطنعة بتاريخ ١٩ نوفمبر بساعة مضبوطة على ٢١ نوفمبر ٢٠٢٦. صور إرشادية ثابتة، لا تسجيل متصل أو مدفوعات حقيقية أو نشر حي."
+    }
+  },
+  "feature-merchant-lifecycle-tenant": {
+    "title": {
+      "en": "Tenant staff: recorded merchant lifecycle",
+      "ar": "إدارة المتجر: تقدم التجار المسجل"
+    },
+    "intro": {
+      "en": "Three eight-second chapters use actual local screens with synthetic data: saved scope and export, independent achievements, and incomplete evidence. This is a guided screenshot walkthrough.",
+      "ar": "ثلاثة فصول مدة كل منها ثماني ثوانٍ، بلقطات محلية فعلية وبيانات مصطنعة: النطاق والتصدير، والإنجازات المستقلة، والأدلة غير المكتملة. شرح إرشادي بالصور الثابتة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "steps": [
+      {
+        "image": "merchant-lifecycle-tenant-scope-en.jpg",
+        "imageAr": "merchant-lifecycle-tenant-scope-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Review this store’s saved result",
+          "ar": "راجع النتيجة المحفوظة لهذا المتجر"
+        },
+        "body": {
+          "en": "Check this store, the saved UTC cutoff and the ready private export. Business and seller-workspace populations stay separate.",
+          "ar": "تحقق من المتجر وحد UTC المحفوظ والتصدير الخاص الجاهز. يبقى مجتمع المتاجر منفصلًا عن مساحات البائعين."
+        },
+        "guide": "features/merchant-lifecycle"
+      },
+      {
+        "image": "merchant-lifecycle-tenant-activity-en.jpg",
+        "imageAr": "merchant-lifecycle-tenant-activity-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Keep achievements and proof separate",
+          "ar": "افصل الإنجازات عن قوة إثباتها"
+        },
+        "body": {
+          "en": "Read this business’s independent milestones and supported timing samples. Known achievements do not make all history complete; only part of the table is visible.",
+          "ar": "اقرأ إنجازات المتجر المستقلة وعينات التوقيت المثبتة. معرفة الإنجاز لا تكمل كل التاريخ؛ يظهر جزء من الجدول فقط."
+        },
+        "guide": "features/merchant-lifecycle"
+      },
+      {
+        "image": "merchant-lifecycle-tenant-coverage-en.jpg",
+        "imageAr": "merchant-lifecycle-tenant-coverage-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read incomplete history honestly",
+          "ar": "اقرأ التاريخ غير المكتمل بدقة"
+        },
+        "body": {
+          "en": "The source-coverage warning remains meaningful even with known counts. Applying a term or a no-charge resolution does not prove access restoration or cash recovery.",
+          "ar": "يظل تحذير نقص الأدلة مهمًا مع وجود أعداد معروفة. تطبيق المدة أو التسوية دون رسوم لا يثبت استعادة الوصول أو تحصيل النقد."
+        },
+        "guide": "features/merchant-lifecycle"
+      }
+    ],
+    "provenance": {
+      "en": "Actual local screenshots · Captured 19 November 2026 · Synthetic facts dated 19 November under a controlled 21 November 2026 clock. Guided still frames, not a continuous recording, real payments or live deployment.",
+      "ar": "لقطات محلية فعلية · التقطت في ١٩ نوفمبر ٢٠٢٦ · وقائع مصطنعة بتاريخ ١٩ نوفمبر بساعة مضبوطة على ٢١ نوفمبر ٢٠٢٦. صور إرشادية ثابتة، لا تسجيل متصل أو مدفوعات حقيقية أو نشر حي."
+    }
+  },
+  "feature-merchant-lifecycle-vendor": {
+    "title": {
+      "en": "Vendor staff: recorded merchant lifecycle",
+      "ar": "إدارة البائع: تقدم التجار المسجل"
+    },
+    "intro": {
+      "en": "Three eight-second chapters use actual local screens with synthetic data: saved scope and export, independent achievements, and incomplete evidence. This is a guided screenshot walkthrough.",
+      "ar": "ثلاثة فصول مدة كل منها ثماني ثوانٍ، بلقطات محلية فعلية وبيانات مصطنعة: النطاق والتصدير، والإنجازات المستقلة، والأدلة غير المكتملة. شرح إرشادي بالصور الثابتة."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "steps": [
+      {
+        "image": "merchant-lifecycle-vendor-scope-en.jpg",
+        "imageAr": "merchant-lifecycle-vendor-scope-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check the selected approved workspace",
+          "ar": "تحقق من مساحة العمل المعتمدة المختارة"
+        },
+        "body": {
+          "en": "Review your selected store, saved UTC cutoff and ready private export. Tenant application results are not applicable, not a zero population.",
+          "ar": "راجع المتجر المختار وحد UTC المحفوظ والتصدير الخاص الجاهز. نتائج طلبات المتجر لا تنطبق، وليست مجتمعًا صفريًا."
+        },
+        "guide": "features/merchant-lifecycle"
+      },
+      {
+        "image": "merchant-lifecycle-vendor-activity-en.jpg",
+        "imageAr": "merchant-lifecycle-vendor-activity-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read only your workspace’s milestones",
+          "ar": "اقرأ إنجازات مساحتك فقط"
+        },
+        "body": {
+          "en": "Business metrics are not applicable. Your workspace’s owner-access row is not applicable; the eligible offer has its own evidence. Other sellers are not included.",
+          "ar": "مقاييس المتجر لا تنطبق. دخول المالك لا ينطبق على مساحتك؛ وللعرض المؤهل دليله المستقل. لا تشمل النتيجة بائعين آخرين."
+        },
+        "guide": "features/merchant-lifecycle"
+      },
+      {
+        "image": "merchant-lifecycle-vendor-coverage-en.jpg",
+        "imageAr": "merchant-lifecycle-vendor-coverage-ar.jpg",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "focusAr": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Separate unavailable scope from missing evidence",
+          "ar": "افصل النطاق غير المنطبق عن نقص الأدلة"
+        },
+        "body": {
+          "en": "Tenant billing is not applicable. Read only your workspace’s coverage. Incomplete evidence is not zero activity or proof of a lost merchant.",
+          "ar": "فوترة المتجر لا تنطبق. اقرأ تغطية مساحتك فقط. نقص الأدلة ليس صفر نشاط ولا إثبات فقدان تاجر."
+        },
+        "guide": "features/merchant-lifecycle"
+      }
+    ],
+    "provenance": {
+      "en": "Actual local screenshots · Captured 19 November 2026 · Synthetic facts dated 19 November under a controlled 21 November 2026 clock. Guided still frames, not a continuous recording, real payments or live deployment.",
+      "ar": "لقطات محلية فعلية · التقطت في ١٩ نوفمبر ٢٠٢٦ · وقائع مصطنعة بتاريخ ١٩ نوفمبر بساعة مضبوطة على ٢١ نوفمبر ٢٠٢٦. صور إرشادية ثابتة، لا تسجيل متصل أو مدفوعات حقيقية أو نشر حي."
+    }
   }
 }

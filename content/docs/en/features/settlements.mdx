@@ -19,6 +19,18 @@ A settlement uses one currency and a half-open period. Closed and later statemen
 
 Sales/commission/refund effects → immutable settlement lines → closed → approved → payout pending → paid. Failed payout retries do not regenerate the original financial effects.
 
+## Select dates without overlapping periods
+
+**Pre-release correction · 19 November 2026.** New statements use an elapsed half-open UTC period: the start is included and the end is excluded. For November, use 1 November 00:00 through 1 December 00:00 UTC; generate only after that end has arrived. The next period starts at the same end, so a boundary event belongs once to the later period. Explicit timezone offsets are converted to UTC. Use whole seconds; unsupported fractional boundaries are rejected.
+
+The end must be after the start and cannot be in the future. An exact repeat returns its existing statement; a partial overlap is rejected. Closing a future period would otherwise omit financial effects that become known later. Closed history is preserved, and inconsistent older statements require explicit finance review.
+
+## Verification is different from paying
+
+The updated development workflow checks the immutable statement's original financial effects, signs, currency, totals and supporting evidence. Only a successful recorded verification supports the **reconciled statement** milestone in [merchant lifecycle](/en/features/merchant-lifecycle). Closed, approved and paid labels alone do not establish it. A manual-only correction cannot manufacture a genuine commercial milestone; a carried balance needs its earlier verified origin.
+
+Verification does not approve a transfer, send money or prove a bank/carrier result. Approval and payout completion remain separately authorized actions with their own checks. A carry-forward balance can be consumed once by a later eligible statement and cannot also be paid from its earlier statement.
+
 ## When something goes wrong
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
