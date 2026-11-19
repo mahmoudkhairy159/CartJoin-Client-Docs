@@ -1430,5 +1430,69 @@
   "tenant-cart-recovery-ar-confirm.png": {
     "width": 1265,
     "height": 712
+  },
+  "tenant-review-reminders-en-checks.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-en-outcomes.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-en-history.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-en-confirm.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-ar-checks.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-ar-outcomes.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-ar-history.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "tenant-review-reminders-ar-confirm.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-en-allowed.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-en-withdrawn.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-en-inbox.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-en-read.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-ar-allowed.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-ar-withdrawn.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-ar-inbox.png": {
+    "width": 1265,
+    "height": 712
+  },
+  "customer-review-feedback-ar-read.png": {
+    "width": 1265,
+    "height": 712
   }
 }

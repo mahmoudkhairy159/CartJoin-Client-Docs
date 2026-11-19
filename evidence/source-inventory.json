@@ -3,34 +3,34 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "cf2001f5bdf1d9a6a14692797f7f81753ccafee0",
+      "commit": "b9fd32e84ef07918ec7d9af06161cf6be6a97b42",
       "branch": "master",
       "dirty": true
     },
     "CartJoin-Admin-Dashboard-Frontend": {
       "commit": "e5b2205bc437d39f87be47b5e9ae259f52e8983c",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "5b693db189fa971954d4ea9d70c18878d13649bf",
+      "commit": "a47f4b33dbc58ac0b20a1842bddada7663513fab",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
       "commit": "adcf7cc6f635681352a4c31a6e7fab33fa048afc",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Storefront-Frontend": {
-      "commit": "2a14414ddbd5e435248e5c92509121dd62ac0acd",
+      "commit": "2d25831cd10ace720232ddab26344cce14fdcf32",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     },
     "CartJoin-Platform-Frontend": {
       "commit": "9a03fa1f5f6e4f8a479b9ef871ae014828caff7b",
       "branch": "master",
-      "dirty": false
+      "dirty": true
     }
   },
   "surfaces": {
@@ -756,6 +756,11 @@
           "special": null
         },
         {
+          "path": "/review-reminders",
+          "feature": "review-reminders",
+          "special": null
+        },
+        {
           "path": "/storefront",
           "feature": "storefront",
           "special": null
@@ -1137,7 +1142,7 @@
           ":id"
         ]
       },
-      "route_source_sha256": "b14d57b8bdd70f13ce9d8a8327b27e04e24869480e748d31f9baa23ac4c43415"
+      "route_source_sha256": "d1fad8d48c9326e9bed0326f71885de10c53f6cadd12ce636f83adee75cab4a0"
     },
     "vendor": {
       "repository": "CartJoin-Vendor-Dashboard-Frontend",
@@ -1822,6 +1827,23 @@
           ]
         },
         {
+          "file": "Modules/Subscription/App/Http/Requests/BillingNoticeSettingsRequest.php",
+          "fields": [
+            "mode",
+            "delegate_ids",
+            "delegate_ids.*",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Subscription/App/Http/Requests/BillingNoticeVerifyRequest.php",
+          "fields": [
+            "tenant_id",
+            "email",
+            "code"
+          ]
+        },
+        {
           "file": "Modules/Subscription/App/Http/Requests/PublicApplicationRequest.php",
           "fields": [
             "business_name",
@@ -1860,6 +1882,31 @@
             "PAID": "2",
             "VOID": "3",
             "FAILED": "4"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingNoticeChannel.php",
+          "cases": {
+            "IN_APP": "1",
+            "EMAIL": "2"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingNoticeDeliveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "SENDING": "2",
+            "SENT": "3",
+            "FAILED": "4",
+            "SKIPPED": "5",
+            "UNCERTAIN": "6"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingNoticeMode.php",
+          "cases": {
+            "IN_APP": "1",
+            "IN_APP_AND_EMAIL": "2"
           }
         },
         {
@@ -1975,6 +2022,23 @@
           ]
         },
         {
+          "file": "Modules/Subscription/App/Http/Requests/BillingNoticeSettingsRequest.php",
+          "fields": [
+            "mode",
+            "delegate_ids",
+            "delegate_ids.*",
+            "tenant_id"
+          ]
+        },
+        {
+          "file": "Modules/Subscription/App/Http/Requests/BillingNoticeVerifyRequest.php",
+          "fields": [
+            "tenant_id",
+            "email",
+            "code"
+          ]
+        },
+        {
           "file": "Modules/Subscription/App/Http/Requests/PublicApplicationRequest.php",
           "fields": [
             "business_name",
@@ -2013,6 +2077,31 @@
             "PAID": "2",
             "VOID": "3",
             "FAILED": "4"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingNoticeChannel.php",
+          "cases": {
+            "IN_APP": "1",
+            "EMAIL": "2"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingNoticeDeliveryStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "SENDING": "2",
+            "SENT": "3",
+            "FAILED": "4",
+            "SKIPPED": "5",
+            "UNCERTAIN": "6"
+          }
+        },
+        {
+          "file": "Modules/Subscription/App/Enums/BillingNoticeMode.php",
+          "cases": {
+            "IN_APP": "1",
+            "IN_APP_AND_EMAIL": "2"
           }
         },
         {
@@ -3942,6 +4031,13 @@
           ]
         },
         {
+          "file": "Modules/Product/App/Http/Requests/Tenant/Product/ExportProductsRequest.php",
+          "fields": [
+            "product_ids",
+            "product_ids.*"
+          ]
+        },
+        {
           "file": "Modules/Product/App/Http/Requests/Tenant/Product/GenerateVariantsRequest.php",
           "fields": [
             "matrix",
@@ -4087,6 +4183,13 @@
             "success",
             "errors",
             "statusCode"
+          ]
+        },
+        {
+          "file": "Modules/Product/App/Http/Requests/Tenant/Product/ExportProductsRequest.php",
+          "fields": [
+            "product_ids",
+            "product_ids.*"
           ]
         },
         {
@@ -9608,6 +9711,14 @@
         },
         {
           "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/purchase-availability",
+          "controller": "StorefrontController",
+          "action": "purchaseAvailability"
+        },
+        {
+          "module": "Storefront",
           "file": "Modules/Storefront/routes/vendor-api.php",
           "method": "PUT",
           "uri": "consent",
@@ -9945,6 +10056,22 @@
         {
           "module": "Review",
           "file": "Modules/Review/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "{reminder}",
+          "controller": "ReviewReminderController",
+          "action": "show"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "{reminder}/retry",
+          "controller": "ReviewReminderController",
+          "action": "retry"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
           "method": "PUT",
           "uri": "reviews/{review}/approve",
           "controller": "ReviewController",
@@ -10137,6 +10264,17 @@
       ],
       "request_fields": [
         {
+          "file": "Modules/Review/App/Http/Requests/Tenant/Reminder/RetryReviewReminderRequest.php",
+          "fields": [
+            "reason",
+            "tenant_id",
+            "user_id",
+            "deadline_at",
+            "attempts",
+            "channel"
+          ]
+        },
+        {
           "file": "Modules/Review/App/Http/Requests/Tenant/Review/AnswerQuestionRequest.php",
           "fields": [
             "answer"
@@ -10209,6 +10347,46 @@
             "PENDING": "1",
             "PUBLISHED": "2",
             "HIDDEN": "3"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewReminderChannel.php",
+          "cases": {
+            "IN_APP": "1",
+            "SMS_TEST": "2"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewReminderReason.php",
+          "cases": {
+            "DISABLED": "1",
+            "STORE_INACTIVE": "2",
+            "ORDER_NOT_DELIVERED": "3",
+            "TEST_SOURCE": "4",
+            "RECIPIENT_CHANGED": "5",
+            "ACCOUNT_INELIGIBLE": "6",
+            "RELATIONSHIP_INELIGIBLE": "7",
+            "ALREADY_REVIEWED": "8",
+            "FEATURE_DISABLED": "9",
+            "CONSENT_MISSING": "10",
+            "NOTICE_CHANGED": "11",
+            "CONTACT_UNVERIFIED": "12",
+            "CONTACT_CHANGED": "13",
+            "TRANSPORT_UNAVAILABLE": "14",
+            "ATTEMPT_FAILED": "15",
+            "DEADLINE": "16"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewReminderStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "IN_APP_AVAILABLE": "2",
+            "ACCEPTED_TEST": "3",
+            "SUPPRESSED": "4",
+            "RETRY": "5",
+            "ATTENTION": "6",
+            "EXPIRED": "7"
           }
         },
         {
@@ -10435,6 +10613,15 @@
         }
       ],
       "enums": [
+        {
+          "file": "Modules/Notification/App/Enums/MarketingTestAcceptanceKind.php",
+          "cases": {
+            "EMAIL_TEST": "1",
+            "CART_SMS_TEST": "2",
+            "REVIEW_INBOX": "3",
+            "REVIEW_SMS_TEST": "4"
+          }
+        },
         {
           "file": "Modules/Notification/App/Enums/NotificationAction.php",
           "cases": {
@@ -10882,6 +11069,14 @@
       "explicit_backend_routes": [
         {
           "module": "Settings",
+          "file": "Modules/Settings/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "feature-access",
+          "controller": "FeatureAccessController",
+          "action": "tenant"
+        },
+        {
+          "module": "Settings",
           "file": "Modules/Settings/routes/user-api.php",
           "method": "GET",
           "uri": "v1/feature-access",
@@ -11252,6 +11447,14 @@
         },
         {
           "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/purchase-availability",
+          "controller": "StorefrontController",
+          "action": "purchaseAvailability"
+        },
+        {
+          "module": "Storefront",
           "file": "Modules/Storefront/routes/vendor-api.php",
           "method": "PUT",
           "uri": "consent",
@@ -11541,6 +11744,14 @@
           "uri": "/settings",
           "controller": "StorefrontController",
           "action": "publicSettings"
+        },
+        {
+          "module": "Storefront",
+          "file": "Modules/Storefront/routes/user-api.php",
+          "method": "GET",
+          "uri": "/purchase-availability",
+          "controller": "StorefrontController",
+          "action": "purchaseAvailability"
         },
         {
           "module": "Storefront",
@@ -11958,6 +12169,15 @@
         }
       ],
       "enums": [
+        {
+          "file": "Modules/Notification/App/Enums/MarketingTestAcceptanceKind.php",
+          "cases": {
+            "EMAIL_TEST": "1",
+            "CART_SMS_TEST": "2",
+            "REVIEW_INBOX": "3",
+            "REVIEW_SMS_TEST": "4"
+          }
+        },
         {
           "file": "Modules/Notification/App/Enums/NotificationAction.php",
           "cases": {
@@ -13216,6 +13436,15 @@
           }
         },
         {
+          "file": "Modules/Notification/App/Enums/MarketingTestAcceptanceKind.php",
+          "cases": {
+            "EMAIL_TEST": "1",
+            "CART_SMS_TEST": "2",
+            "REVIEW_INBOX": "3",
+            "REVIEW_SMS_TEST": "4"
+          }
+        },
+        {
           "file": "Modules/Notification/App/Enums/NotificationAction.php",
           "cases": {
             "CUSTOMER": "1",
@@ -13392,6 +13621,570 @@
             "SHIPPED": "3",
             "DELIVERED": "4",
             "RETURNED": "5"
+          }
+        }
+      ]
+    },
+    "review-reminders": {
+      "modules": [
+        "Review",
+        "Notification"
+      ],
+      "route_sources": [
+        "Modules/Review/routes/admin-api.php",
+        "Modules/Review/routes/tenant-api.php",
+        "Modules/Review/routes/user-api.php",
+        "Modules/Review/routes/vendor-api.php",
+        "Modules/Review/routes/web.php",
+        "Modules/Notification/routes/admin-api.php",
+        "Modules/Notification/routes/tenant-api.php",
+        "Modules/Notification/routes/user-api.php",
+        "Modules/Notification/routes/vendor-api.php",
+        "Modules/Notification/routes/web.php"
+      ],
+      "explicit_backend_routes": [
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/admin-api.php",
+          "method": "GET",
+          "uri": "reviews",
+          "controller": "ReviewController",
+          "action": "index"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/admin-api.php",
+          "method": "GET",
+          "uri": "reviews/{review}",
+          "controller": "ReviewController",
+          "action": "show"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/admin-api.php",
+          "method": "DELETE",
+          "uri": "reviews/{review}",
+          "controller": "ReviewController",
+          "action": "destroy"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "{reminder}",
+          "controller": "ReviewReminderController",
+          "action": "show"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "{reminder}/retry",
+          "controller": "ReviewReminderController",
+          "action": "retry"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "reviews/{review}/approve",
+          "controller": "ReviewController",
+          "action": "approve"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "reviews/{review}/reject",
+          "controller": "ReviewController",
+          "action": "reject"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "reviews/{review}/respond",
+          "controller": "ReviewController",
+          "action": "respond"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "review-settings",
+          "controller": "ReviewController",
+          "action": "settings"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "review-settings",
+          "controller": "ReviewController",
+          "action": "settings"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "questions",
+          "controller": "ReviewController",
+          "action": "questionsIndex"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "questions/{question}",
+          "controller": "ReviewController",
+          "action": "showQuestion"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "questions/{question}/publish",
+          "controller": "ReviewController",
+          "action": "publishQuestion"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "questions/{question}/answer",
+          "controller": "ReviewController",
+          "action": "answerQuestion"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "GET",
+          "uri": "reviews",
+          "controller": "ReviewController",
+          "action": "publicIndex"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "GET",
+          "uri": "reviews/summary",
+          "controller": "ReviewController",
+          "action": "summary"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "GET",
+          "uri": "questions",
+          "controller": "ReviewController",
+          "action": "publicQuestions"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "POST",
+          "uri": "reviews",
+          "controller": "ReviewController",
+          "action": "store"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "PUT",
+          "uri": "reviews/{review}",
+          "controller": "ReviewController",
+          "action": "update"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "DELETE",
+          "uri": "reviews/{review}",
+          "controller": "ReviewController",
+          "action": "destroy"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "POST",
+          "uri": "reviews/{review}/vote",
+          "controller": "ReviewController",
+          "action": "vote"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "POST",
+          "uri": "reviews/{review}/images",
+          "controller": "ReviewController",
+          "action": "uploadImage"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/user-api.php",
+          "method": "POST",
+          "uri": "questions",
+          "controller": "ReviewController",
+          "action": "askQuestion"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "reviews",
+          "controller": "ReviewResponseController",
+          "action": "index"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "reviews/{review}",
+          "controller": "ReviewResponseController",
+          "action": "show"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "questions",
+          "controller": "ProductAnswerController",
+          "action": "index"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/vendor-api.php",
+          "method": "GET",
+          "uri": "questions/{question}",
+          "controller": "ProductAnswerController",
+          "action": "show"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/vendor-api.php",
+          "method": "POST",
+          "uri": "reviews/{review}/respond",
+          "controller": "ReviewResponseController",
+          "action": "respond"
+        },
+        {
+          "module": "Review",
+          "file": "Modules/Review/routes/vendor-api.php",
+          "method": "POST",
+          "uri": "questions/{question}/answer",
+          "controller": "ProductAnswerController",
+          "action": "answer"
+        },
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "GET",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "index"
+        },
+        {
+          "module": "Notification",
+          "file": "Modules/Notification/routes/user-api.php",
+          "method": "PUT",
+          "uri": "/",
+          "controller": "MarketingConsentController",
+          "action": "update"
+        }
+      ],
+      "request_fields": [
+        {
+          "file": "Modules/Review/App/Http/Requests/Tenant/Reminder/RetryReviewReminderRequest.php",
+          "fields": [
+            "reason",
+            "tenant_id",
+            "user_id",
+            "deadline_at",
+            "attempts",
+            "channel"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/Tenant/Review/AnswerQuestionRequest.php",
+          "fields": [
+            "answer"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/Tenant/Review/RejectReviewRequest.php",
+          "fields": [
+            "reason"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/Tenant/Review/RespondRequest.php",
+          "fields": [
+            "body"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/Tenant/Review/UpdateReviewSettingsRequest.php",
+          "fields": [
+            "review_auto_approve"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/User/Review/StoreQuestionRequest.php",
+          "fields": [
+            "question"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/User/Review/StoreReviewRequest.php",
+          "fields": [
+            "order_item_id",
+            "rating",
+            "title",
+            "body"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/User/Review/UpdateReviewRequest.php",
+          "fields": [
+            "rating",
+            "title",
+            "body"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/User/Review/VoteRequest.php",
+          "fields": [
+            "vote"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/Vendor/Review/VendorAnswerQuestionRequest.php",
+          "fields": [
+            "answer"
+          ]
+        },
+        {
+          "file": "Modules/Review/App/Http/Requests/Vendor/Review/VendorRespondRequest.php",
+          "fields": [
+            "body"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/MarkAllAsReadRequest.php",
+          "fields": [
+            "user_id",
+            "user_type"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/SendNotificationRequest.php",
+          "fields": [
+            "user_ids",
+            "user_ids.*",
+            "user_type",
+            "title",
+            "message",
+            "channels",
+            "channels.*",
+            "type",
+            "data",
+            "translations",
+            "translations.*",
+            "translations.*.title",
+            "translations.*.message"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/Admin/UpdateNotificationRequest.php",
+          "fields": [
+            "topic_id",
+            "type",
+            "channel",
+            "status",
+            "data",
+            "translations",
+            "translations.*",
+            "translations.*.title",
+            "translations.*.message"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/NotificationIndexRequest.php",
+          "fields": [
+            "read",
+            "per_page",
+            "channel",
+            "search",
+            "status"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicIndexRequest.php",
+          "fields": [
+            "type",
+            "search"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicSubscriptionRequest.php",
+          "fields": [
+            "topic_key",
+            "channels",
+            "channels.*"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/TopicUnsubscriptionRequest.php",
+          "fields": [
+            "topic_key"
+          ]
+        },
+        {
+          "file": "Modules/Notification/App/Http/Requests/User/UpdateMarketingConsentRequest.php",
+          "fields": [
+            "tenant_id",
+            "user_id",
+            "purpose",
+            "channel",
+            "granted",
+            "notice_version",
+            "errors",
+            "message",
+            "statusCode"
+          ]
+        }
+      ],
+      "enums": [
+        {
+          "file": "Modules/Review/App/Enums/ProductQuestionStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "PUBLISHED": "2",
+            "HIDDEN": "3"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewReminderChannel.php",
+          "cases": {
+            "IN_APP": "1",
+            "SMS_TEST": "2"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewReminderReason.php",
+          "cases": {
+            "DISABLED": "1",
+            "STORE_INACTIVE": "2",
+            "ORDER_NOT_DELIVERED": "3",
+            "TEST_SOURCE": "4",
+            "RECIPIENT_CHANGED": "5",
+            "ACCOUNT_INELIGIBLE": "6",
+            "RELATIONSHIP_INELIGIBLE": "7",
+            "ALREADY_REVIEWED": "8",
+            "FEATURE_DISABLED": "9",
+            "CONSENT_MISSING": "10",
+            "NOTICE_CHANGED": "11",
+            "CONTACT_UNVERIFIED": "12",
+            "CONTACT_CHANGED": "13",
+            "TRANSPORT_UNAVAILABLE": "14",
+            "ATTEMPT_FAILED": "15",
+            "DEADLINE": "16"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewReminderStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "IN_APP_AVAILABLE": "2",
+            "ACCEPTED_TEST": "3",
+            "SUPPRESSED": "4",
+            "RETRY": "5",
+            "ATTENTION": "6",
+            "EXPIRED": "7"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewStatus.php",
+          "cases": {
+            "PENDING": "1",
+            "APPROVED": "2",
+            "REJECTED": "3",
+            "HIDDEN": "4"
+          }
+        },
+        {
+          "file": "Modules/Review/App/Enums/ReviewVoteType.php",
+          "cases": {
+            "HELPFUL": "1",
+            "NOT_HELPFUL": "2"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/MarketingTestAcceptanceKind.php",
+          "cases": {
+            "EMAIL_TEST": "1",
+            "CART_SMS_TEST": "2",
+            "REVIEW_INBOX": "3",
+            "REVIEW_SMS_TEST": "4"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationAction.php",
+          "cases": {
+            "CUSTOMER": "1",
+            "ORDER": "2",
+            "PAYMENT": "3",
+            "TENANT": "4",
+            "SYSTEM": "5"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationTarget.php",
+          "cases": {
+            "ALL_CUSTOMERS": "1",
+            "ALL_TENANT_ADMINS": "2",
+            "SPECIFIC_CUSTOMERS": "3",
+            "SPECIFIC_TENANT_ADMINS": "4",
+            "ALL_ADMINS": "5",
+            "SPECIFIC_ADMINS": "6",
+            "ALL_VENDOR_ADMINS": "7",
+            "SPECIFIC_VENDOR_ADMINS": "8"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationTopic.php",
+          "cases": {
+            "TENANT": "'tenant'",
+            "ROLE": "'role'",
+            "USER_TYPE": "'user_type'",
+            "SYSTEM": "'system'",
+            "ALL_USERS": "'all_users'"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationType.php",
+          "cases": {
+            "CUSTOM": "'custom'",
+            "CUSTOMER_CREATED": "'customer_created'",
+            "CUSTOMER_UPDATED": "'customer_updated'",
+            "CUSTOMER_ACTIVATED": "'customer_activated'",
+            "CUSTOMER_DEACTIVATED": "'customer_deactivated'",
+            "TENANT_CREATED": "'tenant_created'",
+            "TENANT_UPDATED": "'tenant_updated'",
+            "PAYMENT_RECEIVED": "'payment_received'",
+            "PAYMENT_FAILED": "'payment_failed'",
+            "NEW_POLICY_UPDATE": "'new_policy_update'",
+            "SYSTEM_ANNOUNCEMENT": "'system_announcement'",
+            "SYSTEM_UPDATE": "'system_update'"
+          }
+        },
+        {
+          "file": "Modules/Notification/App/Enums/NotificationUserType.php",
+          "cases": {
+            "CUSTOMER": "1",
+            "TENANT_ADMIN": "2",
+            "ADMIN": "3",
+            "VENDOR_ADMIN": "4"
           }
         }
       ]

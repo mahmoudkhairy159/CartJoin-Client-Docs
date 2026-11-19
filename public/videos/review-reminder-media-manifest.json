@@ -1,0 +1,133 @@
+{
+  "capture_date": "2026-11-19",
+  "capture_timezone": "Africa/Cairo",
+  "kind": "guided-screenshot-clips",
+  "mechanism": "Actual root CUA JPEG screenshot pixels preserved in PNG files and rendered as four six-second still chapters with localized WebVTT captions; not continuous recording and no audio.",
+  "environment": "Controlled synthetic examples in a private local Tenant preview. No live external reminder provider or deployment acceptance.",
+  "configuration": "Processing is globally disabled by default. Only the isolated local preview explicitly enabled the guarded test path to show operator controls.",
+  "privacy": "No customer contacts, credentials, notification payloads or private provider evidence are published. Any operator explanation in the capture is synthetic.",
+  "limits": "In-app availability does not prove a read. SMS test acceptance does not prove external delivery, a submitted review, an order or revenue. Legacy transport outcomes remain unknown/read-only. The retry confirmation is cancelled; no retry is submitted in the demonstration.",
+  "acceptance": "Root reviewed actual English and Arabic screens, cancelled both confirmation dialogs and refreshed the request. The retained attempt count and fixed deadline were unchanged.",
+  "entries": [
+    {
+      "id": "tenant-review-reminders-en",
+      "locale": "en",
+      "role": "TENANT",
+      "url": "http://127.0.0.1:4319/review-reminders",
+      "frames": [
+        {
+          "path": "public/screenshots/tenant-review-reminders-en-checks.png",
+          "raw_artifact": "tenant-review-reminders-en-checks.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:48:24.920444+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-review-reminders-en-outcomes.png",
+          "raw_artifact": "tenant-review-reminders-en-outcomes.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:45:59.792945+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-review-reminders-en-history.png",
+          "raw_artifact": "tenant-review-reminders-en-history.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:46:26.118318+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-review-reminders-en-confirm.png",
+          "raw_artifact": "tenant-review-reminders-en-confirm.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:46:32.416651+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        }
+      ],
+      "video": "public/videos/tenant-review-reminders-en-tour.mp4",
+      "captions": "public/videos/tenant-review-reminders-en.vtt",
+      "poster": "public/screenshots/tenant-review-reminders-en-checks.png",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 24.0,
+      "bytes": 284088,
+      "captions_text": [
+        "Inspect each order request. Legacy transport outcomes remain unknown and read-only.",
+        "In-app availability, SMS test acceptance and suppression are separate. None proves external delivery.",
+        "Read recorded reasons and the shared attempt budget. A retry keeps the original deadline.",
+        "Only authorized operators request retries. This demonstration cancels and submits no retry."
+      ]
+    },
+    {
+      "id": "tenant-review-reminders-ar",
+      "locale": "ar",
+      "role": "TENANT",
+      "url": "http://127.0.0.1:4319/review-reminders",
+      "frames": [
+        {
+          "path": "public/screenshots/tenant-review-reminders-ar-checks.png",
+          "raw_artifact": "tenant-review-reminders-ar-checks.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:47:28.459333+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-review-reminders-ar-outcomes.png",
+          "raw_artifact": "tenant-review-reminders-ar-outcomes.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:47:42.067322+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-review-reminders-ar-history.png",
+          "raw_artifact": "tenant-review-reminders-ar-history.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:47:57.661549+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        },
+        {
+          "path": "public/screenshots/tenant-review-reminders-ar-confirm.png",
+          "raw_artifact": "tenant-review-reminders-ar-confirm.jpg",
+          "raw_artifact_updated_at": "2026-11-18T23:48:05.453965+00:00",
+          "dimensions": [
+            1265,
+            712
+          ]
+        }
+      ],
+      "video": "public/videos/tenant-review-reminders-ar-tour.mp4",
+      "captions": "public/videos/tenant-review-reminders-ar.vtt",
+      "poster": "public/screenshots/tenant-review-reminders-ar-checks.png",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 24.0,
+      "bytes": 227707,
+      "captions_text": [
+        "افحص طلب كل عملية شراء. تبقى نتائج النقل القديمة مجهولة وللقراءة فقط.",
+        "الإتاحة داخل التطبيق وقبول اختبار الرسائل والمنع نتائج مستقلة، ولا تثبت أي منها تسليمًا خارجيًا.",
+        "اقرأ الأسباب المسجلة وعدد المحاولات المشترك. تحافظ الإعادة على الموعد النهائي الأصلي.",
+        "يطلب الموظف المخول الإعادة فقط. يُلغى الإجراء في العرض دون إرسال إعادة محاولة."
+      ]
+    }
+  ]
+}

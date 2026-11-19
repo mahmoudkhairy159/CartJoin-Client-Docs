@@ -1,26 +1,34 @@
 ---
 title: "Marketing choices for each store"
-description: "Choose offers and cart reminders separately, without changing preferences at another store."
+description: "Choose offers, cart reminders and purchase feedback separately for each store and channel."
 roles: ["CUSTOMER", "ADMIN", "TENANT", "VENDOR"]
 ---
 
 ## How to use it
 
-Sign in to the store, then open **Account → Profile & addresses → Your marketing choices**. Choose email or SMS separately for **Store offers** and **Cart reminders**. Each change saves immediately; wait for “Your choice has been saved for this store.” If saving fails, your previous choice stays in place.
+Sign in to the store, then open **Account → Profile & addresses → Your marketing choices**. Choose email or SMS separately for **Store offers**, **Cart reminders** and **Purchase feedback**. Each change saves immediately; wait for “Your choice has been saved for this store.” If saving fails, your previous choice stays in place.
 
 Every option starts off. You can turn it off again at any time. Permission for an offer by email does not permit an SMS or a cart reminder.
 
 <div id="screen-guide" />
 
-<SystemScreenshot src="/docs/screenshots/customer-marketing-consent-en.png" alt="The customer marketing choices panel, with separate offers and cart reminder options." />
+<SystemScreenshot src="/docs/screenshots/customer-review-feedback-en-allowed.png" alt="Three independent message purposes, with only purchase-feedback SMS allowed in a synthetic customer account." />
 
-<video controls playsInline preload="none" poster="/docs/screenshots/customer-marketing-consent-en.png" width="1280" height="720">
-  <source src="/docs/videos/customer-marketing-consent-en-tour.mp4" type="video/mp4" />
-  <track src="/docs/videos/customer-marketing-consent-en.vtt" kind="captions" srcLang="en" label="English" default />
-  <track src="/docs/videos/customer-marketing-consent-ar.vtt" kind="captions" srcLang="ar" label="العربية" />
+<video controls playsInline preload="none" poster="/docs/screenshots/customer-review-feedback-en-allowed.png" width="1266" height="712">
+  <source src="/docs/videos/customer-review-feedback-en-tour.mp4" type="video/mp4" />
+  <track src="/docs/videos/customer-review-feedback-en.vtt" kind="captions" srcLang="en" label="English" default />
+  <track src="/docs/videos/customer-review-feedback-ar.vtt" kind="captions" srcLang="ar" label="العربية" />
 </video>
 
-This 12-second guided screenshot tour shows actual saved demo states: all off → SMS cart reminder allowed → withdrawn. It is a sequence of screenshots captured from the local system on 18 November 2026, rather than a continuous recording. No message was sent. Enable captions for the explanation.
+This 24-second captioned screenshot tour shows saved purchase-feedback permission, withdrawal, an inbox invitation and its read state. Screens were captured from an isolated local preview with synthetic records on 19 November 2026 in Cairo. It is a sequence of screenshots, not a continuous recording. The inbox invitation was created through the guarded test workflow; no external SMS or email delivery is claimed.
+
+## Find and read a review invitation
+
+Open **Account → Notifications**. Read the invitation, then choose **Mark read**; keyboard users can focus the control and press Enter. The unread count decreases and the invitation remains under **All**. Reading it does not submit a review or change your message permissions. Open **My reviews** separately to manage your reviews.
+
+<SystemScreenshot src="/docs/screenshots/customer-review-feedback-en-inbox.png" alt="An unread synthetic review invitation displaying its full message in the customer inbox." />
+
+An invitation keeps the language used when it was created. Switching the interface to Arabic does not translate an existing English message. Purchase-feedback SMS requires current permission and a verified, unchanged phone; selecting email does not activate email delivery. Withdrawn permission prevents future eligible external attempts, without deleting an existing transactional inbox invitation.
 
 ## One account, independent choices
 
@@ -52,4 +60,4 @@ The controls save preferences; they do not launch a campaign or send a reminder.
 
 If choices cannot load, use **Try again**; no permission has changed. If a save fails, retry after your connection returns. If the notice has changed, refresh the page and review it before choosing again. Check you are at the intended store before changing a choice.
 
-Related: [Notifications and attention queues](/en/features/notifications).
+Related: [Notifications and attention queues](/en/features/notifications) · [Review invitation follow-up](/en/features/review-reminders).

@@ -7741,5 +7741,99 @@
       "en": "Controlled synthetic local examples · Captured 19 November 2026 · Test acceptance only · Both retry dialogs cancelled",
       "ar": "أمثلة محلية تجريبية مقيدة · التقطت في ١٩ نوفمبر ٢٠٢٦ · قبول اختباري فقط · أُلغي حوارا إعادة المحاولة"
     }
+  },
+  "feature-review-reminders": {
+    "title": {
+      "en": "Follow a review invitation",
+      "ar": "تابع دعوة التقييم"
+    },
+    "intro": {
+      "en": "Actual local tenant screens with controlled synthetic examples. Inspect each channel and its history before acting.",
+      "ar": "شاشات متجر محلية فعلية بأمثلة تجريبية مقيدة. افحص كل قناة وسجلها قبل التنفيذ."
+    },
+    "video": false,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "tenant-review-reminders-en-checks.png",
+        "imageAr": "tenant-review-reminders-ar-checks.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Read legacy and expired records",
+          "ar": "اقرأ السجلات القديمة والمنتهية"
+        },
+        "body": {
+          "en": "Unknown historical delivery is not proof of failure or success. These records cannot be replayed here.",
+          "ar": "النتيجة التاريخية المجهولة لا تثبت الفشل أو النجاح. لا تُعاد هذه السجلات هنا."
+        },
+        "guide": "features/review-reminders"
+      },
+      {
+        "image": "tenant-review-reminders-en-outcomes.png",
+        "imageAr": "tenant-review-reminders-ar-outcomes.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Distinguish channel outcomes",
+          "ar": "ميّز نتائج القنوات"
+        },
+        "body": {
+          "en": "An inbox invitation is available in the app. SMS test acceptance is a local test record; neither proves external delivery.",
+          "ar": "تتاح الدعوة داخل التطبيق، وقبول اختبار الرسائل سجل محلي؛ لا تثبت أي منهما تسليمًا خارجيًا."
+        },
+        "guide": "features/review-reminders"
+      },
+      {
+        "image": "tenant-review-reminders-en-history.png",
+        "imageAr": "tenant-review-reminders-ar-history.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Review the failure and remaining budget",
+          "ar": "راجع العطل والمحاولات المتبقية"
+        },
+        "body": {
+          "en": "Read the recorded attempts and explain what you reviewed. The original deadline and shared budget stay fixed.",
+          "ar": "اقرأ المحاولات المسجلة واشرح ما راجعته. يبقى الموعد النهائي الأصلي وعدد المحاولات المشترك ثابتين."
+        },
+        "guide": "features/review-reminders"
+      },
+      {
+        "image": "tenant-review-reminders-en-confirm.png",
+        "imageAr": "tenant-review-reminders-ar-confirm.png",
+        "focus": [
+          0,
+          0,
+          100,
+          100
+        ],
+        "title": {
+          "en": "Check the confirmation before acting",
+          "ar": "راجع التأكيد قبل التنفيذ"
+        },
+        "body": {
+          "en": "Only authorized operators can request a retry. This demonstration cancels the dialog and submits no retry.",
+          "ar": "يطلب الموظف المخول الإعادة فقط. يُلغى الحوار في العرض دون إرسال إعادة محاولة."
+        },
+        "guide": "features/review-reminders"
+      }
+    ],
+    "provenance": {
+      "en": "Controlled synthetic local examples · Captured 19 November 2026 · Private test preview · Both retry confirmations cancelled",
+      "ar": "أمثلة محلية تجريبية مقيدة · التقطت في ١٩ نوفمبر ٢٠٢٦ · معاينة اختبار خاصة · أُلغي حوارا إعادة المحاولة"
+    }
   }
 }

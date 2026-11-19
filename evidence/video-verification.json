@@ -1253,5 +1253,94 @@
     },
     "verified": "2026-11-19",
     "limits": "Actual controlled local test examples; no live delivery/recovered revenue. Retry demonstration cancelled without mutation."
+  },
+  {
+    "tour": "tenant-review-reminders-en",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1266,
+    "height": 712,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "en",
+      "captionTrackSelected": true,
+      "interactiveStep": "3/4"
+    },
+    "verified": "2026-11-19",
+    "limits": "Synthetic local eligibility; both retry confirmations cancelled; no external delivery claim."
+  },
+  {
+    "tour": "tenant-review-reminders-ar",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1266,
+    "height": 712,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "ar",
+      "captionTrackSelected": true,
+      "interactiveStep": "4/4"
+    },
+    "verified": "2026-11-19",
+    "limits": "Synthetic local eligibility; both retry confirmations cancelled; no external delivery claim."
+  },
+  {
+    "tour": "customer-review-feedback-en",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1266,
+    "height": 712,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "en",
+      "captionTrackSelected": true,
+      "captionMode": "showing",
+      "consoleErrors": 0
+    },
+    "verified": "2026-11-19",
+    "limits": "Actual synthetic local customer choices and persisted inbox read state. Existing invitation English text reflects send-time preference even in Arabic chrome; no external SMS delivery, review submission or revenue claim."
+  },
+  {
+    "tour": "customer-review-feedback-ar",
+    "duration": 24,
+    "expected": 24,
+    "codec": "h264",
+    "width": 1266,
+    "height": 712,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 24,
+      "error": false,
+      "defaultCaptions": "ar",
+      "captionTrackSelected": true,
+      "captionMode": "showing",
+      "consoleErrors": 0,
+      "lang": "ar",
+      "dir": "rtl",
+      "brokenImages": 0
+    },
+    "verified": "2026-11-19",
+    "limits": "Actual synthetic local customer choices and persisted inbox read state. Existing invitation English text reflects send-time preference even in Arabic chrome; no external SMS delivery, review submission or revenue claim."
   }
 ]

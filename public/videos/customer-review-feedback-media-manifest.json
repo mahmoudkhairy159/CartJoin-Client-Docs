@@ -1,0 +1,198 @@
+{
+  "capture_date": "2026-11-19",
+  "capture_timezone": "Africa/Cairo",
+  "kind": "guided-screenshot-clips",
+  "mechanism": "Actual root CUA JPEG pixels preserved in PNG files, then rendered as four six-second still chapters with localized WebVTT captions; not continuous recording and no audio.",
+  "environment": "Synthetic customer data in an isolated local Storefront preview. No live external provider or deployment acceptance.",
+  "privacy": "Only controlled synthetic customer data appears. No password, OTP, access token or private provider evidence is published.",
+  "message_language": "The existing invitation retains English content from the customer preference at send time, including when the current interface is Arabic. Captions explain this without pretending the invitation was translated.",
+  "acceptance": "Root verified the invitation body in both interface languages and explicitly marked it read. Read status persisted after reload. Permission withdrawal affects only the chosen store, purpose and channel.",
+  "limits": "Saving purchase-feedback permission does not send a message. In-app availability or read state does not prove external SMS delivery, review submission, an order or revenue.",
+  "script": "scripts/render-customer-review-feedback-media.py",
+  "script_sha256": "b4c27b6948e3f70e42fe99be7d85dfd07373c1eec7e4eb037e118cfc2493c732",
+  "entries": [
+    {
+      "id": "customer-review-feedback-en",
+      "locale": "en",
+      "role": "CUSTOMER",
+      "preview_origin": "http://127.0.0.1:4320",
+      "frames": [
+        {
+          "path": "public/screenshots/customer-review-feedback-en-allowed.png",
+          "url": "http://127.0.0.1:4320/account/profile",
+          "ui_locale": "en",
+          "raw_artifact": "customer-review-feedback-en-allowed.jpg",
+          "raw_sha256": "3ff57125b4348c9b8dcf072aa4f27b5a1bb09db9bf688594e0eb8b8288b40abb",
+          "png_sha256": "2e7a25d3a05160292c3202f9e5ded8835f0e39dde5add10d2ead4db43bd866d8",
+          "raw_artifact_updated_at": "2026-11-18T23:59:56.204626+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        },
+        {
+          "path": "public/screenshots/customer-review-feedback-en-withdrawn.png",
+          "url": "http://127.0.0.1:4320/account/profile",
+          "ui_locale": "en",
+          "raw_artifact": "customer-review-feedback-en-withdrawn.jpg",
+          "raw_sha256": "929d7d2be9c14810695deef2852973e9089e5bd14c5893696b2f036d53b11f6f",
+          "png_sha256": "572b9dc5a244f74438a92a5bc35739708eda21ea86a21555d6a449ee24c3efdb",
+          "raw_artifact_updated_at": "2026-11-19T00:00:24.887400+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        },
+        {
+          "path": "public/screenshots/customer-review-feedback-en-inbox.png",
+          "url": "http://127.0.0.1:4320/account/notifications",
+          "ui_locale": "en",
+          "raw_artifact": "customer-review-feedback-en-inbox.jpg",
+          "raw_sha256": "4be3059642df2bad2298a3c19026af54ad0089115ed79043fb95ca01f05660d1",
+          "png_sha256": "7d9b1228fe42b8fca68d4eb55942f92ec628608c620c6e0edf75a5572edb3bd4",
+          "raw_artifact_updated_at": "2026-11-19T00:11:11.815302+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        },
+        {
+          "path": "public/screenshots/customer-review-feedback-en-read.png",
+          "url": "http://127.0.0.1:4320/account/notifications",
+          "ui_locale": "en",
+          "raw_artifact": "customer-review-feedback-en-read.jpg",
+          "raw_sha256": "e0a58a0e10f9d5dad6429253ec1d42af3a6a2f4a57778b4176d4145ecf583e9d",
+          "png_sha256": "789031ae55381cba4fd2fcf462bcdfaddce27e9bfb76a6d6afeda9222a348992",
+          "raw_artifact_updated_at": "2026-11-19T00:12:38.715286+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        }
+      ],
+      "poster": "public/screenshots/customer-review-feedback-en-allowed.png",
+      "video": "public/videos/customer-review-feedback-en-tour.mp4",
+      "video_sha256": "c55dcb1652538293d1f198de9bc4a44229e02b478097e794d26590af3bb8bbeb",
+      "captions": "public/videos/customer-review-feedback-en.vtt",
+      "captions_sha256": "79dc7f29d54dcf40c9fb61e435625f692576d438ed53a7fc24f9221bc417b23d",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 24.0,
+      "audio_streams": 0,
+      "bytes": 167375,
+      "captions_text": [
+        "Purchase-feedback SMS permission is separate for this store and channel. Permission alone does not send an invitation.",
+        "Withdraw only purchase-feedback SMS. Other message choices remain independent.",
+        "Read the recorded invitation. Its original message language may differ from the current interface.",
+        "Mark the invitation as read. This saved inbox state does not prove external SMS delivery."
+      ]
+    },
+    {
+      "id": "customer-review-feedback-ar",
+      "locale": "ar",
+      "role": "CUSTOMER",
+      "preview_origin": "http://127.0.0.1:4320",
+      "frames": [
+        {
+          "path": "public/screenshots/customer-review-feedback-ar-allowed.png",
+          "url": "http://127.0.0.1:4320/account/profile",
+          "ui_locale": "ar",
+          "raw_artifact": "customer-review-feedback-ar-allowed.jpg",
+          "raw_sha256": "7709342a0c0c26d088b72f02e2d8f34c65384a01ebbaab000fee5987ba81bcba",
+          "png_sha256": "2ddf37699337b4fdcfcb1a17520384392bbfa0c2fcf2e47c04ddf30a439079b7",
+          "raw_artifact_updated_at": "2026-11-19T00:01:06.852856+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        },
+        {
+          "path": "public/screenshots/customer-review-feedback-ar-withdrawn.png",
+          "url": "http://127.0.0.1:4320/account/profile",
+          "ui_locale": "ar",
+          "raw_artifact": "customer-review-feedback-ar-withdrawn.jpg",
+          "raw_sha256": "994f49b0a5bbbf537334ed6889b0a6b9c83a7375509389f3811ad0319d86980e",
+          "png_sha256": "a498b62177d3bbfe709a70eca1aab894c70e77de7a22be0a5843bd96b198d765",
+          "raw_artifact_updated_at": "2026-11-19T00:00:50.652718+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        },
+        {
+          "path": "public/screenshots/customer-review-feedback-ar-inbox.png",
+          "url": "http://127.0.0.1:4320/account/notifications",
+          "ui_locale": "ar",
+          "raw_artifact": "customer-review-feedback-ar-inbox.jpg",
+          "raw_sha256": "f2166614679568bf99689c86328458f94c2801a68f9482a69ddb308425546f16",
+          "png_sha256": "e147fd64562dd4776e4695a8999f84328f3b87274218fc21f739a7bbb352f433",
+          "raw_artifact_updated_at": "2026-11-19T00:10:47.263467+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        },
+        {
+          "path": "public/screenshots/customer-review-feedback-ar-read.png",
+          "url": "http://127.0.0.1:4320/account/notifications",
+          "ui_locale": "ar",
+          "raw_artifact": "customer-review-feedback-ar-read.jpg",
+          "raw_sha256": "8a5f115700afe8d275ef36ed358113b3616851e8072d655b9272084c7ea79676",
+          "png_sha256": "6842109a23bdc8063d8d925a2cad7d860bbc84cea8004bc0013bf0b07227817d",
+          "raw_artifact_updated_at": "2026-11-19T00:12:13.441951+00:00",
+          "dimensions": [
+            1265,
+            712
+          ],
+          "pixels_preserved": true
+        }
+      ],
+      "poster": "public/screenshots/customer-review-feedback-ar-allowed.png",
+      "video": "public/videos/customer-review-feedback-ar-tour.mp4",
+      "video_sha256": "800c3cb420d4849847fb30c14784618e3cbd60439ed52085b31e28d30fd85c80",
+      "captions": "public/videos/customer-review-feedback-ar.vtt",
+      "captions_sha256": "362ec1644f80a619988c21b9be71a5b825e228371d6de0333d3d85b171a7f75e",
+      "codec": "h264",
+      "video_dimensions": [
+        1266,
+        712
+      ],
+      "duration_seconds": 24.0,
+      "audio_streams": 0,
+      "bytes": 198536,
+      "captions_text": [
+        "إذن الرسائل النصية لتقييم المشتريات مستقل لهذا المتجر والقناة. الإذن وحده لا يرسل دعوة.",
+        "اسحب إذن الرسائل النصية لتقييم المشتريات فقط. تبقى اختيارات الرسائل الأخرى مستقلة.",
+        "اقرأ الدعوة المسجلة. قد تختلف لغة الرسالة الأصلية عن لغة الواجهة الحالية.",
+        "ضع علامة مقروء على الدعوة. لا تثبت حالة صندوق الإشعارات المحفوظة تسليم رسالة نصية خارجية."
+      ]
+    }
+  ],
+  "owned_files": [
+    "scripts/render-customer-review-feedback-media.py",
+    "public/videos/customer-review-feedback-media-manifest.json",
+    "public/screenshots/customer-review-feedback-en-allowed.png",
+    "public/screenshots/customer-review-feedback-en-withdrawn.png",
+    "public/screenshots/customer-review-feedback-en-inbox.png",
+    "public/screenshots/customer-review-feedback-en-read.png",
+    "public/videos/customer-review-feedback-en-tour.mp4",
+    "public/videos/customer-review-feedback-en.vtt",
+    "public/screenshots/customer-review-feedback-ar-allowed.png",
+    "public/screenshots/customer-review-feedback-ar-withdrawn.png",
+    "public/screenshots/customer-review-feedback-ar-inbox.png",
+    "public/screenshots/customer-review-feedback-ar-read.png",
+    "public/videos/customer-review-feedback-ar-tour.mp4",
+    "public/videos/customer-review-feedback-ar.vtt"
+  ],
+  "post_capture_acceptance": "These actual frames predate the cosmetic change that keeps inbox actions always visible. The underlying saved choices, invitation body and read state were browser verified. The final production controls separately passed pointer interaction and persisted reload with controlled synthetic inbox data; this does not establish review, order or external delivery evidence."
+}
