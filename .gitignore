@@ -63,3 +63,6 @@ build.log
 !/evidence/carrier-evidence-verification.md
 !/evidence/carrier-evidence-guide-ar.jpg
 !/evidence/fulfillment-assessment-verification.md
+
+__pycache__/
+*.pyc
