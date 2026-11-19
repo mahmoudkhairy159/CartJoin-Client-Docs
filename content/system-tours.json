@@ -8117,5 +8117,406 @@
       "en": "Synthetic local SQLite preview · Captured 19 November 2026 · Screenshot-based silent tour · No real money, delivery or live deployment",
       "ar": "معاينة SQLite محلية ببيانات تجريبية · التقطت في ١٩ نوفمبر ٢٠٢٦ · جولة صامتة من صور · لا أموال أو تسليم حقيقي ولا نشر حي"
     }
+  },
+  "feature-shopping-funnel-tenant": {
+    "title": {
+      "en": "Make measurement optional, then read the store report",
+      "ar": "أتِح القياس اختيارياً ثم اقرأ تقرير المتجر"
+    },
+    "intro": {
+      "en": "Actual local screens captured on 19 November 2026 with controlled synthetic observations. These screenshot clips demonstrate the interface, not live purchases, payment collection or deliveries.",
+      "ar": "شاشات محلية فعلية التُقطت في 19 نوفمبر 2026 بملاحظات مصطنعة مضبوطة. توضح المقاطع المصورة الواجهة، ولا تمثل شراءً حياً أو تحصيل أموال أو تسليمات."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "funnel-tenant-policy-en.jpg",
+        "imageAr": "funnel-tenant-policy-ar.jpg",
+        "focus": [
+          22,
+          31,
+          73,
+          60
+        ],
+        "focusAr": [
+          3,
+          31,
+          73,
+          61
+        ],
+        "title": {
+          "en": "Enable availability without opting customers in",
+          "ar": "أتِح الميزة دون منح إذن العملاء"
+        },
+        "body": {
+          "en": "This independent store setting changes the notice version. Every browser must separately allow the current version; earlier marketing or cookie permission does not apply.",
+          "ar": "يغير هذا الإعداد المستقل إصدار إشعار المتجر. يجب أن يسمح كل متصفح بالإصدار الحالي بشكل مستقل؛ ولا ينطبق إذن سابق للتسويق أو ملفات الارتباط."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-tenant-stages-en.jpg",
+        "imageAr": "funnel-tenant-stages-ar.jpg",
+        "focus": [
+          22,
+          24,
+          73,
+          65
+        ],
+        "focusAr": [
+          3,
+          25,
+          73,
+          70
+        ],
+        "title": {
+          "en": "Follow linked stages, not people or revenue",
+          "ar": "تابع المراحل المترابطة لا الأشخاص أو الإيرادات"
+        },
+        "body": {
+          "en": "The synthetic example has four admissions, three observed journeys and ordered stages 3, 2, 1, 1, 1. Split seller orders do not multiply a journey; unpaid COD is not funding.",
+          "ar": "للمثال المصطنع أربع رحلات مقبولة وثلاث مرصودة، ومراحله المرتبة 3 ثم 2 ثم 1 ثم 1 ثم 1. لا تضاعف طلبات الموردين الفرعية الرحلة، والدفع عند الاستلام غير المحصل ليس تمويلاً."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-tenant-withdrawal-en.jpg",
+        "imageAr": "funnel-tenant-withdrawal-ar.jpg",
+        "focus": [
+          22,
+          61,
+          73,
+          19
+        ],
+        "focusAr": [
+          3,
+          54,
+          73,
+          20
+        ],
+        "title": {
+          "en": "An early collection stop leaves final rates unavailable",
+          "ar": "الإيقاف المبكر للجمع يمنع النسب النهائية"
+        },
+        "body": {
+          "en": "This separate synthetic entry day has one journey whose collection ended early. The report withholds final rates; later funding cannot extend its retained collection boundary. Missing evidence is not proven abandonment.",
+          "ar": "يضم يوم الدخول المصطنع المستقل رحلة انتهى جمعها مبكراً. يحجب التقرير نسبها النهائية؛ ولا يمدد تمويل لاحق حد جمعها المحفوظ. نقص الأدلة ليس إثبات ترك الشراء."
+        },
+        "guide": "features/shopping-funnel"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; no live purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت في 19 نوفمبر 2026 · صور إرشادية، وليست مشتريات أو مدفوعات أو تسليمات حية."
+    }
+  },
+  "feature-shopping-funnel-vendor": {
+    "title": {
+      "en": "Read only your frozen seller participation",
+      "ar": "اقرأ مشاركة المورد المحفوظة فقط"
+    },
+    "intro": {
+      "en": "Actual English and Arabic vendor screens from the local synthetic preview. The approved workspace and saved evidence define this seller-only report.",
+      "ar": "شاشات مورد فعلية بالإنجليزية والعربية من المعاينة المحلية المصطنعة. تحدد مساحة المتجر المعتمدة والأدلة المحفوظة تقرير هذا المورد فقط."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "funnel-vendor-scope-en.jpg",
+        "imageAr": "funnel-vendor-scope-ar.jpg",
+        "focus": [
+          22,
+          38,
+          73,
+          14
+        ],
+        "focusAr": [
+          3,
+          45,
+          73,
+          15
+        ],
+        "title": {
+          "en": "Check the approved store workspace",
+          "ar": "راجع مساحة المتجر المعتمدة"
+        },
+        "body": {
+          "en": "Only frozen product and cart participation belonging to this seller is included. This is not the store-wide visitor population or another seller’s activity. Choose entry days and read the saved cutoff.",
+          "ar": "تظهر مشاركة المنتجات والسلة المحفوظة لهذا المورد فقط. هذه ليست مجموعة زوار المتجر بالكامل أو نشاط مورد آخر. اختر أيام الدخول واقرأ الحد الزمني المحفوظ."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-vendor-stages-en.jpg",
+        "imageAr": "funnel-vendor-stages-ar.jpg",
+        "focus": [
+          22,
+          57,
+          73,
+          38
+        ],
+        "focusAr": [
+          3,
+          46,
+          73,
+          39
+        ],
+        "title": {
+          "en": "Read your own ordered chain",
+          "ar": "اقرأ المسار المرتب الخاص بك"
+        },
+        "body": {
+          "en": "This synthetic seller report shows ordered stages 3, 2, 1, 1, 1. A paid sibling from another seller cannot qualify an unfunded canceled child; rates use the seller’s recorded views.",
+          "ar": "يعرض تقرير المورد المصطنع مراحل مرتبة 3 ثم 2 ثم 1 ثم 1 ثم 1. لا يؤهل دفع مورد آخر طلباً فرعياً ملغى غير ممول؛ وتستخدم النسب مشاهدات المورد المسجلة."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-vendor-coverage-en.jpg",
+        "imageAr": "funnel-vendor-coverage-ar.jpg",
+        "focus": [
+          22,
+          40,
+          73,
+          48
+        ],
+        "focusAr": [
+          3,
+          43,
+          73,
+          38
+        ],
+        "title": {
+          "en": "Check coverage and known test exclusions",
+          "ar": "راجع التغطية واستبعاد الاختبارات المعروفة"
+        },
+        "body": {
+          "en": "The example excludes one known test journey and lists two journeys without established provenance. Absence of a test marker does not prove human attention. No historical views are reconstructed.",
+          "ar": "يستبعد المثال رحلة اختبار معروفة ويعرض رحلتين دون أصل مثبت. غياب علامة الاختبار لا يثبت انتباه إنسان. لا يعاد بناء مشاهدات تاريخية."
+        },
+        "guide": "features/shopping-funnel"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; no live purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت في 19 نوفمبر 2026 · صور إرشادية، وليست مشتريات أو مدفوعات أو تسليمات حية."
+    }
+  },
+  "feature-shopping-funnel-admin": {
+    "title": {
+      "en": "Compare recorded journeys across the platform",
+      "ar": "قارن الرحلات المسجلة عبر المنصة"
+    },
+    "intro": {
+      "en": "Actual local admin screens captured on 19 November 2026 with controlled synthetic observations. This guided screenshot clip demonstrates report interpretation, not live customer activity or payments.",
+      "ar": "شاشات إدارة محلية فعلية التُقطت في 19 نوفمبر 2026 بملاحظات مصطنعة مضبوطة. يشرح مقطع اللقطات قراءة التقرير، ولا يمثل نشاط عملاء أو مدفوعات حية."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "funnel-admin-scope-en.jpg",
+        "imageAr": "funnel-admin-scope-ar.jpg",
+        "focus": [
+          22,
+          34,
+          73,
+          31
+        ],
+        "focusAr": [
+          3,
+          48,
+          73,
+          29
+        ],
+        "title": {
+          "en": "Choose global or one-store scope",
+          "ar": "اختر النطاق العالمي أو متجراً واحداً"
+        },
+        "body": {
+          "en": "The header defines this report scope. Global figures combine recorded store journeys, not unique central customers. Entry dates are admission days; queued work keeps its saved cutoff.",
+          "ar": "تحدد الترويسة نطاق التقرير. تجمع الأرقام العالمية رحلات المتاجر المسجلة، لا عملاء مركزيين فريدين. أيام الدخول هي أيام قبول الرحلات، وتحتفظ المهمة بحدها الزمني المحفوظ."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-admin-stages-en.jpg",
+        "imageAr": "funnel-admin-stages-ar.jpg",
+        "focus": [
+          22,
+          21,
+          73,
+          65
+        ],
+        "focusAr": [
+          3,
+          12,
+          73,
+          68
+        ],
+        "title": {
+          "en": "Compare admissions with ordered stages",
+          "ar": "قارن الرحلات المقبولة بالمراحل المرتبة"
+        },
+        "body": {
+          "en": "This synthetic global example has five admissions, four observed journeys and ordered stages 4, 2, 1, 1, 1. One funded journey among four recorded views is 25%; these figures are not people or revenue.",
+          "ar": "للمثال العالمي المصطنع خمس رحلات مقبولة وأربع مرصودة، ومراحله المرتبة 4 ثم 2 ثم 1 ثم 1 ثم 1. رحلة ممولة من أربع مشاهدات مسجلة تعني 25%؛ وهذه الأرقام ليست أشخاصاً أو إيرادات."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-admin-coverage-en.jpg",
+        "imageAr": "funnel-admin-coverage-ar.jpg",
+        "focus": [
+          22,
+          37,
+          73,
+          48
+        ],
+        "focusAr": [
+          3,
+          42,
+          73,
+          46
+        ],
+        "title": {
+          "en": "Read coverage before interpreting conversion",
+          "ar": "اقرأ التغطية قبل تفسير التحويل"
+        },
+        "body": {
+          "en": "The preview excludes one known test journey and labels four without established provenance. Enabled availability does not mean all traffic was measured; missing test markers do not prove human attention.",
+          "ar": "تستبعد المعاينة رحلة اختبار معروفة وتوضح أربع رحلات دون أصل مثبت. إتاحة القياس لا تعني قياس كل الزيارات؛ وغياب علامات الاختبار لا يثبت انتباه إنسان."
+        },
+        "guide": "features/shopping-funnel"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; no live purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت في 19 نوفمبر 2026 · صور إرشادية، وليست مشتريات أو مدفوعات أو تسليمات حية."
+    }
+  },
+  "feature-shopping-funnel-customer": {
+    "title": {
+      "en": "Choose measurement and confirm withdrawal",
+      "ar": "اختر القياس وأكد سحب الإذن"
+    },
+    "intro": {
+      "en": "Actual local browser screens captured on 19 November 2026. This 24-second screenshot sequence shows a synthetic product and a controlled connection-failure demonstration, not a live purchase or payment.",
+      "ar": "شاشات متصفح محلية فعلية التُقطت في 19 نوفمبر 2026. يعرض تسلسل اللقطات البالغ 24 ثانية منتجاً مصطنعاً وتجربة فشل اتصال مضبوطة، وليس شراءً أو دفعاً حياً."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 6,
+    "steps": [
+      {
+        "image": "funnel-customer-choice-en.jpg",
+        "imageAr": "funnel-customer-choice-ar.jpg",
+        "focus": [
+          61,
+          39,
+          34,
+          55
+        ],
+        "focusAr": [
+          3,
+          47,
+          35,
+          47
+        ],
+        "title": {
+          "en": "Your store-specific choice starts off",
+          "ar": "يبدأ اختيارك الخاص بالمتجر متوقفاً"
+        },
+        "body": {
+          "en": "Use Manage shopping measurement in the footer. This optional choice is separate from marketing, cart reminders and feedback. Allow it explicitly for this store and notice version; keeping it off does not prevent shopping.",
+          "ar": "افتح إدارة قياس التسوق في التذييل. هذا الاختيار الاختياري منفصل عن التسويق وتذكيرات السلة والتقييمات. اسمح به صراحة لهذا المتجر وإصدار إشعاره؛ وإبقاؤه متوقفاً لا يمنع التسوق."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-customer-product-en.jpg",
+        "imageAr": "funnel-customer-product-ar.jpg",
+        "focus": [
+          54,
+          22,
+          43,
+          48
+        ],
+        "focusAr": [
+          3,
+          23,
+          43,
+          53
+        ],
+        "title": {
+          "en": "A displayed product can report a view after permission",
+          "ar": "يمكن أن يبلغ عرض المنتج عن مشاهدة بعد الإذن"
+        },
+        "body": {
+          "en": "After allowing measurement, an eligible rendered product can report one observed view. This synthetic product uses existing frontend placeholder artwork, not a real offer. A reported display proves neither human attention nor a purchase.",
+          "ar": "بعد السماح بالقياس، يمكن لمنتج مؤهل معروض الإبلاغ عن مشاهدة مرصودة. يستخدم المنتج المصطنع صورة بديلة موجودة بالواجهة، وليس عرضاً حقيقياً. لا يثبت العرض المبلغ عنه انتباه إنسان أو شراءً."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-customer-pending-en.jpg",
+        "imageAr": "funnel-customer-pending-ar.jpg",
+        "focus": [
+          61,
+          72,
+          34,
+          22
+        ],
+        "focusAr": [
+          3,
+          76,
+          35,
+          18
+        ],
+        "title": {
+          "en": "Local stopping and server confirmation are different",
+          "ar": "الإيقاف المحلي وتأكيد الخادم أمران مختلفان"
+        },
+        "body": {
+          "en": "A controlled local connection failure leaves server confirmation pending while this browser stops sending measurement immediately. The saved pending stop survives reload; Allow stays disabled. Retry server stop confirmation when connected.",
+          "ar": "يترك فشل اتصال محلي مضبوط تأكيد الخادم معلقاً بينما يتوقف المتصفح عن إرسال القياس فوراً. يبقى طلب الإيقاف المحفوظ بعد إعادة التحميل، ويظل السماح معطلاً. أعد محاولة تأكيد الإيقاف عند الاتصال."
+        },
+        "guide": "features/shopping-funnel"
+      },
+      {
+        "image": "funnel-customer-withdrawal-en.jpg",
+        "imageAr": "funnel-customer-withdrawal-ar.jpg",
+        "focus": [
+          61,
+          68,
+          34,
+          26
+        ],
+        "focusAr": [
+          3,
+          77,
+          35,
+          17
+        ],
+        "title": {
+          "en": "Retry confirms the stop without turning measurement on",
+          "ar": "تؤكد إعادة المحاولة الإيقاف دون تشغيل القياس"
+        },
+        "body": {
+          "en": "After the connection is restored, retry confirms server revocation: the pending warning disappears and measurement remains off. Before confirmation or fixed expiry, an already-linked purchase may still appear within the previous collection boundary.",
+          "ar": "بعد استعادة الاتصال، تؤكد إعادة المحاولة سحب التصريح على الخادم: يختفي التحذير المعلق ويبقى القياس متوقفاً. قبل التأكيد أو انتهاء الصلاحية الثابتة، قد يظل شراء مرتبط سابقاً ظاهراً ضمن حد الجمع السابق."
+        },
+        "guide": "features/shopping-funnel"
+      }
+    ],
+    "provenance": {
+      "en": "Local synthetic preview · Captured 19 November 2026 · Guided screenshots; no live purchases, payments or deliveries.",
+      "ar": "معاينة محلية ببيانات مصطنعة · التقطت في 19 نوفمبر 2026 · صور إرشادية، وليست مشتريات أو مدفوعات أو تسليمات حية."
+    }
   }
 }

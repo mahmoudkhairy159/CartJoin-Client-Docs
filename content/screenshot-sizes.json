@@ -1566,5 +1566,109 @@
   "cohort-vendor-coverage-ar.jpg": {
     "width": 1265,
     "height": 712
+  },
+  "funnel-tenant-policy-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-tenant-policy-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-tenant-stages-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-tenant-stages-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-tenant-withdrawal-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-tenant-withdrawal-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-vendor-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-vendor-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-vendor-stages-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-vendor-stages-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-vendor-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-vendor-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-admin-scope-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-admin-scope-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-admin-stages-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-admin-stages-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-admin-coverage-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-admin-coverage-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-choice-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-choice-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-product-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-product-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-pending-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-pending-ar.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-withdrawal-en.jpg": {
+    "width": 1265,
+    "height": 712
+  },
+  "funnel-customer-withdrawal-ar.jpg": {
+    "width": 1265,
+    "height": 712
   }
 }

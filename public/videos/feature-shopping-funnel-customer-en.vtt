@@ -1,0 +1,33 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.000
+Your store-specific choice starts off
+Use Manage shopping measurement in the footer. This optional choice is
+separate from marketing, cart reminders and feedback. Allow it
+explicitly for this store and notice version; keeping it off does not
+prevent shopping.
+
+2
+00:00:06.000 --> 00:00:12.000
+A displayed product can report a view after permission
+After allowing measurement, an eligible rendered product can report one
+observed view. This synthetic product uses existing frontend placeholder
+artwork, not a real offer. A reported display proves neither human
+attention nor a purchase.
+
+3
+00:00:12.000 --> 00:00:18.000
+Local stopping and server confirmation are different
+A controlled local connection failure leaves server confirmation pending
+while this browser stops sending measurement immediately. The saved
+pending stop survives reload; Allow stays disabled. Retry server stop
+confirmation when connected.
+
+4
+00:00:18.000 --> 00:00:24.000
+Retry confirms the stop without turning measurement on
+After the connection is restored, retry confirms server revocation: the
+pending warning disappears and measurement remains off. Before
+confirmation or fixed expiry, an already-linked purchase may still
+appear within the previous collection boundary.

@@ -1,0 +1,22 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.000
+Choose global or one-store scope
+The header defines this report scope. Global figures combine recorded
+store journeys, not unique central customers. Entry dates are admission
+days; queued work keeps its saved cutoff.
+
+2
+00:00:06.000 --> 00:00:12.000
+Compare admissions with ordered stages
+This synthetic global example has five admissions, four observed
+journeys and ordered stages 4, 2, 1, 1, 1. One funded journey among four
+recorded views is 25%; these figures are not people or revenue.
+
+3
+00:00:12.000 --> 00:00:18.000
+Read coverage before interpreting conversion
+The preview excludes one known test journey and labels four without
+established provenance. Enabled availability does not mean all traffic
+was measured; missing test markers do not prove human attention.

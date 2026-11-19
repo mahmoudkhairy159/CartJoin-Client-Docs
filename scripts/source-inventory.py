@@ -14,7 +14,8 @@ FEATURE_MODULES={
 'global-discovery':['Storefront'],'cross-store-purchases':['Storefront','Order'],'marketing-consent':['Notification'],
 'global-customer-account':['Auth','User'],'cart-recovery':['Cart','Notification','Inventory','Order'],
 'review-reminders':['Review','Notification'],
-'customer-cohorts':['Reports','User','Cart','Order','Payment','Invoice']}
+'customer-cohorts':['Reports','User','Cart','Order','Payment','Invoice'],
+'shopping-funnel':['Storefront','Cart','Invoice','Order','Payment','Reports']}
 MAP={}
 def assign(feature,paths):
     for p in paths.split():MAP[p]=feature

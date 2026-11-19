@@ -43,8 +43,9 @@ for each shop and order. Duplicate delivery events cannot send a reminder early
 or create another accepted notification. Requests wait at least three days,
 recheck the purchase and remaining reviews, and use the customer's English/Arabic
 preference. Test deliveries cannot earn a verified-purchase badge. Transport
-recovery and an operator retry screen remain work; this is not a live email
-acceptance claim. [Review guide](/en/features/reviews).
+recovery, tenant inspection and reasoned bounded retries are implemented and
+tested in development. Processing remains off by default; this does not prove
+external message delivery. [Review guide](/en/features/reviews).
 
 
 **COD dispatch checkpoint:** internal wallet, gift-card and points commitments
@@ -142,10 +143,18 @@ Retained-fact purchase cohorts are published in the backend and three staff dash
 signup origin, store relationships and paid purchases remain separate; test facts
 are excluded and uncertain history is explicit. English/Arabic browser generation,
 scope changes and private exports are verified. [Read the cohort guide](/en/features/customer-cohorts).
-Recorded shopping funnels remain feature work and must never invent historical
-browsing or abandonment. Period dispatch/cancellation KPI
+Optional [recorded shopping funnels](/en/features/shopping-funnel) now have a
+tested development checkpoint across the storefront and three staff dashboards,
+with separate store availability and customer permission, fixed observation
+windows, private exports and explicit incomplete coverage. They never reconstruct
+historical browsing or infer abandonment from missing evidence. Period dispatch/cancellation KPI
 coverage still needs source and acceptance confirmation; per-order monitoring
-already exists. Review-reminder transport recovery, tenant inspection and reasoned
+already exists. Merchant activation and lifecycle measures also remain: onboarding
+drop-off and time to first eligible offer, captured purchase, successful shipment
+and reconciled vendor statement, plus billing recovery and merchant retention.
+These need retained evidence, defined populations and explicit missing-history
+coverage; the existing readiness checklist does not supply those measurements.
+Review-reminder transport recovery, tenant inspection and reasoned
 bounded retries are implemented and tested in development. Separate purchase-feedback
 choices, inbox message display and persisted read state are verified in English and
 Arabic, with actual screenshots and captioned walkthroughs. Processing remains off
