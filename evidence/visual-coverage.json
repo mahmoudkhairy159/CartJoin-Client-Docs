@@ -173,12 +173,24 @@
     "roles": [
       "admin",
       "customer",
-      "tenant"
+      "tenant",
+      "vendor"
     ],
     "screens": [
-      "admin-screen-flash-sales.jpg",
-      "tenant-screen-flash-sales.jpg",
-      "customer-screen-flash-sales.jpg"
+      "admin-flash-moderation-en.jpg",
+      "admin-flash-moderation-ar.jpg",
+      "tenant-flash-schedule-en.jpg",
+      "tenant-flash-schedule-ar.jpg",
+      "tenant-flash-offers-en.jpg",
+      "tenant-flash-offers-ar.jpg",
+      "vendor-flash-proposal-en.jpg",
+      "vendor-flash-proposal-ar.jpg",
+      "customer-flash-landing-en.jpg",
+      "customer-flash-landing-ar.jpg",
+      "customer-flash-variant-en.jpg",
+      "customer-flash-variant-ar.jpg",
+      "customer-flash-cart-en.jpg",
+      "customer-flash-cart-ar.jpg"
     ],
     "tour": "feature-flash-sales"
   },

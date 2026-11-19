@@ -199,13 +199,44 @@
     "served": true
   },
   {
-    "tour": "feature-flash-sales",
-    "duration": 36,
-    "expected": 36,
+    "tour": "feature-flash-sales-en",
+    "duration": 63.0,
+    "expected": 63,
     "codec": "h264",
     "width": 1280,
     "height": 720,
-    "served": true
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 63,
+      "error": false,
+      "defaultCaptions": "en",
+      "activeCaptionTrackLoaded": true,
+      "cues": 7
+    },
+    "verified": "2026-11-19"
+  },
+  {
+    "tour": "feature-flash-sales-ar",
+    "duration": 63.0,
+    "expected": 63,
+    "codec": "h264",
+    "width": 1280,
+    "height": 720,
+    "served": true,
+    "captured": "2026-11-19",
+    "kind": "localized-screenshot-walkthrough",
+    "browser": {
+      "ended": true,
+      "currentTime": 63,
+      "error": false,
+      "defaultCaptions": "ar",
+      "activeCaptionTrackLoaded": true,
+      "cues": 7
+    },
+    "verified": "2026-11-19"
   },
   {
     "tour": "feature-gift-cards",
