@@ -1918,5 +1918,77 @@
   "customer-flash-cart-ar.jpg": {
     "width": 1280,
     "height": 800
+  },
+  "private-report-admin-scope-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-admin-scope-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-admin-ready-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-admin-ready-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-admin-reset-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-admin-reset-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-tenant-scope-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-tenant-scope-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-tenant-ready-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-tenant-ready-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-tenant-reset-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-tenant-reset-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-vendor-scope-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-vendor-scope-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-vendor-ready-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-vendor-ready-ar.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-vendor-reset-en.png": {
+    "width": 1600,
+    "height": 1000
+  },
+  "private-report-vendor-reset-ar.png": {
+    "width": 1600,
+    "height": 1000
   }
 }

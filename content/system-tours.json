@@ -9355,5 +9355,287 @@
       "en": "Actual local screenshots · Captured 19 November 2026 · Synthetic facts dated 19 November under a controlled 21 November 2026 clock. Guided still frames, not a continuous recording, real payments or live deployment.",
       "ar": "لقطات محلية فعلية · التقطت في ١٩ نوفمبر ٢٠٢٦ · وقائع مصطنعة بتاريخ ١٩ نوفمبر بساعة مضبوطة على ٢١ نوفمبر ٢٠٢٦. صور إرشادية ثابتة، لا تسجيل متصل أو مدفوعات حقيقية أو نشر حي."
     }
+  },
+  "feature-report-exports-admin": {
+    "title": {
+      "en": "Private exports · Platform admin",
+      "ar": "التصدير الخاص · إدارة المنصة"
+    },
+    "intro": {
+      "en": "Follow the actual report controls: confirm the window, download the ready file, and clear the old export when filters change.",
+      "ar": "اتبع أدوات التقرير الفعلية: راجع الفترة، ونزّل الملف الجاهز، وأزل التصدير القديم عند تغيير المرشحات."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Actual local demo screenshots, captured 19 November 2026. Synthetic accounts and figures; controlled system clock: 21 November. Captioned screenshot walkthrough, not a continuous recording or a production transaction.",
+      "ar": "صور فعلية للنظام التجريبي المحلي التُقطت في 19 نوفمبر 2026. الحسابات والأرقام مصطنعة، وساعة النظام مضبوطة على 21 نوفمبر. شرح مصور مع ترجمة، وليس تسجيلًا متصلًا أو معاملة إنتاجية."
+    },
+    "steps": [
+      {
+        "image": "private-report-admin-scope-en.png",
+        "imageAr": "private-report-admin-scope-ar.png",
+        "focus": [
+          21,
+          26,
+          76,
+          11
+        ],
+        "focusAr": [
+          2,
+          28,
+          77,
+          12
+        ],
+        "title": {
+          "en": "Check the report and dates",
+          "ar": "راجع التقرير والتواريخ"
+        },
+        "body": {
+          "en": "Check the store filter and reporting dates before exporting. This example uses all tenants; the requested file keeps its original filter.",
+          "ar": "راجع مرشح المتجر وتواريخ التقرير قبل التصدير. يستخدم المثال جميع المتاجر؛ ويحتفظ الملف بمرشحه الأصلي."
+        },
+        "guide": "features/reports"
+      },
+      {
+        "image": "private-report-admin-ready-en.png",
+        "imageAr": "private-report-admin-ready-ar.png",
+        "focus": [
+          86,
+          28,
+          11,
+          8
+        ],
+        "focusAr": [
+          3,
+          29,
+          10,
+          8
+        ],
+        "title": {
+          "en": "Download the private result",
+          "ar": "نزّل النتيجة الخاصة"
+        },
+        "body": {
+          "en": "When ready, choose Download. The JSON file belongs to the requesting account and is available for 24 hours from the request, while export access remains valid.",
+          "ar": "عندما يصبح التصدير جاهزًا، اختر تنزيل. يرتبط ملف JSON بالحساب الذي طلبه، ويتاح لمدة 24 ساعة من الطلب مع استمرار صلاحية الوصول."
+        },
+        "guide": "features/reports"
+      },
+      {
+        "image": "private-report-admin-reset-en.png",
+        "imageAr": "private-report-admin-reset-ar.png",
+        "focus": [
+          21,
+          28,
+          76,
+          12
+        ],
+        "focusAr": [
+          2,
+          28,
+          77,
+          12
+        ],
+        "title": {
+          "en": "New filters need a new export",
+          "ar": "المرشحات الجديدة تحتاج تصديرًا جديدًا"
+        },
+        "body": {
+          "en": "Changing the period clears the old download from this screen. Choose an available result before requesting another export. Vendor workspace changes also clear old results.",
+          "ar": "يؤدي تغيير الفترة إلى إزالة التنزيل القديم من الشاشة. اختر نتيجة متاحة قبل طلب تصدير آخر. ويزيل تبديل مساحة البائع النتائج القديمة أيضًا."
+        },
+        "guide": "features/reports"
+      }
+    ]
+  },
+  "feature-report-exports-tenant": {
+    "title": {
+      "en": "Private exports · Store staff",
+      "ar": "التصدير الخاص · إدارة المتجر"
+    },
+    "intro": {
+      "en": "Follow the actual report controls: confirm the window, download the ready file, and clear the old export when filters change.",
+      "ar": "اتبع أدوات التقرير الفعلية: راجع الفترة، ونزّل الملف الجاهز، وأزل التصدير القديم عند تغيير المرشحات."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Actual local demo screenshots, captured 19 November 2026. Synthetic accounts and figures; controlled system clock: 21 November. Captioned screenshot walkthrough, not a continuous recording or a production transaction.",
+      "ar": "صور فعلية للنظام التجريبي المحلي التُقطت في 19 نوفمبر 2026. الحسابات والأرقام مصطنعة، وساعة النظام مضبوطة على 21 نوفمبر. شرح مصور مع ترجمة، وليس تسجيلًا متصلًا أو معاملة إنتاجية."
+    },
+    "steps": [
+      {
+        "image": "private-report-tenant-scope-en.png",
+        "imageAr": "private-report-tenant-scope-ar.png",
+        "focus": [
+          21,
+          29,
+          76,
+          11
+        ],
+        "focusAr": [
+          2,
+          28,
+          77,
+          13
+        ],
+        "title": {
+          "en": "Check the report and dates",
+          "ar": "راجع التقرير والتواريخ"
+        },
+        "body": {
+          "en": "Choose a prepared reporting period for this store. The dates must match the available generated result; another store is outside this account’s report scope.",
+          "ar": "اختر فترة تقرير جاهزة لهذا المتجر. يجب أن تطابق التواريخ النتيجة المتاحة؛ ولا يشمل نطاق التقرير متجرًا آخر."
+        },
+        "guide": "features/reports"
+      },
+      {
+        "image": "private-report-tenant-ready-en.png",
+        "imageAr": "private-report-tenant-ready-ar.png",
+        "focus": [
+          30,
+          45,
+          12,
+          8
+        ],
+        "focusAr": [
+          45,
+          40,
+          33,
+          16
+        ],
+        "title": {
+          "en": "Download the private result",
+          "ar": "نزّل النتيجة الخاصة"
+        },
+        "body": {
+          "en": "When ready, choose Download. The JSON file belongs to the requesting account and is available for 24 hours from the request, while export access remains valid.",
+          "ar": "عندما يصبح التصدير جاهزًا، اختر تنزيل. يرتبط ملف JSON بالحساب الذي طلبه، ويتاح لمدة 24 ساعة من الطلب مع استمرار صلاحية الوصول."
+        },
+        "guide": "features/reports"
+      },
+      {
+        "image": "private-report-tenant-reset-en.png",
+        "imageAr": "private-report-tenant-reset-ar.png",
+        "focus": [
+          21,
+          29,
+          76,
+          12
+        ],
+        "focusAr": [
+          2,
+          28,
+          77,
+          13
+        ],
+        "title": {
+          "en": "New filters need a new export",
+          "ar": "المرشحات الجديدة تحتاج تصديرًا جديدًا"
+        },
+        "body": {
+          "en": "Changing the period clears the old download from this screen. Choose an available result before requesting another export. Vendor workspace changes also clear old results.",
+          "ar": "يؤدي تغيير الفترة إلى إزالة التنزيل القديم من الشاشة. اختر نتيجة متاحة قبل طلب تصدير آخر. ويزيل تبديل مساحة البائع النتائج القديمة أيضًا."
+        },
+        "guide": "features/reports"
+      }
+    ]
+  },
+  "feature-report-exports-vendor": {
+    "title": {
+      "en": "Private exports · Vendor staff",
+      "ar": "التصدير الخاص · إدارة البائع"
+    },
+    "intro": {
+      "en": "Follow the actual report controls: confirm the window, download the ready file, and clear the old export when filters change.",
+      "ar": "اتبع أدوات التقرير الفعلية: راجع الفترة، ونزّل الملف الجاهز، وأزل التصدير القديم عند تغيير المرشحات."
+    },
+    "video": true,
+    "localizedVideo": true,
+    "secondsPerStep": 8,
+    "provenance": {
+      "en": "Actual local demo screenshots, captured 19 November 2026. Synthetic accounts and figures; controlled system clock: 21 November. Captioned screenshot walkthrough, not a continuous recording or a production transaction.",
+      "ar": "صور فعلية للنظام التجريبي المحلي التُقطت في 19 نوفمبر 2026. الحسابات والأرقام مصطنعة، وساعة النظام مضبوطة على 21 نوفمبر. شرح مصور مع ترجمة، وليس تسجيلًا متصلًا أو معاملة إنتاجية."
+    },
+    "steps": [
+      {
+        "image": "private-report-vendor-scope-en.png",
+        "imageAr": "private-report-vendor-scope-ar.png",
+        "focus": [
+          21,
+          26,
+          76,
+          13
+        ],
+        "focusAr": [
+          2,
+          26,
+          77,
+          13
+        ],
+        "title": {
+          "en": "Check the report and dates",
+          "ar": "راجع التقرير والتواريخ"
+        },
+        "body": {
+          "en": "Choose your approved workspace first, then the reporting dates. These figures cover your vendor’s orders in that workspace, rather than every seller’s orders.",
+          "ar": "اختر مساحة العمل المعتمدة أولًا، ثم تواريخ التقرير. تخص الأرقام طلبات بائعك داخل تلك المساحة، ولا تشمل طلبات جميع البائعين."
+        },
+        "guide": "features/reports"
+      },
+      {
+        "image": "private-report-vendor-ready-en.png",
+        "imageAr": "private-report-vendor-ready-ar.png",
+        "focus": [
+          29,
+          39,
+          14,
+          9
+        ],
+        "focusAr": [
+          62,
+          40,
+          10,
+          8
+        ],
+        "title": {
+          "en": "Download the private result",
+          "ar": "نزّل النتيجة الخاصة"
+        },
+        "body": {
+          "en": "When ready, choose Download. The JSON file belongs to the requesting account and is available for 24 hours from the request, while export access remains valid.",
+          "ar": "عندما يصبح التصدير جاهزًا، اختر تنزيل. يرتبط ملف JSON بالحساب الذي طلبه، ويتاح لمدة 24 ساعة من الطلب مع استمرار صلاحية الوصول."
+        },
+        "guide": "features/reports"
+      },
+      {
+        "image": "private-report-vendor-reset-en.png",
+        "imageAr": "private-report-vendor-reset-ar.png",
+        "focus": [
+          21,
+          26,
+          76,
+          13
+        ],
+        "focusAr": [
+          2,
+          26,
+          77,
+          13
+        ],
+        "title": {
+          "en": "New filters need a new export",
+          "ar": "المرشحات الجديدة تحتاج تصديرًا جديدًا"
+        },
+        "body": {
+          "en": "Changing the period clears the old download from this screen. Choose an available result before requesting another export. Vendor workspace changes also clear old results.",
+          "ar": "يؤدي تغيير الفترة إلى إزالة التنزيل القديم من الشاشة. اختر نتيجة متاحة قبل طلب تصدير آخر. ويزيل تبديل مساحة البائع النتائج القديمة أيضًا."
+        },
+        "guide": "features/reports"
+      }
+    ]
   }
 }

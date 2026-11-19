@@ -1,0 +1,22 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Check the report and dates
+Choose your approved workspace first, then the reporting dates. These
+figures cover your vendor’s orders in that workspace, rather than every
+seller’s orders.
+
+2
+00:00:08.000 --> 00:00:16.000
+Download the private result
+When ready, choose Download. The JSON file belongs to the requesting
+account and is available for 24 hours from the request, while export
+access remains valid.
+
+3
+00:00:16.000 --> 00:00:24.000
+New filters need a new export
+Changing the period clears the old download from this screen. Choose an
+available result before requesting another export. Vendor workspace
+changes also clear old results.

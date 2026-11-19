@@ -747,5 +747,38 @@
       "feature-merchant-lifecycle-tenant",
       "feature-merchant-lifecycle-vendor"
     ]
+  },
+  {
+    "feature": "reports",
+    "roles": [
+      "admin",
+      "tenant",
+      "vendor"
+    ],
+    "screens": [
+      "private-report-admin-scope-en.png",
+      "private-report-admin-scope-ar.png",
+      "private-report-admin-ready-en.png",
+      "private-report-admin-ready-ar.png",
+      "private-report-admin-reset-en.png",
+      "private-report-admin-reset-ar.png",
+      "private-report-tenant-scope-en.png",
+      "private-report-tenant-scope-ar.png",
+      "private-report-tenant-ready-en.png",
+      "private-report-tenant-ready-ar.png",
+      "private-report-tenant-reset-en.png",
+      "private-report-tenant-reset-ar.png",
+      "private-report-vendor-scope-en.png",
+      "private-report-vendor-scope-ar.png",
+      "private-report-vendor-ready-en.png",
+      "private-report-vendor-ready-ar.png",
+      "private-report-vendor-reset-en.png",
+      "private-report-vendor-reset-ar.png"
+    ],
+    "tour": "feature-report-exports-admin",
+    "supplementaryTours": [
+      "feature-report-exports-tenant",
+      "feature-report-exports-vendor"
+    ]
   }
 ]

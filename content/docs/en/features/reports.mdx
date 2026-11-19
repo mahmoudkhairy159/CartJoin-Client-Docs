@@ -50,7 +50,23 @@ flowchart LR
 
 If a download is unavailable, check that you are signed in to the account that requested it, still have export permission, and have selected the correct workspace. Then request a new export if needed. A failed export is not a completed file. Older profit exports using an unsupported calculation definition remain unavailable; generate a current result before exporting again.
 
-This private-download checkpoint has backend acceptance coverage in local development. Dashboard integration and release acceptance are tracked separately; it is not a claim of live deployment.
+This development checkpoint includes backend acceptance and actual English/Arabic browser export downloads for all three staff dashboards. The walkthroughs use isolated synthetic data; they do not represent live deployment or production results.
+
+## Follow your dashboard
+
+Actual local demo screenshots, captured 19 November 2026. Synthetic accounts and figures; controlled system clock: 21 November. Captioned screenshot walkthrough, not a continuous recording or a production transaction.
+
+### Platform admin
+
+<SystemTour tour="feature-report-exports-admin" compact anchor="private-report-admin" />
+
+### Store staff
+
+<SystemTour tour="feature-report-exports-tenant" compact anchor="private-report-tenant" />
+
+### Vendor staff
+
+<SystemTour tour="feature-report-exports-vendor" compact anchor="private-report-vendor" />
 
 ## Restrictions and decisions
 
