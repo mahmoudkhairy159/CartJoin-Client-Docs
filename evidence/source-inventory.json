@@ -3,24 +3,24 @@
   "verification": "Source extraction with separate scoped test and local-browser evidence. Live provider and production acceptance are not claimed.",
   "repositories": {
     "CartJoin-Backend": {
-      "commit": "d1ec1061e66865fa90efb1ef00a00ddae21001f7",
+      "commit": "edc201f3339757a73b3cb4ef10946ce4b389bd67",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Admin-Dashboard-Frontend": {
-      "commit": "d2f1780454516645086747394da80afb392e3ad6",
+      "commit": "706cde513e427134cb99809810afb965f4f0a5e2",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Tenant-Dashboard-Frontend": {
-      "commit": "98ea02d08ae44698f83bd58c7221b4d9e6d99b26",
+      "commit": "1436f205aeec86d8fce543dc4994e13917f014b2",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Vendor-Dashboard-Frontend": {
-      "commit": "03441e6ceef8abba0de78daf71f726c5429765dd",
+      "commit": "07b315ec53b74f39eba378ae1401db4c15ca02c3",
       "branch": "master",
-      "dirty": true
+      "dirty": false
     },
     "CartJoin-Storefront-Frontend": {
       "commit": "773795a0354f228eed8848fd3b91bc817c9a89cf",
