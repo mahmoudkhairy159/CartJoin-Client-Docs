@@ -1,23 +1,51 @@
 ---
 title: "Prices, price lists and customer eligibility"
-description: "Pricing resolves the amount a customer is eligible to pay; price lists associate configured commercial prices with eligible buyers or groups."
+description: "Set variant prices for a customer group or for everyone in the store."
 roles: ["ADMIN", "TENANT"]
 ---
 
 
 ## How to use it
 
-Review variant base prices, then tenant Product prices, Price lists and User groups where enabled. Configure the relevant list and eligibility, then review the resulting cart total for the intended buyer.
+Store staff open **Price lists** to configure the audience, currency, dates, and variant prices. Choose a customer group for private prices and add its members in **User groups**. Choose the store-wide audience only for prices intended for all shoppers, including guests. Check the resulting cart for the intended buyer and quantity.
+
+Platform staff can inspect price lists and their items from the Admin Dashboard. Store staff make pricing and membership changes from the Tenant Dashboard.
 
 <SystemTour tour="feature-pricing" compact />
 
+## Drafts, publishing, and CSV
+
+Open **Drafts and versions** from a price list to prepare changes while shoppers continue to see the current prices. Set a unit price for each quantity break you want to offer. For example, a SKU can have one price at 6 units and a lower price at 12 units. A quantity break changes the unit price once the buyer reaches that quantity.
+
+Use **Preview as customer** to select a customer, SKU, quantity, currency, and evaluation time. Compare the live and proposed unit prices and check which threshold applies. Staff with publishing permission can publish immediately or schedule a future activation. Use version history to cancel a pending version or restore an earlier published configuration.
+
+Upload a UTF-8 CSV with the heading `sku,min_quantity,price`. Select **Validate CSV** and review any row errors. Apply the validated file to the draft and publish when ready. Export the draft for a copy of its SKU prices and thresholds. Download the file within 24 hours.
+
 ## Restrictions and decisions
 
-The server recalculates prices. Typed browser totals are not authoritative. Existing orders keep their original money snapshots. Price maintenance requires the relevant permission and the resolved tenant workspace.
+Stores with contract pricing enabled can match a list to a company,
+location, or storefront channel. Company membership comes from the customer's
+assigned location. Use **Pricing contracts** for customer assignments and
+restricted products, then edit the list’s draft and use **Preview as
+customer** to check the matching channel.
+
+For vendor SKUs, request approval of the prices, floor, stacking policy,
+and funding owner before publishing. Vendors review the exact terms in
+their workspace. A store-funded contribution is recorded separately from
+the customer's payment and adjusted proportionally when merchandise is
+refunded.
+
+The server recalculates cart prices. Existing orders keep their original amounts. Price changes require the relevant permission and store workspace.
+
+Validity dates include both the start and end date in the store’s timezone. A list awaiting audience review does not apply to shoppers until staff confirm its audience. To change a populated list’s currency, create a new list with amounts entered in that currency.
 
 ## Quantity and pricing authority
 
-Review both the unit price and the quantity-adjusted line total. The pricing pipeline calculates line amounts from unit price × quantity; flash-sale savings apply to the same line once. Authorized tenant operators can inspect and maintain both tenant-owned and vendor-set prices within their own catalog. Vendor access remains limited to that vendor and the selected tenant workspace.
+Sign in and select the product option and quantity to see the unit price you qualify for. Product details show upcoming eligible quantity prices. Product cards check the price for one unit. The cart can apply a different price if the quantity changes or an offer expires. Catalog price filters and sorting use public catalog prices.
+
+If the storefront displays an estimated conversion, the cart shows the payable currency and amount. The server applies eligible cart discounts, tax, and shipping when it calculates the order total. If the price changes after you review it, review the refreshed total before placing the order.
+
+Authorized store staff can inspect pricing within their own catalog. Vendor pricing access is limited to the vendor and the selected store workspace.
 
 ## Data flow and outcome
 
@@ -44,7 +72,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/price-lists` |
-| [tenant](/en/roles/tenant) | `/product-prices`, `/price-lists` |
+| [tenant](/en/roles/tenant) | `/product-prices`, `/price-lists`, `/price-lists/:id/versions` |
 
 [Exact route, field and enum source trail](/en/evidence/pricing)
 {/* /SCREEN_MAP */}

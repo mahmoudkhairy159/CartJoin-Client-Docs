@@ -7,25 +7,48 @@ roles: ["ADMIN", "TENANT"]
 
 ## How to use it
 
-Open Banners, choose the placement, provide translated content/media and a valid destination, then set the available activation/scheduling controls. Review the actual storefront size and click destination.
+1. In the tenant dashboard, open **Banners** and choose **Create**. The dashboard uses your signed-in workspace. Platform admins select the store when they create a banner.
+2. Choose **Homepage Hero**, **Homepage Promo**, or **Product Page Side**. Add Arabic and English titles and any supporting copy. Add desktop artwork and, if needed, a mobile version of the same creative.
+3. Choose a product, category, store page, or live flash sale from your store. For a manual destination, use a path such as `/shop` or a full HTTP(S) URL. Choose whether to open it in the same tab or a new tab.
+4. Choose **Enable when published** and enter a start, an end, or both in your browser's local time. After publication, a blank start makes an enabled banner eligible immediately. A blank end keeps it eligible until paused.
+5. Select **Save draft**, then open **Preview and publish** from the Banners list. Preview the saved changes in **Storefront → Design**. To check a product-side banner, select **Product** and enter a published product's slug. When the preview is ready, select **Publish** in Design.
+6. Open the store in a signed-out window once the schedule is published. Keep the page open across the start and end to check that the banner appears and disappears. Open the destination while the banner is live.
 
 <SystemTour tour="feature-banners" compact />
 
 ## Restrictions and decisions
 
-The banner does not create the advertised discount. The linked offer must independently qualify in pricing and checkout. A disabled, future or expired placement should not be treated as a current campaign.
+Checkout applies the advertised offer according to its own eligibility rules. A product-side banner appears across the store's product detail pages. Category Top, Popup, and Sidebar Sticky are reserved placements. Manage the announcement strip separately under **Storefront Settings**.
+
+**Draft** means a banner has yet to be published. The published version is
+**Scheduled** before it starts, **Live** during its window, **Ended** after
+expiry, or **Paused** when disabled. **Unpublished edits** can coexist with a
+live banner. Storefront Design publishers review and publish the tenant's
+saved appearance and banner changes together.
 
 ## Data flow and outcome
 
-Placement + translated media + target link → storefront promotion entry → destination product/campaign validation.
+The storefront reads the active banners for its own workspace on each page fetch and displays the localized copy and artwork. The published storefront design controls whether the homepage hero and promotions sections are visible.
+
+## View banner performance
+
+Open **Banner performance** from the tenant **Banners** list or **Insights**. Your role needs permission to view reports. Select a UTC date range to see impressions, clicks, and click-through rate (CTR) for each placement and each banner within its placement.
+
+To start collecting data, enable **Optional storefront measurement** in **Storefront Settings**. Shoppers choose whether to allow it. An impression is recorded when a published banner enters the viewport in a visible tab. Each display can contribute one click to its impression date. CTR is the percentage of measured impressions that received a click. A dash means there were no impressions to calculate CTR.
+
+Private Design previews and test journeys are excluded. The report covers retained opt-in activity and has no data from before banner measurement started. Previously recorded activity can remain visible after collection is turned off.
 
 ## When something goes wrong
 
-Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+Check the workspace, publication state, and schedule in your browser's time zone. When a destination is unavailable, select a replacement or use a manual URL. For a homepage banner, check whether the store's published design hides its section. Include the placement, banner ID, and time zone when reporting the issue.
 
 ## Evidence and verification limits
 
-Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+Local Chrome checks on 19 November 2026 verified scheduled guest delivery and the destination click, a tenant product picker and private Design preview followed by publication, and consent-aware reporting. The hero recorded one impression and one click from two activations. The promo recorded one impression after it was scrolled into view and received no clicks. The dashboard showed 100% for the hero, 0% for the promo, and 50% overall. These results came from an isolated test store.
+
+The release review also verified that the Home and Product pages could stay open across both schedule boundaries. The banners appeared at the scheduled start and disappeared at expiry without a page reload.
+
+See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields.
 
 `Modules/Banner/` · `documentation/modules/`
 

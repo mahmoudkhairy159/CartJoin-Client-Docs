@@ -13,6 +13,12 @@ Tenant operators open Storefront, My store and Settings for their respective con
 
 In **Storefront → Design**, choose a template and enter its English or Arabic heading and introduction. You can also edit homepage editorial copy, choose which sections appear, and set the browser icon and share image. Save and preview the draft on the storefront, then publish it. Clear a field or select **Inherit** to restore the corresponding default after publication. Catalog names and the details on invoices still come from the store's records.
 
+In **Storefront → Settings**, choose where the announcement bar appears and
+set an optional expiry in your browser's time zone. Leave page selection empty
+to show it on all supported pages. Leave expiry blank to keep it running until
+you disable it. The strip hides at expiry even if the shopper leaves the page
+open.
+
 <SystemTour tour="feature-storefront" compact />
 
 ## Restrictions and decisions
@@ -32,6 +38,8 @@ Resolved tenant → published store configuration + content + catalog → custom
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
 
 ## Evidence and verification limits
+
+In a local Chrome check on 19 November 2026, a Home-only announcement appeared on Home, stayed hidden on Shop, and disappeared at expiry while the original Home page stayed open.
 
 Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
 

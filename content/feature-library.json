@@ -364,8 +364,8 @@
       "ar": "الأسعار وقوائم الأسعار"
     },
     "description": {
-      "en": "Prices depend on the rules that apply to the customer. You can assign a price list to specific customers or groups.",
-      "ar": "يُحسب السعر حسب القواعد التي تنطبق على العميل. يمكنك تخصيص قائمة أسعار لعملاء أو مجموعات محددة."
+      "en": "Set prices for a customer group or explicitly apply a price list to everyone in the store.",
+      "ar": "حدّد أسعارًا لمجموعة عملاء أو اختر تطبيق قائمة الأسعار على جميع المتسوقين في المتجر."
     }
   },
   {
