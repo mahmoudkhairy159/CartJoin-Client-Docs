@@ -7,7 +7,7 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 ## How to use it
 
-Tenant operators open Refunds, inspect the order and available amounts, preview the selected quantities/value, then initiate through the authorized flow. Follow provider completion or settle/withdraw manual-pending refunds with evidence. Vendors inspect their own refund share.
+Tenant operators open Refunds, inspect the order and available amounts, preview the selected quantities/value, then initiate through the authorized flow. Every refund creation carries an idempotency key, so a double submit cannot create a second refund. Manual settlement requires a settlement reference and accepts an optional proof file, and the settler must differ from the initiator unless they hold the self-settle permission. For a refund stuck in pending, use **Verify with gateway** to ask the provider directly. Vendors inspect their own refund share.
 
 Vendor staff can inspect refund information. Authorized administrators can close the order refund once all successful refunds for that order cover its full total. A partial refund keeps the order open.
 
@@ -17,7 +17,7 @@ In **Account → Payments**, open **Refunds** to see the amount, source purchase
 
 ## Restrictions and decisions
 
-With finance access, open **Marketplace Operations** and select **Refund reconciliation** for a dispatched refund whose result is still unclear. Request a check or submit a stored event ID or provider reference. The original amount remains reserved while the outcome is unknown. If the provider conclusively verifies that an eligible leg never executed, authorized refund staff can request a replacement for that leg. Successful legs stay settled.
+With finance access, open **Marketplace Operations** and select **Refund reconciliation** for a dispatched refund whose result is still unclear. Request a check or submit a stored event ID or provider reference. The original amount remains reserved while the outcome is unknown: a leg reported as failed also keeps its amount reserved until the gateway confirms it was never executed. Authorized refund staff can run **Verify with gateway** on a pending refund; the inquiry either settles the refund or confirms non-execution. If the provider conclusively verifies that an eligible leg never executed, authorized refund staff can request a replacement for that leg. Successful legs stay settled.
 
 In a local development preview, guarded test tooling can confirm or decline a previously dispatched test-payment refund. Confirmation updates the normal refund history and balances. A decline releases only that refund’s reservation; other pending refunds remain reserved. These are simulated results, not money returned by a live provider.
 
@@ -29,7 +29,7 @@ The ceiling is the smaller of the order’s remaining refundable value and share
 
 ## Data flow and outcome
 
-Eligible order lines → preview allocation → refund command → online confirmation or manual settlement → refund ledger, payment totals and credit note. Partial refunds across siblings do not mark the whole shared payment fully refunded.
+Eligible order lines → preview allocation → idempotent refund command → online confirmation, gateway verification or manual settlement with a reference → refund ledger, payment totals and credit note. Partial refunds across siblings do not mark the whole shared payment fully refunded.
 
 ## Follow the vendor balance after success
 

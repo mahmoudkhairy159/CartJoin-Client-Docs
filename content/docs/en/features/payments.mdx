@@ -9,7 +9,7 @@ roles: ["ADMIN", "CUSTOMER", "TENANT"]
 
 Customers choose an enabled payment method at checkout. For bank transfer, use the payment proof upload and wait for review. Tenant operators inspect Payments and evidence before approving or rejecting. For COD, record collection only after collection occurred.
 
-For Egyptian stores with an enrolled Paymob account, the checkout payment step lists the hosted options configured by the merchant. Choose Paymob, place the order, then continue to its hosted page. valU, Sympl and Apple Pay availability depends on the merchant setup and buyer eligibility. Guest checkout uses cash on delivery. Keep gateway credentials out of receipts, screenshots and support messages.
+For Egyptian stores with an enrolled Paymob account, the checkout payment step lists the hosted options configured by the merchant. Choose Paymob, place the order, then continue to its hosted page. After paying you come back to the store's payment-return page, which refreshes the payment status automatically. valU, Sympl and Apple Pay availability depends on the merchant setup and buyer eligibility. Guest checkout uses cash on delivery. Keep gateway credentials out of receipts, screenshots and support messages.
 
 When your store enables saved cards on Paymob, you can choose to save a card there. At your next signed-in checkout, Paymob can offer cards saved on your last paid hosted purchase from the same store and merchant account. If none appear, enter your card on Paymob.
 
@@ -17,7 +17,7 @@ On a supported device, signed-in shoppers at an enrolled store can select delive
 
 ### Continue payment for an existing invoice
 
-Open the confirmation page or **Account → Invoices and orders → Invoice**, then choose **Continue to payment** if the invoice offers it. If the provider result is still being checked, use **Check payment status**. For a bank transfer awaiting proof, open **Upload proof** and wait for the store’s review.
+Open the confirmation page or **Account → Invoices and orders → Invoice**, then choose **Continue to payment** if the invoice offers it. While the provider result is still being checked, the payment status refreshes on its own; you do not need to reload the page. For a bank transfer awaiting proof, open **Upload proof** and wait for the store’s review.
 
 **Upload proof** opens the eligible bank transfer for that invoice, including older payments. The store checks that the payment still belongs to the invoice and can accept proof. Payments, refunds, and credit notes each have their own pages in **Account → Payments**.
 
@@ -36,9 +36,9 @@ If the invoice PDF is preparing, try the download again once the file is ready.
 
 ## Restrictions and decisions
 
-With finance access, open **Marketplace Operations** and select **Payment reconciliation**. Open the case to see its amount, reason and history, assign it to yourself, or request a check. If you have a stored event ID or provider reference, submit it for verification. A reference alone cannot confirm payment. While verification is pending, buyers can refresh the invoice for updates. Another charge remains blocked until the outcome is established.
+With finance access, open **Marketplace Operations** and select **Payment reconciliation**. Open the case to see its amount, reason and history, assign it to yourself, or request a check. If you have a stored event ID or provider reference, submit it for verification. A reference alone cannot confirm payment. While verification is pending, the buyer's payment status refreshes itself on the payment-return and invoice pages. Another charge remains blocked until the outcome is established.
 
-Online payment success requires a verified provider webhook, never the browser return alone. Bank transfer needs proof and pending approval; rejection returns to awaiting confirmation. COD skips proof. The chosen inactive/unsupported gateway is rejected rather than silently replaced.
+Online payment success requires a verified provider webhook, never the browser return alone. After the gateway, shoppers land on a payment-return page that refreshes the status automatically and shows paid, pending, failed or expired. An open online attempt expires after the store's configured window; the payment then shows as **expired**, reserved holds are released, and a new attempt can start because the invoice stays payable. A declined attempt does not cancel the order: the shopper can start a new attempt until the retry window closes, and orders are cancelled only when that window expires. Bank transfer needs proof and pending approval; rejection returns to awaiting confirmation. COD skips proof. The chosen inactive/unsupported gateway is rejected rather than silently replaced.
 
 ## COD with wallet credit, gift cards or points
 
@@ -106,7 +106,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 
 ## If an online payment is declined
 
-After a confirmed online decline, choose **Continue shopping** to place a new order at current prices and stock levels. If the connection dropped while payment was open, check the invoice for **Continue to payment** or a status update.
+A confirmed decline keeps the failed attempt in the payment history and leaves the order open for a retry. Choose **Continue to payment** to start a new attempt on the same invoice until the retry window closes; once the window closes, the orders are cancelled and **Continue shopping** is the way to place a new order at current prices and stock levels. If the connection dropped while payment was open, the payment-return page shows the updated status automatically.
 
 For bank transfers requiring a correction, upload new proof and wait for approval. Check the refund status to see whether funds have settled.
 
@@ -116,7 +116,7 @@ The following English/Arabic walkthrough uses local test invoices. **Simulate su
 
 <SystemTour tour="feature-test-payments" compact anchor="test-payment-screen-guide" />
 
-Success records a test payment and updates the invoice and child-order payment projections. Decline keeps the failed attempt in payment history and closes the unpaid purchase. On a connection problem, check Payments before starting a new attempt. Retrying the same outcome is safe. A finished attempt keeps its recorded outcome.
+Success records a test payment and updates the invoice and child-order payment projections. Decline keeps the failed attempt in payment history and leaves the unpaid purchase open for a retry until the retry window closes. On a connection problem, check Payments before starting a new attempt. Retrying the same outcome is safe. A finished attempt keeps its recorded outcome.
 
 ## Carrier COD statement review
 
