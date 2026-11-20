@@ -26,6 +26,7 @@ The Vendor return detail supplies the replacement reference only for the retaine
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/approve` | `approve` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/reject` | `reject` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/mark-received` | `markReceived` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/shipments/{shipment}/close-missing` | `closeMissingShipment` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/cancel` | `cancel` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/restock` | `restock` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/refund` | `refund` |
@@ -51,6 +52,7 @@ The Vendor return detail supplies the replacement reference only for the retaine
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/ApproveReturnRequest.php`: `comment`
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/MarkReceivedRequest.php`: `shipment_id`, `request_id`, `finalize`, `items`, `items.*.return_item_id`, `items.*.quantity_received`, `items.*.condition`, `items.*.restock`
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/CancelReturnRequest.php`: `reason`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/CloseMissingReturnShipmentRequest.php`: `reason`
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RestockReturnRequest.php`: `locations.*.return_item_id`, `locations.*.location_id`
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RefundReturnRequest.php`: `method`
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/ReconcileReturnRefundRequest.php`: `refund_id`, `reason`
