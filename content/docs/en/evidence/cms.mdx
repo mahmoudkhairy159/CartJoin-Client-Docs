@@ -1,37 +1,43 @@
 ---
-title: "Source evidence: cms"
-description: "Extracted backend routes, request fields and enum values."
+title: "CMS routes, formats and lifecycle"
+description: "Routes below use the resolved tenant or the authorized platform moderation scope."
 ---
 
-## Source locations
+Routes below use the resolved tenant or the authorized platform moderation scope.
 
-- `Modules/Cms/routes/admin-api.php`
-- `Modules/Cms/routes/tenant-api.php`
-- `Modules/Cms/routes/user-api.php`
-- `Modules/Cms/routes/vendor-api.php`
-- `Modules/Cms/routes/web.php`
+## Tenant dashboard
 
-## Extracted explicit backend routes
+- `/api/tenant/v1/cms/pages` · CRUD
+- `/api/tenant/v1/cms/pages/{id}` · `publish`, `archive`, `status`, `preview-link`, `revisions`, `schedule`, `media`
+- `/api/tenant/v1/cms/content-blocks` · CRUD, `publish`, `revisions`, `toggle-is-active`
+- `/api/tenant/v1/cms/content-block-placements/journal` · GET, PUT
+- `/api/tenant/v1/cms/editor-preview` · GET
+- `/api/tenant/v1/cms/content-blocks/preview-list` · GET
+- `/api/tenant/v1/cms/navigation-menus` · CRUD, `publish`, `revisions`, `toggle-is-active`
 
-| Module | Surface file | Method | URI fragment | Action |
-|---|---|---|---|---|
+## Admin dashboard
 
-No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+- `/api/admin/v1/cms/{pages|content-blocks|navigation-menus}` · GET
+- `/api/admin/v1/cms/{resource}/{id}` · GET, `moderate`, `release`, `revisions`
+- `/api/admin/v1/cms/editor-preview` · GET
+- `/api/admin/v1/cms/pages/{id}/preview` · GET
 
-## Form-request field names
+## Storefront
 
-- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/StoreCmsPageRequest.php`: `slug`, `sort_order`
-- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/TransitionCmsPageStatusRequest.php`: `status`
-- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/UpdateCmsPageRequest.php`: `slug`, `sort_order`
-- `Modules/Cms/App/Http/Requests/Tenant/ContentBlock/StoreContentBlockRequest.php`: `key`, `type`, `is_active`
-- `Modules/Cms/App/Http/Requests/Tenant/ContentBlock/UpdateContentBlockRequest.php`: `key`, `type`, `is_active`
-- `Modules/Cms/App/Http/Requests/Tenant/NavigationMenu/StoreNavigationMenuRequest.php`: `location`, `is_active`
-- `Modules/Cms/App/Http/Requests/Tenant/NavigationMenu/UpdateNavigationMenuRequest.php`: `location`, `is_active`
+- `/api/user/v1/cms/pages/{slug}` · GET
+- `/api/user/v1/cms/content-blocks?placement=journal` · GET
+- `/api/user/v1/cms/navigation-menus` · GET
 
-## Enum values in source
+## Content formats
 
-- `Modules/Cms/App/Enums/CmsPageStatus.php`: `DRAFT = 1`, `PUBLISHED = 2`, `ARCHIVED = 3`
-- `Modules/Cms/App/Enums/ContentBlockType.php`: `HTML = 1`, `TEXT = 2`, `MARKDOWN = 3`
-- `Modules/Cms/App/Enums/NavigationMenuItemLinkType.php`: `CMS_PAGE = 1`, `CATEGORY = 2`, `EXTERNAL = 3`, `NONE = 4`
+Page states are draft `1`, published `2`, and archived `3`. The platform hold is a separate restriction. Menu link types are page `1`, category `2`, external URL `3`, label `4`, and product `5`.
 
-[Back to evidence](/en/evidence) · [Business guide](/en/features/cms)
+| Type | Value |
+| --- | --- |
+| HTML | 1 |
+| Text | 2 |
+| Markdown | 3 |
+| Image/CTA | 4 |
+| Product list | 5 |
+
+[Back to the CMS guide](/en/features/cms)

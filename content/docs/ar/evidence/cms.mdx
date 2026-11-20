@@ -1,37 +1,43 @@
 ---
-title: "أدلة المصدر: cms"
-description: "Extracted backend routes, request fields and enum values."
+title: "مسارات المحتوى وأنواعه ودورة النشر"
+description: "تستخدم المسارات سياق المتجر المحلّي أو صلاحيات الإشراف على المنصة."
 ---
 
-## المراجع
+تستخدم المسارات سياق المتجر المحلّي أو صلاحيات الإشراف على المنصة.
 
-- `Modules/Cms/routes/admin-api.php`
-- `Modules/Cms/routes/tenant-api.php`
-- `Modules/Cms/routes/user-api.php`
-- `Modules/Cms/routes/vendor-api.php`
-- `Modules/Cms/routes/web.php`
+## لوحة المتجر
 
-## مسارات الخادم المستخرجة
+- `/api/tenant/v1/cms/pages` · CRUD
+- `/api/tenant/v1/cms/pages/{id}` · `publish`, `archive`, `status`, `preview-link`, `revisions`, `schedule`, `media`
+- `/api/tenant/v1/cms/content-blocks` · CRUD, `publish`, `revisions`, `toggle-is-active`
+- `/api/tenant/v1/cms/content-block-placements/journal` · GET, PUT
+- `/api/tenant/v1/cms/editor-preview` · GET
+- `/api/tenant/v1/cms/content-blocks/preview-list` · GET
+- `/api/tenant/v1/cms/navigation-menus` · CRUD, `publish`, `revisions`, `toggle-is-active`
 
-| Module | Surface file | Method | URI fragment | Action |
-|---|---|---|---|---|
+## لوحة المنصة
 
-No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+- `/api/admin/v1/cms/{pages|content-blocks|navigation-menus}` · GET
+- `/api/admin/v1/cms/{resource}/{id}` · GET, `moderate`, `release`, `revisions`
+- `/api/admin/v1/cms/editor-preview` · GET
+- `/api/admin/v1/cms/pages/{id}/preview` · GET
 
-## حقول النماذج
+## واجهة المتجر
 
-- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/StoreCmsPageRequest.php`: `slug`, `sort_order`
-- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/TransitionCmsPageStatusRequest.php`: `status`
-- `Modules/Cms/App/Http/Requests/Tenant/CmsPage/UpdateCmsPageRequest.php`: `slug`, `sort_order`
-- `Modules/Cms/App/Http/Requests/Tenant/ContentBlock/StoreContentBlockRequest.php`: `key`, `type`, `is_active`
-- `Modules/Cms/App/Http/Requests/Tenant/ContentBlock/UpdateContentBlockRequest.php`: `key`, `type`, `is_active`
-- `Modules/Cms/App/Http/Requests/Tenant/NavigationMenu/StoreNavigationMenuRequest.php`: `location`, `is_active`
-- `Modules/Cms/App/Http/Requests/Tenant/NavigationMenu/UpdateNavigationMenuRequest.php`: `location`, `is_active`
+- `/api/user/v1/cms/pages/{slug}` · GET
+- `/api/user/v1/cms/content-blocks?placement=journal` · GET
+- `/api/user/v1/cms/navigation-menus` · GET
 
-## قيم الحالات من المصدر
+## أنواع المحتوى
 
-- `Modules/Cms/App/Enums/CmsPageStatus.php`: `DRAFT = 1`, `PUBLISHED = 2`, `ARCHIVED = 3`
-- `Modules/Cms/App/Enums/ContentBlockType.php`: `HTML = 1`, `TEXT = 2`, `MARKDOWN = 3`
-- `Modules/Cms/App/Enums/NavigationMenuItemLinkType.php`: `CMS_PAGE = 1`, `CATEGORY = 2`, `EXTERNAL = 3`, `NONE = 4`
+حالات الصفحة هي مسودة `1` ومنشورة `2` ومؤرشفة `3`. الإيقاف من المنصة قيد مستقل. أنواع روابط القائمة هي صفحة `1` وتصنيف `2` ورابط خارجي `3` وتسمية `4` ومنتج `5`.
 
-[العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/cms)
+| Type | Value |
+| --- | --- |
+| HTML | 1 |
+| Text | 2 |
+| Markdown | 3 |
+| Image/CTA | 4 |
+| Product list | 5 |
+
+[العودة إلى دليل المحتوى](/ar/features/cms)

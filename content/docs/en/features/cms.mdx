@@ -1,36 +1,56 @@
 ---
 title: "CMS pages, content blocks and menus"
-description: "CMS content lets tenant operators maintain customer-facing information and navigation without changing the application code."
+description: "Write and publish bilingual storefront pages, reusable blocks, and menus."
 roles: ["ADMIN", "CUSTOMER", "TENANT"]
 ---
 
-
 ## How to use it
 
-Use CMS → Pages, Content blocks and Navigation menus. Maintain translated content, review the destination and publication options, then verify the public page or menu in the storefront. Platform users use the available moderation surface.
+The editor opens a live preview beside the form for pages, blocks, and menus. Use the device and language controls to see each draft in the store’s actual theme. Reorder blocks in page detail to see the placement change before saving. The preview updates locally while you type. Publish from the record when the changes are ready.
 
-<SystemTour tour="feature-cms" compact />
+### Pages
+
+In **CMS → Pages**, create a draft and enter the English and Arabic titles, body, and search metadata. Leave the slug blank to generate it from the title. Edit a localized slug when a language needs its own URL. Add images and choose a social sharing image from the page detail.
+
+Saving edits to a live page creates changes for review. The current published revision remains visible. From page detail, create a private preview link and open the tenant storefront to check the selected revision. Keep the link within the editorial team. Preview links expire.
+
+Publish from the page detail or schedule the current revision for a future time. Recheck the revision and the time zone shown beside the schedule field. Archive takes the page offline. To recover earlier text, open revision history, restore the revision for review, and publish it after previewing.
+
+### Content blocks
+
+In **CMS → Content blocks**, select the format before writing. Use the rich-text editor for HTML and the text area for plain text or Markdown. Give the block an English and Arabic title when both audiences should see it. Publish the block before adding it to a page. In the page detail, select, order, and save the blocks, then preview and publish the page. Use the Journal placement controls for content that belongs in the Journal. The same block can be placed on several pages. A published page uses the block revision selected during publication.
+
+### Navigation menus
+
+Choose a header, footer, or mobile location. Add bilingual labels and select a page, category, or product from the destination picker when linking to store content. External destinations use a URL. Use a label without a destination to group items. Choose a parent and reorder siblings before saving. Publish the menu after reviewing the edited tree. A new parent and its children can be saved together. Preview menus on desktop and mobile. The header menu supplies the mobile fallback when no mobile menu is configured.
+
+The storefront hides unavailable typed destinations. The dashboard retains the reference so an editor can replace it or wait for the target to return. Review menu history before restoring earlier changes.
 
 ## Restrictions and decisions
 
-A saved draft is not necessarily published. Navigation visibility is not authorization. Avoid broken destinations and do not publish private operational information into a public content block.
+A platform moderation hold keeps content private. A moderator must release the hold before a tenant publisher can make the content public again.
 
 ## Data flow and outcome
 
-Translated content + publication/menu configuration → storefront page and navigation rendering.
+Saved draft → private preview → publish or schedule → storefront refresh. A restored page revision returns to draft for review. Available links are resolved from published destinations.
 
-## When something goes wrong
+## Moderation and troubleshooting
 
-Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+Platform admins can open the storefront preview from CMS detail for review, then place a page, block, or menu on hold and record a reason. A moderator can release the hold. The tenant then reviews the private content before publishing it again. Use the platform audit log for moderation and release, and CMS revision history for prior content.
 
-## Evidence and verification limits
+After publishing, check the public page in both languages on the correct tenant domain. If a save reports a revision conflict, reload the record and review the latest changes before resubmitting. If a preview has expired, create a new link. For a missing menu link, check location, publication, and destination availability. For a failed schedule, inspect the page state and the scheduled revision. If a translation is missing, the storefront can use the English fallback. Add the translation before relying on that language’s URL for search.
 
-Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
+## Walkthrough
 
-`Modules/Cms/` · `documentation/modules/`
+<SystemTour tour="feature-cms" compact />
+
+## Source references
+
+[CMS routes and states](/en/evidence/cms)
+
 
 <details className="guide-technical-details">
-<summary>Screen paths and source references</summary>
+<summary>Screen paths</summary>
 
 {/* SCREEN_MAP */}
 ## Where this feature appears
