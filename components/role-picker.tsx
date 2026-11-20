@@ -1,7 +1,7 @@
 'use client';
 
 import { Select } from '@base-ui/react/select';
-import { Check, ChevronsUpDown } from 'lucide-react';
+import { Icon } from '@/components/icon';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
@@ -74,19 +74,16 @@ export function useGuideRole(): RoleContextValue {
 
 function RoleOption({ value, label }: { value: string; label: string }) {
   return (
-    <Select.Item
-      value={value}
-      className="guide-role-option"
-    >
+    <Select.Item value={value} className="guide-role-option">
       <Select.ItemText>{label}</Select.ItemText>
-      <Select.ItemIndicator className="shrink-0 text-fd-primary">
-        <Check size={16} strokeWidth={1.5} aria-hidden />
+      <Select.ItemIndicator className="guide-role-option-check">
+        <Icon name="check" />
       </Select.ItemIndicator>
     </Select.Item>
   );
 }
 
-export function RolePicker({ compact = false }: { compact?: boolean }) {
+export function RolePicker() {
   const { role, setRole } = useGuideRole();
   const lang = guideLanguage(usePathname());
   const allLabel = lang === 'ar' ? 'كل الأدوار' : 'All roles';
@@ -101,20 +98,14 @@ export function RolePicker({ compact = false }: { compact?: boolean }) {
       value={role ?? allRolesValue}
       onValueChange={(next) => setRole(next === allRolesValue ? null : (next as RoleCode))}
     >
-      <div className={compact ? 'guide-role-field' : 'guide-role-field max-w-sm'}>
-        <Select.Label
-          className={
-            'guide-role-label'
-          }
-        >
+      <div className="guide-role-field">
+        <Select.Label className="guide-role-label">
           {lang === 'ar' ? 'تصفّح الأدلة حسب دورك' : 'Browse guides by role'}
         </Select.Label>
-        <Select.Trigger
-          className={`guide-role-trigger ${focusRing}`}
-        >
+        <Select.Trigger className={`guide-role-trigger ${focusRing}`}>
           <Select.Value className="truncate" />
-          <Select.Icon className="shrink-0 text-fd-muted-foreground">
-            <ChevronsUpDown size={16} strokeWidth={1.5} aria-hidden />
+          <Select.Icon className="guide-role-chevron">
+            <Icon name="expand-up-down" />
           </Select.Icon>
         </Select.Trigger>
       </div>
@@ -123,7 +114,7 @@ export function RolePicker({ compact = false }: { compact?: boolean }) {
           <Select.Popup className="guide-role-popup">
             <Select.List>
               <RoleOption value={allRolesValue} label={allLabel} />
-              <Select.Separator className="my-2 h-px bg-fd-border" />
+              <Select.Separator className="guide-role-separator" />
               {roles.map((option) => (
                 <RoleOption key={option.code} value={option.code} label={roleName(option.code, lang)} />
               ))}

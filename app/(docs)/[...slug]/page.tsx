@@ -39,13 +39,14 @@ export default async function Page(props: PageProps<'/[...slug]'>) {
           </div>
         </div>
         {feature && <nav className="guide-page-shortcuts" aria-label={arabic ? 'انتقل داخل الدليل' : 'Jump within this guide'}>
-          <a href="#screen-guide">{arabic ? 'الشاشات والفيديو' : 'Screens & video'}</a>
-          <a href={arabic ? '#خطوات-الاستخدام' : '#how-to-use-it'}>{arabic ? 'الخطوات' : 'Steps'}</a>
-          <a href={arabic ? '#القيود-والقرارات' : '#restrictions-and-decisions'}>{arabic ? 'القيود' : 'Rules'}</a>
-          <a href={arabic ? '#تدفق-البيانات-والنتيجة' : '#data-flow-and-outcome'}>{arabic ? 'تدفق البيانات' : 'Data flow'}</a>
+          <a className="guide-choice" href="#screen-guide">{arabic ? 'الشاشات والفيديو' : 'Screens and video'}</a>
+          <a className="guide-choice" href={arabic ? '#خطوات-الاستخدام' : '#how-to-use-it'}>{arabic ? 'الخطوات' : 'Steps'}</a>
+          <a className="guide-choice" href={arabic ? '#القيود-والقرارات' : '#restrictions-and-decisions'}>{arabic ? 'القيود' : 'Rules'}</a>
+          <a className="guide-choice" href={arabic ? '#تدفق-البيانات-والنتيجة' : '#data-flow-and-outcome'}>{arabic ? 'تدفق البيانات' : 'Data flow'}</a>
         </nav>}
       </header>
-      <DocsBody className={page.data.sectionRoles ? 'role-sections-pending' : undefined}>
+      {/* Every section renders server-side; a chosen role only collapses sections after hydration. */}
+      <DocsBody>
         <RoleSections sectionRoles={page.data.sectionRoles} />
         <MDX
           components={getMDXComponents({
