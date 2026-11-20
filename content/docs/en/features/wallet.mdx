@@ -11,6 +11,20 @@ Customers open Account → Wallet to inspect balance and activity, preview avail
 
 <SystemTour tour="feature-wallet" compact />
 
+## Paying and receiving refunds
+
+Select a currency in Account → Wallet. Each wallet shows posted, held and available amounts. Each transaction has a receipt reference and a balance after posting. Cart shows the maximum available for the purchase under the store’s spending limit. After choosing delivery, review the updated wallet offer in the payment step. Claiming a gift card adds it to the customer’s gift cards for separate use at checkout.
+
+For a return, choose an available destination, review each funding source and amount, then submit the request. Refund progress distinguishes pending, partial, attention and settled outcomes. A credit posted to the wallet has a ledger receipt. An external payment leg may need manual settlement.
+
+## Investigating discrepancies and reporting
+
+Open Wallet → Reconciliation cases to see runs, their status and how many accounts had discrepancies. Authorized operators can start a run, assign a case, recheck the underlying records and record a verified outcome or dismissal. For eligible manual adjustment discrepancies, the case supplies the amount and direction of the correction. Another operator must approve it. For payment, refund or cashback discrepancies, correct the underlying transaction and recheck the case. The case history records who acted and the evidence used. In Reports, select a currency and period to compare opening balance, credits, debits and closing balance. Download the CSV after the export completes and before it expires.
+
+## Configuring the store
+
+Store settings control the percentage of an eligible purchase that wallet credit can cover. Under Wallet → Cashback policy, select a currency and enter the reward rate in basis points. A rate of 100 gives 1% cashback and zero disables new rewards for that currency. Cashback is calculated on retained merchandise after discounts using the externally funded share. Delivery unlocks posting. Later refunds recalculate the reward and any amount requiring recovery appears in the customer’s wallet. For a blocked order settlement, review the cause on the order before requesting a retry. Operators can also cancel an account closure while the account is in the closing state.
+
 ## Restrictions and decisions
 
 An active wallet amount attached to a purchase stays reserved once any parcel has retained dispatch evidence, even while other parcels are still being prepared. Expiry or a release request cannot make that amount available to spend elsewhere. This also applies to test dispatch evidence; a label or editable shipment status alone is insufficient. A cart-only hold can still expire normally. Retaining an overdue hold does not authorize late capture: staff must review the settlement issue separately.

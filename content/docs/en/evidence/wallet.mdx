@@ -36,6 +36,16 @@ description: "Extracted backend routes, request fields and enum values."
 | Wallet | `tenant-api.php` | GET | `reconciliation-cases` | `cases` |
 | Wallet | `tenant-api.php` | GET | `reconciliation-cases/{case}` | `showCase` |
 | Wallet | `tenant-api.php` | POST | `reconciliation-cases/{case}/resolve` | `resolveCase` |
+| Wallet | `admin-api.php` | GET | `reconciliation-runs` | `listRuns` |
+| Wallet | `admin-api.php` | GET | `reconciliation-runs/{run}` | `showRun` |
+| Wallet | `tenant-api.php` | POST | `{account}/abort-closing` | `abortClosing` |
+| Wallet | `tenant-api.php` | GET | `reconciliation-runs` | `listRuns` |
+| Wallet | `tenant-api.php` | GET | `reconciliation-runs/{run}` | `showRun` |
+| Wallet | `tenant-api.php` | POST | `reconciliation-runs` | `startRun` |
+| Wallet | `tenant-api.php` | POST | `reconciliation-cases/{case}/{action}` | `caseCommand` |
+| Wallet | `tenant-api.php` | GET | `wallet/cashback-policy` | `policy` |
+| Wallet | `tenant-api.php` | PUT | `wallet/cashback-policy` | `configure` |
+| Wallet | `user-api.php` | GET | `cashback` | `activity` |
 | Wallet | `tenant-api.php` | POST | `exports` | `storeExport` |
 | Wallet | `tenant-api.php` | GET | `exports/{export}` | `showExport` |
 | Wallet | `tenant-api.php` | GET | `exports/{export}/download` | `downloadExport` |
@@ -64,8 +74,8 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Wallet/App/Enums/WalletAuditOutcome.php`: `SUCCEEDED = 1`, `DENIED = 2`, `FAILED = 3`
 - `Modules/Wallet/App/Enums/WalletExportStatus.php`: `QUEUED = 1`, `PROCESSING = 2`, `COMPLETED = 3`, `FAILED = 4`, `EXPIRED = 5`
 - `Modules/Wallet/App/Enums/WalletHoldStatus.php`: `ACTIVE = 1`, `CAPTURED = 2`, `RELEASED = 3`, `EXPIRED = 4`, `SPLIT = 5`
-- `Modules/Wallet/App/Enums/WalletLedgerEntryType.php`: `REFUND_CREDIT = 1`, `REFUND_RESTORATION_CREDIT = 2`, `GOODWILL_CREDIT = 3`, `MANUAL_CREDIT = 4`, `MANUAL_DEBIT = 5`, `CHECKOUT_DEBIT = 6`, `REVERSAL_CREDIT = 7`, `REVERSAL_DEBIT = 8`, `CORRECTION_CREDIT = 9`, `CORRECTION_DEBIT = 10`, `MIGRATION_CREDIT = 11`, `MIGRATION_DEBIT = 12`, `RECOVERY_OFFSET_DEBIT = 13`
-- `Modules/Wallet/App/Enums/WalletReconciliationCaseType.php`: `BALANCE_DRIFT = 1`, `HELD_BALANCE_DRIFT = 2`, `STALE_HOLD = 3`, `CAPTURE_MISMATCH = 4`, `ORDER_ALLOCATION_MISMATCH = 5`, `REFUND_RESTORATION_MISMATCH = 6`, `TENANT_CURRENCY_MISMATCH = 7`, `IDEMPOTENCY_CONFLICT = 8`, `NEGATIVE_RECOVERY = 9`, `INTEGRATION_FAILURE = 10`
+- `Modules/Wallet/App/Enums/WalletLedgerEntryType.php`: `REFUND_CREDIT = 1`, `REFUND_RESTORATION_CREDIT = 2`, `GOODWILL_CREDIT = 3`, `MANUAL_CREDIT = 4`, `MANUAL_DEBIT = 5`, `CHECKOUT_DEBIT = 6`, `REVERSAL_CREDIT = 7`, `REVERSAL_DEBIT = 8`, `CORRECTION_CREDIT = 9`, `CORRECTION_DEBIT = 10`, `MIGRATION_CREDIT = 11`, `MIGRATION_DEBIT = 12`, `RECOVERY_OFFSET_DEBIT = 13`, `CASHBACK_CREDIT = 14`, `CASHBACK_REVERSAL_DEBIT = 15`
+- `Modules/Wallet/App/Enums/WalletReconciliationCaseType.php`: `BALANCE_DRIFT = 1`, `HELD_BALANCE_DRIFT = 2`, `STALE_HOLD = 3`, `CAPTURE_MISMATCH = 4`, `ORDER_ALLOCATION_MISMATCH = 5`, `REFUND_RESTORATION_MISMATCH = 6`, `TENANT_CURRENCY_MISMATCH = 7`, `IDEMPOTENCY_CONFLICT = 8`, `NEGATIVE_RECOVERY = 9`, `INTEGRATION_FAILURE = 10`, `SOURCE_MISMATCH = 11`, `RETAINED_HOLD = 12`
 - `Modules/Wallet/App/Enums/WalletReconciliationSeverity.php`: `LOW = 1`, `MEDIUM = 2`, `HIGH = 3`, `CRITICAL = 4`
 - `Modules/Wallet/App/Enums/WalletReconciliationStatus.php`: `OPEN = 1`, `INVESTIGATING = 2`, `RESOLVED = 3`, `DISMISSED = 4`
 
