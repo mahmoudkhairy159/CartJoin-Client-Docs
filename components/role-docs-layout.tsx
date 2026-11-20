@@ -86,7 +86,7 @@ export function RoleDocsLayout({
 
   return (
     <DocsLayout tree={visibleTree} {...baseOptions(lang)} links={[]}
-      sidebar={{ banner: <div className="guide-sidebar-controls"><LanguageSwitch /><RolePicker compact /></div> }}>
+      sidebar={{ banner: <div className="guide-sidebar-controls"><LanguageSwitch /><RolePicker /></div> }}>
       {children}
     </DocsLayout>
   );

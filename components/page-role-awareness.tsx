@@ -1,6 +1,6 @@
 'use client';
 
-import { Info } from 'lucide-react';
+import { Icon } from '@/components/icon';
 import { createPortal } from 'react-dom';
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
@@ -18,11 +18,11 @@ export function PageAudience({ roles = [] }: { roles?: string[] }) {
   return (
     <div className="guide-audience not-prose">
       <div className="guide-audience-line">
-        <span className="text-fd-muted-foreground">{arabic ? 'لمن هذا الدليل' : 'For'}</span>
+        <span className="guide-audience-for">{arabic ? 'لمن هذا الدليل' : 'For'}</span>
         {forEveryone ? (
-          <span className="text-fd-foreground">{arabic ? 'كل الأدوار' : 'all roles'}</span>
+          <span className="guide-audience-all">{arabic ? 'كل الأدوار' : 'all roles'}</span>
         ) : (
-          <ul className="flex flex-wrap gap-2">
+          <ul className="guide-audience-roles">
             {roles.map((code) => (
               <li
                 key={code}
@@ -39,7 +39,7 @@ export function PageAudience({ roles = [] }: { roles?: string[] }) {
       </div>
       {role && !applies && (
         <p className="guide-audience-notice">
-          <Info size={16} strokeWidth={1.5} className="shrink-0" aria-hidden />
+          <Icon name="information" />
           <span>
             {arabic
               ? `هذه الصفحة ليست ضمن دليل ${roleName(role, lang)}. ظهرت لأنك فتحت رابطها مباشرةً.`
@@ -184,12 +184,12 @@ export function RoleSections({ sectionRoles }: { sectionRoles?: Record<string, s
 
   return (
     <>
-      <div ref={anchor} className="not-prose mb-5 flex justify-end">
+      <div ref={anchor} className="not-prose guide-role-toggle-row">
         <button
           type="button"
           aria-pressed={showAll}
           onClick={() => setShowAll((value) => !value)}
-          className={`rounded-lg border border-fd-border bg-fd-muted px-3 py-2 text-sm text-fd-muted-foreground hover:text-fd-foreground ${focusRing}`}
+          className={`guide-button ${focusRing}`}
         >
           {arabic ? 'عرض كل الأقسام' : 'Show all sections'}
         </button>
@@ -198,7 +198,7 @@ export function RoleSections({ sectionRoles }: { sectionRoles?: Record<string, s
         const visible = showAll || !collapsed[target.id];
         const action = arabic ? (visible ? 'إخفاء' : 'عرض') : (visible ? 'Hide' : 'Show');
         return createPortal(
-          <span className="not-prose ms-2 inline-flex align-middle items-center gap-2 text-xs font-normal text-fd-muted-foreground">
+          <span className="not-prose guide-section-role">
             <span>{arabic ? 'مخصص لـ' : 'For'} {roleListLabel(target.roles, lang)}</span>
             <button
               type="button"
@@ -208,7 +208,7 @@ export function RoleSections({ sectionRoles }: { sectionRoles?: Record<string, s
                 setCollapsed((value) => ({ ...value, [target.id]: visible }));
                 setShowAll(false);
               }}
-              className={`rounded-md border border-fd-border px-2 py-1 hover:text-fd-foreground ${focusRing}`}
+              className={`guide-button is-ghost is-compact ${focusRing}`}
             >
               {action}
             </button>

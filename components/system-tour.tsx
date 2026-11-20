@@ -1,7 +1,7 @@
 'use client';
 
 import { Dialog } from '@base-ui/react/dialog';
-import { ArrowLeft, ArrowRight, Maximize2, Play, X } from 'lucide-react';
+import { Icon } from '@/components/icon';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -36,6 +36,8 @@ export function SystemTour({ tour, compact = false, startAt = 0, anchor = 'scree
   const src = `${basePath}/screenshots/${localizedImage(step)}`;
   const dimensions = sizes[localizedImage(step)];
   const videoName = data.localizedVideo ? `${tour}-${lang}` : tour;
+  const imageAlt = `${stepLabel} ${selected + 1}: ${step.title[lang]}`;
+  const enlargeLabel = `${arabic ? 'تكبير الصورة' : 'Enlarge screenshot'}: ${imageAlt}`;
   const focusStyle = { left: `${focus[0]}%`, top: `${focus[1]}%`, width: `${focus[2]}%`, height: `${focus[3]}%` };
 
   function markers() {
@@ -49,38 +51,38 @@ export function SystemTour({ tour, compact = false, startAt = 0, anchor = 'scree
 
   return (
     <section id={featureTour ? anchor : undefined} className={`system-tour not-prose${compact ? ' is-compact' : ''}${featureTour ? ' is-feature' : ''}`} aria-label={data.title[lang]}>
-      <header className="tour-heading"><span className="tour-label">{arabic ? 'تعلم من شاشة فعلية' : 'Learn from the real screen'}</span><h3>{data.title[lang]}</h3><p>{data.intro[lang]}</p></header>
+      <header className="tour-heading"><span className="tour-label">{arabic ? 'جولة على الشاشة' : 'Screen tour'}</span><h3>{data.title[lang]}</h3><p>{data.intro[lang]}</p></header>
       <Dialog.Root open={expanded} onOpenChange={setExpanded}>
         <div className="tour-layout">
           <div className="tour-visual">
             <div className="tour-image-stage" dir="ltr">
-              <button className="tour-image-button" type="button" onClick={() => setExpanded(true)} aria-label={arabic ? 'تكبير الصورة' : 'Enlarge screenshot'}>
-                <img src={src} alt={data.title[lang]} width={dimensions?.width} height={dimensions?.height} loading="lazy" />
+              <button className="tour-image-button" type="button" onClick={() => setExpanded(true)} aria-label={enlargeLabel}>
+                <img src={src} alt={imageAlt} width={dimensions?.width} height={dimensions?.height} loading="lazy" />
               </button>
               <div className="tour-focus" style={focusStyle} aria-hidden />
               {markers()}
             </div>
-            <div className="tour-image-toolbar"><span>{arabic ? 'صورة من النظام التجريبي' : 'Demo system screenshot'}</span><button type="button" onClick={() => setExpanded(true)}><Maximize2 size={16} strokeWidth={1.5} aria-hidden />{arabic ? 'تكبير' : 'Enlarge'}</button></div>
+            <div className="tour-image-toolbar"><span>{arabic ? 'صورة من النظام التجريبي' : 'Demo system screenshot'}</span><button type="button" className="guide-button is-ghost" onClick={() => setExpanded(true)} aria-label={enlargeLabel}><Icon name="fullscreen" />{arabic ? 'تكبير' : 'Enlarge'}</button></div>
           </div>
           <div className="tour-steps" role="group" aria-label={arabic ? 'خطوات الشرح' : 'Tour steps'}>
-            {data.steps.map((item, index) => <button type="button" key={index} className="tour-step" aria-current={index === selected ? 'step' : undefined} onClick={() => setSelected(index)}>
+            {data.steps.map((item, index) => <button type="button" key={index} className="guide-choice tour-step" aria-current={index === selected ? 'step' : undefined} onClick={() => setSelected(index)}>
               <span className="tour-step-number"><bdi dir="ltr">{index + 1}</bdi></span><span><strong>{item.title[lang]}</strong>{index === selected && <span className="tour-step-body">{item.body[lang]}</span>}</span>
             </button>)}
           </div>
         </div>
-        <div className="tour-current" aria-live="polite"><p><strong>{step.title[lang]}</strong> {step.body[lang]}</p><Link href={guideHref}>{onFeaturePage ? (arabic ? 'راجع القيود والقرارات' : 'Review restrictions and decisions') : (arabic ? 'اقرأ الشرح والخطوات' : 'Read the steps and rules')}<ArrowRight size={16} strokeWidth={1.5} className="directional-icon" aria-hidden /></Link></div>
-        <div className="tour-controls"><button type="button" disabled={selected === 0} onClick={() => setSelected(selected - 1)}><ArrowLeft size={16} strokeWidth={1.5} className="directional-icon" aria-hidden />{arabic ? 'السابق' : 'Previous'}</button><span><bdi dir="ltr">{selected + 1} / {data.steps.length}</bdi></span><button type="button" disabled={selected === data.steps.length - 1} onClick={() => setSelected(selected + 1)}>{arabic ? 'التالي' : 'Next'}<ArrowRight size={16} strokeWidth={1.5} className="directional-icon" aria-hidden /></button></div>
+        <div className="tour-current" aria-live="polite"><p><strong>{step.title[lang]}</strong> {step.body[lang]}</p><Link href={guideHref}>{onFeaturePage ? (arabic ? 'راجع القيود والقرارات' : 'Review restrictions and decisions') : (arabic ? 'اقرأ الشرح والخطوات' : 'Read the steps and rules')}<Icon name="arrow-right" /></Link></div>
+        <div className="tour-controls"><button type="button" className="guide-button" disabled={selected === 0} onClick={() => setSelected(selected - 1)}><Icon name="arrow-left" />{arabic ? 'السابق' : 'Previous'}</button><span><bdi dir="ltr">{selected + 1} / {data.steps.length}</bdi></span><button type="button" className="guide-button" disabled={selected === data.steps.length - 1} onClick={() => setSelected(selected + 1)}>{arabic ? 'التالي' : 'Next'}<Icon name="arrow-right" /></button></div>
         <Dialog.Portal>
           <Dialog.Backdrop className="tour-modal-backdrop" />
           <Dialog.Popup className="tour-modal" lang={lang} dir={arabic ? 'rtl' : 'ltr'}>
-            <div className="tour-modal-heading"><Dialog.Title>{step.title[lang]}</Dialog.Title><Dialog.Close className="tour-close" aria-label={arabic ? 'إغلاق الصورة' : 'Close screenshot'}><X size={18} strokeWidth={1.5} /></Dialog.Close></div>
+            <div className="tour-modal-heading"><Dialog.Title>{step.title[lang]}</Dialog.Title><Dialog.Close className="guide-button is-icon" aria-label={arabic ? 'إغلاق الصورة' : 'Close screenshot'}><Icon name="close" size={20} /></Dialog.Close></div>
             <Dialog.Description className="tour-modal-description">{step.body[lang]}</Dialog.Description>
-            <div className="tour-modal-image-scroll"><div className="tour-image-stage" dir="ltr"><img src={src} alt={data.title[lang]} width={dimensions?.width} height={dimensions?.height} /><div className="tour-focus" style={focusStyle} aria-hidden />{markers()}</div></div>
-            <div className="tour-controls"><button type="button" disabled={selected === 0} onClick={() => setSelected(selected - 1)}>{arabic ? 'السابق' : 'Previous'}</button><span><bdi dir="ltr">{selected + 1} / {data.steps.length}</bdi></span><button type="button" disabled={selected === data.steps.length - 1} onClick={() => setSelected(selected + 1)}>{arabic ? 'التالي' : 'Next'}</button></div>
+            <div className="tour-modal-image-scroll"><div className="tour-image-stage" dir="ltr"><img src={src} alt={imageAlt} width={dimensions?.width} height={dimensions?.height} /><div className="tour-focus" style={focusStyle} aria-hidden />{markers()}</div></div>
+            <div className="tour-controls"><button type="button" className="guide-button" disabled={selected === 0} onClick={() => setSelected(selected - 1)}>{arabic ? 'السابق' : 'Previous'}</button><span><bdi dir="ltr">{selected + 1} / {data.steps.length}</bdi></span><button type="button" className="guide-button" disabled={selected === data.steps.length - 1} onClick={() => setSelected(selected + 1)}>{arabic ? 'التالي' : 'Next'}</button></div>
           </Dialog.Popup>
         </Dialog.Portal>
       </Dialog.Root>
-      {data.video && <details className="tour-video"><summary><Play size={16} strokeWidth={1.5} aria-hidden /><span>{arabic ? `شاهد جولة قصيرة — ${duration} ثانية` : `Watch the short tour — ${duration} seconds`}</span></summary>
+      {data.video && <details className="guide-disclosure tour-video"><summary><Icon name="play-circle" size={20} /><span>{arabic ? `شاهد جولة قصيرة — ${duration} ثانية` : `Watch the short tour — ${duration} seconds`}</span></summary>
         <p>{arabic ? 'جولة صامتة من صور النظام مع شرح بالعربية والإنجليزية. استخدم زر الترجمة في المشغل. هذه ليست عملية شراء أو تعديل حية.' : 'A silent screenshot tour with English and Arabic captions. Use the player’s captions control. It illustrates the interface rather than executing a live transaction.'}</p>
         <video key={tour + lang} controls playsInline preload="none" width={1280} height={720} poster={`${basePath}/videos/${videoName}-poster.jpg`}>
           <source src={`${basePath}/videos/${videoName}-tour.mp4`} type="video/mp4" />
@@ -88,9 +90,9 @@ export function SystemTour({ tour, compact = false, startAt = 0, anchor = 'scree
           <track src={`${basePath}/videos/${tour}-en.vtt`} kind="captions" srcLang="en" label="English" default={!arabic} />
           {arabic ? 'متصفحك لا يدعم الفيديو؛ اتبع الخطوات أعلاه' : 'Your browser does not support video; follow the steps above'}
         </video>
-        <details className="tour-transcript"><summary>{arabic ? 'قراءة نص الجولة' : 'Read the tour transcript'}</summary><ol>{data.steps.map((item, index) => <li key={index}><strong>{item.title[lang]}</strong><p>{item.body[lang]}</p></li>)}</ol></details>
+        <details className="guide-disclosure tour-transcript"><summary>{arabic ? 'قراءة نص الجولة' : 'Read the tour transcript'}</summary><ol>{data.steps.map((item, index) => <li key={index}><strong>{item.title[lang]}</strong><p>{item.body[lang]}</p></li>)}</ol></details>
       </details>}
-      <p className="tour-provenance">{data.provenance?.[lang] ?? (arabic ? 'حسابات عرض · التقطت في 17 نوفمبر 2026 · الأرقام للتوضيح' : 'Demo accounts · Captured 17 November 2026 · Figures are illustrative')}</p>
+      <p className="tour-provenance">{data.provenance?.[lang] ?? (arabic ? 'حسابات تجريبية · الأرقام للتوضيح' : 'Demo accounts · Figures are illustrative')}</p>
     </section>
   );
 }

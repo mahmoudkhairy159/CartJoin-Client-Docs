@@ -1,25 +1,14 @@
-'use client';
-
-const designs = ['sketch', 'parcel', 'rolling'];
-const directory = (process.env.NEXT_PUBLIC_BASE_PATH ?? '') + '/page-loaders/';
-let previous: string | undefined;
-
-function showLoader(image: HTMLImageElement | null) {
-  if (!image || image.dataset.design) return;
-  const choices = designs.filter((design) => design !== previous);
-  previous = choices[Math.floor(Math.random() * choices.length)];
-  image.alt = document.documentElement.lang.startsWith('ar') ? 'جارٍ التحميل' : 'Loading page';
-  image.dataset.design = previous;
-  image.src = directory + previous + '.svg';
-}
-
+// A static reading skeleton: no spinner, no animation, the same in both themes.
 export default function Loading() {
   return (
-    <div role="status" className="grid min-h-48 place-items-center">
-      <picture>
-        <source media="(prefers-reduced-motion: reduce)" srcSet={directory + 'still.svg'} />
-        <img ref={showLoader} src={directory + 'sketch.svg'} width={56} height={56} alt="Loading page" />
-      </picture>
+    <div role="status" className="guide-skeleton">
+      <span className="guide-skeleton-title" aria-hidden />
+      <span className="guide-skeleton-line" aria-hidden />
+      <span className="guide-skeleton-line" aria-hidden />
+      <span className="guide-skeleton-line is-short" aria-hidden />
+      <span className="sr-only">
+        Loading page · <bdi lang="ar" dir="rtl">جارٍ تحميل الصفحة</bdi>
+      </span>
     </div>
   );
 }
