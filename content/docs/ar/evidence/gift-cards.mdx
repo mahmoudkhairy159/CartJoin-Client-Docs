@@ -10,6 +10,12 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/GiftCard/routes/user-api.php`
 - `Modules/GiftCard/routes/vendor-api.php`
 - `Modules/GiftCard/routes/web.php`
+- `Modules/GiftCard/routes/purchases-user-api.php`
+- `Modules/GiftCard/routes/purchases-tenant-api.php`
+- `Modules/GiftCard/routes/gift-card-operations.php`
+- `Modules/GiftCard/routes/gift-card-operations-tenant-api.php`
+- `Modules/GiftCard/routes/delivery-api.php`
+- `Modules/Cart/routes/user-api.php` و`Modules/Invoice/routes/api.php`
 
 ## مسارات الخادم المستخرجة
 
@@ -33,11 +39,26 @@ description: "Extracted backend routes, request fields and enum values."
 | GiftCard | `user-api.php` | GET | `/` | `index` |
 | GiftCard | `user-api.php` | GET | `{publicId}` | `show` |
 
+## مسارات الشراء والعمليات
+
+تبدأ مسارات العميل بـ `/api/user/v1` ومسارات المتجر بـ `/api/tenant/v1` ومسارات المنصة بـ `/api/admin/v1`.
+
+| الواجهة | الطرق وأجزاء المسار |
+|---|---|
+| العميل | GET `gift-card-offers` وGET/POST `gift-card-purchases` وGET `gift-card-purchases/{publicId}` |
+| سلة العميل | POST `cart/gift-cards` مع `code` أو `public_id` لبطاقة مرتبطة بالحساب و`requested_amount` اختياريًا. DELETE `cart/gift-cards/{applicationId}`. تعرض السلة وعروض الشحن المراجع المخفية والقيمة المطبقة و`external_payment_due`. يقبل إتمام الطلب `quoted_external_payment_due` لحماية القيمة التي راجعها العميل. |
+| الشراء في المتجر | GET/POST `gift-card-offers` وPUT `gift-card-offers/{publicId}` وGET `gift-card-purchases` أو `gift-card-purchases/{publicId}` وPOST `gift-card-purchases/{publicId}/chargeback-review` |
+| موظفو المتجر | POST `gift-cards/{publicId}/resume` وGET `gift-card-approvals` وPOST `gift-card-approvals/{publicId}/{approve-or-reject}` وGET/POST `gift-cards/{publicId}/deliveries` |
+| المنصة والمتجر | GET/POST `gift-card-reconciliation-runs` وGET `gift-card-reconciliation-runs/{publicId}` وGET `gift-card-reconciliation-cases` أو `gift-card-security-cases` وتفاصيلهما بالمعرف العام |
+| أوامر الحالات | POST `gift-card-reconciliation-cases/{publicId}/{action}` للتعيين أو إعادة الفحص أو التحقق أو الحل أو الاستبعاد، وPOST `gift-card-security-cases/{publicId}/{action}` للتعيين أو تأكيد الاستلام أو التحقيق أو الحل أو الاستبعاد. يمكن للموظف المخول تعليق البطاقة أو استئنافها من حالة الأمان. |
+| صادرات المتجر | POST/GET `gift-card-exports` وGET `gift-card-exports/{publicId}` أو `gift-card-exports/{publicId}/download` |
+
 ## حقول النماذج
 
 - `Modules/GiftCard/App/Http/Requests/BaseGiftCardRequest.php`: `errors`, `message`, `statusCode`
 - `Modules/GiftCard/App/Http/Requests/Tenant/AdjustGiftCardRequest.php`: `amount`, `reason`, `idempotency_key`
-- `Modules/GiftCard/App/Http/Requests/Tenant/IssueGiftCardRequest.php`: `amount`, `currency_id`, `reason`, `idempotency_key`, `recipient_email`, `recipient_name`, `gift_message`
+- `Modules/GiftCard/App/Http/Requests/Tenant/IssueGiftCardRequest.php`: `amount`, `currency_id`, `reason`, `idempotency_key`, `owner_user_id`, `recipient_email`, `recipient_name`, `gift_message`
+- `Modules/GiftCard/App/Http/Requests/User/PurchaseGiftCardRequest.php`: `offer_id`, `recipient_email`, `recipient_name`, `gift_message`, `deliver_at`, `billing_address_id`, `payment_method`, `idempotency_key`
 - `Modules/GiftCard/App/Http/Requests/Tenant/UpdateGiftCardPolicyRequest.php`: `denominations`, `denominations.*`, `minimum_amount`, `maximum_amount`, `expiry_days`, `purchase_refundable`, `stacking_enabled`, `notify_on_issue`, `notify_on_redemption`, `notify_before_expiry`, `maximum_cards_per_order`, `reservation_ttl_minutes`, `status`
 - `Modules/GiftCard/App/Http/Requests/User/ClaimGiftCardRequest.php`: `code`, `errors`, `message`, `statusCode`
 - `Modules/GiftCard/App/Http/Requests/User/ValidateGiftCardRequest.php`: `code`, `currency_code`, `errors`, `message`, `statusCode`
@@ -49,5 +70,6 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/GiftCard/App/Enums/GiftCardStatus.php`: `PENDING_PAYMENT = 1`, `PENDING_ACTIVATION = 2`, `ACTIVE = 3`, `DEPLETED = 4`, `EXPIRED = 5`, `CANCELLED = 6`, `SUSPENDED = 7`
 - `Modules/GiftCard/App/Enums/GiftCardTransactionType.php`: `ACTIVATION_CREDIT = 1`, `COMPENSATORY_CREDIT = 2`, `REDEMPTION_DEBIT = 3`, `RESTORATION_CREDIT = 4`, `ADJUSTMENT_CREDIT = 5`, `ADJUSTMENT_DEBIT = 6`, `EXPIRY_DEBIT = 7`, `CANCELLATION_DEBIT = 8`
 - `Modules/GiftCard/App/Enums/GiftCardType.php`: `PURCHASED = 1`, `COMPENSATORY = 2`
+- `Modules/GiftCard/App/Enums/GiftCardPurchaseStatus.php`: `PENDING_PAYMENT = 1`, `ACTIVE = 2`, `CANCELLED = 3`, `REFUNDED = 4`, `REVIEW = 5`, `REFUND_PENDING = 6`
 
 [العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/gift-cards)

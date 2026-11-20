@@ -10,6 +10,12 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/GiftCard/routes/user-api.php`
 - `Modules/GiftCard/routes/vendor-api.php`
 - `Modules/GiftCard/routes/web.php`
+- `Modules/GiftCard/routes/purchases-user-api.php`
+- `Modules/GiftCard/routes/purchases-tenant-api.php`
+- `Modules/GiftCard/routes/gift-card-operations.php`
+- `Modules/GiftCard/routes/gift-card-operations-tenant-api.php`
+- `Modules/GiftCard/routes/delivery-api.php`
+- `Modules/Cart/routes/user-api.php` and `Modules/Invoice/routes/api.php`
 
 ## Extracted explicit backend routes
 
@@ -33,11 +39,26 @@ description: "Extracted backend routes, request fields and enum values."
 | GiftCard | `user-api.php` | GET | `/` | `index` |
 | GiftCard | `user-api.php` | GET | `{publicId}` | `show` |
 
+## Purchase and operations routes
+
+The user API is under `/api/user/v1`, the tenant API under `/api/tenant/v1` and the admin API under `/api/admin/v1`.
+
+| Surface | Methods and fragments |
+|---|---|
+| Customer | GET `gift-card-offers`, GET/POST `gift-card-purchases`, GET `gift-card-purchases/{publicId}` |
+| Customer Cart | POST `cart/gift-cards` with either `code` or owned `public_id` and optional `requested_amount`. DELETE `cart/gift-cards/{applicationId}`. Cart and shipping quotes include masked applications, applied tender and `external_payment_due`. Checkout accepts `quoted_external_payment_due` to protect the reviewed amount. |
+| Tenant purchase | GET/POST `gift-card-offers`, PUT `gift-card-offers/{publicId}`, GET `gift-card-purchases` or `gift-card-purchases/{publicId}`, POST `gift-card-purchases/{publicId}/chargeback-review` |
+| Tenant staff | POST `gift-cards/{publicId}/resume`, GET `gift-card-approvals`, POST `gift-card-approvals/{publicId}/{approve-or-reject}`, GET/POST `gift-cards/{publicId}/deliveries` |
+| Admin and Tenant | GET/POST `gift-card-reconciliation-runs`, GET `gift-card-reconciliation-runs/{publicId}`, GET `gift-card-reconciliation-cases` or `gift-card-security-cases` and their details by public ID |
+| Case mutations | POST `gift-card-reconciliation-cases/{publicId}/{action}` with assign, recheck, verify, resolve or dismiss. POST `gift-card-security-cases/{publicId}/{action}` with assign, acknowledge, investigate, resolve or dismiss. An operator with store permissions can also hold or release a card through the security case. |
+| Tenant exports | POST/GET `gift-card-exports`, GET `gift-card-exports/{publicId}` or `gift-card-exports/{publicId}/download` |
+
 ## Form-request field names
 
 - `Modules/GiftCard/App/Http/Requests/BaseGiftCardRequest.php`: `errors`, `message`, `statusCode`
 - `Modules/GiftCard/App/Http/Requests/Tenant/AdjustGiftCardRequest.php`: `amount`, `reason`, `idempotency_key`
-- `Modules/GiftCard/App/Http/Requests/Tenant/IssueGiftCardRequest.php`: `amount`, `currency_id`, `reason`, `idempotency_key`, `recipient_email`, `recipient_name`, `gift_message`
+- `Modules/GiftCard/App/Http/Requests/Tenant/IssueGiftCardRequest.php`: `amount`, `currency_id`, `reason`, `idempotency_key`, `owner_user_id`, `recipient_email`, `recipient_name`, `gift_message`
+- `Modules/GiftCard/App/Http/Requests/User/PurchaseGiftCardRequest.php`: `offer_id`, `recipient_email`, `recipient_name`, `gift_message`, `deliver_at`, `billing_address_id`, `payment_method`, `idempotency_key`
 - `Modules/GiftCard/App/Http/Requests/Tenant/UpdateGiftCardPolicyRequest.php`: `denominations`, `denominations.*`, `minimum_amount`, `maximum_amount`, `expiry_days`, `purchase_refundable`, `stacking_enabled`, `notify_on_issue`, `notify_on_redemption`, `notify_before_expiry`, `maximum_cards_per_order`, `reservation_ttl_minutes`, `status`
 - `Modules/GiftCard/App/Http/Requests/User/ClaimGiftCardRequest.php`: `code`, `errors`, `message`, `statusCode`
 - `Modules/GiftCard/App/Http/Requests/User/ValidateGiftCardRequest.php`: `code`, `currency_code`, `errors`, `message`, `statusCode`
@@ -49,5 +70,6 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/GiftCard/App/Enums/GiftCardStatus.php`: `PENDING_PAYMENT = 1`, `PENDING_ACTIVATION = 2`, `ACTIVE = 3`, `DEPLETED = 4`, `EXPIRED = 5`, `CANCELLED = 6`, `SUSPENDED = 7`
 - `Modules/GiftCard/App/Enums/GiftCardTransactionType.php`: `ACTIVATION_CREDIT = 1`, `COMPENSATORY_CREDIT = 2`, `REDEMPTION_DEBIT = 3`, `RESTORATION_CREDIT = 4`, `ADJUSTMENT_CREDIT = 5`, `ADJUSTMENT_DEBIT = 6`, `EXPIRY_DEBIT = 7`, `CANCELLATION_DEBIT = 8`
 - `Modules/GiftCard/App/Enums/GiftCardType.php`: `PURCHASED = 1`, `COMPENSATORY = 2`
+- `Modules/GiftCard/App/Enums/GiftCardPurchaseStatus.php`: `PENDING_PAYMENT = 1`, `ACTIVE = 2`, `CANCELLED = 3`, `REFUNDED = 4`, `REVIEW = 5`, `REFUND_PENDING = 6`
 
 [Back to evidence](/en/evidence) · [Business guide](/en/features/gift-cards)

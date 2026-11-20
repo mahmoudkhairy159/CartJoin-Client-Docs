@@ -1848,8 +1848,8 @@
           "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Read outstanding card balances by store and currency. Do not add amounts from different currencies into one total.",
-          "ar": "اقرأ أرصدة البطاقات القائمة حسب المتجر والعملة. لا تجمع مبالغ العملات المختلفة في إجمالي واحد."
+          "en": "This overview groups liability by store and currency. Use reconciliation to inspect saved runs, and security cases to review assigned alerts.",
+          "ar": "تجمع شاشة الملخص الالتزامات حسب المتجر والعملة. استخدم شاشة المطابقة لعرض العمليات المحفوظة وحالات الأمان لمراجعة التنبيهات المعيّنة."
         },
         "guide": "features/gift-cards"
       },
@@ -1866,8 +1866,8 @@
           "ar": "مسؤول المتجر"
         },
         "body": {
-          "en": "Read the masked reference, state, balance and currency. The full secret is never needed in a screenshot or support conversation.",
-          "ar": "راجع المرجع المخفي جزئياً والحالة والرصيد والعملة. لا يلزم عرض الرمز السري كاملاً في صورة أو محادثة دعم."
+          "en": "Use the masked reference to review this card’s state and balance. The card detail shows delivery and staff history when available.",
+          "ar": "استخدم المرجع المخفي جزئيًا لمراجعة حالة البطاقة ورصيدها. تعرض التفاصيل سجل الإرسال وإجراءات الموظفين عند توفرها."
         },
         "guide": "features/gift-cards"
       },
@@ -1884,8 +1884,8 @@
           "ar": "العميل"
         },
         "body": {
-          "en": "Read the masked reference, state, balance and currency. The full secret is never needed in a screenshot or support conversation.",
-          "ar": "راجع المرجع المخفي جزئياً والحالة والرصيد والعملة. لا يلزم عرض الرمز السري كاملاً في صورة أو محادثة دعم."
+          "en": "Claiming adds the card to the account. Review its activity, apply it in Cart or open the purchase form when the store offers digital cards.",
+          "ar": "تضيف المطالبة البطاقة إلى الحساب. راجع حركاتها أو استخدمها في السلة، أو افتح نموذج الشراء إذا عرض المتجر بطاقات رقمية."
         },
         "guide": "features/gift-cards"
       }

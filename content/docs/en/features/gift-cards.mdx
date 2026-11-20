@@ -7,7 +7,11 @@ roles: ["ADMIN", "CUSTOMER", "TENANT"]
 
 ## How to use it
 
-Tenant operators review Gift cards and Gift-card policies before issuing or managing value. Customers use Account → Gift cards and the available redemption controls, then inspect the resulting applied amount and remaining balance.
+**Buy a digital gift card.** In Account → Gift cards, choose Buy a gift card when the store has published offers. Select an amount and a billing address, enter the recipient’s email and optional message, and continue to online payment. Leave the delivery date blank to send after payment. Choose a date and time to schedule delivery. The form uses your device’s time zone. The card activates after the store verifies payment. Gift card purchases in your account shows the purchase and lets you resume payment where available.
+
+**Claim and use a card.** Enter the code in Account → Gift cards to add the card to your account, then choose Use in cart on an eligible card. You can also enter an unclaimed card’s code in Cart. The cart displays the masked card reference and the amount applied. Your checkout applies eligible gift cards before wallet credit and then charges any remainder through the selected payment method. A balance can cover part of a purchase and remain available for later use. If the amount due increases, review the revised amount before placing the order.
+
+**Issue and manage store value.** Open Gift cards in the Tenant Dashboard. Check the policy and currency, then give the issuance reason and an eligible recipient. Review the card’s delivery state and use the support action if the recipient needs help. Use the masked reference in support. High-value changes may require approval from another authorized operator.
 
 <SystemTour tour="feature-gift-cards" compact />
 
@@ -15,17 +19,27 @@ Tenant operators review Gift cards and Gift-card policies before issuing or mana
 
 An active gift-card authorization linked to a partially dispatched purchase stays reserved. The authorization and its backing card value are protected from automatic expiry or release when retained dispatch evidence exists, including test evidence. This does not extend its payment authorization: overdue settlement needs staff review. Independent cart-only holds can still expire. Cancelling a card with any active checkout authorization is blocked; resolve the authorization before cancelling, without silently releasing a dispatched purchase.
 
-Staff balance reductions can use only the unreserved amount. A reduction that would consume value already promised to a checkout is rejected. A repeated adjustment with the same reference is applied once.
+Staff balance reductions can use only the unreserved amount. A reduction that would consume value already promised to a checkout is rejected. A repeated adjustment with the same reference is applied once. Suspension blocks use and preserves the balance. Expiry and cancellation follow the card policy and may write off remaining value. A claimed card belongs to the account that claimed it.
 
-Gift-card value is not cash in a wallet account. Eligibility, currency, state and policy determine use. Never expose a redeemable secret code in screenshots or treat a saved code as a guaranteed successful redemption.
+Gift-card and wallet balances remain separate. Eligibility, currency, state and policy determine use. Gift-card purchases require an eligible online payment. When merchandise paid with a gift card is refunded, review the refund destination and amount in the order or account. The gift-card share returns to the original card when possible. A replacement can carry the credit when the original card can no longer receive spendable value.
 
 ## Claim feedback
 
-A code that is unknown, not claimable or belongs to another customer produces a field validation message. Correct the code or contact support with a masked reference; do not repeatedly submit it or share the complete secret. A successful claim still needs the resulting balance and transaction evidence to confirm its effect.
+A code that is unknown, unavailable or assigned to another customer produces a generic field message. Check the code and store, or contact support with a masked reference. After a successful claim, check the card balance and activity in your account.
+
+## Reconciliation and finance close
+
+Open Gift card reconciliation in the Admin or Tenant Dashboard. Choose a currency and look at the date and status of the latest run before interpreting the results. Authorized staff can request another run. The daily worker compares card balances and holds with the gift-card ledger, order tender, payment allocation and refund evidence. The liability report keeps issued, redeemed, restored, adjusted and written-off value separate by currency.
+
+Open an exception to compare expected and recorded evidence, assign the case and recheck after correcting the underlying order, refund or ledger movement. Record the outcome before resolving or dismissing it. For a value correction, use the permissioned issuance or adjustment process so the original ledger history is retained. An empty findings list describes the completed run’s checks. Funding a purchased gift card creates outstanding card value. Its funding and reversal remain visible in payment and refund activity, separate from merchandise revenue and profit.
+
+## Security alerts
+
+Open Gift card security to review cases for repeated proof failures, unusual redemption or issuance, staff changes, and purchase reversals. Tenant staff see their store’s cases and authorized platform staff can review across stores. Use the assigned queue and the case history to acknowledge, investigate and resolve or dismiss an alert. Use the permissioned card action if value needs to be suspended during review. Share masked card references and case IDs with support.
 
 ## Data flow and outcome
 
-Issued card → policy and balance check → reservation/redemption → order tender allocation and transaction evidence.
+Staff issue or verified purchase → delivery and optional claim → masked cart application → priced order reservation → posted redemption or release. A refund links a restoration to the original redemption. Reconciliation checks the resulting evidence and creates exceptions for staff review. Security cases retain the rule, evidence, owner and decision.
 
 ## When something goes wrong
 
@@ -47,9 +61,9 @@ A route proves navigation, not permission to perform every action. Related-recor
 
 | Dashboard | Frontend entry paths |
 |---|---|
-| [admin](/en/roles/admin) | `/gift-cards` |
-| [tenant](/en/roles/tenant) | `/gift-cards`, `/gift-card-policies` |
-| [customer](/en/roles/customer) | `/account/gift-cards` |
+| [admin](/en/roles/admin) | `/gift-cards/overview`, `/gift-cards/reconciliation`, `/gift-cards/security-alerts` |
+| [tenant](/en/roles/tenant) | `/gift-cards`, `/gift-cards/liability`, `/gift-card-policies`, `/gift-cards/reconciliation`, `/gift-cards/security`, `/gift-cards/purchases` |
+| [customer](/en/roles/customer) | `/account/gift-cards`, `/account/gift-cards/buy`, `/account/gift-cards/purchases/:publicId` |
 
 [Exact route, field and enum source trail](/en/evidence/gift-cards)
 {/* /SCREEN_MAP */}

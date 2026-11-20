@@ -58,6 +58,12 @@ The screenshot is the real local demo screen on 18 November 2026. Its empty stat
 
 Automatic processing makes at most five attempts for unchanged facts. New evidence can resume a waiting check; repeated identical events cannot reset an exhausted retry budget. Vendors and customers cannot run tenant reward retries. Platform staff use existing loyalty risk monitoring; they cannot silently edit a customer's balance through this panel.
 
+## For platform operators
+
+Open **Loyalty → Reconciliation** to queue the balance check and refresh a store’s run status. It compares posted points, ledger entries, lots, and reservations. **Loyalty → Risk alerts** shows accounting discrepancies, constrained refund reversals, and patterns flagged by thresholds. Staff with both loyalty reconciliation and risk-monitor permissions can start an investigation or close an alert with a reason. A balance check only clears account discrepancy alerts whose totals now agree.
+
+Cancelling a funded order can restore points already consumed, even if there is no cash to refund. A received return of a line fully funded by loyalty can settle the points separately from monetary refunds. Checks retain a restoration record even when a partial return rounds to zero points.
+
 ## Data flow and outcome
 
 Program version → earning lots/account → preview and reservation → per-order allocation → consume/release → expiry and refund adjustments.
