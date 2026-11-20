@@ -7,13 +7,13 @@ roles: ["ADMIN", "TENANT", "VENDOR"]
 
 ## How to use it
 
-Tenant finance operators review settlement period, currency and lines, close/review the calculation, handle disputes and approve only against a verified payout account. Follow the payout through processing and record completion evidence in the authorized workflow. Vendors inspect statements and available dispute actions.
+Tenant finance operators review settlement period, currency and lines, close/review the calculation, handle disputes and approve only against a verified payout account. Follow the payout through processing and record completion evidence in the authorized workflow. Vendors can read statements and payouts. Tenant Finance owns dispute and resolution actions.
 
 <SystemTour tour="feature-settlements" compact />
 
 ## Restrictions and decisions
 
-A settlement uses one currency and a half-open period. Closed and later statements are immutable; corrections go to a future period. Negative or below-minimum balances carry forward. Each settlement can have one active or paid payout at a time. A canceled payout may have a linked replacement. Manual completion needs a unique external reference and timestamp.
+A settlement uses one currency and a half-open period. Closed and later statements are immutable; corrections go to a future period. Negative or below-minimum balances carry forward. Each settlement can have one active or paid payout at a time. A canceled payout may have a linked replacement. Manual completion requires independently verified evidence of the actual amount, currency, funding account, beneficiary, transfer time, and bank transaction ID.
 
 ## Data flow and outcome
 
@@ -23,7 +23,7 @@ Sales/commission/refund effects → immutable settlement lines → closed → ap
 
 **Pre-release correction · 19 November 2026.** New statements use an elapsed half-open UTC period: the start is included and the end is excluded. For November, use 1 November 00:00 through 1 December 00:00 UTC; generate only after that end has arrived. The next period starts at the same end, so a boundary event belongs once to the later period. Explicit timezone offsets are converted to UTC. Use whole seconds; unsupported fractional boundaries are rejected.
 
-The end must be after the start and cannot be in the future. An exact repeat returns its existing statement; a partial overlap is rejected. Closing a future period would otherwise omit financial effects that become known later. Closed history is preserved, and inconsistent older statements require explicit finance review.
+The end must be after the start and cannot be in the future. The dashboard queues the close and shows its run status. An exact repeat returns the same run. A partial overlap fails the close. Closing a future period would otherwise omit financial effects that become known later. Closed history is preserved, and inconsistent older statements require explicit finance review.
 
 ## Verification is different from paying
 
@@ -35,11 +35,25 @@ Verification does not approve a transfer, send money or prove a bank/carrier res
 
 An enabled vendor schedule with a closing day closes completed periods in its configured time zone and currency. For weekly and biweekly schedules, choose a day from 1 (Monday) through 7 (Sunday). Older schedules without a closing day need one before automatic closing can begin. Biweekly schedules follow a fixed two-week calendar. The scheduler resumes from **Schedule processed through**, including empty periods. A financially blocked period stays pending until the underlying exception is resolved. The **Earliest transfer time** on a payout uses the delay saved when the statement closed.
 
-If a payout was canceled, first check the bank or payout provider for movement. Finance can create a linked replacement from the canceled payout using a verified account, a reason and confirmation that no funds moved. The canceled attempt stays in the payout history.
+If a payout was canceled, first check the bank or payout provider for movement. Finance can create a linked replacement from the canceled payout using a verified account, a reason and independently verified evidence of final non-execution. The canceled attempt stays in the payout history.
 
 ## Review settlement exceptions
 
 In the tenant dashboard, open **Settlements → Settlement exceptions**. Open a case to review the reason, order references and decision history. Use **Acknowledge** to record that Finance has seen the case, or **Recheck evidence** after the owning payment, refund or commission data has been corrected. The case resolves once the source records establish eligibility.
+
+## Reconcile a bank export
+
+Use the tenant Finance payout reconciliation API to import a normalized bank export. Review missing and mismatched transfers, possible duplicates, and returns in the exception queue. Recheck an exception after new bank evidence arrives. A separate authorized operator can post a verified return, which restores the seller balance without changing the original paid payout. In the vendor dashboard, open a payout to see currency-specific balances, the earliest transfer time, and its bank reference.
+
+Platform Finance can download a private seller ledger CSV from the Admin settlement detail. The export covers the seller, currency, and the UTC window shown by the selected statement through its recorded close or payment date.
+
+## Verify payment evidence
+
+In Tenant Finance, open **Settlements → Settlement payment evidence**. Submit each processor, carrier, or bank entry with the original source reference, effective time in UTC, and SHA-256 of the authoritative document. A different finance operator must compare the amount, currency, source and recipient to that original before approving. Keep access to the source document in your protected financial records.
+
+Create a processor chargeback debit from the actual ledger movement. A reversal links to that same approved debit and restores only the verified amount. CartJoin only accepts automatic ledger allocation for an unambiguous single-order payment. Finance can reject erroneous evidence and submit a corrected entry under a new reference.
+
+A captured cash-on-delivery payment needs approved custody evidence before its sale can close or pay out. The marketplace collecting the funds adds no separate seller entry. When the seller collected the funds, the eligible merchandise principal is deducted once. A seller-funded original refund credits back the merchandise principal that would otherwise be deducted again. Unknown custody, refund payer and overlapping chargebacks go to Settlement exceptions.
 
 ## Download a CSV statement
 
@@ -68,7 +82,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/settlements`, `/payouts` |
-| [tenant](/en/roles/tenant) | `/settlements`, `/payouts`, `/settlement-settings`, `/settlement-exceptions` |
+| [tenant](/en/roles/tenant) | `/settlements`, `/payouts`, `/settlement-settings`, `/settlement-exceptions`, `/settlement-payment-evidence` |
 | [vendor](/en/roles/vendor) | `/settlements`, `/payouts` |
 
 [Exact route, field and enum source trail](/en/evidence/settlements)

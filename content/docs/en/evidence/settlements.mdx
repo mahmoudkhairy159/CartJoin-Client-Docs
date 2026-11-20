@@ -8,7 +8,7 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/SettlementPayout/routes/admin-api.php`
 - `Modules/SettlementPayout/routes/tenant-api.php`
 - `Modules/SettlementPayout/routes/vendor-api.php`
-- `Modules/SettlementPayout/routes/web.php`
+- `Modules/SettlementPayout/routes/statement-exports.php`
 
 ## Extracted explicit backend routes
 
@@ -20,12 +20,16 @@ description: "Extracted backend routes, request fields and enum values."
 | SettlementPayout | `admin-api.php` | GET | `payouts` | `index` |
 | SettlementPayout | `admin-api.php` | POST | `payouts/{payout}/hold` | `hold` |
 | SettlementPayout | `admin-api.php` | POST | `payouts/{payout}/release` | `release` |
+| SettlementPayout | `admin-api.php` | GET | `payouts/{payout}/events` | `history` |
+| SettlementPayout | `admin-api.php` | POST | `settlements/export` | `store` |
+| SettlementPayout | `admin-api.php` | GET | `settlements/exports/{id}` | `status` |
+| SettlementPayout | `admin-api.php` | GET | `settlements/exports/{id}/download` | `download` |
 | SettlementPayout | `tenant-api.php` | GET | `settlement-settings` | `index` |
 | SettlementPayout | `tenant-api.php` | GET | `settlement-settings/{vendorId}` | `show` |
 | SettlementPayout | `tenant-api.php` | PUT | `settlement-settings` | `upsert` |
 | SettlementPayout | `tenant-api.php` | GET | `settlements` | `index` |
 | SettlementPayout | `tenant-api.php` | POST | `settlements/generate` | `generate` |
-| SettlementPayout | `tenant-api.php` | POST | `settlements/export` | `export` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/export` | `store` |
 | SettlementPayout | `tenant-api.php` | GET | `settlements/{settlement}` | `show` |
 | SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/approve` | `approve` |
 | SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/dispute` | `dispute` |
@@ -40,11 +44,40 @@ description: "Extracted backend routes, request fields and enum values."
 | SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/hold` | `hold` |
 | SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/release` | `release` |
 | SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/cancel` | `cancel` |
+| SettlementPayout | `tenant-api.php` | POST | `settlement-generation-runs` | `queueGeneration` |
+| SettlementPayout | `tenant-api.php` | GET | `settlement-generation-runs/{run}` | `showGenerationRun` |
+| SettlementPayout | `tenant-api.php` | GET | `settlement-balances/{vendor}/{currency}` | `balance` |
+| SettlementPayout | `tenant-api.php` | GET | `settlements/{settlement}/lines` | `lines` |
+| SettlementPayout | `tenant-api.php` | POST | `settlements/{settlement}/roll-forward` | `rollForward` |
+| SettlementPayout | `tenant-api.php` | GET | `settlement-exceptions` | `index` |
+| SettlementPayout | `tenant-api.php` | GET | `settlement-exceptions/{exception}` | `show` |
+| SettlementPayout | `tenant-api.php` | POST | `settlement-exceptions/{exception}/review` | `review` |
+| SettlementPayout | `tenant-api.php` | GET | `payouts/{payout}/events` | `history` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/outcome-unknown` | `markOutcomeUnknown` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/verify-evidence` | `verifyEvidence` |
+| SettlementPayout | `tenant-api.php` | POST | `payouts/{payout}/recover` | `recover` |
+| SettlementPayout | `tenant-api.php` | GET | `settlements/exports/{id}` | `status` |
+| SettlementPayout | `tenant-api.php` | GET | `settlements/exports/{id}/download` | `download` |
+| SettlementPayout | `tenant-api.php` | POST | `payout-reconciliation/imports` | `import` |
+| SettlementPayout | `tenant-api.php` | GET | `payout-reconciliation/imports` | `listImports` |
+| SettlementPayout | `tenant-api.php` | GET | `payout-reconciliation/imports/{import}` | `showImport` |
+| SettlementPayout | `tenant-api.php` | GET | `payout-reconciliation/imports/{import}/entries` | `importEntries` |
+| SettlementPayout | `tenant-api.php` | POST | `payout-reconciliation/imports/{import}/retry` | `retryImport` |
+| SettlementPayout | `tenant-api.php` | GET | `payout-reconciliation/exceptions` | `exceptions` |
+| SettlementPayout | `tenant-api.php` | GET | `payout-reconciliation/unreconciled-payouts` | `unreconciledPayouts` |
+| SettlementPayout | `tenant-api.php` | GET | `payout-reconciliation/entries/{entry}` | `showEntry` |
+| SettlementPayout | `tenant-api.php` | POST | `payout-reconciliation/entries/{entry}/recheck` | `recheck` |
+| SettlementPayout | `tenant-api.php` | POST | `payout-reconciliation/entries/{entry}/acknowledge` | `acknowledge` |
+| SettlementPayout | `tenant-api.php` | POST | `payout-reconciliation/entries/{entry}/post-return` | `postReturn` |
 | SettlementPayout | `vendor-api.php` | GET | `settlements` | `index` |
-| SettlementPayout | `vendor-api.php` | POST | `settlements/export` | `export` |
+| SettlementPayout | `vendor-api.php` | POST | `settlements/export` | `store` |
 | SettlementPayout | `vendor-api.php` | GET | `settlements/{settlement}` | `show` |
 | SettlementPayout | `vendor-api.php` | GET | `payouts` | `index` |
 | SettlementPayout | `vendor-api.php` | GET | `payouts/{payout}` | `show` |
+| SettlementPayout | `vendor-api.php` | GET | `settlements/{settlement}/lines` | `lines` |
+| SettlementPayout | `vendor-api.php` | GET | `settlements/exports/{id}` | `status` |
+| SettlementPayout | `vendor-api.php` | GET | `settlements/exports/{id}/download` | `download` |
+| SettlementPayout | `vendor-api.php` | GET | `payout-balances/{currency}` | `balance` |
 
 ## Form-request field names
 
@@ -52,22 +85,25 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/CancelPayoutRequest.php`: `reason`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/FailPayoutRequest.php`: `failure_code`, `failure_reason`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/HoldPayoutRequest.php`: `reason`
-- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/RecordPaidPayoutRequest.php`: `provider`, `transfer_reference`, `transferred_at`, `proof_reference`, `note`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/RecordPaidPayoutRequest.php`: `note`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/AdjustSettlementRequest.php`: `vendor_id`, `currency_id`, `amount`, `reason`, `idempotency_key`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/ApproveSettlementRequest.php`: `vendor_payout_account_id`, `note`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/DisputeSettlementRequest.php`: `reason`
-- `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/ExportSettlementRequest.php`: `vendor_id`, `currency_id`, `from`, `to`
+- `Modules/SettlementPayout/App/Http/Requests/StatementExportRequest.php`: `currency_id`, `from`, `to`, `vendor_id` for Tenant and Admin, and `tenant_id` for Admin
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/ProcessPayoutRequest.php`: `bank_account_reference`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/Payout/VerifyPayoutEvidenceRequest.php`: `outcome`, `evidence_reference`, `bank_account_reference`, and the actual transfer terms for a paid outcome
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/PayoutReconciliation/ImportPayoutReconciliationRequest.php`: `bank_account_reference`, `statement_reference`, `rows`
+- `Modules/SettlementPayout/App/Http/Requests/Tenant/PayoutReconciliation/AcknowledgePayoutReconciliationRequest.php`: `classification_version`, `reason`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/Settlement/GenerateSettlementRequest.php`: `vendor_id`, `currency_id`, `from`, `to`
 - `Modules/SettlementPayout/App/Http/Requests/Tenant/SettlementSetting/UpsertSettlementSettingRequest.php`: `vendor_id`, `currency_id`, `cadence`, `timezone`, `closing_day`, `payout_delay_days`, `minimum_payout_amount`, `is_enabled`
-- `Modules/SettlementPayout/App/Http/Requests/Vendor/Settlement/ExportSettlementRequest.php`: `currency_id`, `from`, `to`
 
 ## Enum values in source
 
 - `Modules/SettlementPayout/App/Enums/PayoutEventProcessingStatus.php`: `PROCESSED = 1`, `IGNORED = 2`, `FAILED = 3`
-- `Modules/SettlementPayout/App/Enums/PayoutEventType.php`: `CREATED = 1`, `PROCESSING = 2`, `HELD = 3`, `RELEASED = 4`, `PAID = 5`, `FAILED = 6`, `RETRIED = 7`, `CANCELLED = 8`
-- `Modules/SettlementPayout/App/Enums/PayoutStatus.php`: `PENDING = 1`, `PROCESSING = 2`, `HELD = 3`, `PAID = 4`, `FAILED = 5`, `CANCELLED = 6`
+- `Modules/SettlementPayout/App/Enums/PayoutEventType.php`: `CREATED = 1`, `PROCESSING = 2`, `HELD = 3`, `RELEASED = 4`, `PAID = 5`, `FAILED = 6`, `RETRIED = 7`, `CANCELLED = 8`, `RECOVERED = 9`, `OUTCOME_UNKNOWN = 10`, `EVIDENCE_VERIFIED = 11`
+- `Modules/SettlementPayout/App/Enums/PayoutStatus.php`: `PENDING = 1`, `PROCESSING = 2`, `HELD = 3`, `PAID = 4`, `FAILED = 5`, `CANCELLED = 6`, `OUTCOME_UNKNOWN = 7`
 - `Modules/SettlementPayout/App/Enums/SettlementCadence.php`: `WEEKLY = 1`, `BIWEEKLY = 2`, `MONTHLY = 3`, `MANUAL = 4`
-- `Modules/SettlementPayout/App/Enums/SettlementLineType.php`: `SALE = 1`, `COMMISSION = 2`, `REFUND = 3`, `RETURN = 4`, `CHARGEBACK = 5`, `FEE = 6`, `MANUAL_ADJUSTMENT = 7`, `CARRY_FORWARD = 8`
+- `Modules/SettlementPayout/App/Enums/SettlementLineType.php`: `SALE = 1`, `COMMISSION = 2`, `REFUND = 3`, `RETURN = 4`, `CHARGEBACK = 5`, `FEE = 6`, `MANUAL_ADJUSTMENT = 7`, `CARRY_FORWARD = 8`, `PAYOUT_RETURN = 9`
 - `Modules/SettlementPayout/App/Enums/SettlementStatus.php`: `GENERATING = 1`, `CLOSED = 2`, `APPROVED = 3`, `PAYOUT_PENDING = 4`, `PAID = 5`, `DISPUTED = 6`, `FAILED = 7`
 
 [Back to evidence](/en/evidence) · [Business guide](/en/features/settlements)
