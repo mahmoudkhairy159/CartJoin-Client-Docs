@@ -15,11 +15,13 @@ Tenant staff with shipment access can open **Shipments** from the order and sele
 
 ## Restrictions and decisions
 
-A shipping quote is not a dispatched shipment. Normal shipment states progress pending → picked → packed → dispatched → in transit → delivered or returned. Rates and eligible destinations must match current configuration; do not override a failed quote with an invented cost.
+New parcels start in Pending. Staff and sellers can record picking and packing. Dispatch, transit, delivery, and return to sender use verified carrier evidence or the applicable authorized store confirmation. A label identifies a parcel. Use the physical progress panel to see which units have shipped or arrived.
 
 ## Address coverage and method cost
 
-Delivery options are resolved from the selected country, state and city, including saved addresses represented by location IDs. A method has its own identity, name, charge and estimated delivery days. Checkout uses the chosen method’s charge. A delivery estimate is not a dispatched parcel or a guaranteed arrival time.
+Delivery options are resolved from the selected country, state and city, including saved addresses represented by location IDs. Checkout shows the rate, shipping discount, and net charge for the invoice. Each seller order shows its own share. Carrier quotes and statement fees belong to the shipment and are reviewed separately.
+
+When configuring rates, use inclusive amount and weight ranges. If ranges overlap, give the intended rate a higher priority. Existing equal-priority rows use the minimum order amount and then the rate ID to break ties. A quote can change when the address, cart, or rate configuration changes.
 
 ## Data flow and outcome
 
@@ -80,6 +82,8 @@ then use the separately permitted reasoned reconciliation retry. This preserves
 source evidence and prior retry history; it does not collect payment.
 
 ## Saved carrier exceptions
+
+Open the shipment’s delivery exception panel after a failed attempt, hold, or return to sender. Review the carrier update before arranging another attempt. Record a retry once you have arranged it with the carrier. Assign an unresolved issue to a store operator with a follow-up date and close the review with an explanation. Physical arrival, inventory, and refunds have their own workflows. Signed-in buyers receive in-app updates for verified milestones and selected delivery exceptions.
 
 When Bosta is disabled for the store, authorized operators can still open
 saved booking and tracking evidence. Carrier jobs, callbacks and recovery

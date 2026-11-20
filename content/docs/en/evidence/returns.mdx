@@ -10,6 +10,7 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/OrderReturn/routes/user-api.php`
 - `Modules/OrderReturn/routes/vendor-api.php`
 - `Modules/OrderReturn/routes/web.php`
+- `Modules/ShippingProvider/routes/tenant-api.php`
 
 The Vendor return detail supplies the replacement reference only for the retained seller order in the approved workspace. The replacement link also checks the Vendor order read permission.
 
@@ -25,8 +26,11 @@ The Vendor return detail supplies the replacement reference only for the retaine
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/approve` | `approve` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/reject` | `reject` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/mark-received` | `markReceived` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/cancel` | `cancel` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/restock` | `restock` |
 | OrderReturn | `tenant-api.php` | POST | `returns/{return}/refund` | `refund` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/reconcile-refund` | `reconcileRefund` |
+| OrderReturn | `tenant-api.php` | POST | `returns/{return}/exchange` | `exchange` |
 | OrderReturn | `tenant-api.php` | GET | `return-policy` | `policy` |
 | OrderReturn | `user-api.php` | GET | `orders/{order}/return-eligibility` | `eligibility` |
 | OrderReturn | `user-api.php` | POST | `orders/{order}/returns/preview` | `preview` |
@@ -37,24 +41,31 @@ The Vendor return detail supplies the replacement reference only for the retaine
 | OrderReturn | `vendor-api.php` | GET | `returns` | `index` |
 | OrderReturn | `vendor-api.php` | GET | `returns/{return}` | `show` |
 | OrderReturn | `vendor-api.php` | POST | `returns/{return}/inspect` | `inspect` |
+| ShippingProvider | `tenant-api.php` | GET | `returns/{return}/bosta-pickup` | `show` |
+| ShippingProvider | `tenant-api.php` | POST | `returns/{return}/bosta-pickup` | `queue` |
+| ShippingProvider | `tenant-api.php` | POST | `returns/{return}/bosta-pickup/recover` | `recover` |
+| ShippingProvider | `tenant-api.php` | POST | `returns/{return}/bosta-pickup/withdraw` | `withdraw` |
 
 ## Form-request field names
 
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/ApproveReturnRequest.php`: `comment`
-- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/MarkReceivedRequest.php`: `items`, `items.*.return_item_id`, `items.*.quantity_received`, `items.*.condition`, `items.*.restock`
-- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RefundReturnRequest.php`: `method`, `amount`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/MarkReceivedRequest.php`: `shipment_id`, `request_id`, `finalize`, `items`, `items.*.return_item_id`, `items.*.quantity_received`, `items.*.condition`, `items.*.restock`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/CancelReturnRequest.php`: `reason`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RestockReturnRequest.php`: `locations.*.return_item_id`, `locations.*.location_id`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RefundReturnRequest.php`: `method`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/ReconcileReturnRefundRequest.php`: `refund_id`, `reason`
 - `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/RejectReturnRequest.php`: `reason`
-- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/UpdateReturnRequest.php`: `notes`, `status`
-- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/PreviewReturnRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`
-- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/StoreReturnRequest.php`: `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `reason`, `notes`
-- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/StoreReturnShipmentRequest.php`: `carrier`, `tracking_number`, `tracking_url`, `shipped_at`
+- `Modules/OrderReturn/App/Http/Requests/Tenant/OrderReturn/UpdateReturnRequest.php`: `notes`
+- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/PreviewReturnRequest.php`: `refund_method`, `lines`, `lines.*.order_item_id`, `lines.*.quantity`
+- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/StoreReturnRequest.php`: `refund_method`, `lines`, `lines.*.order_item_id`, `lines.*.quantity`, `reason`, `notes`
+- `Modules/OrderReturn/App/Http/Requests/User/OrderReturn/StoreReturnShipmentRequest.php`: `carrier`, `tracking_number`, `tracking_url`, `shipped_at`, `Idempotency-Key` (header)
 - `Modules/OrderReturn/App/Http/Requests/Vendor/OrderReturn/InspectReturnRequest.php`: `items`, `items.*.return_item_id`, `items.*.condition`, `items.*.restock`, `items.*.vendor_recommendation`, `items.*.inspection_notes`
 
 ## Enum values in source
 
 - `Modules/OrderReturn/App/Enums/ReturnItemCondition.php`: `NEW = 1`, `GOOD = 2`, `DAMAGED = 3`, `UNUSABLE = 4`
 - `Modules/OrderReturn/App/Enums/ReturnRefundMethod.php`: `ORIGINAL_PAYMENT = 1`, `STORE_CREDIT = 2`, `EXCHANGE = 3`
-- `Modules/OrderReturn/App/Enums/ReturnStatus.php`: `PENDING = 1`, `APPROVED = 2`, `REJECTED = 3`, `RECEIVED = 4`, `RESTOCKED = 5`, `REFUNDED = 6`, `EXCHANGED = 7`
+- `Modules/OrderReturn/App/Enums/ReturnStatus.php`: `PENDING = 1`, `APPROVED = 2`, `REJECTED = 3`, `RECEIVED = 4`, `RESTOCKED = 5`, `REFUNDED = 6`, `EXCHANGED = 7`, `CANCELLED = 8`, `EXPIRED = 9`
 - `Modules/OrderReturn/App/Enums/VendorReturnRecommendation.php`: `APPROVE = 1`, `REJECT = 2`
 
 [Back to evidence](/en/evidence) · [Business guide](/en/features/returns)

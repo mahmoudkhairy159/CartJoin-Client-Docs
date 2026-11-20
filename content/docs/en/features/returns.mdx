@@ -9,6 +9,8 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 Open **Account → Returns** and select a purchase. Use the page controls for older orders or start from a seller order on your invoice. Select eligible items and follow the shipping instructions. Store operators approve or reject the request, inspect the received quantities, and record restock and refund decisions separately.
 
+Use the reason and notes fields to describe the problem. Request photos are currently unavailable.
+
 <SystemTour tour="feature-returns" compact />
 
 When the store creates a replacement, track the new order from the return. Vendor staff with order access can open the replacement from the return in the approved store workspace. The replacement has its own shipment history.
@@ -20,6 +22,12 @@ When the store creates a replacement, track the new order from the return. Vendo
 
 </details>
 
+## Receive a return in one or more parcels
+
+On the tenant return detail, select the parcel that physically arrived and enter the newly received quantity for each applicable line. Record a partial receipt if more parcels are expected. Finalize only after all attached parcels are accounted for. Enter zero for a line or balance that did not arrive. If no units were received, finalization closes the return without a refund and releases its held quantities.
+
+Use **Cancel return** for a request with no shipment, receipt, or financial obligation. Idle requests can expire under the configured intake deadline when they have no such obligations. The standard installation uses 30 days, starting from submission and resetting on approval.
+
 ## Uncertain carrier pickups
 
 On the tenant return detail, open the saved Bosta pickup. When recovery is
@@ -29,6 +37,8 @@ reference and tracking details must match the saved request. Recovery attaches
 an existing pickup. If definitive evidence confirms it ended before collection,
 staff can arrange a manual return. If the outcome stays uncertain, keep the
 pickup in review and avoid arranging a second one.
+
+An authorized operator can withdraw a pickup that has never been submitted to Bosta. A carrier cancellation after submission requires review. Verify what happened to the parcel before making another booking or processing warehouse receipt.
 
 When Bosta is disabled, the saved pickup evidence is still available to
 authorized staff. Use the return workflow to record physical receipt and
@@ -42,7 +52,9 @@ Return detail shows when a refund is awaiting settlement, partially settled, und
 
 ## Data flow and outcome
 
-Delivered order → return request → decision → receipt and inspection → independent inventory and refund effects. If a financial action succeeds while restocking fails, reconcile the incident rather than issuing the refund again.
+Delivered order → return request → decision → receipt and inspection → inventory disposition and refund. Stock work can continue after a refund or exchange settles. Credit only the inspected, saleable quantities. If the original stock location cannot be resolved, confirm the correct active warehouse before restocking.
+
+If a refund was already paid from the order, authorized tenant staff can link it to a received return. Enter the existing refund ID and an audit reason. The backend verifies the settled refund against the received lines and refund method. A successful link records the outcome and leaves the existing payment and stock movements intact.
 
 ## When something goes wrong
 
