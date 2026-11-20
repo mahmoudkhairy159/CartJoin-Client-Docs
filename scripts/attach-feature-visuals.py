@@ -71,13 +71,13 @@ overrides={
  ('customer','products'):('Read the chosen SKU, current price and availability before adding a variant. Delivery and points text are estimates, not proof of fulfillment or earned credit.','اقرأ رمز الخيار وسعره الحالي وتوافره قبل الإضافة. نصوص التوصيل والنقاط تقديرات لا تثبت التنفيذ أو اكتساب رصيد.'),
 }
 supplemental={
- 'customer-screen-help-centre.jpg':('Help centre','مركز المساعدة','Choose a category and expand a question. Guests can read help; a personal support ticket requires sign-in.','اختر التصنيف وافتح السؤال. يمكن للضيف قراءة المساعدة، وتتطلب التذكرة الشخصية الدخول.'),
- 'customer-screen-faq-answer.jpg':('Read an answer','قراءة إجابة','Expand a question to read the published answer. Store configuration and the actual purchase state govern available payment, return and refund actions.','افتح السؤال لقراءة الإجابة المنشورة. تحكم إعدادات المتجر وحالة الشراء إجراءات الدفع والإرجاع والاسترداد المتاحة.'),
- 'customer-screen-vendor-detail.jpg':('Seller page','صفحة البائع','Read the seller description and products before choosing an item. Public contact or address information is separate from the delivery quote for your purchase.','اقرأ وصف البائع ومنتجاته قبل الاختيار. تختلف معلومات العنوان أو التواصل العامة عن عرض توصيل مشترياتك.'),
- 'customer-screen-brand-filter.jpg':('Filter brands by letter','تصفية العلامات بالحرف','Select an available A–Z letter; select it again or Clear to reset. Open a brand tile for matching Shop results.','اختر حرفاً متاحاً من A–Z، ثم اضغطه مجدداً أو امسح الفلتر للعودة. افتح بطاقة العلامة لنتائج التسوق المطابقة.'),
- 'tenant-screen-payment-method-form.jpg':('Payment-method setup','إعداد طريقة الدفع','Provider, customer label and display order are separate fields. Credentials are write-only and replaceable; this blank form was not saved.','المزود واسم العرض وترتيبه حقول مستقلة. بيانات الاعتماد للكتابة والاستبدال فقط؛ لم يحفظ هذا النموذج الفارغ.'),
- 'tenant-screen-promotion-form.jpg':('Promotion builder','منشئ العرض','Set recognized type and priority, then the schedule, rules and rewards. All rules must match. This blank form demonstrates the layout without creating a promotion.','اضبط النوع المعروف والأولوية ثم الجدول والقواعد والمكافآت. يجب تطابق جميع القواعد. يعرض النموذج الفارغ التصميم دون إنشاء عرض.'),
- 'tenant-screen-reference-tags.jpg':('Read-only reference tags','وسوم مرجعية للقراءة فقط','These platform-maintained tags are reference data. Only active tags are returned; the store cannot edit or retire them from this view.','هذه الوسوم بيانات مرجعية تديرها المنصة. تعرض النشطة فقط، ولا يمكن للمتجر تعديلها أو إيقافها من هذه الشاشة.')
+ 'customer-screen-help-centre.webp':('Help centre','مركز المساعدة','Choose a category and expand a question. Guests can read help; a personal support ticket requires sign-in.','اختر التصنيف وافتح السؤال. يمكن للضيف قراءة المساعدة، وتتطلب التذكرة الشخصية الدخول.'),
+ 'customer-screen-faq-answer.webp':('Read an answer','قراءة إجابة','Expand a question to read the published answer. Store configuration and the actual purchase state govern available payment, return and refund actions.','افتح السؤال لقراءة الإجابة المنشورة. تحكم إعدادات المتجر وحالة الشراء إجراءات الدفع والإرجاع والاسترداد المتاحة.'),
+ 'customer-screen-vendor-detail.webp':('Seller page','صفحة البائع','Read the seller description and products before choosing an item. Public contact or address information is separate from the delivery quote for your purchase.','اقرأ وصف البائع ومنتجاته قبل الاختيار. تختلف معلومات العنوان أو التواصل العامة عن عرض توصيل مشترياتك.'),
+ 'customer-screen-brand-filter.webp':('Filter brands by letter','تصفية العلامات بالحرف','Select an available A–Z letter; select it again or Clear to reset. Open a brand tile for matching Shop results.','اختر حرفاً متاحاً من A–Z، ثم اضغطه مجدداً أو امسح الفلتر للعودة. افتح بطاقة العلامة لنتائج التسوق المطابقة.'),
+ 'tenant-screen-payment-method-form.webp':('Payment-method setup','إعداد طريقة الدفع','Provider, customer label and display order are separate fields. Credentials are write-only and replaceable; this blank form was not saved.','المزود واسم العرض وترتيبه حقول مستقلة. بيانات الاعتماد للكتابة والاستبدال فقط؛ لم يحفظ هذا النموذج الفارغ.'),
+ 'tenant-screen-promotion-form.webp':('Promotion builder','منشئ العرض','Set recognized type and priority, then the schedule, rules and rewards. All rules must match. This blank form demonstrates the layout without creating a promotion.','اضبط النوع المعروف والأولوية ثم الجدول والقواعد والمكافآت. يجب تطابق جميع القواعد. يعرض النموذج الفارغ التصميم دون إنشاء عرض.'),
+ 'tenant-screen-reference-tags.webp':('Read-only reference tags','وسوم مرجعية للقراءة فقط','These platform-maintained tags are reference data. Only active tags are returned; the store cannot edit or retire them from this view.','هذه الوسوم بيانات مرجعية تديرها المنصة. تعرض النشطة فقط، ولا يمكن للمتجر تعديلها أو إيقافها من هذه الشاشة.')
 }
 coverage=[]
 for feature,(title,artitle,en,ar) in copy.items():
@@ -89,7 +89,7 @@ for feature,(title,artitle,en,ar) in copy.items():
   if c['file'] in supplemental:label,arlabel,body,bodyar=supplemental[c['file']]
   elif role=='vendor' and feature not in ['access','settings','brands','categories','tax-currency','support']:body='Check the workspace. '+body;bodyar='تحقق من مساحة العمل. '+bodyar
   focus=[22,22,74,70] if role!='customer' else [3,16,93,77]
-  if c['file']=='vendor-screen-team.jpg':focus=[22,35,74,60]
+  if c['file']=='vendor-screen-team.webp':focus=[22,35,74,60]
   steps.append(dict(image=c['file'],focus=focus,title=dict(en=label,ar=arlabel),body=dict(en=body,ar=bodyar),guide='features/'+feature))
  assert steps,feature
  tours['feature-'+feature]=dict(title=dict(en=title,ar=artitle),intro=dict(en='Choose your dashboard below. The explanation and screen change together.',ar='اختر لوحتك أدناه ليتغير الشرح والشاشة معاً.'),video=True,secondsPerStep=12,provenance=dict(en='Demo data · 17 November 2026 · Deployed admin, tenant and vendor dashboards; local customer frontend; demo API · Observed states, not completed transactions',ar='بيانات تجريبية · 17 نوفمبر 2026 · لوحات المنصة والمتجر والبائع المنشورة وواجهة العميل المحلية مع بيانات العرض · حالات مشاهدة وليست معاملات مكتملة'),steps=steps)
@@ -110,10 +110,10 @@ for feature,(title,artitle,en,ar) in copy.items():
 (R/'content/system-tours.json').write_text(json.dumps(tours,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 (R/'evidence/visual-coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 # Refresh earlier shared screenshot filenames from current equivalent screens.
-for old,new in {'admin-dashboard.jpg':'admin-screen-dashboards.jpg','admin-orders.jpg':'admin-screen-orders.jpg','tenant-dashboard.jpg':'tenant-screen-dashboards.jpg','tenant-products.jpg':'tenant-screen-products.jpg','vendor-dashboard.jpg':'vendor-screen-dashboards.jpg','customer-account-overview.jpg':'customer-screen-dashboards.jpg','customer-invoice-detail.jpg':'customer-screen-invoices.jpg'}.items():
+for old,new in {'admin-dashboard.webp':'admin-screen-dashboards.webp','admin-orders.webp':'admin-screen-orders.webp','tenant-dashboard.webp':'tenant-screen-dashboards.webp','tenant-products.webp':'tenant-screen-products.webp','vendor-dashboard.webp':'vendor-screen-dashboards.webp','customer-account-overview.webp':'customer-screen-dashboards.webp','customer-invoice-detail.webp':'customer-screen-invoices.webp'}.items():
  shutil.copyfile(R/'public/screenshots'/new,R/'public/screenshots'/old)
 sizes={}
-for p in sorted((R/'public/screenshots').glob('*.jpg')):
+for p in sorted((R/'public/screenshots').glob('*.webp')):
  with Image.open(p) as i:sizes[p.name]=dict(width=i.width,height=i.height)
 (R/'content/screenshot-sizes.json').write_text(json.dumps(sizes,indent=2)+'\n',encoding='utf-8')
 print(f'Attached {len(coverage)} bilingual feature tours from {len(captures)} reviewed captures.')

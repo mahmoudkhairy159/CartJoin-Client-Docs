@@ -3,39 +3,14 @@
 import { DocsLayout } from 'fumadocs-ui/layouts/docs';
 import type { Node, Root } from 'fumadocs-core/page-tree';
 import { useMemo } from 'react';
-import { usePathname } from 'next/navigation';
 import { baseOptions } from '@/lib/layout.shared';
 import { RolePicker, useGuideRole } from '@/components/role-picker';
 import type { RoleCode } from '@/lib/roles';
-import { guideLanguage } from '@/lib/guide-language';
+import type { GuideLanguage } from '@/lib/guide-language';
+import { compactSeparators } from '@/lib/guide-navigation';
 import { LanguageSwitch } from '@/components/language-switch';
 
 export type PageRoleMap = Record<string, string[] | undefined>;
-
-function languageNodes(nodes: Node[], lang: string): Node[] {
-  return nodes.flatMap((node): Node[] => {
-    if (node.type === 'separator') return [node];
-    if (node.type === 'page') return node.url.startsWith(`/${lang}/`) ? [node] : [];
-    const children = compactSeparators(languageNodes(node.children, lang));
-    const index = node.index?.url.startsWith(`/${lang}/`) ? node.index : undefined;
-    return children.length || index ? [{ ...node, children, index }] : [];
-  });
-}
-
-function compactSeparators(nodes: Node[]): Node[] {
-  const result: Node[] = [];
-  let separator: Extract<Node, { type: 'separator' }> | undefined;
-  for (const node of nodes) {
-    if (node.type === 'separator') {
-      separator = node;
-      continue;
-    }
-    if (separator) result.push(separator);
-    separator = undefined;
-    result.push(node);
-  }
-  return result;
-}
 
 function filterNodes(nodes: Node[], role: RoleCode, pageRoles: PageRoleMap): Node[] {
   const filtered = nodes.flatMap((node): Node[] => {
@@ -67,22 +42,17 @@ function filterTree(tree: Root, role: RoleCode, pageRoles: PageRoleMap): Root {
 
 export function RoleDocsLayout({
   tree,
+  lang,
   pageRoles,
   children,
 }: {
   tree: Root;
+  lang: GuideLanguage;
   pageRoles: PageRoleMap;
   children: React.ReactNode;
 }) {
   const { role } = useGuideRole();
-  const lang = guideLanguage(usePathname());
-  const visibleTree = useMemo(() => {
-    const children = languageNodes(tree.children, lang).flatMap((node) =>
-      node.type === 'folder' && node.name === (lang === 'ar' ? 'العربية' : 'English') ? node.children : [node],
-    );
-    const localized = { ...tree, $id: `${tree.$id}:${lang}`, children };
-    return role ? filterTree(localized, role, pageRoles) : localized;
-  }, [pageRoles, role, tree, lang]);
+  const visibleTree = useMemo(() => role ? filterTree(tree, role, pageRoles) : tree, [pageRoles, role, tree]);
 
   return (
     <DocsLayout tree={visibleTree} {...baseOptions(lang)} links={[]}

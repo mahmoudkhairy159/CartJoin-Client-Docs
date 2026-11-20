@@ -2,6 +2,7 @@ import { createMDX } from 'fumadocs-mdx/next';
 const withMDX = createMDX();
 export default withMDX({
   reactStrictMode:true, basePath:'/docs', output:'standalone', env:{NEXT_PUBLIC_BASE_PATH:'/docs'},
+  images: { qualities: [86] },
   async redirects() {
     return [
       // The English home lives at the root; the Arabic home is app/(home)/ar.

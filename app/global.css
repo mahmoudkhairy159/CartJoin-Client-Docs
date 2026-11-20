@@ -369,7 +369,8 @@ code, kbd, pre, samp { font-family: var(--cj-font-mono); }
   font-size: var(--cj-text-sm);
   line-height: var(--cj-leading-normal);
 }
-.guide-mermaid { margin-block: var(--cj-space-6); overflow-x: auto; }
+.guide-mermaid-frame { display: grid; align-items: center; block-size: clamp(17rem, 45vw, 28rem); margin-block: var(--cj-space-6); }
+.guide-mermaid { max-block-size: 100%; overflow: auto; }
 .guide-mermaid svg { max-inline-size: 100%; block-size: auto; margin-inline: auto; }
 .guide-mermaid-fallback { overflow-x: auto; padding: var(--cj-space-4); border: 1px solid var(--cj-hairline); border-radius: var(--cj-radius-md); background: var(--cj-sunken); font-size: var(--cj-text-sm); }
 
@@ -611,11 +612,25 @@ a.guide-card:hover .role-card-footer .guide-icon { color: var(--cj-accent-text);
 .preview-caption p { margin-block-start: var(--cj-space-1); color: var(--cj-muted); font-size: var(--cj-text-sm); line-height: var(--cj-leading-relaxed); }
 
 /* Loading skeleton: static, no spinner. */
-.guide-skeleton { display: grid; gap: var(--cj-space-4); inline-size: min(100%, 720px); margin: var(--cj-space-10) auto; padding-inline: var(--cj-space-5); }
-.guide-skeleton-title, .guide-skeleton-line { display: block; border-radius: var(--cj-radius-xs); background: var(--cj-sunken); }
-.guide-skeleton-title { block-size: 32px; inline-size: 60%; margin-block-end: var(--cj-space-2); }
-.guide-skeleton-line { block-size: 14px; inline-size: 92%; }
-.guide-skeleton-line.is-short { inline-size: 70%; }
+.app-skeleton { display: grid; gap: var(--cj-space-3); }
+.app-skeleton-grid { display: grid; gap: var(--cj-space-3); grid-template-columns: repeat(var(--skeleton-columns, 1), minmax(0, 1fr)); }
+.app-skeleton-grid > span { block-size: 0.875rem; border-radius: var(--cj-radius-xs); background: var(--cj-sunken); }
+.app-skeleton--text .app-skeleton-grid:last-child span { inline-size: 74%; }
+.app-skeleton--avatar .app-skeleton-grid > span { inline-size: 2rem; block-size: 2rem; border-radius: 50%; }
+.app-skeleton--card .app-skeleton-grid > span { block-size: 8rem; border-radius: var(--cj-radius-md); }
+.app-skeleton--table-row .app-skeleton-grid { align-items: center; min-block-size: 2.5rem; }
+.app-skeleton--table-row .app-skeleton-grid > span { inline-size: 85%; }
+.app-skeleton--chart .app-skeleton-grid > span { min-block-size: clamp(17rem, 45vw, 28rem); }
+.app-skeleton--form .app-skeleton-grid > span { block-size: 2.5rem; }
+.guide-hero-skeleton, .guide-article-skeleton { display: grid; gap: var(--cj-space-4); }
+.guide-home-preview-skeleton .app-skeleton-grid > span { block-size: auto; aspect-ratio: 1265 / 712; }
+.guide-skeleton-eyebrow { inline-size: min(15rem, 90%); }
+.guide-skeleton-title .app-skeleton-grid > span { block-size: clamp(2rem, 4vw, 3rem); }
+.guide-article-skeleton-body { margin-block: var(--cj-space-8); }
+.guide-search-skeleton { padding: var(--cj-space-3); gap: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .guide-search-results > div { transition-duration: 0s; }
+}
 
 #screen-guide { scroll-margin-block-start: var(--cj-space-6); }
 

@@ -2,6 +2,7 @@
 
 import { Dialog } from '@base-ui/react/dialog';
 import { Icon } from '@/components/icon';
+import { AppImage } from '@/components/app-image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -57,7 +58,7 @@ export function SystemTour({ tour, compact = false, startAt = 0, anchor = 'scree
           <div className="tour-visual">
             <div className="tour-image-stage" dir="ltr">
               <button className="tour-image-button" type="button" onClick={() => setExpanded(true)} aria-label={enlargeLabel}>
-                <img src={src} alt={imageAlt} width={dimensions?.width} height={dimensions?.height} loading="lazy" />
+                <AppImage src={src} alt={imageAlt} width={dimensions?.width} height={dimensions?.height} sizes="(max-width: 768px) 100vw, 760px" />
               </button>
               <div className="tour-focus" style={focusStyle} aria-hidden />
               {markers()}
@@ -77,14 +78,14 @@ export function SystemTour({ tour, compact = false, startAt = 0, anchor = 'scree
           <Dialog.Popup className="tour-modal" lang={lang} dir={arabic ? 'rtl' : 'ltr'}>
             <div className="tour-modal-heading"><Dialog.Title>{step.title[lang]}</Dialog.Title><Dialog.Close className="guide-button is-icon" aria-label={arabic ? 'إغلاق الصورة' : 'Close screenshot'}><Icon name="close" size={20} /></Dialog.Close></div>
             <Dialog.Description className="tour-modal-description">{step.body[lang]}</Dialog.Description>
-            <div className="tour-modal-image-scroll"><div className="tour-image-stage" dir="ltr"><img src={src} alt={imageAlt} width={dimensions?.width} height={dimensions?.height} /><div className="tour-focus" style={focusStyle} aria-hidden />{markers()}</div></div>
+            <div className="tour-modal-image-scroll"><div className="tour-image-stage" dir="ltr"><AppImage src={src} alt={imageAlt} width={dimensions?.width} height={dimensions?.height} sizes="(max-width: 960px) 960px, 100vw" priority /><div className="tour-focus" style={focusStyle} aria-hidden />{markers()}</div></div>
             <div className="tour-controls"><button type="button" className="guide-button" disabled={selected === 0} onClick={() => setSelected(selected - 1)}>{arabic ? 'السابق' : 'Previous'}</button><span><bdi dir="ltr">{selected + 1} / {data.steps.length}</bdi></span><button type="button" className="guide-button" disabled={selected === data.steps.length - 1} onClick={() => setSelected(selected + 1)}>{arabic ? 'التالي' : 'Next'}</button></div>
           </Dialog.Popup>
         </Dialog.Portal>
       </Dialog.Root>
       {data.video && <details className="guide-disclosure tour-video"><summary><Icon name="play-circle" size={20} /><span>{arabic ? `شاهد جولة قصيرة — ${duration} ثانية` : `Watch the short tour — ${duration} seconds`}</span></summary>
         <p>{arabic ? 'جولة صامتة من صور النظام مع شرح بالعربية والإنجليزية. استخدم زر الترجمة في المشغل. هذه ليست عملية شراء أو تعديل حية.' : 'A silent screenshot tour with English and Arabic captions. Use the player’s captions control. It illustrates the interface rather than executing a live transaction.'}</p>
-        <video key={tour + lang} controls playsInline preload="none" width={1280} height={720} poster={`${basePath}/videos/${videoName}-poster.jpg`}>
+        <video key={tour + lang} controls playsInline preload="none" width={1280} height={720} poster={`${basePath}/videos/${videoName}-poster.webp`}>
           <source src={`${basePath}/videos/${videoName}-tour.mp4`} type="video/mp4" />
           <track src={`${basePath}/videos/${tour}-ar.vtt`} kind="captions" srcLang="ar" label="العربية" default={arabic} />
           <track src={`${basePath}/videos/${tour}-en.vtt`} kind="captions" srcLang="en" label="English" default={!arabic} />

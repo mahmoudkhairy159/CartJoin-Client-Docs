@@ -116,7 +116,7 @@ Test adapters stay guarded; live provider/pilot/deployment gates remain separate
 - Browser verified homepage presentation, capability search (invoice returned three matching guides), dashboard selection changing its explanation/image, Arabic RTL at 390×844 with no horizontal overflow, and video playback with Arabic captions selected. Viewport was reset.
 - `bun run docs:check` and `bun run types:check` passed for 208 pages, 12 diagram blocks, 52 tours and 187 frontend route entries. Production build passed. All 208 rendered routes returned success with no unknown internal destinations. The first route pass caught unsupported HTML comments in MDX; fixed them to JSX comments and repeated successfully.
 - The inherited Fumadocs `::highlight(fd-search)` CSS parser warnings remain non-blocking. Backend/frontend application suites were not run. Documentation and media validation are separate from transactional application tests.
-- Review screenshots: `template-homepage.jpg`, `template-ar-mobile.jpg`. Capture ledger: `feature-captures.json`; capability matrix: `visual-coverage.json` and bilingual coverage pages.
+- Review screenshots: `template-homepage.webp`, `template-ar-mobile.jpg`. Capture ledger: `feature-captures.json`; capability matrix: `visual-coverage.json` and bilingual coverage pages.
 
 
 ## Customer website refresh — 17 November 2026

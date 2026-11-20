@@ -11,10 +11,10 @@
       "role": "CUSTOMER",
       "url": "http://localhost:4304/en/discover",
       "frames": [
-        "public/screenshots/platform-discovery-en-products.png",
-        "public/screenshots/platform-discovery-en-stores.png",
-        "public/screenshots/platform-discovery-en-sellers.png",
-        "public/screenshots/platform-discovery-en-handoff.png"
+        "public/screenshots/platform-discovery-en-products.webp",
+        "public/screenshots/platform-discovery-en-stores.webp",
+        "public/screenshots/platform-discovery-en-sellers.webp",
+        "public/screenshots/platform-discovery-en-handoff.webp"
       ],
       "frame_urls": [
         "http://localhost:4304/en/discover",
@@ -24,22 +24,22 @@
       ],
       "frame_provenance": [
         {
-          "path": "public/screenshots/platform-discovery-en-products.png",
+          "path": "public/screenshots/platform-discovery-en-products.webp",
           "artifact_updated_at": "2026-11-18T20:14:12.994579+00:00",
           "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
         },
         {
-          "path": "public/screenshots/platform-discovery-en-stores.png",
+          "path": "public/screenshots/platform-discovery-en-stores.webp",
           "artifact_updated_at": "2026-11-18T21:02:49.442486+00:00",
           "mechanism": "Root CUA final acceptance capture of independently approved store directory, after local origin guard fix; actual JPEG screenshot converted losslessly into a PNG container."
         },
         {
-          "path": "public/screenshots/platform-discovery-en-sellers.png",
+          "path": "public/screenshots/platform-discovery-en-sellers.webp",
           "artifact_updated_at": "2026-11-18T20:14:13.683036+00:00",
           "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
         },
         {
-          "path": "public/screenshots/platform-discovery-en-handoff.png",
+          "path": "public/screenshots/platform-discovery-en-handoff.webp",
           "artifact_updated_at": "2026-11-18T20:27:18.671905+00:00",
           "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
         }
@@ -69,10 +69,10 @@
       "role": "CUSTOMER",
       "url": "http://localhost:4304/ar/discover",
       "frames": [
-        "public/screenshots/platform-discovery-ar-products.png",
-        "public/screenshots/platform-discovery-ar-stores.png",
-        "public/screenshots/platform-discovery-ar-sellers.png",
-        "public/screenshots/platform-discovery-ar-handoff.png"
+        "public/screenshots/platform-discovery-ar-products.webp",
+        "public/screenshots/platform-discovery-ar-stores.webp",
+        "public/screenshots/platform-discovery-ar-sellers.webp",
+        "public/screenshots/platform-discovery-ar-handoff.webp"
       ],
       "frame_urls": [
         "http://localhost:4304/ar/discover",
@@ -82,22 +82,22 @@
       ],
       "frame_provenance": [
         {
-          "path": "public/screenshots/platform-discovery-ar-products.png",
+          "path": "public/screenshots/platform-discovery-ar-products.webp",
           "artifact_updated_at": "2026-11-18T20:13:59.641226+00:00",
           "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
         },
         {
-          "path": "public/screenshots/platform-discovery-ar-stores.png",
+          "path": "public/screenshots/platform-discovery-ar-stores.webp",
           "artifact_updated_at": "2026-11-18T21:02:49.474448+00:00",
           "mechanism": "Root CUA final acceptance capture of independently approved store directory, after local origin guard fix; actual JPEG screenshot converted losslessly into a PNG container."
         },
         {
-          "path": "public/screenshots/platform-discovery-ar-sellers.png",
+          "path": "public/screenshots/platform-discovery-ar-sellers.webp",
           "artifact_updated_at": "2026-11-18T20:14:00.286731+00:00",
           "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
         },
         {
-          "path": "public/screenshots/platform-discovery-ar-handoff.png",
+          "path": "public/screenshots/platform-discovery-ar-handoff.webp",
           "artifact_updated_at": "2026-11-18T20:27:30.735970+00:00",
           "mechanism": "Actual CUA full-viewport screenshot; seeded local development preview."
         }
@@ -127,9 +127,9 @@
       "role": "TENANT",
       "url": "http://localhost:4302/discovery",
       "frames": [
-        "public/screenshots/tenant-discovery-en.png",
-        "public/screenshots/tenant-discovery-en-catalog.png",
-        "public/screenshots/tenant-discovery-en-offers.png"
+        "public/screenshots/tenant-discovery-en.webp",
+        "public/screenshots/tenant-discovery-en-catalog.webp",
+        "public/screenshots/tenant-discovery-en-offers.webp"
       ],
       "frame_urls": [
         "http://localhost:4302/discovery",
@@ -160,9 +160,9 @@
       "role": "TENANT",
       "url": "http://localhost:4302/discovery",
       "frames": [
-        "public/screenshots/tenant-discovery-ar.png",
-        "public/screenshots/tenant-discovery-ar-catalog.png",
-        "public/screenshots/tenant-discovery-ar-offers.png"
+        "public/screenshots/tenant-discovery-ar.webp",
+        "public/screenshots/tenant-discovery-ar-catalog.webp",
+        "public/screenshots/tenant-discovery-ar-offers.webp"
       ],
       "frame_urls": [
         "http://localhost:4302/discovery",
@@ -193,8 +193,8 @@
       "role": "VENDOR",
       "url": "http://localhost:4303/discovery",
       "frames": [
-        "public/screenshots/vendor-discovery-en.png",
-        "public/screenshots/vendor-discovery-en-offers.png"
+        "public/screenshots/vendor-discovery-en.webp",
+        "public/screenshots/vendor-discovery-en-offers.webp"
       ],
       "frame_urls": [
         "http://localhost:4303/discovery",
@@ -223,8 +223,8 @@
       "role": "VENDOR",
       "url": "http://localhost:4303/discovery",
       "frames": [
-        "public/screenshots/vendor-discovery-ar.png",
-        "public/screenshots/vendor-discovery-ar-offers.png"
+        "public/screenshots/vendor-discovery-ar.webp",
+        "public/screenshots/vendor-discovery-ar-offers.webp"
       ],
       "frame_urls": [
         "http://localhost:4303/discovery",
@@ -253,9 +253,9 @@
       "role": "ADMIN",
       "url": "http://localhost:4301/discovery",
       "frames": [
-        "public/screenshots/admin-discovery-en.png",
-        "public/screenshots/admin-discovery-en-review.png",
-        "public/screenshots/admin-discovery-en-offer.png"
+        "public/screenshots/admin-discovery-en.webp",
+        "public/screenshots/admin-discovery-en-review.webp",
+        "public/screenshots/admin-discovery-en-offer.webp"
       ],
       "frame_urls": [
         "http://localhost:4301/discovery",
@@ -286,9 +286,9 @@
       "role": "ADMIN",
       "url": "http://localhost:4301/discovery",
       "frames": [
-        "public/screenshots/admin-discovery-ar.png",
-        "public/screenshots/admin-discovery-ar-review.png",
-        "public/screenshots/admin-discovery-ar-offer.png"
+        "public/screenshots/admin-discovery-ar.webp",
+        "public/screenshots/admin-discovery-ar-review.webp",
+        "public/screenshots/admin-discovery-ar-offer.webp"
       ],
       "frame_urls": [
         "http://localhost:4301/discovery",
@@ -319,9 +319,9 @@
       "role": "CUSTOMER",
       "url": "http://localhost:4304/en/account",
       "frames": [
-        "public/screenshots/platform-purchases-en-account.png",
-        "public/screenshots/platform-purchases-en.png",
-        "public/screenshots/platform-purchases-en-orders.png"
+        "public/screenshots/platform-purchases-en-account.webp",
+        "public/screenshots/platform-purchases-en.webp",
+        "public/screenshots/platform-purchases-en-orders.webp"
       ],
       "frame_urls": [
         "http://localhost:4304/en/account",
@@ -352,9 +352,9 @@
       "role": "CUSTOMER",
       "url": "http://localhost:4304/ar/account",
       "frames": [
-        "public/screenshots/platform-purchases-ar-account.png",
-        "public/screenshots/platform-purchases-ar.png",
-        "public/screenshots/platform-purchases-ar-orders.png"
+        "public/screenshots/platform-purchases-ar-account.webp",
+        "public/screenshots/platform-purchases-ar.webp",
+        "public/screenshots/platform-purchases-ar-orders.webp"
       ],
       "frame_urls": [
         "http://localhost:4304/ar/account",

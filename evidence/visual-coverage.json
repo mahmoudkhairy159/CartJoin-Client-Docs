@@ -8,10 +8,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-access.jpg",
-      "tenant-screen-access.jpg",
-      "vendor-screen-access.jpg",
-      "customer-screen-access.jpg"
+      "admin-screen-access.webp",
+      "tenant-screen-access.webp",
+      "vendor-screen-access.webp",
+      "customer-screen-access.webp"
     ],
     "tour": "feature-access"
   },
@@ -21,7 +21,7 @@
       "tenant"
     ],
     "screens": [
-      "tenant-screen-attributes.jpg"
+      "tenant-screen-attributes.webp"
     ],
     "tour": "feature-attributes"
   },
@@ -32,8 +32,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-audit.jpg",
-      "tenant-screen-audit.jpg"
+      "admin-screen-audit.webp",
+      "tenant-screen-audit.webp"
     ],
     "tour": "feature-audit"
   },
@@ -44,8 +44,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-banners.jpg",
-      "tenant-screen-banners.jpg"
+      "admin-screen-banners.webp",
+      "tenant-screen-banners.webp"
     ],
     "tour": "feature-banners"
   },
@@ -58,11 +58,11 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-brands.jpg",
-      "tenant-screen-brands.jpg",
-      "vendor-screen-brands.jpg",
-      "customer-screen-brands.jpg",
-      "customer-screen-brand-filter.jpg"
+      "admin-screen-brands.webp",
+      "tenant-screen-brands.webp",
+      "vendor-screen-brands.webp",
+      "customer-screen-brands.webp",
+      "customer-screen-brand-filter.webp"
     ],
     "tour": "feature-brands"
   },
@@ -72,7 +72,7 @@
       "customer"
     ],
     "screens": [
-      "customer-screen-cart.jpg"
+      "customer-screen-cart.webp"
     ],
     "tour": "feature-cart"
   },
@@ -84,9 +84,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-categories.jpg",
-      "tenant-screen-categories.jpg",
-      "vendor-screen-categories.jpg"
+      "admin-screen-categories.webp",
+      "tenant-screen-categories.webp",
+      "vendor-screen-categories.webp"
     ],
     "tour": "feature-categories"
   },
@@ -96,7 +96,7 @@
       "customer"
     ],
     "screens": [
-      "customer-screen-checkout.jpg"
+      "customer-screen-checkout.webp"
     ],
     "tour": "feature-checkout"
   },
@@ -108,9 +108,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-cms.jpg",
-      "tenant-screen-cms.jpg",
-      "customer-screen-cms.jpg"
+      "admin-screen-cms.webp",
+      "tenant-screen-cms.webp",
+      "customer-screen-cms.webp"
     ],
     "tour": "feature-cms"
   },
@@ -122,9 +122,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-commission.jpg",
-      "tenant-screen-commission.jpg",
-      "vendor-screen-commission.jpg"
+      "admin-screen-commission.webp",
+      "tenant-screen-commission.webp",
+      "vendor-screen-commission.webp"
     ],
     "tour": "feature-commission"
   },
@@ -135,14 +135,14 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-coupons.jpg",
-      "tenant-screen-coupons.jpg",
-      "tenant-coupon-batch-form-en.jpg",
-      "tenant-coupon-batch-form-ar.jpg",
-      "tenant-coupon-batches-en.jpg",
-      "tenant-coupon-batches-ar.jpg",
-      "tenant-coupon-batch-report-en.jpg",
-      "tenant-coupon-batch-report-ar.jpg"
+      "admin-screen-coupons.webp",
+      "tenant-screen-coupons.webp",
+      "tenant-coupon-batch-form-en.webp",
+      "tenant-coupon-batch-form-ar.webp",
+      "tenant-coupon-batches-en.webp",
+      "tenant-coupon-batches-ar.webp",
+      "tenant-coupon-batch-report-en.webp",
+      "tenant-coupon-batch-report-ar.webp"
     ],
     "tour": "feature-coupons"
   },
@@ -153,8 +153,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-customers.jpg",
-      "tenant-screen-customers.jpg"
+      "admin-screen-customers.webp",
+      "tenant-screen-customers.webp"
     ],
     "tour": "feature-customers"
   },
@@ -167,10 +167,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-dashboards.jpg",
-      "tenant-screen-dashboards.jpg",
-      "vendor-screen-dashboards.jpg",
-      "customer-screen-dashboards.jpg"
+      "admin-screen-dashboards.webp",
+      "tenant-screen-dashboards.webp",
+      "vendor-screen-dashboards.webp",
+      "customer-screen-dashboards.webp"
     ],
     "tour": "feature-dashboards"
   },
@@ -183,20 +183,20 @@
       "vendor"
     ],
     "screens": [
-      "admin-flash-moderation-en.jpg",
-      "admin-flash-moderation-ar.jpg",
-      "tenant-flash-schedule-en.jpg",
-      "tenant-flash-schedule-ar.jpg",
-      "tenant-flash-offers-en.jpg",
-      "tenant-flash-offers-ar.jpg",
-      "vendor-flash-proposal-en.jpg",
-      "vendor-flash-proposal-ar.jpg",
-      "customer-flash-landing-en.jpg",
-      "customer-flash-landing-ar.jpg",
-      "customer-flash-variant-en.jpg",
-      "customer-flash-variant-ar.jpg",
-      "customer-flash-cart-en.jpg",
-      "customer-flash-cart-ar.jpg"
+      "admin-flash-moderation-en.webp",
+      "admin-flash-moderation-ar.webp",
+      "tenant-flash-schedule-en.webp",
+      "tenant-flash-schedule-ar.webp",
+      "tenant-flash-offers-en.webp",
+      "tenant-flash-offers-ar.webp",
+      "vendor-flash-proposal-en.webp",
+      "vendor-flash-proposal-ar.webp",
+      "customer-flash-landing-en.webp",
+      "customer-flash-landing-ar.webp",
+      "customer-flash-variant-en.webp",
+      "customer-flash-variant-ar.webp",
+      "customer-flash-cart-en.webp",
+      "customer-flash-cart-ar.webp"
     ],
     "tour": "feature-flash-sales"
   },
@@ -208,9 +208,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-gift-cards.jpg",
-      "tenant-screen-gift-cards.jpg",
-      "customer-screen-gift-cards.jpg"
+      "admin-screen-gift-cards.webp",
+      "tenant-screen-gift-cards.webp",
+      "customer-screen-gift-cards.webp"
     ],
     "tour": "feature-gift-cards"
   },
@@ -222,9 +222,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-inventory.jpg",
-      "tenant-screen-inventory.jpg",
-      "vendor-screen-inventory.jpg"
+      "admin-screen-inventory.webp",
+      "tenant-screen-inventory.webp",
+      "vendor-screen-inventory.webp"
     ],
     "tour": "feature-inventory"
   },
@@ -237,10 +237,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-invoices.jpg",
-      "tenant-screen-invoices.jpg",
-      "vendor-screen-invoices.jpg",
-      "customer-screen-invoices.jpg"
+      "admin-screen-invoices.webp",
+      "tenant-screen-invoices.webp",
+      "vendor-screen-invoices.webp",
+      "customer-screen-invoices.webp"
     ],
     "tour": "feature-invoices"
   },
@@ -252,9 +252,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-loyalty.jpg",
-      "tenant-screen-loyalty.jpg",
-      "customer-screen-loyalty.jpg"
+      "admin-screen-loyalty.webp",
+      "tenant-screen-loyalty.webp",
+      "customer-screen-loyalty.webp"
     ],
     "tour": "feature-loyalty"
   },
@@ -267,10 +267,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-notifications.jpg",
-      "tenant-screen-notifications.jpg",
-      "vendor-screen-notifications.jpg",
-      "customer-screen-notifications.jpg"
+      "admin-screen-notifications.webp",
+      "tenant-screen-notifications.webp",
+      "vendor-screen-notifications.webp",
+      "customer-screen-notifications.webp"
     ],
     "tour": "feature-notifications"
   },
@@ -283,10 +283,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-orders.jpg",
-      "tenant-screen-orders.jpg",
-      "vendor-screen-orders.jpg",
-      "customer-screen-orders.jpg"
+      "admin-screen-orders.webp",
+      "tenant-screen-orders.webp",
+      "vendor-screen-orders.webp",
+      "customer-screen-orders.webp"
     ],
     "tour": "feature-orders"
   },
@@ -298,10 +298,10 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-payments.jpg",
-      "tenant-screen-payments.jpg",
-      "tenant-screen-payment-method-form.jpg",
-      "customer-screen-payments.jpg"
+      "admin-screen-payments.webp",
+      "tenant-screen-payments.webp",
+      "tenant-screen-payment-method-form.webp",
+      "customer-screen-payments.webp"
     ],
     "tour": "feature-payments"
   },
@@ -312,8 +312,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-pricing.jpg",
-      "tenant-screen-pricing.jpg"
+      "admin-screen-pricing.webp",
+      "tenant-screen-pricing.webp"
     ],
     "tour": "feature-pricing"
   },
@@ -326,10 +326,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-products.jpg",
-      "tenant-screen-products.jpg",
-      "vendor-screen-products.jpg",
-      "customer-screen-products.jpg"
+      "admin-screen-products.webp",
+      "tenant-screen-products.webp",
+      "vendor-screen-products.webp",
+      "customer-screen-products.webp"
     ],
     "tour": "feature-products"
   },
@@ -339,10 +339,10 @@
       "tenant"
     ],
     "screens": [
-      "tenant-promotions-en.jpg",
-      "tenant-promotions-ar.jpg",
-      "tenant-promotion-kinds-en.jpg",
-      "tenant-promotion-kinds-ar.jpg"
+      "tenant-promotions-en.webp",
+      "tenant-promotions-ar.webp",
+      "tenant-promotion-kinds-en.webp",
+      "tenant-promotion-kinds-ar.webp"
     ],
     "tour": "feature-promotions"
   },
@@ -354,9 +354,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-refunds.jpg",
-      "tenant-screen-refunds.jpg",
-      "vendor-screen-refunds.jpg"
+      "admin-screen-refunds.webp",
+      "tenant-screen-refunds.webp",
+      "vendor-screen-refunds.webp"
     ],
     "tour": "feature-refunds"
   },
@@ -368,9 +368,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-reports.jpg",
-      "tenant-screen-reports.jpg",
-      "vendor-screen-reports.jpg"
+      "admin-screen-reports.webp",
+      "tenant-screen-reports.webp",
+      "vendor-screen-reports.webp"
     ],
     "tour": "feature-reports"
   },
@@ -383,10 +383,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-returns.jpg",
-      "tenant-screen-returns.jpg",
-      "vendor-screen-returns.jpg",
-      "customer-screen-returns.jpg"
+      "admin-screen-returns.webp",
+      "tenant-screen-returns.webp",
+      "vendor-screen-returns.webp",
+      "customer-screen-returns.webp"
     ],
     "tour": "feature-returns"
   },
@@ -399,10 +399,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-reviews.jpg",
-      "tenant-screen-reviews.jpg",
-      "vendor-screen-reviews.jpg",
-      "customer-screen-reviews.jpg"
+      "admin-screen-reviews.webp",
+      "tenant-screen-reviews.webp",
+      "vendor-screen-reviews.webp",
+      "customer-screen-reviews.webp"
     ],
     "tour": "feature-reviews"
   },
@@ -414,9 +414,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-search.jpg",
-      "tenant-screen-search.jpg",
-      "customer-screen-search.jpg"
+      "admin-screen-search.webp",
+      "tenant-screen-search.webp",
+      "customer-screen-search.webp"
     ],
     "tour": "feature-search"
   },
@@ -427,8 +427,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-seo.jpg",
-      "tenant-screen-seo.jpg"
+      "admin-screen-seo.webp",
+      "tenant-screen-seo.webp"
     ],
     "tour": "feature-seo"
   },
@@ -440,10 +440,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-settings.jpg",
-      "tenant-screen-settings.jpg",
-      "tenant-screen-reference-tags.jpg",
-      "vendor-screen-settings.jpg"
+      "admin-screen-settings.webp",
+      "tenant-screen-settings.webp",
+      "tenant-screen-reference-tags.webp",
+      "vendor-screen-settings.webp"
     ],
     "tour": "feature-settings"
   },
@@ -455,9 +455,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-settlements.jpg",
-      "tenant-screen-settlements.jpg",
-      "vendor-screen-settlements.jpg"
+      "admin-screen-settlements.webp",
+      "tenant-screen-settlements.webp",
+      "vendor-screen-settlements.webp"
     ],
     "tour": "feature-settlements"
   },
@@ -468,8 +468,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-shipping-providers.jpg",
-      "tenant-screen-shipping-providers.jpg"
+      "admin-screen-shipping-providers.webp",
+      "tenant-screen-shipping-providers.webp"
     ],
     "tour": "feature-shipping-providers"
   },
@@ -482,10 +482,10 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-shipping.jpg",
-      "tenant-screen-shipping.jpg",
-      "vendor-screen-shipping.jpg",
-      "customer-screen-shipping.jpg"
+      "admin-screen-shipping.webp",
+      "tenant-screen-shipping.webp",
+      "vendor-screen-shipping.webp",
+      "customer-screen-shipping.webp"
     ],
     "tour": "feature-shipping"
   },
@@ -497,9 +497,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-storefront.jpg",
-      "tenant-screen-storefront.jpg",
-      "customer-screen-storefront.jpg"
+      "admin-screen-storefront.webp",
+      "tenant-screen-storefront.webp",
+      "customer-screen-storefront.webp"
     ],
     "tour": "feature-storefront"
   },
@@ -512,12 +512,12 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-support.jpg",
-      "tenant-screen-support.jpg",
-      "vendor-screen-support.jpg",
-      "customer-screen-support.jpg",
-      "customer-screen-help-centre.jpg",
-      "customer-screen-faq-answer.jpg"
+      "admin-screen-support.webp",
+      "tenant-screen-support.webp",
+      "vendor-screen-support.webp",
+      "customer-screen-support.webp",
+      "customer-screen-help-centre.webp",
+      "customer-screen-faq-answer.webp"
     ],
     "tour": "feature-support"
   },
@@ -529,9 +529,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-tax-currency.jpg",
-      "tenant-screen-tax-currency.jpg",
-      "vendor-screen-tax-currency.jpg"
+      "admin-screen-tax-currency.webp",
+      "tenant-screen-tax-currency.webp",
+      "vendor-screen-tax-currency.webp"
     ],
     "tour": "feature-tax-currency"
   },
@@ -543,9 +543,9 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-team.jpg",
-      "tenant-screen-team.jpg",
-      "vendor-screen-team.jpg"
+      "admin-screen-team.webp",
+      "tenant-screen-team.webp",
+      "vendor-screen-team.webp"
     ],
     "tour": "feature-team"
   },
@@ -557,9 +557,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-tenants.jpg",
-      "tenant-screen-tenants.jpg",
-      "customer-screen-tenants.jpg"
+      "admin-screen-tenants.webp",
+      "tenant-screen-tenants.webp",
+      "customer-screen-tenants.webp"
     ],
     "tour": "feature-tenants"
   },
@@ -569,7 +569,7 @@
       "vendor"
     ],
     "screens": [
-      "vendor-screen-vendor-profile.jpg"
+      "vendor-screen-vendor-profile.webp"
     ],
     "tour": "feature-vendor-profile"
   },
@@ -582,11 +582,11 @@
       "vendor"
     ],
     "screens": [
-      "admin-screen-vendors.jpg",
-      "tenant-screen-vendors.jpg",
-      "vendor-screen-vendors.jpg",
-      "customer-screen-vendors.jpg",
-      "customer-screen-vendor-detail.jpg"
+      "admin-screen-vendors.webp",
+      "tenant-screen-vendors.webp",
+      "vendor-screen-vendors.webp",
+      "customer-screen-vendors.webp",
+      "customer-screen-vendor-detail.webp"
     ],
     "tour": "feature-vendors"
   },
@@ -598,9 +598,9 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-wallet.jpg",
-      "tenant-screen-wallet.jpg",
-      "customer-screen-wallet.jpg"
+      "admin-screen-wallet.webp",
+      "tenant-screen-wallet.webp",
+      "customer-screen-wallet.webp"
     ],
     "tour": "feature-wallet"
   },
@@ -611,8 +611,8 @@
       "tenant"
     ],
     "screens": [
-      "admin-screen-webhooks.jpg",
-      "tenant-screen-webhooks.jpg"
+      "admin-screen-webhooks.webp",
+      "tenant-screen-webhooks.webp"
     ],
     "tour": "feature-webhooks"
   },
@@ -622,7 +622,7 @@
       "customer"
     ],
     "screens": [
-      "customer-screen-wishlist.jpg"
+      "customer-screen-wishlist.webp"
     ],
     "tour": "feature-wishlist"
   },
@@ -633,9 +633,9 @@
       "tenant"
     ],
     "screens": [
-      "tenant-subscription-en.jpg",
-      "tenant-subscription-quote-en.jpg",
-      "tenant-subscription-paid-en.jpg"
+      "tenant-subscription-en.webp",
+      "tenant-subscription-quote-en.webp",
+      "tenant-subscription-paid-en.webp"
     ],
     "tour": "feature-subscriptions"
   },
@@ -646,20 +646,20 @@
       "tenant"
     ],
     "screens": [
-      "platform-plans-en.jpg",
-      "platform-plans-ar.jpg",
-      "platform-application-en.jpg",
-      "platform-application-ar.jpg",
-      "platform-application-mode-en.jpg",
-      "platform-application-mode-ar.jpg",
-      "platform-application-review-en.jpg",
-      "platform-application-review-ar.jpg",
-      "platform-application-receipt-en.jpg",
-      "platform-application-receipt-ar.jpg",
-      "platform-application-status-en.jpg",
-      "platform-application-status-ar.jpg",
-      "admin-merchant-review-en.jpg",
-      "admin-merchant-review-ar.jpg"
+      "platform-plans-en.webp",
+      "platform-plans-ar.webp",
+      "platform-application-en.webp",
+      "platform-application-ar.webp",
+      "platform-application-mode-en.webp",
+      "platform-application-mode-ar.webp",
+      "platform-application-review-en.webp",
+      "platform-application-review-ar.webp",
+      "platform-application-receipt-en.webp",
+      "platform-application-receipt-ar.webp",
+      "platform-application-status-en.webp",
+      "platform-application-status-ar.webp",
+      "admin-merchant-review-en.webp",
+      "admin-merchant-review-ar.webp"
     ],
     "tour": "feature-merchant-onboarding"
   },
@@ -671,9 +671,9 @@
       "vendor"
     ],
     "screens": [
-      "tenant-operations-policy-en.jpg",
-      "vendor-operations-response-en.jpg",
-      "admin-operations-history-en.jpg"
+      "tenant-operations-policy-en.webp",
+      "vendor-operations-response-en.webp",
+      "admin-operations-history-en.webp"
     ],
     "tour": "admin-marketplace-operations"
   },
@@ -685,9 +685,9 @@
       "vendor"
     ],
     "screens": [
-      "vendor-publication-review-submit-en.jpg",
-      "tenant-publication-review-compare-en.jpg",
-      "admin-publication-review-withdrawn-en.jpg"
+      "vendor-publication-review-submit-en.webp",
+      "tenant-publication-review-compare-en.webp",
+      "admin-publication-review-withdrawn-en.webp"
     ],
     "tour": "vendor-product-review"
   },
@@ -699,16 +699,16 @@
       "vendor"
     ],
     "screens": [
-      "tenant-packing-en-draft.jpg",
-      "vendor-packing-en-conflict.jpg",
-      "tenant-packing-en-confirmed.jpg",
-      "admin-packing-en-oversight.jpg",
-      "tenant-carrier-evidence-en.jpg",
-      "tenant-carrier-evidence-ar.jpg",
-      "vendor-carrier-evidence-en.jpg",
-      "vendor-carrier-evidence-ar.jpg",
-      "admin-carrier-evidence-en.jpg",
-      "admin-carrier-evidence-ar.jpg"
+      "tenant-packing-en-draft.webp",
+      "vendor-packing-en-conflict.webp",
+      "tenant-packing-en-confirmed.webp",
+      "admin-packing-en-oversight.webp",
+      "tenant-carrier-evidence-en.webp",
+      "tenant-carrier-evidence-ar.webp",
+      "vendor-carrier-evidence-en.webp",
+      "vendor-carrier-evidence-ar.webp",
+      "admin-carrier-evidence-en.webp",
+      "admin-carrier-evidence-ar.webp"
     ],
     "tour": "packing-manifest",
     "supplementaryTours": [
@@ -723,24 +723,24 @@
       "vendor"
     ],
     "screens": [
-      "merchant-lifecycle-admin-scope-en.jpg",
-      "merchant-lifecycle-admin-scope-ar.jpg",
-      "merchant-lifecycle-admin-activity-en.jpg",
-      "merchant-lifecycle-admin-activity-ar.jpg",
-      "merchant-lifecycle-admin-coverage-en.jpg",
-      "merchant-lifecycle-admin-coverage-ar.jpg",
-      "merchant-lifecycle-tenant-scope-en.jpg",
-      "merchant-lifecycle-tenant-scope-ar.jpg",
-      "merchant-lifecycle-tenant-activity-en.jpg",
-      "merchant-lifecycle-tenant-activity-ar.jpg",
-      "merchant-lifecycle-tenant-coverage-en.jpg",
-      "merchant-lifecycle-tenant-coverage-ar.jpg",
-      "merchant-lifecycle-vendor-scope-en.jpg",
-      "merchant-lifecycle-vendor-scope-ar.jpg",
-      "merchant-lifecycle-vendor-activity-en.jpg",
-      "merchant-lifecycle-vendor-activity-ar.jpg",
-      "merchant-lifecycle-vendor-coverage-en.jpg",
-      "merchant-lifecycle-vendor-coverage-ar.jpg"
+      "merchant-lifecycle-admin-scope-en.webp",
+      "merchant-lifecycle-admin-scope-ar.webp",
+      "merchant-lifecycle-admin-activity-en.webp",
+      "merchant-lifecycle-admin-activity-ar.webp",
+      "merchant-lifecycle-admin-coverage-en.webp",
+      "merchant-lifecycle-admin-coverage-ar.webp",
+      "merchant-lifecycle-tenant-scope-en.webp",
+      "merchant-lifecycle-tenant-scope-ar.webp",
+      "merchant-lifecycle-tenant-activity-en.webp",
+      "merchant-lifecycle-tenant-activity-ar.webp",
+      "merchant-lifecycle-tenant-coverage-en.webp",
+      "merchant-lifecycle-tenant-coverage-ar.webp",
+      "merchant-lifecycle-vendor-scope-en.webp",
+      "merchant-lifecycle-vendor-scope-ar.webp",
+      "merchant-lifecycle-vendor-activity-en.webp",
+      "merchant-lifecycle-vendor-activity-ar.webp",
+      "merchant-lifecycle-vendor-coverage-en.webp",
+      "merchant-lifecycle-vendor-coverage-ar.webp"
     ],
     "tour": "feature-merchant-lifecycle-admin",
     "supplementaryTours": [
@@ -756,24 +756,24 @@
       "vendor"
     ],
     "screens": [
-      "private-report-admin-scope-en.png",
-      "private-report-admin-scope-ar.png",
-      "private-report-admin-ready-en.png",
-      "private-report-admin-ready-ar.png",
-      "private-report-admin-reset-en.png",
-      "private-report-admin-reset-ar.png",
-      "private-report-tenant-scope-en.png",
-      "private-report-tenant-scope-ar.png",
-      "private-report-tenant-ready-en.png",
-      "private-report-tenant-ready-ar.png",
-      "private-report-tenant-reset-en.png",
-      "private-report-tenant-reset-ar.png",
-      "private-report-vendor-scope-en.png",
-      "private-report-vendor-scope-ar.png",
-      "private-report-vendor-ready-en.png",
-      "private-report-vendor-ready-ar.png",
-      "private-report-vendor-reset-en.png",
-      "private-report-vendor-reset-ar.png"
+      "private-report-admin-scope-en.webp",
+      "private-report-admin-scope-ar.webp",
+      "private-report-admin-ready-en.webp",
+      "private-report-admin-ready-ar.webp",
+      "private-report-admin-reset-en.webp",
+      "private-report-admin-reset-ar.webp",
+      "private-report-tenant-scope-en.webp",
+      "private-report-tenant-scope-ar.webp",
+      "private-report-tenant-ready-en.webp",
+      "private-report-tenant-ready-ar.webp",
+      "private-report-tenant-reset-en.webp",
+      "private-report-tenant-reset-ar.webp",
+      "private-report-vendor-scope-en.webp",
+      "private-report-vendor-scope-ar.webp",
+      "private-report-vendor-ready-en.webp",
+      "private-report-vendor-ready-ar.webp",
+      "private-report-vendor-reset-en.webp",
+      "private-report-vendor-reset-ar.webp"
     ],
     "tour": "feature-report-exports-admin",
     "supplementaryTours": [

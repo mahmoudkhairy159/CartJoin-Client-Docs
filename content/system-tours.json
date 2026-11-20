@@ -11,7 +11,7 @@
     "video": true,
     "steps": [
       {
-        "image": "admin-dashboard.jpg",
+        "image": "admin-dashboard.webp",
         "focus": [
           71,
           2,
@@ -29,7 +29,7 @@
         "guide": "business"
       },
       {
-        "image": "admin-dashboard.jpg",
+        "image": "admin-dashboard.webp",
         "focus": [
           68,
           17,
@@ -47,7 +47,7 @@
         "guide": "features/dashboards"
       },
       {
-        "image": "admin-orders.jpg",
+        "image": "admin-orders.webp",
         "focus": [
           41,
           43,
@@ -65,7 +65,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "admin-dashboard.jpg",
+        "image": "admin-dashboard.webp",
         "focus": [
           1,
           54,
@@ -96,7 +96,7 @@
     "video": true,
     "steps": [
       {
-        "image": "tenant-dashboard.jpg",
+        "image": "tenant-dashboard.webp",
         "focus": [
           58,
           2,
@@ -114,7 +114,7 @@
         "guide": "features/tenants"
       },
       {
-        "image": "tenant-dashboard.jpg",
+        "image": "tenant-dashboard.webp",
         "focus": [
           21,
           31,
@@ -132,7 +132,7 @@
         "guide": "features/products"
       },
       {
-        "image": "tenant-dashboard.jpg",
+        "image": "tenant-dashboard.webp",
         "focus": [
           40,
           48,
@@ -150,7 +150,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "tenant-dashboard.jpg",
+        "image": "tenant-dashboard.webp",
         "focus": [
           1,
           79,
@@ -181,7 +181,7 @@
     "video": true,
     "steps": [
       {
-        "image": "vendor-dashboard.jpg",
+        "image": "vendor-dashboard.webp",
         "focus": [
           60,
           2,
@@ -199,7 +199,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "vendor-dashboard.jpg",
+        "image": "vendor-dashboard.webp",
         "focus": [
           1,
           27,
@@ -217,7 +217,7 @@
         "guide": "features/products"
       },
       {
-        "image": "vendor-dashboard.jpg",
+        "image": "vendor-dashboard.webp",
         "focus": [
           40,
           34,
@@ -235,7 +235,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "vendor-dashboard.jpg",
+        "image": "vendor-dashboard.webp",
         "focus": [
           1,
           51,
@@ -266,7 +266,7 @@
     "video": true,
     "steps": [
       {
-        "image": "customer-account-overview.jpg",
+        "image": "customer-account-overview.webp",
         "focus": [
           3,
           39,
@@ -284,7 +284,7 @@
         "guide": "roles/customer"
       },
       {
-        "image": "customer-invoice-detail.jpg",
+        "image": "customer-invoice-detail.webp",
         "focus": [
           28,
           24,
@@ -302,7 +302,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "customer-invoice-detail.jpg",
+        "image": "customer-invoice-detail.webp",
         "focus": [
           28,
           43,
@@ -320,7 +320,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "customer-invoice-detail.jpg",
+        "image": "customer-invoice-detail.webp",
         "focus": [
           28,
           69,
@@ -351,7 +351,7 @@
     "video": true,
     "steps": [
       {
-        "image": "admin-orders.jpg",
+        "image": "admin-orders.webp",
         "focus": [
           47,
           30,
@@ -369,7 +369,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "admin-orders.jpg",
+        "image": "admin-orders.webp",
         "focus": [
           27,
           43,
@@ -387,7 +387,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "admin-orders.jpg",
+        "image": "admin-orders.webp",
         "focus": [
           53,
           43,
@@ -418,7 +418,7 @@
     "video": true,
     "steps": [
       {
-        "image": "tenant-products.jpg",
+        "image": "tenant-products.webp",
         "focus": [
           32,
           33,
@@ -436,7 +436,7 @@
         "guide": "features/products"
       },
       {
-        "image": "tenant-product-detail.jpg",
+        "image": "tenant-product-detail.webp",
         "focus": [
           21,
           20,
@@ -454,7 +454,7 @@
         "guide": "features/products"
       },
       {
-        "image": "tenant-product-detail.jpg",
+        "image": "tenant-product-detail.webp",
         "focus": [
           21,
           39,
@@ -485,7 +485,7 @@
     "video": true,
     "steps": [
       {
-        "image": "tenant-stock-levels.jpg",
+        "image": "tenant-stock-levels.webp",
         "focus": [
           70,
           45,
@@ -503,7 +503,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "tenant-stock-filters.jpg",
+        "image": "tenant-stock-filters.webp",
         "focus": [
           21,
           40,
@@ -521,7 +521,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "tenant-stock-locations.jpg",
+        "image": "tenant-stock-locations.webp",
         "focus": [
           23,
           46,
@@ -539,7 +539,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "tenant-stock-movements.jpg",
+        "image": "tenant-stock-movements.webp",
         "focus": [
           27,
           46,
@@ -570,7 +570,7 @@
     "video": true,
     "steps": [
       {
-        "image": "tenant-returns.jpg",
+        "image": "tenant-returns.webp",
         "focus": [
           23,
           46,
@@ -588,7 +588,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "tenant-returns.jpg",
+        "image": "tenant-returns.webp",
         "focus": [
           23,
           56,
@@ -606,7 +606,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "tenant-return-detail.jpg",
+        "image": "tenant-return-detail.webp",
         "focus": [
           23,
           53,
@@ -624,7 +624,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "tenant-return-handling.jpg",
+        "image": "tenant-return-handling.webp",
         "focus": [
           23,
           53,
@@ -660,7 +660,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-access.jpg",
+        "image": "admin-screen-access.webp",
         "focus": [
           22,
           22,
@@ -678,7 +678,7 @@
         "guide": "features/access"
       },
       {
-        "image": "tenant-screen-access.jpg",
+        "image": "tenant-screen-access.webp",
         "focus": [
           22,
           22,
@@ -696,7 +696,7 @@
         "guide": "features/access"
       },
       {
-        "image": "vendor-screen-access.jpg",
+        "image": "vendor-screen-access.webp",
         "focus": [
           22,
           22,
@@ -714,7 +714,7 @@
         "guide": "features/access"
       },
       {
-        "image": "customer-screen-access.jpg",
+        "image": "customer-screen-access.webp",
         "focus": [
           3,
           16,
@@ -750,7 +750,7 @@
     },
     "steps": [
       {
-        "image": "tenant-screen-attributes.jpg",
+        "image": "tenant-screen-attributes.webp",
         "focus": [
           22,
           22,
@@ -786,7 +786,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-audit.jpg",
+        "image": "admin-screen-audit.webp",
         "focus": [
           22,
           22,
@@ -804,7 +804,7 @@
         "guide": "features/audit"
       },
       {
-        "image": "tenant-screen-audit.jpg",
+        "image": "tenant-screen-audit.webp",
         "focus": [
           22,
           22,
@@ -840,7 +840,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-banners.jpg",
+        "image": "admin-screen-banners.webp",
         "focus": [
           22,
           22,
@@ -858,7 +858,7 @@
         "guide": "features/banners"
       },
       {
-        "image": "tenant-screen-banners.jpg",
+        "image": "tenant-screen-banners.webp",
         "focus": [
           22,
           22,
@@ -894,7 +894,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-brands.jpg",
+        "image": "admin-screen-brands.webp",
         "focus": [
           22,
           22,
@@ -912,7 +912,7 @@
         "guide": "features/brands"
       },
       {
-        "image": "tenant-screen-brands.jpg",
+        "image": "tenant-screen-brands.webp",
         "focus": [
           22,
           22,
@@ -930,7 +930,7 @@
         "guide": "features/brands"
       },
       {
-        "image": "vendor-screen-brands.jpg",
+        "image": "vendor-screen-brands.webp",
         "focus": [
           22,
           22,
@@ -948,7 +948,7 @@
         "guide": "features/brands"
       },
       {
-        "image": "customer-screen-brands.jpg",
+        "image": "customer-screen-brands.webp",
         "focus": [
           3,
           16,
@@ -966,7 +966,7 @@
         "guide": "features/brands"
       },
       {
-        "image": "customer-screen-brand-filter.jpg",
+        "image": "customer-screen-brand-filter.webp",
         "focus": [
           3,
           16,
@@ -1002,7 +1002,7 @@
     },
     "steps": [
       {
-        "image": "customer-screen-cart.jpg",
+        "image": "customer-screen-cart.webp",
         "focus": [
           3,
           16,
@@ -1038,7 +1038,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-categories.jpg",
+        "image": "admin-screen-categories.webp",
         "focus": [
           22,
           22,
@@ -1056,7 +1056,7 @@
         "guide": "features/categories"
       },
       {
-        "image": "tenant-screen-categories.jpg",
+        "image": "tenant-screen-categories.webp",
         "focus": [
           22,
           22,
@@ -1074,7 +1074,7 @@
         "guide": "features/categories"
       },
       {
-        "image": "vendor-screen-categories.jpg",
+        "image": "vendor-screen-categories.webp",
         "focus": [
           22,
           22,
@@ -1110,7 +1110,7 @@
     },
     "steps": [
       {
-        "image": "checkout-address-en.png",
+        "image": "checkout-address-en.webp",
         "focus": [
           2,
           2,
@@ -1126,11 +1126,11 @@
           "ar": "أدخل بيانات المستلم واختر البلد والمحافظة والمدينة لعرض طرق التوصيل."
         },
         "guide": "features/checkout",
-        "imageAr": "checkout-address-ar.png"
+        "imageAr": "checkout-address-ar.webp"
       },
       {
-        "image": "checkout-delivery-quote-en.png",
-        "imageAr": "checkout-delivery-quote-ar.png",
+        "image": "checkout-delivery-quote-en.webp",
+        "imageAr": "checkout-delivery-quote-ar.webp",
         "focus": [
           2,
           12,
@@ -1148,8 +1148,8 @@
         "guide": "features/checkout"
       },
       {
-        "image": "checkout-hosted-methods-en.png",
-        "imageAr": "checkout-hosted-methods-ar.png",
+        "image": "checkout-hosted-methods-en.webp",
+        "imageAr": "checkout-hosted-methods-ar.webp",
         "focus": [
           2,
           12,
@@ -1167,8 +1167,8 @@
         "guide": "features/checkout"
       },
       {
-        "image": "checkout-express-en.png",
-        "imageAr": "checkout-express-ar.png",
+        "image": "checkout-express-en.webp",
+        "imageAr": "checkout-express-ar.webp",
         "focus": [
           2,
           48,
@@ -1186,8 +1186,8 @@
         "guide": "features/payments"
       },
       {
-        "image": "checkout-requoted-en.png",
-        "imageAr": "checkout-requoted-ar.png",
+        "image": "checkout-requoted-en.webp",
+        "imageAr": "checkout-requoted-ar.webp",
         "focus": [
           2,
           12,
@@ -1224,7 +1224,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-cms.jpg",
+        "image": "admin-screen-cms.webp",
         "focus": [
           22,
           22,
@@ -1242,7 +1242,7 @@
         "guide": "features/cms"
       },
       {
-        "image": "tenant-screen-cms.jpg",
+        "image": "tenant-screen-cms.webp",
         "focus": [
           22,
           22,
@@ -1260,7 +1260,7 @@
         "guide": "features/cms"
       },
       {
-        "image": "customer-screen-cms.jpg",
+        "image": "customer-screen-cms.webp",
         "focus": [
           3,
           16,
@@ -1296,7 +1296,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-commission.jpg",
+        "image": "admin-screen-commission.webp",
         "focus": [
           22,
           22,
@@ -1314,7 +1314,7 @@
         "guide": "features/commission"
       },
       {
-        "image": "tenant-screen-commission.jpg",
+        "image": "tenant-screen-commission.webp",
         "focus": [
           22,
           22,
@@ -1332,7 +1332,7 @@
         "guide": "features/commission"
       },
       {
-        "image": "vendor-screen-commission.jpg",
+        "image": "vendor-screen-commission.webp",
         "focus": [
           22,
           22,
@@ -1368,8 +1368,8 @@
     },
     "steps": [
       {
-        "image": "tenant-coupon-batch-form-en.jpg",
-        "imageAr": "tenant-coupon-batch-form-ar.jpg",
+        "image": "tenant-coupon-batch-form-en.webp",
+        "imageAr": "tenant-coupon-batch-form-ar.webp",
         "focus": [
           21,
           34,
@@ -1405,8 +1405,8 @@
         ]
       },
       {
-        "image": "tenant-coupon-batches-en.jpg",
-        "imageAr": "tenant-coupon-batches-ar.jpg",
+        "image": "tenant-coupon-batches-en.webp",
+        "imageAr": "tenant-coupon-batches-ar.webp",
         "focus": [
           21,
           26,
@@ -1442,8 +1442,8 @@
         ]
       },
       {
-        "image": "tenant-coupon-batch-report-en.jpg",
-        "imageAr": "tenant-coupon-batch-report-ar.jpg",
+        "image": "tenant-coupon-batch-report-en.webp",
+        "imageAr": "tenant-coupon-batch-report-ar.webp",
         "focus": [
           21,
           48,
@@ -1498,7 +1498,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-customers.jpg",
+        "image": "admin-screen-customers.webp",
         "focus": [
           22,
           22,
@@ -1516,7 +1516,7 @@
         "guide": "features/customers"
       },
       {
-        "image": "tenant-screen-customers.jpg",
+        "image": "tenant-screen-customers.webp",
         "focus": [
           22,
           22,
@@ -1552,7 +1552,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-dashboards.jpg",
+        "image": "admin-screen-dashboards.webp",
         "focus": [
           22,
           22,
@@ -1570,7 +1570,7 @@
         "guide": "features/dashboards"
       },
       {
-        "image": "tenant-screen-dashboards.jpg",
+        "image": "tenant-screen-dashboards.webp",
         "focus": [
           22,
           22,
@@ -1588,7 +1588,7 @@
         "guide": "features/dashboards"
       },
       {
-        "image": "vendor-screen-dashboards.jpg",
+        "image": "vendor-screen-dashboards.webp",
         "focus": [
           22,
           22,
@@ -1606,7 +1606,7 @@
         "guide": "features/dashboards"
       },
       {
-        "image": "customer-screen-dashboards.jpg",
+        "image": "customer-screen-dashboards.webp",
         "focus": [
           3,
           16,
@@ -1657,8 +1657,8 @@
           42,
           15
         ],
-        "image": "admin-flash-moderation-en.jpg",
-        "imageAr": "admin-flash-moderation-ar.jpg",
+        "image": "admin-flash-moderation-en.webp",
+        "imageAr": "admin-flash-moderation-ar.webp",
         "focusAr": [
           37,
           47,
@@ -1682,8 +1682,8 @@
           76,
           29
         ],
-        "image": "tenant-flash-schedule-en.jpg",
-        "imageAr": "tenant-flash-schedule-ar.jpg",
+        "image": "tenant-flash-schedule-en.webp",
+        "imageAr": "tenant-flash-schedule-ar.webp",
         "focusAr": [
           3,
           64,
@@ -1707,8 +1707,8 @@
           76,
           49
         ],
-        "image": "tenant-flash-offers-en.jpg",
-        "imageAr": "tenant-flash-offers-ar.jpg",
+        "image": "tenant-flash-offers-en.webp",
+        "imageAr": "tenant-flash-offers-ar.webp",
         "focusAr": [
           4,
           40,
@@ -1732,8 +1732,8 @@
           78,
           85
         ],
-        "image": "vendor-flash-proposal-en.jpg",
-        "imageAr": "vendor-flash-proposal-ar.jpg",
+        "image": "vendor-flash-proposal-en.webp",
+        "imageAr": "vendor-flash-proposal-ar.webp",
         "focusAr": [
           3,
           11,
@@ -1757,8 +1757,8 @@
           28,
           54
         ],
-        "image": "customer-flash-landing-en.jpg",
-        "imageAr": "customer-flash-landing-ar.jpg",
+        "image": "customer-flash-landing-en.webp",
+        "imageAr": "customer-flash-landing-ar.webp",
         "focusAr": [
           69,
           17,
@@ -1782,8 +1782,8 @@
           44,
           57
         ],
-        "image": "customer-flash-variant-en.jpg",
-        "imageAr": "customer-flash-variant-ar.jpg",
+        "image": "customer-flash-variant-en.webp",
+        "imageAr": "customer-flash-variant-ar.webp",
         "focusAr": [
           3,
           17,
@@ -1807,8 +1807,8 @@
           55,
           49
         ],
-        "image": "customer-flash-cart-en.jpg",
-        "imageAr": "customer-flash-cart-ar.jpg",
+        "image": "customer-flash-cart-en.webp",
+        "imageAr": "customer-flash-cart-ar.webp",
         "focusAr": [
           41,
           51,
@@ -1836,7 +1836,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-gift-cards.jpg",
+        "image": "admin-screen-gift-cards.webp",
         "focus": [
           22,
           22,
@@ -1854,7 +1854,7 @@
         "guide": "features/gift-cards"
       },
       {
-        "image": "tenant-screen-gift-cards.jpg",
+        "image": "tenant-screen-gift-cards.webp",
         "focus": [
           22,
           22,
@@ -1872,7 +1872,7 @@
         "guide": "features/gift-cards"
       },
       {
-        "image": "customer-screen-gift-cards.jpg",
+        "image": "customer-screen-gift-cards.webp",
         "focus": [
           3,
           16,
@@ -1908,7 +1908,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-inventory.jpg",
+        "image": "admin-screen-inventory.webp",
         "focus": [
           22,
           22,
@@ -1926,7 +1926,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "tenant-screen-inventory.jpg",
+        "image": "tenant-screen-inventory.webp",
         "focus": [
           22,
           22,
@@ -1944,7 +1944,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "vendor-screen-inventory.jpg",
+        "image": "vendor-screen-inventory.webp",
         "focus": [
           22,
           22,
@@ -1980,7 +1980,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-invoices.jpg",
+        "image": "admin-screen-invoices.webp",
         "focus": [
           22,
           22,
@@ -1998,7 +1998,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "tenant-screen-invoices.jpg",
+        "image": "tenant-screen-invoices.webp",
         "focus": [
           22,
           22,
@@ -2016,7 +2016,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "vendor-screen-invoices.jpg",
+        "image": "vendor-screen-invoices.webp",
         "focus": [
           22,
           22,
@@ -2034,7 +2034,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "customer-screen-invoices.jpg",
+        "image": "customer-screen-invoices.webp",
         "focus": [
           3,
           16,
@@ -2070,7 +2070,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-loyalty.jpg",
+        "image": "admin-screen-loyalty.webp",
         "focus": [
           22,
           22,
@@ -2088,7 +2088,7 @@
         "guide": "features/loyalty"
       },
       {
-        "image": "tenant-screen-loyalty.jpg",
+        "image": "tenant-screen-loyalty.webp",
         "focus": [
           22,
           22,
@@ -2106,7 +2106,7 @@
         "guide": "features/loyalty"
       },
       {
-        "image": "customer-screen-loyalty.jpg",
+        "image": "customer-screen-loyalty.webp",
         "focus": [
           3,
           16,
@@ -2142,7 +2142,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-notifications.jpg",
+        "image": "admin-screen-notifications.webp",
         "focus": [
           22,
           22,
@@ -2160,7 +2160,7 @@
         "guide": "features/notifications"
       },
       {
-        "image": "tenant-screen-notifications.jpg",
+        "image": "tenant-screen-notifications.webp",
         "focus": [
           22,
           22,
@@ -2178,7 +2178,7 @@
         "guide": "features/notifications"
       },
       {
-        "image": "vendor-screen-notifications.jpg",
+        "image": "vendor-screen-notifications.webp",
         "focus": [
           22,
           22,
@@ -2196,7 +2196,7 @@
         "guide": "features/notifications"
       },
       {
-        "image": "customer-screen-notifications.jpg",
+        "image": "customer-screen-notifications.webp",
         "focus": [
           3,
           16,
@@ -2232,7 +2232,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-orders.jpg",
+        "image": "admin-screen-orders.webp",
         "focus": [
           22,
           22,
@@ -2250,7 +2250,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "tenant-screen-orders.jpg",
+        "image": "tenant-screen-orders.webp",
         "focus": [
           22,
           22,
@@ -2268,7 +2268,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "vendor-screen-orders.jpg",
+        "image": "vendor-screen-orders.webp",
         "focus": [
           22,
           22,
@@ -2286,7 +2286,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "customer-screen-orders.jpg",
+        "image": "customer-screen-orders.webp",
         "focus": [
           3,
           16,
@@ -2322,7 +2322,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-payments.jpg",
+        "image": "admin-screen-payments.webp",
         "focus": [
           22,
           22,
@@ -2340,7 +2340,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "tenant-screen-payments.jpg",
+        "image": "tenant-screen-payments.webp",
         "focus": [
           22,
           22,
@@ -2358,7 +2358,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "tenant-screen-payment-method-form.jpg",
+        "image": "tenant-screen-payment-method-form.webp",
         "focus": [
           22,
           22,
@@ -2376,7 +2376,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "customer-screen-payments.jpg",
+        "image": "customer-screen-payments.webp",
         "focus": [
           3,
           16,
@@ -2412,7 +2412,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-pricing.jpg",
+        "image": "admin-screen-pricing.webp",
         "focus": [
           22,
           22,
@@ -2430,7 +2430,7 @@
         "guide": "features/pricing"
       },
       {
-        "image": "tenant-screen-pricing.jpg",
+        "image": "tenant-screen-pricing.webp",
         "focus": [
           22,
           22,
@@ -2466,7 +2466,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-products.jpg",
+        "image": "admin-screen-products.webp",
         "focus": [
           22,
           22,
@@ -2484,7 +2484,7 @@
         "guide": "features/products"
       },
       {
-        "image": "tenant-screen-products.jpg",
+        "image": "tenant-screen-products.webp",
         "focus": [
           22,
           22,
@@ -2502,7 +2502,7 @@
         "guide": "features/products"
       },
       {
-        "image": "vendor-screen-products.jpg",
+        "image": "vendor-screen-products.webp",
         "focus": [
           22,
           22,
@@ -2520,7 +2520,7 @@
         "guide": "features/products"
       },
       {
-        "image": "customer-screen-products.jpg",
+        "image": "customer-screen-products.webp",
         "focus": [
           3,
           16,
@@ -2536,7 +2536,7 @@
           "ar": "اقرأ رمز الخيار وسعره الحالي وتوافره قبل الإضافة. نصوص التوصيل والنقاط تقديرات لا تثبت التنفيذ أو اكتساب رصيد."
         },
         "guide": "features/products",
-        "imageAr": "customer-screen-products-ar.jpg",
+        "imageAr": "customer-screen-products-ar.webp",
         "focusAr": [
           4,
           16,
@@ -2563,7 +2563,7 @@
     },
     "steps": [
       {
-        "image": "tenant-promotions-en.jpg",
+        "image": "tenant-promotions-en.webp",
         "focus": [
           22,
           22,
@@ -2579,10 +2579,10 @@
           "ar": "افتح العروض. بين العروض النشطة في فترتها الزمنية تُعطى الأولوية للرقم الأكبر."
         },
         "guide": "features/promotions",
-        "imageAr": "tenant-promotions-ar.jpg"
+        "imageAr": "tenant-promotions-ar.webp"
       },
       {
-        "image": "tenant-promotion-kinds-en.jpg",
+        "image": "tenant-promotion-kinds-en.webp",
         "focus": [
           22,
           22,
@@ -2598,7 +2598,7 @@
           "ar": "أدخل معرّفات المنتجات ومكافأة بنسبة مئوية. يخصم هذا المثال 10 بالمئة من المنتجات المطابقة بعد التفعيل."
         },
         "guide": "features/promotions",
-        "imageAr": "tenant-promotion-kinds-ar.jpg"
+        "imageAr": "tenant-promotion-kinds-ar.webp"
       }
     ],
     "localizedVideo": true
@@ -2620,7 +2620,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-refunds.jpg",
+        "image": "admin-screen-refunds.webp",
         "focus": [
           22,
           22,
@@ -2638,7 +2638,7 @@
         "guide": "features/refunds"
       },
       {
-        "image": "tenant-screen-refunds.jpg",
+        "image": "tenant-screen-refunds.webp",
         "focus": [
           22,
           22,
@@ -2656,7 +2656,7 @@
         "guide": "features/refunds"
       },
       {
-        "image": "vendor-screen-refunds.jpg",
+        "image": "vendor-screen-refunds.webp",
         "focus": [
           22,
           22,
@@ -2692,7 +2692,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-reports.jpg",
+        "image": "admin-screen-reports.webp",
         "focus": [
           22,
           22,
@@ -2710,7 +2710,7 @@
         "guide": "features/reports"
       },
       {
-        "image": "tenant-screen-reports.jpg",
+        "image": "tenant-screen-reports.webp",
         "focus": [
           22,
           22,
@@ -2728,7 +2728,7 @@
         "guide": "features/reports"
       },
       {
-        "image": "vendor-screen-reports.jpg",
+        "image": "vendor-screen-reports.webp",
         "focus": [
           22,
           22,
@@ -2764,7 +2764,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-returns.jpg",
+        "image": "admin-screen-returns.webp",
         "focus": [
           22,
           22,
@@ -2782,7 +2782,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "tenant-screen-returns.jpg",
+        "image": "tenant-screen-returns.webp",
         "focus": [
           22,
           22,
@@ -2800,7 +2800,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "vendor-screen-returns.jpg",
+        "image": "vendor-screen-returns.webp",
         "focus": [
           22,
           22,
@@ -2818,7 +2818,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "customer-screen-returns.jpg",
+        "image": "customer-screen-returns.webp",
         "focus": [
           3,
           16,
@@ -2854,7 +2854,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-reviews.jpg",
+        "image": "admin-screen-reviews.webp",
         "focus": [
           22,
           22,
@@ -2872,7 +2872,7 @@
         "guide": "features/reviews"
       },
       {
-        "image": "tenant-screen-reviews.jpg",
+        "image": "tenant-screen-reviews.webp",
         "focus": [
           22,
           22,
@@ -2890,7 +2890,7 @@
         "guide": "features/reviews"
       },
       {
-        "image": "vendor-screen-reviews.jpg",
+        "image": "vendor-screen-reviews.webp",
         "focus": [
           22,
           22,
@@ -2908,7 +2908,7 @@
         "guide": "features/reviews"
       },
       {
-        "image": "customer-screen-reviews.jpg",
+        "image": "customer-screen-reviews.webp",
         "focus": [
           3,
           16,
@@ -2944,7 +2944,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-search.jpg",
+        "image": "admin-screen-search.webp",
         "focus": [
           22,
           22,
@@ -2962,7 +2962,7 @@
         "guide": "features/search"
       },
       {
-        "image": "tenant-screen-search.jpg",
+        "image": "tenant-screen-search.webp",
         "focus": [
           22,
           22,
@@ -2980,7 +2980,7 @@
         "guide": "features/search"
       },
       {
-        "image": "customer-screen-search.jpg",
+        "image": "customer-screen-search.webp",
         "focus": [
           3,
           16,
@@ -2996,7 +2996,7 @@
           "ar": "استخدم أدوات شاشة الاكتشاف الحالية. تختلف نتيجة البحث واستبعاد التوصية وإدخال سجل البحث في معناها ومرحلتها."
         },
         "guide": "features/search",
-        "imageAr": "customer-screen-search-ar.jpg",
+        "imageAr": "customer-screen-search-ar.webp",
         "focusAr": [
           4,
           16,
@@ -3023,7 +3023,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-seo.jpg",
+        "image": "admin-screen-seo.webp",
         "focus": [
           22,
           22,
@@ -3041,7 +3041,7 @@
         "guide": "features/seo"
       },
       {
-        "image": "tenant-screen-seo.jpg",
+        "image": "tenant-screen-seo.webp",
         "focus": [
           22,
           22,
@@ -3077,7 +3077,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-settings.jpg",
+        "image": "admin-screen-settings.webp",
         "focus": [
           22,
           22,
@@ -3095,7 +3095,7 @@
         "guide": "features/settings"
       },
       {
-        "image": "tenant-screen-settings.jpg",
+        "image": "tenant-screen-settings.webp",
         "focus": [
           22,
           22,
@@ -3113,7 +3113,7 @@
         "guide": "features/settings"
       },
       {
-        "image": "tenant-screen-reference-tags.jpg",
+        "image": "tenant-screen-reference-tags.webp",
         "focus": [
           22,
           22,
@@ -3131,7 +3131,7 @@
         "guide": "features/settings"
       },
       {
-        "image": "vendor-screen-settings.jpg",
+        "image": "vendor-screen-settings.webp",
         "focus": [
           22,
           22,
@@ -3167,7 +3167,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-settlements.jpg",
+        "image": "admin-screen-settlements.webp",
         "focus": [
           22,
           22,
@@ -3185,7 +3185,7 @@
         "guide": "features/settlements"
       },
       {
-        "image": "tenant-screen-settlements.jpg",
+        "image": "tenant-screen-settlements.webp",
         "focus": [
           22,
           22,
@@ -3203,7 +3203,7 @@
         "guide": "features/settlements"
       },
       {
-        "image": "vendor-screen-settlements.jpg",
+        "image": "vendor-screen-settlements.webp",
         "focus": [
           22,
           22,
@@ -3239,7 +3239,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-shipping-providers.jpg",
+        "image": "admin-screen-shipping-providers.webp",
         "focus": [
           22,
           22,
@@ -3257,7 +3257,7 @@
         "guide": "features/shipping-providers"
       },
       {
-        "image": "tenant-screen-shipping-providers.jpg",
+        "image": "tenant-screen-shipping-providers.webp",
         "focus": [
           22,
           22,
@@ -3293,7 +3293,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-shipping.jpg",
+        "image": "admin-screen-shipping.webp",
         "focus": [
           22,
           22,
@@ -3311,7 +3311,7 @@
         "guide": "features/shipping"
       },
       {
-        "image": "tenant-screen-shipping.jpg",
+        "image": "tenant-screen-shipping.webp",
         "focus": [
           22,
           22,
@@ -3329,7 +3329,7 @@
         "guide": "features/shipping"
       },
       {
-        "image": "vendor-screen-shipping.jpg",
+        "image": "vendor-screen-shipping.webp",
         "focus": [
           22,
           22,
@@ -3347,7 +3347,7 @@
         "guide": "features/shipping"
       },
       {
-        "image": "customer-screen-shipping.jpg",
+        "image": "customer-screen-shipping.webp",
         "focus": [
           3,
           16,
@@ -3383,7 +3383,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-storefront.jpg",
+        "image": "admin-screen-storefront.webp",
         "focus": [
           22,
           22,
@@ -3401,7 +3401,7 @@
         "guide": "features/storefront"
       },
       {
-        "image": "tenant-screen-storefront.jpg",
+        "image": "tenant-screen-storefront.webp",
         "focus": [
           22,
           22,
@@ -3419,7 +3419,7 @@
         "guide": "features/storefront"
       },
       {
-        "image": "customer-screen-storefront.jpg",
+        "image": "customer-screen-storefront.webp",
         "focus": [
           3,
           16,
@@ -3455,7 +3455,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-support.jpg",
+        "image": "admin-screen-support.webp",
         "focus": [
           22,
           22,
@@ -3473,7 +3473,7 @@
         "guide": "features/support"
       },
       {
-        "image": "tenant-screen-support.jpg",
+        "image": "tenant-screen-support.webp",
         "focus": [
           22,
           22,
@@ -3491,7 +3491,7 @@
         "guide": "features/support"
       },
       {
-        "image": "vendor-screen-support.jpg",
+        "image": "vendor-screen-support.webp",
         "focus": [
           22,
           22,
@@ -3509,7 +3509,7 @@
         "guide": "features/support"
       },
       {
-        "image": "customer-screen-support.jpg",
+        "image": "customer-screen-support.webp",
         "focus": [
           3,
           16,
@@ -3527,7 +3527,7 @@
         "guide": "features/support"
       },
       {
-        "image": "customer-screen-help-centre.jpg",
+        "image": "customer-screen-help-centre.webp",
         "focus": [
           3,
           16,
@@ -3545,7 +3545,7 @@
         "guide": "features/support"
       },
       {
-        "image": "customer-screen-faq-answer.jpg",
+        "image": "customer-screen-faq-answer.webp",
         "focus": [
           3,
           16,
@@ -3581,7 +3581,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-tax-currency.jpg",
+        "image": "admin-screen-tax-currency.webp",
         "focus": [
           22,
           22,
@@ -3599,7 +3599,7 @@
         "guide": "features/tax-currency"
       },
       {
-        "image": "tenant-screen-tax-currency.jpg",
+        "image": "tenant-screen-tax-currency.webp",
         "focus": [
           22,
           22,
@@ -3617,7 +3617,7 @@
         "guide": "features/tax-currency"
       },
       {
-        "image": "vendor-screen-tax-currency.jpg",
+        "image": "vendor-screen-tax-currency.webp",
         "focus": [
           22,
           22,
@@ -3653,7 +3653,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-team.jpg",
+        "image": "admin-screen-team.webp",
         "focus": [
           22,
           22,
@@ -3671,7 +3671,7 @@
         "guide": "features/team"
       },
       {
-        "image": "tenant-screen-team.jpg",
+        "image": "tenant-screen-team.webp",
         "focus": [
           22,
           22,
@@ -3689,7 +3689,7 @@
         "guide": "features/team"
       },
       {
-        "image": "vendor-screen-team.jpg",
+        "image": "vendor-screen-team.webp",
         "focus": [
           22,
           35,
@@ -3725,7 +3725,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-tenants.jpg",
+        "image": "admin-screen-tenants.webp",
         "focus": [
           22,
           22,
@@ -3743,7 +3743,7 @@
         "guide": "features/tenants"
       },
       {
-        "image": "tenant-screen-tenants.jpg",
+        "image": "tenant-screen-tenants.webp",
         "focus": [
           22,
           22,
@@ -3761,7 +3761,7 @@
         "guide": "features/tenants"
       },
       {
-        "image": "customer-screen-tenants.jpg",
+        "image": "customer-screen-tenants.webp",
         "focus": [
           3,
           16,
@@ -3797,7 +3797,7 @@
     },
     "steps": [
       {
-        "image": "vendor-screen-vendor-profile.jpg",
+        "image": "vendor-screen-vendor-profile.webp",
         "focus": [
           22,
           22,
@@ -3833,7 +3833,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-vendors.jpg",
+        "image": "admin-screen-vendors.webp",
         "focus": [
           22,
           22,
@@ -3851,7 +3851,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "tenant-screen-vendors.jpg",
+        "image": "tenant-screen-vendors.webp",
         "focus": [
           22,
           22,
@@ -3869,7 +3869,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "vendor-screen-vendors.jpg",
+        "image": "vendor-screen-vendors.webp",
         "focus": [
           22,
           22,
@@ -3887,7 +3887,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "customer-screen-vendors.jpg",
+        "image": "customer-screen-vendors.webp",
         "focus": [
           3,
           16,
@@ -3905,7 +3905,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "customer-screen-vendor-detail.jpg",
+        "image": "customer-screen-vendor-detail.webp",
         "focus": [
           3,
           16,
@@ -3941,7 +3941,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-wallet.jpg",
+        "image": "admin-screen-wallet.webp",
         "focus": [
           22,
           22,
@@ -3959,7 +3959,7 @@
         "guide": "features/wallet"
       },
       {
-        "image": "tenant-screen-wallet.jpg",
+        "image": "tenant-screen-wallet.webp",
         "focus": [
           22,
           22,
@@ -3977,7 +3977,7 @@
         "guide": "features/wallet"
       },
       {
-        "image": "customer-screen-wallet.jpg",
+        "image": "customer-screen-wallet.webp",
         "focus": [
           3,
           16,
@@ -4013,7 +4013,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-webhooks.jpg",
+        "image": "admin-screen-webhooks.webp",
         "focus": [
           22,
           22,
@@ -4031,7 +4031,7 @@
         "guide": "features/webhooks"
       },
       {
-        "image": "tenant-screen-webhooks.jpg",
+        "image": "tenant-screen-webhooks.webp",
         "focus": [
           22,
           22,
@@ -4067,7 +4067,7 @@
     },
     "steps": [
       {
-        "image": "customer-screen-wishlist.jpg",
+        "image": "customer-screen-wishlist.webp",
         "focus": [
           3,
           16,
@@ -4103,7 +4103,7 @@
     },
     "steps": [
       {
-        "image": "customer-screen-search.jpg",
+        "image": "customer-screen-search.webp",
         "focus": [
           1,
           15,
@@ -4119,7 +4119,7 @@
           "ar": "افتح التسوق أو البحث لتضييق الكتالوج. اقرأ اسم المنتج والبائع قبل فتحه."
         },
         "guide": "features/search",
-        "imageAr": "customer-screen-search-ar.jpg",
+        "imageAr": "customer-screen-search-ar.webp",
         "focusAr": [
           1,
           15,
@@ -4128,7 +4128,7 @@
         ]
       },
       {
-        "image": "customer-screen-brand-filter.jpg",
+        "image": "customer-screen-brand-filter.webp",
         "focus": [
           1,
           15,
@@ -4146,7 +4146,7 @@
         "guide": "features/brands"
       },
       {
-        "image": "customer-screen-vendor-detail.jpg",
+        "image": "customer-screen-vendor-detail.webp",
         "focus": [
           1,
           15,
@@ -4164,7 +4164,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "customer-screen-products.jpg",
+        "image": "customer-screen-products.webp",
         "focus": [
           1,
           15,
@@ -4180,7 +4180,7 @@
           "ar": "راجع الخيار المحدد والسعر والإتاحة. تحفظ المفضلة خيار المنتج دون حجز المخزون."
         },
         "guide": "features/products",
-        "imageAr": "customer-screen-products-ar.jpg",
+        "imageAr": "customer-screen-products-ar.webp",
         "focusAr": [
           1,
           15,
@@ -4207,7 +4207,7 @@
     },
     "steps": [
       {
-        "image": "customer-screen-wishlist.jpg",
+        "image": "customer-screen-wishlist.webp",
         "focus": [
           1,
           15,
@@ -4225,7 +4225,7 @@
         "guide": "features/wishlist"
       },
       {
-        "image": "customer-screen-cart.jpg",
+        "image": "customer-screen-cart.webp",
         "focus": [
           1,
           15,
@@ -4243,7 +4243,7 @@
         "guide": "features/cart"
       },
       {
-        "image": "customer-screen-checkout.jpg",
+        "image": "customer-screen-checkout.webp",
         "focus": [
           1,
           15,
@@ -4261,7 +4261,7 @@
         "guide": "features/checkout"
       },
       {
-        "image": "customer-screen-orders.jpg",
+        "image": "customer-screen-orders.webp",
         "focus": [
           1,
           15,
@@ -4297,7 +4297,7 @@
     },
     "steps": [
       {
-        "image": "customer-screen-invoices.jpg",
+        "image": "customer-screen-invoices.webp",
         "focus": [
           1,
           15,
@@ -4315,7 +4315,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "customer-screen-shipping.jpg",
+        "image": "customer-screen-shipping.webp",
         "focus": [
           1,
           15,
@@ -4333,7 +4333,7 @@
         "guide": "features/shipping"
       },
       {
-        "image": "customer-screen-returns.jpg",
+        "image": "customer-screen-returns.webp",
         "focus": [
           1,
           15,
@@ -4351,7 +4351,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "customer-screen-help-centre.jpg",
+        "image": "customer-screen-help-centre.webp",
         "focus": [
           1,
           15,
@@ -4387,7 +4387,7 @@
     },
     "steps": [
       {
-        "image": "customer-screen-wallet.jpg",
+        "image": "customer-screen-wallet.webp",
         "focus": [
           1,
           15,
@@ -4405,7 +4405,7 @@
         "guide": "features/wallet"
       },
       {
-        "image": "customer-screen-loyalty.jpg",
+        "image": "customer-screen-loyalty.webp",
         "focus": [
           1,
           15,
@@ -4423,7 +4423,7 @@
         "guide": "features/loyalty"
       },
       {
-        "image": "customer-screen-gift-cards.jpg",
+        "image": "customer-screen-gift-cards.webp",
         "focus": [
           1,
           15,
@@ -4441,7 +4441,7 @@
         "guide": "features/gift-cards"
       },
       {
-        "image": "customer-screen-payments.jpg",
+        "image": "customer-screen-payments.webp",
         "focus": [
           1,
           15,
@@ -4477,7 +4477,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-dashboards.jpg",
+        "image": "admin-screen-dashboards.webp",
         "focus": [
           22,
           22,
@@ -4495,7 +4495,7 @@
         "guide": "features/dashboards"
       },
       {
-        "image": "admin-screen-reports.jpg",
+        "image": "admin-screen-reports.webp",
         "focus": [
           22,
           22,
@@ -4513,7 +4513,7 @@
         "guide": "features/reports"
       },
       {
-        "image": "admin-screen-notifications.jpg",
+        "image": "admin-screen-notifications.webp",
         "focus": [
           22,
           22,
@@ -4531,7 +4531,7 @@
         "guide": "features/notifications"
       },
       {
-        "image": "admin-screen-audit.jpg",
+        "image": "admin-screen-audit.webp",
         "focus": [
           22,
           22,
@@ -4567,7 +4567,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-tenants.jpg",
+        "image": "admin-screen-tenants.webp",
         "focus": [
           22,
           22,
@@ -4585,7 +4585,7 @@
         "guide": "features/tenants"
       },
       {
-        "image": "admin-screen-vendors.jpg",
+        "image": "admin-screen-vendors.webp",
         "focus": [
           22,
           22,
@@ -4603,7 +4603,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "admin-screen-products.jpg",
+        "image": "admin-screen-products.webp",
         "focus": [
           22,
           22,
@@ -4621,7 +4621,7 @@
         "guide": "features/products"
       },
       {
-        "image": "admin-screen-team.jpg",
+        "image": "admin-screen-team.webp",
         "focus": [
           22,
           22,
@@ -4657,7 +4657,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-orders.jpg",
+        "image": "admin-screen-orders.webp",
         "focus": [
           22,
           22,
@@ -4675,7 +4675,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "admin-screen-invoices.jpg",
+        "image": "admin-screen-invoices.webp",
         "focus": [
           22,
           22,
@@ -4693,7 +4693,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "admin-screen-payments.jpg",
+        "image": "admin-screen-payments.webp",
         "focus": [
           22,
           22,
@@ -4711,7 +4711,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "admin-screen-returns.jpg",
+        "image": "admin-screen-returns.webp",
         "focus": [
           22,
           22,
@@ -4747,7 +4747,7 @@
     },
     "steps": [
       {
-        "image": "admin-screen-commission.jpg",
+        "image": "admin-screen-commission.webp",
         "focus": [
           22,
           22,
@@ -4765,7 +4765,7 @@
         "guide": "features/commission"
       },
       {
-        "image": "admin-screen-settlements.jpg",
+        "image": "admin-screen-settlements.webp",
         "focus": [
           22,
           22,
@@ -4783,7 +4783,7 @@
         "guide": "features/settlements"
       },
       {
-        "image": "admin-screen-wallet.jpg",
+        "image": "admin-screen-wallet.webp",
         "focus": [
           22,
           22,
@@ -4801,7 +4801,7 @@
         "guide": "features/wallet"
       },
       {
-        "image": "admin-screen-settings.jpg",
+        "image": "admin-screen-settings.webp",
         "focus": [
           22,
           22,
@@ -4837,7 +4837,7 @@
     },
     "steps": [
       {
-        "image": "tenant-screen-tenants.jpg",
+        "image": "tenant-screen-tenants.webp",
         "focus": [
           22,
           22,
@@ -4855,7 +4855,7 @@
         "guide": "features/tenants"
       },
       {
-        "image": "tenant-screen-settings.jpg",
+        "image": "tenant-screen-settings.webp",
         "focus": [
           22,
           22,
@@ -4873,7 +4873,7 @@
         "guide": "features/settings"
       },
       {
-        "image": "tenant-screen-payment-method-form.jpg",
+        "image": "tenant-screen-payment-method-form.webp",
         "focus": [
           22,
           22,
@@ -4891,7 +4891,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "tenant-screen-shipping.jpg",
+        "image": "tenant-screen-shipping.webp",
         "focus": [
           22,
           22,
@@ -4927,7 +4927,7 @@
     },
     "steps": [
       {
-        "image": "tenant-screen-products.jpg",
+        "image": "tenant-screen-products.webp",
         "focus": [
           22,
           22,
@@ -4945,7 +4945,7 @@
         "guide": "features/products"
       },
       {
-        "image": "tenant-screen-pricing.jpg",
+        "image": "tenant-screen-pricing.webp",
         "focus": [
           22,
           22,
@@ -4963,7 +4963,7 @@
         "guide": "features/pricing"
       },
       {
-        "image": "tenant-screen-inventory.jpg",
+        "image": "tenant-screen-inventory.webp",
         "focus": [
           22,
           22,
@@ -4981,7 +4981,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "tenant-screen-vendors.jpg",
+        "image": "tenant-screen-vendors.webp",
         "focus": [
           22,
           22,
@@ -5017,7 +5017,7 @@
     },
     "steps": [
       {
-        "image": "tenant-screen-orders.jpg",
+        "image": "tenant-screen-orders.webp",
         "focus": [
           22,
           22,
@@ -5035,7 +5035,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "tenant-screen-payments.jpg",
+        "image": "tenant-screen-payments.webp",
         "focus": [
           22,
           22,
@@ -5053,7 +5053,7 @@
         "guide": "features/payments"
       },
       {
-        "image": "tenant-screen-shipping.jpg",
+        "image": "tenant-screen-shipping.webp",
         "focus": [
           22,
           22,
@@ -5071,7 +5071,7 @@
         "guide": "features/shipping"
       },
       {
-        "image": "tenant-screen-returns.jpg",
+        "image": "tenant-screen-returns.webp",
         "focus": [
           22,
           22,
@@ -5107,7 +5107,7 @@
     },
     "steps": [
       {
-        "image": "tenant-screen-promotions.jpg",
+        "image": "tenant-screen-promotions.webp",
         "focus": [
           22,
           22,
@@ -5125,7 +5125,7 @@
         "guide": "features/promotions"
       },
       {
-        "image": "tenant-screen-cms.jpg",
+        "image": "tenant-screen-cms.webp",
         "focus": [
           22,
           22,
@@ -5143,7 +5143,7 @@
         "guide": "features/cms"
       },
       {
-        "image": "tenant-screen-settlements.jpg",
+        "image": "tenant-screen-settlements.webp",
         "focus": [
           22,
           22,
@@ -5161,7 +5161,7 @@
         "guide": "features/settlements"
       },
       {
-        "image": "tenant-screen-support.jpg",
+        "image": "tenant-screen-support.webp",
         "focus": [
           22,
           22,
@@ -5197,7 +5197,7 @@
     },
     "steps": [
       {
-        "image": "vendor-screen-dashboards.jpg",
+        "image": "vendor-screen-dashboards.webp",
         "focus": [
           22,
           22,
@@ -5215,7 +5215,7 @@
         "guide": "features/dashboards"
       },
       {
-        "image": "vendor-screen-vendors.jpg",
+        "image": "vendor-screen-vendors.webp",
         "focus": [
           22,
           22,
@@ -5233,7 +5233,7 @@
         "guide": "features/vendors"
       },
       {
-        "image": "vendor-screen-vendor-profile.jpg",
+        "image": "vendor-screen-vendor-profile.webp",
         "focus": [
           22,
           22,
@@ -5251,7 +5251,7 @@
         "guide": "features/vendor-profile"
       },
       {
-        "image": "vendor-screen-team.jpg",
+        "image": "vendor-screen-team.webp",
         "focus": [
           22,
           35,
@@ -5287,7 +5287,7 @@
     },
     "steps": [
       {
-        "image": "vendor-screen-products.jpg",
+        "image": "vendor-screen-products.webp",
         "focus": [
           22,
           22,
@@ -5305,7 +5305,7 @@
         "guide": "features/products"
       },
       {
-        "image": "vendor-screen-inventory.jpg",
+        "image": "vendor-screen-inventory.webp",
         "focus": [
           22,
           22,
@@ -5323,7 +5323,7 @@
         "guide": "features/inventory"
       },
       {
-        "image": "vendor-screen-categories.jpg",
+        "image": "vendor-screen-categories.webp",
         "focus": [
           22,
           22,
@@ -5341,7 +5341,7 @@
         "guide": "features/categories"
       },
       {
-        "image": "vendor-screen-settings.jpg",
+        "image": "vendor-screen-settings.webp",
         "focus": [
           22,
           22,
@@ -5377,7 +5377,7 @@
     },
     "steps": [
       {
-        "image": "vendor-screen-orders.jpg",
+        "image": "vendor-screen-orders.webp",
         "focus": [
           22,
           22,
@@ -5395,7 +5395,7 @@
         "guide": "features/orders"
       },
       {
-        "image": "vendor-screen-shipping.jpg",
+        "image": "vendor-screen-shipping.webp",
         "focus": [
           22,
           22,
@@ -5413,7 +5413,7 @@
         "guide": "features/shipping"
       },
       {
-        "image": "vendor-screen-returns.jpg",
+        "image": "vendor-screen-returns.webp",
         "focus": [
           22,
           22,
@@ -5431,7 +5431,7 @@
         "guide": "features/returns"
       },
       {
-        "image": "vendor-screen-refunds.jpg",
+        "image": "vendor-screen-refunds.webp",
         "focus": [
           22,
           22,
@@ -5467,7 +5467,7 @@
     },
     "steps": [
       {
-        "image": "vendor-screen-commission.jpg",
+        "image": "vendor-screen-commission.webp",
         "focus": [
           22,
           22,
@@ -5485,7 +5485,7 @@
         "guide": "features/commission"
       },
       {
-        "image": "vendor-screen-settlements.jpg",
+        "image": "vendor-screen-settlements.webp",
         "focus": [
           22,
           22,
@@ -5503,7 +5503,7 @@
         "guide": "features/settlements"
       },
       {
-        "image": "vendor-screen-invoices.jpg",
+        "image": "vendor-screen-invoices.webp",
         "focus": [
           22,
           22,
@@ -5521,7 +5521,7 @@
         "guide": "features/invoices"
       },
       {
-        "image": "vendor-screen-reports.jpg",
+        "image": "vendor-screen-reports.webp",
         "focus": [
           22,
           22,
@@ -5557,7 +5557,7 @@
     },
     "steps": [
       {
-        "image": "customer-guest-address-en.jpg",
+        "image": "customer-guest-address-en.webp",
         "title": {
           "en": "Enter delivery details and phone",
           "ar": "أدخل بيانات التوصيل والهاتف"
@@ -5575,7 +5575,7 @@
         ]
       },
       {
-        "image": "customer-guest-payment-en.jpg",
+        "image": "customer-guest-payment-en.webp",
         "title": {
           "en": "Choose cash on delivery",
           "ar": "اختر الدفع عند الاستلام"
@@ -5593,7 +5593,7 @@
         ]
       },
       {
-        "image": "customer-guest-confirm-en.jpg",
+        "image": "customer-guest-confirm-en.webp",
         "title": {
           "en": "Keep the receipt; an account is optional",
           "ar": "احتفظ بالفاتورة؛ الحساب اختياري"
@@ -5611,7 +5611,7 @@
         ]
       },
       {
-        "image": "customer-guest-confirm-ar.jpg",
+        "image": "customer-guest-confirm-ar.webp",
         "title": {
           "en": "The same journey in Arabic",
           "ar": "نفس الخطوات باللغة العربية"
@@ -5647,7 +5647,7 @@
     },
     "steps": [
       {
-        "image": "admin-guest-order-en.jpg",
+        "image": "admin-guest-order-en.webp",
         "title": {
           "en": "Recognize a guest purchase",
           "ar": "تعرّف على طلب الضيف"
@@ -5665,7 +5665,7 @@
         ]
       },
       {
-        "image": "tenant-guest-checkout-en.jpg",
+        "image": "tenant-guest-checkout-en.webp",
         "title": {
           "en": "Let the store choose",
           "ar": "دع المتجر يختار"
@@ -5683,7 +5683,7 @@
         ]
       },
       {
-        "image": "tenant-guest-checkout-ar.jpg",
+        "image": "tenant-guest-checkout-ar.webp",
         "title": {
           "en": "Explain the same policy in Arabic",
           "ar": "اشرح نفس السياسة بالعربية"
@@ -5701,7 +5701,7 @@
         ]
       },
       {
-        "image": "vendor-guest-order-en.jpg",
+        "image": "vendor-guest-order-en.webp",
         "title": {
           "en": "Fulfill within the approved workspace",
           "ar": "نفّذ الطلب داخل مساحة العمل المعتمدة"
@@ -5738,8 +5738,8 @@
     },
     "steps": [
       {
-        "image": "tenant-subscription-en.jpg",
-        "imageAr": "tenant-subscription-ar.jpg",
+        "image": "tenant-subscription-en.webp",
+        "imageAr": "tenant-subscription-ar.webp",
         "focus": [
           21,
           14,
@@ -5775,8 +5775,8 @@
         ]
       },
       {
-        "image": "tenant-subscription-quote-en.jpg",
-        "imageAr": "tenant-subscription-quote-ar.jpg",
+        "image": "tenant-subscription-quote-en.webp",
+        "imageAr": "tenant-subscription-quote-ar.webp",
         "focus": [
           22,
           49,
@@ -5812,8 +5812,8 @@
         ]
       },
       {
-        "image": "tenant-subscription-paid-en.jpg",
-        "imageAr": "tenant-subscription-paid-ar.jpg",
+        "image": "tenant-subscription-paid-en.webp",
+        "imageAr": "tenant-subscription-paid-ar.webp",
         "focus": [
           21,
           76,
@@ -5868,8 +5868,8 @@
     },
     "steps": [
       {
-        "image": "platform-plans-en.jpg",
-        "imageAr": "platform-plans-ar.jpg",
+        "image": "platform-plans-en.webp",
+        "imageAr": "platform-plans-ar.webp",
         "focus": [
           4,
           18,
@@ -5905,8 +5905,8 @@
         ]
       },
       {
-        "image": "platform-application-en.jpg",
-        "imageAr": "platform-application-ar.jpg",
+        "image": "platform-application-en.webp",
+        "imageAr": "platform-application-ar.webp",
         "focus": [
           51,
           17,
@@ -5930,8 +5930,8 @@
         "guide": "features/merchant-onboarding"
       },
       {
-        "image": "platform-application-mode-en.jpg",
-        "imageAr": "platform-application-mode-ar.jpg",
+        "image": "platform-application-mode-en.webp",
+        "imageAr": "platform-application-mode-ar.webp",
         "focus": [
           51,
           17,
@@ -5955,8 +5955,8 @@
         "guide": "features/merchant-onboarding"
       },
       {
-        "image": "platform-application-review-en.jpg",
-        "imageAr": "platform-application-review-ar.jpg",
+        "image": "platform-application-review-en.webp",
+        "imageAr": "platform-application-review-ar.webp",
         "focus": [
           51,
           17,
@@ -5980,8 +5980,8 @@
         "guide": "features/merchant-onboarding"
       },
       {
-        "image": "platform-application-receipt-en.jpg",
-        "imageAr": "platform-application-receipt-ar.jpg",
+        "image": "platform-application-receipt-en.webp",
+        "imageAr": "platform-application-receipt-ar.webp",
         "focus": [
           51,
           17,
@@ -6005,8 +6005,8 @@
         "guide": "features/merchant-onboarding"
       },
       {
-        "image": "platform-application-status-en.jpg",
-        "imageAr": "platform-application-status-ar.jpg",
+        "image": "platform-application-status-en.webp",
+        "imageAr": "platform-application-status-ar.webp",
         "focus": [
           51,
           17,
@@ -6030,8 +6030,8 @@
         "guide": "features/merchant-onboarding"
       },
       {
-        "image": "admin-merchant-review-en.jpg",
-        "imageAr": "admin-merchant-review-ar.jpg",
+        "image": "admin-merchant-review-en.webp",
+        "imageAr": "admin-merchant-review-ar.webp",
         "focus": [
           21,
           16,
@@ -6086,8 +6086,8 @@
     },
     "steps": [
       {
-        "image": "customer-test-payment-en.png",
-        "imageAr": "customer-test-payment-ar.png",
+        "image": "customer-test-payment-en.webp",
+        "imageAr": "customer-test-payment-ar.webp",
         "focus": [
           28,
           54,
@@ -6111,8 +6111,8 @@
         "guide": "features/payments"
       },
       {
-        "image": "customer-test-confirm-en.png",
-        "imageAr": "customer-test-confirm-ar.png",
+        "image": "customer-test-confirm-en.webp",
+        "imageAr": "customer-test-confirm-ar.webp",
         "focus": [
           23,
           79,
@@ -6136,8 +6136,8 @@
         "guide": "features/payments"
       },
       {
-        "image": "customer-test-paid-en.png",
-        "imageAr": "customer-test-paid-ar.png",
+        "image": "customer-test-paid-en.webp",
+        "imageAr": "customer-test-paid-ar.webp",
         "focus": [
           39,
           29,
@@ -6161,8 +6161,8 @@
         "guide": "features/payments"
       },
       {
-        "image": "customer-test-declined-en.png",
-        "imageAr": "customer-test-declined-ar.png",
+        "image": "customer-test-declined-en.webp",
+        "imageAr": "customer-test-declined-ar.webp",
         "focus": [
           20,
           29,
@@ -6205,8 +6205,8 @@
     },
     "steps": [
       {
-        "image": "tenant-carrier-policy-en.png",
-        "imageAr": "tenant-carrier-policy-ar.png",
+        "image": "tenant-carrier-policy-en.webp",
+        "imageAr": "tenant-carrier-policy-ar.webp",
         "title": {
           "en": "The store controls vendor access",
           "ar": "المتجر يتحكم في وصول البائع"
@@ -6230,8 +6230,8 @@
         "guide": "features/shipping-providers"
       },
       {
-        "image": "tenant-test-label-ready-en.png",
-        "imageAr": "tenant-test-label-ready-ar.png",
+        "image": "tenant-test-label-ready-en.webp",
+        "imageAr": "tenant-test-label-ready-ar.webp",
         "title": {
           "en": "Choose a named carrier on the shipment",
           "ar": "اختر شركة بالاسم داخل الشحنة"
@@ -6255,8 +6255,8 @@
         "guide": "features/shipping-providers"
       },
       {
-        "image": "vendor-test-label-ready-en.png",
-        "imageAr": "vendor-test-label-ready-ar.png",
+        "image": "vendor-test-label-ready-en.webp",
+        "imageAr": "vendor-test-label-ready-ar.webp",
         "title": {
           "en": "Vendors choose from the store-approved list",
           "ar": "يختار البائع من قائمة المتجر المسموح بها"
@@ -6280,8 +6280,8 @@
         "guide": "features/shipping-providers"
       },
       {
-        "image": "vendor-test-label-generated-en.png",
-        "imageAr": "vendor-test-label-generated-ar.png",
+        "image": "vendor-test-label-generated-en.webp",
+        "imageAr": "vendor-test-label-generated-ar.webp",
         "title": {
           "en": "Read the result and keep dispatch separate",
           "ar": "اقرأ النتيجة وافصلها عن التسليم للناقل"
@@ -6324,8 +6324,8 @@
     },
     "steps": [
       {
-        "image": "vendor-document-expiry-en.png",
-        "imageAr": "vendor-document-expiry-ar.png",
+        "image": "vendor-document-expiry-en.webp",
+        "imageAr": "vendor-document-expiry-ar.webp",
         "title": {
           "en": "Read two separate checks",
           "ar": "اقرأ فحصين منفصلين"
@@ -6349,8 +6349,8 @@
         "guide": "features/vendor-profile"
       },
       {
-        "image": "vendor-document-upload-en.png",
-        "imageAr": "vendor-document-upload-ar.png",
+        "image": "vendor-document-upload-en.webp",
+        "imageAr": "vendor-document-upload-ar.webp",
         "title": {
           "en": "Use the printed date",
           "ar": "استخدم التاريخ المطبوع"
@@ -6374,8 +6374,8 @@
         "guide": "features/vendor-profile"
       },
       {
-        "image": "admin-document-expiry-en.png",
-        "imageAr": "admin-document-expiry-ar.png",
+        "image": "admin-document-expiry-en.webp",
+        "imageAr": "admin-document-expiry-ar.webp",
         "title": {
           "en": "Expired evidence cannot be approved",
           "ar": "لا يمكن اعتماد إثبات منتهٍ"
@@ -6399,8 +6399,8 @@
         "guide": "features/vendors"
       },
       {
-        "image": "admin-document-review-en.png",
-        "imageAr": "admin-document-review-ar.png",
+        "image": "admin-document-review-en.webp",
+        "imageAr": "admin-document-review-ar.webp",
         "title": {
           "en": "Make review explicit",
           "ar": "اجعل المراجعة صريحة"
@@ -6439,8 +6439,8 @@
     "secondsPerStep": 10,
     "steps": [
       {
-        "image": "tenant-operations-policy-en.jpg",
-        "imageAr": "tenant-operations-policy-ar.jpg",
+        "image": "tenant-operations-policy-en.webp",
+        "imageAr": "tenant-operations-policy-ar.webp",
         "title": {
           "en": "Publish a clear policy version",
           "ar": "انشر إصدار سياسة واضحًا"
@@ -6464,8 +6464,8 @@
         "guide": "features/marketplace-operations"
       },
       {
-        "image": "tenant-operations-case-en.jpg",
-        "imageAr": "tenant-operations-case-ar.jpg",
+        "image": "tenant-operations-case-en.webp",
+        "imageAr": "tenant-operations-case-ar.webp",
         "title": {
           "en": "Read the concern and its owner",
           "ar": "اقرأ الملاحظة ومسؤولها"
@@ -6489,8 +6489,8 @@
         "guide": "features/marketplace-operations"
       },
       {
-        "image": "tenant-operations-evidence-en.jpg",
-        "imageAr": "tenant-operations-evidence-ar.jpg",
+        "image": "tenant-operations-evidence-en.webp",
+        "imageAr": "tenant-operations-evidence-ar.webp",
         "title": {
           "en": "Inspect evidence before taking action",
           "ar": "افحص الأدلة قبل القرار"
@@ -6514,8 +6514,8 @@
         "guide": "features/marketplace-operations"
       },
       {
-        "image": "tenant-publication-readiness-en.jpg",
-        "imageAr": "tenant-publication-readiness-ar.jpg",
+        "image": "tenant-publication-readiness-en.webp",
+        "imageAr": "tenant-publication-readiness-ar.webp",
         "title": {
           "en": "Resolve new-offer publication requirements",
           "ar": "استكمل متطلبات نشر العرض الجديد"
@@ -6558,8 +6558,8 @@
     "secondsPerStep": 10,
     "steps": [
       {
-        "image": "vendor-operations-policy-en.jpg",
-        "imageAr": "vendor-operations-policy-ar.jpg",
+        "image": "vendor-operations-policy-en.webp",
+        "imageAr": "vendor-operations-policy-ar.webp",
         "title": {
           "en": "Read the exact accepted version",
           "ar": "اقرأ الإصدار المقبول بالضبط"
@@ -6583,8 +6583,8 @@
         "guide": "features/marketplace-operations"
       },
       {
-        "image": "vendor-operations-response-en.jpg",
-        "imageAr": "vendor-operations-response-ar.jpg",
+        "image": "vendor-operations-response-en.webp",
+        "imageAr": "vendor-operations-response-ar.webp",
         "title": {
           "en": "Reply with useful evidence",
           "ar": "رد بأدلة مفيدة"
@@ -6608,8 +6608,8 @@
         "guide": "features/marketplace-operations"
       },
       {
-        "image": "vendor-operations-appeal-en.jpg",
-        "imageAr": "vendor-operations-appeal-ar.jpg",
+        "image": "vendor-operations-appeal-en.webp",
+        "imageAr": "vendor-operations-appeal-ar.webp",
         "title": {
           "en": "Ask for a recorded warning to be reconsidered",
           "ar": "اطلب إعادة النظر في تنبيه مسجّل"
@@ -6633,8 +6633,8 @@
         "guide": "features/marketplace-operations"
       },
       {
-        "image": "vendor-operations-evidence-en.jpg",
-        "imageAr": "vendor-operations-evidence-ar.jpg",
+        "image": "vendor-operations-evidence-en.webp",
+        "imageAr": "vendor-operations-evidence-ar.webp",
         "title": {
           "en": "Use your workspace evidence queue",
           "ar": "تابع أدلة مساحة عملك"
@@ -6677,8 +6677,8 @@
     "secondsPerStep": 10,
     "steps": [
       {
-        "image": "admin-operations-assignment-en.jpg",
-        "imageAr": "admin-operations-review-ar.jpg",
+        "image": "admin-operations-assignment-en.webp",
+        "imageAr": "admin-operations-review-ar.webp",
         "title": {
           "en": "Assign a responsible store reviewer",
           "ar": "سجّل نتيجة مراجعة صريحة"
@@ -6714,8 +6714,8 @@
         ]
       },
       {
-        "image": "admin-operations-history-en.jpg",
-        "imageAr": "admin-operations-history-ar.jpg",
+        "image": "admin-operations-history-en.webp",
+        "imageAr": "admin-operations-history-ar.webp",
         "title": {
           "en": "Read who decided and why",
           "ar": "اقرأ من قرر ولماذا"
@@ -6751,8 +6751,8 @@
         ]
       },
       {
-        "image": "admin-operations-evidence-en.jpg",
-        "imageAr": "admin-operations-evidence-ar.jpg",
+        "image": "admin-operations-evidence-en.webp",
+        "imageAr": "admin-operations-evidence-ar.webp",
         "title": {
           "en": "Check the owning store and missing evidence",
           "ar": "تحقق من المتجر والدليل الناقص"
@@ -6811,8 +6811,8 @@
     },
     "steps": [
       {
-        "image": "vendor-publication-review-submit-en.jpg",
-        "imageAr": "vendor-publication-review-submit-ar.jpg",
+        "image": "vendor-publication-review-submit-en.webp",
+        "imageAr": "vendor-publication-review-submit-ar.webp",
         "title": {
           "en": "Explain what is ready",
           "ar": "وضح ما أصبح جاهزًا"
@@ -6836,8 +6836,8 @@
         "guide": "features/product-review"
       },
       {
-        "image": "vendor-publication-review-returned-en.jpg",
-        "imageAr": "vendor-publication-review-returned-ar.jpg",
+        "image": "vendor-publication-review-returned-en.webp",
+        "imageAr": "vendor-publication-review-returned-ar.webp",
         "title": {
           "en": "Read the correction before editing",
           "ar": "اقرأ التصحيح قبل التعديل"
@@ -6861,8 +6861,8 @@
         "guide": "features/product-review"
       },
       {
-        "image": "vendor-publication-review-approved-en.jpg",
-        "imageAr": "vendor-publication-review-approved-ar.jpg",
+        "image": "vendor-publication-review-approved-en.webp",
+        "imageAr": "vendor-publication-review-approved-ar.webp",
         "title": {
           "en": "Confirm the new decision",
           "ar": "تحقق من القرار الجديد"
@@ -6905,8 +6905,8 @@
     },
     "steps": [
       {
-        "image": "tenant-publication-review-compare-en.jpg",
-        "imageAr": "tenant-publication-review-compare-ar.jpg",
+        "image": "tenant-publication-review-compare-en.webp",
+        "imageAr": "tenant-publication-review-compare-ar.webp",
         "title": {
           "en": "Compare and give a useful explanation",
           "ar": "قارن واكتب توضيحًا مفيدًا"
@@ -6930,8 +6930,8 @@
         "guide": "features/product-review"
       },
       {
-        "image": "tenant-publication-review-approved-en.jpg",
-        "imageAr": "tenant-publication-review-approved-ar.jpg",
+        "image": "tenant-publication-review-approved-en.webp",
+        "imageAr": "tenant-publication-review-approved-ar.webp",
         "title": {
           "en": "Keep the complete decision trail",
           "ar": "احتفظ بمسار القرار كاملًا"
@@ -6955,8 +6955,8 @@
         "guide": "features/product-review"
       },
       {
-        "image": "tenant-product-import-results-en.jpg",
-        "imageAr": "tenant-product-import-results-ar.jpg",
+        "image": "tenant-product-import-results-en.webp",
+        "imageAr": "tenant-product-import-results-ar.webp",
         "title": {
           "en": "Read the import report row by row",
           "ar": "اقرأ تقرير الاستيراد صفًا بصف"
@@ -6999,8 +6999,8 @@
     },
     "steps": [
       {
-        "image": "admin-publication-review-approved-en.jpg",
-        "imageAr": "admin-publication-review-approved-ar.jpg",
+        "image": "admin-publication-review-approved-en.webp",
+        "imageAr": "admin-publication-review-approved-ar.webp",
         "title": {
           "en": "Read the publisher decision history",
           "ar": "اقرأ سجل قرارات النشر"
@@ -7024,8 +7024,8 @@
         "guide": "features/product-review"
       },
       {
-        "image": "admin-publication-review-withdrawn-en.jpg",
-        "imageAr": "admin-publication-review-withdrawn-ar.jpg",
+        "image": "admin-publication-review-withdrawn-en.webp",
+        "imageAr": "admin-publication-review-withdrawn-ar.webp",
         "title": {
           "en": "Check current eligibility before republication",
           "ar": "راجع الجاهزية الحالية قبل إعادة النشر"
@@ -7068,8 +7068,8 @@
     },
     "steps": [
       {
-        "image": "tenant-product-views-en.jpg",
-        "imageAr": "tenant-product-views-ar.jpg",
+        "image": "tenant-product-views-en.webp",
+        "imageAr": "tenant-product-views-ar.webp",
         "title": {
           "en": "Save a product list view",
           "ar": "احفظ طريقة عرض المنتجات"
@@ -7093,8 +7093,8 @@
         "guide": "features/products"
       },
       {
-        "image": "tenant-product-publish-en.jpg",
-        "imageAr": "tenant-product-publish-ar.jpg",
+        "image": "tenant-product-publish-en.webp",
+        "imageAr": "tenant-product-publish-ar.webp",
         "title": {
           "en": "Publish the eligible selection",
           "ar": "انشر المنتجات المؤهلة من التحديد"
@@ -7137,8 +7137,8 @@
     },
     "steps": [
       {
-        "image": "tenant-order-settlement-en.jpg",
-        "imageAr": "tenant-order-settlement-ar.jpg",
+        "image": "tenant-order-settlement-en.webp",
+        "imageAr": "tenant-order-settlement-ar.webp",
         "title": {
           "en": "Recognize a payment settlement hold",
           "ar": "تعرّف على تعليق تسوية الدفع"
@@ -7181,8 +7181,8 @@
     },
     "steps": [
       {
-        "image": "guest-tracking-form-en.jpg",
-        "imageAr": "guest-tracking-form-ar.jpg",
+        "image": "guest-tracking-form-en.webp",
+        "imageAr": "guest-tracking-form-ar.webp",
         "focus": [
           2,
           20,
@@ -7206,8 +7206,8 @@
         "guide": "workflows/guest-checkout"
       },
       {
-        "image": "guest-tracking-status-en.jpg",
-        "imageAr": "guest-tracking-status-ar.jpg",
+        "image": "guest-tracking-status-en.webp",
+        "imageAr": "guest-tracking-status-ar.webp",
         "focus": [
           2,
           18,
@@ -7250,8 +7250,8 @@
     },
     "steps": [
       {
-        "image": "discovery-filters-en.jpg",
-        "imageAr": "discovery-filters-ar.jpg",
+        "image": "discovery-filters-en.webp",
+        "imageAr": "discovery-filters-ar.webp",
         "focus": [
           2,
           16,
@@ -7275,8 +7275,8 @@
         "guide": "features/search"
       },
       {
-        "image": "discovery-restock-en.jpg",
-        "imageAr": "discovery-restock-ar.jpg",
+        "image": "discovery-restock-en.webp",
+        "imageAr": "discovery-restock-ar.webp",
         "focus": [
           45,
           15,
@@ -7319,8 +7319,8 @@
     },
     "steps": [
       {
-        "image": "tenant-packing-en-draft.jpg",
-        "imageAr": "tenant-packing-ar-draft.jpg",
+        "image": "tenant-packing-en-draft.webp",
+        "imageAr": "tenant-packing-ar-draft.webp",
         "title": {
           "en": "Assign units to a parcel",
           "ar": "توزيع الوحدات على طرد"
@@ -7350,8 +7350,8 @@
         ]
       },
       {
-        "image": "vendor-packing-en-conflict.jpg",
-        "imageAr": "vendor-packing-ar-conflict.jpg",
+        "image": "vendor-packing-en-conflict.webp",
+        "imageAr": "vendor-packing-ar-conflict.webp",
         "title": {
           "en": "Refresh an outdated snapshot deliberately",
           "ar": "تحديث النسخة القديمة بعد مراجعتها"
@@ -7375,8 +7375,8 @@
         "guide": "features/packing"
       },
       {
-        "image": "tenant-packing-en-confirmed.jpg",
-        "imageAr": "tenant-packing-ar-confirmed.jpg",
+        "image": "tenant-packing-en-confirmed.webp",
+        "imageAr": "tenant-packing-ar-confirmed.webp",
         "title": {
           "en": "Confirm complete packing, not dispatch",
           "ar": "تأكيد اكتمال التغليف دون افتراض الشحن"
@@ -7400,8 +7400,8 @@
         "guide": "features/packing"
       },
       {
-        "image": "admin-packing-en-oversight.jpg",
-        "imageAr": "admin-packing-ar-oversight.jpg",
+        "image": "admin-packing-en-oversight.webp",
+        "imageAr": "admin-packing-ar-oversight.webp",
         "title": {
           "en": "Inspect the record with platform oversight",
           "ar": "الاطلاع على السجل من المنصة"
@@ -7444,8 +7444,8 @@
     },
     "steps": [
       {
-        "image": "tenant-carrier-evidence-en.jpg",
-        "imageAr": "tenant-carrier-evidence-ar.jpg",
+        "image": "tenant-carrier-evidence-en.webp",
+        "imageAr": "tenant-carrier-evidence-ar.webp",
         "title": {
           "en": "Store: read evidence before changing packing",
           "ar": "المتجر: اقرأ الدليل قبل تعديل التعبئة"
@@ -7469,8 +7469,8 @@
         "guide": "features/packing"
       },
       {
-        "image": "vendor-carrier-evidence-en.jpg",
-        "imageAr": "vendor-carrier-evidence-ar.jpg",
+        "image": "vendor-carrier-evidence-en.webp",
+        "imageAr": "vendor-carrier-evidence-ar.webp",
         "title": {
           "en": "Vendor: distinguish quantities from parcel permissions",
           "ar": "المورد: ميّز صلاحيات الكميات عن إجراءات الطرود"
@@ -7494,8 +7494,8 @@
         "guide": "features/packing"
       },
       {
-        "image": "admin-carrier-evidence-en.jpg",
-        "imageAr": "admin-carrier-evidence-ar.jpg",
+        "image": "admin-carrier-evidence-en.webp",
+        "imageAr": "admin-carrier-evidence-ar.webp",
         "title": {
           "en": "Platform: inspect without changing the record",
           "ar": "المنصة: راجع السجل دون تعديله"
@@ -7538,8 +7538,8 @@
     },
     "steps": [
       {
-        "image": "tenant-order-reward-checks-en.jpg",
-        "imageAr": "tenant-order-reward-checks-ar.jpg",
+        "image": "tenant-order-reward-checks-en.webp",
+        "imageAr": "tenant-order-reward-checks-ar.webp",
         "focus": [
           21,
           58,
@@ -7563,8 +7563,8 @@
         "guide": "features/loyalty"
       },
       {
-        "image": "tenant-order-reward-checks-en.jpg",
-        "imageAr": "tenant-order-reward-checks-ar.jpg",
+        "image": "tenant-order-reward-checks-en.webp",
+        "imageAr": "tenant-order-reward-checks-ar.webp",
         "focus": [
           22,
           79,
@@ -7607,8 +7607,8 @@
     },
     "steps": [
       {
-        "image": "fulfillment/tenant-progress-en.jpg",
-        "imageAr": "fulfillment/tenant-progress-ar.jpg",
+        "image": "fulfillment/tenant-progress-en.webp",
+        "imageAr": "fulfillment/tenant-progress-ar.webp",
         "title": {
           "en": "See partial unit coverage",
           "ar": "قراءة تغطية الوحدات الجزئية"
@@ -7632,8 +7632,8 @@
         ]
       },
       {
-        "image": "fulfillment/tenant-confirmation-en.jpg",
-        "imageAr": "fulfillment/tenant-confirmation-ar.jpg",
+        "image": "fulfillment/tenant-confirmation-en.webp",
+        "imageAr": "fulfillment/tenant-confirmation-ar.webp",
         "title": {
           "en": "Verify the fact before saving",
           "ar": "التحقق من الواقعة قبل الحفظ"
@@ -7657,8 +7657,8 @@
         ]
       },
       {
-        "image": "fulfillment/vendor-progress-en.jpg",
-        "imageAr": "fulfillment/vendor-progress-ar.jpg",
+        "image": "fulfillment/vendor-progress-en.webp",
+        "imageAr": "fulfillment/vendor-progress-ar.webp",
         "title": {
           "en": "Inspect your own seller group",
           "ar": "متابعة مجموعة البائع الخاصة بك"
@@ -7682,8 +7682,8 @@
         ]
       },
       {
-        "image": "fulfillment/admin-progress-en.jpg",
-        "imageAr": "fulfillment/admin-progress-ar.jpg",
+        "image": "fulfillment/admin-progress-en.webp",
+        "imageAr": "fulfillment/admin-progress-ar.webp",
         "title": {
           "en": "Oversee without changing the proof",
           "ar": "الرقابة دون تغيير الأدلة"
@@ -7707,8 +7707,8 @@
         ]
       },
       {
-        "image": "fulfillment/customer-progress-en.jpg",
-        "imageAr": "fulfillment/customer-progress-ar.jpg",
+        "image": "fulfillment/customer-progress-en.webp",
+        "imageAr": "fulfillment/customer-progress-ar.webp",
         "title": {
           "en": "Understand what has arrived",
           "ar": "فهم ما وصل بالفعل"
@@ -7745,8 +7745,8 @@
     "video": false,
     "steps": [
       {
-        "image": "global-customer-en-signup.png",
-        "imageAr": "global-customer-ar-signup.png",
+        "image": "global-customer-en-signup.webp",
+        "imageAr": "global-customer-ar-signup.webp",
         "focus": [
           0,
           0,
@@ -7764,8 +7764,8 @@
         "guide": "features/global-customer-account"
       },
       {
-        "image": "global-customer-en-proof.png",
-        "imageAr": "global-customer-ar-proof.png",
+        "image": "global-customer-en-proof.webp",
+        "imageAr": "global-customer-ar-proof.webp",
         "focus": [
           0,
           0,
@@ -7783,8 +7783,8 @@
         "guide": "features/global-customer-account"
       },
       {
-        "image": "global-customer-en-account.png",
-        "imageAr": "global-customer-ar-account.png",
+        "image": "global-customer-en-account.webp",
+        "imageAr": "global-customer-ar-account.webp",
         "focus": [
           0,
           0,
@@ -7802,8 +7802,8 @@
         "guide": "features/global-customer-account"
       },
       {
-        "image": "global-customer-en-recovery.png",
-        "imageAr": "global-customer-ar-recovery.png",
+        "image": "global-customer-en-recovery.webp",
+        "imageAr": "global-customer-ar-recovery.webp",
         "focus": [
           0,
           0,
@@ -7821,8 +7821,8 @@
         "guide": "features/global-customer-account"
       },
       {
-        "image": "global-customer-en-ack.png",
-        "imageAr": "global-customer-ar-ack.png",
+        "image": "global-customer-en-ack.webp",
+        "imageAr": "global-customer-ar-ack.webp",
         "focus": [
           0,
           0,
@@ -7859,8 +7859,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "tenant-cart-recovery-en-checks.png",
-        "imageAr": "tenant-cart-recovery-ar-checks.png",
+        "image": "tenant-cart-recovery-en-checks.webp",
+        "imageAr": "tenant-cart-recovery-ar-checks.webp",
         "focus": [
           0,
           0,
@@ -7878,8 +7878,8 @@
         "guide": "features/cart-recovery"
       },
       {
-        "image": "tenant-cart-recovery-en-outcomes.png",
-        "imageAr": "tenant-cart-recovery-ar-outcomes.png",
+        "image": "tenant-cart-recovery-en-outcomes.webp",
+        "imageAr": "tenant-cart-recovery-ar-outcomes.webp",
         "focus": [
           0,
           0,
@@ -7897,8 +7897,8 @@
         "guide": "features/cart-recovery"
       },
       {
-        "image": "tenant-cart-recovery-en-reason.png",
-        "imageAr": "tenant-cart-recovery-ar-reason.png",
+        "image": "tenant-cart-recovery-en-reason.webp",
+        "imageAr": "tenant-cart-recovery-ar-reason.webp",
         "focus": [
           0,
           0,
@@ -7916,8 +7916,8 @@
         "guide": "features/cart-recovery"
       },
       {
-        "image": "tenant-cart-recovery-en-confirm.png",
-        "imageAr": "tenant-cart-recovery-ar-confirm.png",
+        "image": "tenant-cart-recovery-en-confirm.webp",
+        "imageAr": "tenant-cart-recovery-ar-confirm.webp",
         "focus": [
           0,
           0,
@@ -7953,8 +7953,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "tenant-review-reminders-en-checks.png",
-        "imageAr": "tenant-review-reminders-ar-checks.png",
+        "image": "tenant-review-reminders-en-checks.webp",
+        "imageAr": "tenant-review-reminders-ar-checks.webp",
         "focus": [
           0,
           0,
@@ -7972,8 +7972,8 @@
         "guide": "features/review-reminders"
       },
       {
-        "image": "tenant-review-reminders-en-outcomes.png",
-        "imageAr": "tenant-review-reminders-ar-outcomes.png",
+        "image": "tenant-review-reminders-en-outcomes.webp",
+        "imageAr": "tenant-review-reminders-ar-outcomes.webp",
         "focus": [
           0,
           0,
@@ -7991,8 +7991,8 @@
         "guide": "features/review-reminders"
       },
       {
-        "image": "tenant-review-reminders-en-history.png",
-        "imageAr": "tenant-review-reminders-ar-history.png",
+        "image": "tenant-review-reminders-en-history.webp",
+        "imageAr": "tenant-review-reminders-ar-history.webp",
         "focus": [
           0,
           0,
@@ -8010,8 +8010,8 @@
         "guide": "features/review-reminders"
       },
       {
-        "image": "tenant-review-reminders-en-confirm.png",
-        "imageAr": "tenant-review-reminders-ar-confirm.png",
+        "image": "tenant-review-reminders-en-confirm.webp",
+        "imageAr": "tenant-review-reminders-ar-confirm.webp",
         "focus": [
           0,
           0,
@@ -8048,8 +8048,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "cohort-admin-scope-en.jpg",
-        "imageAr": "cohort-admin-scope-ar.jpg",
+        "image": "cohort-admin-scope-en.webp",
+        "imageAr": "cohort-admin-scope-ar.webp",
         "focus": [
           22.5,
           45.5,
@@ -8073,8 +8073,8 @@
         "guide": "features/customer-cohorts"
       },
       {
-        "image": "cohort-admin-matrix-en.jpg",
-        "imageAr": "cohort-admin-matrix-ar.jpg",
+        "image": "cohort-admin-matrix-en.webp",
+        "imageAr": "cohort-admin-matrix-ar.webp",
         "focus": [
           22.5,
           28,
@@ -8098,8 +8098,8 @@
         "guide": "features/customer-cohorts"
       },
       {
-        "image": "cohort-admin-coverage-en.jpg",
-        "imageAr": "cohort-admin-coverage-ar.jpg",
+        "image": "cohort-admin-coverage-en.webp",
+        "imageAr": "cohort-admin-coverage-ar.webp",
         "focus": [
           22.5,
           56,
@@ -8142,8 +8142,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "cohort-tenant-scope-en.jpg",
-        "imageAr": "cohort-tenant-scope-ar.jpg",
+        "image": "cohort-tenant-scope-en.webp",
+        "imageAr": "cohort-tenant-scope-ar.webp",
         "focus": [
           22.5,
           42,
@@ -8167,8 +8167,8 @@
         "guide": "features/customer-cohorts"
       },
       {
-        "image": "cohort-tenant-matrix-en.jpg",
-        "imageAr": "cohort-tenant-matrix-ar.jpg",
+        "image": "cohort-tenant-matrix-en.webp",
+        "imageAr": "cohort-tenant-matrix-ar.webp",
         "focus": [
           22.5,
           59,
@@ -8192,8 +8192,8 @@
         "guide": "features/customer-cohorts"
       },
       {
-        "image": "cohort-tenant-coverage-en.jpg",
-        "imageAr": "cohort-tenant-coverage-ar.jpg",
+        "image": "cohort-tenant-coverage-en.webp",
+        "imageAr": "cohort-tenant-coverage-ar.webp",
         "focus": [
           22.5,
           43,
@@ -8236,8 +8236,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "cohort-vendor-scope-en.jpg",
-        "imageAr": "cohort-vendor-scope-ar.jpg",
+        "image": "cohort-vendor-scope-en.webp",
+        "imageAr": "cohort-vendor-scope-ar.webp",
         "focus": [
           22.5,
           42,
@@ -8261,8 +8261,8 @@
         "guide": "features/customer-cohorts"
       },
       {
-        "image": "cohort-vendor-matrix-en.jpg",
-        "imageAr": "cohort-vendor-matrix-ar.jpg",
+        "image": "cohort-vendor-matrix-en.webp",
+        "imageAr": "cohort-vendor-matrix-ar.webp",
         "focus": [
           22.5,
           38.5,
@@ -8286,8 +8286,8 @@
         "guide": "features/customer-cohorts"
       },
       {
-        "image": "cohort-vendor-coverage-en.jpg",
-        "imageAr": "cohort-vendor-coverage-ar.jpg",
+        "image": "cohort-vendor-coverage-en.webp",
+        "imageAr": "cohort-vendor-coverage-ar.webp",
         "focus": [
           22.5,
           53,
@@ -8330,8 +8330,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "funnel-tenant-policy-en.jpg",
-        "imageAr": "funnel-tenant-policy-ar.jpg",
+        "image": "funnel-tenant-policy-en.webp",
+        "imageAr": "funnel-tenant-policy-ar.webp",
         "focus": [
           22,
           31,
@@ -8355,8 +8355,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-tenant-stages-en.jpg",
-        "imageAr": "funnel-tenant-stages-ar.jpg",
+        "image": "funnel-tenant-stages-en.webp",
+        "imageAr": "funnel-tenant-stages-ar.webp",
         "focus": [
           22,
           24,
@@ -8380,8 +8380,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-tenant-withdrawal-en.jpg",
-        "imageAr": "funnel-tenant-withdrawal-ar.jpg",
+        "image": "funnel-tenant-withdrawal-en.webp",
+        "imageAr": "funnel-tenant-withdrawal-ar.webp",
         "focus": [
           22,
           61,
@@ -8424,8 +8424,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "funnel-vendor-scope-en.jpg",
-        "imageAr": "funnel-vendor-scope-ar.jpg",
+        "image": "funnel-vendor-scope-en.webp",
+        "imageAr": "funnel-vendor-scope-ar.webp",
         "focus": [
           22,
           38,
@@ -8449,8 +8449,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-vendor-stages-en.jpg",
-        "imageAr": "funnel-vendor-stages-ar.jpg",
+        "image": "funnel-vendor-stages-en.webp",
+        "imageAr": "funnel-vendor-stages-ar.webp",
         "focus": [
           22,
           57,
@@ -8474,8 +8474,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-vendor-coverage-en.jpg",
-        "imageAr": "funnel-vendor-coverage-ar.jpg",
+        "image": "funnel-vendor-coverage-en.webp",
+        "imageAr": "funnel-vendor-coverage-ar.webp",
         "focus": [
           22,
           40,
@@ -8518,8 +8518,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "funnel-admin-scope-en.jpg",
-        "imageAr": "funnel-admin-scope-ar.jpg",
+        "image": "funnel-admin-scope-en.webp",
+        "imageAr": "funnel-admin-scope-ar.webp",
         "focus": [
           22,
           34,
@@ -8543,8 +8543,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-admin-stages-en.jpg",
-        "imageAr": "funnel-admin-stages-ar.jpg",
+        "image": "funnel-admin-stages-en.webp",
+        "imageAr": "funnel-admin-stages-ar.webp",
         "focus": [
           22,
           21,
@@ -8568,8 +8568,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-admin-coverage-en.jpg",
-        "imageAr": "funnel-admin-coverage-ar.jpg",
+        "image": "funnel-admin-coverage-en.webp",
+        "imageAr": "funnel-admin-coverage-ar.webp",
         "focus": [
           22,
           37,
@@ -8612,8 +8612,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "funnel-customer-choice-en.jpg",
-        "imageAr": "funnel-customer-choice-ar.jpg",
+        "image": "funnel-customer-choice-en.webp",
+        "imageAr": "funnel-customer-choice-ar.webp",
         "focus": [
           61,
           39,
@@ -8637,8 +8637,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-customer-product-en.jpg",
-        "imageAr": "funnel-customer-product-ar.jpg",
+        "image": "funnel-customer-product-en.webp",
+        "imageAr": "funnel-customer-product-ar.webp",
         "focus": [
           54,
           22,
@@ -8662,8 +8662,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-customer-pending-en.jpg",
-        "imageAr": "funnel-customer-pending-ar.jpg",
+        "image": "funnel-customer-pending-en.webp",
+        "imageAr": "funnel-customer-pending-ar.webp",
         "focus": [
           61,
           72,
@@ -8687,8 +8687,8 @@
         "guide": "features/shopping-funnel"
       },
       {
-        "image": "funnel-customer-withdrawal-en.jpg",
-        "imageAr": "funnel-customer-withdrawal-ar.jpg",
+        "image": "funnel-customer-withdrawal-en.webp",
+        "imageAr": "funnel-customer-withdrawal-ar.webp",
         "focus": [
           61,
           68,
@@ -8731,8 +8731,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "order-operations-admin-en-population.jpg",
-        "imageAr": "order-operations-admin-ar-population.jpg",
+        "image": "order-operations-admin-en-population.webp",
+        "imageAr": "order-operations-admin-ar-population.webp",
         "focus": [
           0,
           0,
@@ -8756,8 +8756,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-admin-en-cancellations.jpg",
-        "imageAr": "order-operations-admin-ar-cancellations.jpg",
+        "image": "order-operations-admin-en-cancellations.webp",
+        "imageAr": "order-operations-admin-ar-cancellations.webp",
         "focus": [
           0,
           0,
@@ -8781,8 +8781,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-admin-en-dispatch.jpg",
-        "imageAr": "order-operations-admin-ar-dispatch.jpg",
+        "image": "order-operations-admin-en-dispatch.webp",
+        "imageAr": "order-operations-admin-ar-dispatch.webp",
         "focus": [
           0,
           0,
@@ -8806,8 +8806,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-admin-en-commitments.jpg",
-        "imageAr": "order-operations-admin-ar-commitments.jpg",
+        "image": "order-operations-admin-en-commitments.webp",
+        "imageAr": "order-operations-admin-ar-commitments.webp",
         "focus": [
           0,
           0,
@@ -8850,8 +8850,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "order-operations-tenant-en-population.jpg",
-        "imageAr": "order-operations-tenant-ar-population.jpg",
+        "image": "order-operations-tenant-en-population.webp",
+        "imageAr": "order-operations-tenant-ar-population.webp",
         "focus": [
           0,
           0,
@@ -8875,8 +8875,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-tenant-en-cancellations.jpg",
-        "imageAr": "order-operations-tenant-ar-cancellations.jpg",
+        "image": "order-operations-tenant-en-cancellations.webp",
+        "imageAr": "order-operations-tenant-ar-cancellations.webp",
         "focus": [
           0,
           0,
@@ -8900,8 +8900,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-tenant-en-dispatch.jpg",
-        "imageAr": "order-operations-tenant-ar-dispatch.jpg",
+        "image": "order-operations-tenant-en-dispatch.webp",
+        "imageAr": "order-operations-tenant-ar-dispatch.webp",
         "focus": [
           0,
           0,
@@ -8925,8 +8925,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-tenant-en-commitments.jpg",
-        "imageAr": "order-operations-tenant-ar-commitments.jpg",
+        "image": "order-operations-tenant-en-commitments.webp",
+        "imageAr": "order-operations-tenant-ar-commitments.webp",
         "focus": [
           0,
           0,
@@ -8969,8 +8969,8 @@
     "secondsPerStep": 6,
     "steps": [
       {
-        "image": "order-operations-vendor-en-population.jpg",
-        "imageAr": "order-operations-vendor-ar-population.jpg",
+        "image": "order-operations-vendor-en-population.webp",
+        "imageAr": "order-operations-vendor-ar-population.webp",
         "focus": [
           0,
           0,
@@ -8994,8 +8994,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-vendor-en-cancellations.jpg",
-        "imageAr": "order-operations-vendor-ar-cancellations.jpg",
+        "image": "order-operations-vendor-en-cancellations.webp",
+        "imageAr": "order-operations-vendor-ar-cancellations.webp",
         "focus": [
           0,
           0,
@@ -9019,8 +9019,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-vendor-en-dispatch.jpg",
-        "imageAr": "order-operations-vendor-ar-dispatch.jpg",
+        "image": "order-operations-vendor-en-dispatch.webp",
+        "imageAr": "order-operations-vendor-ar-dispatch.webp",
         "focus": [
           0,
           0,
@@ -9044,8 +9044,8 @@
         "guide": "features/order-operations"
       },
       {
-        "image": "order-operations-vendor-en-commitments.jpg",
-        "imageAr": "order-operations-vendor-ar-commitments.jpg",
+        "image": "order-operations-vendor-en-commitments.webp",
+        "imageAr": "order-operations-vendor-ar-commitments.webp",
         "focus": [
           0,
           0,
@@ -9088,8 +9088,8 @@
     "secondsPerStep": 8,
     "steps": [
       {
-        "image": "merchant-lifecycle-admin-scope-en.jpg",
-        "imageAr": "merchant-lifecycle-admin-scope-ar.jpg",
+        "image": "merchant-lifecycle-admin-scope-en.webp",
+        "imageAr": "merchant-lifecycle-admin-scope-ar.webp",
         "focus": [
           0,
           0,
@@ -9113,8 +9113,8 @@
         "guide": "features/merchant-lifecycle"
       },
       {
-        "image": "merchant-lifecycle-admin-activity-en.jpg",
-        "imageAr": "merchant-lifecycle-admin-activity-ar.jpg",
+        "image": "merchant-lifecycle-admin-activity-en.webp",
+        "imageAr": "merchant-lifecycle-admin-activity-ar.webp",
         "focus": [
           0,
           0,
@@ -9138,8 +9138,8 @@
         "guide": "features/merchant-lifecycle"
       },
       {
-        "image": "merchant-lifecycle-admin-coverage-en.jpg",
-        "imageAr": "merchant-lifecycle-admin-coverage-ar.jpg",
+        "image": "merchant-lifecycle-admin-coverage-en.webp",
+        "imageAr": "merchant-lifecycle-admin-coverage-ar.webp",
         "focus": [
           0,
           0,
@@ -9182,8 +9182,8 @@
     "secondsPerStep": 8,
     "steps": [
       {
-        "image": "merchant-lifecycle-tenant-scope-en.jpg",
-        "imageAr": "merchant-lifecycle-tenant-scope-ar.jpg",
+        "image": "merchant-lifecycle-tenant-scope-en.webp",
+        "imageAr": "merchant-lifecycle-tenant-scope-ar.webp",
         "focus": [
           0,
           0,
@@ -9207,8 +9207,8 @@
         "guide": "features/merchant-lifecycle"
       },
       {
-        "image": "merchant-lifecycle-tenant-activity-en.jpg",
-        "imageAr": "merchant-lifecycle-tenant-activity-ar.jpg",
+        "image": "merchant-lifecycle-tenant-activity-en.webp",
+        "imageAr": "merchant-lifecycle-tenant-activity-ar.webp",
         "focus": [
           0,
           0,
@@ -9232,8 +9232,8 @@
         "guide": "features/merchant-lifecycle"
       },
       {
-        "image": "merchant-lifecycle-tenant-coverage-en.jpg",
-        "imageAr": "merchant-lifecycle-tenant-coverage-ar.jpg",
+        "image": "merchant-lifecycle-tenant-coverage-en.webp",
+        "imageAr": "merchant-lifecycle-tenant-coverage-ar.webp",
         "focus": [
           0,
           0,
@@ -9276,8 +9276,8 @@
     "secondsPerStep": 8,
     "steps": [
       {
-        "image": "merchant-lifecycle-vendor-scope-en.jpg",
-        "imageAr": "merchant-lifecycle-vendor-scope-ar.jpg",
+        "image": "merchant-lifecycle-vendor-scope-en.webp",
+        "imageAr": "merchant-lifecycle-vendor-scope-ar.webp",
         "focus": [
           0,
           0,
@@ -9301,8 +9301,8 @@
         "guide": "features/merchant-lifecycle"
       },
       {
-        "image": "merchant-lifecycle-vendor-activity-en.jpg",
-        "imageAr": "merchant-lifecycle-vendor-activity-ar.jpg",
+        "image": "merchant-lifecycle-vendor-activity-en.webp",
+        "imageAr": "merchant-lifecycle-vendor-activity-ar.webp",
         "focus": [
           0,
           0,
@@ -9326,8 +9326,8 @@
         "guide": "features/merchant-lifecycle"
       },
       {
-        "image": "merchant-lifecycle-vendor-coverage-en.jpg",
-        "imageAr": "merchant-lifecycle-vendor-coverage-ar.jpg",
+        "image": "merchant-lifecycle-vendor-coverage-en.webp",
+        "imageAr": "merchant-lifecycle-vendor-coverage-ar.webp",
         "focus": [
           0,
           0,
@@ -9374,8 +9374,8 @@
     },
     "steps": [
       {
-        "image": "private-report-admin-scope-en.png",
-        "imageAr": "private-report-admin-scope-ar.png",
+        "image": "private-report-admin-scope-en.webp",
+        "imageAr": "private-report-admin-scope-ar.webp",
         "focus": [
           21,
           26,
@@ -9399,8 +9399,8 @@
         "guide": "features/reports"
       },
       {
-        "image": "private-report-admin-ready-en.png",
-        "imageAr": "private-report-admin-ready-ar.png",
+        "image": "private-report-admin-ready-en.webp",
+        "imageAr": "private-report-admin-ready-ar.webp",
         "focus": [
           86,
           28,
@@ -9424,8 +9424,8 @@
         "guide": "features/reports"
       },
       {
-        "image": "private-report-admin-reset-en.png",
-        "imageAr": "private-report-admin-reset-ar.png",
+        "image": "private-report-admin-reset-en.webp",
+        "imageAr": "private-report-admin-reset-ar.webp",
         "focus": [
           21,
           28,
@@ -9468,8 +9468,8 @@
     },
     "steps": [
       {
-        "image": "private-report-tenant-scope-en.png",
-        "imageAr": "private-report-tenant-scope-ar.png",
+        "image": "private-report-tenant-scope-en.webp",
+        "imageAr": "private-report-tenant-scope-ar.webp",
         "focus": [
           21,
           29,
@@ -9493,8 +9493,8 @@
         "guide": "features/reports"
       },
       {
-        "image": "private-report-tenant-ready-en.png",
-        "imageAr": "private-report-tenant-ready-ar.png",
+        "image": "private-report-tenant-ready-en.webp",
+        "imageAr": "private-report-tenant-ready-ar.webp",
         "focus": [
           30,
           45,
@@ -9518,8 +9518,8 @@
         "guide": "features/reports"
       },
       {
-        "image": "private-report-tenant-reset-en.png",
-        "imageAr": "private-report-tenant-reset-ar.png",
+        "image": "private-report-tenant-reset-en.webp",
+        "imageAr": "private-report-tenant-reset-ar.webp",
         "focus": [
           21,
           29,
@@ -9562,8 +9562,8 @@
     },
     "steps": [
       {
-        "image": "private-report-vendor-scope-en.png",
-        "imageAr": "private-report-vendor-scope-ar.png",
+        "image": "private-report-vendor-scope-en.webp",
+        "imageAr": "private-report-vendor-scope-ar.webp",
         "focus": [
           21,
           26,
@@ -9587,8 +9587,8 @@
         "guide": "features/reports"
       },
       {
-        "image": "private-report-vendor-ready-en.png",
-        "imageAr": "private-report-vendor-ready-ar.png",
+        "image": "private-report-vendor-ready-en.webp",
+        "imageAr": "private-report-vendor-ready-ar.webp",
         "focus": [
           29,
           39,
@@ -9612,8 +9612,8 @@
         "guide": "features/reports"
       },
       {
-        "image": "private-report-vendor-reset-en.png",
-        "imageAr": "private-report-vendor-reset-ar.png",
+        "image": "private-report-vendor-reset-en.webp",
+        "imageAr": "private-report-vendor-reset-ar.webp",
         "focus": [
           21,
           26,

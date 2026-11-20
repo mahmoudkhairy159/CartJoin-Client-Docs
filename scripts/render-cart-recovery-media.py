@@ -48,9 +48,9 @@ manifest = {
 for locale, originals in raw_frames.items():
     frames = []
     for original in originals:
-        destination = SHOTS / original.with_suffix('.png').name
+        destination = SHOTS / original.with_suffix('.webp').name
         with Image.open(original) as capture:
-            capture.save(destination, format='PNG')
+            capture.save(destination, format='WEBP', quality=86, method=4)
         frames.append(destination)
     output = VIDEOS / f'tenant-cart-recovery-{locale}-tour.mp4'
     command = [FFMPEG, '-v', 'error']

@@ -47,7 +47,7 @@ for name,tour in DATA.items():
         manifest.write_text('\n'.join("file '"+str(p.resolve()).replace('\\','/')+"'" for p in clips),encoding='utf-8')
         output=OUT/f'{media_name}-tour.mp4'
         run(['-f','concat','-safe','0','-i',str(manifest),'-c','copy','-movflags','+faststart',str(output)])
-        run(['-i',str(output),'-frames:v','1','-q:v','3',str(OUT/f'{media_name}-poster.jpg')])
+        run(['-i',str(output),'-frames:v','1','-c:v','libwebp','-quality','86',str(OUT/f'{media_name}-poster.webp')])
         print(f'{media_name}: {len(clips)*seconds}s, {output.stat().st_size//1024} KiB',flush=True)
     for lang in ['en','ar']:
         cues=['WEBVTT','']
