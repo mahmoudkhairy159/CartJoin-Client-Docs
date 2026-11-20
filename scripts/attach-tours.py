@@ -12,13 +12,13 @@ data['products']={
  'intro':{'en':'A tenant catalog example: find the offer, inspect its identity, then review its variants','ar':'مثال من كتالوج المتجر: ابحث عن العرض وافحص هويته ثم راجع المتغيرات'},
  'video':True,
  'steps':[
-  {'image':'tenant-products.jpg','focus':[32,33,42,8],'title':{'en':'Search names, SKUs and slugs','ar':'ابحث بالاسم أو رمز الصنف أو الرابط'},'body':{'en':'Use the list search and filters to find the right product. Open its name to inspect the record before editing.','ar':'استخدم البحث والمرشحات لتحديد المنتج الصحيح. افتح اسمه لمراجعة السجل قبل التعديل.'},'guide':'features/products'},
-  {'image':'tenant-product-detail.jpg','focus':[21,20,75,16],'title':{'en':'Check the product and its state','ar':'تحقق من المنتج وحالته'},'body':{'en':'The product name, type and status identify the offer. Edit is available only with the required permission. Saving a record is different from publishing it.','ar':'يحدد الاسم والنوع والحالة هوية العرض. يتطلب التعديل صلاحية مناسبة. حفظ السجل يختلف عن نشره.'},'guide':'features/products'},
-  {'image':'tenant-product-detail.jpg','focus':[21,39,74,8],'title':{'en':'Review variants and related content','ar':'راجع المتغيرات والمحتوى المرتبط'},'body':{'en':'Variants, images and categories have separate tabs. A cart buys a variant, so review the actual option, its price and stock rather than just the parent product.','ar':'للمتغيرات والصور والتصنيفات تبويبات مستقلة. تشتري السلة متغيراً، لذلك راجع الخيار الفعلي وسعره ومخزونه لا المنتج الأب فقط.'},'guide':'features/attributes'}
+  {'image':'tenant-products.webp','focus':[32,33,42,8],'title':{'en':'Search names, SKUs and slugs','ar':'ابحث بالاسم أو رمز الصنف أو الرابط'},'body':{'en':'Use the list search and filters to find the right product. Open its name to inspect the record before editing.','ar':'استخدم البحث والمرشحات لتحديد المنتج الصحيح. افتح اسمه لمراجعة السجل قبل التعديل.'},'guide':'features/products'},
+  {'image':'tenant-product-detail.webp','focus':[21,20,75,16],'title':{'en':'Check the product and its state','ar':'تحقق من المنتج وحالته'},'body':{'en':'The product name, type and status identify the offer. Edit is available only with the required permission. Saving a record is different from publishing it.','ar':'يحدد الاسم والنوع والحالة هوية العرض. يتطلب التعديل صلاحية مناسبة. حفظ السجل يختلف عن نشره.'},'guide':'features/products'},
+  {'image':'tenant-product-detail.webp','focus':[21,39,74,8],'title':{'en':'Review variants and related content','ar':'راجع المتغيرات والمحتوى المرتبط'},'body':{'en':'Variants, images and categories have separate tabs. A cart buys a variant, so review the actual option, its price and stock rather than just the parent product.','ar':'للمتغيرات والصور والتصنيفات تبويبات مستقلة. تشتري السلة متغيراً، لذلك راجع الخيار الفعلي وسعره ومخزونه لا المنتج الأب فقط.'},'guide':'features/attributes'}
  ]}
 data_path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 sizes={}
-for image_path in sorted((ROOT/'public/screenshots').glob('*.jpg')):
+for image_path in sorted((ROOT/'public/screenshots').glob('*.webp')):
  with Image.open(image_path) as image:sizes[image_path.name]={'width':image.width,'height':image.height}
 (ROOT/'content/screenshot-sizes.json').write_text(json.dumps(sizes,indent=2)+'\n',encoding='utf-8')
 
@@ -49,7 +49,7 @@ for lang in ['en','ar']:
    p.write_text(s,encoding='utf-8')
  p=base/'screenshots.mdx';s=p.read_text(encoding='utf-8')
  if '<SystemTour ' not in s:
-  for image,tour in [('admin-dashboard.jpg','admin'),('tenant-dashboard.jpg','tenant'),('vendor-dashboard.jpg','vendor'),('customer-account.jpg','customer'),('admin-orders.jpg','orders')]:
+  for image,tour in [('admin-dashboard.webp','admin'),('tenant-dashboard.webp','tenant'),('vendor-dashboard.webp','vendor'),('customer-account.webp','customer'),('admin-orders.webp','orders')]:
    s=re.sub(r'<img src="/docs/screenshots/'+re.escape(image)+r'" alt="[^"]*" />',f'<SystemTour tour="{tour}" />',s)
   s=re.sub(r'<img src="([^"]+)" alt="([^"]*)" />',r'<SystemScreenshot src="\1" alt="\2" />',s)
   heading='## تعرف على المنتج من شاشة فعلية' if ar else '## Inspect a real product'

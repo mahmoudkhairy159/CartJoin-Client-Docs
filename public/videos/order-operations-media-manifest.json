@@ -22,7 +22,7 @@
       "url": "http://localhost:4431/reports/order-operations",
       "frames": [
         {
-          "path": "public/screenshots/order-operations-admin-en-population.jpg",
+          "path": "public/screenshots/order-operations-admin-en-population.webp",
           "raw_artifact": "admin-en-population.jpg",
           "raw_sha256": "920faa760b171b07103bc016267b6f87df0a4cd18d415ebdb9a949f2fecd6a18",
           "dimensions": [
@@ -33,7 +33,7 @@
           "raw_modified_at_utc": "2026-11-19T07:15:26.806946+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-admin-en-cancellations.jpg",
+          "path": "public/screenshots/order-operations-admin-en-cancellations.webp",
           "raw_artifact": "admin-en-cancellations.jpg",
           "raw_sha256": "114ab22b3714c14ea71238503d730101fe3ddbcaede7f2fe6312e5af3e160c75",
           "dimensions": [
@@ -44,7 +44,7 @@
           "raw_modified_at_utc": "2026-11-19T07:15:54.129018+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-admin-en-dispatch.jpg",
+          "path": "public/screenshots/order-operations-admin-en-dispatch.webp",
           "raw_artifact": "admin-en-dispatch.jpg",
           "raw_sha256": "a9a3363b3f56d57cfe19cf0b9de9b3653545025330036554666a380859550a5f",
           "dimensions": [
@@ -55,7 +55,7 @@
           "raw_modified_at_utc": "2026-11-19T07:16:10.441911+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-admin-en-commitments.jpg",
+          "path": "public/screenshots/order-operations-admin-en-commitments.webp",
           "raw_artifact": "admin-en-commitments.jpg",
           "raw_sha256": "aaf0265c166adab82b5f3c799ab18d55c1c8fdcc9b5b9560ca60d541b58e5344",
           "dimensions": [
@@ -67,7 +67,7 @@
         }
       ],
       "video": "public/videos/feature-order-operations-admin-en-tour.mp4",
-      "poster": "public/videos/feature-order-operations-admin-en-poster.jpg",
+      "poster": "public/videos/feature-order-operations-admin-en-poster.webp",
       "captions": "public/videos/feature-order-operations-admin-en.vtt",
       "duration_seconds": 24.0,
       "codec": "h264",
@@ -98,7 +98,7 @@
       "url": "http://localhost:4431/reports/order-operations",
       "frames": [
         {
-          "path": "public/screenshots/order-operations-admin-ar-population.jpg",
+          "path": "public/screenshots/order-operations-admin-ar-population.webp",
           "raw_artifact": "admin-ar-population.jpg",
           "raw_sha256": "e6aa41facb147c4dab2c551c5d6b644cae2de210b41a4030d0a0417ff230bafc",
           "dimensions": [
@@ -109,7 +109,7 @@
           "raw_modified_at_utc": "2026-11-19T07:17:32.946130+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-admin-ar-cancellations.jpg",
+          "path": "public/screenshots/order-operations-admin-ar-cancellations.webp",
           "raw_artifact": "admin-ar-cancellations.jpg",
           "raw_sha256": "9b5dec194604573a198c1261153f231d2c13046df9dea683865d2e27ddb21f9d",
           "dimensions": [
@@ -120,7 +120,7 @@
           "raw_modified_at_utc": "2026-11-19T07:17:19.692637+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-admin-ar-dispatch.jpg",
+          "path": "public/screenshots/order-operations-admin-ar-dispatch.webp",
           "raw_artifact": "admin-ar-dispatch.jpg",
           "raw_sha256": "f182dda715fc0ef01a8a4820b2e3620cdf25117d90b11dd16eecb7fe8445c8b1",
           "dimensions": [
@@ -131,7 +131,7 @@
           "raw_modified_at_utc": "2026-11-19T07:17:04.131642+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-admin-ar-commitments.jpg",
+          "path": "public/screenshots/order-operations-admin-ar-commitments.webp",
           "raw_artifact": "admin-ar-commitments.jpg",
           "raw_sha256": "4f0cd4a526aba947e49da1bc6b74c5a356ebe4204020ae6250a59ef3ea05abe7",
           "dimensions": [
@@ -143,7 +143,7 @@
         }
       ],
       "video": "public/videos/feature-order-operations-admin-ar-tour.mp4",
-      "poster": "public/videos/feature-order-operations-admin-ar-poster.jpg",
+      "poster": "public/videos/feature-order-operations-admin-ar-poster.webp",
       "captions": "public/videos/feature-order-operations-admin-ar.vtt",
       "duration_seconds": 24.0,
       "codec": "h264",
@@ -174,7 +174,7 @@
       "url": "http://localhost:4432/reports/order-operations",
       "frames": [
         {
-          "path": "public/screenshots/order-operations-tenant-en-population.jpg",
+          "path": "public/screenshots/order-operations-tenant-en-population.webp",
           "raw_artifact": "tenant-en-population.jpg",
           "raw_sha256": "a348f7ae3b57ec2a87ff0fccda631486199a399805a7ae2768ad25e003d6fb3d",
           "dimensions": [
@@ -185,7 +185,7 @@
           "raw_modified_at_utc": "2026-11-19T07:18:31.809790+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-tenant-en-cancellations.jpg",
+          "path": "public/screenshots/order-operations-tenant-en-cancellations.webp",
           "raw_artifact": "tenant-en-cancellations.jpg",
           "raw_sha256": "55391e1800482686f25ed6788aa3ed3574236fa821ddeb568caf77ac8b925aa3",
           "dimensions": [
@@ -196,7 +196,7 @@
           "raw_modified_at_utc": "2026-11-19T07:18:38.868185+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-tenant-en-dispatch.jpg",
+          "path": "public/screenshots/order-operations-tenant-en-dispatch.webp",
           "raw_artifact": "tenant-en-dispatch.jpg",
           "raw_sha256": "4a17eebf7fbf1831e4fb91c23b23eac402e618e1099dc1b782b8dffddcbc6efe",
           "dimensions": [
@@ -207,7 +207,7 @@
           "raw_modified_at_utc": "2026-11-19T07:18:45.293334+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-tenant-en-commitments.jpg",
+          "path": "public/screenshots/order-operations-tenant-en-commitments.webp",
           "raw_artifact": "tenant-en-commitments.jpg",
           "raw_sha256": "c876f05b5bcb1ea8f995993e1e3d117010d0c27091e0c2a26b230e29785f7398",
           "dimensions": [
@@ -219,7 +219,7 @@
         }
       ],
       "video": "public/videos/feature-order-operations-tenant-en-tour.mp4",
-      "poster": "public/videos/feature-order-operations-tenant-en-poster.jpg",
+      "poster": "public/videos/feature-order-operations-tenant-en-poster.webp",
       "captions": "public/videos/feature-order-operations-tenant-en.vtt",
       "duration_seconds": 24.0,
       "codec": "h264",
@@ -250,7 +250,7 @@
       "url": "http://localhost:4432/reports/order-operations",
       "frames": [
         {
-          "path": "public/screenshots/order-operations-tenant-ar-population.jpg",
+          "path": "public/screenshots/order-operations-tenant-ar-population.webp",
           "raw_artifact": "tenant-ar-population.jpg",
           "raw_sha256": "adae3929a28a219245c22dbc4f98a0a81f7ade668f029bd09b7763961fe4d11d",
           "dimensions": [
@@ -261,7 +261,7 @@
           "raw_modified_at_utc": "2026-11-19T07:19:38.248631+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-tenant-ar-cancellations.jpg",
+          "path": "public/screenshots/order-operations-tenant-ar-cancellations.webp",
           "raw_artifact": "tenant-ar-cancellations.jpg",
           "raw_sha256": "236821ab206417a2850f2ff892b0adcd52fccd7c9ccdc70d44d70d9292a49a17",
           "dimensions": [
@@ -272,7 +272,7 @@
           "raw_modified_at_utc": "2026-11-19T07:19:28.963727+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-tenant-ar-dispatch.jpg",
+          "path": "public/screenshots/order-operations-tenant-ar-dispatch.webp",
           "raw_artifact": "tenant-ar-dispatch.jpg",
           "raw_sha256": "973f8fea45dbf1ba1ed026a9dd5c67bab51634dcf8dd8403d8b4ff86a42b3781",
           "dimensions": [
@@ -283,7 +283,7 @@
           "raw_modified_at_utc": "2026-11-19T07:19:22.430890+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-tenant-ar-commitments.jpg",
+          "path": "public/screenshots/order-operations-tenant-ar-commitments.webp",
           "raw_artifact": "tenant-ar-commitments.jpg",
           "raw_sha256": "044b124816d7d76cd0bd9334b93292504af5cd1b5fa181fe29a3dc8c84f41145",
           "dimensions": [
@@ -295,7 +295,7 @@
         }
       ],
       "video": "public/videos/feature-order-operations-tenant-ar-tour.mp4",
-      "poster": "public/videos/feature-order-operations-tenant-ar-poster.jpg",
+      "poster": "public/videos/feature-order-operations-tenant-ar-poster.webp",
       "captions": "public/videos/feature-order-operations-tenant-ar.vtt",
       "duration_seconds": 24.0,
       "codec": "h264",
@@ -326,7 +326,7 @@
       "url": "http://localhost:4433/reports/order-operations",
       "frames": [
         {
-          "path": "public/screenshots/order-operations-vendor-en-population.jpg",
+          "path": "public/screenshots/order-operations-vendor-en-population.webp",
           "raw_artifact": "vendor-en-population.jpg",
           "raw_sha256": "afd2f5a14c24f2989f4a8a873458743aff1b4062eefc040d32be39fc026c449a",
           "dimensions": [
@@ -337,7 +337,7 @@
           "raw_modified_at_utc": "2026-11-19T07:21:43.503253+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-vendor-en-cancellations.jpg",
+          "path": "public/screenshots/order-operations-vendor-en-cancellations.webp",
           "raw_artifact": "vendor-en-cancellations.jpg",
           "raw_sha256": "c3e137d44f3cdf151f010b8b54d9844dcc0165edf5c8a0b91426207ae4785066",
           "dimensions": [
@@ -348,7 +348,7 @@
           "raw_modified_at_utc": "2026-11-19T07:21:51.966497+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-vendor-en-dispatch.jpg",
+          "path": "public/screenshots/order-operations-vendor-en-dispatch.webp",
           "raw_artifact": "vendor-en-dispatch.jpg",
           "raw_sha256": "5fe55a2395eaa73800e8a67f5ef5b8b309d01d5188bf5934450ca8539204714b",
           "dimensions": [
@@ -359,7 +359,7 @@
           "raw_modified_at_utc": "2026-11-19T07:21:59.533792+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-vendor-en-commitments.jpg",
+          "path": "public/screenshots/order-operations-vendor-en-commitments.webp",
           "raw_artifact": "vendor-en-commitments.jpg",
           "raw_sha256": "2e6159cb37b889eef8209f9cc1bdf2d61b949a3800ab3c5d668f32ad68537372",
           "dimensions": [
@@ -371,7 +371,7 @@
         }
       ],
       "video": "public/videos/feature-order-operations-vendor-en-tour.mp4",
-      "poster": "public/videos/feature-order-operations-vendor-en-poster.jpg",
+      "poster": "public/videos/feature-order-operations-vendor-en-poster.webp",
       "captions": "public/videos/feature-order-operations-vendor-en.vtt",
       "duration_seconds": 24.0,
       "codec": "h264",
@@ -402,7 +402,7 @@
       "url": "http://localhost:4433/reports/order-operations",
       "frames": [
         {
-          "path": "public/screenshots/order-operations-vendor-ar-population.jpg",
+          "path": "public/screenshots/order-operations-vendor-ar-population.webp",
           "raw_artifact": "vendor-ar-population.jpg",
           "raw_sha256": "5869565c859a5427a541a8cf8f785bbd9bd0d59aae245c8f00b367da7200996d",
           "dimensions": [
@@ -413,7 +413,7 @@
           "raw_modified_at_utc": "2026-11-19T07:22:51.192650+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-vendor-ar-cancellations.jpg",
+          "path": "public/screenshots/order-operations-vendor-ar-cancellations.webp",
           "raw_artifact": "vendor-ar-cancellations.jpg",
           "raw_sha256": "1be4100f08cb001da97528dde9980bd5038bf256e125dfc445b2d77c3e2afea1",
           "dimensions": [
@@ -424,7 +424,7 @@
           "raw_modified_at_utc": "2026-11-19T07:22:42.715191+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-vendor-ar-dispatch.jpg",
+          "path": "public/screenshots/order-operations-vendor-ar-dispatch.webp",
           "raw_artifact": "vendor-ar-dispatch.jpg",
           "raw_sha256": "8a70ad9e584af661291cc77e8de5c738f1ef2033dc5a8f638bf1d7bb8a96ccfb",
           "dimensions": [
@@ -435,7 +435,7 @@
           "raw_modified_at_utc": "2026-11-19T07:22:35.285685+00:00"
         },
         {
-          "path": "public/screenshots/order-operations-vendor-ar-commitments.jpg",
+          "path": "public/screenshots/order-operations-vendor-ar-commitments.webp",
           "raw_artifact": "vendor-ar-commitments.jpg",
           "raw_sha256": "5d8f56d3291f08290e9eef8a4df8b0c24cc521cf02005152ac10a05ad51e2b24",
           "dimensions": [
@@ -447,7 +447,7 @@
         }
       ],
       "video": "public/videos/feature-order-operations-vendor-ar-tour.mp4",
-      "poster": "public/videos/feature-order-operations-vendor-ar-poster.jpg",
+      "poster": "public/videos/feature-order-operations-vendor-ar-poster.webp",
       "captions": "public/videos/feature-order-operations-vendor-ar.vtt",
       "duration_seconds": 24.0,
       "codec": "h264",

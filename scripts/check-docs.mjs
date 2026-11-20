@@ -56,7 +56,7 @@ for(const [id,tour] of Object.entries(tours)){
    if(!pages.has(`${lang}/${step.guide}`))errors.push(`Broken contextual tour link ${id}: ${step.guide}`);
   }
  }
- if(tour.video)for(const file of [...(tour.localizedVideo?['en','ar'].flatMap(lang=>[`${id}-${lang}-tour.mp4`,`${id}-${lang}-poster.jpg`]):[`${id}-tour.mp4`,`${id}-poster.jpg`]),`${id}-en.vtt`,`${id}-ar.vtt`]){
+ if(tour.video)for(const file of [...(tour.localizedVideo?['en','ar'].flatMap(lang=>[`${id}-${lang}-tour.mp4`,`${id}-${lang}-poster.webp`]):[`${id}-tour.mp4`,`${id}-poster.webp`]),`${id}-en.vtt`,`${id}-ar.vtt`]){
   const media=path.join(root,'public/videos',file);
   if(!fs.existsSync(media)||fs.statSync(media).size===0)errors.push(`Missing tour media ${file}`);
   if(file.endsWith('.vtt')&&fs.existsSync(media)){

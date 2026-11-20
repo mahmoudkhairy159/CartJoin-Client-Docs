@@ -4,7 +4,7 @@ English and Arabic user documentation for the CartJoin multitenant marketplace. 
 
 Built with **Next.js, React, Fumadocs, MDX and Mermaid**, with right-to-left support for Arabic.
 
-![CartJoin documentation preview](evidence/template-homepage.jpg)
+![CartJoin documentation preview](evidence/template-homepage.webp)
 
 ## Included
 

@@ -1,14 +1,15 @@
-// A static reading skeleton: no spinner, no animation, the same in both themes.
+import { AppSkeleton } from '@/components/app-skeleton';
+
 export default function Loading() {
   return (
-    <div role="status" className="guide-skeleton">
-      <span className="guide-skeleton-title" aria-hidden />
-      <span className="guide-skeleton-line" aria-hidden />
-      <span className="guide-skeleton-line" aria-hidden />
-      <span className="guide-skeleton-line is-short" aria-hidden />
-      <span className="sr-only">
-        Loading page · <bdi lang="ar" dir="rtl">جارٍ تحميل الصفحة</bdi>
-      </span>
-    </div>
+    <main className="guide-home" aria-busy="true">
+      <div className="guide-hero">
+        <div className="guide-hero-skeleton">
+          <AppSkeleton kind="text" repeat={4} label="Loading page · جارٍ تحميل الصفحة" />
+          <AppSkeleton kind="form" columns={2} />
+        </div>
+        <AppSkeleton kind="card" className="guide-home-preview-skeleton" />
+      </div>
+    </main>
   );
 }

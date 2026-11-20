@@ -51,9 +51,9 @@ manifest = {
 for locale, originals in raw_frames.items():
     frames = []
     for original in originals:
-        frame = SHOTS / original.with_suffix('.png').name
+        frame = SHOTS / original.with_suffix('.webp').name
         with Image.open(original) as capture:
-            capture.save(frame, format='PNG')
+            capture.save(frame, format='WEBP', quality=86, method=4)
         frames.append(frame)
     output = VIDEOS / f'tenant-review-reminders-{locale}-tour.mp4'
     command = [FFMPEG, '-v', 'error']

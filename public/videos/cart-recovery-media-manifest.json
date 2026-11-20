@@ -14,7 +14,7 @@
       "url": "http://127.0.0.1:4318/cart-recovery",
       "frames": [
         {
-          "path": "public/screenshots/tenant-cart-recovery-en-checks.png",
+          "path": "public/screenshots/tenant-cart-recovery-en-checks.webp",
           "raw_artifact": "tenant-cart-recovery-en-checks.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:54:13.842452+00:00",
           "dimensions": [
@@ -23,7 +23,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-cart-recovery-en-outcomes.png",
+          "path": "public/screenshots/tenant-cart-recovery-en-outcomes.webp",
           "raw_artifact": "tenant-cart-recovery-en-outcomes.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:54:22.918277+00:00",
           "dimensions": [
@@ -32,7 +32,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-cart-recovery-en-reason.png",
+          "path": "public/screenshots/tenant-cart-recovery-en-reason.webp",
           "raw_artifact": "tenant-cart-recovery-en-reason.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:54:32.819508+00:00",
           "dimensions": [
@@ -41,7 +41,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-cart-recovery-en-confirm.png",
+          "path": "public/screenshots/tenant-cart-recovery-en-confirm.webp",
           "raw_artifact": "tenant-cart-recovery-en-confirm.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:54:39.250108+00:00",
           "dimensions": [
@@ -52,7 +52,7 @@
       ],
       "video": "public/videos/tenant-cart-recovery-en-tour.mp4",
       "captions": "public/videos/tenant-cart-recovery-en.vtt",
-      "poster": "public/screenshots/tenant-cart-recovery-en-checks.png",
+      "poster": "public/screenshots/tenant-cart-recovery-en-checks.webp",
       "codec": "h264",
       "video_dimensions": [
         1266,
@@ -74,7 +74,7 @@
       "url": "http://127.0.0.1:4318/cart-recovery",
       "frames": [
         {
-          "path": "public/screenshots/tenant-cart-recovery-ar-checks.png",
+          "path": "public/screenshots/tenant-cart-recovery-ar-checks.webp",
           "raw_artifact": "tenant-cart-recovery-ar-checks.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:53:02.363548+00:00",
           "dimensions": [
@@ -83,7 +83,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-cart-recovery-ar-outcomes.png",
+          "path": "public/screenshots/tenant-cart-recovery-ar-outcomes.webp",
           "raw_artifact": "tenant-cart-recovery-ar-outcomes.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:53:10.673019+00:00",
           "dimensions": [
@@ -92,7 +92,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-cart-recovery-ar-reason.png",
+          "path": "public/screenshots/tenant-cart-recovery-ar-reason.webp",
           "raw_artifact": "tenant-cart-recovery-ar-reason.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:53:25.016746+00:00",
           "dimensions": [
@@ -101,7 +101,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-cart-recovery-ar-confirm.png",
+          "path": "public/screenshots/tenant-cart-recovery-ar-confirm.webp",
           "raw_artifact": "tenant-cart-recovery-ar-confirm.jpg",
           "raw_artifact_updated_at": "2026-11-18T22:53:45.046723+00:00",
           "dimensions": [
@@ -112,7 +112,7 @@
       ],
       "video": "public/videos/tenant-cart-recovery-ar-tour.mp4",
       "captions": "public/videos/tenant-cart-recovery-ar.vtt",
-      "poster": "public/screenshots/tenant-cart-recovery-ar-checks.png",
+      "poster": "public/screenshots/tenant-cart-recovery-ar-checks.webp",
       "codec": "h264",
       "video_dimensions": [
         1266,

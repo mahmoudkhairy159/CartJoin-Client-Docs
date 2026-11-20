@@ -1,7 +1,8 @@
 'use client';
 
-import { use, useId, useSyncExternalStore } from 'react';
+import { Suspense, use, useDeferredValue, useId, useSyncExternalStore } from 'react';
 import { useTheme } from 'next-themes';
+import { AppSkeleton } from '@/components/app-skeleton';
 
 export function Mermaid({ chart }: { chart: string }) {
   const isClient = useSyncExternalStore(
@@ -10,8 +11,14 @@ export function Mermaid({ chart }: { chart: string }) {
     () => false,
   );
 
-  if (!isClient) return;
-  return <MermaidContent chart={chart} />;
+  const placeholder = <AppSkeleton kind="chart" label="Loading diagram · جارٍ تحميل الرسم" />;
+  return (
+    <div className="guide-mermaid-frame">
+      {isClient
+        ? <Suspense fallback={placeholder}><MermaidContent chart={chart} /></Suspense>
+        : placeholder}
+    </div>
+  );
 }
 
 const cache = new Map<string, Promise<unknown>>();
@@ -70,6 +77,7 @@ function cachePromise<T>(key: string, setPromise: () => Promise<T>): Promise<T> 
 function MermaidContent({ chart }: { chart: string }) {
   const id = useId();
   const { resolvedTheme } = useTheme();
+  const renderedTheme = useDeferredValue(resolvedTheme);
   const { default: mermaid } = use(cachePromise('mermaid', () => import('mermaid')));
 
   mermaid.initialize({
@@ -84,7 +92,7 @@ function MermaidContent({ chart }: { chart: string }) {
 
   // A diagram that does not parse must not take the whole page down with it.
   const result = use(
-    cachePromise(`${chart}-${resolvedTheme}`, () => {
+    cachePromise(`${chart}-${renderedTheme}`, () => {
       return mermaid.render(id, chart.replaceAll('\\n', '\n')).catch((error: unknown) => {
         console.error('Mermaid diagram failed to render', error);
         return null;

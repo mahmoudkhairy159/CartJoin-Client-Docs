@@ -16,7 +16,7 @@
       "url": "http://127.0.0.1:4319/review-reminders",
       "frames": [
         {
-          "path": "public/screenshots/tenant-review-reminders-en-checks.png",
+          "path": "public/screenshots/tenant-review-reminders-en-checks.webp",
           "raw_artifact": "tenant-review-reminders-en-checks.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:48:24.920444+00:00",
           "dimensions": [
@@ -25,7 +25,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-review-reminders-en-outcomes.png",
+          "path": "public/screenshots/tenant-review-reminders-en-outcomes.webp",
           "raw_artifact": "tenant-review-reminders-en-outcomes.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:45:59.792945+00:00",
           "dimensions": [
@@ -34,7 +34,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-review-reminders-en-history.png",
+          "path": "public/screenshots/tenant-review-reminders-en-history.webp",
           "raw_artifact": "tenant-review-reminders-en-history.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:46:26.118318+00:00",
           "dimensions": [
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-review-reminders-en-confirm.png",
+          "path": "public/screenshots/tenant-review-reminders-en-confirm.webp",
           "raw_artifact": "tenant-review-reminders-en-confirm.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:46:32.416651+00:00",
           "dimensions": [
@@ -54,7 +54,7 @@
       ],
       "video": "public/videos/tenant-review-reminders-en-tour.mp4",
       "captions": "public/videos/tenant-review-reminders-en.vtt",
-      "poster": "public/screenshots/tenant-review-reminders-en-checks.png",
+      "poster": "public/screenshots/tenant-review-reminders-en-checks.webp",
       "codec": "h264",
       "video_dimensions": [
         1266,
@@ -76,7 +76,7 @@
       "url": "http://127.0.0.1:4319/review-reminders",
       "frames": [
         {
-          "path": "public/screenshots/tenant-review-reminders-ar-checks.png",
+          "path": "public/screenshots/tenant-review-reminders-ar-checks.webp",
           "raw_artifact": "tenant-review-reminders-ar-checks.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:47:28.459333+00:00",
           "dimensions": [
@@ -85,7 +85,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-review-reminders-ar-outcomes.png",
+          "path": "public/screenshots/tenant-review-reminders-ar-outcomes.webp",
           "raw_artifact": "tenant-review-reminders-ar-outcomes.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:47:42.067322+00:00",
           "dimensions": [
@@ -94,7 +94,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-review-reminders-ar-history.png",
+          "path": "public/screenshots/tenant-review-reminders-ar-history.webp",
           "raw_artifact": "tenant-review-reminders-ar-history.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:47:57.661549+00:00",
           "dimensions": [
@@ -103,7 +103,7 @@
           ]
         },
         {
-          "path": "public/screenshots/tenant-review-reminders-ar-confirm.png",
+          "path": "public/screenshots/tenant-review-reminders-ar-confirm.webp",
           "raw_artifact": "tenant-review-reminders-ar-confirm.jpg",
           "raw_artifact_updated_at": "2026-11-18T23:48:05.453965+00:00",
           "dimensions": [
@@ -114,7 +114,7 @@
       ],
       "video": "public/videos/tenant-review-reminders-ar-tour.mp4",
       "captions": "public/videos/tenant-review-reminders-ar.vtt",
-      "poster": "public/screenshots/tenant-review-reminders-ar-checks.png",
+      "poster": "public/screenshots/tenant-review-reminders-ar-checks.webp",
       "codec": "h264",
       "video_dimensions": [
         1266,

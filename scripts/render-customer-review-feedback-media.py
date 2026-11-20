@@ -65,11 +65,11 @@ origin = args.preview_origin.rstrip('/')
 for locale, originals in raw_frames.items():
     frames, frame_records = [], []
     for original, chapter in zip(originals, CHAPTERS):
-        frame = SHOTS / original.with_suffix('.png').name
+        frame = SHOTS / original.with_suffix('.webp').name
         with Image.open(original) as capture:
             capture.load()
             original_pixels = (capture.mode, capture.size, capture.tobytes())
-            capture.save(frame, format='PNG')
+            capture.save(frame, format='WEBP', quality=86, method=4)
         with Image.open(frame) as saved:
             if (saved.mode, saved.size, saved.tobytes()) != original_pixels:
                 raise ValueError(f'PNG pixels differ from reviewed capture: {frame}')

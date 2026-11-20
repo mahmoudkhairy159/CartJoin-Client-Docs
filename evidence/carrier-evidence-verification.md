@@ -31,7 +31,7 @@ They are teaching walkthroughs, not live screen recordings.
 - Production build passed. Structural checks passed for 236 pages, 32 diagram
   blocks and 87 tours. Rendered-route check returned 236 pages and zero failures.
 
-Browser proof: `evidence/carrier-evidence-guide-ar.jpg`.
+Browser proof: `evidence/carrier-evidence-guide-ar.webp`.
 
 ## Language-switch regression
 

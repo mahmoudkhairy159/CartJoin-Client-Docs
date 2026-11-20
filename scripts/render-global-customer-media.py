@@ -33,7 +33,7 @@ manifest = {
     'entries': [],
 }
 # Validate every input before writing any output; never silently substitute a frame.
-all_frames = {locale: [SHOTS / f'global-customer-{locale}-{key}.png' for key, _, _ in CHAPTERS] for locale in ('en', 'ar')}
+all_frames = {locale: [SHOTS / f'global-customer-{locale}-{key}.webp' for key, _, _ in CHAPTERS] for locale in ('en', 'ar')}
 for frames in all_frames.values():
     for frame in frames:
         if not frame.is_file():

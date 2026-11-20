@@ -82,7 +82,7 @@ for key, guide in GUIDES.items():
     if key not in selected:
         continue
     for locale in ('en', 'ar'):
-        frames = [SHOTS / f'{key}-{locale}{"-"+suffix if suffix else ""}.png' for suffix in guide['suffixes']]
+        frames = [SHOTS / f'{key}-{locale}{"-"+suffix if suffix else ""}.webp' for suffix in guide['suffixes']]
         for path in frames:
             if not path.is_file():
                 raise FileNotFoundError(path)
