@@ -37,7 +37,7 @@ Choose the country first, then its state and city. Saved addresses resolve their
 
 ## Data flow and outcome
 
-Validate cart → lock and group lines → reserve stock → snapshot orders → issue invoice → clear cart in the transaction → initiate payment after placement. A payment redirect alone does not prove success. If checkout issued an invoice but payment could not start, use **Continue to payment** from confirmation or from the invoice in your account.
+Validate cart → lock and group lines → reserve stock → snapshot orders → create a draft invoice without a legal number → clear cart in the transaction → initiate payment after placement. The draft is issued with its number at the first successful payment, at a zero-total checkout, or at manual approval for COD and bank transfer. A payment redirect alone does not prove success: after the gateway you return to a payment-return page that refreshes the status automatically. If checkout created the invoice but payment could not start, use **Continue to payment** from confirmation or from the invoice in your account.
 
 ## When something goes wrong
 

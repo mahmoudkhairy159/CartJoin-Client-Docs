@@ -15,7 +15,7 @@ In the Admin Dashboard, open Loyalty Overview to review outstanding, reserved, a
 
 ## Restrictions and decisions
 
-Points are not a wallet cash balance. Preview must match the current policy before applying. Reserved points are not freely available a second time. Payment settlement and delivery together determine earning. Dispatch, cancellation and refunds can consume, release or adjust points.
+Points are not a wallet cash balance. The earn rate shown to shoppers comes from the tenant's loyalty program, not a fixed rate. Preview must match the current policy before applying. Reserved points are not freely available a second time. Redeemed points work as a tender: they reduce the amount to pay but do not reduce the taxable value of the purchase. Payment settlement and delivery together determine earning. Dispatch, cancellation and refunds can consume, release or adjust points.
 
 ## When points appear after delivery
 
@@ -34,7 +34,7 @@ flowchart TD
   E --> G[Post the final store-owned points balance]
 ```
 
-**Example:** an eligible 100-unit purchase at one point per currency unit is delivered before COD collection. It earns no points yet. After collection settles, a previously completed 50-unit refund leaves 50 qualifying points. Duplicate payment or delivery updates do not grant them again. This is an explanation of the rule, not a screenshot of a real transaction.
+**Example:** at a program rate of one point per 10 currency units, an eligible 100-unit purchase earns 10 points once delivery and settlement complete. With COD, it earns no points yet. After collection settles, a previously completed 50-unit refund leaves 5 qualifying points. Duplicate payment or delivery updates do not grant them again. This is an explanation of the rule, not a screenshot of a real transaction.
 
 ## Refunds, held points and the first purchase bonus
 

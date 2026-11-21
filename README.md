@@ -133,4 +133,4 @@ Adapted from an existing Fumadocs documentation template for CartJoin. UI refine
 
 The development billing and application guides include language-matched screenshots and 24/32-second walkthroughs. Test prices are examples; no live payment or deployment is included. Regenerate source evidence with `python scripts/source-inventory.py --inventory-only` to preserve authored business guides.
 
-The customer payment guide adds language-matched local test-payment screens and two 32-second walkthroughs for pending, paid and cancelled invoices. A definitive online decline releases holds and requires a new checkout; credit notes show real references and amounts, with refund status remaining authoritative for returned funds.
+The customer payment guide adds language-matched local test-payment screens and two 32-second walkthroughs for pending, paid and cancelled invoices. A definitive online decline keeps the order open for a retry on the same invoice until the retry window closes; credit notes show real references and amounts, with refund status remaining authoritative for returned funds.

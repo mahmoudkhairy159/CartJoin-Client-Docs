@@ -13,7 +13,9 @@ Open Invoices and inspect the document, vendor orders, totals and payment status
 
 Open an issued credit note from its refund in **Account → Payments**, or browse the **Credit notes** section. The credit note links back to the owning invoice. A refund can already be visible while its note is being issued.
 
-The invoice title follows its recorded state. An issued invoice awaiting payment shows **Unpaid invoice**. A partly paid invoice shows **Partially paid invoice**. The original number remains the purchase reference. A stored PDF reflects the state recorded when the file was generated.
+Checkout first creates a **draft (pro-forma) invoice**. A draft carries no legal invoice number. It becomes an issued invoice — and receives its number — at the first successful payment, when an operator approves a COD or bank-transfer payment, or at a zero-total checkout. An abandoned draft expires without ever consuming a number, so numbering stays gapless.
+
+The invoice title follows its recorded state. An issued invoice awaiting payment shows **Unpaid invoice**. A partly paid invoice shows **Partially paid invoice**, with the amount already paid and the amount still due shown separately on the invoice. The original number remains the purchase reference. A stored PDF reflects the state recorded when the file was generated.
 
 <details className="guide-task-details">
 <summary>Detailed task walkthrough</summary>
@@ -24,7 +26,7 @@ The invoice title follows its recorded state. An issued invoice awaiting payment
 
 ## Restrictions and decisions
 
-Invoice numbering is tenant-specific and must not be manually renumbered. Vendors see only their allowed line economics with buyer information redacted in vendor invoice resources. Cancellation of one child order does not mean all sibling orders are cancelled.
+Invoice numbering is tenant-specific and must not be manually renumbered. Issued invoices are final: their numbers and financial fields cannot be edited, and corrections are made with credit notes. Vendors see only their allowed line economics with buyer information redacted in vendor invoice resources. Cancellation of one child order does not mean all sibling orders are cancelled. Cancelling one store order on an issued, unpaid invoice produces a cancellation credit note for that order's lines instead of altering the invoice.
 
 In **Invoice sequences**, review the audit timestamp in UTC before acting on an exception. The scheduled audit reports the affected ranges and opens the exact recorded document when one exists. Cancelled numbered invoices remain in their series. Older numbers that cannot be identified with confidence appear for review. A request to change the numbering reset shows its effective UTC date. It applies to future issuance, and the original issuer snapshot stays with each issued document.
 
@@ -34,7 +36,7 @@ The customer invoice can show each linked order’s vendor and purchased items, 
 
 ## Data flow and outcome
 
-Checkout → issued invoice → payment success marks paid → settled refund produces credit note. When every child order cancels, the invoice can be cancelled by the lifecycle integration.
+Checkout → draft invoice without a number → issued with its number at the first successful payment, at manual COD or bank-transfer approval, or at a zero-total checkout → payments accumulate towards paid or partially paid → settled refunds and order cancellations produce credit notes. When every child order cancels, the invoice can be cancelled by the lifecycle integration, always paired with a credit note for the full amount.
 
 ## When something goes wrong
 
