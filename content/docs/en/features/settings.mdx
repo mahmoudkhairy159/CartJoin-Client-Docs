@@ -9,11 +9,21 @@ roles: ["ADMIN", "TENANT", "VENDOR"]
 
 Use the configuration area appropriate to your dashboard: platform settings and feature flags for authorized platform staff; tenant Settings and Reference data for store operation; vendor Store configuration for the offered reference view. Review dependencies before changing a shared value.
 
+Open **Settings overview** to find the configuration screens your role can access. In a versioned editor, **Show change history** lists the changes by revision and time. Where a previous value can be restored, the editor asks for confirmation. If another operator saves first, review your pending edits before discarding them and loading the latest values.
+
 <SystemTour tour="feature-settings" compact />
 
 ## Restrictions and decisions
 
 Global geography is not tenant-owned catalog data. A flag or saved setting does not prove all associated business workflows are enabled. Configuration changes can affect later calculations but do not rewrite immutable purchase snapshots.
+
+The platform **Feature flags** page retains legacy values for reference and displays their original scope. Tenant operators with permission can manage supported customer and seller actions in **Store Settings → Feature policies**.
+
+Authorized platform staff manage buyer flash-sale rollout in **Feature releases**. Set the owner and expiry, then choose named stores and a percentage for the remaining eligible stores. A store keeps the same percentage assignment as the rollout grows. Preview the configured and effective decision for a selected store before saving. A named store takes priority over the percentage while the release is enabled and within its window.
+
+The configured policy stops new exposure when it is disabled or expires. A deployment override can force the release off or use the previous environment policy. In legacy override mode, the effective decision follows the previous policy even when the saved release is disabled or expired. View the release history to restore an earlier policy. Existing order servicing and eligible retries for held purchases remain available.
+
+Platform Settings shows whether an encrypted value is configured or needs replacing. Enter a new value to replace it. Leaving the field blank preserves the stored value. Vendor **Workspace terms** displays only masked payout references.
 
 ## Localized setting labels
 
@@ -43,9 +53,9 @@ A route proves navigation, not permission to perform every action. Related-recor
 
 | Dashboard | Frontend entry paths |
 |---|---|
-| [admin](/en/roles/admin) | `/geo`, `/configs`, `/tags`, `/colors`, `/platform-settings`, `/feature-flags` |
-| [tenant](/en/roles/tenant) | `/settings`, `/reference-data` |
-| [vendor](/en/roles/vendor) | `/store-configuration` |
+| [admin](/en/roles/admin) | `/settings-overview`, `/geo`, `/configs`, `/tags`, `/colors`, `/platform-settings`, `/feature-flags`, `/feature-releases` |
+| [tenant](/en/roles/tenant) | `/settings-overview`, `/settings`, `/feature-policies`, `/reference-data` |
+| [vendor](/en/roles/vendor) | `/settings-overview`, `/store-configuration`, `/workspace-terms` |
 
 [Exact route, field and enum source trail](/en/evidence/settings)
 {/* /SCREEN_MAP */}

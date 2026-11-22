@@ -13,11 +13,19 @@ Tenant operators open Storefront, My store and Settings for their respective con
 
 In **Storefront → Design**, choose a template and enter its English or Arabic heading and introduction. You can also edit homepage editorial copy, choose which sections appear, and set the browser icon and share image. Save and preview the draft on the storefront, then publish it. Clear a field or select **Inherit** to restore the corresponding default after publication. Catalog names and the details on invoices still come from the store's records.
 
+In **Storefront → Home layout**, arrange banners and product sections. Add localized product section headings where needed. An empty localized heading uses the shared heading, and an empty published layout uses the standard homepage. Save the draft, preview it in English or Arabic in a desktop or mobile-sized window, then publish it to show the layout to shoppers. You can open the private draft preview during maintenance. Content from public catalog requests may be unavailable in the preview while maintenance is active.
+
+**Publication history** in Design and Home layout lists earlier live revisions. Choose **Use in draft** to restore the part of a prior publication managed on that page. Review the restored draft and publish it when ready. If someone changed the draft first, review your current edits before loading the latest revision.
+
 In **Storefront → Settings**, choose where the announcement bar appears and
 set an optional expiry in your browser's time zone. Leave page selection empty
 to show it on all supported pages. Leave expiry blank to keep it running until
 you disable it. The strip hides at expiry even if the shopper leaves the page
 open.
+
+To publish separate English and Arabic announcement copy, fill in **Announcement translations** under Design. A blank translation uses the base announcement message from Storefront settings. Page targeting, expiry, and the enable switch are managed in Storefront settings.
+
+Save footer copyright and social links under **Storefront → Settings**. These values enter the design draft. Open **Storefront → Design** to preview and publish them. Publication history can restore the previous footer and links into a new draft.
 
 <SystemTour tour="feature-storefront" compact />
 
@@ -27,7 +35,7 @@ Sign in on the owning store to open your invoices, resume payment, track parcels
 
 ## Restrictions and decisions
 
-The storefront domain/context selects the tenant; visual branding does not change ownership. Maintenance mode can prevent normal shopping. Configuration labels may differ across the tenant and platform dashboards.
+The storefront domain determines the tenant. In **Storefront → Settings**, authorized tenant staff can switch on maintenance mode to pause shopping and new purchases. Existing order tracking, invoices, and payments remain available.
 
 ## Publication and currency controls
 
@@ -60,7 +68,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/storefront-settings` |
-| [tenant](/en/roles/tenant) | `/storefront` |
+| [tenant](/en/roles/tenant) | `/storefront`, `/storefront/design`, `/storefront/home` |
 | [customer](/en/roles/customer) | `/maintenance` |
 
 [Exact route, field and enum source trail](/en/evidence/storefront)
@@ -71,4 +79,4 @@ A route proves navigation, not permission to perform every action. Related-recor
 
 ## Guest checkout update
 
-Guest shopping now supports a basket before sign-in and eligible cash-on-delivery purchases, with required phone and optional email. [Read the complete guest checkout and phone-account guide](/en/workflows/guest-checkout).
+Manage guest checkout in **Storefront → Settings**. When enabled, guests can use a basket before sign-in and make eligible cash-on-delivery purchases. A phone number is required and email is optional. Guests can still access receipts for earlier purchases after you turn off guest checkout. [Read the complete guest checkout and phone-account guide](/en/workflows/guest-checkout).
