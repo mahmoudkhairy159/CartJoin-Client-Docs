@@ -34,7 +34,13 @@ Authorized platform staff open **Administration → Merchant applications**. Rev
 
 Approval atomically creates the tenant, owner role/account, package trial and requested eligible mode. A repeated approval returns the original result. A rejected application needs a new application for fresh review. A provisioned store is managed through its servicing lifecycle rather than rejected afterward.
 
-The owner secret is random and never returned in the API or guide. Supply the tenant workspace code through the approved owner handover and use the existing phone/email password recovery flow to prove contact ownership and choose a password. Approval does not falsely verify the phone.
+After the store is created, the applicant opens **Application status** and selects **Send verification code**. Enter the six-digit code sent to the application phone and choose a password. This verifies the phone and reveals the workspace code. Use that code on the merchant sign-in page, or follow the offered sign-in link when the deployment has configured one.
+
+### Provision an assisted store directly
+
+Authorized platform staff can open **Tenants → Create** and select **Set up the initial owner and package**. Choose the selling mode, select an eligible package version, then enter the initial owner's name and phone. The owner phone can differ from the store contact phone. Save once to create the staged store, owner account and subscription together.
+
+Copy the **Owner setup reference** from the confirmation and share it with the initial owner through your approved contact channel. The owner uses **Application status** with that reference and their own phone to choose a password after verification. In a sandbox, use the configured test delivery channel. If a submission times out, retry the same details before changing the form to recover the original provisioning result.
 
 <SystemScreenshot src="/docs/screenshots/admin-subscription-plans-en.webp" alt="Platform package versions: create a new version for changed terms and retire an offer without rewriting existing contracts." />
 
@@ -43,6 +49,8 @@ The owner secret is random and never returned in the API or guide. Supply the te
 Open **Subscription & setup** for the verified-state checklist: business profile, owner sign-in, currency, shipping origin, payment method, publishable catalog and package enrollment. Each item reflects stored system state; it cannot be completed merely by ticking a box.
 
 Prepare price/stock, payment and shipping eligibility, customer policies and both languages. Then test the full customer purchase, payment, fulfillment, return and refund cycle appropriate to the pilot. Manual/test providers are labeled and do not prove live integration.
+
+New stores open in setup. When the required checks pass, the owner uses **Launch store**. Launch is separate from the application approval and does not override billing or selling restrictions. The live invoice payment button appears only where online subscription billing is configured and the invoice is eligible.
 
 ## Restrictions and decisions
 
@@ -59,6 +67,7 @@ flowchart LR
   Review -->|Approved| Tenant[Atomic tenant and owner provisioning]
   Tenant --> Recover[Owner proves contact ownership]
   Recover --> Setup[Store setup and pilot checks]
+  Setup --> Launch[Owner launches store]
   Review -->|Rejected| Reason[Retained review reason]
 ```
 
