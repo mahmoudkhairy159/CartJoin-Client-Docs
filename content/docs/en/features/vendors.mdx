@@ -7,7 +7,7 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 ## How to use it
 
-Review the vendor organization and supporting documents. Open Tenant vendors to inspect the relationship and its approval state. Vendor users sign in, then choose an approved workspace and review Workspace terms before operating.
+Platform staff create the vendor organization, its staff account and its tenant relationship. Review the vendor record and supporting documents under **Vendors**. The store or platform can approve a link when the vendor is active and has an active, unblocked owner whose role can manage staff. The vendor then signs in, selects an approved workspace and reviews its terms.
 
 <SystemTour tour="feature-vendors" compact />
 
@@ -34,11 +34,11 @@ These screenshots use synthetic local expiry metadata. Some preview rows deliber
 
 ## Restrictions and decisions
 
-An active vendor organization alone does not approve every tenant relationship. Every vendor record request is limited by vendor identity and active tenant. A workspace switch must refresh the displayed data.
+Each store approves its own vendor link independently. Suspending a link removes that workspace and its offers. Disabling the vendor organization ends sign-in and catalog eligibility in every workspace. Tenant or platform staff can still service existing orders and recorded payouts using their own permissions. Vendors with tenant links or commerce history cannot be permanently deleted.
 
 ## Find the seller before choosing a product
 
-Open Vendors and search by name. Select a seller to read its description, available public addresses and product collection. A seller without a dedicated page can open a seller-filtered Shop view. You can browse these pages as a guest; saving or buying requires your customer account. The displayed directory count is not a delivery guarantee.
+Open **Vendors** and search by name. Select a seller to read its description, public office or returns addresses and eligible products. The directory lists active sellers approved for the current store when marketplace participation is enabled and the storefront is open. Guests can browse and may use [guest checkout](/en/workflows/guest-checkout) where available. Check delivery options during checkout.
 
 ## Data flow and outcome
 
@@ -73,3 +73,14 @@ A route proves navigation, not permission to perform every action. Related-recor
 {/* /SCREEN_MAP */}
 
 </details>
+
+
+### Apply to become a seller
+
+Open **Sell on CartJoin** in Platform Discovery, enter the organization and owner details, and request a verification code. Enter the emailed code and choose a password. The platform team reviews verified applications and notifies the applicant of the decision. Approval creates the vendor organization and its owner account. A store operator must approve a separate tenant link before the seller can work in that store.
+
+### Fulfillment and sponsored placements
+
+A tenant operator configures branch permissions, order acceptance windows and delivery areas on the linked seller's detail page. With no branch assignments, the store default applies. With assignments, checkout uses the highest-priority active location that can fulfill for that seller, and seller inventory adjustments require a branch that permits stocking. Windows use the configured time zone, support closing after midnight, and are enforced when quoting and placing an order. Delivery areas narrow the destinations allowed by the store. Customers can see the schedule and configured areas on the seller page.
+
+A tenant operator books one fixed-price home slot against a published offer. A different authorized staff member verifies payment received outside CartJoin. The slot is exclusive during its booked window and displays a Sponsored label while the offer remains eligible and stocked. Cancellation removes the placement from the storefront. Payment collection and any reimbursement are handled outside CartJoin.

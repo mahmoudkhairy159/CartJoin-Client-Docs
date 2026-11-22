@@ -11,17 +11,19 @@ Select an option or minimum rating on **Shop**. Counts show matching products. A
 
 ## How to use it
 
-Use Shop filters for category, brand, vendor and price. Open a product to choose a variant. Operators review Search query log for poor results and use Recommendations where exposed to review configured suggestions.
+Use Shop filters for category, brand, vendor, option, price, minimum rating and stock. Shop and the search palette use the same product keyword matching. Guests can search the approved vendors in the palette or open the vendor directory. Keywords can mix Arabic and English. Matching ignores Arabic diacritics, normalizes common letter variants and searches both translations.
+
+Tenant staff can review search queries and open **Recommendations** to list exclusions, inspect or remove pinned product pairs, and check rail performance. Creating and removing pairs requires the manage permission.
 
 <SystemTour tour="feature-search" compact />
 
 ## Restrictions and decisions
 
-Search must stay in the storefront tenant and must not expose inactive offers. Recommendation routes exist while advanced roadmap behavior remains deferred in the status matrix. An empty result may reflect filters or publication, not missing catalog data.
+Search stays within the current storefront and its eligible published offers. **In stock** uses the active inventory location selected for checkout. Ordinary browsing can show an out-of-stock offer. Recommendations recheck eligibility, exclusions and stock before showing a product. Delivery coverage is checked through the store's checkout.
 
 ## Data flow and outcome
 
-Published catalog → indexed/discovery results → product page → cart. Query logs are operational evidence, not completed purchases.
+Published catalog → tenant-scoped keyword and filter query → product page → cart. Search logs record queries and result counts.
 
 ## When something goes wrong
 
