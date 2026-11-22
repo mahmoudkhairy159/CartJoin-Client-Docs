@@ -11,6 +11,10 @@ Store staff open **Price lists** to configure the audience, currency, dates, and
 
 Platform staff can inspect price lists and their items from the Admin Dashboard. Store staff make pricing and membership changes from the Tenant Dashboard.
 
+The group detail shows whether each member is eligible for group pricing. **Group history** records membership and archive actions. Archiving a group ends its pricing eligibility and retains its price-list history.
+
+**Preview customer segment** counts active customers by paid orders, recency and optional net spend in the store currency after successful refunds. Publish rules from a group to assign matching customers automatically. Assignment is reevaluated after payments, refunds, or store relationship changes and on a regular schedule. Removing an automatically assigned customer excludes them from future evaluations. Adding them manually clears the exclusion. Only manual assignments qualify for group pricing.
+
 <SystemTour tour="feature-pricing" compact />
 
 ## Drafts, publishing, and CSV
@@ -39,11 +43,13 @@ The server recalculates cart prices. Existing orders keep their original amounts
 
 Validity dates include both the start and end date in the store’s timezone. A list awaiting audience review does not apply to shoppers until staff confirm its audience. To change a populated list’s currency, create a new list with amounts entered in that currency.
 
+For group pricing, the store checks the selected SKU and quantity before ranking lists. A matching group price normally takes precedence over a store-wide price. If several group lists match, the higher priority wins, with the newer list breaking a tie. Within that list, the highest applicable quantity threshold sets the unit price. Store-wide prices remain available for SKUs and quantities without a matching group price. Use **Preview as customer** to check a specific buyer and any applicable contract terms.
+
 ## Quantity and pricing authority
 
 Sign in and select the product option and quantity to see the unit price you qualify for. Product details show upcoming eligible quantity prices. Product cards check the price for one unit. The cart can apply a different price if the quantity changes or an offer expires. Catalog price filters and sorting use public catalog prices.
 
-If the storefront displays an estimated conversion, the cart shows the payable currency and amount. The server applies eligible cart discounts, tax, and shipping when it calculates the order total. If the price changes after you review it, review the refreshed total before placing the order.
+If the storefront displays an estimated conversion, the cart shows the payable currency and amount. Prices on an open storefront page refresh periodically. The server recalculates eligible prices, discounts, tax, and shipping at checkout. If the price changes after you review it, review the refreshed total before placing the order.
 
 Authorized store staff can inspect pricing within their own catalog. Vendor pricing access is limited to the vendor and the selected store workspace.
 

@@ -20,7 +20,9 @@ Guests cannot use account wallets, loyalty points, gift cards or coupons. Sign i
 
 The confirmation screen shows the invoice and seller orders. Save the invoice PDF. The browser's private guest access expires after seven days; do not share the browser or its shopping token. Cross-device receipt recovery by SMS is not part of this release.
 
-Choose **Save your purchases to an account** if wanted. Request a code sent to the purchase phone. Enter the six-digit code. For a new account, choose a password with at least ten characters; no email is required. If that phone already belongs to an account, leave the new-password field empty: verification attaches these purchases and leaves the existing password unchanged. Sign in with the phone and password afterward. Guest access is revoked after a successful claim. Creating an account is optional and does not change the placed order.
+Choose **Save this purchase to an account** on the confirmation screen. Request a code and enter the six digits sent to the phone used for that purchase. For a new account, choose a password with at least ten characters. Email is optional. If that phone already belongs to an account, leave the new-password field empty to keep your existing password. Sign in with your phone and password to view the saved purchase.
+
+Guest receipts that are still unclaimed stay available in that browser until the existing access expires. While signed out, open the receipt for the purchase you want to save and verify its phone number. Creating an account is optional. Your order proceeds either way.
 
 ## For tenant admins: control guest purchasing
 
@@ -46,10 +48,10 @@ flowchart LR
   D --> E[One invoice and seller orders]
   E --> F[Private receipt and optional PDF]
   E --> G[Optional phone verification]
-  G --> H[Create phone-only account or attach purchases]
+  G --> H[Create an account or save the purchase]
 ```
 
-The server calculates prices, taxes, stock reservations and seller splits. A phone typed at checkout is a contact detail, not proof of account ownership. Only a valid purchase-phone code and the owning guest access can claim purchases. Unknown, expired or wrong-store access does not reveal orders.
+The server calculates prices, taxes, stock reservations and seller splits. Saving a purchase requires access to its guest receipt and a valid code sent to the phone recorded for that purchase. Unknown, expired or wrong-store access does not reveal orders.
 
 ## Review notes
 

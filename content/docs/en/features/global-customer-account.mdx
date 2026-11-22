@@ -1,6 +1,6 @@
 ---
 title: "Your central customer account"
-description: "Create one verified shopping identity or recover its password on the CartJoin platform."
+description: "Create one verified shopping identity, set your first password or reset it on the CartJoin platform."
 roles: ["CUSTOMER"]
 ---
 
@@ -33,17 +33,39 @@ A customer first registered through the global platform has no first-registratio
 
 <SystemScreenshot src="/docs/screenshots/global-customer-en-account.webp" alt="The newly created synthetic customer is signed in, with an empty private purchase summary and no store balance displayed." />
 
-## Recover an existing account
+## Set or reset your password
 
-Choose **Forgot password?** and enter the phone or email already associated with your account. The response deliberately does not confirm whether an account exists. If an eligible account matches and delivery is available, follow the recovery instructions, enter the code and choose a new password with confirmation. After a successful reset, sign in with the new password; recovery does not issue a new platform session automatically.
+Choose **Set or reset password** and enter the phone or email associated with your account. Use the same option if a store created an account for you and you need to choose your first password. If an eligible account matches and delivery is available, use the code you receive to choose and confirm a password. When the password is saved, return to sign-in and use it there.
 
-Use your password manager with the labelled password fields. Keep your contact access up to date through the account's authorized servicing process. Merchant onboarding recovery and staff login are separate journeys.
+If an invitation already gave you a code, enter the contact that received it and select **I already have a code**. This opens the verification step and keeps the existing code usable until it expires.
+
+Use your password manager with the labelled password fields. Merchant onboarding recovery and staff login are separate journeys.
 
 <SystemScreenshot src="/docs/screenshots/global-customer-en-recovery.webp" alt="The customer recovery form accepts the phone or email of an existing account." />
 
-The acknowledgement below is deliberately neutral. It does not prove that an account exists or that delivery succeeded. Use the received instructions only if they reach your own contact; the screenshot is not a completed password reset.
+The acknowledgement is the same for eligible and unmatched requests. Wait for the code to arrive at your own phone or email before continuing. The screenshot shows the acknowledgement and the fields you complete next.
 
 <SystemScreenshot src="/docs/screenshots/global-customer-en-ack.webp" alt="A neutral recovery acknowledgement and blank reset fields do not reveal whether a customer account exists." />
+
+## Change your sign-in contact
+
+In the storefront, open **Account → Profile → Change sign-in contact**. Enter the new phone number or email and your current password. Enter the six-digit code sent to the new contact and confirm with your current password. The code expires after five minutes. The update ends your existing sessions. You can then sign in with the new contact.
+
+To close your account, confirm the action in your storefront profile with your current password. Closure ends your sessions and stops push delivery. Account and purchase records are retained. Platform support can restore a closed account through the platform admin workflow.
+
+Open **Signed-in sessions** in your storefront profile or on the platform account page to end an individual session or sign out everywhere. Older sessions may only appear after you sign in again. Signing out everywhere also ends those older sessions.
+
+Use **Download your data** in your storefront profile to request a JSON file with your account details, addresses, store relationships, orders, wallet and loyalty account balances, reviews, group memberships and consent settings. Confirm with your current password and return to check the export status. The file is available for up to 24 hours.
+
+Authorized platform staff can preview a duplicate-account case by entering two customer IDs. The case records which domains contain data that needs review and flags overlapping reviews and financial obligations. The preview does not combine accounts or move balances.
+
+In the storefront profile, use the case and surviving customer IDs supplied by support. Sign into each account separately and approve the same surviving customer ID within 15 minutes. Authorized staff can move eligible purchase and review history and saved addresses to the surviving account. Open obligations, internal tender, store restrictions and unresolved moderation can keep a case open. The surviving account keeps its own marketing preferences and group privileges.
+
+Authorized platform staff can erase the profile of a closed account after open obligations clear. The action clears credentials, saved addresses, push registrations, and other profile data, and withdraws the customer's public reviews and questions. Required financial and operational records stay under the relevant retention schedule. A profile that has been erased cannot be restored.
+
+Where enabled, choose **Link Google** in your storefront profile. Use your current password, finish verification at Google and return to confirm. Use the same verified email for both accounts.
+
+For account cleanup, the operator reviews open orders, returns, refunds, disputes, and wallet and loyalty obligations before removing any data. Keep the records needed for accounting and claims under the applicable retention schedule. Remove reusable credentials, tracking data, and other optional profile data when their purpose ends. For duplicate accounts, verify control of both accounts and resolve financial obligations through their existing ledgers. When both accounts reviewed the same product in the same store, retain the surviving account's approved verified-purchase review when available and review the other submission for any open moderation decision.
 
 ## Restrictions and decisions
 
@@ -76,4 +98,6 @@ flowchart LR
 
 ## Related journeys
 
-Use [your private purchase overview](/en/features/cross-store-purchases) to interpret your owned orders across stores, or [discover participating stores](/en/features/global-discovery). This guide describes the approved development implementation. Real message-provider activation and live deployment remain separate release work; no public test code is available in the interface.
+Message delivery requires the appropriate SMS or email provider to be configured for the channel. The local tour demonstrates the screens with synthetic data. It provides no live delivery or rollout evidence.
+
+See your [private purchase overview](/en/features/cross-store-purchases) or [discover participating stores](/en/features/global-discovery).

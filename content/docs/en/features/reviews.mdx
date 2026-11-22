@@ -9,13 +9,21 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 Customers use product feedback controls and Account → Reviews. Tenant operators use Reviews, Questions and Review settings to inspect and moderate. Vendors review or answer feedback only where their own-product permissions allow it.
 
+**Account → Reviews** shows purchases eligible for review and the current status of your submitted reviews. From this page you can edit a review, add photos or delete it. A signed-in customer can report a published review from its product page. Staff with the review rejection permission can open **Reviews → Review reports**, inspect the review and mark the report as handled. Moderation decisions are made from the review detail.
+
 <SystemTour tour="feature-reviews" compact />
 
 ## Restrictions and decisions
 
 For vendors, the review detail checks reply access for the active store and the staff role. If replies are unavailable, the review and existing replies remain readable. Switching stores refreshes reply access for that workspace.
 
+Public reviews and rating totals are available for products visible in the current storefront. Review search on the storefront and vendor dashboard matches review titles and text. Both surfaces omit customer names, contact details and account IDs from review results.
+
 Submission does not guarantee immediate publication. Ownership, purchase eligibility and moderation policy determine allowed actions. Replying to feedback does not authorize editing the original purchase.
+
+Store staff can approve pending reviews or reject pending or approved reviews with a reason. A change to published review content returns it to moderation. Images must finish processing before approval. Staff can read the action, date, actor, and any reason in **Moderation history**. If a review changed while it was open, read the refreshed version before making a new decision.
+
+Authorized platform admins can hide a review and record why. A platform-hidden review stays hidden until a platform admin restores it for moderation. The store must review and approve it before it appears again.
 
 ## After your delivery
 
@@ -23,8 +31,7 @@ A review invitation waits at least three days. Repeated delivery updates do not
 bring it forward or create another accepted invitation. Before creating it, the
 system checks that the purchase is still delivered and that you have products
 left to review. The invitation uses your preferred English or Arabic language.
-A simulated delivery does not qualify for a verified-purchase review. Delivery
-of the invitation still depends on the configured notification service.
+Simulated deliveries, replacement orders and fully refunded orders are ineligible. Where the platform makes inbox invitations available, store staff can enable them in **Review settings**. Customers who opted into **Purchase feedback → Storefront inbox** receive a notification linking to **Account → Reviews**.
 
 ## Data flow and outcome
 

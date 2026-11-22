@@ -31,6 +31,12 @@ A test notification is never automatically resent by recovery. If its reserved a
 
 Receivers must still deduplicate using the delivery identifier: a receiver may accept a request before its acknowledgement is lost. Recovery preserves the original signed payload and delivery identity.
 
+## Review publication events
+
+Existing `review.published` subscriptions now receive `schema_version: 2`. Read `review_id`, `product_id`, `revision`, `rating` and `is_verified_purchase` from `data`. The revision identifies the approved version. Remove dependencies on the former customer ID, title and body fields. Version 1 review deliveries are retired and cannot be replayed.
+
+Treat a publication event as a prompt to refresh the product’s public reviews and rating summary. If you cache reviews, reconcile with the current list, including every page, and discard withdrawn items. Publication events cover approval and can be dropped before delivery if that revision is no longer public.
+
 ## Evidence and verification limits
 
 Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
