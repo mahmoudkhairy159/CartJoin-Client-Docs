@@ -37,6 +37,8 @@ Open [http://localhost:3100/docs](http://localhost:3100/docs).
 
 The docs app runs independently of the CartJoin backend and dashboards. No credentials or environment variables are required to read the included guides and media. Python and FFmpeg are only needed for source extraction or media regeneration.
 
+Public guide URLs use `/docs/en` and `/docs/ar`. Articles declare their canonical URL and published language counterparts and are listed in `/docs/sitemap.xml`. Set `DOCS_PUBLIC_ORIGIN` at build time when releasing to an origin other than the CartJoin platform host.
+
 ## Guide entry points
 
 | Role | English | العربية |

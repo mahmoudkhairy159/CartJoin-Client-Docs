@@ -1,6 +1,6 @@
 import { AppSkeleton } from '@/components/app-skeleton';
 
-export default function Loading() {
+export default function GuideLoading() {
   return (
     <main className="guide-home" aria-busy="true">
       <div className="guide-hero">

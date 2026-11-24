@@ -5,12 +5,11 @@ export default withMDX({
   images: { qualities: [86] },
   async redirects() {
     return [
-      // The English home lives at the root; the Arabic home is app/(home)/ar.
-      { source: '/en', destination: '/', permanent: false },
+      { source: '/', destination: '/en', permanent: true },
       ...['commerce', 'money', 'onboarding'].map((slug) => ({
         source: `/:lang(en|ar)/${slug}`,
         destination: `/:lang/workflows/${slug}`,
-        permanent: false,
+        permanent: true,
       })),
     ];
   },

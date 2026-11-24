@@ -3035,8 +3035,8 @@
           "ar": "مسؤول المنصة"
         },
         "body": {
-          "en": "Review redirect source, destination, type and state. A permanent 301 and temporary 302 serve different purposes; confirm the intended destination before saving.",
-          "ar": "راجع الأصل والوجهة والنوع والحالة. يختلف غرض التحويل الدائم 301 عن المؤقت 302؛ تحقق من الوجهة المقصودة قبل الحفظ."
+          "en": "Inspect the store, source, destination, status code, and state. The tenant dashboard owns redirect edits.",
+          "ar": "راجع المتجر والمصدر والوجهة ورمز الحالة وحالة التفعيل. تُعدّل قواعد إعادة التوجيه من لوحة تحكم المتجر."
         },
         "guide": "features/seo"
       },

@@ -12,6 +12,7 @@ import type { Metadata } from 'next';
 import { createRelativeLink } from 'fumadocs-ui/mdx';
 import { basePath, getPageMarkdownUrl } from '@/lib/shared';
 import { PageAudience, RoleSections } from '@/components/page-role-awareness';
+import { articleUrls, docsUrl } from '@/lib/seo';
 
 export default async function Page(props: PageProps<'/[lang]/[...slug]'>) {
   const { lang, slug } = await props.params;
@@ -58,9 +59,11 @@ export default async function Page(props: PageProps<'/[lang]/[...slug]'>) {
   );
 }
 
-export async function generateStaticParams() {
+export const dynamicParams = false;
+
+export function generateStaticParams({ params }: { params: { lang: string } }) {
   return source.generateParams().flatMap(({ slug: [lang, ...slug] }) =>
-    slug.length && (lang === 'en' || lang === 'ar') ? [{ lang, slug }] : [],
+    slug.length && lang === params.lang ? [{ slug }] : [],
   );
 }
 
@@ -72,5 +75,6 @@ export async function generateMetadata(props: PageProps<'/[lang]/[...slug]'>): P
   return {
     title: page.data.title,
     description: page.data.description,
+    alternates: { canonical: docsUrl(page.url), languages: articleUrls(slug) },
   };
 }

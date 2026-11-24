@@ -7,17 +7,21 @@ roles: ["ADMIN", "TENANT"]
 
 ## How to use it
 
-Open SEO, choose the relevant page/resource and maintain the available titles, descriptions and metadata. Check the public destination and locale before considering the change complete.
+In the Tenant Dashboard, open **SEO → Metadata**, select a resource and choose English or Arabic. The preview shows the effective metadata. Leave a field blank to inherit its value, or reset the locale to clear its overrides. Open the canonical URL to verify the published page.
+
+Under **SEO → Redirects**, enter the old path and its replacement. Use **301** for a permanent move or **302** for a temporary one. Test the old URL after saving. For a migration, use CSV import preview to review conflicts before applying changes. Disable a rule to pause it or delete it to remove it.
+
+Under **SEO → Settings**, validate custom robots rules before saving, or reset to the defaults. After queuing a sitemap rebuild, check its last successful generation time. The Platform Admin SEO screens are read-only across tenants.
 
 <SystemTour tour="feature-seo" compact />
 
 ## Restrictions and decisions
 
-Metadata does not publish an otherwise hidden product or guarantee a search ranking. Slugs and destinations must remain tenant-correct. Avoid describing content that is not actually present.
+Publishing and indexing are separate decisions. A hidden or unpublished resource remains unavailable even when it has metadata. A live page takes precedence over a dashboard redirect. Use a live replacement for an old path. A robots crawl block can prevent search engines from seeing that page's noindex instruction.
 
 ## Data flow and outcome
 
-Resource + locale → SEO metadata → rendered page/preview and indexing outputs where configured.
+Localized overrides and the resource's defaults determine the metadata for published pages. The storefront uses that data for the HTML head and the sitemap lists eligible canonical URLs. A public request for an old path can use a stored slug alias or an active redirect. Browser caches can retain a permanent redirect after the rule changes.
 
 ## When something goes wrong
 

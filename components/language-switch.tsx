@@ -15,7 +15,7 @@ export function LanguageSwitch() {
 
   return (
     <nav className="guide-language-switch" aria-label={arabic ? 'لغة الدليل' : 'Guide language'} dir="ltr">
-      <Link href={onHome ? '/' : `/en${pagePath}`} hrefLang="en" lang="en" dir="ltr" className="guide-choice"
+      <Link href={onHome ? '/en' : `/en${pagePath}`} hrefLang="en" lang="en" dir="ltr" className="guide-choice"
         aria-current={!arabic ? 'page' : undefined} aria-label="Read this page in English">English</Link>
       <Link href={onHome ? '/ar' : `/ar${pagePath}`} hrefLang="ar" lang="ar" dir="rtl" className="guide-choice"
         aria-current={arabic ? 'page' : undefined} aria-label="اقرأ هذه الصفحة بالعربية">العربية</Link>

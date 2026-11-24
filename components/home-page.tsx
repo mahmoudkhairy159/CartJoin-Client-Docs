@@ -47,7 +47,7 @@ const copy = {
     title: 'قواعد العمل وأدلة لوحات التحكم في كارت جوين',
     description: 'خطوات الاستخدام ومسارات الطلب وصور حقيقية من النظام لمسؤولي المنصة وفرق المتاجر والبائعين والعملاء.',
     start: 'ابدأ من الأساسيات',
-    other: { label: 'Read in English', href: '/', lang: 'en' as const },
+    other: { label: 'Read in English', href: '/en', lang: 'en' as const },
     rolesTitle: 'اختر دليل دورك',
     openHandbook: 'افتح الدليل',
     journeyTitle: 'كيف تنتقل عملية الشراء في كارت جوين',

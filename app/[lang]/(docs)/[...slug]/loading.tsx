@@ -5,7 +5,7 @@ import { DocsBody, DocsPage } from 'fumadocs-ui/layouts/docs/page';
 import { AppSkeleton } from '@/components/app-skeleton';
 import { guideLanguage } from '@/lib/guide-language';
 
-export default function Loading() {
+export default function ArticleLoading() {
   const arabic = guideLanguage(usePathname()) === 'ar';
   return (
     <DocsPage toc={[]} className="guide-article" lang={arabic ? 'ar' : 'en'} dir={arabic ? 'rtl' : 'ltr'}>

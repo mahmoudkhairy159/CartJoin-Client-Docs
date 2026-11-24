@@ -14,7 +14,7 @@ function languageNodes(nodes: Node[], prefix: string): Node[] {
   }));
 }
 
-export default async function Layout({ children, params }: LayoutProps<'/[lang]'>) {
+export default async function ArticleLayout({ children, params }: LayoutProps<'/[lang]'>) {
   const { lang } = await params;
   if (lang !== 'en' && lang !== 'ar') notFound();
   const prefix = `/${lang}/`;
