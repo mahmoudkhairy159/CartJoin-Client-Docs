@@ -23,7 +23,7 @@ Search stays within the current storefront and its eligible published offers. **
 
 ## Data flow and outcome
 
-Published catalog → tenant-scoped keyword and filter query → product page → cart. Search logs record queries and result counts.
+Published catalog → tenant-scoped keyword and filter query → product page → cart. Search logs record the first result page for keyword searches, including searches with zero results. Open **Search analytics** in the Admin or Tenant query log to report on a UTC date range and source. The report counts Shop and product search API requests and excludes palette previews and earlier entries without a recorded source. Click statistics cover the first Shop results page when shoppers have active shopping measurement consent. Searches need 15 minutes to finish the click measurement window.
 
 ## When something goes wrong
 

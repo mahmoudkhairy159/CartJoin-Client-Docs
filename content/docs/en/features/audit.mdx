@@ -19,6 +19,8 @@ An audit entry is evidence, not a control to undo the action. Investigations mus
 
 Authorized mutation → actor/event metadata → audit record → scoped search and investigation.
 
+The queued audit CSV requires both audit export and report export permission. Choose a UTC date range and follow the export in **Export history**. Large result sets must be split into smaller date ranges. A queued export and its download are recorded in the audit log.
+
 ## When something goes wrong
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
