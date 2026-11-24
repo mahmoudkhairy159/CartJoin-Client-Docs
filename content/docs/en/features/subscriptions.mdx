@@ -113,3 +113,13 @@ The tenant dashboard acts only on its resolved store. Selecting another merchant
 For an expired quote, request a fresh one. For an unchanged network retry, inspect the current invoice before confirming again. For a quota failure, reduce new usage or select an eligible package. For **paid but not activated**, preserve the invoice and ask platform finance to reconcile; do not pay again to hide the exception.
 
 [Merchant activation guide](/en/features/merchant-onboarding) · [Mode rules](/en/roadmap/modes)
+
+## Billing recovery and rollout
+
+Positive live subscription checkout requires a configured Finance tax policy and a verified billing email. The quote records the policy, subtotal, tax and total. Checkout opens Paymob and then returns to Billing, which reads the confirmed invoice state from the API. A browser return alone does not confirm payment. A finance reviewer can investigate unmatched or unresolved payment evidence and a second reviewer verifies refund evidence before it is recorded.
+
+When eligible, you can open early renewal seven days before the current term ends. A paid renewal starts at the next term boundary. A suspended workspace stops new collection while Finance reconciles payments already in flight. A lapsed workspace keeps existing orders and authorized servicing available.
+
+Automatic renewal and staff or branch capacity packs are gated releases. Automatic renewal requires explicit consent and a card saved by the account holder in Paymob. Capacity packs take effect on a paid renewal and do not change the base plan version.
+
+The platform shows a changes-requested application in the status lookup. The applicant can request an SMS code, review requested documents, upload scanned private files and resubmit. Authorized assigned reviewers can access the files. Document types and retention are configured for the merchant class.
