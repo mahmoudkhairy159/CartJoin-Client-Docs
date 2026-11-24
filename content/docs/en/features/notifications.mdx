@@ -9,9 +9,15 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 Optional marketing has separate [choices for each store](/en/features/marketing-consent) in Account → Profile & addresses. Inbox read status and topic subscriptions never opt a customer into offers or cart reminders. Essential order, payment and security messages continue independently.
 
-Use the bell for recent notifications and Notifications for the full list. Open the linked record, confirm its current state, and carry out the action only through that record’s permitted workflow. Customers use Account → Notifications.
+Use the bell for recent notifications and the unread total. Open Notifications to browse older entries, mark one or all as read, or dismiss a notice from your inbox. A link opens an available related record with its own access checks. Customers use Account → Notifications.
 
-In the Platform Admin dashboard, use **Extra data** when composing or editing a notification. Select **Add setting**, enter a unique key, and choose the value type. For example, use the key `url` with the text value `/orders/12`. Lists and objects expand into editable rows. In the edit form, removing the last saved row and saving clears the extra data.
+### Notification campaigns
+
+Platform admins with campaign permissions can draft and preview in-app operational notices. Choose the audience explicitly and add a link supported by that audience’s application if needed. Sending to all eligible recipients requires an additional permission and a system announcement, system update, or policy update.
+
+When campaigns are enabled for your store, authorized merchant staff can draft customer offer emails in Arabic and English. Select eligible customers or a store-owned segment, then preview the estimated audience. The system rechecks the recipient’s current verified email, consent, and contact frequency before sending. A customer can unsubscribe from store offers through the email link or their store profile.
+
+Review the campaign before sending immediately or choosing a future time. History distinguishes queued work, provider acceptance, suppression, and failures. Cancel stops deliveries that have yet to be handed off. A provider may still deliver mail it has already accepted.
 
 <SystemTour tour="feature-notifications" compact />
 

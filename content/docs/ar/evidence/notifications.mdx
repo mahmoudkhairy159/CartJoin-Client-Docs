@@ -11,6 +11,15 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Notification/routes/vendor-api.php`
 - `Modules/Notification/routes/web.php`
 
+## الحملات وتحديثات صندوق الإشعارات
+
+- `GET /api/{admin,tenant,vendor,user}/v1/.../notifications` · `items`, `pagination`, `unread_count`
+- `GET .../notifications/unread-count` · `POST .../notifications/{id}/dismiss`
+- `/api/admin/v1/me/notifications` · `/api/{tenant,vendor,user}/v1/notifications`
+- `/api/{admin,tenant}/v1/notification-campaigns` · `preview`, `test`, `send`, `schedule`, `cancel`
+- `Modules/Notification/App/Enums/NotificationCampaignStatus.php` · `NotificationDeliveryStatus.php`
+- `Modules/Notification/App/Services/NotificationCampaignService.php` · `NotificationDeliveryService.php`
+
 ## مسارات الخادم المستخرجة
 
 | Module | Surface file | Method | URI fragment | Action |
