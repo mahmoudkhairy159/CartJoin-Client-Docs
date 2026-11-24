@@ -27,13 +27,14 @@ description: "Extracted backend routes, request fields and enum values."
 | Admin, Tenant | `GET /support-tickets`, `GET/PUT/PATCH /support-tickets/{id}` | عرض قائمة التذاكر المصرح بها وتحديثها. تتوفر خاصية التصدير لإدارة المنصة. |
 | Admin, Tenant | `POST /support-tickets/{id}/messages`, `PATCH /support-tickets/{id}/status`, `PATCH /support-tickets/{id}/assignment`, `POST /support-tickets/{id}/escalate` | الرد وإضافة ملاحظات داخلية والإسناد وتغيير الحالة والتصعيد. |
 | User, Admin, Tenant | `GET /support-tickets/{id}/attachments/{attachmentId}` | تنزيل مرفق بعد التحقق من الصلاحية. |
+| User, Admin, Tenant | `PUT /support-tickets/{id}/read` | وضع علامة مقروء على الرسائل حتى آخر رسالة ظاهرة للمستخدم المسجل دخوله. |
 | Admin, Tenant | `/faqs`, `/faq-categories`, `PUT /faqs/reorder` | إدارة الأسئلة وتصنيفاتها وترتيبها. |
 | Admin, Tenant | `GET /{resource}/{id}/preview`, `PATCH /{resource}/{id}/publication` | معاينة اللغتين وتحديد حالة النشر. |
 | User | `GET /faqs`, `GET /faqs/{id}`, `GET /faq-categories`, `PUT /faqs/{id}/helpfulness` | تصفح المساعدة المنشورة وتقييم فائدة المقال. |
 
 ### الحقول المهمة
 
-يقبل إنشاء التذكرة `subject` و`description` و`priority`، واختياريًا `topic` و`order_id` و`attachments[]`. استخدم `Idempotency-Key` نفسه عند إعادة المحاولة لنفس الطلب. تتضمن الاستجابة معرّف التذكرة. تستخدم تحديثات الحالة `status` و`version` ويمكن إضافة `reason`. يستخدم نشر الأسئلة `is_active` بالقيمة `0` أو `1`. يدعم البحث العام `search` و`category_id` الاختياري.
+يقبل إنشاء التذكرة `subject` و`description` و`priority`، واختياريًا `topic` و`order_id` و`attachments[]`. استخدم `Idempotency-Key` نفسه عند إعادة المحاولة لنفس الطلب. تتضمن الاستجابة معرّف التذكرة. تستخدم تحديثات الحالة `status` و`version` ويمكن إضافة `reason`. تعرض قائمة التذاكر وتفاصيلها الحقل `unread` للمستخدم المسجل دخوله. أرسل قيمة `latest_message_id` من تفاصيل التذكرة في الحقل `last_message_id` لتعليم الرسائل الظاهرة كمقروءة. يستخدم نشر الأسئلة `is_active` بالقيمة `0` أو `1`. يدعم البحث العام `search` و`category_id` الاختياري.
 
 ## حقول النماذج
 

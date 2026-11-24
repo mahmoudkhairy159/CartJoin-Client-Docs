@@ -27,13 +27,14 @@ Every ticket download goes through the same authenticated ticket scope. The tick
 | Admin, Tenant | `GET /support-tickets`, `GET/PUT/PATCH /support-tickets/{id}` | Read and update the authorized ticket queue. Admin also has export. |
 | Admin, Tenant | `POST /support-tickets/{id}/messages`, `PATCH /support-tickets/{id}/status`, `PATCH /support-tickets/{id}/assignment`, `POST /support-tickets/{id}/escalate` | Reply, add an internal note, assign work, change status, and escalate. |
 | User, Admin, Tenant | `GET /support-tickets/{id}/attachments/{attachmentId}` | Download an attachment after access is checked. |
+| User, Admin, Tenant | `PUT /support-tickets/{id}/read` | Mark messages through the last visible message as read for the signed-in viewer. |
 | Admin, Tenant | `/faqs`, `/faq-categories`, `PUT /faqs/reorder` | Manage FAQs and categories, including ordering. |
 | Admin, Tenant | `GET /{resource}/{id}/preview`, `PATCH /{resource}/{id}/publication` | Preview both languages and set publication explicitly. |
 | User | `GET /faqs`, `GET /faqs/{id}`, `GET /faq-categories`, `PUT /faqs/{id}/helpfulness` | Browse published help and vote on an article. |
 
 ### Important fields
 
-Ticket creation takes `subject`, `description`, `priority`, and optional `topic`, `order_id` and `attachments[]`. Retry the same submission with the same `Idempotency-Key`. The response has the ticket ID. State changes use `status`, `version`, and optionally `reason`. FAQ publication uses `is_active` as `0` or `1`. Public FAQ search uses `search` and optional `category_id`.
+Ticket creation takes `subject`, `description`, `priority`, and optional `topic`, `order_id` and `attachments[]`. Retry the same submission with the same `Idempotency-Key`. The response has the ticket ID. State changes use `status`, `version`, and optionally `reason`. Ticket lists and details expose `unread` for the signed-in viewer. Send the detail response’s `latest_message_id` as `last_message_id` to mark the visible snapshot as read. FAQ publication uses `is_active` as `0` or `1`. Public FAQ search uses `search` and optional `category_id`.
 
 ## Form-request field names
 
