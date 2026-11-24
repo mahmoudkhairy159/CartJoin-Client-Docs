@@ -15,16 +15,35 @@ description: "Extracted backend routes, request fields and enum values."
 
 | Module | Surface file | Method | URI fragment | Action |
 |---|---|---|---|---|
-
-No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+| Webhook | `admin-api.php` | GET | `/webhooks` | `index` |
+| Webhook | `admin-api.php` | GET | `/webhooks/events` | `events` |
+| Webhook | `admin-api.php` | GET | `/webhooks/delivery-metrics` | `metrics` |
+| Webhook | `admin-api.php` | GET | `/webhooks/deliveries` | `deliveries` |
+| Webhook | `admin-api.php` | GET | `/webhooks/{webhook}/deliveries/{delivery}` | `delivery` |
+| Webhook | `admin-api.php` | POST | `/webhooks/{webhook}/block` | `block` |
+| Webhook | `admin-api.php` | POST | `/webhooks/{webhook}/unblock` | `unblock` |
+| Webhook | `tenant-api.php` | GET | `/webhooks` | `index` |
+| Webhook | `tenant-api.php` | GET | `/webhooks/events` | `events` |
+| Webhook | `tenant-api.php` | GET | `/webhooks/reconciliation` | `reconciliation` |
+| Webhook | `tenant-api.php` | POST | `/webhooks` | `store` |
+| Webhook | `tenant-api.php` | GET | `/webhooks/{webhook}` | `show` |
+| Webhook | `tenant-api.php` | PUT | `/webhooks/{webhook}` | `update` |
+| Webhook | `tenant-api.php` | DELETE | `/webhooks/{webhook}` | `destroy` |
+| Webhook | `tenant-api.php` | POST | `/webhooks/{webhook}/rotate-secret` | `rotateSecret` |
+| Webhook | `tenant-api.php` | DELETE | `/webhooks/{webhook}/previous-secret` | `revokePreviousSecret` |
+| Webhook | `tenant-api.php` | POST | `/webhooks/{webhook}/test` | `test` |
+| Webhook | `tenant-api.php` | GET | `/webhooks/{webhook}/delivery-metrics` | `metrics` |
+| Webhook | `tenant-api.php` | GET | `/webhooks/{webhook}/deliveries` | `deliveries` |
+| Webhook | `tenant-api.php` | GET | `/webhooks/{webhook}/deliveries/{delivery}` | `delivery` |
+| Webhook | `tenant-api.php` | POST | `/webhooks/{webhook}/deliveries/{delivery}/retry` | `retry` |
 
 ## حقول النماذج
 
-- `Modules/Webhook/App/Http/Requests/Admin/Webhook/BlockWebhookRequest.php`: `reason`, `tenant_id`, `errors`, `message`, `statusCode`
-- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/RotateWebhookSecretRequest.php`: `tenant_id`, `secret`, `errors`, `message`, `statusCode`
-- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/StoreWebhookRequest.php`: `tenant_id`, `url`, `events`, `events.*`, `is_active`, `secret`, `blocked_at`, `failure_started_at`, `errors`, `message`, `statusCode`
-- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/TestWebhookRequest.php`: `tenant_id`, `errors`, `message`, `statusCode`
-- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/UpdateWebhookRequest.php`: `tenant_id`, `url`, `events`, `events.*`, `is_active`, `secret`, `blocked_at`, `failure_started_at`, `errors`, `message`, `statusCode`
+- `Modules/Webhook/App/Http/Requests/Admin/Webhook/BlockWebhookRequest.php`: `reason`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/RotateWebhookSecretRequest.php`: `overlap_hours`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/StoreWebhookRequest.php`: `name`, `url`, `events`, `events.*`, `is_active`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/TestWebhookRequest.php`: `event`
+- `Modules/Webhook/App/Http/Requests/Tenant/Webhook/UpdateWebhookRequest.php`: `name`, `url`, `events`, `events.*`, `is_active`
 
 ## قيم الحالات من المصدر
 

@@ -1145,6 +1145,7 @@
         ],
         "src/app/features/webhooks/webhooks.routes.ts": [
           "",
+          "reconciliation",
           "new",
           ":id/deliveries/:deliveryId",
           ":id/edit",
@@ -11337,67 +11338,213 @@
         "Modules/Webhook/routes/vendor-api.php",
         "Modules/Webhook/routes/web.php"
       ],
-      "explicit_backend_routes": [],
+      "explicit_backend_routes": [
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/webhooks",
+          "controller": "WebhookController",
+          "action": "index"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/webhooks/events",
+          "controller": "WebhookController",
+          "action": "events"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/webhooks/delivery-metrics",
+          "controller": "WebhookController",
+          "action": "metrics"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/webhooks/deliveries",
+          "controller": "WebhookController",
+          "action": "deliveries"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "GET",
+          "uri": "/webhooks/{webhook}/deliveries/{delivery}",
+          "controller": "WebhookController",
+          "action": "delivery"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "POST",
+          "uri": "/webhooks/{webhook}/block",
+          "controller": "WebhookController",
+          "action": "block"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/admin-api.php",
+          "method": "POST",
+          "uri": "/webhooks/{webhook}/unblock",
+          "controller": "WebhookController",
+          "action": "unblock"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks",
+          "controller": "WebhookController",
+          "action": "index"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks/events",
+          "controller": "WebhookController",
+          "action": "events"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks/reconciliation",
+          "controller": "WebhookController",
+          "action": "reconciliation"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "/webhooks",
+          "controller": "WebhookController",
+          "action": "store"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks/{webhook}",
+          "controller": "WebhookController",
+          "action": "show"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "PUT",
+          "uri": "/webhooks/{webhook}",
+          "controller": "WebhookController",
+          "action": "update"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "DELETE",
+          "uri": "/webhooks/{webhook}",
+          "controller": "WebhookController",
+          "action": "destroy"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "/webhooks/{webhook}/rotate-secret",
+          "controller": "WebhookController",
+          "action": "rotateSecret"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "DELETE",
+          "uri": "/webhooks/{webhook}/previous-secret",
+          "controller": "WebhookController",
+          "action": "revokePreviousSecret"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "/webhooks/{webhook}/test",
+          "controller": "WebhookController",
+          "action": "test"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks/{webhook}/delivery-metrics",
+          "controller": "WebhookController",
+          "action": "metrics"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks/{webhook}/deliveries",
+          "controller": "WebhookController",
+          "action": "deliveries"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "GET",
+          "uri": "/webhooks/{webhook}/deliveries/{delivery}",
+          "controller": "WebhookController",
+          "action": "delivery"
+        },
+        {
+          "module": "Webhook",
+          "file": "Modules/Webhook/routes/tenant-api.php",
+          "method": "POST",
+          "uri": "/webhooks/{webhook}/deliveries/{delivery}/retry",
+          "controller": "WebhookController",
+          "action": "retry"
+        }
+      ],
       "request_fields": [
         {
           "file": "Modules/Webhook/App/Http/Requests/Admin/Webhook/BlockWebhookRequest.php",
           "fields": [
-            "reason",
-            "tenant_id",
-            "errors",
-            "message",
-            "statusCode"
+            "reason"
           ]
         },
         {
           "file": "Modules/Webhook/App/Http/Requests/Tenant/Webhook/RotateWebhookSecretRequest.php",
           "fields": [
-            "tenant_id",
-            "secret",
-            "errors",
-            "message",
-            "statusCode"
+            "overlap_hours"
           ]
         },
         {
           "file": "Modules/Webhook/App/Http/Requests/Tenant/Webhook/StoreWebhookRequest.php",
           "fields": [
-            "tenant_id",
+            "name",
             "url",
             "events",
             "events.*",
-            "is_active",
-            "secret",
-            "blocked_at",
-            "failure_started_at",
-            "errors",
-            "message",
-            "statusCode"
+            "is_active"
           ]
         },
         {
           "file": "Modules/Webhook/App/Http/Requests/Tenant/Webhook/TestWebhookRequest.php",
           "fields": [
-            "tenant_id",
-            "errors",
-            "message",
-            "statusCode"
+            "event"
           ]
         },
         {
           "file": "Modules/Webhook/App/Http/Requests/Tenant/Webhook/UpdateWebhookRequest.php",
           "fields": [
-            "tenant_id",
+            "name",
             "url",
             "events",
             "events.*",
-            "is_active",
-            "secret",
-            "blocked_at",
-            "failure_started_at",
-            "errors",
-            "message",
-            "statusCode"
+            "is_active"
           ]
         }
       ],

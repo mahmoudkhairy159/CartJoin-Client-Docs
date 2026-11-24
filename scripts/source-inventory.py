@@ -44,6 +44,26 @@ inventory={'reviewed':'2026-11-19','verification':'Source extraction with separa
 def git(repo,*args):
     return subprocess.check_output(['git','-C',str(repo),*args],text=True,encoding='utf-8').strip()
 def clean(s):return re.sub(r'/\*.*?\*/|(?m:^[ \t]*//[^\r\n]*$)','',s,flags=re.S)
+
+def backend_routes(source):
+    methods = r"get|post|put|patch|delete"
+    yield from re.findall(r"Route::(" + methods + r")\(\s*'([^']+)'\s*,\s*\[\s*(\w+)::class\s*,\s*'([^']+)'", source)
+    groups = re.finditer(
+        r"^(?P<indent>[ \t]*)Route::controller\((?P<controller>\w+)::class\)"
+        r"(?:->prefix\('(?P<prefix>[^']+)'\))?(?:->name\('[^']+'\))?"
+        r"->group\([^{]+\{(?P<body>.*?)^(?P=indent)\}\);",
+        source, flags=re.M | re.S,
+    )
+    for group in groups:
+        prefix = '/' + group['prefix'].strip('/') if group['prefix'] else ''
+        for method, uri, action in re.findall(r"Route::(" + methods + r")\(\s*'([^']+)'\s*,\s*'([^']+)'", group['body']):
+            yield method, (prefix + '/' + uri.lstrip('/')).rstrip('/') or '/', group['controller'], action
+
+def webhook_request_fields(source):
+    rules = source.split('function rules(): array', 1)[-1].split('\n    }', 1)[0]
+    keys = re.findall(r"['\"]([\w.*]+)['\"]\s*=>\s*\[(?!\s*['\"]prohibited['\"])", rules)
+    return list(dict.fromkeys(keys))
+
 for name in ['CartJoin-Backend',*SURFACES.values(),'CartJoin-Platform-Frontend']:
     repo=BASE/name
     inventory['repositories'][name]={'commit':git(repo,'rev-parse','HEAD'),'branch':git(repo,'branch','--show-current'),'dirty':bool(git(repo,'status','--porcelain'))}
@@ -70,12 +90,13 @@ for feature,modules in FEATURE_MODULES.items():
         folder=BACK/'Modules'/module
         for p in sorted((folder/'routes').glob('*.php')):
             s=clean(p.read_text(encoding='utf-8-sig'))
-            for method,uri,ctrl,action in re.findall(r"Route::(get|post|put|patch|delete)\(\s*'([^']+)'\s*,\s*\[\s*(\w+)::class\s*,\s*'([^']+)'",s):
+            for method,uri,ctrl,action in backend_routes(s):
                 routes.append({'module':module,'file':str(p.relative_to(BACK)).replace('\\','/'),'method':method.upper(),'uri':uri,'controller':ctrl,'action':action})
             sources.append(str(p.relative_to(BACK)).replace('\\','/'))
         for p in sorted((folder/'App/Http/Requests').rglob('*.php')):
             s=p.read_text(encoding='utf-8-sig')
             names=list(dict.fromkeys(re.findall(r"['\"]([\w.*]+)['\"]\s*=>",s)))
+            if module == "Webhook": names=webhook_request_fields(s)
             if names:fields.append({'file':str(p.relative_to(BACK)).replace('\\','/'),'fields':names})
         for p in sorted((folder/'App/Enums').glob('*.php')):
             cases=re.findall(r'case\s+(\w+)\s*=\s*([^;]+);',p.read_text(encoding='utf-8-sig'))

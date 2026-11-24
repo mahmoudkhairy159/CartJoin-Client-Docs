@@ -11,6 +11,16 @@ Tenant operators open Webhooks, configure the permitted HTTPS endpoint and event
 
 <SystemTour tour="feature-webhooks" compact />
 
+## Verify a new or changed endpoint
+
+New endpoints and changed URLs stay paused until the configured URL returns HTTP `2xx` to a signed test. In Webhooks, optionally name the endpoint, save it, copy the signing secret securely when it is shown, and open the endpoint to send a test. After verification, edit the endpoint and enable it. Existing endpoints keep their current status until their URL changes.
+
+Choose an event in **Test sample** to send fictitious data. The outer event stays `webhook.test`; the `data` object contains `synthetic`, `sample_event`, `sample_schema_version` and `sample_data`. Validate the signature, return a quick `2xx` and skip business processing for test events. The API accepts an optional `event` on `POST /api/tenant/v1/webhooks/{webhook}/test`.
+
+## Recover missed deliveries
+
+Open **Recover missed deliveries** in Webhooks or call `GET /api/tenant/v1/webhooks/reconciliation` with `webhook-deliveries.show`. The paginated feed shows failed, exhausted and cancelled production deliveries in your workspace with event and delivery IDs, replay eligibility and available record IDs. Open related orders, invoices or returns in the dashboard, or use the relevant authorized resource API to reconcile other records. Replay eligible items from the delivery detail if you have retry permission. Older entries may have fewer record IDs as payloads expire.
+
 ## Restrictions and decisions
 
 Signed delivery may retry; receivers must handle duplicate business events. Timeout and non-2xx responses fail an attempt. Endpoint safety restrictions and platform blocking still apply. Signing secrets must never appear in screenshots or user-facing examples.
@@ -25,11 +35,31 @@ Check workspace, permission, record state and field errors first. If an action t
 
 ## Interrupted deliveries and safe retry
 
-A temporary queue interruption does not erase a normal delivery. CartJoin retains a recovery marker and checks it during the five-minute maintenance sweep. A reserved attempt that remains unfinished for 15 minutes is recorded as abandoned before recovery; automatic delivery remains limited to six attempts.
+CartJoin records the event and eligible endpoints before handing work to the queue. A temporary queue interruption can delay a recorded event or delivery. CartJoin retains a recovery marker and checks it during the five-minute maintenance sweep. A reserved attempt that remains unfinished for 15 minutes is recorded as abandoned before recovery; automatic delivery remains limited to six attempts.
 
-A test notification is never automatically resent by recovery. If its reserved attempt is interrupted, it becomes **Failed**, with the interruption recorded in its history. After checking the endpoint, an authorized tenant operator can use the existing retry control. A second worker cannot start another request while the same delivery still has an open attempt.
+The maintenance sweep can recover a queued test that never started. It does not resend a test whose network attempt already started. If its reserved attempt is interrupted, it becomes **Failed**, with the interruption recorded in its history. After checking the endpoint, an authorized tenant operator can use the existing retry control. A second worker cannot start another request while the same delivery still has an open attempt.
+
+An endpoint URL change, pause, block, or event removal cancels queued work for the previous configuration. A replay request has its own status in delivery detail. Failed replays preserve any scheduled automatic retry.
 
 Receivers must still deduplicate using the delivery identifier: a receiver may accept a request before its acknowledgement is lost. Recovery preserves the original signed payload and delivery identity.
+
+## Verify deliveries at the receiver
+
+Read the original request bytes before decoding JSON. Use `X-Webhook-Signed-At`, a Unix timestamp in seconds, and `X-Webhook-Signature-V2`. The signature header is a comma-separated list of `keyVersion=hexDigest` entries. For each known key version, compute HMAC-SHA256 on `v2.<keyVersion>.<signedAt>.<raw JSON bytes>` with that endpoint's secret. Compare the digest in constant time. Reject missing or invalid v2 signatures and timestamps outside a five-minute tolerance. If you support v2, never fall back to legacy verification because a v2 check failed.
+
+An attempt has a new signing time even when it resends the same delivery. The JSON `occurred_at` is when the event happened, and `id` is the delivery ID. Verify first, then deduplicate on that ID and acknowledge durable receipt with a fast `2xx`. Deliveries can arrive out of order. Use tenant-scoped resource APIs to reconcile current order, payment, inventory, or shipment state.
+
+The compatibility headers `X-Webhook-Timestamp` and `X-Webhook-Signature` still sign `timestamp.rawBody` using the occurrence timestamp. During overlap they use the previous key. Move receivers to v2 before the overlap ends. The dashboard offers a 24-hour overlap, and the API accepts `overlap_hours` from 0 to 168. Use zero to rotate immediately after a compromise, or revoke only the previous key through the dashboard or `DELETE /api/tenant/v1/webhooks/{webhook}/previous-secret`. Rotation responses reveal the new secret once.
+
+## Delivery policy and diagnostics
+
+CartJoin connects over public HTTPS with a five-second connection timeout and a 15-second total HTTP timeout. Five retries are scheduled after roughly 1 minute, 5 minutes, 30 minutes, 2 hours, and 12 hours, with jitter and queue delay. For `429` and `503`, a valid `Retry-After` can extend the scheduled delay by waiting up to an hour when that is longer than the normal backoff.
+
+Test and replay commands share the same tenant and destination safeguards. Owned deliveries can be replayed for 30 days from creation. Inspect the delivery's `replay_until` field before retrying. Response diagnostic summaries are retained for seven days and contain HTTP status and response size. Delivery and attempt metadata is retained for 90 days unless work remains outstanding. Endpoint removal disables delivery and discards its signing credentials and full URL. Operational history ages out under the same policy.
+
+Delivery lists show metadata. The separate `webhook-deliveries.diagnostics` permission enables eligible payloads and response summaries in delivery detail. Platform views show the destination origin and attempt timing.
+
+The authorized `GET /api/tenant/v1/webhooks/events` endpoint lists subscribable topics, current schema versions, and sample data fields. It also reports signing and retry capabilities. Platform operators can read the same catalog through `GET /api/admin/v1/webhooks/events`. Samples are illustrative subsets of the event payloads.
 
 ## Review publication events
 
@@ -54,7 +84,7 @@ A route proves navigation, not permission to perform every action. Related-recor
 | Dashboard | Frontend entry paths |
 |---|---|
 | [admin](/en/roles/admin) | `/webhooks` |
-| [tenant](/en/roles/tenant) | `/webhooks` |
+| [tenant](/en/roles/tenant) | `/webhooks`, `/webhooks/reconciliation` |
 
 [Exact route, field and enum source trail](/en/evidence/webhooks)
 {/* /SCREEN_MAP */}
