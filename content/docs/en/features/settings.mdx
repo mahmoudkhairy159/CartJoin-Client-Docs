@@ -17,11 +17,19 @@ Open **Settings overview** to find the configuration screens your role can acces
 
 Global geography is not tenant-owned catalog data. A flag or saved setting does not prove all associated business workflows are enabled. Configuration changes can affect later calculations but do not rewrite immutable purchase snapshots.
 
-The platform **Feature flags** page retains legacy values for reference and displays their original scope. Tenant operators with permission can manage supported customer and seller actions in **Store Settings → Feature policies**.
+The platform **Archived feature flags** page shows saved values and their original scope. Valid writes to the old feature-flags API return `410 feature_flag_retired`. March 1, 2027 is the earliest planned retirement of those compatibility routes, subject to a client-reference and usage review. Tenant operators can manage supported customer and seller actions in **Store Settings → Feature policies**. Policy edits require a reason. If the revision has changed, reload and review before saving again.
 
-Authorized platform staff manage buyer flash-sale rollout in **Feature releases**. Set the owner and expiry, then choose named stores and a percentage for the remaining eligible stores. A store keeps the same percentage assignment as the rollout grows. Preview the configured and effective decision for a selected store before saving. A named store takes priority over the percentage while the release is enabled and within its window.
+### Feature releases
 
-The configured policy stops new exposure when it is disabled or expires. A deployment override can force the release off or use the previous environment policy. In legacy override mode, the effective decision follows the previous policy even when the saved release is disabled or expired. View the release history to restore an earlier policy. Existing order servicing and eligible retries for held purchases remain available.
+1. Choose a registered release, then preview its configured and effective policy for a store. Set an owner and expiry. Explicit exclusions take priority over named pilots and the percentage. A store keeps its percentage assignment as the rollout grows.
+2. For a staged rollout, save a draft with ordered start times and submit it. The scheduler applies eligible stages in order. A broad expansion or permanent completion needs a second approver. Review stage progress, overdue work and expiry in the release screen.
+3. Pause to hold the current cohort. Resume to continue, or use emergency disable to stop new exposure immediately. An expired or unavailable policy closes new exposure. Existing orders, accepted holds and settlement can continue.
+4. Open history and review the complete previous policy before a rollback. Restore writes a new revision. Older entries that recorded only field differences remain available as evidence. Confirm completion at the approved final audience to remove the temporary expiry.
+5. After completion, authorized communications staff can queue a bilingual in-app notice for the active owners of selected eligible stores. Review the notice status before retrying.
+
+The buyer flash-sale release applies to storefront visibility, pricing and new reservations. Tenant staff can prepare an eligible draft while publication is outside the release. Each write still checks the acting store and permissions.
+
+**Storefront early access** in the tenant feature-policy screen lets eligible stores opt in or leave. Catalog quick filters require a subscription plan that includes the capability, an enabled store policy, and inclusion in the release. Opting in adds an in-stock shortcut above the shopper’s product grid. The original filter controls remain available.
 
 Platform Settings shows whether an encrypted value is configured or needs replacing. Enter a new value to replace it. Leaving the field blank preserves the stored value. Vendor **Workspace terms** displays only masked payout references.
 
@@ -36,6 +44,8 @@ Reference/configuration input → permitted tenant/vendor/customer behavior → 
 ## When something goes wrong
 
 Check workspace, permission, record state and field errors first. If an action times out, inspect the record and its history before retrying. Escalate with the screen, record identifier and time; omit passwords and payment secrets.
+
+For deployment, apply the Settings migrations before enabling the updated PHP workers. Verify the migrated flash-sale audience and review quarantined store IDs. Run the Laravel scheduler and workers for the configured release and notification queues. A release with missing policy data remains closed until its policy is recovered. Roll out the updated Tenant Dashboard with the backend because older policy editors omit the required revision and reason on writes.
 
 ## Evidence and verification limits
 
