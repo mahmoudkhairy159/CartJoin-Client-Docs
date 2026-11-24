@@ -3503,8 +3503,8 @@
           "ar": "مساحة البائع"
         },
         "body": {
-          "en": "Read subject, priority, state and replies together. A resolved support ticket is not proof of a payment, refund or shipment action.",
-          "ar": "اقرأ الموضوع والأولوية والحالة والردود معاً. حل التذكرة لا يثبت تنفيذ دفع أو استرداد أو شحن."
+          "en": "Browse the current store’s published FAQs with read-only access.",
+          "ar": "تصفّح الأسئلة الشائعة المنشورة للمتجر الحالي بصلاحية القراءة فقط."
         },
         "guide": "features/support"
       },

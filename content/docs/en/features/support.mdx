@@ -7,7 +7,9 @@ roles: ["ADMIN", "CUSTOMER", "TENANT", "VENDOR"]
 
 ## How to use it
 
-Customers open Account → Support, describe the issue and attach only relevant evidence. Operators open Support tickets, read the history, respond and follow the offered status changes. Maintain FAQ categories and translated answers for recurring questions.
+Customers open Account → Support, select the request type or linked order when available, describe the issue, and attach relevant evidence. Keep the case number for follow-up. In the ticket, customers can reply, close a resolved case, or reopen it for review. A follow-up to a closed case starts a linked ticket.
+
+Operators open Support tickets and check new, unassigned, and overdue cases. Assign work to an eligible operator, reply to the customer, and use an internal note for staff-only context. Choose the status that reflects who needs to act next. Escalate cases that need platform attention.
 
 <SystemTour tour="feature-support" compact />
 
@@ -17,11 +19,13 @@ A ticket is not an automatic refund, cancellation or payout instruction. Those r
 
 ## Read the help centre before opening a ticket
 
-Open Help centre from the footer. Choose a category and expand a question to read its answer; this browsing does not require sign-in. If the answer does not resolve your case, use Open a ticket and sign in. In your account, include the invoice or order number, describe what happened and attach only relevant evidence. A ticket does not cancel an order or start a refund by itself.
+Open Help centre from the footer. Guests can browse all questions, search in the current language, choose a topic, and open an article to share its link or leave helpfulness feedback. The help centre links to order tracking, returns, and signed-in support. Attach only evidence that helps staff understand the case.
 
 ## Data flow and outcome
 
-Issue + customer context → ticket/messages/attachments → authorized response → resolution evidence; recurring guidance → FAQ publication.
+A submission creates a case in the store’s support queue. Replies, attachments, assignments, and status changes stay with that case. The notification inbox receives relevant changes. Submitted and Reviewing need staff attention, Waiting on customer needs a shopper reply, and Resolved, Rejected, and Closed record different outcomes.
+
+For recurring questions, create a category and enter the question and answer in English and Arabic. Preview both languages before publishing. The storefront reads published questions under published categories. General holds published FAQs without a selected category. Reassign or remove linked FAQs before deleting their category.
 
 ## When something goes wrong
 
@@ -31,7 +35,7 @@ Check workspace, permission, record state and field errors first. If an action t
 
 Authored from module documentation, dashboard routes and backend source. Route presence does not mean every action was exercised live. See [screen coverage](/en/coverage) and [source evidence](/en/evidence) for paths and fields. Screenshots illustrate demo accounts on 17 November 2026, not production results.
 
-`Modules/SupportTicket/` · `documentation/modules/`
+`Modules/SupportTicket/` · `Modules/Faqs/`
 
 <details className="guide-technical-details">
 <summary>Screen paths and source references</summary>

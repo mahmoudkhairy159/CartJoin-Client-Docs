@@ -16,12 +16,24 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Faqs/routes/vendor-api.php`
 - `Modules/Faqs/routes/web.php`
 
-## مسارات الخادم المستخرجة
+## واجهات الخاصية
 
-| Module | Surface file | Method | URI fragment | Action |
-|---|---|---|---|---|
+يتطلب تنزيل كل مرفق التحقق من صلاحية الوصول إلى التذكرة. تستخدم جميع الواجهات القيم نفسها لحالة التذكرة وظهور المرفقات.
 
-No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+| الواجهة | المسار بعد بادئة الواجهة `/api/{surface}/v1` | الغرض |
+|---|---|---|
+| User | `GET/POST /support-tickets`, `GET /support-tickets/{id}` | إنشاء تذاكر العميل المسجل وعرضها. |
+| User | `POST /support-tickets/{id}/messages`, `PATCH /support-tickets/{id}/status`, `POST /support-tickets/{id}/follow-ups` | الرد أو تغيير الحالة أو بدء متابعة مرتبطة. |
+| Admin, Tenant | `GET /support-tickets`, `GET/PUT/PATCH /support-tickets/{id}` | عرض قائمة التذاكر المصرح بها وتحديثها. تتوفر خاصية التصدير لإدارة المنصة. |
+| Admin, Tenant | `POST /support-tickets/{id}/messages`, `PATCH /support-tickets/{id}/status`, `PATCH /support-tickets/{id}/assignment`, `POST /support-tickets/{id}/escalate` | الرد وإضافة ملاحظات داخلية والإسناد وتغيير الحالة والتصعيد. |
+| User, Admin, Tenant | `GET /support-tickets/{id}/attachments/{attachmentId}` | تنزيل مرفق بعد التحقق من الصلاحية. |
+| Admin, Tenant | `/faqs`, `/faq-categories`, `PUT /faqs/reorder` | إدارة الأسئلة وتصنيفاتها وترتيبها. |
+| Admin, Tenant | `GET /{resource}/{id}/preview`, `PATCH /{resource}/{id}/publication` | معاينة اللغتين وتحديد حالة النشر. |
+| User | `GET /faqs`, `GET /faqs/{id}`, `GET /faq-categories`, `PUT /faqs/{id}/helpfulness` | تصفح المساعدة المنشورة وتقييم فائدة المقال. |
+
+### الحقول المهمة
+
+يقبل إنشاء التذكرة `subject` و`description` و`priority`، واختياريًا `topic` و`order_id` و`attachments[]`. استخدم `Idempotency-Key` نفسه عند إعادة المحاولة لنفس الطلب. تتضمن الاستجابة معرّف التذكرة. تستخدم تحديثات الحالة `status` و`version` ويمكن إضافة `reason`. يستخدم نشر الأسئلة `is_active` بالقيمة `0` أو `1`. يدعم البحث العام `search` و`category_id` الاختياري.
 
 ## حقول النماذج
 
@@ -34,7 +46,7 @@ No explicit controller-array route declarations were extracted. Inspect the sour
 ## قيم الحالات من المصدر
 
 - `Modules/SupportTicket/App/Enums/SupportTicketPriority.php`: `LOW = 1`, `NORMAL = 2`, `HIGH = 3`, `URGENT = 4`
-- `Modules/SupportTicket/App/Enums/SupportTicketStatus.php`: `SUBMITTED = 1`, `REVIEWING = 2`, `RESOLVED = 3`, `REJECTED = 4`
+- `Modules/SupportTicket/App/Enums/SupportTicketStatus.php`: `SUBMITTED = 1`, `REVIEWING = 2`, `RESOLVED = 3`, `REJECTED = 4`, `WAITING_ON_CUSTOMER = 5`, `CLOSED = 6`
 - `Modules/SupportTicket/App/Enums/SupportTicketVisibility.php`: `PUBLIC = 1`, `INTERNAL = 2`
 
 [العودة للأدلة](/ar/evidence) · [شرح الخاصية](/ar/features/support)

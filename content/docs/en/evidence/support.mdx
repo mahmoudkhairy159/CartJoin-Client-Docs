@@ -16,12 +16,24 @@ description: "Extracted backend routes, request fields and enum values."
 - `Modules/Faqs/routes/vendor-api.php`
 - `Modules/Faqs/routes/web.php`
 
-## Extracted explicit backend routes
+## Feature endpoints
 
-| Module | Surface file | Method | URI fragment | Action |
-|---|---|---|---|---|
+Every ticket download goes through the same authenticated ticket scope. The ticket status and attachment visibility values are shared across surfaces.
 
-No explicit controller-array route declarations were extracted. Inspect the source for grouped/helper/resource routes.
+| Surface | Path under the surface’s `/api/{surface}/v1` prefix | Purpose |
+|---|---|---|
+| User | `GET/POST /support-tickets`, `GET /support-tickets/{id}` | Create, list, and view the signed-in customer’s tickets. |
+| User | `POST /support-tickets/{id}/messages`, `PATCH /support-tickets/{id}/status`, `POST /support-tickets/{id}/follow-ups` | Reply, update status, or start a linked follow-up. |
+| Admin, Tenant | `GET /support-tickets`, `GET/PUT/PATCH /support-tickets/{id}` | Read and update the authorized ticket queue. Admin also has export. |
+| Admin, Tenant | `POST /support-tickets/{id}/messages`, `PATCH /support-tickets/{id}/status`, `PATCH /support-tickets/{id}/assignment`, `POST /support-tickets/{id}/escalate` | Reply, add an internal note, assign work, change status, and escalate. |
+| User, Admin, Tenant | `GET /support-tickets/{id}/attachments/{attachmentId}` | Download an attachment after access is checked. |
+| Admin, Tenant | `/faqs`, `/faq-categories`, `PUT /faqs/reorder` | Manage FAQs and categories, including ordering. |
+| Admin, Tenant | `GET /{resource}/{id}/preview`, `PATCH /{resource}/{id}/publication` | Preview both languages and set publication explicitly. |
+| User | `GET /faqs`, `GET /faqs/{id}`, `GET /faq-categories`, `PUT /faqs/{id}/helpfulness` | Browse published help and vote on an article. |
+
+### Important fields
+
+Ticket creation takes `subject`, `description`, `priority`, and optional `topic`, `order_id` and `attachments[]`. Retry the same submission with the same `Idempotency-Key`. The response has the ticket ID. State changes use `status`, `version`, and optionally `reason`. FAQ publication uses `is_active` as `0` or `1`. Public FAQ search uses `search` and optional `category_id`.
 
 ## Form-request field names
 
@@ -34,7 +46,7 @@ No explicit controller-array route declarations were extracted. Inspect the sour
 ## Enum values in source
 
 - `Modules/SupportTicket/App/Enums/SupportTicketPriority.php`: `LOW = 1`, `NORMAL = 2`, `HIGH = 3`, `URGENT = 4`
-- `Modules/SupportTicket/App/Enums/SupportTicketStatus.php`: `SUBMITTED = 1`, `REVIEWING = 2`, `RESOLVED = 3`, `REJECTED = 4`
+- `Modules/SupportTicket/App/Enums/SupportTicketStatus.php`: `SUBMITTED = 1`, `REVIEWING = 2`, `RESOLVED = 3`, `REJECTED = 4`, `WAITING_ON_CUSTOMER = 5`, `CLOSED = 6`
 - `Modules/SupportTicket/App/Enums/SupportTicketVisibility.php`: `PUBLIC = 1`, `INTERNAL = 2`
 
 [Back to evidence](/en/evidence) · [Business guide](/en/features/support)
